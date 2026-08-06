@@ -1,0 +1,515 @@
+import {
+  Component,
+  OnInit,
+  ChangeDetectorRef,
+  Inject,
+  Renderer2,
+  signal,
+} from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { ThemeservService } from '../../../../../servises/themeserv.service';
+import { artickle } from '../../../../../servises/articles.service';
+import { Subscription } from 'rxjs';
+import { NavigationEnd, Router } from '@angular/router';
+import { Meta, Title } from '@angular/platform-browser';
+import { ArticlesService } from '../../../../../servises/articles.service';
+
+@Component({
+  selector: 'app-home-en-thirty-six',
+  templateUrl: './home-en-thirty-six.component.html',
+  styleUrl: './home-en-thirty-six.component.scss',
+})
+export class HomeEnThirtySixComponent implements OnInit {
+  constructor(
+    private meta: Meta,
+    private titleService: Title,
+    private cdr: ChangeDetectorRef,
+    private router: Router,
+    private themeService: ThemeservService,
+    private artickleServ: ArticlesService,
+    private renderer: Renderer2,
+    @Inject(DOCUMENT) private document: Document,
+  ) {}
+  private routerSubscription!: Subscription;
+  private themeSubscription!: Subscription;
+  isDark!: boolean;
+  ukrGroups: any = [];
+  grr!: any;
+  checkedGroup!: any;
+  readonly panelOpenState = signal(false);
+
+  ngOnInit(): void {
+    this.removeSelectedSchemas();
+    this.setArticleSchema();
+    this.setPersonSchema();
+    this.setFaqSchema();
+    this.setHowToSchema();
+    this.setGlossarySchema();
+
+    this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
+      this.isDark = data;
+      this.cdr.detectChanges();
+    });
+    this.ukrGroups = this.artickleServ.getEnglishGroups();
+    this.grr = this.artickleServ.selectedGroups;
+    this.updateArticleCounts();
+    this.checkedGroup = this.artickleServ.selectedGroups;
+    this.titleService.setTitle(
+      'Understanding False Breakouts in Trading | Arapov.trade',
+    );
+    this.meta.updateTag({ name: 'robots', content: 'index, follow' });
+    this.meta.updateTag({
+      name: 'description',
+      content:
+        'Understanding false breakouts in trading: how institutional capital manipulates markets, identification methods, and strategies for trading against Smart Money manipulation',
+    });
+    this.meta.updateTag({ name: 'author', content: 'Igor Arapov' });
+    this.meta.updateTag({ name: 'datePublished', content: '2025-02-05' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({
+      property: 'og:image',
+      content: '/assets/img/content/falsebreakouts.webp',
+    });
+
+    this.gerRandom();
+  }
+  randomArticleRus: any = [];
+  gerRandom() {
+    this.randomArticleRus = this.artickleServ.getRandomUkArticles();
+  }
+  hoveredIndex: number | null = null;
+  projects = [
+    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
+    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    {
+      title: 'Basic course',
+      link: 'https://arapov.trade/en/freestudying/freeeducation',
+    },
+  ];
+  onGroupChange(event: Event) {
+    const checkbox = event.target as HTMLInputElement;
+    const value = checkbox.value;
+    this.router.navigate(['/en/freestudying'], {
+      queryParams: { group: value },
+    });
+    this.checkedGroup = this.artickleServ.selectedGroups;
+  }
+  paginatedArticles = []; // Статьи для отображения на текущей странице
+  currentPage = 0;
+  pageSize = 10;
+  ngOnDestroy() {
+    // Отписка от подписок
+    if (this.routerSubscription) {
+      this.routerSubscription.unsubscribe();
+    }
+    if (this.themeSubscription) {
+      this.themeSubscription.unsubscribe();
+    }
+  }
+  hovered: string | null = null;
+  toggleTheme() {
+    this.isDark = !this.isDark;
+    this.themeService.setTheme(this.isDark);
+  }
+  navigateTo(path: string) {
+    this.router.navigate([path]);
+  }
+  articleCounts: { [key: string]: number } = {};
+  updateArticleCounts() {
+    this.articleCounts = {}; // очищаем
+    this.artickleServ.ukrArtickles.forEach((article) => {
+      // article.groupsUkr — это массив, например ['Програмування', 'Маркетинг']
+      article.groupsEng.forEach((group) => {
+        if (!this.articleCounts[group]) {
+          this.articleCounts[group] = 1;
+        } else {
+          this.articleCounts[group]++;
+        }
+      });
+    });
+  }
+  //popup
+  flag1: boolean = false;
+  flagTrue1: boolean = true;
+  searchtoggle(event: Event) {
+    this.flag1 = !this.flag1;
+    this.flagTrue1 = !this.flagTrue1;
+  }
+  isFocused = false;
+  displayedArticles: artickle[] = [];
+  maxResults = 5;
+  searchQuery: string = '';
+  onFocus() {
+    this.isFocused = true;
+    // Показываем 5 случайных статей при фокусе, если инпут пуст
+    if (!this.searchQuery) {
+      const shuffled = [...this.artickleServ.ukrArtickles].sort(
+        () => Math.random() - 0.5,
+      );
+      this.displayedArticles = shuffled.slice(0, this.maxResults);
+    }
+  }
+  onBlur() {
+    setTimeout(() => {
+      this.isFocused = false;
+    }, 150); // таймаут чтобы клик по статье сработал
+  }
+  onSearchChange() {
+    // Логика асинхронного поиска
+    const filtered = this.artickleServ.ukrArtickles.filter((a) =>
+      a.titleUkr.toLowerCase().includes(this.searchQuery.toLowerCase()),
+    );
+    this.displayedArticles = filtered.slice(0, this.maxResults);
+  }
+  moveToTheTop() {
+    const element = document.getElementById('scrollToTop');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  groupsMenuOpen = false;
+  toggleGroupsMenu(event: Event) {
+    this.groupsMenuOpen = !this.groupsMenuOpen;
+  }
+
+  goToNextPage() {
+    let nextpage: any;
+    const path: string =
+      this.router.url.split('/')[this.router.url.split('/').length - 1];
+    let index = this.artickleServ.ukrArtickles.findIndex(
+      (a) => a.linkUkr == path,
+    );
+
+    if (this.artickleServ.ukrArtickles.length - 1 == index) {
+      nextpage = this.artickleServ.ukrArtickles[0].linkUkr;
+    } else {
+      nextpage = this.artickleServ.ukrArtickles[index + 1].linkUkr;
+    }
+    this.router.navigate(['/en/freestudying', nextpage]);
+  }
+  goToPreviousPage() {
+    let nextpage: any;
+    const path: string =
+      this.router.url.split('/')[this.router.url.split('/').length - 1];
+    let index = this.artickleServ.ukrArtickles.findIndex(
+      (a) => a.linkUkr == path,
+    );
+    if (index == 1) {
+      nextpage =
+        this.artickleServ.ukrArtickles[
+          this.artickleServ.ukrArtickles.length - 1
+        ].linkUkr;
+    } else {
+      nextpage = this.artickleServ.ukrArtickles[index - 1].linkUkr;
+    }
+    this.router.navigate(['/en/freestudying', nextpage]);
+  }
+  private removeSelectedSchemas(): void {
+    const typesToRemove = [
+      'Article',
+      'FAQPage',
+      'HowTo',
+      'DefinedTermSet',
+      'Person',
+    ];
+
+    const scripts = this.document.querySelectorAll(
+      'script[type="application/ld+json"]',
+    );
+
+    scripts.forEach((script) => {
+      try {
+        const json = JSON.parse(script.textContent || '{}');
+
+        // Массив, объект-граф или одиночный объект
+        const candidates =
+          json['@graph'] ?? (Array.isArray(json) ? json : [json]);
+
+        const shouldRemove = candidates.some(
+          (entry: any) =>
+            entry['@type'] && typesToRemove.includes(entry['@type']),
+        );
+
+        if (shouldRemove) {
+          script.remove();
+        }
+      } catch {
+        /* ignore invalid */
+      }
+    });
+  }
+
+  private addJsonLdSchema(data: any): void {
+    const script = this.renderer.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(data);
+    this.renderer.appendChild(this.document.head, script);
+  }
+
+  // ============================================================
+  //  ARTICLE
+  // ============================================================
+  private setArticleSchema(): void {
+    const data = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Article',
+          headline: 'Understanding False Breakouts in Trading',
+          description:
+            'Complete guide to false breakouts: how institutional capital manipulates markets, manipulation identification methods, and practical trading strategies',
+          image: 'https://arapov.trade/assets/img/content/falsebreakouts1.webp',
+          datePublished: '2025-04-15T00:00:00Z',
+          dateModified: '2026-04-15T00:00:00Z',
+          author: {
+            '@id': 'https://arapov.trade/en#person',
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Arapov.trade',
+            url: 'https://arapov.trade',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://arapov.trade/assets/img/favicon.ico',
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': 'https://arapov.trade/en/freestudying/falsebreakouts',
+          },
+          articleSection: 'Trading',
+          keywords: [
+            'false breakout',
+            'fake breakout',
+            'Smart Money',
+            'market manipulation',
+            'liquidity grab',
+            'technical analysis',
+          ],
+        },
+      ],
+    };
+
+    this.addJsonLdSchema(data);
+  }
+
+  // ============================================================
+  //  PERSON
+  // ============================================================
+  private setPersonSchema(): void {
+    const data = {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': 'https://arapov.trade/en#person',
+      name: 'Igor Arapov',
+      alternateName: [
+        'Ігор Арапов',
+        'Арапов Игорь',
+        'I. Arapov',
+        'Игорь Арапов',
+        'І. В. Арапов',
+        'Арапов Ігор',
+        'Arapov Igor',
+      ],
+      url: 'https://arapov.trade/en',
+      image:
+        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+      sameAs: [
+        'https://www.wikidata.org/wiki/Q137454477',
+        'https://scholar.google.com/citations?user=N440tWQAAAAJ',
+        'https://orcid.org/0009-0003-0430-778X',
+        'https://isni.org/isni/0000000529518564',
+        'https://www.amazon.com/stores/author/B0GBRFY457',
+        'https://github.com/ArapovTrade',
+        'https://ua.linkedin.com/in/arapovtrade',
+        'https://www.youtube.com/@ArapovTrade',
+        'https://t.me/ArapovTrade',
+      ],
+      jobTitle: [
+        'Independent researcher,',
+        'trader',
+        'author and founder of arapov.trade',
+      ],
+      description:
+        'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
+    };
+
+    this.addJsonLdSchema(data);
+  }
+
+  // ============================================================
+  //  FAQ
+  // ============================================================
+  private setFaqSchema(): void {
+    const data = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: 'What is a false breakout in trading?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'A false breakout is a temporary move of price beyond a significant support or resistance level, followed by a quick return to the original range. This movement creates the illusion of a new trend starting, provoking traders to enter losing positions.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why do Smart Money create false breakouts?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Institutional players use false breakouts to collect liquidity (stop orders from retail traders), create emotional pressure on the market, and obtain favorable prices for entering large positions before the main move.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How to distinguish a false breakout from a real one?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Key signs of a false breakout: lack of volume increase during the breakout, quick price return to the range within 5-10 candles, formation of reversal candlestick patterns, indicator divergences, and failure to hold beyond the level.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'In which market conditions do false breakouts occur more often?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'False breakouts are most likely before major news releases, during session transitions between trading venues, during extended consolidation periods, and during holidays and derivatives expiration.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How to trade against false breakouts?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Main strategies include: waiting for breakout confirmation and level retest, entering in the opposite direction after identifying manipulation, analyzing volumes and candlestick patterns for confirmation, using tight stop orders beyond the false movement extreme.',
+          },
+        },
+      ],
+    };
+
+    this.addJsonLdSchema(data);
+  }
+
+  // ============================================================
+  //  HOWTO
+  // ============================================================
+  private setHowToSchema(): void {
+    const data = {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: 'How to Identify and Trade False Breakouts',
+      description:
+        'Step-by-step guide to recognizing institutional capital manipulation and using false breakouts in trading',
+      step: [
+        {
+          '@type': 'HowToStep',
+          position: 1,
+          name: 'Identify Key Levels',
+          text: 'Mark significant support and resistance levels on your chart where most traders concentrate their stop orders. These are potential zones for Smart Money manipulation.',
+        },
+        {
+          '@type': 'HowToStep',
+          position: 2,
+          name: 'Analyze Volume During Breakout',
+          text: 'Watch trading volumes at the moment of level breakout. A genuine breakout accompanies significant volume increase. Absence of volume confirmation indicates potential manipulation.',
+        },
+        {
+          '@type': 'HowToStep',
+          position: 3,
+          name: 'Wait for Price Reaction',
+          text: 'Do not enter the market immediately after breakout. Wait for candle close beyond the level and observe price behavior. Quick return to range signals a false breakout.',
+        },
+        {
+          '@type': 'HowToStep',
+          position: 4,
+          name: 'Use Confirmation Signals',
+          text: 'Look for reversal candlestick patterns (pin bars, engulfing), divergences on RSI or MACD indicators, and signs of price rejection of the new zone in the form of long candle wicks.',
+        },
+        {
+          '@type': 'HowToStep',
+          position: 5,
+          name: 'Enter Position with Risk Control',
+          text: 'After confirming a false breakout, open a position toward price return. Place stop order beyond the false movement extreme and use partial profit taking.',
+        },
+      ],
+    };
+
+    this.addJsonLdSchema(data);
+  }
+
+  // ============================================================
+  //  GLOSSARY
+  // ============================================================
+  private setGlossarySchema(): void {
+    const data = {
+      '@context': 'https://schema.org',
+      '@type': 'DefinedTermSet',
+      name: 'False Breakout Trading Glossary',
+      hasDefinedTerm: [
+        {
+          '@type': 'DefinedTerm',
+          name: 'False Breakout',
+          description:
+            'A temporary move of price beyond a significant support or resistance level followed by quick return to the original range',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Smart Money',
+          description:
+            'Institutional players and large capital capable of influencing price movement and using manipulation to obtain favorable positions',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Liquidity',
+          description:
+            'The aggregate of stop orders and pending orders from market participants that large capital uses for entering and exiting positions',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Liquidity Grab',
+          description:
+            'The process of triggering retail traders stop orders by large capital to accumulate volume before directional movement',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Stop Hunting',
+          description:
+            'Deliberate price movement toward zones of concentrated protective orders to trigger them and then reverse',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Level Retest',
+          description:
+            'Price return to a broken level to verify its transformation from resistance into support or vice versa',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Spike Breakout',
+          description:
+            'Sharp price exit beyond a level with immediate return, typical for manipulation during news events',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Volume Analysis',
+          description:
+            'Method of evaluating price movement authenticity through analysis of trading volumes and their distribution',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Divergence',
+          description:
+            'Discrepancy between price movement direction and technical indicator readings, indicating weakening momentum',
+        },
+        {
+          '@type': 'DefinedTerm',
+          name: 'Consolidation Zone',
+          description:
+            'Horizontal price movement range where accumulation or distribution of positions by large players occurs',
+        },
+      ],
+    };
+
+    this.addJsonLdSchema(data);
+  }
+}

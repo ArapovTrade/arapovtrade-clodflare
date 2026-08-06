@@ -1,0 +1,56 @@
+.hero-section {
+    background: url(/assets/img/content/tradingBack.jpg) no-repeat bottom right;
+    background-size: 100% 100%;
+    color: white;
+    height: 300px;
+}
+
+.section-i {
+    padding: 0;
+}
+
+
+@media (min-width: 768px) {
+    .hero-section {
+        height: 400px;
+    }
+        .programm__list {
+            width: 370px !important;
+    
+        }
+}
+
+.pad {
+    padding-bottom: 20px;
+}
+
+.black {
+    background-color: #1A1A1A;
+}
+
+.programm__list {
+    width: 300px;
+
+}
+
+.programm__in {
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.programm__item {
+    padding: 20px;
+}
+.programm__title {
+    text-align: center;
+}
+@media (min-width: 900px) {
+    h1 {
+        text-align: center !important;
+    }
+}

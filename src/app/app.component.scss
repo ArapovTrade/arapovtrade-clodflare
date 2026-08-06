@@ -1,0 +1,619 @@
+            
+
+
+// POPUP
+.help_message{
+    position: absolute;
+    color: black;
+    width: 200px;
+    top: 22px;
+    left: 40px;
+    display: none;
+    z-index: 4;
+}
+.help_message_img{
+   position: absolute;
+    left: 8px;
+    top: -18px;
+    z-index: -1;
+}
+.popup-button {
+    width: 60px;
+  position: fixed;
+  top: 88%;
+    left: 5%;
+  z-index: 1111000;
+//    width: 80px !important;
+}
+.popup-button :hover{
+    .help_message{
+        display: block;
+    }
+}
+.contact-sign-popup {
+  align-items: center;
+  display: flex;
+//   width: 5%;
+  // min-width: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  button{
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    height: 60px;
+    border: none;
+  }
+  
+}
+
+.button-sign-popup {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+ 
+  align-content: center;
+ 
+  align-items: center;
+  
+  justify-content: center;
+  width: 100%;
+  max-width: 60px;
+  max-height: 60px;
+  border: 2px solid #fff;
+  background: #005db8;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+ 
+  transition: all 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 10px;
+  margin: 1px;
+  color: white;
+ font-family: 'Lato' ;
+ 
+  user-select: none;
+}
+
+@media (min-width: 600px) {
+  .popup-button {
+    position: fixed;
+        top: 87%;
+    left: 5%;
+    z-index: 111000; 
+    // width: 80px !important;
+  }
+}
+@media (min-width: 800px) {
+  .popup-button {
+    position: fixed;
+        top: 88%;
+    left: 5%;
+    z-index: 111000;
+    // width: 80px !important;
+  }
+}
+
+.displNone {
+  display: none;
+}
+
+.displBlock {
+  display: block;
+}
+
+////////////////////////////////////////////
+.popup-mainBlock {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient-blue_author-page {
+  background: linear-gradient(90deg, #025a8c, #017ec4);
+  z-index: 174;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+//
+
+
+.popupSubmit {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+ 
+  align-content: center;
+  
+  align-items: center;
+  
+  justify-content: center;
+  width: 100%;
+  min-width: 250px;
+  min-height: 56px;
+  border: 1px solid #005db8;
+  background: #005db8;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  
+  transition: all 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+ font-family: 'Lato' ;
+ 
+  user-select: none;
+}
+.popupSubmit_dark{
+ background: linear-gradient(90deg, #D6B900 0%, #FDFF8B 100%);
+font-family: Lato;
+font-weight: 400;
+
+font-size: 18px;
+ 
+letter-spacing: 0px;
+
+opacity: 1;
+border-radius: 5px;
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 10px;
+padding-left: 30px;
+gap: 10px;
+
+}
+/* styles.css или component.scss */
+ .border-focus_dark{
+ 
+ &:focus{
+   border: 1px solid rgba(255, 205, 41, 1) !important; /* Яркий синий бордер для фокуса */
+  outline: none; /* Убираем стандартный контур браузера */
+  
+ }  
+ 
+}
+.border-focus_light{
+  &:focus{
+    border: 2px solid rgba(0, 130, 204, 1) !important; /* Золотистый бордер для фокуса */
+  outline: none;
+   
+  }
+
+}
+.author-page_main-block_description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 318px;
+}
+.author-page_main-block_description-text{
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  z-index: 237;
+}
+
+// #userEmail:focus , #userName:focus, #userMessage:focus {
+//   border: 2px solid transparent; 
+//   outline: none;  
+   
+// }
+
+ 
+// #userEmail:focus , #userName:focus, #userMessage:focus {
+//   border-color: v-bind('isDark ? "rgba(255, 205, 41, 1)" : "rgba(0, 130, 204, 1)');
+// }
+
+
+.popupSubmit_light{
+ background: linear-gradient(90deg, #03314B 0%, #0083CD 100%);
+
+font-family: Lato;
+font-weight: 400;
+
+font-size: 18px;
+ 
+letter-spacing: 0px;
+
+opacity: 1;
+border-radius: 5px;
+padding-top: 10px;
+padding-right: 30px;
+padding-bottom: 10px;
+padding-left: 30px;
+gap: 10px;
+}
+.popupSubmitFalse {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+ 
+  align-content: center;
+
+  align-items: center;
+  
+  justify-content: center;
+  width: 300px; 
+  min-width: 250px;
+  height: 40px;
+  border: 1px solid darkgray;
+  background: darkgray;
+  border-radius: 100px;
+   
+  letter-spacing: 0.03em;
+ font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  
+  transition: all 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+ font-family: 'Lato', serif;
+  
+  user-select: none;
+}
+
+// ..............................................
+
+
+.popup-form {
+      display: flex
+; 
+    
+    flex-direction: column;
+    align-items: center;
+  width: 335px;
+  height: 536px;
+  margin: 0 auto 20px;
+  /* Центрирует форму */
+  padding: 0 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+
+.popup-form label {
+  color: #005db8;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.popup-form input[type="text"],
+.popup-form input[type="email"],
+.popup-form textarea {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  // border: 1px solid #005db8;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  // color: #005db8;
+  
+}
+
+.popup-form input[type="text"]::placeholder,
+.popup-form input[type="email"]::placeholder,
+.popup-form textarea::placeholder {
+  color: #cccccc;
+}
+
+.popup-form input[type="submit"] {
+  width: 300px;
+  // padding: 15px;
+  // background-color: #005db8;
+  height: 40px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-form input[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed; padding: 0;
+}
+
+.popup-form input[type="submit"].popupSubmitFalse {
+  background-color: #ccc;
+  cursor: not-allowed;
+      font-size: 17px;
+}
+
+.popup-form input[type="submit"].popupSubmit {
+  background-color: #005db8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.popup-form input[type="submit"]:hover:not(:disabled) {
+  background-color: #005db8;
+}
+
+/* Дополнительные стили для textarea */
+.popup-form textarea {
+  resize: none;
+  height: 102px;
+}
+.title-block-popup{
+  font-family: Advent Pro;
+  font-size: 24px;
+  font-weight: 700;
+  // text-align: left;
+  letter-spacing: -0.67px;
+  z-index: 238;
+  line-height: normal;
+  transition: color 0.5s ease;
+}
+
+// ...........
+
+.popup-header {
+  position: relative;
+  text-align: center;
+  
+  margin-top: 25px;
+}
+
+.popup_close-btn {
+  position: absolute;
+  top: -14px;
+    right: 6px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+ 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+ 
+.popup-message {
+  font-weight: bold;
+  font-size: 18px;
+  color: #005db8;
+  background-color: #f9f9f9;
+  padding: 10px 10px 0 0;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1001230;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+}
+
+.progress-ring {
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+.progress-ring__circle {
+  fill: none;
+  stroke: #ccc;
+}
+
+.progress-ring__path {
+  fill: none; 
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.arrow-up {
+  transform: translate(0, 2px);  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new site
+
+
+.author-page_section-three-block_social-links{
+  margin-top: 30px;
+   display: flex
+;
+    width: 285px;
+    justify-content: space-around;
+}
+.three-block_social-links_item{
+    width: 65px;
+    height: 65px;
+    // border: 1px solid rgba(255, 205, 41, 0.30);
+    border-radius: 50%;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.three-block_social-links_item-dark:hover{
+   background-color: #FFCD29 !important ; 
+   transform: scale(1.1);
+     
+}
+.three-block_social-links_item-light:hover{
+   background-color: #0082CC !important  ;
+    transform: scale(1.1);
+     
+
+}
+.three-block_social-links_item-dark:hover .svg-link-dark{
+    fill:#0C263A;  
+      
+   }
+   .three-block_social-links_item-light:hover .svg-link-light{
+    fill: #ffffff;
+     
+   }
+.svg-link-dark{
+  fill:#FFCD29;
+   
+}
+.svg-link-light{
+  fill:#0082CC;
+  
+}
+.section-three-block_social-link{
+     display: inline-block;
+  text-decoration: none; /* убирает подчёркивание */
+  color: inherit;
+}
+.three-block_social-links_item-dark,
+.three-block_social-links_item-light{
+   transition: 
+    transform 0.6s ease-in-out, 
+    background-color 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+@media (max-width: 766px) {
+    .three-block_social-links_item{
+    width: 45px;
+    height: 45px;
+  }
+  .author-page_section-three-block_social-links{
+    width: 185px;
+    margin: 20px 0 0px;
+  }
+  .three-block_social-links_item svg{
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+@media (min-width: 765px) {
+  .popup-form {
+     width: 600px;
+    // width:1000px;
+    height: 600px;
+    padding:0 30px;
+  }
+  .title-block-popup{
+  font-family: Advent Pro;
+  font-size: 40px;
+  font-weight: 700;
+  // text-align: left;
+  letter-spacing: -0.67px;
+  z-index: 238;
+  line-height: normal;
+  transition: color 0.5s ease;
+}
+.author-page_main-block_description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 451px;
+}
+.author-page_main-block_description-text{
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  z-index: 237;
+}
+.popup_close-btn {
+  position: absolute;
+  top: -8px;
+    right: -50px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+ 
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+}

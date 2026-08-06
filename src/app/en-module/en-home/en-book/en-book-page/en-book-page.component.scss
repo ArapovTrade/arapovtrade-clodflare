@@ -1,0 +1,473 @@
+.free-courses_main-container_artickle-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    margin: 40px 0 70px;
+}
+.item-flex{
+ width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 25px;
+}
+.artickle-block_item{
+    width: 393px;
+    height: fit-content;border-radius: 15px;
+    box-shadow: 
+  0px 16px 48px 0px rgba(6, 35, 63, 0.03),
+  0px -16px 48px 0px rgba(6, 35, 63, 0.03);
+
+
+
+
+}
+.shadow-box-dark{
+box-shadow: 0px 16px 48px 0px rgba(6, 35, 63, 0.03), 0px 0px 20px 0px rgba(255, 205, 41, 0.15);
+border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-box-dark:hover{
+  border-color: rgba(255, 205, 41, 0.5);
+  box-shadow: 0px 16px 48px 0px rgba(6, 35, 63, 0.03),0px 0px 20px 0px rgba(255, 218, 8, 0.5);
+
+}
+
+
+
+.shadow-box-light{
+box-shadow: 0px 16px 48px 0px rgba(6, 35, 63, 0.03),0px 0px 48px 0px rgba(6, 35, 63, 0.15);
+border: 2px solid transparent;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ 
+
+
+}
+
+.shadow-box-light:hover{
+ border-color:  rgba(0, 130, 204, 0.5);
+ box-shadow: 0px 16px 48px 0px rgba(6, 35, 63, 0.03),0px 0px 20px 0px rgba(0, 130, 204, 0.5);
+
+ 
+
+
+}
+.free-courses_item_container{
+  padding-top: 25px; padding-bottom: 20px;
+}
+.free-courses_item-title_block{
+  max-height: 100px;
+  min-height: 100px;
+display: flex
+;
+    align-items: center;
+}
+.free-courses_item_img{
+       width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    
+    
+}
+.free-courses_item_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;border-radius: 10px;
+} 
+.free-courses_item_container{
+  width: 88%;
+  height: fit-content;
+  margin: 0 auto;
+  padding-top: 20px;
+    padding-bottom: 20px;
+}
+.free-courses_item-title{
+  font-family: advent pro;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 32px;
+
+   
+
+
+}
+.free-courses_item-title_block{
+   max-height: 100px;
+  min-height: 100px;
+    // overflow: hidden;
+    display: flex
+;
+    align-items: center;
+}
+.read_more-text{
+  display: flex
+;
+font-size: 20px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-top: 15px;
+   
+    gap: 15px;transition: padding-left 0.5s ease-out;
+}
+.read_more-text-dark:hover{
+    color: #FFCD29 !important;
+    cursor: pointer;  
+    padding-left: 15px;
+  
+}
+
+.read_more-text-light:hover{
+    color: #0082CC !important;
+    cursor: pointer;  
+    padding-left: 15px;
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-conrainer {
+  scroll-behavior: smooth;
+}
+
+  .footer-main-block{
+    margin-bottom: 15px;
+  }
+
+
+
+ 
+.author-page_main-block_image-block img {
+  width: 330px;
+  height: auto;
+  object-fit: contain;
+}
+
+.authot_button_block {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 56px;
+}
+
+.author-page_section-one {
+  width: 100%;
+  // height: 740px;
+  height: fit-content;
+  position: relative;
+
+}
+.author-page_main-block {
+  width: 82.6%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 60px auto 0;
+  position: relative;
+  // height: 546px;
+  height: fit-content;
+  z-index: 300;
+}
+.author-page_main-block_image-block {
+  width: 418px;
+  height: 546px;
+}
+.author-page_main-block_text-block {
+  // width: 700px;
+  width: 100%;
+  // height: 391px;
+  height: fit-content;
+  h1{
+        display: inline-block;
+    color: #0C263A;
+    width: 100%;
+    text-align: center;
+  
+  }
+}
+.author-page_main-block_title-block {
+  font-family: Advent Pro;
+  font-size: 60px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -0.67px;
+  z-index: 238;
+  line-height: normal;
+  transition: color 0.5s ease;
+}
+.gradient-blue_author-page {
+  background: linear-gradient(90deg, #025a8c, #017ec4);
+  z-index: 174;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.author-page_main-block_description {
+  margin-top: 25px;
+}
+.author-page_main-block_description-text {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  z-index: 237;
+}
+.author-page_main-block_btn {
+  width: fit-content;
+  padding: 15px 45px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 235;
+  border-radius: 5px;
+  margin: 45px 0 30px;
+}
+.author-page_main-block_btn-text {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1.33px;
+  z-index: 236;
+}
+.coins {
+  position: absolute;
+  width: 74.92px;
+  height: 65.57px;
+  top: 85%;
+  left: 88.4%;
+
+  background: url(/assets/redesignArapovTrade/img/Coins.png) no-repeat center;
+  background-size: 100% 100%;
+  z-index: 209;
+}
+.author-page_main-block_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -70px;
+  left: 0px;
+  background-size: cover;
+  z-index: 206;
+}
+.author-page_main-block_bg-image {
+  position: absolute;
+  width: 100%;
+  height: 104%;
+  top: -15px;
+  left: 0px;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  z-index: 206;
+}
+
+  
+
+
+
+
+ 
+ 
+/* Медиа-запрос для планшетов (до 767px) */
+
+@media (min-width: 767px) and (max-width: 1200px) {
+ 
+  .author-page_section-one {
+    height: fit-content;
+  }
+  .author-page_main-block {
+    width: 92%;
+    height: fit-content;
+    margin: 80px auto 0;
+  }
+  .author-page_main-block_title-block {
+    font-size: 40px;
+  }
+  .author-page_main-block_description-text {
+    font-size: 16px;
+  }
+  .author-page_main-block_btn-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+  .author-page_main-block_btn {
+    padding: 10px 30px;
+    margin: 20px 0;
+  }
+  .author-page_main-block_description {
+    margin-top: 30px;
+  }
+  .author-page_main-block_image-block {
+    width: 260px;
+    height: fit-content;
+  }
+  .author-page_main-block_text-block {
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+  }
+  .coins {
+    top: 97%;
+    left: 85.4%;
+  }
+  .author-page_main-block_bg {
+    height: 400px;
+    background-size: contain !important;
+  }
+  .author-page_section-two {
+    margin: 80px auto 0;
+  }
+  .author-page_section-two {
+    flex-direction: column;
+    height: auto;
+  }
+
+   
+
+}
+
+//Медиа запрос для мобилки
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 766px) {
+  .free-courses_item_img{
+       width: 99%;
+    height: 400px;
+    margin: 0 auto;
+    
+    
+}
+.artickle-block_item{
+      width: 350px;
+    margin: 0 auto;
+}
+    .free-courses_main-container_artickle-block{
+    width: 95%;
+    display: flex;
+    flex-direction: column; 
+    margin: 40px auto 70px;
+}
+  .coins {
+   top: 88%;
+    left: 80.4%;
+  }
+  .author-page_main-block_bg{
+        background-size: contain !important;
+    width: 901px;
+    height: 793px;
+    top: -157px;
+    left: 17px;
+  }
+  .author-page_main-block{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .author-page_main-block_bg-image{
+    width: 1871px;
+    height: 858px;
+  }
+   
+  .header-new_block {
+    padding: 0 20px;
+  }
+  .author-page_main-block {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .author-page_section-one {
+    height: fit-content;
+  }
+  .author-page_main-block_text-block {
+    width: 100%;
+    height: fit-content;
+    padding: 0 20px;
+  }
+  .author-page_main-block_title-block {
+    font-size: 30px;
+  }
+  .author-page_main-block_description {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .author-page_main-block_btn-text {
+    font-size: 16px;
+  }
+  .author-page_main-block_btn {
+    width: 100%;
+    padding: 10px 0;
+    margin: 20px 0 30px;
+  }
+  .author-page_main-block_image-block {
+    width: 100%;
+    height: fit-content;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .author-page_main-block_image-block img {
+    width: 335px;
+  }
+   
+
+  .author-page_main-block_bg {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top: -14px;
+    left: 0px;
+    background-size: contain !important;
+  }
+  
+   
+  .author-page_main-block_title-block h2{
+    font-size: 24px !important;
+  }
+  .author-page_main-block_title-block h1{
+    font-size: 32px !important;
+  }
+   
+}
+ 

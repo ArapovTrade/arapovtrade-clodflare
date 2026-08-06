@@ -1,0 +1,45 @@
+<div class="modal_search">
+    <div class="header-search">
+        <span class="header-search_container">
+            <form [formGroup]="myForm" action="" class="searchContainer">
+
+
+                <input formControlName="searchControl" type="text" autocomplete="off" spellcheck="false"
+                    class="searchinp" placeholder="{{placeholderText}}">
+
+                
+
+
+                <button type="button" class="creatBtn" (click)="clearInp()">Clear</button>
+                <button type="button" class="closeBtn" (click)="closeBtn()"><span style="font-size: larger;">X</span>
+                </button>
+            </form>
+        </span>
+    </div>
+    <div class="body-search">
+
+        <div *ngFor="let art of filteredArr|async" class="article-card">
+            <div *ngIf="language==3">
+
+                <a   (click)="closeBtn(); navigateToArticle('en/freestudying/'+art.linkUkr)" class="card-link">
+                    <div class="article-content">
+                        <img src="{{art.imgUkr}}" alt="{{art.titleEn}}" loading="lazy" class="article-image">
+                        <h3 class="article-title orange" [innerHTML]="highlightText(art.titleEn)"> </h3>
+                    </div>
+                </a>
+
+
+            </div>
+
+
+
+            
+            
+
+
+
+
+        </div>
+
+    </div>
+</div>

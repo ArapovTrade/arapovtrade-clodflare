@@ -1,0 +1,614 @@
+<div
+  class="main-container"
+  [ngStyle]="{
+    'background-color': isDark ? 'rgba(33,34,5,1)' : 'rgba(255,255,255,1)',
+  }"
+  [ngClass]="{
+    'dark-theme-main-cont': isDark,
+    'light-theme-main-cont': !isDark,
+  }"
+>
+  <div class="author-page_section-one">
+    <div class="header-new_block" data-aos="fade-down" data-aos-delay="300">
+      <div class="header-logo-block">
+        <div
+          class="header-logo"
+          [ngStyle]="{
+            background: isDark
+              ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+              : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+          }"
+        ></div>
+        <span
+          class="loog-text"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >Arapov.Trade</span
+        >
+      </div>
+
+      <div class="nav-bar">
+        <ul
+          class="nav-list desktop-nav"
+          [ngClass]="{ 'menu-item-dark': isDark, 'menu-item-light': !isDark }"
+        >
+          <li>
+            <a
+              href="/ru/main"
+              (click)="$event.preventDefault(); navigateTo('ru/main')"
+            >
+              Главная
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/ru/freestudying"
+              (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+              [ngStyle]="{ color: isDark ? '#FFCD29' : '#0082CC' }"
+            >
+              бесплатные курсы
+            </a>
+          </li>
+
+          <li>
+            <a href="/ru" (click)="$event.preventDefault(); navigateTo('ru')">
+              Об авторе
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/ru/studying"
+              (click)="$event.preventDefault(); navigateTo('ru/studying')"
+            >
+              Профессиональные курсы
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="langAndThere_block">
+        <div class="lang-switcher" [class.open]="dropdownOpen">
+          <button
+            class="lang-btn"
+            (click)="toggleDropdown()"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+            <span class="icon flex"
+              ><img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/lang_icon.png"
+                alt="lang_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/lang_icon-light.png"
+                alt="lang_icon"
+              />
+            </span>
+            <span
+              class="code"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >{{ currentLang.toUpperCase() }}</span
+            >
+            <span class="arrow flex"
+              ><img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/lang_arrow.png"
+                alt="arrow"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/lang_arrow-light.png"
+                alt="arrow"
+              />
+            </span>
+          </button>
+
+          <ul
+            class="dropdown"
+            *ngIf="dropdownOpen"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                routerLink="/ru"
+                routerLinkActive="active"
+                hreflang="ru"
+                [routerLinkActiveOptions]="{ exact: true }"
+                (click)="changeLanguage('ru'); selectLang('ru'); setRussian()"
+                >RU</a
+              >
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                routerLink="/uk"
+                routerLinkActive="active"
+                hreflang="uk"
+                [routerLinkActiveOptions]="{ exact: true }"
+                (click)="changeLanguage('uk'); selectLang('ua'); setUkraine()"
+                >UA</a
+              >
+            </li>
+
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                routerLink="/en"
+                routerLinkActive="active"
+                hreflang="en"
+                [routerLinkActiveOptions]="{ exact: true }"
+                (click)="changeLanguage('en'); selectLang('en'); setEnglish()"
+                >EN</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div
+          class="wrapper"
+          [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          [ngClass]="{ 'dark-theme': isDark, 'light-theme': !isDark }"
+        >
+          <button *ngIf="isDark" class="icon-btn" (click)="toggleTheme()">
+            <div>
+              <img
+                src="assets/redesignArapovTrade/img/LightMode_dark.png"
+                alt="light"
+              />
+            </div>
+            <div>
+              <img
+                class="theme_icon_dark"
+                src="assets/redesignArapovTrade/img/darkmode_light.png"
+                alt="dark"
+              />
+            </div>
+          </button>
+          <button *ngIf="!isDark" class="icon-btn" (click)="toggleTheme()">
+            <div
+              style="
+                background-color: #fcdb35;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                border-radius: 14px;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <img
+                src="assets/redesignArapovTrade/img/LightMode_light.png"
+                alt="light"
+              />
+            </div>
+            <div>
+              <img
+                class="theme_icon_dark"
+                src="assets/redesignArapovTrade/img/darkmode_dark.png"
+                alt="dark"
+              />
+            </div>
+          </button>
+        </div>
+
+        <div class="menu-switcher" [class.open]="menuOpen">
+          <button
+            class="menu-btn"
+            (click)="toggleMenu()"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+            <span class="icon flex" *ngIf="!menuOpen">
+              <img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/menu-button.svg"
+                alt="menu_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/menu-button-light.svg"
+                alt="menu_icon"
+              />
+            </span>
+
+            <span class="icon flex cross" *ngIf="menuOpen">
+              <img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/menu-button-cross.svg"
+                alt="menu_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/menu-button-cross-light.svg"
+                alt="menu_icon"
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mask_drop-menu" *ngIf="menuOpen">
+    <div
+      class="menu-dropdown"
+      [ngStyle]="{
+        background: isDark ? 'rgba(1, 1, 1, 1)' : 'rgba(255, 255, 255, 1)',
+      }"
+    >
+      <ul>
+        <li
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }"
+        >
+          <a
+            href="/ru/main"
+            (click)="$event.preventDefault(); navigateTo('ru/main')"
+          >
+            ГЛАВНАЯ
+          </a>
+        </li>
+
+        <li
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }"
+        >
+          <a
+            href="/ru/freestudying"
+            (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+          >
+            БЕСПЛАТНЫЕ КУРСЫ
+          </a>
+        </li>
+
+        <li
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }"
+        >
+          <a href="/ru" (click)="$event.preventDefault(); navigateTo('ru')">
+            ОБ АВТОРЕ
+          </a>
+        </li>
+
+        <li
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }"
+        >
+          <a
+            href="/ru/studying"
+            (click)="$event.preventDefault(); navigateTo('ru/studying')"
+          >
+            ПРОФЕССИОНАЛЬНЫЕ КУРСЫ
+          </a>
+        </li>
+
+        <li
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }"
+        >
+          <a
+            href="/ru/books"
+            (click)="$event.preventDefault(); navigateTo('ru/books')"
+          >
+            МОИ КНИГИ
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <router-outlet> </router-outlet>
+
+  <div class="ad-inarticle">
+    <ins
+      class="adsbygoogle"
+      style="display: block; text-align: center"
+      data-ad-layout="in-article"
+      data-ad-format="fluid"
+      data-ad-client="ca-pub-3531945003419158"
+      data-ad-slot="2795658068"
+    ></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-main-block">
+      <div class="logo-body">
+        <div class="frame-29">
+          <div class="logo">
+            <div class="header-logo-block">
+              <div
+                class="header-logo hhd"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+                    : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+                }"
+              ></div>
+              <span class="loog-text hg">Arapov.Trade</span>
+            </div>
+          </div>
+          <span class="footer-text"
+            >100% бесплатная теория трейдинга и практические рекомендации для
+            новичков и опытных трейдеров.</span
+          >
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="menu">
+          <!-- <span class="menu-title">Меню</span> -->
+          <div class="menu-title-block">
+            <a
+              href="/ru/main"
+              (click)="$event.preventDefault(); navigateTo('ru/main')"
+              class="menu-title_text"
+            >
+              Главная
+            </a>
+          </div>
+
+          <div class="menu-title-block">
+            <a
+              href="/ru"
+              (click)="$event.preventDefault(); navigateTo('ru')"
+              class="menu-title_text"
+            >
+              Об авторе курса
+            </a>
+          </div>
+
+          <div class="menu-title-block">
+            <a
+              href="/ru/studying"
+              (click)="$event.preventDefault(); navigateTo('ru/studying')"
+              class="menu-title_text"
+            >
+              Курсы по трейдингу
+            </a>
+          </div>
+
+          <div class="menu-title-block">
+            <a
+              href="/ru/freestudying"
+              (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+              class="menu-title_text"
+            >
+              Бесплатное обучение трейдингу
+            </a>
+          </div>
+        </div>
+        <div class="menu">
+          <!-- <span class="menu-title">Ссылки</span> -->
+
+          <a
+            href="/ru/freestudying/wyckoff-method"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/wyckoff-method')
+            "
+            class="menu-title-block menu-title_text"
+            >Метод Вайкоффа</a
+          >
+           <a
+            href="/ru/freestudying/crypto-basics"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/crypto-basics')
+            "
+            class="menu-title-block menu-title_text"
+            >Криптовалюта с нуля</a
+          >
+           <a
+            href="/ru/freestudying/trading-indicators"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/trading-indicators')
+            "
+            class="menu-title-block menu-title_text"
+            >Индикаторы для трейдинга</a
+          >
+        
+        </div>
+
+        <div class="menu">
+         
+            <a
+            href="/ru/freestudying/trading-for-beginners"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/trading-for-beginners')
+            "
+            class="menu-title-block menu-title_text"
+            >Трейдинг с нуля</a
+          >
+           <a
+            href="/ru/freestudying/smart-money-guide"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/smart-money-guide')
+            "
+            class="menu-title-block menu-title_text"
+            >Smart Money</a
+          >
+           <a
+            href="/ru/freestudying/freeeducation"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/freeeducation')
+            "
+            class="menu-title-block menu-title_text"
+            >Бесплатный курс по трейдингу</a
+          >
+           
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="component-1f">
+      <div class="in-20"></div>
+      <div class="component-21">
+        <div class="box-b">
+          <span class="text-2d">Arapov.Trade</span>
+          <div class="pic-14"></div>
+          <span class="text-2e">2025-2026. Все права защищены. </span>
+          <span class="text-2e">ФЛП Арапов И.В. ИНН 3314507171</span>
+        </div>
+        <!-- <div class="section-18">
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark': isDark,
+              'links-light': !isDark,
+            }"
+          >
+            <a href="https://www.facebook.com/igor.arapov.75">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 15 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.66 4.59339H14.1667V0.353394C12.953 0.22719 11.7335 0.164881 10.5133 0.166727C6.88666 0.166727 4.40666 2.38006 4.40666 6.43339V9.92673H0.313324V14.6734H4.40666V26.8334H9.31332V14.6734H13.3933L14.0067 9.92673H9.31332V6.90006C9.31332 5.50006 9.68666 4.59339 11.66 4.59339Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark': isDark,
+              'links-light': !isDark,
+            }"
+          >
+            <a
+              href="https://www.linkedin.com/in/arapovtrade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.499969 3.46655C0.499969 2.70335 0.770247 2.07372 1.31078 1.57766C1.85131 1.08158 2.55403 0.833557 3.41889 0.833557C4.26832 0.833557 4.95556 1.07776 5.48066 1.56622C6.0212 2.06992 6.29147 2.72624 6.29147 3.53524C6.29147 4.26789 6.02893 4.87843 5.50383 5.36688C4.9633 5.87059 4.25286 6.12244 3.37256 6.12244H3.34939C2.49996 6.12244 1.81272 5.87059 1.28761 5.36688C0.76251 4.86318 0.499969 4.22973 0.499969 3.46655ZM0.801128 23.5002V8.20594H5.94398V23.5002H0.801128ZM8.79341 23.5002H13.9363V14.9601C13.9363 14.4259 13.998 14.0138 14.1216 13.7238C14.3378 13.2048 14.666 12.766 15.1061 12.4073C15.5463 12.0486 16.0984 11.8692 16.7625 11.8692C18.4923 11.8692 19.3571 13.0216 19.3571 15.3265V23.5002H24.5V14.7312C24.5 12.4721 23.9594 10.7588 22.8783 9.59112C21.7973 8.42344 20.3687 7.83961 18.5926 7.83961C16.6004 7.83961 15.0482 8.68674 13.9363 10.381V10.4268H13.9131L13.9363 10.381V8.20594H8.79341C8.82429 8.69437 8.83974 10.2131 8.83974 12.7622C8.83974 15.3112 8.82429 18.8905 8.79341 23.5002Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </a>
+          </div>
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark': isDark,
+              'links-light': !isDark,
+            }"
+          >
+            <a href="https://ru.tradingview.com/u/Igor_Arapov/">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 25 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.365 2.77903C16.365 3.42934 16.1067 4.05301 15.6468 4.51285C15.187 4.97269 14.5633 5.23103 13.913 5.23103C13.2627 5.23103 12.639 4.97269 12.1792 4.51285C11.7193 4.05301 11.461 3.42934 11.461 2.77903C11.461 2.12872 11.7193 1.50504 12.1792 1.0452C12.639 0.585361 13.2627 0.327026 13.913 0.327026C14.5633 0.327026 15.187 0.585361 15.6468 1.0452C16.1067 1.50504 16.365 2.12872 16.365 2.77903ZM10.25 0.500026H0.5V5.40403H5.346V12.673H10.25V0.500026ZM18.846 0.500026H24.5L19.394 12.673H13.74L18.846 0.500026Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark-special': isDark,
+              'links-light-special': !isDark,
+            }"
+          >
+            <a href="https://www.youtube.com/@ArapovTrade">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10 8.5L16 12L10 15.5V8.5Z" fill="#ffffff" />
+                <path
+                  d="M12 5C21 5 21 5 21 12C21 19 21 19 12 19C3 19 3 19 3 12C3 5 3 5 12 5Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark-special': isDark,
+
+              'links-light-special': !isDark,
+            }"
+          >
+            <a href="https://telegram.me/+380506308200">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.985 15.408L15.227 19.094C16.427 20.459 17.028 21.142 17.657 20.975C18.285 20.809 18.501 19.911 18.932 18.114L21.322 8.14604C21.987 5.37804 22.319 3.99504 21.581 3.31204C20.843 2.62904 19.564 3.13704 17.006 4.15204L5.13998 8.86504C3.09398 9.67804 2.07099 10.084 2.00599 10.782C1.99833 10.8532 1.99833 10.9249 2.00599 10.996C2.06899 11.695 3.08998 12.104 5.13398 12.923C6.05898 13.294 6.52199 13.48 6.85399 13.835C6.89132 13.875 6.92732 13.9164 6.96199 13.959C7.26799 14.339 7.39799 14.839 7.65899 15.835L8.14798 17.702C8.40098 18.672 8.52799 19.158 8.86099 19.224C9.19399 19.29 9.48299 18.888 10.062 18.083L11.985 15.408ZM11.985 15.408L11.668 15.078C11.306 14.7 11.125 14.512 11.125 14.278C11.125 14.044 11.305 13.855 11.668 13.478L15.241 9.75404"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div
+            class="fb"
+            [ngClass]="{
+              'links-dark': isDark,
+              'links-light': !isDark,
+            }"
+          >
+            <a href="https://www.instagram.com/arapovtrade/">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 21 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.3 0.5H14.7C17.9 0.5 20.5 3.1 20.5 6.3V14.7C20.5 16.2383 19.8889 17.7135 18.8012 18.8012C17.7135 19.8889 16.2383 20.5 14.7 20.5H6.3C3.1 20.5 0.5 17.9 0.5 14.7V6.3C0.5 4.76174 1.11107 3.28649 2.19878 2.19878C3.28649 1.11107 4.76174 0.5 6.3 0.5ZM6.1 2.5C5.14522 2.5 4.22955 2.87928 3.55442 3.55442C2.87928 4.22955 2.5 5.14522 2.5 6.1V14.9C2.5 16.89 4.11 18.5 6.1 18.5H14.9C15.8548 18.5 16.7705 18.1207 17.4456 17.4456C18.1207 16.7705 18.5 15.8548 18.5 14.9V6.1C18.5 4.11 16.89 2.5 14.9 2.5H6.1ZM15.75 4C16.0815 4 16.3995 4.1317 16.6339 4.36612C16.8683 4.60054 17 4.91848 17 5.25C17 5.58152 16.8683 5.89946 16.6339 6.13388C16.3995 6.3683 16.0815 6.5 15.75 6.5C15.4185 6.5 15.1005 6.3683 14.8661 6.13388C14.6317 5.89946 14.5 5.58152 14.5 5.25C14.5 4.91848 14.6317 4.60054 14.8661 4.36612C15.1005 4.1317 15.4185 4 15.75 4ZM10.5 5.5C11.8261 5.5 13.0979 6.02678 14.0355 6.96447C14.9732 7.90215 15.5 9.17392 15.5 10.5C15.5 11.8261 14.9732 13.0979 14.0355 14.0355C13.0979 14.9732 11.8261 15.5 10.5 15.5C9.17392 15.5 7.90215 14.9732 6.96447 14.0355C6.02678 13.0979 5.5 11.8261 5.5 10.5C5.5 9.17392 6.02678 7.90215 6.96447 6.96447C7.90215 6.02678 9.17392 5.5 10.5 5.5ZM10.5 7.5C9.70435 7.5 8.94129 7.81607 8.37868 8.37868C7.81607 8.94129 7.5 9.70435 7.5 10.5C7.5 11.2956 7.81607 12.0587 8.37868 12.6213C8.94129 13.1839 9.70435 13.5 10.5 13.5C11.2956 13.5 12.0587 13.1839 12.6213 12.6213C13.1839 12.0587 13.5 11.2956 13.5 10.5C13.5 9.70435 13.1839 8.94129 12.6213 8.37868C12.0587 7.81607 11.2956 7.5 10.5 7.5Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        'bg-shapes-footer': true,
+        'bg-shapes-footer-dark': isDark,
+        'bg-shapes-footer-light': !isDark,
+      }"
+    ></div>
+  </div>
+</div>

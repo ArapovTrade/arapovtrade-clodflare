@@ -1,0 +1,28 @@
+ 
+
+<div class="searchblock-container" (click)="$event.stopPropagation()">
+  <form [formGroup]="myForm" class="search-form">
+    <input
+      formControlName="searchControl"
+      type="text"
+      placeholder="Введіть запит"
+      (focus)="onFocus()"
+      (blur)="onBlur()"
+      autocomplete="off"
+    />
+    <span class="search-icon">🔍</span>
+    <button type="button" class="clear-btn" (click)="clearInp()">✕</button>
+  </form>
+
+  <div class="search-results" *ngIf="displayedArticles.length > 0">
+    <div *ngFor="let art of displayedArticles" class="search-result-item">
+      <a
+        (click)="navigateToArticle('uk/freestudying/' + art.linkUkr)"
+        class="result-link"
+      >
+        <img [src]="art.imgUkr" [alt]="art.titleUkr" class="result-img" />
+        <h3 class="result-title" [innerHTML]="highlightText(art.titleUkr)"></h3>
+      </a>
+    </div>
+  </div>
+</div>

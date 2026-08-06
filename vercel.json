@@ -1,0 +1,2565 @@
+{
+  "routes": [
+    {
+      "src": "/sitemap.xml",
+      "dest": "/sitemap.xml",
+      "status": 200,
+      "headers": {
+        "Content-Type": "application/xml; charset=utf-8"
+      }
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/ru/home",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/home",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/home",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/trading/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/trading/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/trading/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/blog/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/blog/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/blog/.*",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/simpletradingsystem",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/simpletradingsystem",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/howtomakemoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/liqudityintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/liqudityintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/howtomakemoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/selectingtimeframe",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/selectingtimeframe",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/fibonacciLevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/fibonacciLevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/volumetricmarketanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/volumetricmarketanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartmoneyeducation",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartmoneyeducation",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/documents/Політика конфіденційності.pdf",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/assets/documents/Політикаконфіденційності.pdf",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/assets/documents/PrivacyPolicyUK.DOC",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/blog",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/blog",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/blog",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/adviceforbeginners",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/adviceforbeginners",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/adviceforbeginners",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/adx",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/adx",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/adx",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/algorithmicorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/algorithmicorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/algorithmicorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/altblockchains",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/altblockchains",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/altblockchains",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/altseason",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/altseason",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/altseason",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/anatomyofmarkettrends",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/anatomyofmarkettrends",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/anatomyofmarkettrends",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/atrindikator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/atrindikator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/atrindikator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/averagingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/averagingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/averagingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/avoidlosingmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/avoidlosingmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/avoidlosingmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/backtest",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/backtest",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/backtest",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/beginnermistakes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/beginnermistakes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/beginnermistakes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/benefitsoftradingbooks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/benefitsoftradingbooks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/benefitsoftradingbooks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/binarnyeopciony",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/binarnyeopciony",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/binarnyeopciony",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bitcoin",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bitcoin",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bitcoin",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bitcoin-crash-stops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bitcoin-crash-stops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bitcoin-crash-stops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bitcoin-domination",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bitcoin-domination",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bitcoin-domination",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bitcoinetf",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bitcoinetf",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bitcoinetf",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/blogmarketphases",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/blogmarketphases",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/blogmarketphases",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bollingerbands",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bollingerbands",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bollingerbands",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/bonds-coupon-yield",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/bonds-coupon-yield",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/bonds-coupon-yield",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/breakeven",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/breakeven",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/breakeven",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/can-ai-predict-price",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/can-ai-predict-price",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/can-ai-predict-price",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/candle-hammer-doji-star",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/candle-hammer-doji-star",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/candle-hammer-doji-star",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/candlestickpatterns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/candlestickpatterns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/candlestickpatterns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/capitalmanagement",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/capitalmanagement",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/capitalmanagement",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/carrytrade",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/carrytrade",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/carrytrade",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/choosingtradingplatform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/choosingtradingplatform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/choosingtradingplatform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/copytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/copytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/copytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptoarbitrage",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptoarbitrage",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptoarbitrage",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptocurrencybasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptocurrencybasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptocurrencybasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptocurrencyrisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptocurrencyrisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptocurrencyrisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptocurrencytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptocurrencytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptocurrencytrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptomarketanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptomarketanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptomarketanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptommakers",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptommakers",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptommakers",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptosafe",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptosafe",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptosafe",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptoscam",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptoscam",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptoscam",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptostaking",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptostaking",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptostaking",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptostart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptostart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptostart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptostoring",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptostoring",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptostoring",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cryptotether",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cryptotether",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cryptotether",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/cupandhandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/cupandhandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/cupandhandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/currenciesandquotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/currenciesandquotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/currenciesandquotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/currencyposition",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/currencyposition",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/currencyposition",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/derivatives",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/derivatives",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/derivatives",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/difficulttrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/difficulttrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/difficulttrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/divergenceonindecators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/divergenceonindecators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/divergenceonindecators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/doubletopandbottom",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/doubletopandbottom",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/doubletopandbottom",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/drawdowns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/drawdowns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/drawdowns",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/econimicfactors",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/econimicfactors",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/econimicfactors",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/economiccalendar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/economiccalendar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/economiccalendar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/emotionsaffect",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/emotionsaffect",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/emotionsaffect",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/engulfing",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/engulfing",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/engulfing",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/ethereum",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/ethereum",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/ethereum",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/exchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/exchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/exchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/exchangemarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/exchangemarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/exchangemarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/falsebreakouts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/falsebreakouts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/falsebreakouts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/fibonaccilevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/fibonaccilevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/fibonaccilevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/flagandpennant",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/flagandpennant",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/flagandpennant",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/flagfigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/flagfigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/flagfigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/fomo",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/fomo",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/fomo",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/forexleveragerisk",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/forexleveragerisk",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/forexleveragerisk",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/forexmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/forexmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/forexmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/formationexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/formationexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/formationexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/fundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/fundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/fundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/futurestrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/futurestrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/futurestrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/gamblingorbusiness",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/gamblingorbusiness",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/gamblingorbusiness",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/globalfundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/globalfundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/globalfundamentalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/goldtrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/goldtrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/goldtrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/halving",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/halving",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/halving",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/headandshoulders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/headandshoulders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/headandshoulders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/howtotradeonforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/howtotradeonforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/howtotradeonforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/icebergorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/icebergorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/icebergorders",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/ichimoku",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/ichimoku",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/ichimoku",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/imbalanceandfvg",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/imbalanceandfvg",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/imbalanceandfvg",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/imbalanceintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/imbalanceintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/imbalanceintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/japanesecandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/japanesecandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/japanesecandle",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/keyeconomicgrowth",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/keyeconomicgrowth",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/keyeconomicgrowth",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/keypricepattern",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/keypricepattern",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/keypricepattern",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/levelbreakoutstrategy",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/levelbreakoutstrategy",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/levelbreakoutstrategy",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/levelofsupport",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/levelofsupport",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/levelofsupport",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/liquiditypools",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/liquiditypools",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/liquiditypools",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/macdindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/macdindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/macdindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/macroeconomicindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/macroeconomicindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/macroeconomicindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/mainreasonforlosses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/mainreasonforlosses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/mainreasonforlosses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/majorbankfrs",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/majorbankfrs",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/majorbankfrs",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/makingmoneyintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/makingmoneyintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/makingmoneyintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/marketanalysisforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/marketanalysisforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/marketanalysisforex",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/marketauctiondevelops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/marketauctiondevelops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/marketauctiondevelops",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/marketbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/marketbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/marketbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/marketmaker",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/marketmaker",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/marketmaker",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/marketorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/marketorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/marketorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/metodmartingejla",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/metodmartingejla",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/metodmartingejla",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/movingaverages",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/movingaverages",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/movingaverages",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/newstrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/newstrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/newstrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/oiltrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/oiltrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/oiltrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/orderblockintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/orderblockintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/orderblockintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/ordertypes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/ordertypes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/ordertypes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/pattern-1-2-3",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/pattern-1-2-3",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/pattern-1-2-3",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/peakvolumelevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/peakvolumelevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/peakvolumelevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/pinbar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/pinbar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/pinbar",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/pizzaday",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/pizzaday",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/pizzaday",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/practic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/practic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/practic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/predictmarketprice",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/predictmarketprice",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/predictmarketprice",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/pricingandliquidity",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/pricingandliquidity",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/pricingandliquidity",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/profitandlossratio",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/profitandlossratio",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/profitandlossratio",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/psychologyofaveraging",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/psychologyofaveraging",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/psychologyofaveraging",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/psychorisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/psychorisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/psychorisks",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/purchasingcourses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/purchasingcourses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/purchasingcourses",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/requotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/requotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/requotes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/riskcurrencyexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/riskcurrencyexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/riskcurrencyexchange",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/rsiindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/rsiindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/rsiindicator",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/safetostorecrypto",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/safetostorecrypto",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/safetostorecrypto",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/scalpingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/scalpingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/scalpingintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/selfstudying",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/selfstudying",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/selfstudying",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartestmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartestmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/smartestmoney",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartmonettraps",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartmonettraps",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/smartmonettraps",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartmoneyconceptsguide",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartmoneyconceptsguide",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/smartmoneyconceptsguide",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartmoneycontrol",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartmoneycontrol",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/smartmoneycontrol",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/smartmoneystrategies",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/smartmoneystrategies",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/smartmoneystrategies",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/solana",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/solana",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/solana",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/sp500trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/sp500trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/sp500trading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/spread",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/spread",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/spread",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stablecoins",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stablecoins",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stablecoins",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/starterdeposit",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/starterdeposit",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/starterdeposit",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/steidlmayeranalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/steidlmayeranalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/steidlmayeranalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stochastic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stochastic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stochastic",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stockorderbook",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stockorderbook",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stockorderbook",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stophunting",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stophunting",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stophunting",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stoplimitorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stoplimitorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stoplimitorder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stoploss",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stoploss",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stoploss",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/stoporder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/stoporder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/stoporder",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/successfultrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/successfultrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/successfultrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/technicalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/technicalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/technicalanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/technicalmarketcharts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/technicalmarketcharts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/technicalmarketcharts",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tiltintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tiltintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tiltintrading",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/timeframes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/timeframes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/timeframes",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingandinvestments",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingandinvestments",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingandinvestments",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingbasics",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingindicators",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingmyths",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingmyths",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingmyths",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingoflevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingoflevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingoflevels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingplan",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingplan",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingplan",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingquickstart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingquickstart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingquickstart",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingsystem",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingsystem",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingsystem",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingview-platform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingview-platform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingview-platform",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/tradingvsoptions",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/tradingvsoptions",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/tradingvsoptions",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/trandingchannels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/trandingchannels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/trandingchannels",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/trendvolumeanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/trendvolumeanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/trendvolumeanalysis",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/trianglefigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/trianglefigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/trianglefigure",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/volatility",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/volatility",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/volatility",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/volmarketanalisys",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/volmarketanalisys",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/volmarketanalisys",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/volumeandfuturesmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/volumeandfuturesmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/volumeandfuturesmarket",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/vwap",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/vwap",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/vwap",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/wavesofelliott",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/wavesofelliott",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/wavesofelliott",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/williamgannpsychology",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/williamgannpsychology",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/williamgannpsychology",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/worldstockindicates",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/worldstockindicates",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/worldstockindicates",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/wyckoffmethod",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/wyckoffmethod",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/wyckoffmethod",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/wyckoffsvolumeconcept",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/wyckoffsvolumeconcept",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/wyckoffsvolumeconcept",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/ru/freestudying/xrp",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/uk/freestudying/xrp",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/en/freestudying/xrp",
+      "status": 410,
+      "dest": "/index.html"
+    },
+    {
+      "src": "/.*",
+      "status": 404,
+      "dest": "/index.html"
+    }
+  ]
+}

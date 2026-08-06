@@ -1,0 +1,48 @@
+ 
+
+
+
+.main-container{
+  overflow: visible !important;
+}
+.author-page_section-one {
+  width: 100%; 
+  position: relative;
+}
+
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .author-page_section-one{
+  height: fit-content;
+}
+}
+
+
+@media (max-width: 766px) {
+ .author-page_section-one{
+  
+    padding: 0px 20px;
+  
+}
+
+}
+
+
+.dark-theme-main-cont{
+  background-color: #1A1A1A;
+   
+
+  p, h1, h2, h3 {
+      color: #fff !important  ;
+    }
+    
+    
+}
+
+.light-theme-main-cont{
+  background-color: #fff;
+  color: #0C263A;
+   p, h1, h2, h3 {
+      color: #0C263A;
+    }
+}

@@ -1,0 +1,10 @@
+ 
+
+# Allow all search engines full access
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://arapov.trade/sitemap.xml
+
+  

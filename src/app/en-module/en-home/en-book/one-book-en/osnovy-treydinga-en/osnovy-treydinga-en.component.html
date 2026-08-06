@@ -1,0 +1,895 @@
+<div
+  class="main-container"
+  [ngStyle]="{ 'background-color': isDark ? '#141500' : '#FFFFFF' }"
+>
+  <div class="mask_drop-menu" *ngIf="menuOpen" style="margin-top: 40px">
+    <div
+      class="menu-dropdown"
+      [ngStyle]="{
+        background: isDark ? 'rgba(1, 1, 1, 1)' : 'rgba(255, 255, 255, 1)',
+      }"
+    >
+      <ul>
+        <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+          <a
+            href="/en/main"
+            (click)="$event.preventDefault(); navigateTo('en/main')"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Main
+          </a>
+        </li>
+        <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+          <a
+            href="/en/freestudying"
+            (click)="$event.preventDefault(); navigateTo('en/freestudying')"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            free courses
+          </a>
+        </li>
+        <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+          <a
+            href="/en"
+            (click)="$event.preventDefault(); navigateTo('en')"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            About the author
+          </a>
+        </li>
+        <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+          <a
+            href="/en/studying"
+            (click)="$event.preventDefault(); navigateTo('en/studying')"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Professional courses
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="author-page_section-one">
+    <div class="header-new_block" data-aos="fade-down" data-aos-delay="300">
+      <div class="header-logo-block">
+        <div
+          class="header-logo"
+          [ngStyle]="{
+            background: isDark
+              ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+              : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+          }"
+        ></div>
+        <span
+          class="loog-text"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >Arapov.Trade</span
+        >
+      </div>
+
+      <div class="nav-bar">
+        <ul
+          class="nav-list desktop-nav"
+          [ngClass]="{ 'menu-item-dark': isDark, 'menu-item-light': !isDark }"
+        >
+          <li>
+            <a
+              href="/en/main"
+              (click)="$event.preventDefault(); navigateTo('en/main')"
+            >
+              Main
+            </a>
+          </li>
+          <li>
+            <a
+              href="/en/freestudying"
+              (click)="$event.preventDefault(); navigateTo('en/freestudying')"
+            >
+              free courses
+            </a>
+          </li>
+          <li>
+            <a href="/en" (click)="$event.preventDefault(); navigateTo('en')">
+              About the author
+            </a>
+          </li>
+          <li>
+            <a
+              href="/en/studying"
+              (click)="$event.preventDefault(); navigateTo('en/studying')"
+            >
+              Professional courses
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="langAndThere_block">
+        <div class="lang-switcher" [class.open]="dropdownOpen">
+          <button
+            class="lang-btn"
+            (click)="toggleDropdown()"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+            <span class="icon flex"
+              ><img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/lang_icon.png"
+                alt="lang_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/lang_icon-light.png"
+                alt="lang_icon"
+              />
+            </span>
+            <span
+              class="code"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >{{ currentLang.toUpperCase() }}</span
+            >
+            <span class="arrow flex"
+              ><img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/lang_arrow.png"
+                alt="arrow"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/lang_arrow-light.png"
+                alt="arrow"
+              />
+            </span>
+          </button>
+
+          <ul
+            class="dropdown"
+            *ngIf="dropdownOpen"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+           
+
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/uk/books/osnovy-treydinga"
+                (click)="
+                  $event.preventDefault();
+                  selectLang('ua');
+                  navigateTo('uk/books/osnovy-treydinga')
+                "
+              >
+                UA
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru/books/osnovy-treydinga"
+                (click)="
+                  $event.preventDefault();
+                  selectLang('ru');
+                  navigateTo('ru/books/osnovy-treydinga')
+                "
+              >
+                RU
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/en/books/osnovy-treydinga"
+                (click)="
+                  $event.preventDefault();
+                  selectLang('en');
+                  navigateTo('en/books/osnovy-treydinga')
+                "
+              >
+                EN
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="wrapper"
+          [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          [ngClass]="{ 'dark-theme': isDark, 'light-theme': !isDark }"
+        >
+          <button *ngIf="isDark" class="icon-btn" (click)="toggleTheme()">
+            <div>
+              <img
+                src="assets/redesignArapovTrade/img/LightMode_dark.png"
+                alt="light"
+              />
+            </div>
+            <div>
+              <img
+                class="theme_icon_dark"
+                src="assets/redesignArapovTrade/img/darkmode_light.png"
+                alt="dark"
+              />
+            </div>
+          </button>
+          <button *ngIf="!isDark" class="icon-btn" (click)="toggleTheme()">
+            <div
+              style="
+                background-color: #fcdb35;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                border-radius: 14px;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <img
+                src="assets/redesignArapovTrade/img/LightMode_light.png"
+                alt="light"
+              />
+            </div>
+            <div>
+              <img
+                class="theme_icon_dark"
+                src="assets/redesignArapovTrade/img/darkmode_dark.png"
+                alt="dark"
+              />
+            </div>
+          </button>
+        </div>
+
+        <div class="menu-switcher" [class.open]="menuOpen">
+          <button
+            class="menu-btn"
+            (click)="toggleMenu()"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+          >
+            <span class="icon flex" *ngIf="!menuOpen">
+              <img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/menu-button.svg"
+                alt="menu_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/menu-button-light.svg"
+                alt="menu_icon"
+              />
+            </span>
+
+            <span class="icon flex cross" *ngIf="menuOpen">
+              <img
+                *ngIf="isDark"
+                src="assets/redesignArapovTrade/img/menu-button-cross.svg"
+                alt="menu_icon"
+              />
+              <img
+                *ngIf="!isDark"
+                src="assets/redesignArapovTrade/img/menu-button-cross-light.svg"
+                alt="menu_icon"
+              />
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="author-page_main-block" data-aos="fade-up" data-aos-delay="300">
+      <div class="author-page_main-block_image-block">
+        <img
+          [src]="
+            isDark
+              ? '/assets/redesignArapovTrade/img/cover_en.jpg'
+              : '/assets/redesignArapovTrade/img/cover_en.jpg'
+          "
+          alt="img"
+        />
+        <div
+          [ngClass]="{
+            'isbn-block': true,
+            'gradient-block-orange': isDark,
+            'podrobnee-light': !isDark,
+          }"
+        >
+          <p
+            [ngStyle]="{ color: !isDark ? '#0C263A' : '#03314b' }"
+            class="isbt-text"
+          >
+            ISBN: 979-8-90243-734-5
+          </p>
+        </div>
+      </div>
+      <div class="author-page_main-block_text-block">
+        <div class="author-page_main-block_title-block">
+          <h1 class=" " [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            Trading fundamentals. Market Basics • Technical Analysis • Volume
+            Analysis
+          </h1>
+          <!-- #a18e0f.  background:#017ec4e0; -->
+          <br />
+          <h2
+            class="author_descr_span"
+            [ngClass]="{
+              'gradient-orange': isDark,
+              'gradient-blue_author-page': !isDark,
+            }"
+          >
+            A methodological guide for beginning traders
+          </h2>
+        </div>
+        <div class="book_block_container">
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">AUTHOR</p>
+              <p class="book_block_container-item_description">Igor Arapov</p>
+            </div>
+          </div>
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">PAGES</p>
+              <p class="book_block_container-item_description">60</p>
+            </div>
+          </div>
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">FORMAT</p>
+              <p class="book_block_container-item_description">EPUB</p>
+            </div>
+          </div>
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">YEAR</p>
+              <p class="book_block_container-item_description">2025</p>
+            </div>
+          </div>
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">LANGUAGE</p>
+              <p class="book_block_container-item_description">English</p>
+            </div>
+          </div>
+          <div
+            class="book_block_container-item"
+            [ngStyle]="{ background: !isDark ? '#017ec4e0' : '#a18e0f' }"
+          >
+            <div class="book_block_container-item-block">
+              <p class="book_block_container-item_title">PRICE</p>
+              <p class="book_block_container-item_description">Free</p>
+            </div>
+          </div>
+        </div>
+        <div class="author-page_main-block_description">
+          <span
+            class="author-page_main-block_description-text"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >The first volume of the "Trading Fundamentals" series is a free
+            practical guide for those who are starting their journey in
+            financial markets. Financial market basics — exchange structure,
+            types of trading instruments, main market participants. Technical
+            analysis — chart types, trends, support and resistance levels, price
+            patterns. Volume analysis — horizontal and vertical volumes,
+            analysis of large market participants' actions. Risk management —
+            capital management, trading plan. <br />
+            This
+            <a
+              class="linkrefinto"
+              [ngStyle]="{
+                color: isDark ? '#fdff8b' : '#0074e6',
+              }"
+              target="_blank"
+              href="http://www.irbis-nbuv.gov.ua/cgi-bin/irbis64r_81/cgiirbis_64.exe?Z21ID=&I21DBN=VFEIR&P21DBN=VFEIR&S21STN=1&S21REF=10&S21FMT=fullw&C21COM=S&S21CNR=20&S21P01=3&S21P02=0&S21P03=A=&S21COLORTERMS=0&S21STR=Arapov%2C%20Igor"
+              >book</a
+            >
+            is officially included in the collection of the V. I. Vernadsky
+            National Library of Ukraine — the largest library in the country
+            with a collection of over 15 million items. The library is Ukraine's
+            main scientific and information center under the National Academy of
+            Sciences.
+          </span>
+        </div>
+        <div class="authot_button_block">
+          <div
+            (click)="downloadFile()"
+            [ngClass]="{
+              'btn-section-one': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
+          >
+            <span
+              class="pochaty-navchannya"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >Download for free</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="coins"></div>
+    <div
+      class="author-page_main-block_bg"
+      [ngStyle]="{
+        background: isDark
+          ? 'url(/assets/redesignArapovTrade/img/author-page_main-block_bg.png)  no-repeat center'
+          : 'url(/assets/redesignArapovTrade/img/author-page_main-block_bg-light.png) no-repeat center',
+      }"
+    ></div>
+    <div
+      class="author-page_main-block_bg-image"
+      [ngStyle]="{
+        background: isDark
+          ? 'url(/assets/redesignArapovTrade/img/author-page_main-block_bg-image.png) no-repeat'
+          : 'url(/assets/redesignArapovTrade/img/author-page_main-block_bg-image-light.png) no-repeat',
+      }"
+    ></div>
+  </div>
+
+  <!-- <div
+    [ngClass]="{
+      'forth-section': true,
+      'forth-section-container-bg-light': !isDark
+    }"
+  >
+    <div
+      [ngClass]="{
+           
+          'forth-section-container-bg': true,
+           
+          
+        }"
+      [ngStyle]="{
+        background: isDark
+          ? 'url(/assets/redesignArapovTrade/img/forth-section-container-bg-dark.png) no-repeat'
+          : 'none'
+      }"
+    ></div>
+
+    <div class="forth-section-container">
+      <div
+        [ngClass]="{
+          'second-section_programm-block-title': true,
+          'forth-section-title': true,
+          'gradient-orange': isDark,
+          'gradient-blue_author-page': !isDark
+        }"
+      >
+      Where is the book available?
+      </div>
+      <div 
+        class="forth-section-container_tabs-block"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div (click)="openLink('https://www.everand.com/book/968356192/Основы-трейдинга-Методическое-пособие-для-начинающих-трейдеров')"
+          class="forth-section-container_tab"
+          [ngStyle]="{
+            background: isDark
+              ? 'linear-gradient(-23deg, rgba(255, 207, 104, 0.1) 22%, rgba(255, 187, 0, 0 ) 100%)'
+              : '#ffffff'
+          }"
+        >
+          <div class="tick-icon">
+            <img
+              [src]="
+                isDark
+                  ? 'assets/redesignArapovTrade/img/author-tick-dark.png'
+                  : 'assets/redesignArapovTrade/img/author-tick-light.png'
+              "
+              alt="tick"
+            />
+          </div>
+
+          <div  >
+            <span
+              class="item-title_head"
+              [ngClass]="{
+                'second-section_programm-block-title': true,
+                'second-section_programm-block-title-text': true,
+                'gradient-orange': isDark,
+                'gradient-blue_author-page': !isDark
+              }"
+              > Everand</span
+            >
+          </div>
+          
+        </div>
+        <div (click)="openLink('https://books.apple.com/us/book/%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-%D1%82%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D0%BD%D0%B3%D0%B0/id6756718296')"
+          class="forth-section-container_tab"
+          [ngStyle]="{
+            background: isDark
+              ? 'linear-gradient(-23deg, rgba(255, 207, 104, 0.1) 22%, rgba(255, 187, 0, 0 ) 100%)'
+              : '#ffffff'
+          }"
+        >
+            
+        
+          <div class="tick-icon"> 
+            
+            <img
+              [src]="
+                isDark
+                  ? 'assets/redesignArapovTrade/img/author-tick-dark.png'
+                  : 'assets/redesignArapovTrade/img/author-tick-light.png'
+              "
+              alt="tick"
+            />
+          </div>
+
+          <div  >
+            <span
+              class="item-title_head"
+              [ngClass]="{
+                'second-section_programm-block-title': true,
+                'second-section_programm-block-title-text': true,
+                'gradient-orange': isDark,
+                'gradient-blue_author-page': !isDark
+              }"
+              > Apple Books</span
+            >
+          </div>
+           
+        </div>
+
+        <div
+          class="forth-section-container_tab"
+          [ngStyle]="{
+            background: isDark
+              ? 'linear-gradient(-23deg, rgba(255, 207, 104, 0.1) 22%, rgba(255, 187, 0, 0 ) 100%)'
+              : '#ffffff'
+          }"
+        >
+          <div class="tick-icon">
+            <img
+              [src]="
+                isDark
+                  ? 'assets/redesignArapovTrade/img/author-tick-dark.png'
+                  : 'assets/redesignArapovTrade/img/author-tick-light.png'
+              "
+              alt="tick"
+            />
+          </div>
+
+          <div  >
+            <span
+              class="item-title_head"
+              [ngClass]="{
+                'second-section_programm-block-title': true,
+                'second-section_programm-block-title-text': true,
+                'gradient-orange': isDark,
+                'gradient-blue_author-page': !isDark
+              }"
+              >Amazon Kindle</span
+            >
+          </div>
+          
+        </div>
+
+        <div
+          class="forth-section-container_tab"
+          [ngStyle]="{
+            background: isDark
+              ? 'linear-gradient(-23deg, rgba(255, 207, 104, 0.1) 22%, rgba(255, 187, 0, 0 ) 100%)'
+              : '#ffffff'
+          }"
+        >
+          <div class="tick-icon">
+            <img
+              [src]="
+                isDark
+                  ? 'assets/redesignArapovTrade/img/author-tick-dark.png'
+                  : 'assets/redesignArapovTrade/img/author-tick-light.png'
+              "
+              alt="tick"
+            />
+          </div>
+
+          <div  >
+            <span
+              class="item-title_head" (click)="downloadFile()"
+              [ngClass]="{
+                'second-section_programm-block-title': true,
+                'second-section_programm-block-title-text': true,
+                'gradient-orange': isDark,
+                'gradient-blue_author-page': !isDark
+              }"
+              >Download EPUB</span
+            >
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="author-page_section-three">
+    <div
+      class="author-page_section-three-block"
+      [ngStyle]="{
+        background: isDark
+          ? 'rgba(255, 255, 255, 0.08)'
+          : 'rgba(0, 131, 205, 0.08)',
+        border: isDark ? ' 1px solid #46483A' : '1px solid #C5E2F2',
+      }"
+    >
+      <div class="author-page_main-block_title-block three-block">
+        <span
+          class=" "
+          [ngClass]="{
+            'gradient-orange': isDark,
+            'gradient-blue_author-page': !isDark,
+          }"
+          >Do you want professional training?</span
+        >
+      </div>
+
+      <div class="author-page_section-three-block_description">
+        <span
+          class="author-page_main-block_description-text"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >We're glad to see your interest in professional training. To get a
+          consultation and reserve your spot, choose a messenger that's
+          convenient for you and send us a message. For example, simply write "I
+          want to join the course". <br />
+          Our manager will contact you shortly and answer all your questions.
+        </span>
+      </div>
+
+      <div class="author-page_section-three-block_description_small">
+        <span
+          class=" "
+          [ngClass]="{
+            'gradient-orange': isDark,
+            'gradient-blue_author-page': !isDark,
+          }"
+          >Choose a convenient way to contact us</span
+        >
+      </div>
+
+      <div class="author-page_section-three-block_social-links">
+        <a rel="nofollow"
+          href="https://telegram.me/+380506308200"
+          class="section-three-block_social-link"
+        >
+          <div
+            [ngClass]="{
+              'three-block_social-links_item': true,
+              'three-block_social-links_item-dark': isDark,
+              'three-block_social-links_item-light': !isDark,
+            }"
+            [ngStyle]="{
+              background: isDark
+                ? 'rgba(255, 205, 41, 0.10)'
+                : 'rgba(0, 130, 204, 0.10)',
+              border: isDark
+                ? '1px solid rgba(255, 205, 41, 0.30)'
+                : '1px solid rgba(0, 130, 204, 0.30)',
+            }"
+          >
+            <svg
+              width="36"
+              height="32"
+              viewBox="0 0 36 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                [ngClass]="{
+                  'svg-link-dark': isDark,
+                  'svg-link-light': !isDark,
+                }"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M31.5617 0.828286C31.992 0.646558 32.463 0.583881 32.9257 0.646778C33.3884 0.709676 33.8258 0.895849 34.1924 1.18592C34.559 1.47599 34.8414 1.85935 35.0103 2.29611C35.1791 2.73286 35.2282 3.20704 35.1524 3.66929L31.2029 27.706C30.8198 30.0246 28.2844 31.3543 26.1651 30.1993C24.3923 29.2331 21.7593 27.7445 19.391 26.1912C18.2069 25.4136 14.5795 22.9238 15.0253 21.1521C15.4084 19.6373 21.5033 13.9448 24.9861 10.5604C26.3531 9.23075 25.7297 8.46371 24.1154 9.68677C20.1067 12.7235 13.6705 17.3414 11.5425 18.6414C9.66531 19.7875 8.68665 19.9832 7.51643 19.7875C5.38147 19.4311 3.4015 18.879 1.78548 18.2063C-0.398233 17.2977 -0.292007 14.2855 1.78374 13.4084L31.5617 0.828286Z"
+              />
+            </svg>
+          </div>
+        </a>
+        <a rel="nofollow"
+          href="viber://chat?number=+380506308200"
+          class="section-three-block_social-link"
+        >
+          <div
+            [ngClass]="{
+              'three-block_social-links_item': true,
+              'three-block_social-links_item-dark': isDark,
+              'three-block_social-links_item-light': !isDark,
+            }"
+            [ngStyle]="{
+              background: isDark
+                ? 'rgba(255, 205, 41, 0.10)'
+                : 'rgba(0, 130, 204, 0.10)',
+              border: isDark
+                ? '1px solid rgba(255, 205, 41, 0.30)'
+                : '1px solid rgba(0, 130, 204, 0.30)',
+            }"
+          >
+            <svg
+              width="39"
+              height="39"
+              viewBox="0 0 39 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                [ngClass]="{
+                  'svg-link-dark': isDark,
+                  'svg-link-light': !isDark,
+                }"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M27.1434 4.72554C22.1837 3.61688 17.0404 3.61688 12.0806 4.72554L11.5462 4.84378C10.1507 5.15486 8.86897 5.84713 7.84362 6.84354C6.81827 7.83994 6.08958 9.10137 5.73868 10.4874C4.48367 15.4416 4.48367 20.6306 5.73868 25.5848C6.07336 26.9066 6.75197 28.1163 7.70555 29.0909C8.65913 30.0655 9.8537 30.7704 11.1679 31.1338L11.9009 35.51C11.9243 35.649 11.9846 35.7791 12.0753 35.8869C12.1661 35.9947 12.2841 36.0761 12.4171 36.1228C12.5501 36.1695 12.6931 36.1797 12.8313 36.1523C12.9696 36.1249 13.0979 36.061 13.2031 35.9672L17.5083 32.1159C20.7401 32.311 23.9833 32.0526 27.1434 31.3482L27.6794 31.23C29.0749 30.9189 30.3566 30.2266 31.382 29.2302C32.4073 28.2338 33.136 26.9724 33.4869 25.5864C34.7419 20.6322 34.7419 15.4432 33.4869 10.489C33.1359 9.10274 32.407 7.84118 31.3813 6.84476C30.3557 5.84833 29.0736 5.15617 27.6778 4.84535L27.1434 4.72554ZM13.4111 10.3597C13.1182 10.3168 12.8193 10.3758 12.5646 10.5268H12.5425C11.9514 10.8736 11.4185 11.3103 10.9645 11.8242C10.5862 12.2609 10.3813 12.7023 10.3277 13.1279C10.2961 13.3801 10.3182 13.6355 10.3923 13.8767L10.4207 13.8925C10.8463 15.1426 11.4012 16.3454 12.0791 17.4773C12.9535 19.0668 14.0291 20.5371 15.2792 21.8518L15.317 21.9054L15.377 21.9496L15.4132 21.9921L15.4573 22.03C16.7768 23.2838 18.2505 24.3644 19.843 25.2459C21.6637 26.2375 22.7688 26.7057 23.4325 26.9011V26.9106C23.6264 26.9705 23.8029 26.9973 23.9811 26.9973C24.5466 26.9567 25.082 26.7268 25.5008 26.3446C26.0131 25.8906 26.4466 25.3562 26.784 24.7619V24.7509C27.1008 24.1518 26.9936 23.5875 26.5365 23.2044C25.619 22.4011 24.6259 21.6884 23.5712 21.0762C22.865 20.6932 22.1477 20.9249 21.8576 21.3127L21.2381 22.0946C20.9197 22.4824 20.3427 22.4288 20.3427 22.4288L20.3269 22.4383C16.0217 21.3395 14.8725 16.9807 14.8725 16.9807C14.8725 16.9807 14.8189 16.3879 15.2177 16.0853L15.9933 15.461C16.3654 15.1583 16.6239 14.4426 16.2251 13.7364C15.6143 12.6824 14.9032 11.6899 14.1016 10.7727C13.9263 10.5573 13.6807 10.4106 13.408 10.3581M20.6848 8.46483C20.4757 8.46483 20.2752 8.54787 20.1274 8.69569C19.9796 8.84351 19.8966 9.04399 19.8966 9.25304C19.8966 9.46209 19.9796 9.66257 20.1274 9.81039C20.2752 9.95821 20.4757 10.0413 20.6848 10.0413C22.679 10.0413 24.3342 10.6923 25.6442 11.9408C26.3174 12.6234 26.8423 13.4321 27.186 14.3181C27.5312 15.2056 27.6888 16.1531 27.6479 17.1021C27.6435 17.2056 27.6596 17.3089 27.6952 17.4062C27.7308 17.5035 27.7852 17.5928 27.8553 17.6691C27.9969 17.8231 28.1939 17.9146 28.403 17.9234C28.612 17.9322 28.816 17.8575 28.97 17.7159C29.124 17.5743 29.2155 17.3773 29.2243 17.1683C29.2713 16.001 29.0776 14.8366 28.6552 13.7474C28.2308 12.6527 27.5846 11.6577 26.7572 10.8247L26.7414 10.809C25.1161 9.25619 23.0589 8.46483 20.6848 8.46483ZM20.6312 11.0565C20.4221 11.0565 20.2216 11.1395 20.0738 11.2873C19.926 11.4352 19.843 11.6356 19.843 11.8447C19.843 12.0537 19.926 12.2542 20.0738 12.402C20.2216 12.5499 20.4221 12.6329 20.6312 12.6329H20.658C22.0957 12.7354 23.1424 13.2146 23.8755 14.0012C24.6274 14.8115 25.0168 15.8189 24.9868 17.0642C24.982 17.2733 25.0605 17.4757 25.2049 17.6269C25.3493 17.7781 25.5479 17.8658 25.7569 17.8706C25.966 17.8754 26.1684 17.7969 26.3196 17.6525C26.4708 17.5081 26.5585 17.3095 26.5633 17.1005C26.6011 15.4657 26.0746 14.0548 25.031 12.9293V12.9261C23.9637 11.7816 22.4992 11.1763 20.7368 11.058L20.71 11.0549L20.6312 11.0565ZM20.6012 13.697C20.4957 13.6877 20.3895 13.6997 20.2887 13.7324C20.188 13.7651 20.0949 13.8177 20.015 13.8872C19.935 13.9566 19.8699 14.0415 19.8235 14.1366C19.7771 14.2318 19.7503 14.3354 19.7448 14.4411C19.7393 14.5469 19.7551 14.6527 19.7914 14.7521C19.8277 14.8516 19.8836 14.9428 19.9559 15.0202C20.0282 15.0976 20.1153 15.1596 20.2121 15.2026C20.3089 15.2455 20.4134 15.2686 20.5193 15.2703C21.1782 15.3049 21.5991 15.5036 21.8639 15.77C22.1304 16.038 22.329 16.4683 22.3652 17.1415C22.3672 17.2473 22.3905 17.3516 22.4336 17.4482C22.4767 17.5448 22.5389 17.6317 22.6163 17.7038C22.6937 17.7759 22.7849 17.8316 22.8843 17.8677C22.9838 17.9038 23.0895 17.9195 23.1951 17.9139C23.3008 17.9083 23.4042 17.8815 23.4993 17.8351C23.5943 17.7886 23.6791 17.7235 23.7484 17.6437C23.8178 17.5638 23.8704 17.4707 23.903 17.3701C23.9357 17.2695 23.9478 17.1633 23.9385 17.0579C23.8881 16.1121 23.5917 15.2766 22.9848 14.6618C22.3747 14.047 21.5439 13.7474 20.6012 13.697Z"
+              />
+            </svg>
+          </div>
+        </a>
+
+        <a rel="nofollow"
+          href="https://wa.me/+380506308200"
+          class="section-three-block_social-link"
+        >
+          <div
+            [ngClass]="{
+              'three-block_social-links_item': true,
+              'three-block_social-links_item-dark': isDark,
+              'three-block_social-links_item-light': !isDark,
+            }"
+            [ngStyle]="{
+              background: isDark
+                ? 'rgba(255, 205, 41, 0.10)'
+                : 'rgba(0, 130, 204, 0.10)',
+              border: isDark
+                ? '1px solid rgba(255, 205, 41, 0.30)'
+                : '1px solid rgba(0, 130, 204, 0.30)',
+            }"
+          >
+            <svg
+              width="38"
+              height="39"
+              viewBox="0 0 38 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                [ngClass]="{
+                  'svg-link-dark': isDark,
+                  'svg-link-light': !isDark,
+                }"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.0005 0.582764C29.4478 0.582764 37.9172 9.05235 37.9172 19.4999C37.9172 29.9474 29.4478 38.417 19.0005 38.417C15.7275 38.417 12.648 37.5846 9.96096 36.1205L1.62 37.5195C1.41442 37.5538 1.20363 37.539 1.0049 37.4761C0.806168 37.4133 0.625145 37.3043 0.476652 37.158C0.328159 37.0117 0.216419 36.8324 0.150581 36.6346C0.0847429 36.4369 0.0666787 36.2263 0.0978676 36.0202L1.50562 26.7113C0.562558 24.4242 0.0794093 21.9737 0.08379 19.4999C0.08379 9.05235 8.5532 0.582764 19.0005 0.582764ZM11.8614 10.1733C10.5681 10.1733 9.4964 11.2643 9.697 12.6123C10.0771 15.1393 11.1998 19.7955 14.5397 23.1601C18.0309 26.6778 23.0267 28.1824 25.7313 28.7754C27.1321 29.0834 28.3269 27.9747 28.3269 26.6074V23.3977C28.3269 23.291 28.2947 23.1869 28.2344 23.0989C28.1741 23.011 28.0885 22.9433 27.989 22.905L24.54 21.5799C24.4469 21.5443 24.3457 21.5357 24.2479 21.5552L20.769 22.2345C18.5254 21.0731 17.1669 19.7709 16.3522 17.8088L17.0068 14.2629C17.0243 14.1686 17.0158 14.0712 16.9821 13.9814L15.6888 10.5164C15.6512 10.416 15.584 10.3293 15.4959 10.268C15.4079 10.2067 15.3033 10.1737 15.1961 10.1733H11.8614Z"
+              />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-main-block">
+      <div class="logo-body">
+        <div class="frame-29">
+          <div class="logo">
+            <div class="header-logo-block">
+              <div
+                class="header-logo hhd"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+                    : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+                }"
+              ></div>
+              <span class="loog-text hg">Arapov.Trade</span>
+            </div>
+          </div>
+          <span class="footer-text"
+            >Free trading education and practical recommendations for beginners
+            and pros to avoid losing the deposit.</span
+          >
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="menu">
+          <span class="menu-title">Menu</span>
+           <div class="menu-title-block">
+            <a 
+              href="/en/main"
+              (click)="$event.preventDefault(); navigateTo('en/main')"
+              class="menu-title_text"
+              >Main page</a
+            >
+          </div>
+          <div class="menu-title-block">
+            <a href="/en"
+              (click)="$event.preventDefault(); navigateTo('en')" class="menu-title_text"
+              >About the author of the course</a
+            >
+          </div>
+          <div class="menu-title-block">
+            <a href="/en/studying"
+              (click)="$event.preventDefault(); navigateTo('en/studying')" class="menu-title_text"
+              >Trading courses</a
+            >
+          </div>
+          <div class="menu-title-block">
+            <a  href="/en/freestudying"
+              (click)="$event.preventDefault(); navigateTo('en/freestudying')" class="menu-title_text"
+              >Free Trading Education</a
+            >
+          </div>
+        </div>
+        <div class="menu">
+          <span class="menu-title">Links</span>
+          <!-- <a
+            href="/assets/documents/PublicOfferAgreementNew.docx"
+            download
+            class="menu-title-block menu-title_text"
+            >Public Offer Agreement</a
+          > -->
+          <a
+            href="/en/privacy-policy" (click)="$event.preventDefault(); navigateTo('en/privacy-policy')"
+            class="menu-title-block menu-title_text"
+            >Privacy Policy</a
+          >
+          <a
+             href="/en/disclaimer" (click)="$event.preventDefault(); navigateTo('en/disclaimer')"
+            class="menu-title-block menu-title_text"
+            >Disclaimer</a
+          >
+        </div>
+
+        <div class="menu">
+          <span class="menu-title">Our Projects</span>
+          <a
+            href="/en/freestudying/about" (click)="$event.preventDefault(); navigateTo('en/freestudying/about')"
+            class="menu-title-block menu-title_text"
+            >About ARAPOV.TRADE</a
+          >
+          <a
+            href="https://arapov.trade/en/studying"
+            target="_blank"
+            class="menu-title-block menu-title_text"
+          >
+            <span class="menu-title-block menu-title_text">
+              Professional Courses</span
+            >
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="component-1f">
+      <div class="in-20"></div>
+      <div class="component-21">
+        <div class="box-b">
+          <span class="text-2d">Arapov.Trade</span>
+          <div class="pic-14"></div>
+          <span class="text-2e">2025-2026. All rights reserved.</span>
+          <span class="text-2e"
+            >Sole Proprietor Arapov I. V. TIN 3314507171</span
+          >
+        </div>
+        
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        'bg-shapes-footer': true,
+        'bg-shapes-footer-dark': isDark,
+        'bg-shapes-footer-light': !isDark,
+      }"
+    ></div>
+  </div>
+</div>

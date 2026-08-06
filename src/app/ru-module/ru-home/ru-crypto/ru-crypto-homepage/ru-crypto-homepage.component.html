@@ -1,0 +1,1788 @@
+<div
+  class="main-container"
+  [ngStyle]="{ 'background-color': isDark ? '#141500' : '#FFFFFF' }"
+>
+  <div style="padding: 0 20px">
+    <div>
+      <div class="header-new_block" data-aos="fade-down" data-aos-delay="300">
+        <div class="header-logo-block">
+          <div
+            class="header-logo"
+            [ngStyle]="{
+              background: isDark
+                ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+                : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+            }"
+          ></div>
+          <span
+            class="loog-text"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >Arapov.Trade</span
+          >
+        </div>
+
+        <div class="nav-bar">
+          <!-- Список для десктопа -->
+          <ul
+            class="nav-list desktop-nav"
+            [ngClass]="{ 'menu-item-dark': isDark, 'menu-item-light': !isDark }"
+          >
+            <li [ngStyle]="{ color: isDark ? '#FFCD29' : '#0082CC' }">
+              <a
+                href="/ru/main"
+                (click)="$event.preventDefault(); navigateTo('ru/main')"
+                [ngStyle]="{ color: isDark ? '#FFCD29' : '#0082CC' }"
+              >
+                Главная
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ru/freestudying"
+                (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+              >
+                бесплатные курсы
+              </a>
+            </li>
+            <li>
+              <a href="/ru" (click)="$event.preventDefault(); navigateTo('ru')">
+                Об авторе
+              </a>
+            </li>
+            <li>
+              <a
+                href="/ru/studying"
+                (click)="$event.preventDefault(); navigateTo('ru/studying')"
+              >
+                Профессиональные курсы
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="langAndThere_block">
+          <div class="lang-switcher" [class.open]="dropdownOpen">
+            <button
+              class="lang-btn"
+              (click)="toggleDropdown()"
+              [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+            >
+              <span class="icon flex"
+                ><img
+                  *ngIf="isDark"
+                  src="assets/redesignArapovTrade/img/lang_icon.png"
+                  alt="lang_icon"
+                />
+                <img
+                  *ngIf="!isDark"
+                  src="assets/redesignArapovTrade/img/lang_icon-light.png"
+                  alt="lang_icon"
+                />
+              </span>
+              <span
+                class="code"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >{{ currentLang.toUpperCase() }}</span
+              >
+              <span class="arrow flex"
+                ><img
+                  *ngIf="isDark"
+                  src="assets/redesignArapovTrade/img/lang_arrow.png"
+                  alt="arrow"
+                />
+                <img
+                  *ngIf="!isDark"
+                  src="assets/redesignArapovTrade/img/lang_arrow-light.png"
+                  alt="arrow"
+                />
+              </span>
+            </button>
+
+            <ul
+              class="dropdown"
+              *ngIf="dropdownOpen"
+              [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+            >
+              <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+                <a
+                  href="/"
+                  (click)="
+                    $event.preventDefault(); selectLang('ua'); navigateTo('/')
+                  "
+                >
+                  UA
+                </a>
+              </li>
+              <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+                <a
+                  href="/ru/main"
+                  (click)="
+                    $event.preventDefault();
+                    selectLang('ru');
+                    navigateTo('ru/main')
+                  "
+                >
+                  RU
+                </a>
+              </li>
+              <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+                <a
+                  href="/en/main"
+                  (click)="
+                    $event.preventDefault();
+                    selectLang('en');
+                    navigateTo('en/main')
+                  "
+                >
+                  EN
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="wrapper"
+            [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+            [ngClass]="{ 'dark-theme': isDark, 'light-theme': !isDark }"
+          >
+            <button *ngIf="isDark" class="icon-btn" (click)="toggleTheme()">
+              <div>
+                <img
+                  src="assets/redesignArapovTrade/img/LightMode_dark.png"
+                  alt="light"
+                />
+              </div>
+              <div>
+                <img
+                  class="theme_icon_dark"
+                  src="assets/redesignArapovTrade/img/darkmode_light.png"
+                  alt="dark"
+                />
+              </div>
+            </button>
+            <button *ngIf="!isDark" class="icon-btn" (click)="toggleTheme()">
+              <div
+                style="
+                  background-color: #fcdb35;
+                  width: 25px;
+                  height: 25px;
+                  display: flex;
+                  border-radius: 14px;
+                  align-items: center;
+                  justify-content: space-around;
+                "
+              >
+                <img
+                  src="assets/redesignArapovTrade/img/LightMode_light.png"
+                  alt="light"
+                />
+              </div>
+              <div>
+                <img
+                  class="theme_icon_dark"
+                  src="assets/redesignArapovTrade/img/darkmode_dark.png"
+                  alt="dark"
+                />
+              </div>
+            </button>
+          </div>
+
+          <div class="menu-switcher" [class.open]="menuOpen">
+            <button
+              class="menu-btn"
+              (click)="toggleMenu()"
+              [ngStyle]="{ background: isDark ? '#2c2a06' : '#DBE2E7' }"
+            >
+              <span class="icon flex" *ngIf="!menuOpen">
+                <img
+                  *ngIf="isDark"
+                  src="assets/redesignArapovTrade/img/menu-button.svg"
+                  alt="menu_icon"
+                />
+                <img
+                  *ngIf="!isDark"
+                  src="assets/redesignArapovTrade/img/menu-button-light.svg"
+                  alt="menu_icon"
+                />
+              </span>
+
+              <span class="icon flex cross" *ngIf="menuOpen">
+                <img
+                  *ngIf="isDark"
+                  src="assets/redesignArapovTrade/img/menu-button-cross.svg"
+                  alt="menu_icon"
+                />
+                <img
+                  *ngIf="!isDark"
+                  src="assets/redesignArapovTrade/img/menu-button-cross-light.svg"
+                  alt="menu_icon"
+                />
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mask_drop-menu" *ngIf="menuOpen">
+        <div
+          class="menu-dropdown"
+          [ngStyle]="{
+            background: isDark ? 'rgba(1, 1, 1, 1)' : 'rgba(255, 255, 255, 1)',
+          }"
+        >
+          <ul>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru/main"
+                (click)="$event.preventDefault(); navigateTo('ru/main')"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                ГЛАВНАЯ
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru/freestudying"
+                (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                БЕСПЛАТНЫЕ КУРСЫ
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru"
+                (click)="$event.preventDefault(); navigateTo('ru')"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                ОБ АВТОРЕ
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru/studying"
+                (click)="$event.preventDefault(); navigateTo('ru/studying')"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                ПРОФЕССИОНАЛЬНЫЕ КУРСЫ
+              </a>
+            </li>
+            <li [ngClass]="{ 'drop-dark': isDark, 'drop-light': !isDark }">
+              <a
+                href="/ru/books"
+                (click)="$event.preventDefault(); navigateTo('ru/books')"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                МОИ КНИГИ
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-section-main">
+        <div class="flex-row-e">
+          <div class="flex-row-f" data-aos="fade-up" data-aos-delay="300">
+            <div class="coins"></div>
+            <div class="text-block_one-block">
+              <div
+                class="bezkoshtovniy-kurs"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
+              >
+                МЕТОД ВАЙКОФФА
+              </div>
+
+              <div class="rectangle"></div>
+              <h1 class="zagolovok">
+                <span
+                  class="navchannya-treidzingu-z-nulya"
+                  [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
+                  >Бесплатное обучение трейдингу </span
+                ><span
+                  class="posibnik-dlya-pochatkivtsiv"
+                  [ngClass]="{
+                    'gradient-orange': isDark,
+                    'gradient-blue': !isDark,
+                  }"
+                  >с нуля для начинающих</span
+                >
+              </h1>
+
+              <span
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >Бесплатное обучение трейдингу с нуля — здесь собрано всё что
+                нужно начинающему трейдеру: 50+ статей, 70+ видеоуроков на
+                основе метода Вайкоффа.
+                <span>
+                  Все материалы в открытом доступе, без регистрации и скрытых
+                  платежей.</span
+                >
+              </span>
+              <div class="authot_button_block">
+                <div
+                  [ngClass]="{
+                    'btn-section-one': true,
+                    'gradient-block-orange': isDark,
+                    'gradient-block-blue': !isDark,
+                  }"
+                >
+                  <a
+                    href="/ru/freestudying/freeeducation"
+                    (click)="
+                      $event.preventDefault();
+                      navigateTo('ru/freestudying/freeeducation')
+                    "
+                    ><span
+                      class="pochaty-navchannya"
+                      [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+                      >Начать обучение</span
+                    ></a
+                  >
+                </div>
+
+                <div
+                  class="podrobnee phone"
+                  [ngClass]="{
+                    'podrobnee-dark': isDark,
+                    'podrobnee-light': !isDark,
+                  }"
+                >
+                  <span class="text-p"
+                    ><a href="https://arapov.trade/ru/freestudying/about"
+                      >Про Arapov.trade</a
+                    >
+                  </span>
+                </div>
+              </div>
+
+              <div
+                class="follow-us-block"
+                [ngClass]="{ 'follow-pad': !isDark }"
+              >
+                <span
+                  class="follow-us"
+                  [ngStyle]="{ color: isDark ? '#ffffff' : '#03314b' }"
+                  >Подписывайтесь:</span
+                >
+                <div>
+                  <div class="icons">
+                    <!-- facebook -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark': isDark,
+                        'links-light': !isDark,
+                      }"
+                    >
+                      <a rel="me nofollow" href="https://www.facebook.com/igor.arapov.75">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 15 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.66 4.59339H14.1667V0.353394C12.953 0.22719 11.7335 0.164881 10.5133 0.166727C6.88666 0.166727 4.40666 2.38006 4.40666 6.43339V9.92673H0.313324V14.6734H4.40666V26.8334H9.31332V14.6734H13.3933L14.0067 9.92673H9.31332V6.90006C9.31332 5.50006 9.68666 4.59339 11.66 4.59339Z"
+                            [attr.fill]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <!-- linkedin -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark': isDark,
+                        'links-light': !isDark,
+                      }"
+                    >
+                      <a rel="me nofollow"
+                        href="https://www.linkedin.com/in/arapovtrade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 25 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M0.499969 3.46655C0.499969 2.70335 0.770247 2.07372 1.31078 1.57766C1.85131 1.08158 2.55403 0.833557 3.41889 0.833557C4.26832 0.833557 4.95556 1.07776 5.48066 1.56622C6.0212 2.06992 6.29147 2.72624 6.29147 3.53524C6.29147 4.26789 6.02893 4.87843 5.50383 5.36688C4.9633 5.87059 4.25286 6.12244 3.37256 6.12244H3.34939C2.49996 6.12244 1.81272 5.87059 1.28761 5.36688C0.76251 4.86318 0.499969 4.22973 0.499969 3.46655ZM0.801128 23.5002V8.20594H5.94398V23.5002H0.801128ZM8.79341 23.5002H13.9363V14.9601C13.9363 14.4259 13.998 14.0138 14.1216 13.7238C14.3378 13.2048 14.666 12.766 15.1061 12.4073C15.5463 12.0486 16.0984 11.8692 16.7625 11.8692C18.4923 11.8692 19.3571 13.0216 19.3571 15.3265V23.5002H24.5V14.7312C24.5 12.4721 23.9594 10.7588 22.8783 9.59112C21.7973 8.42344 20.3687 7.83961 18.5926 7.83961C16.6004 7.83961 15.0482 8.68674 13.9363 10.381V10.4268H13.9131L13.9363 10.381V8.20594H8.79341C8.82429 8.69437 8.83974 10.2131 8.83974 12.7622C8.83974 15.3112 8.82429 18.8905 8.79341 23.5002Z"
+                            [attr.fill]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <!-- twitter -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark': isDark,
+                        'links-light': !isDark,
+                      }"
+                    >
+                      <a rel="me nofollow" href="https://ru.tradingview.com/u/Igor_Arapov/">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 25 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.365 2.77903C16.365 3.42934 16.1067 4.05301 15.6468 4.51285C15.187 4.97269 14.5633 5.23103 13.913 5.23103C13.2627 5.23103 12.639 4.97269 12.1792 4.51285C11.7193 4.05301 11.461 3.42934 11.461 2.77903C11.461 2.12872 11.7193 1.50504 12.1792 1.0452C12.639 0.585361 13.2627 0.327026 13.913 0.327026C14.5633 0.327026 15.187 0.585361 15.6468 1.0452C16.1067 1.50504 16.365 2.12872 16.365 2.77903ZM10.25 0.500026H0.5V5.40403H5.346V12.673H10.25V0.500026ZM18.846 0.500026H24.5L19.394 12.673H13.74L18.846 0.500026Z"
+                            [attr.fill]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                          />
+                        </svg>
+                      </a>
+                    </div>
+
+                    <!-- youtube -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark-special': isDark,
+                        'links-light-special': !isDark,
+                      }"
+                    >
+                      <a rel="me nofollow" href="https://www.youtube.com/@ArapovTrade">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10 8.5L16 12L10 15.5V8.5Z"
+                            [attr.fill]="isDark ? '#ffffff' : '#0082CC'"
+                          />
+                          <path
+                            d="M12 5C21 5 21 5 21 12C21 19 21 19 12 19C3 19 3 19 3 12C3 5 3 5 12 5Z"
+                            [attr.stroke]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+
+                    <!-- tg -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark-special': isDark,
+
+                        'links-light-special': !isDark,
+                      }"
+                    >
+                      <a rel="nofollow" href="https://telegram.me/+380506308200">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.985 15.408L15.227 19.094C16.427 20.459 17.028 21.142 17.657 20.975C18.285 20.809 18.501 19.911 18.932 18.114L21.322 8.14604C21.987 5.37804 22.319 3.99504 21.581 3.31204C20.843 2.62904 19.564 3.13704 17.006 4.15204L5.13998 8.86504C3.09398 9.67804 2.07099 10.084 2.00599 10.782C1.99833 10.8532 1.99833 10.9249 2.00599 10.996C2.06899 11.695 3.08998 12.104 5.13398 12.923C6.05898 13.294 6.52199 13.48 6.85399 13.835C6.89132 13.875 6.92732 13.9164 6.96199 13.959C7.26799 14.339 7.39799 14.839 7.65899 15.835L8.14798 17.702C8.40098 18.672 8.52799 19.158 8.86099 19.224C9.19399 19.29 9.48299 18.888 10.062 18.083L11.985 15.408ZM11.985 15.408L11.668 15.078C11.306 14.7 11.125 14.512 11.125 14.278C11.125 14.044 11.305 13.855 11.668 13.478L15.241 9.75404"
+                            [attr.stroke]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+
+                    <!-- insta -->
+                    <div
+                      class="fb"
+                      [ngClass]="{
+                        'links-dark': isDark,
+                        'links-light': !isDark,
+                      }"
+                    >
+                      <a rel="me nofollow" href="https://www.instagram.com/arapovtrade/">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 21 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M6.3 0.5H14.7C17.9 0.5 20.5 3.1 20.5 6.3V14.7C20.5 16.2383 19.8889 17.7135 18.8012 18.8012C17.7135 19.8889 16.2383 20.5 14.7 20.5H6.3C3.1 20.5 0.5 17.9 0.5 14.7V6.3C0.5 4.76174 1.11107 3.28649 2.19878 2.19878C3.28649 1.11107 4.76174 0.5 6.3 0.5ZM6.1 2.5C5.14522 2.5 4.22955 2.87928 3.55442 3.55442C2.87928 4.22955 2.5 5.14522 2.5 6.1V14.9C2.5 16.89 4.11 18.5 6.1 18.5H14.9C15.8548 18.5 16.7705 18.1207 17.4456 17.4456C18.1207 16.7705 18.5 15.8548 18.5 14.9V6.1C18.5 4.11 16.89 2.5 14.9 2.5H6.1ZM15.75 4C16.0815 4 16.3995 4.1317 16.6339 4.36612C16.8683 4.60054 17 4.91848 17 5.25C17 5.58152 16.8683 5.89946 16.6339 6.13388C16.3995 6.3683 16.0815 6.5 15.75 6.5C15.4185 6.5 15.1005 6.3683 14.8661 6.13388C14.6317 5.89946 14.5 5.58152 14.5 5.25C14.5 4.91848 14.6317 4.60054 14.8661 4.36612C15.1005 4.1317 15.4185 4 15.75 4ZM10.5 5.5C11.8261 5.5 13.0979 6.02678 14.0355 6.96447C14.9732 7.90215 15.5 9.17392 15.5 10.5C15.5 11.8261 14.9732 13.0979 14.0355 14.0355C13.0979 14.9732 11.8261 15.5 10.5 15.5C9.17392 15.5 7.90215 14.9732 6.96447 14.0355C6.02678 13.0979 5.5 11.8261 5.5 10.5C5.5 9.17392 6.02678 7.90215 6.96447 6.96447C7.90215 6.02678 9.17392 5.5 10.5 5.5ZM10.5 7.5C9.70435 7.5 8.94129 7.81607 8.37868 8.37868C7.81607 8.94129 7.5 9.70435 7.5 10.5C7.5 11.2956 7.81607 12.0587 8.37868 12.6213C8.94129 13.1839 9.70435 13.5 10.5 13.5C11.2956 13.5 12.0587 13.1839 12.6213 12.6213C13.1839 12.0587 13.5 11.2956 13.5 10.5C13.5 9.70435 13.1839 8.94129 12.6213 8.37868C12.0587 7.81607 11.2956 7.5 10.5 7.5Z"
+                            [attr.fill]="
+                              isDark ? '#ffffff' : 'rgba(0,130,204,0.7)'
+                            "
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div *ngIf="isDark" class="mask-gradient"></div>
+
+          <div
+            class="image"
+            [ngClass]="{ 'shadow-dark': isDark, 'shadow-light': !isDark }"
+            [ngStyle]="{
+              background: isDark
+                ? 'url(assets/redesignArapovTrade/img/imageAuthor.png) no-repeat center'
+                : 'url(assets/redesignArapovTrade/img/imageAuthor-light.png) no-repeat center',
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-shapes-34"></div>
+    <div *ngIf="!isDark" class="bg-shape-1"></div>
+  </div>
+
+  <div class="sections-nav">
+    <h2
+      [ngClass]="{
+        'sections-nav_title': true,
+        'gradient-orange': isDark,
+        'gradient-blue': !isDark,
+      }"
+    >
+      Выберите направление обучения
+    </h2>
+
+    <div class="sections-nav_grid">
+      <!-- Трейдинг для початківців -->
+      <div
+        (click)="goToGroup('Трейдинг для начинающих')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Трейдинг для начинающих</span>
+      </div>
+
+      <!-- Технічний аналіз -->
+      <div
+        (click)="goToGroup('Технический анализ')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Технический анализ</span>
+      </div>
+
+      <!-- Об`ємний аналіз ринку (ВНИМАНИЕ: backtick U+0060 в строке группы) -->
+      <div
+        (click)="goToGroup('Объемный анализ рынка')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Объемный анализ рынка</span>
+      </div>
+
+      <!-- Концепція Смарт Мані -->
+      <div
+        (click)="goToGroup('Концепция Смарт Мани')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Концепция Смарт Мани</span>
+      </div>
+
+      <!-- Криптовалюта -->
+      <div
+        (click)="goToGroup('Криптовалюта')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Криптовалюта</span>
+      </div>
+
+      <!-- Психологія трейдингу -->
+      <div
+        (click)="goToGroup('Психология трейдинга')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Психология трейдинга</span>
+      </div>
+
+      <!-- Словник трейдера -->
+      <div
+        (click)="goToGroup('Словарь трейдера')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Словарь трейдера</span>
+      </div>
+
+      <!-- Фундаментальний аналіз -->
+      <div
+        (click)="goToGroup('Фундаментальный анали')"
+        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+      >
+        <span class="tab-text">Фундаментальный анализ</span>
+      </div>
+    </div>
+
+    <!-- Кнопка "усі курси" -->
+    <div
+      [ngClass]="{
+        'sections-nav_all': true,
+        'gradient-block-orange': isDark,
+        'gradient-block-blue': !isDark,
+      }"
+    >
+      <a
+        href="/ru/freestudying"
+        (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+        ><span
+          class="sections-nav_all-text"
+          [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+          >Все бесплатные курсы</span
+        ></a
+      >
+    </div>
+  </div>
+
+  <!-- 
+  <div class="flex-row-ba" id="section1">
+    <div class="row" data-aos="fade-up" data-aos-delay="300">
+      <div class="left">
+        <div class="bg-figure">
+          <div
+            [ngClass]="{
+              arrows: true,
+              'arrows-dark': isDark,
+              'arrows-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              bg: true,
+              'bg-dark': isDark,
+              'bg-light': !isDark,
+            }"
+          ></div>
+        </div>
+        <div class="img"></div>
+        <div
+          class="igor-info"
+          [ngStyle]="{
+            border: isDark ? '2px solid #52493b' : '2px solid #4D5460',
+          }"
+        >
+          <div class="avatar"></div>
+          <div class="name">
+            <span class="name-4">Игорь Арапов</span
+            ><span class="designation">Профессиональный трейдер</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="dorogiy-chitachu">
+          <span
+            [ngClass]="{
+              dorogiy: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+            >Дорогой </span
+          ><span
+            [ngClass]="{
+              chitachu: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+            >читатель!</span
+          >
+        </div>
+        <div class="text_second-block lato-regular">
+          <span
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >Цель этого методического пособия — ознакомить начинающих трейдеров
+            с финансовым рынком. Я старался составить материалы так, чтобы
+            охватить все ключевые темы, популярные на данный момент, и собрать
+            всё в одном месте, чтобы не было нужды искать информацию на
+            множестве сайтов или в книгах. Также я выборочно подошел к теории,
+            выделяя только ключевые темы трейдинга, ведь она очень обширна. Под
+            ключевыми темами я имею в виду информацию, которой сам активно
+            руководствуюсь уже много лет и которую применяю на практике.<br /><br />В
+            своих видео на
+          </span>
+          <a
+            href="https://www.youtube.com/@ArapovTrade"
+            target="_blank"
+            class="youtube-kanali"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            YouTube-канале </a
+          ><span
+            class="learning-materials-5 lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            я упоминал, что когда только начинал изучать трейдинг, материалов
+            было немного, и они были разрозненными, что усложняло процесс
+            обучения. Поэтому я посчитал своим вкладом в развитие создать
+            небольшую библиотеку, где каждый, кто интересуется этой темой, мог
+            бы сделать это относительно просто и непринужденно. Там же я
+            подготовил плейлист по изучению отдельных тем трейдинга в удобных
+            видеоророликах.</span
+          >
+        </div>
+        <div
+          [ngClass]="{
+            'youtube-channel': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a
+            href="https://www.youtube.com/@ArapovTrade"
+            target="_blank"
+            class="primary-button"
+            [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >просмотреть YouTube-канал</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        background: true,
+        'background-dark': isDark,
+        'background-light': !isDark,
+      }"
+    ></div>
+    <div class="about-bg" *ngIf="isDark"></div>
+  </div> -->
+
+  <div class="about" style="margin-bottom: 50px">
+    <div class="left-text">
+      <span
+        [ngClass]="{
+          'author-header': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+        >Игорь Арапов</span
+      >
+      <div
+        class="quote-block"
+        [ngStyle]="{
+          background: isDark
+            ? 'rgba(255, 255, 255, 0.08)'
+            : 'rgba(230, 237, 251, 0.7)',
+        }"
+      >
+        <div class="quote">
+          <span
+            class="quote-text"
+            [ngStyle]="{
+              color: isDark ? '#ffffff' : '#0C263A',
+              'border-left': isDark ? '5px solid #ffcd29' : '5px solid #0082CC',
+            }"
+            >«Успех на рынке — это не результат сверхчеловеческих усилий, а
+            следствие правильной системы. Каждый профессионал когда-то был на
+            вашем месте, но стабильности достигли те, кто заменил эмоциональный
+            хаос на холодную математику»</span
+          >
+
+          <span
+            class="features-list"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >I. Arapov</span
+          >
+        </div>
+      </div>
+      <div class="feature">
+        <div class="iconss">
+          <div
+            class="chart-experience"
+            [ngStyle]="{
+              border: isDark
+                ? '2px solid rgba(255, 255, 255, 0.16)'
+                : '2px solid #D6EBF7',
+            }"
+          >
+            <div class="group-6">
+              <div
+                [ngClass]="{
+                  'text-7': true,
+                  'text-7-dark': isDark,
+                  'text-7-light': !isDark,
+                }"
+              ></div>
+            </div>
+          </div>
+          <div class="feature-title">
+            <span
+              class="feature-body"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Более 13 лет опыта</span
+            ><span
+              class="feature-8"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
+              ><a
+                class="youtube-kanali"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                href="https://arapov.trade/ru"
+                >Независимый исследователь</a
+              >
+              в области психологии инвестиционных решений и поведенческих
+              финансов, автор серии книг по трейдингу с международными ISBN
+              (Bowker USA)</span
+            >
+          </div>
+        </div>
+        <div class="icon-9">
+          <div
+            class="system-trading"
+            [ngStyle]="{
+              border: isDark
+                ? '2px solid rgba(255, 255, 255, 0.16)'
+                : '2px solid #D6EBF7',
+            }"
+          >
+            <div
+              [ngClass]="{
+                'text-a': true,
+                'text-a-dark': isDark,
+                'text-a-light': !isDark,
+              }"
+            ></div>
+          </div>
+          <div class="feature-title-b">
+            <span
+              class="feature-body-c"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Системный трейдинг</span
+            ><span
+              class="image-d"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
+              >Системный подход на основе объёмного анализа, логики Вайкоффа и
+              контроля рисков</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shapes">
+      <div
+        [ngClass]="{
+          articles: true,
+          'articles-dark': isDark,
+          'articles-light': !isDark,
+        }"
+      ></div>
+      <div
+        class="articles-text"
+        [ngStyle]="{
+          background: isDark
+            ? 'rgba(255, 255, 255, 0.08)'
+            : 'rgba(0, 136, 255, 0.08)',
+          border: isDark
+            ? '2px solid rgba(230, 237, 251, 0.16)'
+            : '2px solid rgba(0, 136, 255, 0.16)',
+        }"
+      >
+        <div class="articles-count">
+          <span class="articles-recommendations"
+            >50+ обучающих статей<br /></span
+          ><span class="graphics">с практическими рекомендациями </span>
+        </div>
+      </div>
+      <div class="mask-group"><div class="reviews-block"></div></div>
+      <div
+        class="frame-e"
+        [ngStyle]="{
+          background: isDark
+            ? 'rgba(255, 255, 255, 0.08)'
+            : 'rgba(0, 136, 255, 0.08)',
+          border: isDark
+            ? '2px solid rgba(230, 237, 251, 0.16)'
+            : '2px solid rgba(0, 136, 255, 0.16)',
+        }"
+      >
+        <div class="positive-reviews">
+          <span class="positive-reviews-percent">70+ </span
+          ><span class="positive-reviews-text">Видеоуроков на YouTube</span>
+        </div>
+        <div class="frame-f"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 
+  <div class="flex-row">
+    <div class="background-shape"></div>
+
+    <div class="base">
+      <div
+        [ngClass]="{
+          'background-10': true,
+          'background-10-dark': isDark,
+          'background-10-light': !isDark,
+        }"
+      ></div>
+      <div class="up-block">
+        <div
+          [ngClass]="{
+            'arrow-11': true,
+            'arrow-11-dark': isDark,
+            'arrow-11-light': !isDark,
+          }"
+        ></div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          class="trading-definition"
+          [ngStyle]="{
+            background: isDark
+              ? 'rgba(255, 255, 255, 0.08)'
+              : 'rgba(0, 131, 205, 0.08)',
+            border: isDark
+              ? '2px solid rgba(230, 237, 251, 0.16)'
+              : '2px solid #E6EDFB',
+          }"
+        >
+          <div class="flex-row-12">
+            <div class="info-icon">
+              <div
+                [ngClass]="{
+                  'group-13': true,
+                  'group-13-dark': isDark,
+                  'group-13-light': !isDark,
+                }"
+              ></div>
+            </div>
+            <h2
+              [ngClass]="{
+                'trading-definition-title': true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
+              }"
+            >
+              Что такое трейдинг: простыми словами
+            </h2>
+          </div>
+          <span
+            class="trading-definition-text"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >В современном мире финансов слово трейдинг все чаще появляется в
+            заголовках новостей, социальных сетях и даже в повседневных
+            разговорах. Оно стало почти синонимом возможности быстрого
+            заработка, финансовой свободы и работы без офиса. Но что на самом
+            деле означает этот термин? Кто такой трейдер и как работает рынок,
+            на котором он зарабатывает?</span
+          >
+        </div>
+      </div>
+
+      <div class="fifth-content_block" data-aos="fade-up" data-aos-delay="300">
+        <div class="left-content">
+          <div class="heading-support-text">
+            <h2
+              [ngClass]="{
+                'osnovi-treidingu': true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
+              }"
+            >
+              Основы трейдинга
+            </h2>
+            <span
+              class="osnovi-treidingu-14"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Трейдинг (от англ. trading — торговля) — это процесс покупки и
+              продажи финансовых активов с целью получения прибыли на разнице в
+              ценах. На практике это может выглядеть так: трейдер покупает актив
+              дешевле, ждет повышения его стоимости и продает дороже. Разница
+              между ценой покупки и продажи (с учетом комиссий) и есть его
+              прибылью.</span
+            >
+          </div>
+          <div class="tabs">
+            <div
+              [ngClass]="{
+                tab: true,
+                'tab-dark': isDark,
+                'tab-light': !isDark,
+              }"
+            >
+              <span class="tab-text">Акции компаний</span>
+            </div>
+            <div
+              [ngClass]="{
+                tab: true,
+                'tab-dark': isDark,
+                'tab-light': !isDark,
+              }"
+            >
+              <span class="tab-text">Валюта (рынок Форекс)</span>
+            </div>
+            <div
+              [ngClass]="{
+                tab: true,
+                'tab-dark': isDark,
+                'tab-light': !isDark,
+              }"
+            >
+              <span class="tab-text"
+                >Криптовалюты (биткоин, эфириум и др.)</span
+              >
+            </div>
+            <div
+              [ngClass]="{
+                tab: true,
+                'tab-dark': isDark,
+                'tab-light': !isDark,
+              }"
+            >
+              <span class="tab-text"
+                >Сырьевые товары (золото, нефть, пшеница)</span
+              >
+            </div>
+            <div
+              [ngClass]="{
+                tab: true,
+                'tab-dark': isDark,
+                'tab-light': !isDark,
+              }"
+            >
+              <span class="tab-text"
+                >Фьючерсы, опционы, индексы и другие инструменты</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="right-content_fifth">
+          <img
+            *ngIf="isDark"
+            src="assets/redesignArapovTrade/img/fifth-block-main-image.svg"
+            alt="main"
+          />
+          <img
+            *ngIf="!isDark"
+            src="assets/redesignArapovTrade/img/fifth-block-main-image-light.svg"
+            alt="main"
+          />
+          <div
+            [ngClass]="{
+              'arrow_fifth-block-rigth': true,
+              'arrow_fifth-block-rigth-dark': isDark,
+              'arrow_fifth-block-rigth-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              'streamline-sharp_pie-chart-remix': true,
+              'streamline-sharp_pie-chart-remix-dark': isDark,
+              'streamline-sharp_pie-chart-remix-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              'BG-shape-fifth_block': true,
+              'BG-shape-fifth_block-dark': isDark,
+              'BG-shape-fifth_block-light': !isDark,
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="six_block"  >
+    <div class="six_block-left">
+      <div
+        [ngClass]="{
+          'six-block-graph-img': true,
+          'six-block-graph-img-dark': isDark,
+          'six-block-graph-img-light': !isDark,
+        }"
+      ></div>
+      <div
+        [ngClass]="{
+          'bg-16': true,
+          'bg-16-dark': isDark,
+          'bg-16-light': !isDark,
+        }"
+      ></div>
+      <div class="six-block-main-img"></div>
+      <div
+        [ngClass]="{
+          'flex-row-ca': true,
+          'flex-row-ca-dark': isDark,
+          'flex-row-ca-light': !isDark,
+        }"
+      ></div>
+    </div>
+    <div class="six_block-right">
+      <h2
+        class="material-symbols-show-chart-rounded"
+        [ngClass]="{
+          'material-symbols-show-chart-rounded': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+        Кто такой трейдер?
+      </h2>
+      <span
+        class="flex-row-fc"
+        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+        >Трейдер — это человек, который осуществляет покупку и продажу
+        финансовых инструментов с целью получения прибыли. Он анализирует рынок,
+        прогнозирует изменения цен и принимает решения: покупать, продавать или
+        удерживать активы. Трейдеры могут работать как самостоятельно, так и в
+        составе финансовых учреждений — банков, хедж-фондов, инвестиционных или
+        брокерских компаний.</span
+      >
+
+      <div
+        class="satisfied-customer"
+        [ngStyle]="{
+          background: isDark
+            ? 'rgba(255, 255, 255, 0.08)'
+            : 'rgba(230, 237, 251, 0.7)',
+        }"
+      >
+        <div
+          class="naygolovnishe"
+          [ngStyle]="{
+            'border-left': isDark ? '5px solid #ffcd29' : '5px solid #0082CC',
+          }"
+        >
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            Благодаря развитию онлайн-бирж, брокерских сервисов и торговых
+            платформ, сегодня практически каждый может начать торговлю на
+            финансовом рынке. Для этого достаточно иметь компьютер или смартфон
+            и доступ в Интернет.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="seventh-block"  >
+    <div class="bg-36">
+      <div class="seventh-block_left">
+        <div class="flex-column">
+          <h2
+            [ngClass]="{
+              'opportunities-risks': true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+          >
+            Возможности и риски
+          </h2>
+          <span
+            class="opportunities-risks-38"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >Трейдинг привлекает возможностью зарабатывать на финансовых рынках.
+            Однако трейдинг связан с высоким риском потери средств и требует
+            знаний, дисциплины и постоянного развития. По статистике,
+            большинство новичков теряет свои средства уже в первые месяцы
+            торговли из-за типичных ошибок.</span
+          >
+          <div class="minuses">
+            <span
+              [ngClass]="{
+                'deposit-loss-reasons': true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
+              }"
+              >Причины потери депозита:</span
+            >
+            <div class="minus">
+              <span
+                class="lending-money-investment"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >Неопытность</span
+              >
+              <div
+                [ngClass]="{
+                  vector: true,
+                  'vector-dark': isDark,
+                  'vector-light': !isDark,
+                }"
+              ></div>
+            </div>
+            <div class="minus">
+              <span
+                class="lending-money-investment"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >Эмоциональные решения</span
+              >
+              <div
+                [ngClass]="{
+                  vector: true,
+                  'vector-dark': isDark,
+                  'vector-light': !isDark,
+                }"
+              ></div>
+            </div>
+            <div class="minus">
+              <span
+                class="lending-money-investment"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >Пренебрежение рисками</span
+              >
+              <div
+                [ngClass]="{
+                  vector: true,
+                  'vector-dark': isDark,
+                  'vector-light': !isDark,
+                }"
+              ></div>
+            </div>
+            <div class="minus">
+              <span
+                class="lending-money-investment"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >Желание быстрого обогащения</span
+              >
+              <div
+                [ngClass]="{
+                  vector: true,
+                  'vector-dark': isDark,
+                  'vector-light': !isDark,
+                }"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="plus">
+          <span
+            [ngClass]="{
+              'successful-trader': true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+            >Чтобы стать успешным трейдером, необходимо:</span
+          >
+          <div class="plus-3f">
+            <div
+              [ngClass]="{
+                'vector-40': true,
+                'vector-40-dark': isDark,
+                'vector-40-light': !isDark,
+              }"
+            ></div>
+            <span
+              class="continuous-learning"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Постоянно учиться</span
+            >
+          </div>
+          <div class="plus-3f">
+            <div
+              [ngClass]="{
+                'vector-40': true,
+                'vector-40-dark': isDark,
+                'vector-40-light': !isDark,
+              }"
+            ></div>
+            <span
+              class="continuous-learning"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Разработать собственную стратегию</span
+            >
+          </div>
+          <div class="plus-3f">
+            <div
+              [ngClass]="{
+                'vector-40': true,
+                'vector-40-dark': isDark,
+                'vector-40-light': !isDark,
+              }"
+            ></div>
+            <span
+              class="continuous-learning"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Иметь четкий план риск-менеджмента</span
+            >
+          </div>
+          <div class="plus-3f">
+            <div
+              [ngClass]="{
+                'vector-40': true,
+                'vector-40-dark': isDark,
+                'vector-40-light': !isDark,
+              }"
+            ></div>
+            <span
+              class="continuous-learning"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >Контролировать эмоции, особенно страх и алчность</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="seventh-block_rigth">
+        <div class="right-37">
+          <div class="money-tree">
+            <img src="/assets/redesignArapovTrade/img/1.png" alt="tree" />
+          </div>
+          <div
+            [ngClass]="{
+              chart: true,
+              'chart-dark': isDark,
+              'chart-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              'chart-arc': true,
+              'chart-arc-dark': isDark,
+              'chart-arc-light': !isDark,
+            }"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        bg_seventh: true,
+        'bg_seventh-dark': isDark,
+        'bg_seventh-light': !isDark,
+      }"
+    ></div>
+  </div>
+
+  <div class="eighth-block">
+    <div class="eighth-block_main" data-aos="fade-up" data-aos-delay="300">
+      <div class="eighth-block_main-left">
+        <div class="img-18"></div>
+        <div
+          [ngClass]="{
+            'img-19': true,
+            'img-19-dark': isDark,
+            'img-19-light': !isDark,
+          }"
+        ></div>
+      </div>
+      <div class="reighth-block_main-right">
+        <h2
+          [ngClass]="{
+            'opportunities-risks': true,
+            'gradient-orange': isDark,
+            'gradient-blue': !isDark,
+          }"
+        >
+          С чего начать?
+        </h2>
+        <div
+          class="start-trading-recommendation"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+        >
+          <span
+            >Чтобы правильно начать торговлю на бирже и не потерять средства,
+            рекомендую начать с бесплатной теории трейдинга. Она охватывает все
+            ключевые разделы, необходимые для уверенного старта — от базовых
+            понятий до торговых стратегий.<br /><br />
+            Все материалы доступны в открытом доступе, без скрытых платежей —
+            учитесь в удобном темпе и осваивайте рынок шаг за шагом. Каждая тема
+            сопровождается реальными примерами и детальными пояснениями.
+          </span>
+        </div>
+
+        <span
+          [ngClass]="{
+            'successful-trader': true,
+            'gradient-orange': isDark,
+            'gradient-blue': !isDark,
+          }"
+          >На обучающей платформе вы найдете:</span
+        >
+        <div class="tabs-eight-block">
+          <div
+            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+          >
+            <span class="tab-text">статьи и видеоуроки с пояснениями</span>
+          </div>
+          <div
+            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+          >
+            <span class="tab-text"
+              >разборы базовых и продвинутых стратегий</span
+            >
+          </div>
+          <div
+            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+          >
+            <span class="tab-text">примеры реальных сделок</span>
+          </div>
+          <div
+            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+          >
+            <span class="tab-text">рекомендации по выбору брокера</span>
+          </div>
+          <div
+            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+          >
+            <span class="tab-text">пояснения терминов и инструментов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="eighth-block_bottom-block"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
+      <div class="notice-block">
+        <div
+          class="name-1a"
+          [ngStyle]="{
+            background: isDark
+              ? 'rgba(255, 255, 255, 0.08)'
+              : 'rgba(230, 237, 251, 0.7)',
+          }"
+        >
+          <div class=" ">
+            <span
+              class="quote-text-eight-block"
+              [ngStyle]="{
+                color: isDark ? '#ffffff' : '#0C263A',
+                'border-left': isDark
+                  ? '5px solid #ffcd29'
+                  : '5px solid #0082CC',
+              }"
+              >Самое главное — вы сможете освоить торговую стратегию, которая
+              поможет уверенно чувствовать себя на рынке и избегать типичных
+              ошибок, которые допускает большинство начинающих.<br />Трейдинг —
+              это полноценная профессия, требующая усилий, самодисциплины и
+              аналитического мышления. Если вы готовы вкладывать время и
+              работать над собой — финансовый рынок открывает реальные
+              возможности для тех, кто подходит к торговле системно.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="author-speach-block" data-aos="fade-up" data-aos-delay="300">
+        <div class="line"></div>
+        <div class="speach_text-block">
+          <span
+            class="speach-text"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >Желаю вам успеха в обучении и первых шагах на пути к
+            профессиональному трейдингу!<br /><br /></span
+          ><span
+            class="speach-text-quote"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >С уважением, <br />
+            Автор курса "Обучение трейдингу с нуля" — Игорь Арапов</span
+          >
+        </div>
+        <span
+          class="features-list ph"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >I. Arapov</span
+        >
+      </div>
+    </div>
+  </div> -->
+
+  <div class="footer">
+    <div class="footer-main-block">
+      <div class="logo-body">
+        <div class="frame-29">
+          <div class="logo">
+            <div class="header-logo-block">
+              <div
+                class="header-logo hhd"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'url(assets/redesignArapovTrade/img/logo-new.png) no-repeat center'
+                    : 'url(assets/redesignArapovTrade/img/logo-new-light.png) no-repeat center',
+                }"
+              ></div>
+              <span class="loog-text hg">Arapov.Trade</span>
+            </div>
+          </div>
+          <span class="footer-text"
+            >100% бесплатная теория трейдинга и практические рекомендации для
+            новичков и опытных трейдеров.</span
+          >
+        </div>
+        <div style="display: flex; flex-direction: row; ">
+           <div class="menu-title-block" style="width: 25px !important; font-size: 14px!important;line-height: 2!important;">
+          <a style="font-size: 14px !important; "
+            href="/"
+            (click)="$event.preventDefault(); navigateTo('')"
+            class="menu-title_text"
+          >
+            UA  
+          </a>  
+        </div>
+        <div><span style="color: gray; width: 25px; font-size: 25px; ">-</span></div>
+        <div class="menu-title-block" style="width: 25px !important; margin-left: 5px; line-height: 2!important;font-size: 14px!important;">
+          <a style="font-size: 14px !important; "
+            href="/en/main"
+            (click)="$event.preventDefault(); navigateTo('en/main')"
+            class="menu-title_text"
+          >
+            EN
+          </a>
+        </div>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="menu">
+          <span class="menu-title">Меню</span>
+          <div class="menu-title-block">
+            <a
+              href="/ru/main"
+              (click)="$event.preventDefault(); navigateTo('ru/main')"
+              class="menu-title_text"
+            >
+              Главная
+            </a>
+          </div>
+          <div class="menu-title-block">
+            <a
+              href="/ru"
+              (click)="$event.preventDefault(); navigateTo('ru')"
+              class="menu-title_text"
+            >
+              Об авторе курса
+            </a>
+          </div>
+          <div class="menu-title-block">
+            <a
+              href="/ru/studying"
+              (click)="$event.preventDefault(); navigateTo('ru/studying')"
+              class="menu-title_text"
+            >
+              Курсы по трейдингу
+            </a>
+          </div>
+          <div class="menu-title-block">
+            <a
+              href="/ru/freestudying"
+              (click)="$event.preventDefault(); navigateTo('ru/freestudying')"
+              class="menu-title_text"
+            >
+              Бесплатное обучение трейдингу
+            </a>
+          </div>
+        </div>
+        <div class="menu">
+          <span class="menu-title">Ссылки</span>
+
+          <a
+            href="/ru/privacy-policy" (click)="$event.preventDefault(); navigateTo('ru/privacy-policy')"
+            class="menu-title-block menu-title_text"
+            >Политика конфиденциальности</a
+          >
+          <a
+            href="/ru/disclaimer"
+            (click)="$event.preventDefault(); navigateTo('ru/disclaimer')"
+            class="menu-title-block menu-title_text"
+            >Отказ от ответственности</a
+          >
+        </div>
+
+        <div class="menu">
+          <span class="menu-title">Наши проекты</span>
+          <a
+            href="/ru/freestudying/about"
+            (click)="
+              $event.preventDefault(); navigateTo('ru/freestudying/about')
+            "
+            class="menu-title-block menu-title_text"
+            >Про ARAPOV.TRADE</a
+          >
+          <div class="menu-title-block">
+            <a 
+            href="/ru/books" (click)="$event.preventDefault(); navigateTo('ru/books')"
+            
+              class="menu-title_text"
+              >МОИ КНИГИ</a
+            >
+          </div>
+          <a
+            href="https://arapov.trade/ru/studying"
+            target="_blank"
+            class="menu-title-block menu-title_text"
+          >
+            <span class="menu-title-block menu-title_text">
+              Профессиональные курсы</span
+            >
+          </a>
+        </div>
+      </div>
+      <!-- <div class="popular-artickles">
+        <div class="in-20"></div>
+
+        <div class="popular-artickles_title">
+          <p class="menu-title">ПОПУЛЯРНЫЕ ЗАПРОСЫ</p>
+        </div>
+        <div class="popular-artickles_container">
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/wyckoffmethod"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Метод Вайкоффа</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/volmarketanalisys"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Объёмный анализ</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/technicalanalysis"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Технический анализ</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/tradingindicators"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Торговые индикаторы</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/cryptocurrencytrading"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Криптотрейдинг</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/practic"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Стратегия трейдинга</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/fundamentalanalysis"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Фундаментальный анализ</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/smartmoneyconceptsguide"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Концепция смарт мани</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/smartmoneystrategies"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Стратегия смарт мани</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/smartmoneycontrol"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Smart Money и ликвидность</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/stockorderbook"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Биржевой стакан</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/blogmarketphases"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Фазы рынка</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/divergenceonindecators"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+            >
+              Что такое дивергенция</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/volatility"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+            >
+              Волатильность</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/avoidlosingmoney"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Маржинальная торговля</a
+            >
+          </div>
+          <div class="popular-artickles_artickle">
+            <a
+              href="https://arapov.trade/ru/freestudying/pricingandliquidity"
+              target="_blank"
+              class="menu-title-block menu-title_text"
+              >Ликвидность</a
+            >
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <br />
+    <div class="component-1f">
+      <div class="in-20"></div>
+      <div class="component-21">
+        <div class="box-b">
+          <span class="text-2d">Arapov.Trade</span>
+          <div class="pic-14"></div>
+          <span class="text-2e">2025-2026. Все права защищены.</span>
+          <span class="text-2e">ФЛП Арапов И.В. ИНН 3314507171</span>
+        </div>
+        
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        'bg-shapes-footer': true,
+        'bg-shapes-footer-dark': isDark,
+        'bg-shapes-footer-light': !isDark,
+      }"
+    ></div>
+  </div>
+</div>

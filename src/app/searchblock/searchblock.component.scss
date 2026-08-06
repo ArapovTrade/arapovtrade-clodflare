@@ -1,0 +1,85 @@
+ 
+
+.searchblock-container {
+  width: 250px;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 4px 8px;
+  background-color: #fff;
+
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+    padding: 6px;
+  }
+
+  .search-icon {
+    margin-left: 6px;
+    font-size: 16px;
+  }
+
+  .clear-btn {
+    margin-left: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: calc(5 * 50px + 10px); /* максимум 5 статей */
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 4px;
+  z-index: 100;
+
+  .search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 8px;
+
+    .result-img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .result-title {
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .result-link {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
