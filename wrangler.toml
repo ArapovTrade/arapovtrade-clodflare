@@ -7,3 +7,5 @@ preview_urls = false
 [assets]
 directory = "./dist/project-arapov/browser"
 binding = "ASSETS"
+not_found_handling = "404-page"
+html_handling = "drop-trailing-slash"
