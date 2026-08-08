@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-   "build": "ng build && (mv dist/project-arapov/browser/index.csr.html dist/project-arapov/browser/index.html 2>/dev/null || true)",
+   "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:projectArapov": "node dist/project-arapov/server/server.mjs"
