@@ -344,7 +344,7 @@ export class OsnovyTreydingaTomTwoUkComponent
           name: 'Хто автор книги?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Автор книги – Ігор Арапов, практикуючий трейдер з 2013 року. Творець освітньої платформи arapov.trade із 151+ статтями та YouTube каналу @ArapovTrade із 78+ відеоуроками з трейдингу.',
+            text: 'Автор книги – Ігор Арапов, практикуючий трейдер з 2013 року. Творець освітньої платформи arapov.trade із 51+ статтями та YouTube каналу @ArapovTrade із 78+ відеоуроками з трейдингу.',
           },
         },
         {

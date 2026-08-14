@@ -56,7 +56,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 151 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
+        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
     });
 
     this.meta.updateTag({
@@ -77,7 +77,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       property: 'og:description',
       content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 151 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
+        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
     });
     this.meta.updateTag({ property: 'og:image:width', content: '1200' });
     this.meta.updateTag({ property: 'og:image:height', content: '600' });
@@ -103,7 +103,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       name: 'twitter:description',
       content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 151 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
+        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
     });
     this.meta.updateTag({
       name: 'twitter:image',
@@ -226,7 +226,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     name: 'Arapov.Trade',
     alternateName: 'Навчання трейдингу',
     description:
-      'Безкоштовне навчання трейдингу від Ігоря Арапова. 151+ статей, 78+ відеоуроків.',
+      'Безкоштовне навчання трейдингу від Ігоря Арапова. 51+ статей, 78+ відеоуроків.',
     inLanguage: 'uk-UA',
     publisher: {
       '@type': 'Organization',

@@ -198,7 +198,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
       name: 'Arapov.Trade',
       alternateName: 'Обучение трейдингу',
       description:
-        'Бесплатное обучение трейдингу от Игоря Арапова. 151+ статей, 78+ видеоуроков.',
+        'Бесплатное обучение трейдингу от Игоря Арапова. 51+ статей, 78+ видеоуроков.',
       inLanguage: 'ru-RU',
       publisher: {
         '@type': 'Organization',

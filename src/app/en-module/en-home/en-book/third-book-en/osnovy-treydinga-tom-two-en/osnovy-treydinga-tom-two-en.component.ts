@@ -340,7 +340,7 @@ export class OsnovyTreydingaTomTwoEnComponent
           name: 'Who is the author of the book?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapov.trade with 151+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
+            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapov.trade with 51+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
           },
         },
         {

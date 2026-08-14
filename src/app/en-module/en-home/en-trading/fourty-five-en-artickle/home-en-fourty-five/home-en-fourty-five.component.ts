@@ -61,13 +61,13 @@ export class HomeEnFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Free Trading Course for Beginners — Igor Arapov',
+      'Free Trading Course for Beginners — 32 Lessons From Scratch',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Free trading course from scratch: technical analysis, Wyckoff method, volume analysis, complete trading system with positive mathematical expectancy. 32 sections, live trade breakdowns.',
+        'Free trading course for beginners: 32 lessons across 7 modules — from exchange mechanics to a trading system and demo account practice. Wyckoff Method included.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -624,6 +624,11 @@ export class HomeEnFourtyFiveComponent implements OnInit {
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
           author: { '@id': 'https://arapov.trade/#person' },
           publisher: { '@id': 'https://arapov.trade/#organization' },
+          isPartOf: {
+            '@type': 'CreativeWorkSeries',
+            name: 'Educational videos of arapov.trade',
+            sameAs: 'https://www.wikidata.org/wiki/Q141063653',
+          },
         },
       ],
     });
@@ -651,9 +656,11 @@ export class HomeEnFourtyFiveComponent implements OnInit {
       },
       hasCourse: {
         '@type': 'Course',
+        '@id': 'https://arapov.trade/#free-course',
         name: 'Training in trading from scratch',
         description: 'Over 51+ articles and 78+ video tutorials on trading',
-        provider: { '@id': 'https://arapov.trade/#person' }, // ← было инлайн 'Ihor Arapov'
+        sameAs: ['https://www.wikidata.org/wiki/Q140750185'],
+        provider: { '@id': 'https://arapov.trade/#person' },
       },
     });
   }

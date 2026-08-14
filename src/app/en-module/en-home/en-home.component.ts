@@ -456,8 +456,12 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
           alternateName: [
             'Ігор Арапов',
             'Игорь Арапов',
-            'I. V. Arapov',
-            'І. В. Арапов',
+            'Арапов Игорь',
+            'Арапов Ігор',
+            'Arapov Igor',
+            'Ihor Arapov', // ← добавить
+            'Игорь Витальевич Арапов', // ← добавить
+            'Ігор Віталійович Арапов', // ← добавить
           ],
           givenName: 'Igor',
           familyName: 'Arapov',
@@ -603,6 +607,33 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
 
           subjectOf: [
             {
+              '@type': 'Course',
+              '@id': 'https://arapov.trade/#wyckoff-wikiversity-course',
+              name: 'Метод Вайкоффа (курс)',
+              url: 'https://ru.wikiversity.org/wiki/Метод_Вайкоффа',
+              sameAs: 'https://www.wikidata.org/wiki/Q140594179',
+              inLanguage: 'ru',
+              provider: { '@id': 'https://arapov.trade/#person' },
+            },
+            {
+              '@type': 'NewsArticle',
+              name: 'Free Trading Library: An Interview with the Author of a Course Featuring Over 50 Articles',
+              headline:
+                'Free Trading Library: An Interview with the Author of a Course Featuring Over 50 Articles',
+              author: { '@type': 'Person', name: 'Денис Мацеевский' },
+              url: 'https://ua.news/en/money/bezkoshtovna-biblioteka-z-treidingu-interviu-z-avtorom-kursu-na-50-statei',
+              datePublished: '2026-08-10T17:12:00+03:00',
+              inLanguage: 'en',
+              image:
+                'https://cdn-cabinet.ua.news/uploads/images/24e524524e454e/dsc_1344.webp',
+              publisher: {
+                '@type': 'Organization',
+                name: 'ua.news',
+                url: 'https://ua.news/',
+              },
+            },
+
+            {
               '@type': 'NewsArticle',
               name: 'Про трейдинг і біржову діяльність – здобувачам освітньої програми «Цифровий бізнес»',
               headline:
@@ -621,19 +652,19 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
             },
             {
               '@type': 'NewsArticle',
+              name: 'Despite the war and crises: Igor Arapov explains who always makes money in the stock markets',
               headline:
-                'Незважаючи на війну та кризи: Ігор Арапов пояснює, хто завжди заробляє на фондових ринках',
-              name: 'Незважаючи на війну та кризи: Ігор Арапов пояснює, хто завжди заробляє на фондових ринках',
+                'Despite the war and crises: Igor Arapov explains who always makes money in the stock markets',
               author: {
                 '@type': 'Organization',
                 name: 'ua.news',
                 url: 'https://ua.news/',
               },
+              url: 'https://ua.news/en/money/nezvazhaiuchi-na-viinu-ta-krizi-igor-arapov-poiasniuie-khto-zavzhdi-zarobliaie-na-fondovikh-rinkakh',
               datePublished: '2026-04-15T19:00:00+02:00',
+              inLanguage: 'en',
               image:
                 'https://cdn-cabinet.ua.news/uploads/images/sulzhenko/kaver_arapov.webp',
-              url: 'https://ua.news/ua/money/nezvazhaiuchi-na-viinu-ta-krizi-igor-arapov-poiasniuie-khto-zavzhdi-zarobliaie-na-fondovikh-rinkakh',
-              inLanguage: 'uk',
               publisher: {
                 '@type': 'Organization',
                 name: 'ua.news',

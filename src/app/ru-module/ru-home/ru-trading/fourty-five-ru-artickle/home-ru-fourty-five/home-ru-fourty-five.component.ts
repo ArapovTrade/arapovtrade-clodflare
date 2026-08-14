@@ -64,13 +64,13 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Бесплатный курс по трейдингу для начинающих — Игорь Арапов',
+      'Курс трейдинга для начинающих с нуля — 32 раздела бесплатно',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Бесплатный курс по трейдингу с нуля: технический анализ, метод Вайкоффа, объёмный анализ, торговая система с положительным математическим ожиданием. 32 разделов, живые разборы сделок.',
+        'Бесплатный курс трейдинга для начинающих: 32 раздела в 7 блоках — от механики биржи до торговой системы и практики на демосчёте. Метод Вайкоффа и объёмный анализ.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -343,6 +343,11 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
           author: { '@id': 'https://arapov.trade/#person' },
           publisher: { '@id': 'https://arapov.trade/#organization' },
+          isPartOf: {
+            '@type': 'CreativeWorkSeries',
+            name: 'Educational videos of arapov.trade',
+            sameAs: 'https://www.wikidata.org/wiki/Q141063653',
+          },
         },
       ],
     });
@@ -715,8 +720,10 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
       },
       hasCourse: {
         '@type': 'Course',
+        '@id': 'https://arapov.trade/#free-course',
         name: 'Обучение трейдингу с нуля',
         description: 'Более 51+ статей и 78+ видеоуроков по трейдингу',
+        sameAs: ['https://www.wikidata.org/wiki/Q140750185'],
         provider: { '@id': 'https://arapov.trade/#person' },
       },
     };

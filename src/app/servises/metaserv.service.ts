@@ -17,7 +17,7 @@ export class MetaservService {
 
 
 
-  addOrganizationSchema() {
+addOrganizationSchema() {
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
@@ -27,6 +27,7 @@ export class MetaservService {
       legalName: 'ФОП Арапов І.В.',
       taxID: '3314507171',
       url: 'https://arapov.trade',
+      sameAs: ['https://www.wikidata.org/wiki/Q140744162'], // ← мост к платформе в Wikidata
       logo: {
         '@type': 'ImageObject',
         url: 'https://arapov.trade/favicon.ico',

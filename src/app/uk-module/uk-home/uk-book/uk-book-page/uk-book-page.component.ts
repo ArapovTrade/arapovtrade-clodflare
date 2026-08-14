@@ -209,7 +209,7 @@ export class UkBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
       name: 'Arapov.Trade',
       alternateName: 'Навчання трейдингу',
       description:
-        'Безкоштовне навчання трейдингу від Ігоря Арапова. 151+ статей, 78+ відеоуроків.',
+        'Безкоштовне навчання трейдингу від Ігоря Арапова. 51+ статей, 78+ відеоуроків.',
       inLanguage: 'uk-UA',
       publisher: {
         '@type': 'Organization',

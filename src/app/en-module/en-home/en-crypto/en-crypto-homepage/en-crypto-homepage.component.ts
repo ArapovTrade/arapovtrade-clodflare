@@ -54,7 +54,7 @@ export class EnCryptoHomepageComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Igor Arapov`s Free Trading Course: 151+ Articles and 78+ Videos. Study Technical Analysis, Risk Management, and Trading Strategies Online',
+        'Igor Arapov`s Free Trading Course: 51+ Articles and 78+ Videos. Study Technical Analysis, Risk Management, and Trading Strategies Online',
     });
 
     this.meta.updateTag({
@@ -149,53 +149,7 @@ export class EnCryptoHomepageComponent
     });
   }
 
-  // private addWebSiteSchema() {
-  //   const exists = Array.from(
-  //     this.document.querySelectorAll('script[type="application/ld+json"]')
-  //   ).some((script) => {
-  //     try {
-  //       const json = JSON.parse(script.textContent || '{}');
-  //       return json['@type'] === 'WebSite' && json['name'] === 'Arapov.Trade';
-  //     } catch {
-  //       return false;
-  //     }
-  //   });
-
-  //   // Если уже существует — выходим
-  //   if (exists) return;
-
-  //   // Создаем новый JSON-LD
-  //   const script = this.document.createElement('script');
-  //   script.type = 'application/ld+json';
-  //   script.text = JSON.stringify({
-  //     '@context': 'https://schema.org',
-  //     '@type': 'WebSite',
-  //     '@id': 'https://arapov.trade/en/main#website',
-  //     url: 'https://arapov.trade/en/main',
-  //     name: 'Arapov.Trade',
-  //     alternateName: 'Trading Education',
-  //     description:
-  //       'Free trading education by Igor Arapov. 151+ articles, 78+ video lessons.',
-  //     inLanguage: 'en-US',
-  //     publisher: {
-  //       '@type': 'Organization',
-  //       '@id': 'https://arapov.trade/#organization',
-  //       name: 'Arapov.Trade',
-  //       url: 'https://arapov.trade',
-  //       logo: {
-  //         '@type': 'ImageObject',
-  //         url: 'https://arapov.trade/favicon.ico',
-  //       },
-  //       founder: {
-  //         '@type': 'Person',
-  //         '@id': 'https://arapov.trade/en#person',
-  //         name: 'Арапов Ігор Віталійович',
-  //       },
-  //     },
-  //   });
-
-  //   this.document.head.appendChild(script);
-  // }
+   
 
   private addWebSiteSchema() {
     const exists = Array.from(
@@ -223,7 +177,7 @@ export class EnCryptoHomepageComponent
       name: 'Arapov.Trade',
       alternateName: 'Trading Education',
       description:
-        'Free trading education by Igor Arapov. 151+ articles, 78+ video lessons.',
+        'Free trading education by Igor Arapov. 51+ articles, 78+ video lessons.',
       inLanguage: 'en-US',
       publisher: {
         '@type': 'Organization',

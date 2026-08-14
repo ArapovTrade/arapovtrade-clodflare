@@ -321,10 +321,10 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         ) {
           title =
             segments[0] === 'ru'
-              ? '151+ статья, 3 языка, 453 URL: Полная бесплатная учебная программа по трейдингу на arapov.trade'
+              ? '51+ статья, 3 языка, 453 URL: Полная бесплатная учебная программа по трейдингу на arapov.trade'
               : segments[0] === 'uk'
-                ? '151+ стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapov.trade'
-                : '151+ Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapov.trade';
+                ? '51+ стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapov.trade'
+                : '51+ Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapov.trade';
         } else if (
           segments[1] === 'freestudying' &&
           segments[2] === 'fullvideocourse'
@@ -372,7 +372,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
           description = article[titleDescr];
         } else if (segments[0] == '') {
           description =
-            'Безкоштовний курс з трейдингу Ігоря Арапова: 151 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн';
+            'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн';
         } else if (segments[1] === 'studying' && segments[0] === 'ru') {
           description =
             'Онлайн-курсы по трейдингу от Игоря Арапова — обучение трейдингу и инвестициям с нуля, дистанционно и бесплатно. Изучайте технический и фундаментальный анализ, торговые стратегии и управление рисками шаг за шагом.';
@@ -508,10 +508,10 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         } else if (segments[1] === 'freestudying' && segments[2] === 'about') {
           description =
             segments[0] === 'ru'
-              ? '151+ статей, 9 книг с ISBN, 78+ видеоуроков на 3 языках. Бесплатное обучение трейдингу: Smart Money, метод Вайкоффа, объёмный анализ.'
+              ? '51+ статей, 9 книг с ISBN, 78+ видеоуроков на 3 языках. Бесплатное обучение трейдингу: Smart Money, метод Вайкоффа, объёмный анализ.'
               : segments[0] === 'uk'
-                ? '151+ статей, 9 книг з ISBN, 78+ відеоуроків на 3 мовах. Безкоштовне навчання трейдингу: Smart Money, метод Вайкоффа, об`ємний аналіз.'
-                : '151+ articles, 9 books with ISBN, 78+ video lessons in 3 languages. Free trading education: Smart Money, Wyckoff Method, volume analysis.';
+                ? '51+ статей, 9 книг з ISBN, 78+ відеоуроків на 3 мовах. Безкоштовне навчання трейдингу: Smart Money, метод Вайкоффа, об`ємний аналіз.'
+                : '51+ articles, 9 books with ISBN, 78+ video lessons in 3 languages. Free trading education: Smart Money, Wyckoff Method, volume analysis.';
         } else if (segments[1] === 'freestudying') {
           description =
             segments[0] === 'ru'

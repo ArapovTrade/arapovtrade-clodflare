@@ -61,13 +61,13 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Безкоштовний курс з трейдингу для початківців — Ігор Арапов',
+      'Курс трейдингу для початківців з нуля — 32 розділи безкоштовно',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Безкоштовний курс з трейдингу з нуля: технічний аналіз, метод Вайкоффа, об`ємний аналіз, торгова система з позитивним математичним очікуванням. 32 розділів, живі розбори угод.',
+        'Безкоштовний курс трейдингу для початківців: 32 розділи у 7 блоках — від механіки біржі до торгової системи і практики на демосчунку. Метод Вайкоффа й обʼємний аналіз.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -663,7 +663,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
       '@id': 'https://arapov.trade/uk/freestudying/freeeducation#program',
       name: 'Безкоштовне навчання трейдингу з нуля',
       description:
-        'Безкоштовний курс трейдингу для початківців від практикуючого трейдера з 2013 року. Понад 151+ статей, 78+ відео: від основ до Smart Money та Вайкоффа.',
+        'Безкоштовний курс трейдингу для початківців від практикуючого трейдера з 2013 року. Понад 51+ статей, 78+ відео: від основ до Smart Money та Вайкоффа.',
       provider: { '@id': 'https://arapov.trade/#person' },
       timeToComplete: 'P3M',
       occupationalCategory: 'Трейдер',
@@ -675,9 +675,11 @@ export class HomeUkFourtyFiveComponent implements OnInit {
       },
       hasCourse: {
         '@type': 'Course',
+        '@id': 'https://arapov.trade/#free-course',
         name: 'Безкоштовне навчання трейдингу з нуля',
         description: 'Понад 51+ статей та 78+ відеоуроків з трейдингу',
-        provider: { '@id': 'https://arapov.trade/#person' }, // ← вместо инлайн-Person
+        sameAs: ['https://www.wikidata.org/wiki/Q140750185'],
+        provider: { '@id': 'https://arapov.trade/#person' },
       },
     });
   }
@@ -703,6 +705,11 @@ export class HomeUkFourtyFiveComponent implements OnInit {
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
           author: { '@id': 'https://arapov.trade/#person' },
           publisher: { '@id': 'https://arapov.trade/#organization' },
+          isPartOf: {
+            '@type': 'CreativeWorkSeries',
+            name: 'Educational videos of arapov.trade',
+            sameAs: 'https://www.wikidata.org/wiki/Q141063653',
+          },
         },
       ],
     });
