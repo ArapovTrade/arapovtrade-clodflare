@@ -606,21 +606,17 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
           ],
 
           subjectOf: [
-            {
-              '@type': 'Course',
-              '@id': 'https://arapov.trade/#wyckoff-wikiversity-course',
-              name: 'Метод Вайкоффа (курс)',
-              url: 'https://ru.wikiversity.org/wiki/Метод_Вайкоффа',
-              sameAs: 'https://www.wikidata.org/wiki/Q140594179',
-              inLanguage: 'ru',
-              provider: { '@id': 'https://arapov.trade/#person' },
-            },
+             
             {
               '@type': 'NewsArticle',
               name: 'Free Trading Library: An Interview with the Author of a Course Featuring Over 50 Articles',
               headline:
                 'Free Trading Library: An Interview with the Author of a Course Featuring Over 50 Articles',
-              author: { '@type': 'Person', name: 'Денис Мацеевский' },
+              author: {
+                '@type': 'Person',
+                name: 'Денис Мацеевский',
+                url: 'https://ua.news/ru/%D0%94%D0%B5%D0%BD%D0%B8%D1%81%20%D0%9C%D0%B0%D1%86%D0%B5%D1%94%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9',
+              },
               url: 'https://ua.news/en/money/bezkoshtovna-biblioteka-z-treidingu-interviu-z-avtorom-kursu-na-50-statei',
               datePublished: '2026-08-10T17:12:00+03:00',
               inLanguage: 'en',
