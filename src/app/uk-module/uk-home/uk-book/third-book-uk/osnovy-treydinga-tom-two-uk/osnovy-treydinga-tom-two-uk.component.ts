@@ -277,35 +277,35 @@ export class OsnovyTreydingaTomTwoUkComponent
       mainEntity: {
         '@id': 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two#book',
       },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Головна',
-            item: 'https://arapov.trade',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Про автора',
-            item: 'https://arapov.trade/uk',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'Мої книги',
-            item: 'https://arapov.trade/uk/books',
-          },
-          {
-            '@type': 'ListItem',
-            position: 4,
-            name: 'Книга',
-            item: 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two',
-          },
-        ],
-      },
+      // breadcrumb: {
+      //   '@type': 'BreadcrumbList',
+      //   itemListElement: [
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 1,
+      //       name: 'Головна',
+      //       item: 'https://arapov.trade',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 2,
+      //       name: 'Про автора',
+      //       item: 'https://arapov.trade/uk',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 3,
+      //       name: 'Мої книги',
+      //       item: 'https://arapov.trade/uk/books',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 4,
+      //       name: 'Книга',
+      //       item: 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two',
+      //     },
+      //   ],
+      // },
     };
   }
 

@@ -278,45 +278,83 @@
           </ul>
         </div>
       </div>
+
       <div class="hero-section-main">
         <div class="flex-row-e">
-          <div class="flex-row-f" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex-row-f">
             <div class="coins"></div>
             <div class="text-block_one-block">
-              <div
-                class="bezkoshtovniy-kurs"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
-              >
-                WYCKOFF METHOD
-              </div>
-
               <div class="rectangle"></div>
-
               <h1 class="zagolovok">
                 <span
                   class="navchannya-treidzingu-z-nulya"
                   [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
-                  >Free trading course </span
-                ><span
+                  >What is Arapov Trade </span
+                ><br /><span
                   class="posibnik-dlya-pochatkivtsiv"
                   [ngClass]="{
                     'gradient-orange': isDark,
                     'gradient-blue': !isDark,
                   }"
-                  >from scratch for beginners</span
+                  >and where to start</span
                 >
               </h1>
-              <span
+
+              <p
                 class="tekst-opisanye"
                 [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Free trading education from scratch — everything a beginner
-                needs in one place: 50+ articles, 70+ video lessons based on the
-                Wyckoff method.
-                <span>
-                  All materials are openly available, no registration or hidden
-                  payments required.</span
-                >
-              </span>
+              >
+                Arapov Trade is a free educational platform for trading and
+                financial markets: technical and volume analysis, the Wyckoff
+                method, trading psychology, risk management, fundamental
+                analysis, cryptocurrencies, Forex, and other instruments, all in
+                one consistent system rather than a pile of scattered articles .
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                Materials are available in three languages, English, Russian,
+                and Ukrainian, and the YouTube channel has full-length training
+                videos to go with the articles.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                You don't have to read everything in order. Figure out your
+                level first: beginners start with the basics, active traders
+                start with market structure and trading systems, and if you're
+                after a specific market, jump straight to that section.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                The materials are educational: the platform explains approaches
+                and risks, but doesn't give trading signals or promise profit.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                If you run into an unfamiliar term along the way, check the
+                "Trader's Glossary": it has 6 articles with short, clear
+                explanations of key concepts.
+              </p>
+              <p
+                [ngStyle]="{
+                  'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+                }"
+                [ngClass]="{
+                  'text-decor': true,
+                  'gradient-orange': isDark,
+                  'gradient-blue': !isDark,
+                }"
+              >
+                Next step: pick your learning path: "Beginner," "Already
+                trading," or "Studying a specific market."
+              </p>
               <div class="authot_button_block">
                 <div
                   [ngClass]="{
@@ -326,15 +364,12 @@
                   }"
                 >
                   <a
-                    href="/en/freestudying/freeeducation"
-                    (click)="
-                      $event.preventDefault();
-                      navigateTo('en/freestudying/freeeducation')
-                    "
+                    [ngStyle]="{ cursor: 'pointer' }"
+                    (click)="navigateToFragment('choseTheWay')"
                     ><span
                       class="pochaty-navchannya"
                       [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-                      >Start learning</span
+                      >Choose a direction</span
                     ></a
                   >
                 </div>
@@ -361,7 +396,7 @@
                 <span
                   class="follow-us"
                   [ngStyle]="{ color: isDark ? '#ffffff' : '#03314b' }"
-                  >Subscribe:</span
+                  >Follow us:</span
                 >
                 <div>
                   <div class="icons">
@@ -373,7 +408,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://www.facebook.com/igor.arapov.75">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.facebook.com/igor.arapov.75"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -398,7 +436,8 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow"
+                      <a
+                        rel="me nofollow"
                         href="https://www.linkedin.com/in/arapovtrade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                       >
                         <svg
@@ -425,7 +464,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://ru.tradingview.com/u/Igor_Arapov/">
+                      <a
+                        rel="me nofollow"
+                        href="https://ru.tradingview.com/u/Igor_Arapov/"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -451,7 +493,10 @@
                         'links-light-special': !isDark,
                       }"
                     >
-                      <a  rel="me nofollow" href="https://www.youtube.com/@ArapovTrade">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.youtube.com/@ArapovTrade"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -485,7 +530,10 @@
                         'links-light-special': !isDark,
                       }"
                     >
-                      <a rel="nofollow" href="https://telegram.me/+380506308200">
+                      <a
+                        rel="nofollow"
+                        href="https://telegram.me/+380506308200"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -514,7 +562,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a  rel="me nofollow" href="https://www.instagram.com/arapovtrade/">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.instagram.com/arapovtrade/"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -555,214 +606,124 @@
     <div *ngIf="!isDark" class="bg-shape-1"></div>
   </div>
 
-  <div class="sections-nav">
-    <h2
-      [ngClass]="{
-        'sections-nav_title': true,
-        'gradient-orange': isDark,
-        'gradient-blue': !isDark,
-      }"
-    >
-      Choose a field of study
-    </h2>
-
-    <div class="sections-nav_grid">
-      <!-- Трейдинг для початківців -->
-      <div
-        (click)="goToGroup('Trading for Beginners')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Trading for Beginners</span>
-      </div>
-
-      <!-- Технічний аналіз -->
-      <div
-        (click)="goToGroup('Technical Analysis')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Technical Analysis</span>
-      </div>
-
-      <!-- Об`ємний аналіз ринку (ВНИМАНИЕ: backtick U+0060 в строке группы) -->
-      <div
-        (click)="goToGroup('Market Volume Analysis')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Market Volume Analysis</span>
-      </div>
-
-      <!-- Концепція Смарт Мані -->
-      <div
-        (click)="goToGroup('Smart Money Concept')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Smart Money Concept</span>
-      </div>
-
-      <!-- Криптовалюта -->
-      <div
-        (click)="goToGroup('Cryptocurrency')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Cryptocurrency</span>
-      </div>
-
-      <!-- Психологія трейдингу -->
-      <div
-        (click)="goToGroup('Trading Psychology')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Trading Psychology</span>
-      </div>
-
-      <!-- Словник трейдера -->
-      <div
-        (click)="goToGroup('Trader`s Dictionary')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Trader`s Dictionary</span>
-      </div>
-
-      <!-- Фундаментальний аналіз -->
-      <div
-        (click)="goToGroup('Fundamental Analysis')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Fundamental Analysis</span>
-      </div>
-    </div>
-
-    <!-- Кнопка "усі курси" -->
-    <div
-      [ngClass]="{
-        'sections-nav_all': true,
-        'gradient-block-orange': isDark,
-        'gradient-block-blue': !isDark,
-      }"
-    >
-      <a
-        href="/en/freestudying"
-        (click)="$event.preventDefault(); navigateTo('en/freestudying')"
-        ><span
-          class="sections-nav_all-text"
-          [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-          >All courses are free</span
-        ></a
-      >
-    </div>
-  </div>
-
-  <!-- <div class="flex-row-ba" id="section1">
-    <div class="row" data-aos="fade-up" data-aos-delay="300">
+  <div class="flex-row-ba" id="choseTheWay">
+    <div class="row">
+      <!-- Левая часть -->
       <div class="left">
-        <div class="bg-figure">
-          <div
-            [ngClass]="{
-              arrows: true,
-              'arrows-dark': isDark,
-              'arrows-light': !isDark,
-            }"
-          ></div>
-          <div
-            [ngClass]="{
-              bg: true,
-              'bg-dark': isDark,
-              'bg-light': !isDark,
-            }"
-          ></div>
-        </div>
-        <div class="img"></div>
-        <div
-          class="igor-info"
-          [ngStyle]="{
-            border: isDark ? '2px solid #52493b' : '2px solid #4D5460',
-          }"
-        >
-          <div class="avatar"></div>
-          <div class="name">
-            <span class="name-4">Igor Arapov</span
-            ><span class="designation">Professional Trader</span>
+        <!-- Заглушка картинки -->
+        <div class="image-wrapper">
+          <div class="author-photo">
+            <img
+              src="/assets/images/fajl-38.jpg"
+              srcset="
+                /assets/images/fajl-38-200x300.jpg   200w,
+                /assets/images/fajl-38-681x1024.jpg  681w,
+                /assets/images/fajl-38-768x1154.jpg  768w,
+                /assets/images/fajl-38.jpg          1000w
+              "
+              sizes="(max-width: 1000px) 100vw, 1000px"
+              fetchpriority="high"
+              loading="eager"
+              fetchpriority="high"
+              alt="Igor Arapov"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+              "
+            />
           </div>
         </div>
       </div>
+
+      <!-- Правая часть -->
       <div class="right">
         <div class="dorogiy-chitachu">
-          <span
+          <h2
             [ngClass]="{
               dorogiy: true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
-            >Dear </span
-          ><span
-            [ngClass]="{
-              chitachu: true,
-              'gradient-orange': isDark,
-              'gradient-blue': !isDark,
-            }"
-            >reader!</span
           >
+            Choose a learning path<br /><span
+              [ngClass]="{
+                chitachu: true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
+              }"
+            >
+              for your level
+            </span>
+          </h2>
         </div>
+
         <div class="text_second-block lato-regular">
           <span
             class="learning-materials lato-regular"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >The purpose of this instructional guide is to introduce novice
-            traders to the financial market. I have tried to compile the
-            materials in a way that covers all the key topics popular at the
-            moment and to gather everything in one place, so there is no need to
-            search for information across many websites or books. I also
-            approached the theory selectively, highlighting only the key trading
-            topics, as the theory is very extensive. By key topics, I mean the
-            information that I have actively used myself for many years and
-            apply in practice.<br /><br />In my videos on
+          >
+            There's no single starting point for a trader. Beginners need the
+            basics: exchanges, orders, charts, trading styles, risk. If you
+            already trade, it's more useful to check your system against the
+            fundamentals: structure, volume, entries and exits, risk management.
+            If you came for a specific market, open that section directly:
+            crypto alone has 17 articles, and there's Forex, futures, and bonds
+            too.
+            <br /><br />
+            This route saves time: instead of trying to learn everything at
+            once, you get a clear sequence: basics → analysis → system → risk →
+            practice.
+            <br /><br />
+
+            Where next: if you're a beginner, move on to the basic course; if
+            you're already trading, start with structure and volume analysis.
           </span>
-          <a
-            href="https://www.youtube.com/@ArapovTrade"
-            target="_blank"
-            class="youtube-kanali"
-            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-          >
-            YouTube channel </a
-          ><span
-            class="learning-materials-5 lato-regular"
-            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-          >
-            I mentioned that when I first started learning trading, there were
-            few materials, and they were scattered, which complicated the
-            learning process. That is why I considered it my contribution to
-            development to create a small library where everyone interested in
-            this topic could do it relatively simply and easily. There, I also
-            prepared a playlist for studying separate trading topics in
-            convenient videos.</span
-          >
         </div>
+
+        <!-- Кнопки -->
         <div
-          [ngClass]="{
-            'youtube-channel': true,
-            'gradient-block-orange': isDark,
-            'gradient-block-blue': !isDark,
-          }"
+          class="buttons-row"
+          style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
         >
-          <a
-            href="https://www.youtube.com/@ArapovTrade"
-            target="_blank"
-            class="primary-button"
-            [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-            >View the YouTube channel</a
+          <div
+            [ngClass]="{
+              'youtube-channel': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
           >
+            <a
+              [ngStyle]="{ cursor: 'pointer' }"
+              (click)="navigateToFragment('newTrader')"
+              class="primary-button"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >
+              I'm a beginner
+            </a>
+          </div>
+
+          <div
+            [ngClass]="{
+              'youtube-channel': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
+          >
+            <a
+              [ngStyle]="{ cursor: 'pointer' }"
+              (click)="navigateToFragment('proTrader')"
+              class="primary-button"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >
+              I already trade
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div
-      [ngClass]="{
-        background: true,
-        'background-dark': isDark,
-        'background-light': !isDark,
-      }"
-    ></div>
-    <div class="about-bg" *ngIf="isDark"></div>
-  </div> -->
+  </div>
 
   <div class="about" style="margin-bottom: 50px">
     <div class="left-text">
@@ -772,8 +733,33 @@
           'gradient-orange': isDark,
           'gradient-blue': !isDark,
         }"
-        >Igor Arapov</span
+        >The author behind the platform</span
       >
+
+      <div class="text_second-block lato-regular">
+        <span
+          class="learning-materials lato-regular"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+        >
+          Igor Arapov, author and founder of Arapov Trade, has traded for over
+          13 years, actively since 2013. The platform brings together articles,
+          videos, and books into one educational system covering trading, volume
+          analysis, and the Wyckoff method.
+          <br /><br />
+          Beyond active trading, Igor is an independent researcher in the
+          psychology of investment decisions and behavioral finance: author of 3
+          trading books published in three languages (9 editions) with
+          international ISBNs through Bowker USA, and co-author of a
+          peer-reviewed academic paper.
+          <br /><br />
+
+          Igor's track record isn't just something to take on faith: on
+          TradingView, he's published 267 market breakdowns since 2021, followed
+          by 370 subscribers, with the full history of ideas open and dated,
+          including the ones that didn't pan out.
+        </span>
+      </div>
+
       <div
         class="quote-block"
         [ngStyle]="{
@@ -789,11 +775,12 @@
               color: isDark ? '#ffffff' : '#0C263A',
               'border-left': isDark ? '5px solid #ffcd29' : '5px solid #0082CC',
             }"
-            >"Success in the market is not the result of superhuman effort, but
-            the consequence of a correct system. Every professional was once in
-            your place, but stability was achieved by those who replaced
-            emotional chaos with cold mathematics."</span
-          >
+            >"Success in the market isn't the result of superhuman effort, but
+            the outcome of the right system. Every professional was once in your
+            shoes, but the ones who reached consistency are the ones who traded
+            emotional chaos for cold math." — I. Arapov (13+ years of
+            experience, platform author)
+          </span>
 
           <span
             class="features-list"
@@ -802,78 +789,42 @@
           >
         </div>
       </div>
-      <div class="feature">
-        <div class="iconss">
-          <div
-            class="chart-experience"
-            [ngStyle]="{
-              border: isDark
-                ? '2px solid rgba(255, 255, 255, 0.16)'
-                : '2px solid #D6EBF7',
-            }"
-          >
-            <div class="group-6">
-              <div
-                [ngClass]="{
-                  'text-7': true,
-                  'text-7-dark': isDark,
-                  'text-7-light': !isDark,
-                }"
-              ></div>
-            </div>
-          </div>
-          <div class="feature-title">
-            <span
-              class="feature-body"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Over 13 years of experience</span
+      <p
+        [ngStyle]="{
+          'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+        }"
+        [ngClass]="{
+          'text-decor': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+          Where next: the full biography, publications, and methodology are
+        on a separate page.
+
+      </p>
+
+      <div class="authot_button_block">
+        <div
+          [ngClass]="{
+            'btn-section-one': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a
+            href="https://arapov.trade/en
+            "
             ><span
-              class="feature-8"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
-              ><a
-                class="youtube-kanali"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                href="https://arapov.trade/en"
-                >Independent researcher</a
-              >
-              in the field of psychology, investment decisions and behavioral
-              finance, author of a series of books on trading with international
-              ISBNs (Bowker USA)</span
-            >
-          </div>
-        </div>
-        <div class="icon-9">
-          <div
-            class="system-trading"
-            [ngStyle]="{
-              border: isDark
-                ? '2px solid rgba(255, 255, 255, 0.16)'
-                : '2px solid #D6EBF7',
-            }"
+              class="pochaty-navchannya"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >About the author</span
+            ></a
           >
-            <div
-              [ngClass]="{
-                'text-a': true,
-                'text-a-dark': isDark,
-                'text-a-light': !isDark,
-              }"
-            ></div>
-          </div>
-          <div class="feature-title-b">
-            <span
-              class="feature-body-c"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Systematic Trading</span
-            ><span
-              class="image-d"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
-              >A systematic approach based on volume analysis, Wyckoff logic,
-              and risk control</span
-            >
-          </div>
         </div>
       </div>
-    </div>
+
+       </div>
     <div class="shapes">
       <div
         [ngClass]="{
@@ -895,8 +846,8 @@
       >
         <div class="articles-count">
           <span class="articles-recommendations"
-            >50+ educational articles<br /></span
-          ><span class="graphics">with practical recommendations </span>
+            >50+  training articles<br /></span
+          ><span class="graphics">with practical recommendations</span>
         </div>
       </div>
       <div class="mask-group"><div class="reviews-block"></div></div>
@@ -913,14 +864,14 @@
       >
         <div class="positive-reviews">
           <span class="positive-reviews-percent">70+ </span
-          ><span class="positive-reviews-text">Videos on YouTube</span>
+          ><span class="positive-reviews-text">video lessons on YouTube</span>
         </div>
         <div class="frame-f"></div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="flex-row">
+  <div class="flex-row">
     <div class="background-shape"></div>
 
     <div class="base">
@@ -940,8 +891,6 @@
           }"
         ></div>
         <div
-          data-aos="fade-up"
-          data-aos-delay="300"
           class="trading-definition"
           [ngStyle]="{
             background: isDark
@@ -963,29 +912,34 @@
               ></div>
             </div>
             <h2
+              id="newTrader"
               [ngClass]="{
                 'trading-definition-title': true,
                 'gradient-orange': isDark,
                 'gradient-blue': !isDark,
               }"
             >
-              What is trading: in simple terms
+              What is trading: in short
+
             </h2>
           </div>
           <span
             class="trading-definition-text"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >In the modern world of finance, the word "trading" appears
-            increasingly often in news headlines, social media, and even in
-            everyday conversations. It has become almost synonymous with the
-            possibility of quick earnings, financial freedom, and working
-            without an office. But what does this term actually mean? Who is a
-            trader, and how does the market they earn on work?</span
+            >Trading means buying and selling financial assets (stocks,
+            currencies, crypto, commodities) to profit from price changes
+            over a short or medium timeframe, anywhere from a few minutes
+            to a few weeks. That's what sets trading apart from investing:
+            an investor buys an asset to hold it for years and earn from
+            business growth or dividends, while a trader profits from the
+            price movement itself, whether the asset is rising or
+            falling.
+</span
           >
         </div>
       </div>
 
-      <div class="fifth-content_block" data-aos="fade-up" data-aos-delay="300">
+      <div class="fifth-content_block">
         <div class="left-content">
           <div class="heading-support-text">
             <h2
@@ -995,71 +949,71 @@
                 'gradient-blue': !isDark,
               }"
             >
-              Basics of Trading
+                 Trading basics
+
             </h2>
-            <span
+
+            <p
               class="osnovi-treidingu-14"
               [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Trading is the process of buying and selling financial assets
-              with the goal of making a profit from the difference in prices. In
-              practice, this may look like this: a trader buys an asset cheaper,
-              waits for its value to increase, and sells it at a higher price.
-              The difference between the purchase and sale price (taking
-              commissions into account) is their profit.</span
             >
-          </div>
-          <div class="tabs">
-            <div
+              The mechanics stay the same either way: a trader analyzes the
+              chart and volume, works out a likely price scenario, enters
+              the trade under preset conditions, sets a stop-loss right
+              away in case the scenario doesn't play out, and closes the
+              position for profit or loss according to plan rather than
+              in-the-moment mood.
+
+            </p>
+            <p
+              class="osnovi-treidingu-14"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >
+               Example: a stock trades at $100, the trader expects it to
+              rise to $105 and decides in advance to exit if it drops to
+              $97. If the price reaches $105, the trade closes with a 5%
+              profit. If it drops to $97, the trader takes the loss
+              they'd already accepted instead of trying to "ride out" the
+              drawdown hoping for a reversal.
+
+            </p>
+            <p
+              [ngStyle]="{
+                'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+              }"
               [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
+                'text-decor': true,
+                'text-decor-forth-block': true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
               }"
             >
-              <span class="tab-text">Company Stocks</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text">Currency (Forex market)</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text"
-                >Cryptocurrencies (Bitcoin, Ethereum, etc.)</span
+               Next in order: where to start and how to move forward step
+              by step.
+
+            </p>
+
+            <div class="authot_button_block">
+              <div
+                [ngClass]="{
+                  'btn-section-one': true,
+                  'gradient-block-orange': isDark,
+                  'gradient-block-blue': !isDark,
+                }"
               >
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text">Commodities (gold, oil, wheat)</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text"
-                >Futures, options, indices and other instruments</span
-              >
+                <a
+                  [ngStyle]="{ cursor: 'pointer' }"
+                  (click)="navigateToFragment('newTraderWay')"
+                  ><span
+                    class="pochaty-navchannya"
+                    [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+                    >Follow the beginner's path</span
+                  ></a
+                >
+              </div>
             </div>
           </div>
-        </div>
+           </div>
         <div class="right-content_fifth">
           <img
             *ngIf="isDark"
@@ -1096,7 +1050,8 @@
       </div>
     </div>
   </div>
-  <div class="six_block" data-aos="fade-up" data-aos-delay="300">
+
+  <div class="six_block">
     <div class="six_block-left">
       <div
         [ngClass]="{
@@ -1130,18 +1085,30 @@
           'gradient-blue': !isDark,
         }"
       >
-        Who is a trader?
+        Opportunities and risks
       </h2>
-      <span
+      <p
         class="flex-row-fc"
         [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-        >A trader is a person who buys and sells financial instruments with the
-        aim of making a profit. They analyze the market, forecast price changes,
-        and make decisions: to buy, to sell, or to hold assets. Traders can work
-        independently or as part of financial institutions—banks, hedge funds,
-        investment, or brokerage companies.</span
       >
+         Trading gives you a way to profit from price movement, but it
+        comes with a real risk of losing capital: most beginners blow
+        their account not from lack of knowledge, but from lack of
+        discipline and risk management.
 
+      </p>
+      <p
+        class="flex-row-fc"
+        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+      >
+          The typical reasons for blowing an account are almost always the
+        same: entering a trade without calculating the risk beforehand,
+        trying to win back a loss, sizing up a position on emotion,
+        skipping the stop-loss, and trading without a clear exit plan.
+        None of them come down to a lack of strategies, they're all about
+        discipline.
+
+      </p>
       <div
         class="satisfied-customer"
         [ngStyle]="{
@@ -1157,171 +1124,299 @@
           }"
         >
           <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
-            Thanks to the development of online exchanges, brokerage services,
-            and trading platforms, practically everyone today can start trading
-            in the financial market. All you need for this is a computer or a
-            smartphone and Internet access.
+             Risk management is a separate, mandatory part of the training,
+            not an add-on to a strategy: in practice that means a 1:3
+            risk-to-reward ratio and calculating a trade's expected value,
+            say 60/40, rather than the vague advice to "manage your
+            risk."
+
           </p>
+        </div>
+      </div>
+      <p
+        [ngStyle]="{
+          'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+        }"
+        [ngClass]="{
+          'text-decor': true,
+          'text-decor-forth-block': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+        Where next: the full breakdown is in the "Risk Management"
+        section.
+
+      </p>
+
+      <div class="authot_button_block">
+        <div
+          [ngClass]="{
+            'btn-section-one': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a href="https://arapov.trade/en/freestudying/risk-management"
+            ><span
+              class="pochaty-navchannya"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >Go to risk management</span
+            ></a
+          >
         </div>
       </div>
     </div>
   </div>
-  <div class="seventh-block" data-aos="fade-up" data-aos-delay="300">
+
+  <div class="flex-row-ba left-sixth" id="section1">
+    <div class="row" data-aos="fade-up" data-aos-delay="300">
+      <div class="left">
+        <div class="bg-figure">
+          <div
+            [ngClass]="{
+              arrows: true,
+              'arrows-dark': isDark,
+              'arrows-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              bg: true,
+              'bg-dark': isDark,
+              'bg-light': !isDark,
+            }"
+          ></div>
+        </div>
+        <div class="img"></div>
+        <div
+          class="igor-info"
+          [ngStyle]="{
+            border: isDark ? '2px solid #52493b' : '2px solid #4D5460',
+          }"
+        >
+          <div class="avatar"></div>
+          <div class="name">
+            <span class="name-4">Igor Arapov</span>
+            <span class="designation">Practicing trader</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="dorogiy-chitachu" id="newTraderWay">
+          <span
+            [ngClass]="{
+              dorogiy: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+            >For beginners: </span
+          ><span
+            [ngClass]="{
+              chitachu: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+          >
+               where to start and where to go</span
+          >
+        </div>
+        <div class="text_second-block lato-regular">
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            If this is your first time looking at a chart and indicators,
+            don't go hunting for a "working strategy" right away — first
+            figure out how the market works and how to read price.
+
+          </p>
+          
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            The order goes like this: introduction and exchange structure
+            → technical analysis → volume analysis → trading system with
+            risk management → the Wyckoff method and Smart Money →
+            practice and patterns on a demo account. Each block builds on
+            the one before it instead of jumping around.
+
+          </p>
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+               All of this is packed into one complete course:
+
+            <span
+              class="youtube-kanali"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >32 sections</span
+            >
+            across seven sequential blocks. At one section a day, that's
+            roughly a month until your first deliberate trade.
+
+          </p>
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Each block in the path leads to a separate topic on the
+            platform that you can dig into once you get there: "Trading
+            for Beginners" alone has 8 articles, "Technical Analysis" has
+            16.
+
+          </p>
+          <p
+            [ngStyle]="{
+              'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+            }"
+            [ngClass]="{
+              'text-decor': true,
+              'text-decor-forth-block': true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+          >
+              Beginner's path: Introduction → Exchange structure →
+            Technical analysis → Volume analysis → Trading system →
+            Wyckoff method and Smart Money → Practice and patterns.
+
+          </p>
+        </div>
+        <div
+          [ngClass]="{
+            'youtube-channel': true,
+            'youtube-channel-btn': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a
+            href="https://arapov.trade/en/freestudying/freeeducation"
+            class="primary-button"
+            [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >Follow the beginner's path</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        background: true,
+        'background-dark': isDark,
+        'background-light': !isDark,
+      }"
+    ></div>
+    <div class="about-bg" *ngIf="isDark"></div>
+  </div>
+
+  <div class="seventh-block">
     <div class="bg-36">
       <div class="seventh-block_left">
         <div class="flex-column">
           <h2
+            id="proTrader"
             [ngClass]="{
               'opportunities-risks': true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
           >
-            Opportunities and Risks
+              Market structure, volume, and the Wyckoff method
+
           </h2>
-          <span
+          <p
             class="opportunities-risks-38"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >Trading attracts with the opportunity to earn on financial markets.
-            However, trading involves a high risk of losing funds and requires
-            knowledge, discipline, and continuous development. Statistically,
-            most beginners lose their funds within the first months of trading
-            due to common mistakes.</span
           >
-          <div class="minuses">
-            <span
-              [ngClass]="{
-                'deposit-loss-reasons': true,
-                'gradient-orange': isDark,
-                'gradient-blue': !isDark,
-              }"
-              >Reasons for losing the deposit:</span
-            >
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Inexperience</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Emotional decisions</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Neglecting risks</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >The desire to get rich quick</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div class="plus">
-          <span
+            Once the basics click, the next step is learning to read the
+            market as the behavior of its participants, not as a random
+            string of candles. That's where market structure, volume
+            analysis, and the Wyckoff method come in, the platform's
+            signature approach.
+
+          </p>
+
+          <p
+            class="opportunities-risks-38"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+             The method was developed back in the early 20th century by
+            Richard Wyckoff, one of the founders of technical analysis,
+            and its logic hasn't aged: price and volume together show
+            whether a large player is building a position (accumulation)
+            or unloading one (distribution), long before that becomes
+            obvious from price alone.
+
+          </p>
+          <p
+            class="opportunities-risks-38"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+              At this same level, the platform also covers Smart Money
+            Concepts and related topics: order blocks, liquidity pools,
+            imbalance/FVG, these are additional models for reading
+            liquidity, not guaranteed signals.
+
+          </p>
+          <p
+            [ngStyle]="{
+              'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+            }"
             [ngClass]="{
-              'successful-trader': true,
+              'text-decor': true,
+              'text-decor-forth-block': true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
-            >To become a successful trader, you need to:</span
           >
-          <div class="plus-3f">
+             Next route: "Volume Analysis" (3 articles) → "Wyckoff Method"
+            → "Market Structure" → "Smart Money Concept" (4 articles).
+
+          </p>
+
+          <div
+            class="buttons-row"
+            style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
+          >
             <div
               [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
+                'youtube-channel': true,
+                'gradient-block-orange': isDark,
+                'gradient-block-blue': !isDark,
               }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Constantly learn</span
             >
-          </div>
-          <div class="plus-3f">
+              <a
+                href="https://arapov.trade/en/freestudying/wyckoff-method"
+                class="primary-button"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >
+                  Wyckoff method
+
+              </a>
+            </div>
+
             <div
               [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
+                'youtube-channel': true,
+                'gradient-block-orange': isDark,
+                'gradient-block-blue': !isDark,
               }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Develop your own strategy</span
             >
+              <a
+                [ngStyle]="{ cursor: 'pointer' }"
+                (click)="navigateToFragment('tradingSystem')"
+                class="primary-button"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >
+               trading system
+              </a>
+            </div>
           </div>
-          <div class="plus-3f">
-            <div
-              [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
-              }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Have a clear risk management plan</span
-            >
-          </div>
-          <div class="plus-3f">
-            <div
-              [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
-              }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Control emotions, especially fear and greed</span
-            >
-          </div>
+             </div>
         </div>
-      </div>
       <div class="seventh-block_rigth">
         <div class="right-37">
           <div class="money-tree">
@@ -1365,7 +1460,7 @@
           }"
         ></div>
       </div>
-      <div class="reighth-block_main-right">
+      <div class="reighth-block_main-right" id="tradingSystem">
         <h2
           [ngClass]="{
             'opportunities-risks': true,
@@ -1373,69 +1468,80 @@
             'gradient-blue': !isDark,
           }"
         >
-          How to start?
-        </h2>
-        <div
-          class="start-trading-recommendation"
-          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-        >
-          <span
-            >To start trading properly and avoid losing your funds, I recommend
-            beginning with free trading theory. It covers all key sections
-            needed for a confident start — from basic concepts to trading
-            strategies.<br /><br />All materials are openly available, with no
-            hidden fees — learn at your own pace and master the market step by
-            step. Each topic includes real examples and detailed explanations.
-          </span>
-        </div>
+             For experienced traders: turn knowledge into a system
 
-        <span
+        </h2>
+        <div class="start-trading-recommendation">
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+             If you already trade, the platform is useful not as a
+            beginner course, but as a tool for auditing your own system:
+            market context, entry and exit rules, risk management, a
+            trade journal, and psychology should all add up to one
+            coherent model.
+
+          </p>
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            "Trading System," "Trade Management," and "Trading
+            Psychology" (2 articles) help close exactly the gaps that are
+            usually invisible from inside your own trading.
+
+          </p>
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+             For more examples, check the training videos on YouTube
+          </p>
+        </div>
+        <p
+          [ngStyle]="{
+            'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+          }"
           [ngClass]="{
-            'successful-trader': true,
+            'text-decor': true,
+            'text-decor-forth-block': true,
             'gradient-orange': isDark,
             'gradient-blue': !isDark,
           }"
-          >On the educational platform, you will find:</span
         >
-        <div class="tabs-eight-block">
+             Where next: "Trading System" → "Trade Management" → "Trading
+          Psychology."
+
+        </p>
+
+        <div class="authot_button_block">
           <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+            [ngClass]="{
+              'btn-section-one': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
           >
-            <span class="tab-text"
-              >articles and video lessons with explanations</span
+            <a href="https://arapov.trade/en/freestudying/practic"
+              ><span
+                class="pochaty-navchannya"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+                >Go to trading system</span
+              ></a
             >
           </div>
+
           <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+            class="podrobnee phone"
+            [ngClass]="{
+              'podrobnee-dark': isDark,
+              'podrobnee-light': !isDark,
+            }"
           >
-            <span class="tab-text"
-              >breakdowns of basic and advanced strategies</span
-            >
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">real trade examples</span>
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">broker selection recommendations</span>
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">explanations of terms and instruments</span>
+            <span class="text-p"
+              ><a href="https://www.youtube.com/@ArapovTrade" target="_blank"
+                >Videos on YouTube</a
+              >
+            </span>
           </div>
         </div>
-      </div>
+       </div>
     </div>
 
-    <div
-      class="eighth-block_bottom-block"
-      data-aos="fade-up"
-      data-aos-delay="300"
-    >
+   
+    <div class="eighth-block_bottom-block">
       <div class="notice-block">
         <div
           class="name-1a"
@@ -1454,13 +1560,15 @@
                   ? '5px solid #ffcd29'
                   : '5px solid #0082CC',
               }"
-              >Most importantly — you will be able to master a trading strategy
-              that will help you feel confident in the market and avoid the
-              common mistakes most beginners make.<br />Trading is a
-              full-fledged profession that requires effort, self-discipline, and
-              analytical thinking. If you are willing to invest time and work on
-              yourself — the financial market opens real opportunities for those
-              who approach trading systematically.</span
+              >Most importantly, you'll be able to master a trading
+              strategy that helps you feel confident in the market and
+              avoid the mistakes most beginners make.<br />Trading is a
+              real profession that demands effort, self-discipline, and
+              analytical thinking. If you're willing to put in the time
+              and work on yourself, the financial markets offer real
+              opportunities for anyone who approaches trading
+              systematically.
+</span
             >
           </div>
         </div>
@@ -1472,14 +1580,16 @@
           <span
             class="speach-text"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >I wish you success in your learning and the first steps on the path
-            to professional trading!<br /><br /></span
+            >Wishing you success in your studies and your first steps
+            toward professional trading!
+<br /><br /></span
           ><span
             class="speach-text-quote"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >Best regards, <br />
-            Author of the course "Trading Education from Scratch" — Igor
-            Arapov</span
+            >Best regards,<br />
+              Author of the course "Trading From Scratch" — Igor
+            Arapov
+</span
           >
         </div>
         <span
@@ -1489,7 +1599,7 @@
         >
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="footer">
     <div class="footer-main-block">
@@ -1513,26 +1623,45 @@
             beginners and experienced traders.</span
           >
         </div>
-        <div style="display: flex; flex-direction: row; ">
-           <div class="menu-title-block" style="width: 25px !important; font-size: 14px!important;line-height: 2!important;">
-          <a style="font-size: 14px !important; "
-            href="/ru/main"
-            (click)="$event.preventDefault(); navigateTo('ru/main')"
-            class="menu-title_text"
+        <div style="display: flex; flex-direction: row">
+          <div
+            class="menu-title-block"
+            style="
+              width: 25px !important;
+              font-size: 14px !important;
+              line-height: 2 !important;
+            "
           >
-            RU  
-          </a>  
-        </div>
-        <div><span style="color: gray; width: 25px; font-size: 25px; ">-</span></div>
-        <div class="menu-title-block" style="width: 25px !important; margin-left: 5px; line-height: 2!important;font-size: 14px!important;">
-          <a style="font-size: 14px !important; "
-            href="/"
-            (click)="$event.preventDefault(); navigateTo('')"
-            class="menu-title_text"
+            <a
+              style="font-size: 14px !important"
+              href="/ru/main"
+              (click)="$event.preventDefault(); navigateTo('ru/main')"
+              class="menu-title_text"
+            >
+              RU
+            </a>
+          </div>
+          <div>
+            <span style="color: gray; width: 25px; font-size: 25px">-</span>
+          </div>
+          <div
+            class="menu-title-block"
+            style="
+              width: 25px !important;
+              margin-left: 5px;
+              line-height: 2 !important;
+              font-size: 14px !important;
+            "
           >
-            UA
-          </a>
-        </div>
+            <a
+              style="font-size: 14px !important"
+              href="/"
+              (click)="$event.preventDefault(); navigateTo('')"
+              class="menu-title_text"
+            >
+              UA
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1580,7 +1709,8 @@
           <span class="menu-title">Links</span>
 
           <a
-             href="/en/privacy-policy" (click)="$event.preventDefault(); navigateTo('en/privacy-policy')"
+            href="/en/privacy-policy"
+            (click)="$event.preventDefault(); navigateTo('en/privacy-policy')"
             class="menu-title-block menu-title_text"
             >Privacy Policy</a
           >
@@ -1606,7 +1736,6 @@
             <a
               href="/en/books"
               (click)="$event.preventDefault(); navigateTo('en/books')"
-               
               class="menu-title_text"
               >MY BOOKS</a
             >
@@ -1773,7 +1902,6 @@
             >Sole Proprietor Arapov I. V. TIN 3314507171</span
           >
         </div>
-         
       </div>
     </div>
     <div

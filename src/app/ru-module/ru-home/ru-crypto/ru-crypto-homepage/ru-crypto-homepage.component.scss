@@ -1,7 +1,21 @@
 .desc {
   display: block;
 }
-
+.text-decor{
+  font-weight: bolder;
+  
+  
+  font-family: "Lato";
+  font-size: 18px;
+  
+  line-height: 150%;
+  text-align: left;
+  z-index: 237;
+ width: 675px;
+}
+.text-decor-forth-block{
+  width: fit-content !important;
+}
 .lato-regular {
   font-family: "Lato";
   font-weight: 400;
@@ -16,12 +30,12 @@
 
 .flex-row-f {
   position: relative;
-  height: 591px;
+  height: fit-content;
   z-index: 241;
 }
 .flex-row-e {
   width: 81.26%;
-  height: 664px;
+  height: fit-content;
   margin: 0 auto;
   display: flex;
   padding-top: 64px;
@@ -74,6 +88,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  margin-top: 80px;
 }
 .shadow-dark {
   box-shadow: 0 0 10px #f7b709;
@@ -82,12 +97,13 @@
   box-shadow: 0 0 15px #0088ff;
 }
 .rectangle {
-  position: absolute;
-  width: 293px;
-  height: 16px;
-  top: 30px;
-  background: #fcda35;
-  z-index: 240;
+position: absolute;
+    width: 297px;
+    height: 16px;
+    top: 60px;
+    left: 233px;
+    background: #fcda35;
+    z-index: 240;
 }
 .zagolovok {
   width: 678px;
@@ -96,7 +112,8 @@
   font-weight: 600;
   text-align: left;
   letter-spacing: -0.67px;
-  z-index: 238;
+  z-index: 300;
+  position: relative;
   line-height: normal;
   margin-bottom: 35px;
   transition: color 0.5s ease, width 0.3s ease;
@@ -123,7 +140,7 @@
   display: flex;
   justify-content: space-between;
   width: 675px;
-  height: 122px;
+  // height: 122px;
   color: #ffffff;
   font-family: "Lato";
   font-size: 18px;
@@ -190,13 +207,22 @@
 }
 
 .mask-gradient {
-  position: absolute;
-  width: 100%;
-  height: 838px;
-  top: 0;
+     position: absolute;
+    width: 100%;
+    height: 1150px;
+    top: 0;
+
   left: 0;
-  background: url(/assets/redesignArapovTrade/img/mask-gradient.png) no-repeat
-    center;
+  // background: url(/assets/redesignArapovTrade/img/mask-gradient.png) no-repeat
+  //   center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.001) 50%,
+    rgba(0, 0, 0, 0.9) 62%,
+    rgba(0, 0, 0, 0.95) 80%,
+    #000 100%
+  );
   background-size: cover;
   z-index: 211;
 }
@@ -205,8 +231,8 @@
 .flex-row-ba {
   position: relative;
   width: 100%;
-  height: 660px;
-  margin: 220px auto 0;
+  height: fit-content;
+  margin: 150px auto 150px;
   z-index: 444;
 }
 .row {
@@ -217,14 +243,14 @@
   position: relative;
   width: 1166px;
   margin: 0 auto;
-  height: 575.82px;
+  height: fit-content;
   z-index: 188;
 }
 .left {
   flex-shrink: 0;
   position: relative;
   width: 480.9px;
-  height: 575.82px;
+  height: fit-content;
   z-index: 189;
 }
 .bg-figure {
@@ -274,7 +300,7 @@
   background-size: contain;
 }
 .img {
-  position: absolute;
+  position: relative;
   width: 445px;
   height: 515.275px;
   top: 46.541px;
@@ -286,7 +312,7 @@
   border-radius: 20px;
 }
 .igor-info {
-  position: relative;
+  position: absolute;
   width: 373px;
   height: 100px;
   top: 434.263px;
@@ -296,7 +322,7 @@
   z-index: 194;
   border-radius: 35px 60px 5px 35px;
   gap: 20px;
-  padding: 16px 48px;
+  padding: 10px 20px;
   overflow: hidden;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
@@ -351,34 +377,35 @@
   flex-shrink: 0;
   position: relative;
   width: 633px;
-  height: 547px;
+  height: fit-content;
   z-index: 199;
 }
 .dorogiy-chitachu {
   position: relative;
-  width: 313px;
-  height: 56px;
+  width: fit-content;
+  height: fit-content;
   margin: 0 0 0 0;
   font-family: Advent Pro;
   font-size: 50px;
   font-weight: 600;
-  line-height: 56px;
-  text-align: center;
+  // line-height: 56px;
+  // text-align: center;
   text-overflow: initial;
-  white-space: nowrap;
+  white-space: normal;
   z-index: 203;
+ 
 }
 .dorogiy {
   position: relative;
   font-family: Advent Pro;
   font-size: 50px;
   font-weight: 600;
-  line-height: 56px;
-  text-align: center;
-  text-transform: capitalize;
+  // line-height: 56px;
+  // text-align: center;
+       text-align: justify;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;  margin: 0;
 }
 .chitachu {
   position: relative;
@@ -387,16 +414,17 @@
   font-weight: 600;
   line-height: 56px;
   text-align: center;
-  text-transform: capitalize;
+ 
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text_second-block {
   position: relative;
-  width: 633px;
-  height: 450px;
-  margin: 16px 0 35px 0;
+  // width: 633px;
+  width: 95%;
+  height: fit-content;
+  margin: 16px 0 0px 0;
   font-family: "Lato" !important;
   font-size: 18px;
   font-weight: 400;
@@ -464,37 +492,45 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   position: relative;
-  width: 1268px;
-  margin: 81px auto 0;
+  // width: 1268px;
+  width: 81.4%;
+  margin: 50px auto 0;
   z-index: 153;
 }
 .left-text {
   flex-shrink: 0;
   position: relative;
-  width: 633px;
-  height: 688px;
+  // width: 633px;
+  width: 50%;
+  height: fit-content;
   font-size: 0px;
   z-index: 154;
+  // top: -60px;
 }
 .author-header {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  // justify-content: center;
   position: relative;
-  width: 389px;
-  height: 56px;
-  margin: 95px 0 0 -4px;
+  // width: 389px;
+  // height: 56px;
+  margin: 0;
   font-family: Advent Pro;
   font-size: 50px;
   font-weight: 600;
   line-height: 56px;
   text-align: center;
-  text-transform: capitalize;
-  white-space: nowrap;
+  // text-transform: capitalize;
+  // white-space: nowrap;
   z-index: 174;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+
+
+      width: 100%;
+    height: auto;
+    white-space: normal;
 }
 .quote-block {
   display: flex;
@@ -503,10 +539,12 @@
   flex-wrap: nowrap;
   gap: 10px;
   position: relative;
-  width: 626px;
-  height: 166px;
+  // width: 626px;
+  width: 100%;
+  // height: 180px;
+  height: fit-content;
   margin: 29px 0 0 0;
-  padding: 9px 13px 9px 13px;
+  padding: 9px 50px 70px 13px;
   border: 2px solid rgba(230, 237, 251, 0.16);
   z-index: 169;
   border-radius: 32px 60px 8px 40px;
@@ -515,17 +553,20 @@
 .quote {
   flex-shrink: 0;
   position: relative;
-  width: 588px;
-  height: 152px;
+  // width: 588px;
+  width: 100%;
+ 
+  height: fit-content;
   z-index: 170;
 }
 .quote-text {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  position: absolute;
-  width: 572px;
-  height: 108px;
+  position: relative  ;
+  // width: 572px;
+  width: 100%;
+  height: fit-content;
   top: 11px;
   left: 16px;
   color: #ffffff;
@@ -544,11 +585,15 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  position: absolute;
+  top: revert-rule;;
   width: 137px;
   height: 56px;
-  top: 96px;
+  
+  position: absolute;        // лучше absolute, если нужно прижать к правому краю родителя
+  // top: 115px;    
+  top: 100%;            // раскомментируй и подстрой
   right: 0;
+  
   color: #ffffff;
   font-family: "Dancing Script";
   font-size: 40px;
@@ -557,6 +602,7 @@
   text-align: right;
   white-space: nowrap;
   z-index: 171;
+
 }
 .feature {
   display: flex;
@@ -746,9 +792,12 @@
 .shapes {
   flex-shrink: 0;
   position: relative;
-  width: 535px;
+  // width: 535px;
+    width: 40%;
   height: 535px;
   z-index: 175;
+  top: -100px;
+  // margin-left: 150px;
 }
 .articles {
   position: absolute;
@@ -778,7 +827,8 @@
   flex-wrap: nowrap;
   gap: 24px;
   position: absolute;
-  width: 68.6%;
+  // width: 68.6%;
+  width: 80%;
   height: 14.95%;
   top: -3.27%;
   left: -8.41%;
@@ -977,12 +1027,12 @@
 }
 .arrow-11-dark {
   background: url(/assets/redesignArapovTrade/img/Arrow-forth-block.png)
-    no-repeat center;
+    no-repeat top;
   background-size: cover;
 }
 .arrow-11-light {
   background: url(/assets/redesignArapovTrade/img/arrow-11-light.png) no-repeat
-    center;
+    top;
   background-size: cover;
 }
 .trading-definition {
@@ -1067,6 +1117,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+      width: 95%;
+    margin: 0 auto;
 }
 .right-content_fifth {
   width: 561px;
@@ -1138,14 +1190,14 @@
 }
 .left-content {
   position: relative;
-  width: 528px;
-  height: 621px;
+  width: auto;
+  height: fit-content;
   z-index: 131;
 }
 .heading-support-text {
   position: relative;
-  width: 513px;
-  height: 256px;
+  width: auto;
+  height: fit-content;
   margin: 0 0 0 0;
   font-size: 0px;
   z-index: 132;
@@ -1370,7 +1422,7 @@
   height: 92px;
   margin: 0;
   border-left: 5px solid #ffcd29;
-  padding: 0 0 0 10px;
+  padding: 0 5px 0 10px;
   font-family: Lato;
   font-style: italic;
   font-size: 18px;
@@ -1408,7 +1460,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 651px;
+  height: fit-content;
 }
 
 .six_block-left {
@@ -1417,8 +1469,8 @@
 .six_block-right {
   position: relative;
   width: 567px;
-  height: 408px;
-  padding-top: 20px;
+  height: fit-content;
+  padding-top: 50px;
 }
 
 //seventh block
@@ -1439,7 +1491,7 @@
 }
 .bg_seventh {
   width: 108%;
-  height: 820px;
+  height: 900px;
 
   z-index: 36;
   position: absolute;
@@ -1464,6 +1516,7 @@
 .seventh-block_rigth {
   width: 451px;
   height: 620px;
+  margin-top: 100px;
 }
 .flex-column {
   z-index: 114;
@@ -1539,7 +1592,7 @@
   line-height: 56px;
   text-align: left;
   text-transform: capitalize;
-  white-space: nowrap;
+  white-space: normal;
   z-index: 114;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1713,8 +1766,10 @@
   padding: 150px 0 0;
 }
 .eighth-block_main {
-  width: 100%;
-  height: 710px;
+  width: 85%;
+  margin: 0 auto;
+  // height: 710px;
+  height: fit-content;
   position: relative;
   margin-bottom: 150px;
   display: flex;
@@ -1854,7 +1909,7 @@
   flex-wrap: nowrap;
 
   position: relative;
-  width: 540px;
+  // width: 540px;
 
   height: 100%;
 
@@ -1863,9 +1918,10 @@
 
 .start-trading-recommendation {
   position: relative;
-  width: 533px;
+  // width: 533px;
+  width: 100%;
 
-  height: 245px;
+  height: fit-content;
   color: #ffffff;
   font-family: Lato;
   font-size: 18px;
@@ -1937,8 +1993,11 @@
 
 .eighth-block_main-left {
   position: relative;
-  width: 560px;
-  height: 710px;
+  // width: 560px;
+
+   width: 45%;
+
+  // height: 710px;
   z-index: 77;
 }
 .img-18 {
@@ -1991,7 +2050,7 @@
   // width: 335px;
   // height: 64px;
   width: fit-content;
-  margin: 60px 0 0 0;
+   margin: 0;
   z-index: 200;
   border-radius: 8px;
   cursor: pointer;
@@ -2001,7 +2060,7 @@
   align-items: center;
   transition: all 0.3s ease;
   gap: 10.667px;
-
+margin-top: 30px;
   display: flex;
 }
 .primary-button {
@@ -2179,6 +2238,12 @@
 /* Медиа-запрос для планшетов (до 767px) */
 
 @media (min-width: 767px) and (max-width: 1200px) {
+  .shapes{
+    top: 0 !important;
+  }
+  .left-sixth .row{
+    flex-direction: column !important;
+  }
   .follow-us-block {
     margin-top: 20px;
   }
@@ -2192,15 +2257,17 @@
   }
 
   .primary-button {
-    font-size: 13px;
+    font-size: 16px;
   }
   .hero-section-main {
     margin-top: 35px;
   }
   /* Первый блок (.flex-row-e) */
   .text-block_one-block {
-    width: 429px;
-    height: 468px;
+    // width: 429px;
+    width: 100%;
+    // height: 468px;
+    height: fit-content;
   }
   .flex-row-e {
     flex-direction: row;
@@ -2230,25 +2297,29 @@
     left: 36px;
   }
   .mask-gradient {
-    width: 100%;
-    height: 650px;
-    position: absolute;
-    background-size: cover;
+            width: 100%;
+             height: 880px;
+        top: 0;
+        position: absolute;
+        background-size: cover;
+       
   }
   .bezkoshtovniy-kurs {
     font-size: 26px;
   }
   .rectangle {
-    width: 190px;
-    height: 10px;
-
-    top: 29px;
+            width: 198px;
+        height: 10px;
+        left: 152px;
+        top: 42px;
+    
   }
   .zagolovok {
     line-height: 50px;
     width: 424px;
     height: 130px;
     margin-bottom: 15px;
+    z-index: 300;
   }
   .navchannya-treidzingu-z-nulya,
   .posibnik-dlya-pochatkivtsiv {
@@ -2257,14 +2328,23 @@
   }
 
   .tekst-opisanye {
-    width: 424px;
-    height: 182px;
+    // width: 424px;
+    width: 75%;
+    // height: 182px;
     font-size: 16px;
     line-height: 22px;
     justify-content: space-evenly;
     text-align: left;
   }
-
+  .text-decor{
+    width: 75%;
+   font-size: 16px;
+    line-height: 22px;
+    justify-content: space-evenly;
+    text-align: left;
+  font-size: 18px;
+   
+}
   .pochaty-navchannya {
     font-family: "Lato";
     font-weight: 600;
@@ -2315,6 +2395,7 @@
     background-repeat: no-repeat !important;
     background-size: 107% 105% !important;
     background-position: center !important;
+    margin-top: 50px;
   }
   .authot_button_block {
     flex-direction: row;
@@ -2336,11 +2417,11 @@
   .flex-row-ba {
     width: 100%;
     height: auto;
-    margin: 100px auto 250px;
+    margin: 50px auto 0 !important;
   }
   .row {
     width: 90%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     height: auto;
     margin: 0 auto;
@@ -2353,15 +2434,16 @@
     left: 0px;
   }
   .left {
-    width: 725px;
-    height: 580px;
+    width: 500px;
+      height: fit-content;
+        margin: 50px 0;
 
     position: relative;
   }
   .img {
     width: 725px;
     height: 515px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 46px;
     background: url(/assets/redesignArapovTrade/img/IMG-bg-second-table.svg);
@@ -2428,12 +2510,12 @@
   .dorogiy-chitachu {
     width: 100%;
     font-size: 28px;
-    line-height: 40px;
+    // line-height: 40px;
     text-align: start;
     margin: 10px 0;
   }
   .text_second-block {
-    width: 100%;
+    width: 95%;
     height: auto;
     font-size: 16px;
     line-height: 22px;
@@ -2444,15 +2526,17 @@
   /* Третий блок (.about) */
   .about {
     width: 728px;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    margin: 30px 15px;
-    margin: 150px auto 0;
+    // margin: 30px 15px;
+    // margin: 150px auto 0;
+    margin: 0 auto;
   }
   .shapes {
     width: 100%;
     height: auto;
     position: relative;
+            margin: 150px 0 80px;
   }
   .articles {
     width: 907.678px;
@@ -2518,7 +2602,7 @@
   }
   .quote-block {
     width: 728px;
-    height: 166px;
+    height: fit-content;
     padding: 9px 24px 5px 13px;
     position: relative;
     margin: 10px 0;
@@ -2526,17 +2610,18 @@
 
   .quote-text {
     width: 691px;
-    height: 72px;
+    height: fit-content;
     font-size: 16px;
     line-height: 25px;
     padding-left: 13px;
     left: 0;
     top: 9px;
+     margin: 10px 5px 60px;
   }
   .quote .features-list {
     left: 540px;
 
-    top: 75px;
+    top: 75%;
   }
   .iconss,
   .icon-9 {
@@ -2593,7 +2678,7 @@
   .heading-support-text {
     position: relative;
     width: 727px;
-    height: 167px;
+    height: fit-content;
     margin: 0 0 18px 0;
     font-size: 0px;
     z-index: 132;
@@ -2666,7 +2751,8 @@
   }
   .fifth-content_block {
     flex-direction: column-reverse;
-    align-items: center;
+    align-items: center; 
+    width: 100%;
   }
   .right-content_fifth {
     width: 729px;
@@ -2796,7 +2882,7 @@
     font-size: 16px;
     align-items: center;
     padding: 8px;
-    margin-bottom: 120px;
+    margin-bottom: 30px;
   }
   .naygolovnishe {
     width: 645px;
@@ -2808,7 +2894,7 @@
   .seventh-block {
     width: 100%;
     height: auto;
-    margin-top: 235px;
+    margin-top: 0;
   }
   .bg-36 {
     width: 100%;
@@ -3002,15 +3088,45 @@
   }
   .features-list {
     left: 590px;
-    top: 160px;
+    // top: 160px;
+    top: 75%;
+  }
+  .reighth-block_main-right {
+    margin-top: 10px;
+    width: 100% !important;
+    
   }
 }
 
 @media (max-width: 766px) {
-  .follow-pad {
-    top: 910px !important;
+  .reighth-block_main-right{
+    width: 100% !important;
   }
-
+  .youtube-channel-btn{
+    margin: 30px 0 150px !important;
+  }
+  .left-sixth {
+    margin-top: 50px !important;
+  }
+  .left-sixth .arrows{
+    top: -65px;
+  }
+   .left-sixth .row{
+    flex-direction: column !important;
+  }
+  .left-sixth .bg-figure{
+    position: relative;
+    top: 10px;
+    height: 510px;
+  }
+   .left-sixth .left{
+    position: relative;
+    top: 10px;
+    margin-top: 0;
+  }
+  .left-sixth .img{
+    position: absolute;
+  }
   /* Header */
 
   .youtube-channel {
@@ -3033,7 +3149,7 @@
   }
 
   .primary-button {
-    font-size: clamp(12px, 1.7vw + 5px, 13px);
+    font-size: 16px;
   }
 
   .hero-section-main {
@@ -3078,9 +3194,11 @@
   }
 
   .mask-gradient {
-    top: 341px;
-    width: 100%;
-    height: 676px;
+           top: 1100px;
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.001) 50%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.95) 93%, #000 100%);
+    
   }
 
   .bezkoshtovniy-kurs {
@@ -3088,16 +3206,17 @@
   }
 
   .rectangle {
-    width: 146px;
-    height: 6px;
-    top: 28px;
+            width: 146px;
+        height: 9px;
+        top: 30px;
+        left: 113px;
   }
 
   .zagolovok {
-    font-size: 30px;
+    font-size: 35px;
     width: 100%;
     height: 95px;
-    margin: 0 0 26px 0;
+    margin:   0;
   }
 
   .navchannya-treidzingu-z-nulya,
@@ -3110,14 +3229,23 @@
 
   .tekst-opisanye {
     width: 100%;
-    height: 182px;
+    // height: 182px;
     font-size: 16px;
     line-height: 150%;
     text-align: left;
     justify-content: space-evenly;
     margin-bottom: 10px;
   }
+.text-decor{
+       width: 100%;
 
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+   
+}
   .btn-section-one {
     width: 100%;
     padding: 0;
@@ -3171,7 +3299,7 @@
     background: url(/assets/redesignArapovTrade/img/image-phone-main.svg);
     width: 265px;
     height: 391px;
-
+    margin-top: 0;
     background-repeat: no-repeat !important;
     background-size: 107% 105% !important;
     background-position: center !important;
@@ -3181,7 +3309,7 @@
     flex-direction: column;
     gap: 15px;
     height: auto;
-    margin: 0;
+    margin:25px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3199,13 +3327,14 @@
   .flex-row-ba {
     width: 100%;
     height: auto;
-    margin-top: 113px;
+    margin-top: 80px; 
+    margin-bottom: 0;
   }
 
   .row {
     width: 100%;
     height: 100%;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -3236,10 +3365,11 @@
     height: 600px;
   }
   .left {
-    width: 100%;
-
+    width: 95%;
+    margin-top: 50px;
     position: relative;
-    height: 490px;
+     height: fit-content;
+
   }
 
   .img {
@@ -3251,7 +3381,7 @@
 
     background-size: contain;
     background-position: center;
-    position: absolute;
+    position: relative;
     left: 0;
     top: clamp(30px, 6vh, 46px);
   }
@@ -3321,13 +3451,14 @@
   .dorogiy-chitachu {
     width: 100%;
     font-size: clamp(24px, 3.7vw + 10px, 28px);
-    line-height: clamp(30px, 5.2vw, 40px);
+    // line-height: clamp(30px, 5.2vw, 40px);
     text-align: start;
     margin-top: 0px;
   }
   .dorogiy,
   .chitachu {
-    font-size: 30px;
+    font-size: 32px;     text-align: center;
+    line-height: 40px;
   }
 
   .text_second-block {
@@ -3341,15 +3472,16 @@
   /* Третий блок (.about) */
   .about {
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 0;
   }
 
   .shapes {
     width: 100%;
     height: auto;
     position: relative;
+    margin: 150px 0 80px;
   }
 
   .articles {
@@ -3414,7 +3546,7 @@
     height: auto;
     position: relative;
     padding: 0 20px;
-    margin-top: 90px;
+    margin-top: 50px;
   }
 
   .author-header {
@@ -3423,15 +3555,17 @@
     margin: 0;
     padding-left: clamp(2px, 0.3vw, 2px);
     justify-content: flex-start;
+    height: fit-content;
+        white-space: normal;
   }
 
   .quote-block {
     width: 100%;
-    height: 245px;
+    height: fit-content;
     padding: clamp(6px, 1.2vw + 2px, 9px) clamp(16px, 3.2vw, 24px)
       clamp(4px, 0.7vw + 2px, 5px) clamp(10px, 1.7vw + 2px, 13px);
     position: relative;
-    margin: clamp(8px, 1.3vh + 2px, 10px) 0;
+    margin: 30px 0;
   }
   .quote {
     width: 100%;
@@ -3443,11 +3577,13 @@
     line-height: 150%;
     padding-left: 11px;
     left: 0;
-    top: 20px;
+    top:  0px;
+    margin: 10px 5px 60px;
   }
 
   .quote .features-list {
-    top: 177px;
+    // top: 210px;
+    top: 75%;
   }
   .plus-3f {
     width: 320px;
@@ -3554,7 +3690,7 @@
     height: clamp(40px, 6.5vh + 10px, 50px);
     position: absolute;
     transform: rotate(58deg);
-    top: 6px;
+    top: 10px;
     left: 141px;
 
     width: 28%;
@@ -3609,6 +3745,8 @@
     flex-direction: column-reverse;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
+
   }
 
   .right-content_fifth {
@@ -3696,7 +3834,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 0 20px;
   }
 
@@ -3763,7 +3901,8 @@
 
     align-items: center;
     padding: 40px 5px 40px 15px;
-    margin-bottom: clamp(80px, 16vh + 20px, 120px);
+        margin-bottom: 30px;
+
   }
 
   .naygolovnishe {
@@ -3915,6 +4054,7 @@
   .reighth-block_main-right {
     margin-top: 10px;
     width: 100%;
+    
   }
   .eighth-block_main-left {
     width: 336px;
@@ -4018,7 +4158,7 @@
     margin: 0;
   }
   .avatar {
-    height: 52px;
+    height: 72px;
     margin: 0 auto;
     width: 80px;
   }
@@ -4064,6 +4204,16 @@
     top: 907px;
   }
 }
+@media (min-width: 767px) and (max-width: 900px) {
+  .mask-gradient{
+    height:1025px;
+  }
+}
+@media (min-width: 901px) and (max-width: 999px) {
+  .mask-gradient{
+    height:936px;
+  }
+}
 @media (min-width: 651px) and (max-width: 766px) {
   .bg {
     left: 111px;
@@ -4076,6 +4226,7 @@
     left: 90%;
   }
 }
+
 @media (min-width: 430px) and (max-width: 650px) {
   .bg {
     left: 66px;
@@ -4087,7 +4238,9 @@
     top: 15%;
     left: 90%;
   }
+  
 }
+ 
 @media (max-width: 429px) {
   .bg {
     left: 23px;
@@ -4096,12 +4249,17 @@
   .info-icon {
     top: 55%;
   }
+   
 }
 @media (max-width: 410px) {
   .info-icon {
     top: 30%;
     left: 85%;
   }
+  
+}
+@media (max-width: 380px) {
+ 
 }
 @media (max-width: 360px) {
   .bg {
@@ -4112,6 +4270,7 @@
     top: 30%;
     left: 85%;
   }
+  
 }
 @media (max-width: 350px) {
   .bg {
@@ -4119,12 +4278,15 @@
 
     top: -12px;
   }
+   
 }
 @media (max-width: 340px) {
   .bg {
     left: -13px;
     top: -25px;
   }
+  
+   
 }
 
 
@@ -4252,4 +4414,54 @@
     width: 100%;
     padding: 14px 0;
   }
+  .shapes{
+    top: 0 !important;
+  }
+}
+
+
+.follow-us-block{
+  position: relative;
+  top: 0;
+  margin: 25px 0;
+}
+
+
+
+.image-wrapper{
+  padding: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+border-radius: 20px 20px 20px 20px;
+}
+.author-photo {
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(160deg, #e9edf3, #d7dee8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-photo .placeholder-note {
+  color: #8a93a5;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+}
+
+.author-photo svg {
+  width: 34%;
+  opacity: 0.4;
+}
+@media (max-width: 767px) {
+   .author-photo {
+    /* max-width: 280px; */
+    aspect-ratio: 1 / 1.2;
+    margin: 0 auto;
+  }
+}
+
+.reighth-block_main-right{
+  width: 45%;
 }

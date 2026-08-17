@@ -13,6 +13,7 @@ import { ThemeservService } from '../../../../servises/themeserv.service';
 import { Subscription } from 'rxjs';
 declare var AOS: any;
 import { DOCUMENT } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-en-crypto-homepage',
   templateUrl: './en-crypto-homepage.component.html',
@@ -28,6 +29,7 @@ export class EnCryptoHomepageComponent
     private cdr: ChangeDetectorRef,
     @Inject(DOCUMENT) private document: Document,
     private themeService: ThemeservService,
+     private route: ActivatedRoute,
   ) {}
 
   ngAfterViewInit() {
@@ -84,6 +86,26 @@ export class EnCryptoHomepageComponent
         }
       }
     });
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 80;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   toggleTheme() {
     this.isDark = !this.isDark;
@@ -109,6 +131,17 @@ export class EnCryptoHomepageComponent
     this.currentLang = lang;
 
     this.dropdownOpen = false;
+  }
+  navigateToFragment(fragment: string) {
+    this.router
+      .navigate([], {
+        fragment,
+        // Это заставляет Angular эмитить событие даже если fragment тот же
+        onSameUrlNavigation: 'reload',
+      })
+      .then(() => {
+        this.scrollToFragment(fragment);
+      });
   }
   navigateTo(path: string) {
     this.router.navigate([path]);

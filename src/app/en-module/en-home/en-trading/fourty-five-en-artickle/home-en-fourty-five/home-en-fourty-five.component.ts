@@ -669,6 +669,7 @@ export class HomeEnFourtyFiveComponent implements OnInit {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
+      "name": "BreadcrumbList",
       '@id': 'https://arapov.trade/en/freestudying/freeeducation#breadcrumb',
       itemListElement: [
         {

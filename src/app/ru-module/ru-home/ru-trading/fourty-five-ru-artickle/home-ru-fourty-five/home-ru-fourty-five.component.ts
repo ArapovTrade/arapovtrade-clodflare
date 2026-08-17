@@ -584,6 +584,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
+      "name": "BreadcrumbList",
       '@id': 'https://arapov.trade/ru/freestudying/freeeducation#breadcrumb',
       itemListElement: [
         {

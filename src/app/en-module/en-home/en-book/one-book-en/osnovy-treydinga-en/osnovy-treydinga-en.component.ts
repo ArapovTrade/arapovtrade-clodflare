@@ -47,7 +47,7 @@ export class OsnovyTreydingaEnComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Free book by Igor Arapov for beginners: exchange mechanics, technical analysis, support and resistance levels, order types, risk management. ISBN 979-8-90243-730-7',
+        'Free book by Igor Arapov for beginners: exchange mechanics, technical analysis, support and resistance levels, order types, risk management. ISBN 979-8-90243-734-5',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
     this.meta.updateTag({
@@ -270,35 +270,35 @@ export class OsnovyTreydingaEnComponent
       mainEntity: {
         '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book',
       },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Main',
-            item: 'https://arapov.trade',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'About the author',
-            item: 'https://arapov.trade/en',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'My books',
-            item: 'https://arapov.trade/en/books',
-          },
-          {
-            '@type': 'ListItem',
-            position: 4,
-            name: 'Book',
-            item: 'https://arapov.trade/en/books/osnovy-treydinga',
-          },
-        ],
-      },
+      // breadcrumb: {
+      //   '@type': 'BreadcrumbList',
+      //   itemListElement: [
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 1,
+      //       name: 'Main',
+      //       item: 'https://arapov.trade',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 2,
+      //       name: 'About the author',
+      //       item: 'https://arapov.trade/en',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 3,
+      //       name: 'My books',
+      //       item: 'https://arapov.trade/en/books',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 4,
+      //       name: 'Book',
+      //       item: 'https://arapov.trade/en/books/osnovy-treydinga',
+      //     },
+      //   ],
+      // },
     };
   }
 

@@ -275,35 +275,35 @@ export class PsychologiyaTreydingaEnComponent
       mainEntity: {
         '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book',
       },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Main',
-            item: 'https://arapov.trade',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'About the author',
-            item: 'https://arapov.trade/en',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'My books',
-            item: 'https://arapov.trade/en/books',
-          },
-          {
-            '@type': 'ListItem',
-            position: 4,
-            name: 'Book',
-            item: 'https://arapov.trade/en/books/psihologiya-treydinga',
-          },
-        ],
-      },
+      // breadcrumb: {
+      //   '@type': 'BreadcrumbList',
+      //   itemListElement: [
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 1,
+      //       name: 'Main',
+      //       item: 'https://arapov.trade',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 2,
+      //       name: 'About the author',
+      //       item: 'https://arapov.trade/en',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 3,
+      //       name: 'My books',
+      //       item: 'https://arapov.trade/en/books',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 4,
+      //       name: 'Book',
+      //       item: 'https://arapov.trade/en/books/psihologiya-treydinga',
+      //     },
+      //   ],
+      // },
     };
   }
 

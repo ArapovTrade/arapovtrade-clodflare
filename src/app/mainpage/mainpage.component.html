@@ -288,41 +288,78 @@
           <div class="flex-row-f">
             <div class="coins"></div>
             <div class="text-block_one-block">
-              <div
-                class="bezkoshtovniy-kurs"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
-              >
-                МЕТОД ВАЙКОФФА
-              </div>
-
               <div class="rectangle"></div>
-
               <h1 class="zagolovok">
                 <span
                   class="navchannya-treidzingu-z-nulya"
                   [ngStyle]="{ color: isDark ? '#ffffff' : '#03314B' }"
-                  >Безкоштовне навчання трейдингу </span
-                ><span
+                >
+                  Що таке Arapov Trade </span
+                ><br /><span
                   class="posibnik-dlya-pochatkivtsiv"
                   [ngClass]="{
                     'gradient-orange': isDark,
                     'gradient-blue': !isDark,
                   }"
-                >
-                  для початківців</span
+                  >та з чого почати</span
                 >
               </h1>
-              <span
+
+              <p
                 class="tekst-opisanye"
                 [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Безкоштовне навчання трейдингу з нуля — тут зібрано все що
-                потрібно початківцю: 50+ статей, 70+ відеоуроків на основі
-                методу Вайкоффа.
-                <span>
-                  Всі матеріали у відкритому доступі, без реєстрації та
-                  прихованих платежів.</span
-                >
-              </span>
+              >
+                Arapov Trade — безкоштовна освітня платформа з трейдингу та
+                фінансових ринків: технічний і обсяговий аналіз, метод Вайкоффа,
+                торгова психологія, ризик-менеджмент, фундаментальний аналіз,
+                криптовалюти, Forex та інші інструменти, все в одній послідовній
+                системі, а не в наборі розрізнених статей.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                Матеріали доступні трьома мовами, українською, російською та
+                англійською, а на YouTube-каналі повноцінні навчальні відео на
+                додаток до статей.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                Не обов'язково читати все поспіль. Визначте свій рівень: новачок
+                починає з основ, досвідчений трейдер починає зі структури ринку
+                і торгової системи, а якщо цікавить конкретний ринок, одразу
+                відкривайте потрібний розділ.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                Матеріали мають освітній характер: платформа пояснює підходи і
+                ризики, але не дає торгових сигналів і не обіцяє прибуток.
+              </p>
+              <p
+                class="tekst-opisanye"
+                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >
+                Якщо по дорозі трапиться незнайомий термін, зазирніть у «Словник
+                трейдера»: там 6 статей із короткими та зрозумілими поясненнями
+                ключових понять.
+              </p>
+              <p
+                [ngStyle]="{
+                  'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+                }"
+                [ngClass]="{
+                  'text-decor': true,
+                  'gradient-orange': isDark,
+                  'gradient-blue': !isDark,
+                }"
+              >
+                Наступний крок: оберіть свій маршрут навчання: «Новачок», «Вже
+                торгую» або «Вивчаю конкретний ринок».
+              </p>
               <div class="authot_button_block">
                 <div
                   [ngClass]="{
@@ -332,15 +369,12 @@
                   }"
                 >
                   <a
-                    href="/uk/freestudying/freeeducation"
-                    (click)="
-                      $event.preventDefault();
-                      navigateTo('uk/freestudying/freeeducation')
-                    "
+                    [ngStyle]="{ cursor: 'pointer' }"
+                    (click)="navigateToFragment('choseTheWay')"
                     ><span
                       class="pochaty-navchannya"
                       [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-                      >Почати навчання</span
+                      >Обрати напрямок</span
                     ></a
                   >
                 </div>
@@ -367,7 +401,7 @@
                 <span
                   class="follow-us"
                   [ngStyle]="{ color: isDark ? '#ffffff' : '#03314b' }"
-                  >Пiдписуйтесь:</span
+                  >Підписуйтесь:</span
                 >
                 <div>
                   <div class="icons">
@@ -379,7 +413,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://www.facebook.com/igor.arapov.75">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.facebook.com/igor.arapov.75"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -404,7 +441,8 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow"
+                      <a
+                        rel="me nofollow"
                         href="https://www.linkedin.com/in/arapovtrade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                       >
                         <svg
@@ -431,7 +469,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://ru.tradingview.com/u/Igor_Arapov/">
+                      <a
+                        rel="me nofollow"
+                        href="https://ru.tradingview.com/u/Igor_Arapov/"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -457,7 +498,10 @@
                         'links-light-special': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://www.youtube.com/@ArapovTrade">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.youtube.com/@ArapovTrade"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -491,7 +535,10 @@
                         'links-light-special': !isDark,
                       }"
                     >
-                      <a rel="nofollow" href="https://telegram.me/+380506308200">
+                      <a
+                        rel="nofollow"
+                        href="https://telegram.me/+380506308200"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -520,7 +567,10 @@
                         'links-light': !isDark,
                       }"
                     >
-                      <a rel="me nofollow" href="https://www.instagram.com/arapovtrade/">
+                      <a
+                        rel="me nofollow"
+                        href="https://www.instagram.com/arapovtrade/"
+                      >
                         <svg
                           width="24"
                           height="24"
@@ -544,8 +594,7 @@
           </div>
           <div *ngIf="isDark" class="mask-gradient"></div>
 
-          <!-- <div
-          
+          <div
             class="image"
             [ngClass]="{ 'shadow-dark': isDark, 'shadow-light': !isDark }"
             [ngStyle]="{
@@ -553,16 +602,6 @@
                 ? 'url(assets/redesignArapovTrade/img/imageAuthor.png) no-repeat center'
                 : 'url(assets/redesignArapovTrade/img/imageAuthor-light.png) no-repeat center',
             }"
-          ></div> -->
-          <div
-            class="image"
-            [ngClass]="{ 'shadow-dark': isDark, 'shadow-light': !isDark }"
-            style="background-size: 107% 105%"
-            [lazyBackground]="
-              isDark
-                ? 'assets/redesignArapovTrade/img/imageAuthor.png'
-                : 'assets/redesignArapovTrade/img/imageAuthor-light.png'
-            "
           ></div>
         </div>
       </div>
@@ -572,214 +611,122 @@
     <div *ngIf="!isDark" class="bg-shape-1"></div>
   </div>
 
-  <div class="sections-nav">
-    <h2
-      [ngClass]="{
-        'sections-nav_title': true,
-        'gradient-orange': isDark,
-        'gradient-blue': !isDark,
-      }"
-    >
-      Оберіть напрям навчання
-    </h2>
-
-    <div class="sections-nav_grid">
-      <!-- Трейдинг для початківців -->
-      <div
-        (click)="goToGroup('Трейдинг для початківців')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Трейдинг для початківців</span>
-      </div>
-
-      <!-- Технічний аналіз -->
-      <div
-        (click)="goToGroup('Технічний аналіз')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Технічний аналіз</span>
-      </div>
-
-      <!-- Об`ємний аналіз ринку (ВНИМАНИЕ: backtick U+0060 в строке группы) -->
-      <div
-        (click)="goToGroup('Об`ємний аналіз ринку')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Об'ємний аналіз і Вайкофф</span>
-      </div>
-
-      <!-- Концепція Смарт Мані -->
-      <div
-        (click)="goToGroup('Концепція Смарт Мані')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Концепція Смарт Мані</span>
-      </div>
-
-      <!-- Криптовалюта -->
-      <div
-        (click)="goToGroup('Криптовалюта')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Криптовалюта</span>
-      </div>
-
-      <!-- Психологія трейдингу -->
-      <div
-        (click)="goToGroup('Психологія трейдингу')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Психологія трейдингу</span>
-      </div>
-
-      <!-- Словник трейдера -->
-      <div
-        (click)="goToGroup('Словник трейдера')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Словник трейдера</span>
-      </div>
-
-      <!-- Фундаментальний аналіз -->
-      <div
-        (click)="goToGroup('Фундаментальний аналіз')"
-        [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-      >
-        <span class="tab-text">Фундаментальний аналіз</span>
-      </div>
-    </div>
-
-    <!-- Кнопка "усі курси" -->
-    <div
-      [ngClass]="{
-        'sections-nav_all': true,
-        'gradient-block-orange': isDark,
-        'gradient-block-blue': !isDark,
-      }"
-    >
-      <a
-        href="/uk/freestudying"
-        (click)="$event.preventDefault(); navigateTo('uk/freestudying')"
-        ><span
-          class="sections-nav_all-text"
-          [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-          >Усі безкоштовні курси</span
-        ></a
-      >
-    </div>
-  </div>
-
-  <!-- <div class="flex-row-ba" id="section1">
-    <div class="row" data-aos="fade-up" data-aos-delay="300">
+  <div class="flex-row-ba" id="choseTheWay">
+    <div class="row">
+      <!-- Левая часть -->
       <div class="left">
-        <div class="bg-figure">
-          <div
-            [ngClass]="{
-              arrows: true,
-              'arrows-dark': isDark,
-              'arrows-light': !isDark,
-            }"
-          ></div>
-          <div
-            [ngClass]="{
-              bg: true,
-              'bg-dark': isDark,
-              'bg-light': !isDark,
-            }"
-          ></div>
-        </div>
-        <div class="img"></div>
-        <div
-          class="igor-info"
-          [ngStyle]="{
-            border: isDark ? '2px solid #52493b' : '2px solid #4D5460',
-          }"
-        >
-          <div class="avatar"></div>
-          <div class="name">
-            <span class="name-4">Iгор Арапов</span
-            ><span class="designation">Професiйний трейдер</span>
+        <!-- Заглушка картинки -->
+        <div class="image-wrapper">
+          <div class="author-photo">
+            <img
+              src="/assets/images/fajl-38.jpg"
+              srcset="
+                /assets/images/fajl-38-200x300.jpg   200w,
+                /assets/images/fajl-38-681x1024.jpg  681w,
+                /assets/images/fajl-38-768x1154.jpg  768w,
+                /assets/images/fajl-38.jpg          1000w
+              "
+              sizes="(max-width: 1000px) 100vw, 1000px"
+              fetchpriority="high"
+              loading="eager"
+              fetchpriority="high"
+              alt="Ігор Арапов"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center top;
+              "
+            />
           </div>
         </div>
       </div>
+
+      <!-- Правая часть -->
       <div class="right">
-        <h2 class="dorogiy-chitachu">
-          <span
+        <div class="dorogiy-chitachu">
+          <h2
             [ngClass]="{
               dorogiy: true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
-            >Дорогий </span
-          ><span
-            [ngClass]="{
-              chitachu: true,
-              'gradient-orange': isDark,
-              'gradient-blue': !isDark,
-            }"
-            >читачу!</span
           >
-        </h2>
+            Оберіть напрямок <br /><span
+              [ngClass]="{
+                chitachu: true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
+              }"
+            >
+              навчання під свій рівень
+            </span>
+          </h2>
+        </div>
+
         <div class="text_second-block lato-regular">
           <span
             class="learning-materials lato-regular"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >Метою цього методичного посібника є ознайомлення
-            трейдерів-початківців із фінансовим ринком. Я намагався скласти
-            матеріали так, щоб охопити всі ключові теми, які є популярними на
-            даний момент, і зібрати все в одному місці, щоб не було потреби
-            шукати інформацію на великій кількості сайтів чи книг. Також я
-            вибірково підійшов до теорії, виділяючи лише ключові теми трейдингу,
-            адже вона дуже обширна. Під ключовими темами я маю на увазі
-            інформацію, якою сам активно керуюся вже багато років і яку
-            застосовую на практиці.<br /><br />У своїх відео на
+          >
+            У трейдера немає єдиної точки старту. Новачку потрібна база: біржа,
+            заявки, графік, стилі торгівлі, ризик. Тому, хто вже торгує,
+            корисніше звіритися зі своєю системою: структура, обсяг, вхід і
+            вихід, управління ризиком. Якщо прийшли за конкретним ринком,
+            відкривайте розділ напряму: наприклад, лише в криптовалюті 17
+            статей, є і Forex, ф'ючерси, облігації.
+            <br /><br />
+            Такий маршрут економить час: замість спроби вивчити все одразу,
+            зрозуміла послідовність база → аналіз → система → ризик → практика.
+            <br /><br />
+
+            Куди далі: якщо ви новачок, переходьте до базового курсу; якщо вже
+            торгуєте, почніть з аналізу структури та обсягу.
           </span>
-          <a
-            href="https://www.youtube.com/@ArapovTrade"
-            target="_blank"
-            class="youtube-kanali"
-            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-          >
-            YouTube-каналі </a
-          ><span
-            class="learning-materials-5 lato-regular"
-            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-          >
-            я згадував, що коли тільки починав вивчати трейдинг, матеріалів було
-            небагато, і вони були розрізненими, що ускладнювало процес навчання.
-            Тому я вважав своїм внеском у розвиток створити невелику бібліотеку,
-            де кожен, хто цікавиться цією темою, міг би зробити це відносно
-            просто й невимушено. Там же я підготував плейліст із вивчення
-            окремих тем трейдингу у зручних відеороликах.</span
-          >
         </div>
+
+        <!-- Кнопки -->
         <div
-          [ngClass]="{
-            'youtube-channel': true,
-            'gradient-block-orange': isDark,
-            'gradient-block-blue': !isDark,
-          }"
+          class="buttons-row"
+          style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
         >
-          <a
-            href="https://www.youtube.com/@ArapovTrade"
-            target="_blank"
-            class="primary-button"
-            [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
-            >переглянути YouTube-канал</a
+          <div
+            [ngClass]="{
+              'youtube-channel': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
           >
-          
+            <a
+              [ngStyle]="{ cursor: 'pointer' }"
+              (click)="navigateToFragment('newTrader')"
+              class="primary-button"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >
+              Я новачок
+            </a>
+          </div>
+
+          <div
+            [ngClass]="{
+              'youtube-channel': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
+          >
+            <a
+              [ngStyle]="{ cursor: 'pointer' }"
+              (click)="navigateToFragment('proTrader')"
+              class="primary-button"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >
+              Я вже торгую
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div
-      [ngClass]="{
-        background: true,
-        'background-dark': isDark,
-        'background-light': !isDark,
-      }"
-    ></div>
-    <div class="about-bg" *ngIf="isDark"></div>
-  </div> -->
+  </div>
 
   <div class="about" style="margin-bottom: 50px">
     <div class="left-text">
@@ -789,8 +736,31 @@
           'gradient-orange': isDark,
           'gradient-blue': !isDark,
         }"
-        >Ігор Арапов</span
+        >Автор освітньої платформи</span
       >
+
+      <div class="text_second-block lato-regular">
+        <span
+          class="learning-materials lato-regular"
+          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+        >
+          Ігор Арапов, автор і засновник Arapov Trade, трейдер з досвідом понад
+          13 років: активно торгує з 2013 року. Платформа об'єднує статті, відео
+          та книги в єдину освітню систему з трейдингу, обсягового аналізу та
+          методу Вайкоффа.
+          <br /><br />
+          Окрім практичної торгівлі, Ігор незалежний дослідник у галузі
+          психології інвестиційних рішень та поведінкових фінансів: автор 3 книг
+          з трейдингу, виданих трьома мовами (9 видань) з міжнародними ISBN
+          через Bowker USA, співавтор рецензованої наукової статті.
+          <br /><br />
+
+          Досвід Ігоря можна перевірити не лише на слово: на TradingView з 2021
+          року опубліковано 267 розборів ринку, їх читають 370 підписників, уся
+          історія ідей відкрита й датована, включно з тими, що не справдилися.
+        </span>
+      </div>
+
       <div
         class="quote-block"
         [ngStyle]="{
@@ -806,11 +776,11 @@
               color: isDark ? '#ffffff' : '#0C263A',
               'border-left': isDark ? '5px solid #ffcd29' : '5px solid #0082CC',
             }"
-            >«Успіх на ринку — це не результат надлюдських зусиль, а наслідок
+            >«Успіх на ринку не є результатом надлюдських зусиль, а наслідком
             правильної системи. Кожен професіонал колись був на вашому місці,
             але стабільності досягли ті, хто замінив емоційний хаос на холодну
-            математику»</span
-          >
+            математику» — І. Арапов (Понад 13 років досвіду, автор платформи)
+          </span>
 
           <span
             class="features-list"
@@ -819,76 +789,37 @@
           >
         </div>
       </div>
-      <div class="feature">
-        <div class="iconss">
-          <div
-            class="chart-experience"
-            [ngStyle]="{
-              border: isDark
-                ? '2px solid rgba(255, 255, 255, 0.16)'
-                : '2px solid #D6EBF7',
-            }"
-          >
-            <div class="group-6">
-              <div
-                [ngClass]="{
-                  'text-7': true,
-                  'text-7-dark': isDark,
-                  'text-7-light': !isDark,
-                }"
-              ></div>
-            </div>
-          </div>
-          <div class="feature-title">
-            <span
-              class="feature-body"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Понад 13 років досвіду</span
+      <p
+        [ngStyle]="{
+          'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+        }"
+        [ngClass]="{
+          'text-decor': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+        Куди далі: вся біографія, публікації та підхід до методики на окремій
+        сторінці.
+      </p>
+
+      <div class="authot_button_block">
+        <div
+          [ngClass]="{
+            'btn-section-one': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a
+            href="https://arapov.trade/uk
+            "
             ><span
-              class="feature-8"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
-            >
-              <a
-                class="youtube-kanali"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                href="https://arapov.trade/uk"
-                >Незалежний дослідник</a
-              >
-              у галузі психології інвестиційних рішень та поведінкових фінансів,
-              автор серії книг з трейдингу із міжнародними ISBN (Bowker
-              USA)</span
-            >
-          </div>
-        </div>
-        <div class="icon-9">
-          <div
-            class="system-trading"
-            [ngStyle]="{
-              border: isDark
-                ? '2px solid rgba(255, 255, 255, 0.16)'
-                : '2px solid #D6EBF7',
-            }"
+              class="pochaty-navchannya"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >Про автора</span
+            ></a
           >
-            <div
-              [ngClass]="{
-                'text-a': true,
-                'text-a-dark': isDark,
-                'text-a-light': !isDark,
-              }"
-            ></div>
-          </div>
-          <div class="feature-title-b">
-            <span
-              class="feature-body-c"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Системний трейдинг</span
-            ><span
-              class="image-d"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#6D7D89' }"
-              >Системний підхід на основі об'ємного аналізу, логіки Вайкоффа і
-              контролю ризиків
-            </span>
-          </div>
         </div>
       </div>
     </div>
@@ -914,7 +845,7 @@
         <div class="articles-count">
           <span class="articles-recommendations"
             >50+ навчальних статей<br /></span
-          ><span class="graphics">з практичними рекомендаціями </span>
+          ><span class="graphics">з практичними рекомендаціями</span>
         </div>
       </div>
       <div class="mask-group"><div class="reviews-block"></div></div>
@@ -938,7 +869,7 @@
     </div>
   </div>
 
-  <!-- <div class="flex-row">
+  <div class="flex-row">
     <div class="background-shape"></div>
 
     <div class="base">
@@ -958,8 +889,6 @@
           }"
         ></div>
         <div
-          data-aos="fade-up"
-          data-aos-delay="300"
           class="trading-definition"
           [ngStyle]="{
             background: isDark
@@ -981,29 +910,31 @@
               ></div>
             </div>
             <h2
+              id="newTrader"
               [ngClass]="{
                 'trading-definition-title': true,
                 'gradient-orange': isDark,
                 'gradient-blue': !isDark,
               }"
             >
-              Що таке трейдинг: простими словами
+              Що таке трейдинг: коротко
             </h2>
           </div>
           <span
             class="trading-definition-text"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >У сучасному світі фінансів слово трейдинг дедалі частіше
-            з’являється в заголовках новин, соціальних мережах і навіть у
-            повсякденних розмовах. Воно стало майже синонімом до можливості
-            швидкого заробітку, фінансової свободи та роботи без офісу. Але що
-            насправді означає цей термін? Хто такий трейдер і як працює ринок,
-            на якому він заробляє?</span
-          >
+            >Трейдинг — це купівля і продаж фінансових активів (акцій, валюти,
+            криптовалюти, товарів) з метою заробити на різниці ціни за короткий
+            або середній термін, від кількох хвилин до кількох тижнів. Це й
+            відрізняє трейдинг від інвестування: інвестор купує актив, щоб
+            володіти ним роками і отримувати дохід від зростання бізнесу або
+            дивідендів, трейдер заробляє на самому русі ціни, незалежно від
+            того, зростає актив чи падає.
+          </span>
         </div>
       </div>
 
-      <div class="fifth-content_block" data-aos="fade-up" data-aos-delay="300">
+      <div class="fifth-content_block">
         <div class="left-content">
           <div class="heading-support-text">
             <h2
@@ -1015,66 +946,59 @@
             >
               Основи трейдингу
             </h2>
-            <span
+
+            <p
               class="osnovi-treidingu-14"
               [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Трейдинг (від англ. trading — торгівля) — це процес купівлі та
-              продажу фінансових активів із метою отримання прибутку на різниці
-              в цінах. На практиці це може виглядати так: трейдер купує актив
-              дешевше, чекає підвищення його вартості й продає дорожче. Різниця
-              між ціною купівлі та продажу (з урахуванням комісій) і є його
-              прибутком.</span
             >
-          </div>
-          <div class="tabs">
-            <div
+              Механіка трейдингу при цьому завжди одна й та сама: трейдер
+              аналізує графік і обсяг, визначає ймовірний сценарій руху ціни,
+              входить в угоду на заздалегідь заданих умовах, одразу виставляє
+              стоп-лос на випадок, якщо сценарій не спрацює, і фіксує прибуток
+              або збиток за планом, а не за настроєм у моменті.
+            </p>
+            <p
+              class="osnovi-treidingu-14"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+            >
+              Приклад: акція коштує 100 доларів, трейдер очікує зростання до 105
+              і заздалегідь вирішує вийти з угоди при падінні до 97. Ціна
+              доходить до 105, угода закривається з прибутком у 5%. Ціна падає
+              до 97, трейдер фіксує заздалегідь прийнятий збиток і не
+              намагається «пересидіти» просадку в розрахунку на розворот.
+            </p>
+            <p
+              [ngStyle]="{
+                'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+              }"
               [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
+                'text-decor': true,
+                'text-decor-forth-block': true,
+                'gradient-orange': isDark,
+                'gradient-blue': !isDark,
               }"
             >
-              <span class="tab-text">Акції компаній</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text">Валюту (ринок Форекс)</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text">Криптовалюти (біткоїн, етеріум тощо)</span>
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text"
-                >Сировинні товари (золото, нафта, пшениця)</span
+              Далі по порядку: з чого почати і куди рухатися крок за кроком.
+            </p>
+
+            <div class="authot_button_block">
+              <div
+                [ngClass]="{
+                  'btn-section-one': true,
+                  'gradient-block-orange': isDark,
+                  'gradient-block-blue': !isDark,
+                }"
               >
-            </div>
-            <div
-              [ngClass]="{
-                tab: true,
-                'tab-dark': isDark,
-                'tab-light': !isDark,
-              }"
-            >
-              <span class="tab-text"
-                >Ф’ючерси, опціони, індекси та інші інструменти</span
-              >
+                <a
+                  [ngStyle]="{ cursor: 'pointer' }"
+                  (click)="navigateToFragment('newTraderWay')"
+                  ><span
+                    class="pochaty-navchannya"
+                    [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+                    >Пройти шлях новачка</span
+                  ></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -1113,8 +1037,9 @@
         </div>
       </div>
     </div>
-  </div> -->
-  <!-- <div class="six_block"  >
+  </div>
+
+  <div class="six_block">
     <div class="six_block-left">
       <div
         [ngClass]="{
@@ -1148,19 +1073,27 @@
           'gradient-blue': !isDark,
         }"
       >
-        Хто такий трейдер?
+        Можливості та ризики
       </h2>
-      <span
+      <p
         class="flex-row-fc"
         [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-        >Трейдер — це людина, яка здійснює купівлю та продаж фінансових
-        інструментів з метою отримання прибутку. Він аналізує ринок, прогнозує
-        зміни цін і приймає рішення: купувати, продавати або утримувати активи.
-        Трейдери можуть працювати як самостійно, так і в складі фінансових
-        установ — банків, хедж-фондів, інвестиційних чи брокерських
-        компаній.</span
       >
-
+        Трейдинг дає можливість заробляти на русі ціни, але пов'язаний з
+        реальним ризиком втрати капіталу: більшість новачків втрачають депозит
+        не через брак знань, а через відсутність дисципліни і управління
+        ризиком.
+      </p>
+      <p
+        class="flex-row-fc"
+        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+      >
+        Типові причини зливу депозиту майже завжди одні й ті самі: угода без
+        заздалегідь порахованого ризику, бажання відігратися після збитку,
+        збільшення позиції на емоціях, відсутність стоп-лоса і торгівля без
+        чіткого плану виходу. Жодна з них не пов'язана з браком стратегій, усі
+        вони про дисципліну.
+      </p>
       <div
         class="satisfied-customer"
         [ngStyle]="{
@@ -1176,171 +1109,280 @@
           }"
         >
           <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
-            Завдяки розвитку онлайн-бірж, брокерських сервісів і торгових
-            платформ, сьогодні практично кожен може розпочати торгівлю на
-            фінансовому ринку. Для цього достатньо мати комп’ютер або смартфон
-            та доступ до Інтернету.
+            Ризик-менеджмент — окрема і обов'язкова частина навчання, а не
+            доповнення до стратегії: конкретно це співвідношення ризику до
+            прибутку 1:3 і розрахунок математичного очікування угоди, наприклад
+            60/40, а не абстрактна порада «керуйте ризиками».
           </p>
         </div>
       </div>
+      <p
+        [ngStyle]="{
+          'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+        }"
+        [ngClass]="{
+          'text-decor': true,
+          'text-decor-forth-block': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+        Куди далі: детальний розбір шукайте в розділі «Ризик-менеджмент».
+      </p>
+
+      <div class="authot_button_block">
+        <div
+          [ngClass]="{
+            'btn-section-one': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a href="https://arapov.trade/uk/freestudying/risk-management"
+            ><span
+              class="pochaty-navchannya"
+              [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >До ризик-менеджменту</span
+            ></a
+          >
+        </div>
+      </div>
     </div>
-  </div> -->
-  <!-- <div class="seventh-block" data-aos="fade-up" data-aos-delay="300">
+  </div>
+
+  <div class="flex-row-ba left-sixth" id="section1">
+    <div class="row">
+      <div class="left">
+        <div class="bg-figure">
+          <div
+            [ngClass]="{
+              arrows: true,
+              'arrows-dark': isDark,
+              'arrows-light': !isDark,
+            }"
+          ></div>
+          <div
+            [ngClass]="{
+              bg: true,
+              'bg-dark': isDark,
+              'bg-light': !isDark,
+            }"
+          ></div>
+        </div>
+        <div class="img"></div>
+        <div
+          class="igor-info"
+          [ngStyle]="{
+            border: isDark ? '2px solid #52493b' : '2px solid #4D5460',
+          }"
+        >
+          <div class="avatar"></div>
+          <div class="name">
+            <span class="name-4">Ігор Арапов</span>
+            <span class="designation">Практикуючий трейдер</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="dorogiy-chitachu" id="newTraderWay">
+          <span
+            [ngClass]="{
+              dorogiy: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+            >Новачку: </span
+          ><span
+            [ngClass]="{
+              chitachu: true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+          >
+            з чого почати і куди рухатися</span
+          >
+        </div>
+        <div class="text_second-block lato-regular">
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Якщо ви вперше бачите графік та індикатори, не шукайте одразу
+            «робочу стратегію» — спочатку розберіться, як влаштований ринок і як
+            читати ціну.
+          </p>
+
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Порядок такий: вступ і устрій біржі → технічний аналіз → обсяговий
+            аналіз → торгова система з ризик-менеджментом → метод Вайкоффа і
+            Smart Money → практика і патерни на деморахунку. Кожен наступний
+            блок спирається на попередній, а не йде врозбрід.
+          </p>
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Все це зібрано в один цілісний курс:
+
+            <span
+              class="youtube-kanali"
+              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+              >32 розділи</span
+            >
+            у семи послідовних блоках. По одному розділу на день це приблизно
+            місяць до першої усвідомленої угоди.
+          </p>
+          <p
+            class="learning-materials lato-regular"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Кожен блок маршруту веде на окрему тему платформи, куди можна
+            заглибитися, коли до неї дійдете: тільки в «Трейдингу для
+            початківців» 8 статей, у «Технічному аналізі» 16.
+          </p>
+          <p
+            [ngStyle]="{
+              'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+            }"
+            [ngClass]="{
+              'text-decor': true,
+              'text-decor-forth-block': true,
+              'gradient-orange': isDark,
+              'gradient-blue': !isDark,
+            }"
+          >
+            Маршрут новачка: Вступ → Устрій біржі → Технічний аналіз → Обсяговий
+            аналіз → Торгова система → Метод Вайкоффа і Smart Money → Практика і
+            патерни.
+          </p>
+        </div>
+        <div
+          [ngClass]="{
+            'youtube-channel': true,
+            'youtube-channel-btn': true,
+            'gradient-block-orange': isDark,
+            'gradient-block-blue': !isDark,
+          }"
+        >
+          <a
+            href="https://arapov.trade/uk/freestudying/freeeducation"
+            class="primary-button"
+            [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+            >Пройти шлях новачка</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      [ngClass]="{
+        background: true,
+        'background-dark': isDark,
+        'background-light': !isDark,
+      }"
+    ></div>
+    <div class="about-bg" *ngIf="isDark"></div>
+  </div>
+
+  <div class="seventh-block">
     <div class="bg-36">
       <div class="seventh-block_left">
         <div class="flex-column">
           <h2
+            id="proTrader"
             [ngClass]="{
               'opportunities-risks': true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
           >
-            Можливості та ризики
+            Структура ринку, обсяг і метод Вайкоффа
           </h2>
-          <span
+          <p
             class="opportunities-risks-38"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >Трейдинг приваблює можливістю заробляти на фінансових ринках. Однак
-            трейдинг пов'язаний з високим ризиком втрати коштів і потребує
-            знань, дисципліни та постійного розвитку. За статистикою, більшість
-            новачків втрачає свої кошти вже у перші місяці торгівлі через типові
-            помилки.</span
           >
-          <div class="minuses">
-            <span
-              [ngClass]="{
-                'deposit-loss-reasons': true,
-                'gradient-orange': isDark,
-                'gradient-blue': !isDark,
-              }"
-              >Причини втрати депозиту:</span
-            >
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Недосвідченість</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Емоційні рішення</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Нехтування ризиками</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-            <div class="minus">
-              <span
-                class="lending-money-investment"
-                [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                >Бажання швидкого збагачення</span
-              >
-              <div
-                [ngClass]="{
-                  vector: true,
-                  'vector-dark': isDark,
-                  'vector-light': !isDark,
-                }"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div class="plus">
-          <span
+            Коли основи зрозумілі, наступний крок — навчитися читати ринок як
+            поведінку його учасників, а не як набір випадкових свічок. Тут у гру
+            вступають ринкова структура, обсяговий аналіз і метод Вайкоффа,
+            фірмовий підхід платформи.
+          </p>
+
+          <p
+            class="opportunities-risks-38"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            Метод розробив ще на початку XX століття Річард Вайкофф, один із
+            засновників технічного аналізу, і його логіка не застаріла: ціна і
+            обсяг разом показують, чи накопичує великий учасник позицію
+            (накопичення), чи позбавляється від неї (розподіл), задовго до того,
+            як це стане очевидним лише за графіком ціни.
+          </p>
+          <p
+            class="opportunities-risks-38"
+            [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+          >
+            На цьому ж рівні на платформі розібрані Smart Money Concepts і
+            пов'язані теми: order blocks, liquidity pools, imbalance/FVG, це
+            додаткові моделі читання ліквідності, а не гарантовані сигнали.
+          </p>
+          <p
+            [ngStyle]="{
+              'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+            }"
             [ngClass]="{
-              'successful-trader': true,
+              'text-decor': true,
+              'text-decor-forth-block': true,
               'gradient-orange': isDark,
               'gradient-blue': !isDark,
             }"
-            >Щоб стати успішним трейдером, необхідно:</span
           >
-          <div class="plus-3f">
+            Наступний маршрут: «Обсяговий аналіз» (3 статті) → «Метод Вайкоффа»
+            → «Структура ринку» → «Концепція Смарт Мані» (4 статті).
+          </p>
+
+          <div
+            class="buttons-row"
+            style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
+          >
             <div
               [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
+                'youtube-channel': true,
+                'gradient-block-orange': isDark,
+                'gradient-block-blue': !isDark,
               }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Постійно вчитися</span
             >
-          </div>
-          <div class="plus-3f">
+              <a
+                href="https://arapov.trade/uk/freestudying/wyckoff-method"
+                class="primary-button"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >
+                До методу Вайкоффа
+              </a>
+            </div>
+
             <div
               [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
+                'youtube-channel': true,
+                'gradient-block-orange': isDark,
+                'gradient-block-blue': !isDark,
               }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Розробити власну стратегію</span
             >
-          </div>
-          <div class="plus-3f">
-            <div
-              [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
-              }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Мати чіткий план ризик-менеджменту</span
-            >
-          </div>
-          <div class="plus-3f">
-            <div
-              [ngClass]="{
-                'vector-40': true,
-                'vector-40-dark': isDark,
-                'vector-40-light': !isDark,
-              }"
-            ></div>
-            <span
-              class="continuous-learning"
-              [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-              >Контролювати емоції, особливо страх і жадібність</span
-            >
+              <a
+                [ngStyle]="{ cursor: 'pointer' }"
+                (click)="navigateToFragment('tradingSystem')"
+                class="primary-button"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+              >
+                До торгової системи
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="seventh-block_rigth">
         <div class="right-37">
           <div class="money-tree">
@@ -1370,9 +1412,9 @@
         'bg_seventh-light': !isDark,
       }"
     ></div>
-  </div> -->
+  </div>
 
-  <!-- <div class="eighth-block">
+  <div class="eighth-block">
     <div class="eighth-block_main" data-aos="fade-up" data-aos-delay="300">
       <div class="eighth-block_main-left">
         <div class="img-18"></div>
@@ -1384,7 +1426,7 @@
           }"
         ></div>
       </div>
-      <div class="reighth-block_main-right">
+      <div class="reighth-block_main-right" id="tradingSystem">
         <h2
           [ngClass]="{
             'opportunities-risks': true,
@@ -1392,66 +1434,75 @@
             'gradient-blue': !isDark,
           }"
         >
-          З чого почати?
+          Досвідченому трейдеру: зібрати знання в систему
         </h2>
-        <div
-          class="start-trading-recommendation"
-          [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-        >
-          <span
-            >Щоб правильно розпочати торгівлю на біржі та не втратити кошти,
-            рекомендую почати з безкоштовної теорії трейдингу. Вона охоплює всі
-            ключові розділи, необхідні для впевненого старту — від базових
-            понять до торгових стратегій.<br /><br />Усі матеріали доступні у
-            відкритому доступі, без прихованих платежів — навчайтесь у зручному
-            темпі та опановуйте ринок крок за кроком. Кожна тема супроводжується
-            реальними прикладами та детальними поясненнями.
-          </span>
+        <div class="start-trading-recommendation">
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            Якщо ви вже торгуєте, платформа корисна не як курс з нуля, а як
+            інструмент для аудиту власної системи: контекст ринку, правила входу
+            і виходу, управління ризиком, журнал угод і психологія — все має
+            складатися в одну логічну модель.
+          </p>
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            Розділи «Торгова система», «Управління угодою» та «Психологія
+            трейдингу» (2 статті) допомагають закрити саме ті прогалини, які
+            зазвичай не видно зсередини власної торгівлі.
+          </p>
+          <p [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+            Додаткові приклади дивіться в навчальних роликах на YouTube
+          </p>
         </div>
-
-        <span
+        <p
+          [ngStyle]="{
+            'text-shadow': isDark ? '0 0 #fcdb35' : '0 0 #0176b7',
+          }"
           [ngClass]="{
-            'successful-trader': true,
+            'text-decor': true,
+            'text-decor-forth-block': true,
             'gradient-orange': isDark,
             'gradient-blue': !isDark,
           }"
-          >На навчальній платформі ви знайдете:</span
         >
-        <div class="tabs-eight-block">
+          Куди далі: «Торгова система» → «Управління угодою» → «Психологія
+          трейдингу».
+        </p>
+
+        <div class="authot_button_block">
           <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+            [ngClass]="{
+              'btn-section-one': true,
+              'gradient-block-orange': isDark,
+              'gradient-block-blue': !isDark,
+            }"
           >
-            <span class="tab-text">статті та відеоуроки з поясненнями</span>
+            <a href="https://arapov.trade/uk/freestudying/practic"
+              ><span
+                class="pochaty-navchannya"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#03314b' }"
+                >До торгової системи</span
+              ></a
+            >
           </div>
+
           <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
+            class="podrobnee phone"
+            [ngClass]="{
+              'podrobnee-dark': isDark,
+              'podrobnee-light': !isDark,
+            }"
           >
-            <span class="tab-text">розбори базових і просунутих стратегій</span>
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">приклади реальних угод</span>
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">рекомендації щодо вибору брокера</span>
-          </div>
-          <div
-            [ngClass]="{ tab: true, 'tab-dark': isDark, 'tab-light': !isDark }"
-          >
-            <span class="tab-text">пояснення термінів та інструментів</span>
+            <span class="text-p"
+              ><a href="https://www.youtube.com/@ArapovTrade" target="_blank"
+                >Відео на YouTube</a
+              >
+            </span>
           </div>
         </div>
-      </div>
+        </div>
     </div>
 
-    <div
-      class="eighth-block_bottom-block"
-      data-aos="fade-up"
-      data-aos-delay="300"
-    >
+     
+    <div class="eighth-block_bottom-block">
       <div class="notice-block">
         <div
           class="name-1a"
@@ -1462,7 +1513,6 @@
           }"
         >
           <div class=" ">
-         
             <span
               class="quote-text-eight-block"
               [ngStyle]="{
@@ -1472,12 +1522,13 @@
                   : '5px solid #0082CC',
               }"
               >Найголовніше — ви зможете опанувати торгову стратегію, яка
-              допоможе впевнено почуватися на ринку та уникати типових помилок,
-              які допускає більшість початківців.<br />Трейдинг — це повноцінна
-              професія, що потребує зусиль, самодисципліни й аналітичного
-              мислення. Якщо ви готові вкладати час і працювати над собою —
-              фінансовий ринок відкриває реальні можливості для тих, хто
-              підходить до торгівлі системно.</span
+              допоможе впевнено почуватися на ринку й уникати типових
+              помилок, яких припускається більшість початківців.<br />Трейдинг
+              — це повноцінна професія, що вимагає зусиль, самодисципліни та
+              аналітичного мислення. Якщо ви готові вкладати час і працювати
+              над собою — фінансовий ринок відкриває реальні можливості для
+              тих, хто підходить до торгівлі системно.
+</span
             >
           </div>
         </div>
@@ -1489,13 +1540,14 @@
           <span
             class="speach-text"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-            >Бажаю вам успіху у навчанні та перших кроках на шляху до
-            професійного трейдингу!<br /><br /></span
+            >Бажаю вам успіху в навчанні та перших кроках на шляху до
+            професійного трейдингу!
+<br /><br /></span
           ><span
             class="speach-text-quote"
             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
             >З повагою, <br />
-            Автор курсу "Навчання трейдингу з нуля" — Ігор Арапов</span
+            Автор курсу «Навчання трейдингу з нуля» — Ігор Арапов</span
           >
         </div>
         <span
@@ -1505,7 +1557,7 @@
         >
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="footer">
     <div class="footer-main-block">
@@ -1529,28 +1581,46 @@
             новачків і досвідчених трейдерів.</span
           >
         </div>
-        <div style="display: flex; flex-direction: row; ">
-           <div class="menu-title-block" style="width: 25px !important; font-size: 14px!important;line-height: 2!important;">
-          <a style="font-size: 14px !important; "
-            href="/ru/main"
-            (click)="$event.preventDefault(); navigateTo('ru/main')"
-            class="menu-title_text"
+        <div style="display: flex; flex-direction: row">
+          <div
+            class="menu-title-block"
+            style="
+              width: 25px !important;
+              font-size: 14px !important;
+              line-height: 2 !important;
+            "
           >
-            RU  
-          </a>  
-        </div>
-        <div><span style="color: gray; width: 25px; font-size: 25px; ">-</span></div>
-        <div class="menu-title-block" style="width: 25px !important; margin-left: 5px; line-height: 2!important;font-size: 14px!important;">
-          <a style="font-size: 14px !important; "
-            href="/en/main"
-            (click)="$event.preventDefault(); navigateTo('en/main')"
-            class="menu-title_text"
+            <a
+              style="font-size: 14px !important"
+              href="/ru/main"
+              (click)="$event.preventDefault(); navigateTo('ru/main')"
+              class="menu-title_text"
+            >
+              RU
+            </a>
+          </div>
+          <div>
+            <span style="color: gray; width: 25px; font-size: 25px">-</span>
+          </div>
+          <div
+            class="menu-title-block"
+            style="
+              width: 25px !important;
+              margin-left: 5px;
+              line-height: 2 !important;
+              font-size: 14px !important;
+            "
           >
-            EN
-          </a>
+            <a
+              style="font-size: 14px !important"
+              href="/en/main"
+              (click)="$event.preventDefault(); navigateTo('en/main')"
+              class="menu-title_text"
+            >
+              EN
+            </a>
+          </div>
         </div>
-        </div>
-        
       </div>
 
       <div class="links">
@@ -1597,8 +1667,8 @@
           <span class="menu-title">Посилання</span>
 
           <a
-            href="/uk/privacy-policy" (click)="$event.preventDefault(); navigateTo('uk/privacy-policy')"
-            
+            href="/uk/privacy-policy"
+            (click)="$event.preventDefault(); navigateTo('uk/privacy-policy')"
             class="menu-title-block menu-title_text"
             >Політика конфіденційності</a
           >
@@ -1651,7 +1721,6 @@
           <span class="text-2e">2025-2026. Всі права захищені.</span
           ><span class="text-2e">ФОП Арапов І.В. ІПН 3314507171</span>
         </div>
-        
       </div>
     </div>
     <div

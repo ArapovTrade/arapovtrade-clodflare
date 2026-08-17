@@ -263,35 +263,35 @@ export class PsychologiyaTreydingaComponent
       mainEntity: {
         '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book',
       },
-      breadcrumb: {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'Главная',
-            item: 'https://arapov.trade',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: 'Про автора',
-            item: 'https://arapov.trade/ru',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: 'Мои книги',
-            item: 'https://arapov.trade/ru/books',
-          },
-          {
-            '@type': 'ListItem',
-            position: 4,
-            name: 'Книга',
-            item: 'https://arapov.trade/ru/books/psihologiya-treydinga',
-          },
-        ],
-      },
+      // breadcrumb: {
+      //   '@type': 'BreadcrumbList',
+      //   itemListElement: [
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 1,
+      //       name: 'Главная',
+      //       item: 'https://arapov.trade',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 2,
+      //       name: 'Про автора',
+      //       item: 'https://arapov.trade/ru',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 3,
+      //       name: 'Мои книги',
+      //       item: 'https://arapov.trade/ru/books',
+      //     },
+      //     {
+      //       '@type': 'ListItem',
+      //       position: 4,
+      //       name: 'Книга',
+      //       item: 'https://arapov.trade/ru/books/psihologiya-treydinga',
+      //     },
+      //   ],
+      // },
     };
   }
 

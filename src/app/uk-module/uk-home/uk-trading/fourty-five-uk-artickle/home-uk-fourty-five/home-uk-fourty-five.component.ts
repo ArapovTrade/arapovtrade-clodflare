@@ -401,6 +401,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
   private setBreadcrumbSchema(): void {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
+      "name": "BreadcrumbList",
       '@type': 'BreadcrumbList',
       '@id': 'https://arapov.trade/uk/freestudying/freeeducation#breadcrumb',
       itemListElement: [
