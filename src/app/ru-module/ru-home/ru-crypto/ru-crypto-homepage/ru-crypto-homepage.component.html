@@ -364,7 +364,7 @@
                 торгую» или «Изучаю конкретный рынок».
               </p>
               <div class="authot_button_block">
-                <div
+                <div (click)="navigateToFragment('choseTheWay')"
                   [ngClass]="{
                     'btn-section-one': true,
                     'gradient-block-orange': isDark,
@@ -384,9 +384,9 @@
                       >Выбрать направление</span
                     ></a
                   >
-                </div>
+                </div>  
 
-                <div
+                <div  (click)="$event.preventDefault(); navigateTo('ru/freestudying/about')"
                   class="podrobnee phone"
                   [ngClass]="{
                     'podrobnee-dark': isDark,
@@ -699,7 +699,7 @@
           class="buttons-row"
           style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
         >
-          <div
+          <div   (click)="navigateToFragment('newTrader')"
             [ngClass]="{
               'youtube-channel': true,
               'gradient-block-orange': isDark,
@@ -716,7 +716,7 @@
             </a>
           </div>
 
-          <div
+          <div (click)="navigateToFragment('proTrader')"
             [ngClass]="{
               'youtube-channel': true,
               'gradient-block-orange': isDark,
@@ -815,7 +815,7 @@
       </p>
 
       <div class="authot_button_block">
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('ru')"
           [ngClass]="{
             'btn-section-one': true,
             'gradient-block-orange': isDark,
@@ -1066,7 +1066,7 @@
             </p>
 
             <div class="authot_button_block">
-              <div
+              <div  (click)="navigateToFragment('newTraderWay')"
                 [ngClass]="{
                   'btn-section-one': true,
                   'gradient-block-orange': isDark,
@@ -1268,7 +1268,7 @@
       </p>
 
       <div class="authot_button_block">
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('ru/freestudying/risk-management')"
           [ngClass]="{
             'btn-section-one': true,
             'gradient-block-orange': isDark,
@@ -1290,7 +1290,7 @@
   </div>
 
   <div class="flex-row-ba left-sixth" id="section1">
-    <div class="row" data-aos="fade-up" data-aos-delay="300">
+    <div class="row"  >
       <div class="left">
         <div class="bg-figure">
           <div
@@ -1404,7 +1404,7 @@
             Практика и паттерны.
           </p>
         </div>
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('ru/freestudying/freeeducation')"
           [ngClass]="{
             'youtube-channel': true,
             'youtube-channel-btn': true,
@@ -1494,7 +1494,7 @@
             class="buttons-row"
             style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
           >
-            <div
+            <div (click)="$event.preventDefault(); navigateTo('ru/freestudying/wyckoff-method')"
               [ngClass]="{
                 'youtube-channel': true,
                 'gradient-block-orange': isDark,
@@ -1511,7 +1511,7 @@
               </a>
             </div>
 
-            <div
+            <div  (click)="navigateToFragment('tradingSystem')"
               [ngClass]="{
                 'youtube-channel': true,
                 'gradient-block-orange': isDark,
@@ -1694,7 +1694,7 @@
   </div>
 
   <div class="eighth-block">
-    <div class="eighth-block_main" data-aos="fade-up" data-aos-delay="300">
+    <div class="eighth-block_main"  >
       <div class="eighth-block_main-left">
         <div class="img-18"></div>
         <div
@@ -1747,7 +1747,7 @@
         </p>
 
         <div class="authot_button_block">
-          <div
+          <div (click)="$event.preventDefault(); navigateTo('ru/freestudying/practic')"
             [ngClass]="{
               'btn-section-one': true,
               'gradient-block-orange': isDark,
@@ -1775,7 +1775,7 @@
             <span class="text-p"
               ><a  href="https://www.youtube.com/@ArapovTrade" target="_blank"
                 >Видео на YouTube</a
-              >
+              > 
             </span>
           </div>
         </div>

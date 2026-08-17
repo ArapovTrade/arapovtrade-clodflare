@@ -356,7 +356,7 @@
                 trading," or "Studying a specific market."
               </p>
               <div class="authot_button_block">
-                <div
+                <div   (click)="navigateToFragment('choseTheWay')"
                   [ngClass]="{
                     'btn-section-one': true,
                     'gradient-block-orange': isDark,
@@ -374,7 +374,7 @@
                   >
                 </div>
 
-                <div
+                <div (click)="$event.preventDefault(); navigateTo('en/freestudying/about')"
                   class="podrobnee phone"
                   [ngClass]="{
                     'podrobnee-dark': isDark,
@@ -687,7 +687,7 @@
           class="buttons-row"
           style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
         >
-          <div
+          <div (click)="navigateToFragment('newTrader')"
             [ngClass]="{
               'youtube-channel': true,
               'gradient-block-orange': isDark,
@@ -704,7 +704,7 @@
             </a>
           </div>
 
-          <div
+          <div  (click)="navigateToFragment('proTrader')"
             [ngClass]="{
               'youtube-channel': true,
               'gradient-block-orange': isDark,
@@ -805,7 +805,7 @@
       </p>
 
       <div class="authot_button_block">
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('en')"
           [ngClass]="{
             'btn-section-one': true,
             'gradient-block-orange': isDark,
@@ -994,7 +994,7 @@
             </p>
 
             <div class="authot_button_block">
-              <div
+              <div   (click)="navigateToFragment('newTraderWay')"
                 [ngClass]="{
                   'btn-section-one': true,
                   'gradient-block-orange': isDark,
@@ -1150,7 +1150,7 @@
       </p>
 
       <div class="authot_button_block">
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('en/freestudying/risk-management')"
           [ngClass]="{
             'btn-section-one': true,
             'gradient-block-orange': isDark,
@@ -1285,7 +1285,7 @@
 
           </p>
         </div>
-        <div
+        <div (click)="$event.preventDefault(); navigateTo('en/freestudying/freeeducation')"
           [ngClass]="{
             'youtube-channel': true,
             'youtube-channel-btn': true,
@@ -1381,7 +1381,7 @@
             class="buttons-row"
             style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap"
           >
-            <div
+            <div (click)="$event.preventDefault(); navigateTo('en/freestudying/wyckoff-method')"
               [ngClass]="{
                 'youtube-channel': true,
                 'gradient-block-orange': isDark,
@@ -1398,7 +1398,7 @@
               </a>
             </div>
 
-            <div
+            <div  (click)="navigateToFragment('tradingSystem')"
               [ngClass]="{
                 'youtube-channel': true,
                 'gradient-block-orange': isDark,
@@ -1507,7 +1507,7 @@
         </p>
 
         <div class="authot_button_block">
-          <div
+          <div (click)="$event.preventDefault(); navigateTo('en/freestudying/practic')"
             [ngClass]="{
               'btn-section-one': true,
               'gradient-block-orange': isDark,
