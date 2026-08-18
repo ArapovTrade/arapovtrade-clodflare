@@ -104,7 +104,7 @@
 
 //section two
 .author-page_section-two {
-  height: 1200px;
+  height: 1000px;
   position: relative;
    
   width: 82.6%;
@@ -570,3 +570,325 @@ font-size: 24px;
         top: 760px;
   }
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// new block
+
+.up-block {
+  position: relative;
+  width: 81.4%;
+  // height: 313px;
+  height: fit-content;
+
+  padding-top: 50px;
+  margin: 2px auto 89px;
+  z-index: 146;
+}
+
+.arrow-11 {
+  position: absolute;
+  width: 115.029px;
+  height: 102.212px;
+  top: 0px;
+ left: 30px;
+
+  z-index: 147;
+}
+.arrow-11-dark {
+  background: url(/assets/redesignArapovTrade/img/Arrow-forth-block.png)
+    no-repeat top;
+  background-size: cover;
+}
+.arrow-11-light {
+  background: url(/assets/redesignArapovTrade/img/arrow-11-light.png) no-repeat
+    top;
+  background-size: cover;
+}
+.trading-definition {
+  position: relative;
+  // width: 1171px;
+  width: 100%;
+   height: fit-content;
+  padding: 20px 80px 20px;
+  z-index: 148;
+  border-radius: 32px 60px 8px 40px;
+  backdrop-filter: blur(24px);
+
+  -webkit-backdrop-filter: blur(48px);
+}
+
+.flex-row-12 {
+  position: relative;
+  // width: 932px;
+  width: 100%;
+  height: fit-content;
+  // height: 76px;
+  // margin: 15px 0 0 220px;
+  z-index: 152;
+}
+.info-icon {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 0;
+  
+  // right: 10px;
+      right: -60px;
+  opacity: 0.5;
+  z-index: 149;
+}
+.group-13 {
+  position: relative;
+  width: 14.6px;
+  height: 58.4px;
+  margin: 7.3px 0 0 29.2px;
+
+  z-index: 150;
+}
+.group-13-dark {
+  background: url(/assets/redesignArapovTrade/img/i-dark.png) no-repeat center;
+}
+.group-13-light {
+  background: url(/assets/redesignArapovTrade/img/i-light.png) no-repeat center;
+}
+.trading-definition-title {
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: center;
+  margin: 30px 0;
+  white-space: normal;
+  position: relative;
+  // width: 780px;
+  // height: 56px;
+  // top: 20px;
+  // left: calc(50% - 466px);
+  font-family: Advent Pro;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: normal;
+  z-index: 152;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trading-definition-small{
+      
+  
+  z-index: 152;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trading-definition-text {
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: center;
+  position: relative;
+  // width: 1017px;
+  // height: 72px;
+  text-align: justify !important;
+  height: fit-content;
+  // margin: 43px 0 0 85px;
+  color: #ffffff;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: center;
+  z-index: 151;
+  // padding-bottom: 30px;
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+
+  .up-block {
+    width: 100%;
+    height: 100%;
+    padding: clamp(20px, 4vh + 10px, 30px) 0 0 0;
+    margin: 0 auto;
+  }
+  .info-icon {
+   
+  
+  right: -15px;
+   
+ 
+}
+  
+
+  .flex-row-12 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .trading-definition {
+   width: 90%;
+        margin: 0 auto;
+    height: auto;
+    padding: 0 19px 14px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .trading-definition-title {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    flex-wrap: wrap;
+    white-space: normal;
+    left: 0;
+    top: 0;
+    line-height: 120%;
+
+    margin: 35px 0 15px;
+  }
+
+  .trading-definition-text {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    margin: 0;
+    line-height: 150%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 766px) {
+.trading-definition-small{
+   margin: 0px 20px;
+}
+.up-block {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+
+  padding-top: 50px;
+  margin: 2px auto 30px;
+  z-index: 146;
+}
+.arrow-11 {
+  position: absolute;
+  width: 115.029px;
+  height: 102.212px;
+  top: 0px;
+  left: 30px;
+
+  z-index: 147;
+}
+.arrow-11-dark {
+  background: url(/assets/redesignArapovTrade/img/Arrow-forth-block.png)
+    no-repeat top;
+  background-size: cover;
+}
+.arrow-11-light {
+  background: url(/assets/redesignArapovTrade/img/arrow-11-light.png) no-repeat
+    top;
+  background-size: cover;
+}
+.trading-definition {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  padding: 10px 5px;
+  z-index: 148;
+  border-radius: 32px 60px 8px 40px;
+  backdrop-filter: blur(24px);
+          width: 95%;
+        margin: 0 auto;
+  -webkit-backdrop-filter: blur(48px);
+}
+.flex-row-12 {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  margin: 15px 0 0 0px;
+  z-index: 152;
+}
+.info-icon {
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 10px;
+  right: -28px;
+  opacity: 0.5;
+  z-index: 149;
+}
+.group-13 {
+  position: relative;
+  width: 14.6px;
+  height: 58.4px;
+  margin: 7.3px 0 0 29.2px;
+
+  z-index: 150;
+}
+.group-13-dark {
+  background: url(/assets/redesignArapovTrade/img/i-dark.png) no-repeat center;
+}
+.group-13-light {
+  background: url(/assets/redesignArapovTrade/img/i-light.png) no-repeat center;
+}
+.trading-definition-title {
+  // display: flex;
+  // align-items: flex-start;
+  // justify-content: center;
+  // position: absolute;
+  width: 100%;
+  height: fit-content;
+  // top: 20px;
+  // left: calc(50% - 466px);
+  font-family: Advent Pro;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: normal;
+  z-index: 152;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.trading-definition-text {
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: center;
+  padding: 5px 20px;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  // margin: 43px 0 0 85px;
+  color: #ffffff;
+  font-family: Open Sans, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  z-index: 151;
+}
+}

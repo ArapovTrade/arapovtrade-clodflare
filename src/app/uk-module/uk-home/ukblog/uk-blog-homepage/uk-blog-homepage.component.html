@@ -261,6 +261,91 @@
   ></div>
 </div>
 
+
+
+  <div class="up-block">
+ <div
+   [ngClass]="{
+     'arrow-11': true,
+     'arrow-11-dark': isDark,
+     'arrow-11-light': !isDark,
+   }"
+ ></div>
+ <div
+   class="trading-definition"
+   [ngStyle]="{
+     background: isDark
+       ? 'rgba(255, 255, 255, 0.08)'
+       : 'rgba(0, 131, 205, 0.08)',
+     border: isDark
+       ? '2px solid rgba(230, 237, 251, 0.16)'
+       : '2px solid #E6EDFB',
+   }"
+ >
+   <div class="flex-row-12">
+     <div class="info-icon">
+       <div
+         [ngClass]="{
+           'group-13': true,
+           'group-13-dark': isDark,
+           'group-13-light': !isDark,
+         }"
+       ></div>
+     </div>
+     <h2
+       id="newTrader"
+       [ngClass]="{
+         'trading-definition-title': true,
+         'gradient-orange': isDark,
+         'gradient-blue': !isDark,
+       }"
+     >
+       Як влаштована бібліотека
+     </h2>
+   </div>
+   <p
+     class="trading-definition-text"
+     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+   >
+     <span
+       [ngStyle]="{
+         color: isDark ? '#fdff8b' : '#0074e6',
+       }"
+       class="linkrefinto"
+       >Бібліотека</span
+     >
+     поділена на дев'ять тематичних розділів. Кожна стаття прив'язана до однієї
+     з дев'яти тем у фільтрі зліва: клікніть потрібний розділ замість того щоб
+     гортати все підряд. Тут статті розділені не за рівнем досвіду, а за
+     категоріями теорії трейдингу. Така структура логічна: рідко буває так,
+     що однієї статті достатньо, щоб розібратися в темі повністю.
+     «Технічний аналіз» — це не одна стаття, а велика кількість тем:
+     читання графіка, розбір патернів і робота з індикаторами. Одна стаття
+     може показати лише частину картини: весь розділ розкриває тему
+     повністю.
+
+     <span
+       [ngStyle]="{
+         color: isDark ? '#fdff8b' : '#0074e6',
+       }"
+       class="linkrefinto"
+     >
+       «Трейдинг для початківців»</span
+     >
+     працює за тим самим принципом у вигляді послідовності: від питання «що
+     таке трейдинг» до вибору брокера і перших торгових стилів крок за кроком, а
+     не одним оглядовим текстом. Якщо потрібен «шлях з нуля», а не точковий пошук
+     за темами, переходьте на структурований курс для початківців.
+   </p>
+ </div>
+</div>
+
+
+
+
+
+
+
 <div class="mobile_menu">
   <!-- search -->
   <div

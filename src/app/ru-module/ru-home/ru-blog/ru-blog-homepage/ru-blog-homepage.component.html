@@ -17,17 +17,16 @@
         <span
           class="author-page_main-block_description-text"
           [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-          >Вся теория трейдинга — бесплатно и без ограничений. Детальные
-          видеоуроки, статьи с реальными примерами и пошаговые разборы ключевых
-          тем . От основ рынка до продвинутых торговых стратегий — учитесь в
-          своём темпе, без дедлайнов и скрытых платежей. <br />
+          >Вся теория трейдинга бесплатно и без ограничений: пошаговый курс из
+          32 разделов от основ рынка до практики на демосчёте, статьи с
+          реальными примерами и видеоуроки. Учитесь в своём темпе, без дедлайнов
+          и скрытых платежей.<br />
           <br />
-          Это опыт более 13 лет торговли, собранный Игорем Араповым в
-          видеоуроки, статьи и серию книг по трейдингу.
+          Это опыт более 13 лет торговли, который Игорь Арапов собрал в
+          структурированный курс, статьи и серию книг по трейдингу.
         </span>
-       
       </div>
-      
+
       <div class="authot_button_block">
         <div
           [ngClass]="{
@@ -82,7 +81,10 @@
                 'links-light': !isDark,
               }"
             >
-              <a rel="me nofollow" href="https://www.facebook.com/igor.arapov.75">
+              <a
+                rel="me nofollow"
+                href="https://www.facebook.com/igor.arapov.75"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -105,7 +107,8 @@
                 'links-light': !isDark,
               }"
             >
-              <a rel="me nofollow"
+              <a
+                rel="me nofollow"
                 href="https://www.linkedin.com/in/arapovtrade/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               >
                 <svg
@@ -130,7 +133,10 @@
                 'links-light': !isDark,
               }"
             >
-              <a rel="me nofollow" href="https://ru.tradingview.com/u/Igor_Arapov/">
+              <a
+                rel="me nofollow"
+                href="https://ru.tradingview.com/u/Igor_Arapov/"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -213,7 +219,10 @@
                 'links-light': !isDark,
               }"
             >
-              <a rel="me nofollow" href="https://www.instagram.com/arapovtrade/">
+              <a
+                rel="me nofollow"
+                href="https://www.instagram.com/arapovtrade/"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -262,9 +271,85 @@
     class="mask_archive_main"
     [ngStyle]="{ background: isDark ? '#000000' : '#ffffff' }"
   ></div>
-  
 </div>
- 
+
+<div class="up-block">
+  <div
+    [ngClass]="{
+      'arrow-11': true,
+      'arrow-11-dark': isDark,
+      'arrow-11-light': !isDark,
+    }"
+  ></div>
+  <div
+    class="trading-definition"
+    [ngStyle]="{
+      background: isDark
+        ? 'rgba(255, 255, 255, 0.08)'
+        : 'rgba(0, 131, 205, 0.08)',
+      border: isDark
+        ? '2px solid rgba(230, 237, 251, 0.16)'
+        : '2px solid #E6EDFB',
+    }"
+  >
+    <div class="flex-row-12">
+      <div class="info-icon">
+        <div
+          [ngClass]="{
+            'group-13': true,
+            'group-13-dark': isDark,
+            'group-13-light': !isDark,
+          }"
+        ></div>
+      </div>
+      <h2
+        id="newTrader"
+        [ngClass]="{
+          'trading-definition-title': true,
+          'gradient-orange': isDark,
+          'gradient-blue': !isDark,
+        }"
+      >
+        Как устроена библиотека
+      </h2>
+    </div>
+    <p
+      class="trading-definition-text"
+      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+    >
+      <span
+        [ngStyle]="{
+          color: isDark ? '#fdff8b' : '#0074e6',
+        }"
+        class="linkrefinto"
+        >Библиотека</span
+      >
+      делится на девять тематических разделов. Каждая статья привязана к одной
+      из девяти тем в фильтре слева: кликните нужный раздел вместо того чтобы
+      листать всё подряд. Здесь статьи разделены не по уровню опыта, а по
+      категориям теории трейдинга. Такая структура логична: редко бывает так,
+      что одной статьи достаточно, чтобы разобраться в теме целиком.
+      «Технический анализ» — это не одна статья, а большое количество тем:
+      чтение графика, разбор паттернов и работа с индикаторами. Одна статья
+      может показать только часть картины: весь раздел раскрывает тему
+      полностью.
+
+      <span
+        [ngStyle]="{
+          color: isDark ? '#fdff8b' : '#0074e6',
+        }"
+        class="linkrefinto"
+      >
+        «Трейдинг для начинающих»</span
+      >
+      работает по тому же принципу в виде последовательности: от вопроса «что
+      такое трейдинг» до выбора брокера и первых торговых стилей шаг за шагом, а
+      не одним обзорным текстом. Если нужен «путь с нуля», а не точечный поиск
+      по темам, переходите на структурированный курс для начинающих.
+    </p>
+  </div>
+</div>
+
 <div class="mobile_menu">
   <!-- search -->
   <div
@@ -908,7 +993,8 @@
           </div>
 
           <div class="author-page_section-three-block_social-links">
-            <a rel="nofollow"
+            <a
+              rel="nofollow"
               href="https://telegram.me/+380506308200"
               class="section-three-block_social-link"
             >
@@ -946,7 +1032,8 @@
                 </svg>
               </div>
             </a>
-            <a rel="nofollow"
+            <a
+              rel="nofollow"
               href="viber://chat?number=+380506308200"
               class="section-three-block_social-link"
             >
@@ -985,7 +1072,8 @@
               </div>
             </a>
 
-            <a rel="nofollow"
+            <a
+              rel="nofollow"
               href="https://wa.me/+380506308200"
               class="section-three-block_social-link"
             >

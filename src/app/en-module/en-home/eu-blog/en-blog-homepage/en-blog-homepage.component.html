@@ -263,6 +263,89 @@
   ></div>
 </div>
 
+  <div class="up-block">
+ <div
+   [ngClass]="{
+     'arrow-11': true,
+     'arrow-11-dark': isDark,
+     'arrow-11-light': !isDark,
+   }"
+ ></div>
+ <div
+   class="trading-definition"
+   [ngStyle]="{
+     background: isDark
+       ? 'rgba(255, 255, 255, 0.08)'
+       : 'rgba(0, 131, 205, 0.08)',
+     border: isDark
+       ? '2px solid rgba(230, 237, 251, 0.16)'
+       : '2px solid #E6EDFB',
+   }"
+ >
+   <div class="flex-row-12">
+     <div class="info-icon">
+       <div
+         [ngClass]="{
+           'group-13': true,
+           'group-13-dark': isDark,
+           'group-13-light': !isDark,
+         }"
+       ></div>
+     </div>
+     <h2
+       id="newTrader"
+       [ngClass]="{
+         'trading-definition-title': true,
+         'gradient-orange': isDark,
+         'gradient-blue': !isDark,
+       }"
+     >
+       How   library is organized
+     </h2>
+   </div>
+   <p
+     class="trading-definition-text"
+     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+   >
+     <span
+       [ngStyle]="{
+         color: isDark ? '#fdff8b' : '#0074e6',
+       }"
+       class="linkrefinto"
+       >The library</span
+     >
+     is divided into nine thematic sections. Every article is tied to one
+     of the nine topics in the filter on the left: click the section you need
+     instead of scrolling through everything. Here articles are grouped not by
+     experience level, but by categories of trading theory. This structure makes
+     sense: it's rare for a single article to be enough to fully understand a
+     topic. "Technical analysis" isn't one article but a large number of
+     topics: reading charts, breaking down patterns, and working with
+     indicators. A single article can only show part of the picture: the whole
+     section reveals the topic in full.
+
+     <span
+       [ngStyle]="{
+         color: isDark ? '#fdff8b' : '#0074e6',
+       }"
+       class="linkrefinto"
+     >
+       "Trading for beginners"</span
+     >
+     works on the same principle, as a sequence: from the question "what is
+     trading" to choosing a broker and your first trading styles, step by step,
+     rather than one overview text. If you need a "path from scratch" rather
+     than looking up specific topics, go to the structured course for
+     beginners.
+   </p>
+ </div>
+</div>
+
+
+
+
+
+
 <div class="mobile_menu">
   <!-- search -->
   <div

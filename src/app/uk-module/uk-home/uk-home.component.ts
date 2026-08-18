@@ -61,7 +61,7 @@ export class UkHomeComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.addAuthorPageSchema('uk');
     this.titleService.setTitle(
-      'Ігор Арапов — незалежний дослідник, трейдер, автор',
+      'Ігор Арапов — трейдер, автор книг і курсу з трейдингу',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
 
@@ -77,7 +77,7 @@ export class UkHomeComponent implements OnInit, OnDestroy {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Ігор Арапов — незалежний дослідник у галузі психології інвестиційних рішень та поведінкових фінансів, практикуючий трейдер з 2013 року, автор серії книг з трейдингу.',
+        'Ігор Арапов — незалежний дослідник у сфері психології інвестиційних рішень та поведінкових фінансів, практикуючий трейдер з 2013 року, автор 9 книг з ISBN, співавтор рецензованої статті, лектор НУХТ.',
     });
     this.meta.updateTag({
       name: 'keywords',
