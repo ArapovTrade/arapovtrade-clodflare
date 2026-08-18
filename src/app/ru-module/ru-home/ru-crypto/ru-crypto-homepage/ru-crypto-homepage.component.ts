@@ -33,17 +33,7 @@ export class RuCryptoHomepageComponent
     private route: ActivatedRoute,
   ) {}
 
-  ngAfterViewInit() {
-    setTimeout(() => {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 1000,
-          once: false,
-          offset: 100,
-        });
-      }
-    }, 500); // Задержка 0.5s
-  }
+  ngAfterViewInit() {}
   isDark!: boolean;
   languages = ['ua', 'en', 'ru']; // какие языки нужны
   currentLang = 'ru';
@@ -84,14 +74,20 @@ export class RuCryptoHomepageComponent
 
     this.routerSubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
+        // if (typeof window !== 'undefined') {
+        //   window.scrollTo(0, 0);
+        // }
         if (typeof window !== 'undefined') {
-          window.scrollTo(0, 0);
+          // Не скроллим наверх, если в URL есть фрагмент (якорь) —
+          // в этом случае скроллом займётся scrollToFragment
+          const urlTree = this.router.parseUrl(event.urlAfterRedirects);
+
+          if (!urlTree.fragment) {
+            window.scrollTo(0, 0);
+          }
         }
       }
     });
-
-
-
 
     this.route.fragment.subscribe((fragment) => {
       if (fragment) {
@@ -100,7 +96,7 @@ export class RuCryptoHomepageComponent
     });
   }
 
-   scrollToFragment(fragment: string) {
+  scrollToFragment(fragment: string) {
     // requestAnimationFrame надёжнее чем setTimeout
     requestAnimationFrame(() => {
       setTimeout(() => {
@@ -117,18 +113,6 @@ export class RuCryptoHomepageComponent
   toggleTheme() {
     this.isDark = !this.isDark;
     this.themeService.setTheme(this.isDark);
-
-    this.refreshAOS();
-  }
-  refreshAOS() {
-    if (typeof AOS !== 'undefined') {
-      setTimeout(() => {
-        AOS.refresh(); // Обновление позиций AOS
-        this.cdr.detectChanges(); // Принудительное обнаружение изменений
-      }, 100); // Задержка для синхронизации
-    } else {
-      console.warn('AOS is not defined, refresh skipped');
-    }
   }
 
   toggleDropdown() {
@@ -142,16 +126,15 @@ export class RuCryptoHomepageComponent
   navigateTo(path: string) {
     this.router.navigate([path]);
   }
-   navigateToFragment(fragment: string) {
-    this.router
-      .navigate([], {
-        fragment,
-        // Это заставляет Angular эмитить событие даже если fragment тот же
-        onSameUrlNavigation: 'reload',
-      })
-      .then(() => {
-        this.scrollToFragment(fragment);
-      });
+  navigateToFragment(fragment: string) {
+    this.router.navigate([], {
+      fragment,
+      // Это заставляет Angular эмитить событие даже если fragment тот же
+      onSameUrlNavigation: 'reload',
+    });
+    // .then(() => {
+    //   this.scrollToFragment(fragment);
+    // });
   }
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;

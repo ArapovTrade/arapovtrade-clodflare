@@ -209,8 +209,8 @@ position: absolute;
 .mask-gradient {
      position: absolute;
     width: 100%;
-    height: 1150px;
-    top: 0;
+      height: 800px;
+    top: 150px;
 
   left: 0;
   // background: url(/assets/redesignArapovTrade/img/mask-gradient.png) no-repeat
@@ -3187,9 +3187,9 @@ margin-top: 30px;
   }
 
   .mask-gradient {
-           top: 1050px;
+         top: 1075px;
         width: 100%;
-        height: 700px;
+        height: 300px;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.001) 50%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0.95) 93%, #000 100%);
     
   }
@@ -4197,15 +4197,18 @@ margin-top: 30px;
   .about-bg {
     top: 907px;
   }
+   .mask-gradient{
+    height:800px;
+  }
 }
 @media (min-width: 767px) and (max-width: 900px) {
   .mask-gradient{
-    height:1025px;
+    height:880px;
   }
 }
 @media (min-width: 901px) and (max-width: 999px) {
   .mask-gradient{
-    height:936px;
+    height:830px;
   }
 }
 @media (min-width: 651px) and (max-width: 766px) {
@@ -4460,4 +4463,40 @@ border-radius: 20px 20px 20px 20px;
 
 .reighth-block_main-right{
   width: 45%;
+}
+@media (min-width:431px) and (max-width:486px) {
+  .mask-gradient{
+    height:333px;
+    top: 996px;
+  }
+}
+@media (min-width:487px) and (max-width:564px) {
+  .mask-gradient{
+    height:333px;
+    top: 900px;
+  }
+}
+@media (min-width:565px) and (max-width:650px) {
+  .mask-gradient{
+   height: 309px;
+        top: 882px;
+  }
+}
+@media (min-width:650px) and (max-width:766px) {
+  .mask-gradient{
+    height:280px;
+    top: 880px;
+  }
+}
+@media (min-width:402px) and (max-width:450px) {
+  .mask-gradient{
+          height: 294px;
+        top: 1035px;
+    }
+}
+@media (min-width:451px) and (max-width:486px) {
+  .mask-gradient{
+          height: 294px;
+        top: 975px;
+    }
 }

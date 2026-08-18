@@ -81,8 +81,17 @@ export class EnCryptoHomepageComponent
 
     this.routerSubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        if (typeof window !== 'undefined') {
-          window.scrollTo(0, 0);
+      //  if (typeof window !== 'undefined') {
+      //     window.scrollTo(0, 0);
+      //   } 
+       if (typeof window !== 'undefined') {
+          // Не скроллим наверх, если в URL есть фрагмент (якорь) —
+          // в этом случае скроллом займётся scrollToFragment
+          const urlTree = this.router.parseUrl(event.urlAfterRedirects);
+
+          if (!urlTree.fragment) {
+            window.scrollTo(0, 0);
+          }
         }
       }
     });
@@ -139,9 +148,9 @@ export class EnCryptoHomepageComponent
         // Это заставляет Angular эмитить событие даже если fragment тот же
         onSameUrlNavigation: 'reload',
       })
-      .then(() => {
-        this.scrollToFragment(fragment);
-      });
+      // .then(() => {
+      //   this.scrollToFragment(fragment);
+      // });
   }
   navigateTo(path: string) {
     this.router.navigate([path]);

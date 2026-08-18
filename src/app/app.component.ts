@@ -135,7 +135,8 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
     this.routerSubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         if (typeof window !== 'undefined') {
-          window.scrollTo(0, 0);
+          // ТЕСТ СКРОЛА!!!!! МЕШАЛО СКРОЛУ ПО ЯКОРЯМ НА ГЛАВНОЙ СТРАНИЦЕ!!!!
+          // window.scrollTo(0, 0);
         }
       }
     });
