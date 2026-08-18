@@ -360,7 +360,10 @@
           ). <br /><br />
         </span>
       </div>
-        <div
+        <div (click)="
+            
+              navigateTo('en/freestudying/freeeducation')
+            "
           [ngClass]="{
             'author-page_main-block_btn': true,
             'gradient-block-orange': isDark,
@@ -955,7 +958,7 @@
   </div>
 
 
-  <div class="up-block">
+ <div class="up-block">
    <div
      [ngClass]="{
        'arrow-11': true,
@@ -1068,22 +1071,11 @@
        One of the notable studies in this field is the work of Terrance
        Odean, who analyzed more than 10,000 real brokerage accounts. The
        researcher looked at how investors handle winning and losing
-       positions.
-     </p>
-     <p
-       class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-     >
-       The result was telling: investors closed winning positions far more
-       often than losing ones. This is the disposition effect at work — the
-       tendency to take profits too early while holding onto positions that
-       are already showing a loss for longer.
-     </p>
-     <p
-       class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-     >
-       The problem isn't just a few unlucky trades. This kind of behavior can
+       positions. The result was telling: investors closed winning positions
+       far more often than losing ones. This is the disposition effect at
+       work — the tendency to take profits too early while holding onto
+       positions that are already showing a loss for longer. The problem
+       isn't just a few unlucky trades. This kind of behavior can
        systematically hurt trading results: a trader locks in a small win but
        keeps holding a position moving against them, hoping for a reversal.
      </p>
@@ -1105,25 +1097,14 @@
        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
      >
        Fear, greed, hope, and tilt — four states that can noticeably shape a
-       trader's decisions.
-     </p>
-     <p
-       class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-     >
-       Fear can push someone to close a position at the first sign of an
-       unfavorable move. Its opposite — fear of missing out — pushes traders
-       to enter a trade without sufficient grounds, simply because the move
-       has already started.
-     </p>
-     <p
-       class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-     >
-       Tilt — a term borrowed from poker — describes a state in which a
-       string of losses breaks down self-control and leads to emotional
-       decisions. Instead of sticking to a predefined system, the trader
-       starts trying to win back the previous loss with the next trade.
+       trader's decisions. Fear can push someone to close a position at the
+       first sign of an unfavorable move. Its opposite — fear of missing out
+       — pushes traders to enter a trade without sufficient grounds, simply
+       because the move has already started. Tilt — a term borrowed from
+       poker — describes a state in which a string of losses breaks down
+       self-control and leads to emotional decisions. Instead of sticking to
+       a predefined system, the trader starts trying to win back the previous
+       loss with the next trade.
      </p>
 
 
@@ -1136,10 +1117,20 @@
      >
        The Illusion of Control and Technical Analysis
      </h3>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">A large number of tools on a chart doesn't always mean better analysis. On the contrary, a screen overloaded with indicators can create a sense of confidence and control, even when the trader hasn't gained any real edge over the market.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">This is one of trading's paradoxes: the drive to find as much confirmation as possible for one's own hypothesis sometimes only strengthens confidence in the forecast, without making the forecast itself any more accurate.</p>
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       A large number of tools on a chart doesn't always mean better
+       analysis. On the contrary, a screen overloaded with indicators can
+       create a sense of confidence and control, even when the trader hasn't
+       gained any real edge over the market.
+     
+       This is one of trading's paradoxes: the drive to find as much
+       confirmation as possible for one's own hypothesis sometimes only
+       strengthens confidence in the forecast, without making the forecast
+       itself any more accurate.
+     </p>
 
 
      <h3
@@ -1151,10 +1142,18 @@
      >
        The Gender Paradox
      </h3>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">Research by Brad Barber and Terrance Odean uncovered another interesting pattern. On average, men show greater confidence in their own decisions, trade more often, and take on more risk.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">Yet higher trading activity doesn't translate into higher returns. Every additional trade brings new costs and one more chance for a decision to be swayed by psychological factors.</p>
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       Research by Brad Barber and Terrance Odean uncovered another
+       interesting pattern. On average, men show greater confidence in their
+       own decisions, trade more often, and take on more risk.
+    
+       Yet higher trading activity doesn't translate into higher returns.
+       Every additional trade brings new costs and one more chance for a
+       decision to be swayed by psychological factors.
+     </p>
 
 
      <h3
@@ -1166,96 +1165,167 @@
      >
        What to Do About It in Practice
      </h3>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The work looks not only at the problem, but also at ways to reduce the influence of cognitive biases.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The first tool is a formalized trading system, where entry rules, exit rules, and loss limits are defined in advance. This makes it possible to make the key decisions before fear or greed can influence them.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The second is a trading journal. It's not just for recording entry and exit prices: logging your emotional state during a trade helps you spot recurring behavioral patterns and your own mistakes over time.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The third is financial literacy and understanding how markets work. Recognizing that short-term price movements can't be reliably predicted with absolute precision helps reduce the illusion of control and the tendency to overtrade.</p>
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       The work looks not only at the problem, but also at ways to reduce the
+       influence of cognitive biases.
      
-  <h3
+       The first tool is a formalized trading system, where entry rules, exit
+       rules, and loss limits are defined in advance. This makes it possible
+       to make the key decisions before fear or greed can influence them.
+     
+       The second is a trading journal. It's not just for recording entry and
+       exit prices: logging your emotional state during a trade helps you
+       spot recurring behavioral patterns and your own mistakes over time.
+    
+       The third is financial literacy and understanding how markets work.
+       Recognizing that short-term price movements can't be reliably
+       predicted with absolute precision helps reduce the illusion of
+       control and the tendency to overtrade.
+     </p>
+
+
+     <h3
        [ngClass]="{
          'trading-definition-small': true,
          'gradient-orange': isDark,
          'gradient-blue': !isDark,
        }"
      >
-      Books and Learning Materials
+       Books and Learning Materials
      </h3>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The "Trading Fundamentals" series consists of three books that walk the reader step by step through how the market works, methods of analysis, and trader psychology — from the basic principles of exchange trading to practical analysis and managing your own behavior.</p>
-     <h4 [ngClass]="{
-         'trading-definition-small': true,
-         'gradient-orange': isDark,
-         'gradient-blue': !isDark,
-       }">"Trading Fundamentals" — 103 pages</h4>
-
-
-       <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The first book is the starting point for getting to know the market. It covers exchange structure, the main trading instruments, and the categories of market participants.</p>
-       <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">Separate sections are devoted to technical and volume analysis: chart types, trends, support and resistance levels, price patterns, and horizontal and vertical volumes. The book closes with the practical basics of capital management and building a trading plan.</p>
-
-
-       <h4 [ngClass]="{
-         'trading-definition-small': true,
-         'gradient-orange': isDark,
-         'gradient-blue': !isDark,
-       }">"Methods of Analysis" — 45 pages</h4>
- <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The second book is aimed at those already familiar with the basic principles and ready to move on to more applied analysis.</p>
- <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">It covers market movement phases, priority-shift levels and signs of a reversal, the "effort versus result" principle, pullback entry points, and breakouts versus false breakouts. Special attention is given to the risk-reward ratio and the probabilistic model of a profitable trading system.</p>
-         <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The final part walks through real trade breakdowns on Bitcoin, Nasdaq, and EUR/USD.</p>
-
-
-       <h4 [ngClass]="{
-         'trading-definition-small': true,
-         'gradient-orange': isDark,
-         'gradient-blue': !isDark,
-       }">"Trading Psychology" — 43 pages</h4>
-
-
-       <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The third book approaches the same subject from a practical angle: how these emotional states show up in real trading and what to do about them day to day, rather than why they arise.</p>
-       <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">It also covers discipline, sticking to a trading plan, psychological adaptation as capital grows, and common mistakes — averaging down a losing position, moving a stop-loss, and overtrading.</p>
-       <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">All three books were published simultaneously in Russian, Ukrainian, and English, carry international ISBNs registered through Bowker USA, and are listed in library catalogs, including the holdings of the V. I. Vernadsky National Library of Ukraine.</p>
-
-
-
-
-       <h3
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       The "Trading Fundamentals" series consists of three books that walk
+       the reader step by step through how the market works, methods of
+       analysis, and trader psychology — from the basic principles of
+       exchange trading to practical analysis and managing your own
+       behavior.
+     </p>
+     <h4
        [ngClass]="{
          'trading-definition-small': true,
          'gradient-orange': isDark,
          'gradient-blue': !isDark,
        }"
      >
-     Guest Lecture at NUFT
+       "Trading Fundamentals" — 103 pages
+     </h4>
+
+
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       The first book is the starting point for getting to know the market.
+       It covers exchange structure, the main trading instruments, and the
+       categories of market participants.
+    
+       Separate sections are devoted to technical and volume analysis: chart
+       types, trends, support and resistance levels, price patterns, and
+       horizontal and vertical volumes. The book closes with the practical
+       basics of capital management and building a trading plan.
+     </p>
+
+
+     <h4
+       [ngClass]="{
+         'trading-definition-small': true,
+         'gradient-orange': isDark,
+         'gradient-blue': !isDark,
+       }"
+     >
+       "Methods of Analysis" — 45 pages
+     </h4>
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       The second book is aimed at those already familiar with the basic
+       principles and ready to move on to more applied analysis.
+     
+       It covers market movement phases, priority-shift levels and signs of
+       a reversal, the "effort versus result" principle, pullback entry
+       points, and breakouts versus false breakouts. Special attention is
+       given to the risk-reward ratio and the probabilistic model of a
+       profitable trading system.
+     
+       The final part walks through real trade breakdowns on Bitcoin,
+       Nasdaq, and EUR/USD.
+     </p>
+
+
+     <h4
+       [ngClass]="{
+         'trading-definition-small': true,
+         'gradient-orange': isDark,
+         'gradient-blue': !isDark,
+       }"
+     >
+       "Trading Psychology" — 43 pages
+     </h4>
+
+
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       The third book approaches the same subject from a practical angle: how
+       these emotional states show up in real trading and what to do about
+       them day to day, rather than why they arise.
+    
+       It also covers discipline, sticking to a trading plan, psychological
+       adaptation as capital grows, and common mistakes — averaging down a
+       losing position, moving a stop-loss, and overtrading.
+    
+       All three books were published simultaneously in Russian, Ukrainian,
+       and English, carry international ISBNs registered through Bowker USA,
+       and are listed in library catalogs, including the holdings of the
+       V. I. Vernadsky National Library of Ukraine.
+     </p>
+
+
+     <h3
+       [ngClass]="{
+         'trading-definition-small': true,
+         'gradient-orange': isDark,
+         'gradient-blue': !isDark,
+       }"
+     >
+       Guest Lecture at NUFT
      </h3>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">As part of his academic activity, Igor Arapov gave a guest lecture to students of the "Digital Business" program at the National University of Food Technologies.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The lecture focused not on individual trading strategies, but on how the financial market works at the institutional level. Together with the students, the lecturer broke down the mechanics of the exchange as an environment where buyers and sellers interact, the structure of the CME Group, the specifics of its regulation, and the main categories of market participants — hedgers, large speculators, and small traders.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The theoretical part was rounded out with a practical case study: students analyzed gold futures turnover and tried to work out what a large market participant might be doing and what goals they were pursuing.</p>
-     <p class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">The main focus of the lecture was on understanding the logic of professional participants and supply and demand, rather than on intuitively predicting price movement.</p>
-
-
-
-
-
-
-
-
+     <p
+       class="trading-definition-text"
+       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+     >
+       As part of his academic activity, Igor Arapov gave a guest lecture to
+       students of the "Digital Business" program at the National University
+       of Food Technologies.
+     
+       The lecture focused not on individual trading strategies, but on how
+       the financial market works at the institutional level. Together with
+       the students, the lecturer broke down the mechanics of the exchange as
+       an environment where buyers and sellers interact, the structure of the
+       CME Group, the specifics of its regulation, and the main categories of
+       market participants — hedgers, large speculators, and small traders.
+    
+       The theoretical part was rounded out with a practical case study:
+       students analyzed gold futures turnover and tried to work out what a
+       large market participant might be doing and what goals they were
+       pursuing.
+    
+       The main focus of the lecture was on understanding the logic of
+       professional participants and supply and demand, rather than on
+       intuitively predicting price movement.
+     </p>
    </div>
  </div>
+
+
 
 
 
