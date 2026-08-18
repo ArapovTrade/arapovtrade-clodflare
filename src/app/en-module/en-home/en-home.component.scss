@@ -436,17 +436,18 @@ font-size: 30px;
     width: 335px;
   }   
   .follow-us-block{
-     
-    top: 750px;
-    width: 335px;
-        top: 720px;
+       position: static;
+       width: 100%;
+    // top: 750px;
+    // width: 335px;
+    //     top: 720px;
         
-        left: 50%;
-        transform: translate(-50%);
+    //     left: 50%;
+    //     transform: translate(-50%);
     
   }
   .author-page_section-two{
-    margin-top: 106px;
+    margin-top: 30px;
   }
   .author-page_main-block_description-text{
     font-size: 16px;
@@ -860,7 +861,7 @@ font-size: 24px;
   font-family: Advent Pro;
   font-size: 30px;
   font-weight: 600;
-  line-height: 56px;
+  line-height: 45px;
   text-align: center;
   text-transform: capitalize;
   white-space: normal;
