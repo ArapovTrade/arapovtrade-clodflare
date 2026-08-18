@@ -136,7 +136,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
       if (event instanceof NavigationEnd) {
         if (typeof window !== 'undefined') {
           // ТЕСТ СКРОЛА!!!!! МЕШАЛО СКРОЛУ ПО ЯКОРЯМ НА ГЛАВНОЙ СТРАНИЦЕ!!!!
-          // window.scrollTo(0, 0);
+          window.scrollTo(0, 0);
         }
       }
     });
