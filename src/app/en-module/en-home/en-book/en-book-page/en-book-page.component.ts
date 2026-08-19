@@ -61,7 +61,7 @@ export class EnBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
     });
     this.addWebSiteSchema();
     this.addBookSchema();
-    this.addPersonSchema();
+    // this.addPersonSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -221,8 +221,10 @@ export class EnBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
           url: 'https://arapov.trade/favicon.ico',
         },
         founder: {
-          '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
+             '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
         },
       },
     });
@@ -282,8 +284,10 @@ export class EnBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             bookFormat: 'https://schema.org/EBook',
             datePublished: '2025-06-07',
             author: {
-              '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+                 '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
             },
             publisher: {
               '@type': 'Organization',
@@ -304,8 +308,10 @@ export class EnBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             bookFormat: 'https://schema.org/EBook',
             datePublished: '2025-06-07',
             author: {
-              '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+                '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
             },
             publisher: {
               '@type': 'Organization',
@@ -327,8 +333,10 @@ export class EnBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             bookFormat: 'https://schema.org/EBook',
             datePublished: '2025-06-07',
             author: {
-              '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+                 '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
             },
             publisher: {
               '@type': 'Organization',

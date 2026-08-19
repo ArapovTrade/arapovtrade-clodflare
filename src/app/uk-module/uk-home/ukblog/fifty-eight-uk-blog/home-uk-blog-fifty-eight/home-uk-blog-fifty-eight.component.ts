@@ -41,10 +41,10 @@ export class HomeUkBlogFiftyEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -272,7 +272,12 @@ export class HomeUkBlogFiftyEightComponent implements OnInit {
             'Індикатор Ішимоку: хмара, сигнали та чи варто його новачкові',
           description:
             'Індикатор Ішимоку: хмара Кумо, лінії Tenkan і Kijun, визначення тренду та сигналів. Як читати систему і не перевантажувати графік.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

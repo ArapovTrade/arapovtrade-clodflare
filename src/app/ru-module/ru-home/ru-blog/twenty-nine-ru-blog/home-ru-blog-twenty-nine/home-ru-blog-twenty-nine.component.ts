@@ -42,10 +42,10 @@ export class HomeRuBlogTwentyNineComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -282,7 +282,12 @@ export class HomeRuBlogTwentyNineComponent implements OnInit {
             'Что такое облигации простыми словами: купон, номинал, доходность',
           description:
             'Что такое облигации простыми словами, как работают купон, номинал и доходность, какие бывают виды и насколько они надёжны для инвестора.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

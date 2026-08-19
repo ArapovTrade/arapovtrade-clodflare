@@ -42,10 +42,10 @@ export class HomeRuBlogFourtySixComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -279,7 +279,12 @@ export class HomeRuBlogFourtySixComponent implements OnInit {
             'Скользящие средние в трейдинге: что это и где реально работают',
           description:
             'Скользящие средние: SMA и EMA, выбор периода, пересечения и использование как динамической поддержки. Как применять и где они запаздывают.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

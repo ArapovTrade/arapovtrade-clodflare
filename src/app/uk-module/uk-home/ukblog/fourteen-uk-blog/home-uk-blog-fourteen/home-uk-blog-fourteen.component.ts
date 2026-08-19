@@ -42,10 +42,10 @@ export class HomeUkBlogFourteenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeUkBlogFourteenComponent implements OnInit {
             'Ризики й шахрайство в крипті: як новачкові не втратити депозит',
           description:
             'Головні ризики криптовалют і популярні схеми скаму: фейкові ICO, піраміди, фішинг і дрейн-гаманці. Як розпізнати обман і захистити кошти.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

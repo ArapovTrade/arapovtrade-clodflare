@@ -42,10 +42,10 @@ export class HomeUkBlogThirtySevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeUkBlogThirtySevenComponent implements OnInit {
           headline: 'Платформи, інструменти та брокер: з чого починає трейдер',
           description:
             'Як обрати брокера і торгову платформу: регуляція, комісії, виконання ордерів і на що дивитися новачку, щоб не натрапити на кухню.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

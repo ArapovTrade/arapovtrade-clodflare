@@ -41,10 +41,10 @@ export class HomeEnBlogFourComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -254,7 +254,12 @@ export class HomeEnBlogFourComponent implements OnInit {
             'Smart Money: The Complete Guide to the Smart Money Concept in Trading',
           description:
             'What the Smart Money Concept is: market structure, liquidity, Order Blocks and FVG. How big players trade and how to read their footprints.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

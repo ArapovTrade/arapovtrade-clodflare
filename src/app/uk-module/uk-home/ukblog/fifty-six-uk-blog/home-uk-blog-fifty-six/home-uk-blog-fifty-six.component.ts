@@ -42,10 +42,10 @@ export class HomeUkBlogFiftySixComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -274,7 +274,12 @@ export class HomeUkBlogFiftySixComponent implements OnInit {
             'Пробій рівня: як відрізнити справжній від хибного і де входити',
           description:
             'Як торгувати пробій рівня: визначення ключових зон, підтвердження обсягом, хибні пробої і де ставити стоп. Стратегія для новачків і профі.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

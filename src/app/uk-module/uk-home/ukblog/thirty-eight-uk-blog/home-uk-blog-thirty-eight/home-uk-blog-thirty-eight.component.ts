@@ -42,10 +42,10 @@ export class HomeUkBlogThirtyEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -277,7 +277,12 @@ export class HomeUkBlogThirtyEightComponent implements OnInit {
           headline: 'Проп-трейдинг: що це таке і як пройти челендж проп-фірми',
           description:
             'Що таке проп-трейдинг, як влаштований челендж проп-фірми, її правила, виплати та підводні камені торгівлі на чужому капіталі.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

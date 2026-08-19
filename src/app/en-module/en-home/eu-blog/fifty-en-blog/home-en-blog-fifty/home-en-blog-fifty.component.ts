@@ -41,10 +41,10 @@ export class HomeEnBlogFiftyComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -252,7 +252,12 @@ export class HomeEnBlogFiftyComponent implements OnInit {
             'Bollinger Bands in Trading: What They Are and How to Use Them',
           description:
             'Bollinger Bands: settings, squeeze and expansion, breakouts and bounces off the bands. How the indicator shows volatility and overheated zones.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

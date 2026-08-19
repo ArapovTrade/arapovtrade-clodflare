@@ -44,7 +44,7 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -286,6 +286,8 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
           author: {
             '@type': 'Person',
             '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
           },
         },
       ],

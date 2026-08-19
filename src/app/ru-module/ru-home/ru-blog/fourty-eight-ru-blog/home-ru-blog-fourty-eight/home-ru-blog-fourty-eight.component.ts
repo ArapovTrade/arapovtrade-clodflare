@@ -42,10 +42,10 @@ export class HomeRuBlogFourtyEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeRuBlogFourtyEightComponent implements OnInit {
           headline: 'Волны Эллиотта в трейдинге: что это и как применять',
           description:
             'Теория волн Эллиотта: импульсы и коррекции, структура из пяти и трёх волн, принципы разметки и ограничения метода в реальной торговле.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

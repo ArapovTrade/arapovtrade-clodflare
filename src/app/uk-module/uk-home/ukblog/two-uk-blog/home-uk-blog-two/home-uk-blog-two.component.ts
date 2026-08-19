@@ -42,10 +42,10 @@ export class HomeUkBlogTwoComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -280,7 +280,12 @@ export class HomeUkBlogTwoComponent implements OnInit {
             'Пули ліквідності у трейдингу: що це таке і як з ними працювати',
           description:
             'Що таке пули ліквідності, як Smart Money знаходять ліквідність за рівнями і використовують приховані зони для маніпуляції ціною.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

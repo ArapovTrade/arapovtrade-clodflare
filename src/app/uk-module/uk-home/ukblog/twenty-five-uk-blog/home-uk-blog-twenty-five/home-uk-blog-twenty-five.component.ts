@@ -42,10 +42,10 @@ export class HomeUkBlogTwentyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeUkBlogTwentyFiveComponent implements OnInit {
             'Усереднення і мартингейл: чому доливати в збиток небезпечно',
           description:
             'Що таке усереднення і метод мартінгейла, чому вони здаються вигідними і як саме зливають депозит новачків. Психологія і математика ризику.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

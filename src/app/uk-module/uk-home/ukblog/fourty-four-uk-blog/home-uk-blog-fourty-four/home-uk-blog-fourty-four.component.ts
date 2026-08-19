@@ -42,10 +42,10 @@ export class HomeUkBlogFourtyFourComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -275,7 +275,12 @@ export class HomeUkBlogFourtyFourComponent implements OnInit {
           headline: 'Стохастик у трейдингу: що це і коли він працює',
           description:
             'Стохастичний осцилятор: налаштування, лінії %K і %D, сигнали перекупленості та перепроданості, дивергенції й поєднання з трендом.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

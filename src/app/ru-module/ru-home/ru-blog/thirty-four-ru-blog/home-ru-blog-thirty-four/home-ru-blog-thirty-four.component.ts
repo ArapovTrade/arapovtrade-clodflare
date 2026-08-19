@@ -42,10 +42,10 @@ export class HomeRuBlogThirtyFourComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeRuBlogThirtyFourComponent implements OnInit {
           headline: 'Ордера на бирже: все типы заявок и как их применять',
           description:
             'Виды ордеров на бирже: рыночный, лимитный, стоп и стоп-лимитный. Чем отличаются, когда применять и как они исполняются.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

@@ -41,10 +41,10 @@ export class HomeEuBlogFiftyEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -252,7 +252,12 @@ export class HomeEuBlogFiftyEightComponent implements OnInit {
           headline: 'Ichimoku Cloud in Trading: How to Read It and Should You',
           description:
             'The Ichimoku indicator: the Kumo cloud, Tenkan and Kijun lines, reading trend and signals. How to use the system without cluttering the chart.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

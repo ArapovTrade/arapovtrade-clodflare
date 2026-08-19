@@ -42,10 +42,10 @@ export class HomeRuBlogTwentyComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -280,7 +280,12 @@ export class HomeRuBlogTwentyComponent implements OnInit {
           headline: 'Хранение крипты безопасно: где держать монеты в 2026 году',
           description:
             'Как безопасно хранить криптовалюту: горячие и холодные кошельки, сид-фраза, аппаратные кошельки и правила защиты активов от кражи.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

@@ -42,10 +42,10 @@ export class HomeUkBlogFiftyFourComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -275,7 +275,12 @@ export class HomeUkBlogFiftyFourComponent implements OnInit {
             'Чи працюють графічні фігури технічного аналізу: що реально, а що 50/50',
           description:
             'Графічні патерни технічного аналізу: трикутники, прапори, голова і плечі, подвійна вершина. Як їх знаходити і торгувати пробої.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

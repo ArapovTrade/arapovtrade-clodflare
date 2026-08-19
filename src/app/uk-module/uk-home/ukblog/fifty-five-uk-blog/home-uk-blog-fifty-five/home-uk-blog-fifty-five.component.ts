@@ -42,10 +42,10 @@ export class HomeUkBlogFiftyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -276,7 +276,12 @@ export class HomeUkBlogFiftyFiveComponent implements OnInit {
             'Свічкові патерни: японські свічки, пін-бар, поглинання, молот і доджі',
           description:
             'Японські свічки та свічкові патерни: молот, доджі, поглинання, вечірня зірка. Як читати сигнали розвороту і чому важливий рівень.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

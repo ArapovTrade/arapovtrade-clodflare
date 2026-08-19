@@ -42,10 +42,10 @@ export class HomeRuBlogTwentyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -280,7 +280,12 @@ export class HomeRuBlogTwentyFiveComponent implements OnInit {
           headline: 'Усреднение и мартингейл: почему доливать в убыток опасно',
           description:
             'Что такое усреднение и метод мартингейла, почему они кажутся выгодными и как именно сливают депозит новичков. Психология и математика риска.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

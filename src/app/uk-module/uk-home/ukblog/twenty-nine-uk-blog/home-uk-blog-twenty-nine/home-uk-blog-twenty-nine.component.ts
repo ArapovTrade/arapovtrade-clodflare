@@ -41,10 +41,10 @@ export class HomeUkBlogTwentyNineComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -276,7 +276,12 @@ export class HomeUkBlogTwentyNineComponent implements OnInit {
             'Що таке облігації простими словами: купон, номінал, дохідність',
           description:
             'Що таке облігації простими словами, як працюють купон, номінал і дохідність, які бувають види і наскільки вони надійні для інвестора.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

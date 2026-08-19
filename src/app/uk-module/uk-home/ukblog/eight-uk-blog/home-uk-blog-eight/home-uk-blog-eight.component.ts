@@ -44,10 +44,10 @@ export class HomeUkBlogEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -282,7 +282,12 @@ export class HomeUkBlogEightComponent implements OnInit {
             'Біткоїн у трейдингу: як аналізувати та торгувати BTC у 2026 році',
           description:
             'Що таке біткоїн, як працює блокчейн, майнінг та обмежена емісія, у чому цінність BTC і які ризики у першої криптовалюти.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

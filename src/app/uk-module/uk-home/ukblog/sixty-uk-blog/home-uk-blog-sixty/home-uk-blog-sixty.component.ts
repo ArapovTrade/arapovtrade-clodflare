@@ -42,10 +42,10 @@ export class HomeUkBlogSixtyComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -277,7 +277,12 @@ export class HomeUkBlogSixtyComponent implements OnInit {
             'Індикатори в трейдингу: які працюють, чому запізнюються і що замість них',
           description:
             'Індикатори в трейдингу: трендові, осцилятори та об’ємні. Як вони працюють, що показують і чому індикатор не сигнал сам по собі.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

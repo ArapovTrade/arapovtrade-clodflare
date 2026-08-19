@@ -41,10 +41,10 @@ export class HomeEnBlogTwentyOneComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -253,7 +253,12 @@ export class HomeEnBlogTwentyOneComponent implements OnInit {
           headline: 'Solana (SOL) in Trading: Analysis and Characteristics',
           description:
             'What Solana is, how the SOL blockchain works, its DeFi and NFT ecosystem, the speed advantages and the risks for traders and investors.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

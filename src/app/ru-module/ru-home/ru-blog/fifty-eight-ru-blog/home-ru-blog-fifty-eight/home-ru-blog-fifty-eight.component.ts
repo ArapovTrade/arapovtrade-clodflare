@@ -42,10 +42,10 @@ export class HomeRuBlogFiftyEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -277,7 +277,12 @@ export class HomeRuBlogFiftyEightComponent implements OnInit {
           headline: 'Ишимоку (Ichimoku) в трейдинге: облако и торговые сигналы',
           description:
             'Индикатор Ишимоку: облако Кумо, линии Tenkan и Kijun, определение тренда и сигналов. Как читать систему и не перегружать график.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

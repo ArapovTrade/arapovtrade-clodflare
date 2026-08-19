@@ -42,10 +42,10 @@ export class HomeRuBlogFiftyNineComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -281,7 +281,12 @@ export class HomeRuBlogFiftyNineComponent implements OnInit {
             'ИИ в трейдинге и прогноз цены: что нейросети умеют и где их предел',
           description:
             'Что нейросети реально умеют на рынке, а что им не под силу, почему ИИ не предсказывает будущее и как использовать его как инструмент, а не оракула.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

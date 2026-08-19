@@ -373,8 +373,22 @@ export class RuBlogHomepageComponent implements OnInit {
           url: 'https://arapov.trade/ru/freestudying',
           inLanguage: 'ru',
           isPartOf: { '@id': 'https://arapov.trade/#website' },
-          author: { '@id': 'https://arapov.trade/#person' },
-          publisher: { '@id': 'https://arapov.trade/#organization' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
+          publisher: {
+            '@type': 'Organization',
+            '@id': 'https://arapov.trade/#organization',
+            
+            url: 'https://arapov.trade',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://arapov.trade/assets/img/favicon.ico',
+            },
+          },
           about: [
             { '@type': 'Thing', name: 'Trading Education' },
             { '@type': 'Thing', name: 'Smart Money Concepts' },
@@ -417,29 +431,6 @@ export class RuBlogHomepageComponent implements OnInit {
               },
             ],
           },
-        },
-        {
-          '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
-          name: 'Igor Arapov',
-          url: 'https://arapov.trade/ru',
-          sameAs: [
-            'https://www.wikidata.org/wiki/Q137454477',
-            'https://scholar.google.com/citations?user=N440tWQAAAAJ',
-            'https://orcid.org/0009-0003-0430-778X',
-            'https://isni.org/isni/0000000529518564',
-            'https://www.amazon.com/stores/author/B0GBRFY457',
-            'https://github.com/ArapovTrade',
-            'https://ua.linkedin.com/in/arapovtrade',
-            'https://www.youtube.com/@ArapovTrade',
-            'https://t.me/ArapovTrade',
-          ],
-        },
-        {
-          '@type': 'Organization',
-          '@id': 'https://arapov.trade/#organization',
-          name: 'Arapov.Trade',
-          url: 'https://arapov.trade',
         },
       ],
     });

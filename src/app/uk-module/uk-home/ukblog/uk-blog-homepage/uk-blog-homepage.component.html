@@ -557,9 +557,7 @@
     <div class="item-flex">
       <ng-template #articleTemplate let-article>
         <div
-          itemprop="hasPart"
-          itemscope
-          itemtype="https://schema.org/Article"
+          
           class="artickle-block_item shadow-box-dark"
           [ngClass]="{
             'artickle-block_item': true,
@@ -641,24 +639,7 @@
             </div>
           </div>
 
-          <meta
-            itemprop="mainEntityOfPage"
-            [attr.content]="
-              'https://arapov.trade/uk/freestudying/' + article.linkUkr
-            "
-          />
-          <meta itemprop="description" [attr.content]="article.descrUkr" />
-
-          <meta itemprop="datePublished" content="2024-12-01T00:00:00+03:00" />
-          <meta itemprop="dateModified" content="2025-06-01T00:00:00+03:00" />
-          <span
-            itemprop="author"
-            itemscope
-            itemtype="https://schema.org/Person"
-          >
-            <meta itemprop="name" content="Ігор Арапов" />
-            <meta itemprop="url" content="https://arapov.trade/uk" />
-          </span>
+           
         </div>
       </ng-template>
 

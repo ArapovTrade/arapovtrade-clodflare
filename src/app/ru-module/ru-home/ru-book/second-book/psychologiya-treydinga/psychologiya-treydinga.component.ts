@@ -31,9 +31,7 @@ export class PsychologiyaTreydingaComponent
     private themeService: ThemeservService,
   ) {}
 
-  ngAfterViewInit() {
-     
-  }
+  ngAfterViewInit() {}
   isDark!: boolean;
   languages = ['ua', 'en', 'ru']; // какие языки нужны
   currentLang = 'ru';
@@ -59,10 +57,10 @@ export class PsychologiyaTreydingaComponent
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
-    
-      this.injectSchema(this.bookSchema());
+
+    this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -80,10 +78,7 @@ export class PsychologiyaTreydingaComponent
   toggleTheme() {
     this.isDark = !this.isDark;
     this.themeService.setTheme(this.isDark);
-
-     
   }
-  
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -115,8 +110,6 @@ export class PsychologiyaTreydingaComponent
   }
   hovered: string | null = null;
 
-  
-
   downloadFile() {
     const link = document.createElement('a');
     link.href = '/assets/documents/Psihologiya_Treydinga_Final.epub'; // путь к вашему файлу
@@ -128,7 +121,7 @@ export class PsychologiyaTreydingaComponent
     window.open(url, '_blank');
   }
 
- private removeExistingSchema(): void {
+  private removeExistingSchema(): void {
     this.document
       .querySelectorAll('script[type="application/ld+json"]')
       .forEach((script) => {
@@ -199,7 +192,12 @@ export class PsychologiyaTreydingaComponent
       ],
       keywords:
         'трейдинг, форекс, технический анализ, объёмный анализ, биржа, инвестиции, smart money, обучение трейдингу',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/ru',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -241,7 +239,6 @@ export class PsychologiyaTreydingaComponent
           },
         },
       },
-       
     };
   }
 
@@ -256,8 +253,15 @@ export class PsychologiyaTreydingaComponent
         'Скачать бесплатно книгу по трейдингу. ISBN 979-8-90243-081-0',
       inLanguage: 'ru',
       isPartOf: { '@id': 'https://arapov.trade/#website' },
-      about: { '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book' },
-      author: { '@id': 'https://arapov.trade/#person' },
+      about: {
+        '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book',
+      },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/ru',
+      },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {

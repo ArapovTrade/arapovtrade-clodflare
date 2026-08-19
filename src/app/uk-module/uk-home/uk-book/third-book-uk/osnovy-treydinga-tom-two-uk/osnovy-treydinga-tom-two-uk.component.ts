@@ -58,7 +58,7 @@ export class OsnovyTreydingaTomTwoUkComponent
     });
     this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -193,7 +193,12 @@ export class OsnovyTreydingaTomTwoUkComponent
       ],
       keywords:
         'трейдинг, форекс, технічний аналіз, обʼємний аналіз, біржа, інвестиції, smart money, навчання трейдингу',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/uk',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -253,7 +258,6 @@ export class OsnovyTreydingaTomTwoUkComponent
           },
         },
       },
-       
     };
   }
 
@@ -271,7 +275,12 @@ export class OsnovyTreydingaTomTwoUkComponent
       about: {
         '@id': 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two#book',
       },
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/uk',
+      },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {

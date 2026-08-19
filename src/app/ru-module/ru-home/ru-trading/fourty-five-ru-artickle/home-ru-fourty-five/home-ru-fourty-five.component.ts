@@ -46,12 +46,12 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
     this.setBreadcrumbSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
     this.setVideoObjectSchema();
-    this.setGlossarySchema();
+    // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -341,7 +341,12 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
           contentUrl: 'https://www.youtube.com/watch?v=tmiHem6NOZs',
           embedUrl:
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           isPartOf: {
             '@type': 'CreativeWorkSeries',
@@ -368,7 +373,12 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
             'Бесплатный курс по трейдингу с нуля: технический анализ, метод Вайкоффа, объёмный анализ, торговая система с положительным математическим ожиданием. 32 разделов, живые разборы сделок.',
           datePublished: '2025-01-15T00:00:00+02:00',
           dateModified: '2026-06-25T00:00:00+02:00', // ← сведено к одной дате (была рассинхронизация с meta)
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           mainEntityOfPage: {
             '@type': 'WebPage',
@@ -584,7 +594,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
-      "name": "BreadcrumbList",
+      name: 'BreadcrumbList',
       '@id': 'https://arapov.trade/ru/freestudying/freeeducation#breadcrumb',
       itemListElement: [
         {

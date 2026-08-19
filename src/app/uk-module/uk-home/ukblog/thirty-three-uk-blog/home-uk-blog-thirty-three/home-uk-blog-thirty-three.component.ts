@@ -41,10 +41,10 @@ export class HomeUkBlogThirtyThreeComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -278,7 +278,12 @@ export class HomeUkBlogThirtyThreeComponent implements OnInit {
             'Мікроструктура ринку: як формується ціна, стакан, спред, ліквідність і маркетмейкер',
           description:
             'Як влаштована мікроструктура ринку: біржовий стакан, стрічка принтів, ліквідність та айсберг-ордери. Як читати потік заявок і угод.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

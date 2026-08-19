@@ -16,21 +16,21 @@ const routes: Routes = [
     children: [
       { path: '', component: UkBlogHomepageComponent },
       {
-        path: 'freeeducation', //45
+        path: 'freeeducation', //45 1 
         loadChildren: () =>
           import('../uk-trading/fourty-five-uk-artickle/fourty-five-uk-artickle.module').then(
             (m) => m.FourtyFiveUkArtickleModule,
           ),
       },
       {
-        path: 'about', //106
+        path: 'about', //106 1 
         loadChildren: () =>
           import('../ukblog/onehundred-six-uk-blog/onehundred-six-uk-blog.module').then(
             (m) => m.OnehundredSixUkBlogModule,
           ),
       },
       {
-        path: 'tradingview-record', //107
+        path: 'tradingview-record', //107 1
         loadChildren: () =>
           import('../ukblog/onehundred-seven-uk-blog/onehundred-seven-uk-blog.module').then(
             (m) => m.OnehundredSevenUkBlogModule,
@@ -58,84 +58,84 @@ const routes: Routes = [
       //     ),
       // },
        {
-        path: 'practic', //64
+        path: 'practic', //64 1
         loadChildren: () =>
           import('../ukblog/sixty-four-uk-blog/sixty-four-uk-blog.module').then(
             (m) => m.SixtyFourUkBlogModule,
           ),
       },
       {
-        path: 'imbalance-fvg', //1
+        path: 'imbalance-fvg', //1   1
         loadChildren: () =>
           import('./one-uk-blog/one-uk-blog.module').then(
             (m) => m.OneUkBlogModule,
           ),
       },
       {
-        path: 'liquidity-pools', //2
+        path: 'liquidity-pools', //2  1
         loadChildren: () =>
           import('./two-uk-blog/two-uk-blog.module').then(
             (m) => m.TwoUkBlogModule,
           ),
       },
       {
-        path: 'order-block', //3
+        path: 'order-block', //3 1
         loadChildren: () =>
           import('./three-uk-blog/three-uk-blog.module').then(
             (m) => m.ThreeUkBlogModule,
           ),
       },
       {
-        path: 'smart-money-guide', //4
+        path: 'smart-money-guide', //4 1
         loadChildren: () =>
           import('./four-uk-blog/four-uk-blog.module').then(
             (m) => m.FourUkBlogModule,
           ),
       },
       {
-        path: 'xrp-ripple', //5
+        path: 'xrp-ripple', //5 1 
         loadChildren: () =>
           import('./five-uk-blog/five-uk-blog.module').then(
             (m) => m.FiveUkBlogModule,
           ),
       },
       {
-        path: 'bitcoin-dominance', //6
+        path: 'bitcoin-dominance', //6 1
         loadChildren: () =>
           import('./six-uk-blog/six-uk-blog.module').then(
             (m) => m.SixUkBlogModule,
           ),
       },
       {
-        path: 'bitcoin-etf', //7
+        path: 'bitcoin-etf', //7 1
         loadChildren: () =>
           import('./seven-uk-blog/seven-uk-blog.module').then(
             (m) => m.SevenUkBlogModule,
           ),
       },
       {
-        path: 'bitcoin-guide', //8
+        path: 'bitcoin-guide', //8 1 
         loadChildren: () =>
           import('./eight-uk-blog/eight-uk-blog.module').then(
             (m) => m.EightUkBlogModule,
           ),
       },
       {
-        path: 'bitcoin-halving', //9
+        path: 'bitcoin-halving', //9 1
         loadChildren: () =>
           import('./nine-uk-blog/nine-uk-blog.module').then(
             (m) => m.NineUkBlogModule,
           ),
       },
       {
-        path: 'crypto-arbitrage', //10
+        path: 'crypto-arbitrage', //10 1
         loadChildren: () =>
           import('./ten-uk-blog/ten-uk-blog.module').then(
             (m) => m.TenUkBlogModule,
           ),
       },
       {
-        path: 'crypto-basics', //11
+        path: 'crypto-basics', //11 1
         loadChildren: () =>
           import('./eleven-uk-blog/eleven-uk-blog.module').then(
             (m) => m.ElevenUkBlogModule,
@@ -149,336 +149,336 @@ const routes: Routes = [
       //     ),
       // },
       {
-        path: 'crypto-perpetuals-margin', //13
+        path: 'crypto-perpetuals-margin', //13 1
         loadChildren: () =>
           import('./thirteen-uk-blog/thirteen-uk-blog.module').then(
             (m) => m.ThirteenUkBlogModule,
           ),
       },
       {
-        path: 'crypto-risks-scams', //14
+        path: 'crypto-risks-scams', //14 1
         loadChildren: () =>
           import('./fourteen-uk-blog/fourteen-uk-blog.module').then(
             (m) => m.FourteenUkBlogModule,
           ),
       },
       {
-        path: 'crypto-staking', //15
+        path: 'crypto-staking', //15 1
         loadChildren: () =>
           import('./fiveteen-uk-blog/fiveteen-uk-blog.module').then(
             (m) => m.FiveteenUkBlogModule,
           ),
       },
       {
-        path: 'ethereum-guide', //16
+        path: 'ethereum-guide', //16 1
         loadChildren: () =>
           import('./sixteen-uk-blog/sixteen-uk-blog.module').then(
             (m) => m.SixteenUkBlogModule,
           ),
       },
       {
-        path: 'memecoins', //17
+        path: 'memecoins', //17 1
         loadChildren: () =>
           import('./seventeen-uk-blog/seventeen-uk-blog.module').then(
             (m) => m.SeventeenUkBlogModule,
           ),
       },
       {
-        path: 'stablecoins-tether', //18
+        path: 'stablecoins-tether', //18 1
         loadChildren: () =>
           import('./eighteen-uk-blog/eighteen-uk-blog.module').then(
             (m) => m.EighteenUkBlogModule,
           ),
       },
       {
-        path: 'tokenomics', //19
+        path: 'tokenomics', //19 1
         loadChildren: () =>
           import('./nineteen-uk-blog/nineteen-uk-blog.module').then(
             (m) => m.NineteenUkBlogModule,
           ),
       },
       {
-        path: 'crypto-storage', //20
+        path: 'crypto-storage', //20 1
         loadChildren: () =>
           import('./twenty-uk-blog/twenty-uk-blog.module').then(
             (m) => m.TwentyUkBlogModule,
           ),
       },
       {
-        path: 'solana-guide', //21
+        path: 'solana-guide', //21 1
         loadChildren: () =>
           import('./twenty-one-uk-blog/twenty-one-uk-blog.module').then(
             (m) => m.TwentyOneUkBlogModule,
           ),
       },
       {
-        path: 'defi', //22
+        path: 'defi', //22 1
         loadChildren: () =>
           import('./twenty-two-uk-blog/twenty-two-uk-blog.module').then(
             (m) => m.TwentyTwoUkBlogModule,
           ),
       },
       {
-        path: 'volume-analysis', //23
+        path: 'volume-analysis', //23 1
         loadChildren: () =>
           import('./twenty-three-uk-blog/twenty-three-uk-blog.module').then(
             (m) => m.TwentyThreeUkBlogModule,
           ),
       },
       {
-        path: 'wyckoff-method', //24
+        path: 'wyckoff-method', //24 1
         loadChildren: () =>
           import('./twenty-four-uk-blog/twenty-four-uk-blog.module').then(
             (m) => m.TwentyFourUkBlogModule,
           ),
       },
       {
-        path: 'averaging-martingale', //25
+        path: 'averaging-martingale', //25 1
         loadChildren: () =>
           import('./twenty-five-uk-blog/twenty-five-uk-blog.module').then(
             (m) => m.TwentyFiveUkBlogModule,
           ),
       },
       {
-        path: 'trading-psychology', //26
+        path: 'trading-psychology', //26 1
         loadChildren: () =>
           import('./twenty-six-uk-blog/twenty-six-uk-blog.module').then(
             (m) => m.TwentySixUkBlogModule,
           ),
       },
       {
-        path: 'assets-trading', //27
+        path: 'assets-trading', //27 1
         loadChildren: () =>
           import('./twenty-seven-uk-blog/twenty-seven-uk-blog.module').then(
             (m) => m.TwentySevenUkBlogModule,
           ),
       },
       {
-        path: 'fundamental-analysis', //28
+        path: 'fundamental-analysis', //28 1
         loadChildren: () =>
           import('./twenty-eight-uk-blog/twenty-eight-uk-blog.module').then(
             (m) => m.TwentyEightUkBlogModule,
           ),
       },
       {
-        path: 'bonds-guide', //29
+        path: 'bonds-guide', //29 1
         loadChildren: () =>
           import('./twenty-nine-uk-blog/twenty-nine-uk-blog.module').then(
             (m) => m.TwentyNineUkBlogModule,
           ),
       },
       {
-        path: 'derivatives-futures-spot', //30
+        path: 'derivatives-futures-spot', //30 1
         loadChildren: () =>
           import('./thirty-uk-blog/thirty-uk-blog.module').then(
             (m) => m.ThirtyUkBlogModule,
           ),
       },
       {
-        path: 'forex-guide', //31
+        path: 'forex-guide', //31 1
         loadChildren: () =>
           import('./thirty-one-uk-blog/thirty-one-uk-blog.module').then(
             (m) => m.ThirtyOneUkBlogModule,
           ),
       },
       {
-        path: 'how-exchange-works', //32
+        path: 'how-exchange-works', //32 1
         loadChildren: () =>
           import('./thirty-two-uk-blog/thirty-two-uk-blog.module').then(
             (m) => m.ThirtyTwoUkBlogModule,
           ),
       },
       {
-        path: 'market-microstructure', //33
+        path: 'market-microstructure', //33 1 
         loadChildren: () =>
           import('./thirty-three-uk-blog/thirty-three-uk-blog.module').then(
             (m) => m.ThirtyThreeUkBlogModule,
           ),
       },
       {
-        path: 'order-types', //34
+        path: 'order-types', //34 1
         loadChildren: () =>
           import('./thirty-four-uk-blog/thirty-four-uk-blog.module').then(
             (m) => m.ThirtyFourUkBlogModule,
           ),
       },
       {
-        path: 'trading-vs-investing', //35
+        path: 'trading-vs-investing', //35 1
         loadChildren: () =>
           import('./thirty-five-uk-blog/thirty-five-uk-blog.module').then(
             (m) => m.ThirtyFiveUkBlogModule,
           ),
       },
       {
-        path: 'copy-trading', //36
+        path: 'copy-trading', //36 1
         loadChildren: () =>
           import('./thirty-six-uk-blog/thirty-six-uk-blog.module').then(
             (m) => m.ThirtySixUkBlogModule,
           ),
       },
       {
-        path: 'platforms-broker', //37
+        path: 'platforms-broker', //37 1
         loadChildren: () =>
           import('./thirty-seven-uk-blog/thirty-seven-uk-blog.module').then(
             (m) => m.ThirtySevenUkBlogModule,
           ),
       },
-      {
-        path: 'prop-trading', //38
+      { 
+        path: 'prop-trading', //38 1
         loadChildren: () =>
           import('./thirty-eight-uk-blog/thirty-eight-uk-blog.module').then(
             (m) => m.ThirtyEightUkBlogModule,
           ),
       },
       {
-        path: 'risk-management', //39
+        path: 'risk-management', //39 1
         loadChildren: () =>
           import('./thirty-nine-uk-blog/thirty-nine-uk-blog.module').then(
             (m) => m.ThirtyNineUkBlogModule,
           ),
       },
       {
-        path: 'trade-management', //40
+        path: 'trade-management', //40 1
         loadChildren: () =>
           import('./fourty-uk-blog/fourty-uk-blog.module').then(
             (m) => m.FourtyUkBlogModule,
           ),
       },
       {
-        path: 'trading-for-beginners', //41
+        path: 'trading-for-beginners', //41 1
         loadChildren: () =>
           import('./fourty-one-uk-blog/fourty-one-uk-blog.module').then(
             (m) => m.FourtyOneUkBlogModule,
           ),
       },
       {
-        path: 'trading-styles', //42
+        path: 'trading-styles', //42 1
         loadChildren: () =>
           import('./fourty-two-uk-blog/fourty-two-uk-blog.module').then(
             (m) => m.FourtyTwoUkBlogModule,
           ),
       },
       {
-        path: 'trading-system', //43
+        path: 'trading-system', //43 1
         loadChildren: () =>
           import('./fourty-three-uk-blog/fourty-three-uk-blog.module').then(
             (m) => m.FourtyThreeUkBlogModule,
           ),
       },
       {
-        path: 'stochastic-oscillator', //44
+        path: 'stochastic-oscillator', //44 1
         loadChildren: () =>
           import('./fourty-four-uk-blog/fourty-four-uk-blog.module').then(
             (m) => m.FourtyFourUkBlogModule,
           ),
       },
       {
-        path: 'rsi-indicator', //45
+        path: 'rsi-indicator', //45 1
         loadChildren: () =>
           import('./fourty-five-uk-blog/fourty-five-uk-blog.module').then(
             (m) => m.FourtyFiveUkBlogModule,
           ),
       },
       {
-        path: 'moving-averages', //46
+        path: 'moving-averages', //46 1
         loadChildren: () =>
           import('./fourty-six-uk-blog/fourty-six-uk-blog.module').then(
             (m) => m.FourtySixUkBlogModule,
           ),
       },
       {
-        path: 'macd-indicator', //47
+        path: 'macd-indicator', //47 1
         loadChildren: () =>
           import('./fourty-seven-uk-blog/fourty-seven-uk-blog.module').then(
             (m) => m.FourtySevenUkBlogModule,
           ),
       },
       {
-        path: 'elliott-waves', //48
+        path: 'elliott-waves', //48 1
         loadChildren: () =>
           import('./fourty-eight-uk-blog/fourty-eight-uk-blog.module').then(
             (m) => m.FourtyEightUkBlogModule,
           ),
       },
       {
-        path: 'fibonacci-levels', //49
+        path: 'fibonacci-levels', //49 1
         loadChildren: () =>
           import('./fourty-nine-uk-blog/fourty-nine-uk-blog.module').then(
             (m) => m.FourtyNineUkBlogModule,
           ),
       },
       {
-        path: 'bollinger-bands', //50
+        path: 'bollinger-bands', //50 1
         loadChildren: () =>
           import('./fifty-uk-blog/fifty-uk-blog.module').then(
             (m) => m.FiftyUkBlogModule,
           ),
       },
       {
-        path: 'atr-indicator', //51
+        path: 'atr-indicator', //51 1
         loadChildren: () =>
           import('./fifty-one-uk-blog/fifty-one-uk-blog.module').then(
             (m) => m.FiftyOneUkBlogModule,
           ),
       },
       {
-        path: 'adx-indicator', //52
+        path: 'adx-indicator', //52 1
         loadChildren: () =>
           import('./fifty-two-uk-blog/fifty-two-uk-blog.module').then(
             (m) => m.FiftyTwoUkBlogModule,
           ),
       },
       {
-        path: 'chart-reading', //53
+        path: 'chart-reading', //53 3
         loadChildren: () =>
           import('./fifty-three-uk-blog/fifty-three-uk-blog.module').then(
             (m) => m.FiftyThreeUkBlogModule,
           ),
       },
       {
-        path: 'chart-patterns', //54
+        path: 'chart-patterns', //54 1
         loadChildren: () =>
           import('./fifty-four-uk-blog/fifty-four-uk-blog.module').then(
             (m) => m.FiftyFourUkBlogModule,
           ),
       },
       {
-        path: 'candlestick-patterns', //55
+        path: 'candlestick-patterns', //55 1
         loadChildren: () =>
           import('./fifty-five-uk-blog/fifty-five-uk-blog.module').then(
             (m) => m.FiftyFiveUkBlogModule,
           ),
       },
       {
-        path: 'breakout-strategy', //56
+        path: 'breakout-strategy', //56 1
         loadChildren: () =>
           import('./fifty-six-uk-blog/fifty-six-uk-blog.module').then(
             (m) => m.FiftySixUkBlogModule,
           ),
       },
       {
-        path: 'vwap-indicator', //57
+        path: 'vwap-indicator', //57 1
         loadChildren: () =>
           import('./fifty-seven-uk-blog/fifty-seven-uk-blog.module').then(
             (m) => m.FiftySevenUkBlogModule,
           ),
       },
       {
-        path: 'ichimoku-cloud', //58
+        path: 'ichimoku-cloud', //58 1
         loadChildren: () =>
           import('./fifty-eight-uk-blog/fifty-eight-uk-blog.module').then(
             (m) => m.FiftyEightUkBlogModule,
           ),
       },
       {
-        path: 'ai-in-trading', //59
+        path: 'ai-in-trading', //59 1
         loadChildren: () =>
           import('./fifty-nine-uk-blog/fifty-nine-uk-blog.module').then(
             (m) => m.FiftyNineUkBlogModule,
           ),
       },
       {
-        path: 'trading-indicators', //60
+        path: 'trading-indicators', //60 1
         loadChildren: () =>
           import('./sixty-uk-blog/sixty-uk-blog.module').then(
             (m) => m.SixtyUkBlogModule,

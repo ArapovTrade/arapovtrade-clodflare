@@ -42,10 +42,10 @@ export class HomeRuBlogThirtyTwoComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -279,7 +279,12 @@ export class HomeRuBlogThirtyTwoComponent implements OnInit {
             'Как устроена биржа простыми словами: рынок, цена, стакан и клиринг',
           description:
             'Что такое биржа, какие бывают виды и функции, как устроены торги и чем биржевой рынок отличается от внебиржевого. Гайд для новичка.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

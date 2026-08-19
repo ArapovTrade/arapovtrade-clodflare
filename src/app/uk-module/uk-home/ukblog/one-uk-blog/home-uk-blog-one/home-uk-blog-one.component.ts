@@ -42,10 +42,10 @@ export class HomeUkBlogOneComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -277,7 +277,12 @@ export class HomeUkBlogOneComponent implements OnInit {
             'Імбаланс і FVG у трейдингу: що це та як торгувати дисбаланс',
           description:
             'Що таке імбаланс і FVG (Fair Value Gap), як знаходити зони неефективності на графіку і чому ціна часто повертається їх закривати.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

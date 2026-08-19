@@ -21,14 +21,14 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'about', //106
+        path: 'about', //106 1 
         loadChildren: () =>
           import('../eu-blog/onehundred-six-en-blog/onehundred-six-en-blog.module').then(
             (m) => m.OnehundredSixEnBlogModule,
           ),
       },
       {
-        path: 'tradingview-record', //107
+        path: 'tradingview-record', //107 1
         loadChildren: () =>
           import('../eu-blog/onehundred-seven-en-blog/onehundred-seven-en-blog.module').then(
             (m) => m.OnehundredSevenEnBlogModule,
@@ -36,84 +36,84 @@ const routes: Routes = [
       },
       
        {
-        path: 'practic', //64
+        path: 'practic', //64 1
         loadChildren: () =>
           import('../eu-blog/sixty-four-en-blog/sixty-four-en-blog.module').then(
             (m) => m.SixtyFourEnBlogModule,
           ),
       },
       {
-        path: 'imbalance-fvg', 
+        path: 'imbalance-fvg', //1
         loadChildren: () =>
           import('./one-en-blog/one-en-blog.module').then(
             (m) => m.OneEnBlogModule,
           ),
       },
       {
-        path: 'liquidity-pools',
+        path: 'liquidity-pools', //2
         loadChildren: () =>
           import('./two-en-blog/two-en-blog.module').then(
             (m) => m.TwoEnBlogModule,
           ),
       },
       {
-        path: 'order-block',
+        path: 'order-block', //3
         loadChildren: () =>
           import('./three-en-blog/three-en-blog.module').then(
             (m) => m.ThreeEnBlogModule,
           ),
       },
       {
-        path: 'smart-money-guide',
+        path: 'smart-money-guide', //4
         loadChildren: () =>
           import('./four-en-blog/four-en-blog.module').then(
             (m) => m.FourEnBlogModule,
           ),
       },
       {
-        path: 'xrp-ripple',
+        path: 'xrp-ripple', //5
         loadChildren: () =>
           import('./five-en-blog/five-en-blog.module').then(
             (m) => m.FiveEnBlogModule,
           ),
       },
       {
-        path: 'bitcoin-dominance',
+        path: 'bitcoin-dominance', //6
         loadChildren: () =>
           import('./six-en-blog/six-en-blog.module').then(
             (m) => m.SixEnBlogModule,
           ),
       },
       {
-        path: 'bitcoin-etf',
+        path: 'bitcoin-etf', //7
         loadChildren: () =>
           import('./seven-en-blog/seven-en-blog.module').then(
             (m) => m.SevenEnBlogModule,
           ),
       },
       {
-        path: 'bitcoin-guide',
+        path: 'bitcoin-guide', //8
         loadChildren: () =>
           import('./eight-en-blog/eight-en-blog.module').then(
             (m) => m.EightEnBlogModule,
           ),
       },
       {
-        path: 'bitcoin-halving',
+        path: 'bitcoin-halving', //9
         loadChildren: () =>
           import('./nine-en-blog/nine-en-blog.module').then(
             (m) => m.NineEnBlogModule,
           ),
       },
       {
-        path: 'crypto-arbitrage',
+        path: 'crypto-arbitrage', //10
         loadChildren: () =>
           import('./ten-en-blog/ten-en-blog.module').then(
             (m) => m.TenEnBlogModule,
           ),
       },
       {
-        path: 'crypto-basics', //11
+        path: 'crypto-basics', //11 1
         loadChildren: () =>
           import('./eleven-en-blog/eleven-en-blog.module').then(
             (m) => m.ElevenEnBlogModule,
@@ -127,77 +127,77 @@ const routes: Routes = [
       //     ),
       // },
       {
-        path: 'crypto-perpetuals-margin', //13
+        path: 'crypto-perpetuals-margin', //13 1
         loadChildren: () =>
           import('./thirteen-en-blog/thirteen-en-blog.module').then(
             (m) => m.ThirteenEnBlogModule,
           ),
       },
       {
-        path: 'crypto-risks-scams', //14
+        path: 'crypto-risks-scams', //14 1
         loadChildren: () =>
           import('./fourteen-en-blog/fourteen-en-blog.module').then(
             (m) => m.FourteenEnBlogModule,
           ),
       },
       {
-        path: 'crypto-staking', //15
+        path: 'crypto-staking', //15 1
         loadChildren: () =>
           import('./fiveteen-en-blog/fiveteen-en-blog.module').then(
             (m) => m.FiveteenEnBlogModule,
           ),
       },
       {
-        path: 'ethereum-guide', //16
+        path: 'ethereum-guide', //16 1
         loadChildren: () =>
           import('./sixteen-en-blog/sixteen-en-blog.module').then(
             (m) => m.SixteenEnBlogModule,
           ),
       },
       {
-        path: 'memecoins', //17
+        path: 'memecoins', //17 1
         loadChildren: () =>
           import('./seventeen-en-blog/seventeen-en-blog.module').then(
             (m) => m.SeventeenEnBlogModule,
           ),
       },
       {
-        path: 'stablecoins-tether', //18
+        path: 'stablecoins-tether', //18 1
         loadChildren: () =>
           import('./eighteen-en-blog/eighteen-en-blog.module').then(
             (m) => m.EighteenEnBlogModule,
           ),
       },
       {
-        path: 'tokenomics', //19
+        path: 'tokenomics', //19 1
         loadChildren: () =>
           import('./nineteen-en-blog/nineteen-en-blog.module').then(
             (m) => m.NineteenEnBlogModule,
           ),
       },
       {
-        path: 'crypto-storage', //20
+        path: 'crypto-storage', //20 1
         loadChildren: () =>
           import('./twenty-en-blog/twenty-en-blog.module').then(
             (m) => m.TwentyEnBlogModule,
           ),
       },
       {
-        path: 'solana-guide', //21
+        path: 'solana-guide', //21 1
         loadChildren: () =>
           import('./twenty-one-en-blog/twenty-one-en-blog.module').then(
             (m) => m.TwentyOneEnBlogModule,
           ),
       },
       {
-        path: 'defi', //22
+        path: 'defi', //22 1
         loadChildren: () =>
           import('./twenty-two-en-blog/twenty-two-en-blog.module').then(
             (m) => m.TwentyTwoEnBlogModule,
           ),
       },
       {
-        path: 'volume-analysis', //23
+        path: 'volume-analysis', //23 1
         loadChildren: () =>
           import('./twenty-three-en-blog/twenty-three-en-blog.module').then(
             (m) => m.TwentyThreeEnBlogModule,

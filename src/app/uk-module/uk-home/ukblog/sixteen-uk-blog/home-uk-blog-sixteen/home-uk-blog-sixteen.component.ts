@@ -42,10 +42,10 @@ export class HomeUkBlogSixteenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -276,7 +276,12 @@ export class HomeUkBlogSixteenComponent implements OnInit {
           headline: 'Ethereum у трейдингу: особливості аналізу ETH',
           description:
             'Що таке Ethereum, як працюють смартконтракти та dApps, чим ETH відрізняється від біткоїна і які перспективи у мережі.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

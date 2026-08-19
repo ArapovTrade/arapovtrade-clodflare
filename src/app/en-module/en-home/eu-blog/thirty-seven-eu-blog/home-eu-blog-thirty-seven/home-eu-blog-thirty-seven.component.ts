@@ -41,10 +41,10 @@ export class HomeEuBlogThirtySevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -253,7 +253,12 @@ export class HomeEuBlogThirtySevenComponent implements OnInit {
           headline: 'Platforms, Tools and the Broker: Where a Trader Starts',
           description:
             'How to choose a broker and trading platform: regulation, fees, order execution and what a beginner should check to avoid a dealing-desk scam.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

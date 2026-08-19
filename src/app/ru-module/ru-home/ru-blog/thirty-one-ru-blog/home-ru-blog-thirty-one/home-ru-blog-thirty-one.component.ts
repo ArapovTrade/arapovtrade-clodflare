@@ -42,10 +42,10 @@ export class HomeRuBlogThirtyOneComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -279,7 +279,12 @@ export class HomeRuBlogThirtyOneComponent implements OnInit {
           headline: 'Форекс для новичка: рынок, позиции, плечо и сессии',
           description:
             'Что такое рынок Forex, кто его участники, как устроены валютные пары и торговые сессии и с чего начать торговлю валютой.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

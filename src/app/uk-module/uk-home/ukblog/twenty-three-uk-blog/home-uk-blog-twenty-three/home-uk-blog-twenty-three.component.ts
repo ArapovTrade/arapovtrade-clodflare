@@ -42,10 +42,10 @@ export class HomeUkBlogTwentyThreeComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -275,7 +275,12 @@ export class HomeUkBlogTwentyThreeComponent implements OnInit {
           headline: "Об'ємний аналіз ринку: повний гайд із читання об'ємів",
           description:
             'Як працює об’ємний аналіз ринку: профіль обсягу, кластери, дельта і чому обсяг — первинна причина руху ціни.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

@@ -42,10 +42,10 @@ export class HomeUkBlogSeventeenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -275,7 +275,12 @@ export class HomeUkBlogSeventeenComponent implements OnInit {
           headline: 'Мемкоїни: що це і чому це казино, а не інвестиція',
           description:
             'Що таке мемкоїни, на чому тримається їхня ціна, чому це чиста спекуляція на хайпі і як не лишитися зі знеціненим токеном на руках.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

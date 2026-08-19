@@ -42,10 +42,10 @@ export class HomeRuBlogFourComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -280,7 +280,12 @@ export class HomeRuBlogFourComponent implements OnInit {
             'Smart Money: полный гайд по концепции умных денег в трейдинге',
           description:
             'Что такое Smart Money Concept: структура рынка, ликвидность, Order Blocks и FVG. Как торгуют крупные игроки и как читать их следы.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

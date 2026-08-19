@@ -42,10 +42,10 @@ export class HomeRuBlogFiftyOneComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -281,7 +281,12 @@ export class HomeRuBlogFiftyOneComponent implements OnInit {
             'Индикатор ATR в трейдинге: волатильность и фиксация прибыли',
           description:
             'Что такое индикатор ATR (Average True Range), как он измеряет волатильность и как использовать его для расчёта стопов и размера позиции.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

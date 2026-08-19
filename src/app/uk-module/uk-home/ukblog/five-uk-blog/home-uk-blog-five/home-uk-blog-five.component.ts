@@ -42,10 +42,10 @@ export class HomeUkBlogFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -276,7 +276,12 @@ export class HomeUkBlogFiveComponent implements OnInit {
           headline: 'XRP (Ripple) у трейдингу: особливості аналізу',
           description:
             'Що таке XRP і мережа Ripple, як працюють транскордонні платежі, вплив судової справи SEC та ризики для трейдерів.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

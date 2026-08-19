@@ -42,10 +42,10 @@ export class HomeRuBlogFourteenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -281,7 +281,12 @@ export class HomeRuBlogFourteenComponent implements OnInit {
             'Риски и мошенничество в крипте: как новичку не потерять депозит',
           description:
             'Главные риски криптовалют и популярные схемы скама: фейковые ICO, пирамиды, фишинг и дрейн-кошельки. Как распознать обман и защитить средства.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

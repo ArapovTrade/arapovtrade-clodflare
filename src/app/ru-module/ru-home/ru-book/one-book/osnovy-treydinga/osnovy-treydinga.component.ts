@@ -60,7 +60,7 @@ export class OsnovyTreydingaComponent
 
     this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -188,7 +188,12 @@ export class OsnovyTreydingaComponent
       ],
       keywords:
         'трейдинг, форекс, технический анализ, объёмный анализ, биржа, инвестиции, smart money, обучение трейдингу',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/ru',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -230,7 +235,6 @@ export class OsnovyTreydingaComponent
           },
         },
       },
-       
     };
   }
 
@@ -246,7 +250,12 @@ export class OsnovyTreydingaComponent
       inLanguage: 'ru',
       isPartOf: { '@id': 'https://arapov.trade/#website' },
       about: { '@id': 'https://arapov.trade/ru/books/osnovy-treydinga#book' },
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/ru',
+      },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {

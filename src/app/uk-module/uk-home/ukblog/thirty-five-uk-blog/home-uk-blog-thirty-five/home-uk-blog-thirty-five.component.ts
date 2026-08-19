@@ -42,10 +42,10 @@ export class HomeUkBlogThirtyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -280,7 +280,12 @@ export class HomeUkBlogThirtyFiveComponent implements OnInit {
           headline: 'Трейдинг vs інвестиції: у чому різниця і що обрати',
           description:
             'Чим трейдер відрізняється від інвестора, що краще — трейдинг чи інвестиції, у чому різниця в горизонті, ризиках і підході до ринку.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

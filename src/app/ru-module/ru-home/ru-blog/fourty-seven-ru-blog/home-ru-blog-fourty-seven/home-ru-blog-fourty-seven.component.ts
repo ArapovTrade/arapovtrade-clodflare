@@ -42,10 +42,10 @@ export class HomeRuBlogFourtySevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -281,7 +281,12 @@ export class HomeRuBlogFourtySevenComponent implements OnInit {
             'Индикатор MACD в трейдинге: почему он работает хуже ожиданий',
           description:
             'Индикатор MACD: настройки, сигнальная линия и гистограмма, пересечения и дивергенции. Как читать сигналы и не попадать на ложные.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

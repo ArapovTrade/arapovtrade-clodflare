@@ -42,10 +42,10 @@ export class HomeRuBlogFourtyOneComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -279,7 +279,12 @@ export class HomeRuBlogFourtyOneComponent implements OnInit {
           headline: 'Трейдинг с нуля для новичка: с чего начать в 2026 году',
           description:
             'Трейдинг для начинающих с нуля: как устроены рынки, какие нужны навыки, первые шаги и типичные ошибки новичков. Гайд от Arapov.trade.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

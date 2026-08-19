@@ -41,10 +41,10 @@ export class HomeEnBlogFourtyNineComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -254,7 +254,12 @@ export class HomeEnBlogFourtyNineComponent implements OnInit {
             'Fibonacci Retracement Levels in Trading: What They Are and How to Use Them',
           description:
             'Fibonacci levels: how to draw the retracement grid, the key 0.382, 0.5, 0.618 levels and why they mark zones of interest, not a signal.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

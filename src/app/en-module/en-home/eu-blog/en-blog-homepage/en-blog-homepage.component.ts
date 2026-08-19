@@ -54,15 +54,7 @@ export class EnBlogHomepageComponent implements OnInit {
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 1000,
-          once: false,
-          offset: 100,
-        });
-      }
-    }, 500); // Задержка 0.5s
+     
   }
   isMenuOpen = false;
 
@@ -226,17 +218,10 @@ export class EnBlogHomepageComponent implements OnInit {
     this.isDark = !this.isDark;
     this.themeService.setTheme(this.isDark);
 
-    this.refreshAOS();
+    
   }
   refreshAOS() {
-    if (typeof AOS !== 'undefined') {
-      setTimeout(() => {
-        AOS.refresh(); // Обновление позиций AOS
-        this.cdr.detectChanges(); // Принудительное обнаружение изменений
-      }, 100); // Задержка для синхронизации
-    } else {
-      console.warn('AOS is not defined, refresh skipped');
-    }
+    
   }
 
   toggleDropdown() {
@@ -330,7 +315,6 @@ export class EnBlogHomepageComponent implements OnInit {
       } catch (e) {}
     });
   }
-  
 
   private addWebSiteSchema() {
     const exists = Array.from(
@@ -365,8 +349,22 @@ export class EnBlogHomepageComponent implements OnInit {
           url: 'https://arapov.trade/en/freestudying',
           inLanguage: 'en',
           isPartOf: { '@id': 'https://arapov.trade/#website' },
-          author: { '@id': 'https://arapov.trade/#person' },
-          publisher: { '@id': 'https://arapov.trade/#organization' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
+          publisher: {
+            '@type': 'Organization',
+            '@id': 'https://arapov.trade/#organization',
+            
+            url: 'https://arapov.trade',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://arapov.trade/assets/img/favicon.ico',
+            },
+          },
           about: [
             { '@type': 'Thing', name: 'Trading Education' },
             { '@type': 'Thing', name: 'Smart Money Concepts' },
@@ -409,28 +407,6 @@ export class EnBlogHomepageComponent implements OnInit {
               },
             ],
           },
-        },
-        {
-          '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
-          name: 'Igor Arapov',
-          url: 'https://arapov.trade/en',
-          sameAs: [
-            'https://www.wikidata.org/wiki/Q137454477',
-            'https://scholar.google.com/citations?user=N440tWQAAAAJ',
-            'https://orcid.org/0009-0003-0430-778X',
-            'https://isni.org/isni/0000000529518564',
-            'https://www.amazon.com/stores/author/B0GBRFY457',
-            'https://github.com/ArapovTrade',
-            'https://ua.linkedin.com/in/arapovtrade',
-            'https://www.youtube.com/@ArapovTrade',
-          ],
-        },
-        {
-          '@type': 'Organization',
-          '@id': 'https://arapov.trade/#organization',
-          name: 'Arapov.Trade',
-          url: 'https://arapov.trade',
         },
       ],
     });

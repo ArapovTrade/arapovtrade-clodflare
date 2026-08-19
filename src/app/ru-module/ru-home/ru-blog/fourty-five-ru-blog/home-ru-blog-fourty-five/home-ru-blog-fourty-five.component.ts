@@ -42,10 +42,10 @@ export class HomeRuBlogFourtyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -281,7 +281,12 @@ export class HomeRuBlogFourtyFiveComponent implements OnInit {
             'Индикатор RSI в трейдинге: что это перекупленность и перепроданность',
           description:
             'Индикатор RSI: как читать перекупленность и перепроданность, дивергенции и почему сигнал RSI работает только в контексте тренда.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

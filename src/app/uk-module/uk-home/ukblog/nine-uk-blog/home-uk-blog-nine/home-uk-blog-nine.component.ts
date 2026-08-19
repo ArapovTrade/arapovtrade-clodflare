@@ -41,10 +41,10 @@ export class HomeUkBlogNineComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -274,7 +274,12 @@ export class HomeUkBlogNineComponent implements OnInit {
           headline: 'Халвінг біткоїна: що це таке і як впливає на ціну',
           description:
             'Що таке халвінг біткоїна, коли він відбувається, як скорочення винагороди впливає на емісію і чому ця подія важлива для майнерів та інвесторів.',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

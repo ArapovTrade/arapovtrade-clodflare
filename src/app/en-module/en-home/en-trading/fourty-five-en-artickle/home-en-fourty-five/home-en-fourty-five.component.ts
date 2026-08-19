@@ -45,12 +45,12 @@ export class HomeEnFourtyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
     this.setBreadcrumbSchema();
-    this.setHowToSchema();
+    // this.setHowToSchema();
     this.setVideoObjectSchema();
-    this.setGlossarySchema();
+    // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -304,7 +304,12 @@ export class HomeEnFourtyFiveComponent implements OnInit {
             'Free trading course from scratch: technical analysis, Wyckoff method, volume analysis, complete trading system with positive mathematical expectancy. 32 sections, live trade breakdowns.',
           datePublished: '2025-01-15T00:00:00+02:00',
           dateModified: '2026-06-25T00:00:00+02:00', // ← было '2026-05-29T00:00:00Z+02:00' (баг B)
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           mainEntityOfPage: {
             '@type': 'WebPage',
@@ -622,7 +627,10 @@ export class HomeEnFourtyFiveComponent implements OnInit {
           contentUrl: 'https://www.youtube.com/watch?v=tmiHem6NOZs',
           embedUrl:
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: { '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en', },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           isPartOf: {
             '@type': 'CreativeWorkSeries',
@@ -669,7 +677,7 @@ export class HomeEnFourtyFiveComponent implements OnInit {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
-      "name": "BreadcrumbList",
+      name: 'BreadcrumbList',
       '@id': 'https://arapov.trade/en/freestudying/freeeducation#breadcrumb',
       itemListElement: [
         {

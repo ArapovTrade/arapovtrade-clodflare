@@ -43,12 +43,12 @@ export class HomeUkFourtyFiveComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
     this.setBreadcrumbSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
     this.setVideoObjectSchema();
-    this.setGlossarySchema();
+    // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -324,7 +324,12 @@ export class HomeUkFourtyFiveComponent implements OnInit {
             'Безкоштовний курс з трейдингу з нуля: технічний аналіз, метод Вайкоффа, об`ємний аналіз, торгова система з позитивним математичним очікуванням. 32 розділів, живі розбори угод.',
           datePublished: '2025-01-15T00:00:00+02:00',
           dateModified: '2026-06-25T00:00:00+02:00', // ← сведено к meta (было 2026-05-29)
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           mainEntityOfPage: {
             '@type': 'WebPage',
@@ -401,7 +406,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
   private setBreadcrumbSchema(): void {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
-      "name": "BreadcrumbList",
+      name: 'BreadcrumbList',
       '@type': 'BreadcrumbList',
       '@id': 'https://arapov.trade/uk/freestudying/freeeducation#breadcrumb',
       itemListElement: [
@@ -704,7 +709,13 @@ export class HomeUkFourtyFiveComponent implements OnInit {
           contentUrl: 'https://www.youtube.com/watch?v=tmiHem6NOZs',
           embedUrl:
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
-          author: { '@id': 'https://arapov.trade/#person' },
+          author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
           publisher: { '@id': 'https://arapov.trade/#organization' },
           isPartOf: {
             '@type': 'CreativeWorkSeries',

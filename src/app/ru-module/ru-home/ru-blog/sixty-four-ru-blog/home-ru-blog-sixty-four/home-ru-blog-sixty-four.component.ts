@@ -43,10 +43,10 @@ export class HomeRuBlogSixtyFourComponent {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -303,7 +303,12 @@ export class HomeRuBlogSixtyFourComponent {
           headline: 'Стратегия трейдинга для новичков',
           description:
             'Узнайте, как построить торговую стратегию в трейдинге: правила входа и выхода, управление рисками, примеры систем для новичков и профи.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

@@ -38,7 +38,7 @@ export class PsychologiyaTreydingaEnComponent
   dropdownOpen = false;
   menuOpen: boolean = false;
   ngOnInit() {
-      this.removeExistingSchema();
+    this.removeExistingSchema();
     this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
 
     this.titleService.setTitle('Trading Psychology — Free Book by Igor Arapov');
@@ -54,11 +54,10 @@ export class PsychologiyaTreydingaEnComponent
       content:
         'Trading book, trading training, Forex for beginners, technical analysis, volume analysis, Igor Arapov, Smart Money',
     });
- this.injectSchema(this.bookSchema());
+    this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
-    
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -75,10 +74,7 @@ export class PsychologiyaTreydingaEnComponent
   toggleTheme() {
     this.isDark = !this.isDark;
     this.themeService.setTheme(this.isDark);
-
-     
   }
-   
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -110,8 +106,6 @@ export class PsychologiyaTreydingaEnComponent
   }
   hovered: string | null = null;
 
-   
-
   downloadFile() {
     const link = document.createElement('a');
     link.href = '/assets/documents/Trading_Psychology_Final.epub'; // путь к вашему файлу
@@ -123,7 +117,7 @@ export class PsychologiyaTreydingaEnComponent
     window.open(url, '_blank');
   }
 
-     private removeExistingSchema(): void {
+  private removeExistingSchema(): void {
     this.document
       .querySelectorAll('script[type="application/ld+json"]')
       .forEach((script) => {
@@ -194,7 +188,12 @@ export class PsychologiyaTreydingaEnComponent
       ],
       keywords:
         'trading, forex, technical analysis, volume analysis, exchange, investments, smart money, trading education',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/en',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -254,7 +253,6 @@ export class PsychologiyaTreydingaEnComponent
           },
         },
       },
-     
     };
   }
 
@@ -268,8 +266,15 @@ export class PsychologiyaTreydingaEnComponent
       description: 'Download the free book on trading. ISBN 979-8-90243-138-1',
       inLanguage: 'en',
       isPartOf: { '@id': 'https://arapov.trade/#website' },
-      about: { '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book' },
-      author: { '@id': 'https://arapov.trade/#person' },
+      about: {
+        '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book',
+      },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/en',
+      },
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       mainEntity: {

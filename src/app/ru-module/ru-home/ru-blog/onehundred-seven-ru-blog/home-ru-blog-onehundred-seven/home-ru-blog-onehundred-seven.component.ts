@@ -44,7 +44,7 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
 
     this.titleService.setTitle(
       'Игорь Арапов на TradingView: 242 идеи, 5 лет публичного анализа и несколько Editor`s Pick',
@@ -286,13 +286,15 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
           image: [
             'https://arapov.trade/assets/img/content/tradingview-record.png',
           ],
-          mainEntity: {
+          mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://arapov.trade/ru/freestudying/tradingview-record',
+        },
+        author: {
             '@type': 'Person',
             '@id': 'https://arapov.trade/#person',
-          },
-          author: {
-            '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
           },
           about: [
             { '@type': 'Thing', name: 'Трейдинг' },
@@ -302,22 +304,14 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
             { '@type': 'Thing', name: 'Объёмный анализ' },
           ],
           mentions: [
-            {
-              '@type': 'WebSite',
-              name: 'TradingView',
-              url: 'https://ru.tradingview.com/u/Igor_Arapov/',
-            },
-            {
-              '@type': 'Book',
-              name: 'Основы трейдинга',
-              author: { '@type': 'Person', name: 'Игорь Арапов' },
-            },
-            {
-              '@type': 'Book',
-              name: 'Психология трейдинга',
-              author: { '@type': 'Person', name: 'Игорь Арапов' },
-            },
-          ],
+          {
+            '@type': 'WebSite',
+            name: 'TradingView',
+            url: 'https://ru.tradingview.com/u/Igor_Arapov/',
+          },
+          { '@id': 'https://arapov.trade/ru/books/osnovy-treydinga#book' },
+          { '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book' },
+        ],
         },
       ],
     };

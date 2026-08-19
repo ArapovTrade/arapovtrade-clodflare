@@ -57,7 +57,7 @@ export class OsnovyTreydingaEnComponent
     });
     this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -189,7 +189,12 @@ export class OsnovyTreydingaEnComponent
       ],
       keywords:
         'trading, forex, technical analysis, volume analysis, exchange, investments, smart money, trading education',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/en',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -249,7 +254,7 @@ export class OsnovyTreydingaEnComponent
           },
         },
       },
-      //  
+      //
     };
   }
 
@@ -264,7 +269,12 @@ export class OsnovyTreydingaEnComponent
       inLanguage: 'en',
       isPartOf: { '@id': 'https://arapov.trade/#website' },
       about: { '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book' },
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/en',
+      },
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       mainEntity: {

@@ -44,7 +44,7 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -266,66 +266,130 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   // ============================================================
   //  ARTICLE
   // ============================================================
-   private setArticleSchema(): void {
-    const data = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        {
-          '@type': 'Article',
-          url: 'https://arapov.trade/uk/freestudying/tradingview-record',
-          headline:
-            "242 ідеї, 5 років публічного аналізу та кілька Editor's Pick: повний трек-рекорд Ігоря Арапова на TradingView",
-          description:
-            'Повний розбір кожної категорії контенту, опублікованого Ігорем Араповим на TradingView з жовтня 2021 по лютий 2026 року: Bitcoin, золото, форекс, фондові індекси, нафта, альткоїни, освітні серії.',
-          inLanguage: 'uk',
-          datePublished: '2026-02-21T00:00:00Z',
-          dateModified: '2026-02-21T00:00:00Z',
-          image: [
-            'https://arapov.trade/assets/img/content/tradingview-record.png',
-          ],
-          mainEntity: {
-            '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
-          },
-          author: {
-            '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
-          },
-          about: [
-            { '@type': 'Thing', name: 'Трейдинг' },
-            { '@type': 'Thing', name: 'Технічний аналіз' },
-            { '@type': 'Thing', name: 'Bitcoin' },
-            { '@type': 'Thing', name: 'Метод Вайкоффа' },
-            { '@type': 'Thing', name: 'Обʼємний аналіз' },
-          ],
-          mentions: [
-            {
-              '@type': 'WebSite',
-              name: 'TradingView',
-              url: 'https://ru.tradingview.com/u/Igor_Arapov/',
-            },
-            {
-              '@type': 'Book',
-              name: 'Основи трейдингу',
-              author: { '@type': 'Person', name: 'Ігор Арапов' },
-            },
-            {
-              '@type': 'Book',
-              name: 'Психологія трейдингу',
-              author: { '@type': 'Person', name: 'Ігор Арапов' },
-            },
-          ],
-        },
-      ],
-    };
+  // private setArticleSchema(): void {
+  //   const data = {
+  //     '@context': 'https://schema.org',
+  //     '@graph': [
+  //       {
+  //         '@type': 'Article',
+  //         url: 'https://arapov.trade/uk/freestudying/tradingview-record',
+  //         headline:
+  //           "242 ідеї, 5 років публічного аналізу та кілька Editor's Pick: повний трек-рекорд Ігоря Арапова на TradingView",
+  //         description:
+  //           'Повний розбір кожної категорії контенту, опублікованого Ігорем Араповим на TradingView з жовтня 2021 по лютий 2026 року: Bitcoin, золото, форекс, фондові індекси, нафта, альткоїни, освітні серії.',
+  //         inLanguage: 'uk',
+  //         datePublished: '2026-02-21T00:00:00Z',
+  //         dateModified: '2026-02-21T00:00:00Z',
+  //         image: [
+  //           'https://arapov.trade/assets/img/content/tradingview-record.png',
+  //         ],
+  //         mainEntity: {
+  //           '@type': 'Person',
+  //           '@id': 'https://arapov.trade/#person',
+  //         },
+  //         author: {
+  //           '@type': 'Person',
+  //           '@id': 'https://arapov.trade/#person',
+  //           name: 'Igor Arapov',
+  //           url: 'https://arapov.trade/uk',
+  //         },
+  //         about: [
+  //           { '@type': 'Thing', name: 'Трейдинг' },
+  //           { '@type': 'Thing', name: 'Технічний аналіз' },
+  //           { '@type': 'Thing', name: 'Bitcoin' },
+  //           { '@type': 'Thing', name: 'Метод Вайкоффа' },
+  //           { '@type': 'Thing', name: 'Обʼємний аналіз' },
+  //         ],
+  //         mentions: [
+  //           {
+  //             '@type': 'WebSite',
+  //             name: 'TradingView',
+  //             url: 'https://ru.tradingview.com/u/Igor_Arapov/',
+  //           },
+  //           {
+  //             '@type': 'Book',
+  //             name: 'Основи трейдингу',
+  //             author: {
+  //               '@type': 'Person',
+  //               '@id': 'https://arapov.trade/#person',
+  //               name: 'Igor Arapov',
+  //               url: 'https://arapov.trade/uk',
+  //             },
+  //           },
+  //           {
+  //             '@type': 'Book',
+  //             name: 'Психологія трейдингу',
+  //             author: {
+  //               '@type': 'Person',
+  //               '@id': 'https://arapov.trade/#person',
+  //               name: 'Igor Arapov',
+  //               url: 'https://arapov.trade/uk',
+  //             },
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //   };
 
-    this.addJsonLdSchema(data);
-  }
+  //   this.addJsonLdSchema(data);
+  // }
+  private setArticleSchema(): void {
+  const data = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': 'https://arapov.trade/uk/freestudying/tradingview-record#article',
+        url: 'https://arapov.trade/uk/freestudying/tradingview-record',
+        headline:
+          "242 ідеї, 5 років публічного аналізу та кілька Editor's Pick: повний трек-рекорд Ігоря Арапова на TradingView",
+        description:
+          'Повний розбір кожної категорії контенту, опублікованого Ігорем Араповим на TradingView з жовтня 2021 по лютий 2026 року: Bitcoin, золото, форекс, фондові індекси, нафта, альткоїни, освітні серії.',
+        inLanguage: 'uk',
+        datePublished: '2026-02-21T00:00:00Z',
+        dateModified: '2026-02-21T00:00:00Z',
+        image: [
+          'https://arapov.trade/assets/img/content/tradingview-record.png',
+        ],
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://arapov.trade/uk/freestudying/tradingview-record',
+        },
+        author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/uk',
+          },
+        publisher: { '@id': 'https://arapov.trade/#organization' },
+        about: [
+          { '@type': 'Thing', name: 'Трейдинг' },
+          { '@type': 'Thing', name: 'Технічний аналіз' },
+          { '@type': 'Thing', name: 'Bitcoin' },
+          { '@type': 'Thing', name: 'Метод Вайкоффа' },
+          { '@type': 'Thing', name: 'Обʼємний аналіз' },
+        ],
+        mentions: [
+          {
+            '@type': 'WebSite',
+            name: 'TradingView',
+            url: 'https://ru.tradingview.com/u/Igor_Arapov/',
+          },
+          { '@id': 'https://arapov.trade/uk/books/osnovy-treydinga#book' },
+          { '@id': 'https://arapov.trade/uk/books/psihologiya-treydinga#book' },
+        ],
+      },
+    ],
+  };
+
+  this.addJsonLdSchema(data);
+}
+
 
   // ============================================================
   //  PERSON
   // ============================================================
-   private setPersonSchema(): void {
+  private setPersonSchema(): void {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',

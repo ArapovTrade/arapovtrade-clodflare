@@ -42,10 +42,10 @@ export class HomeRuBlogTwentySevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -282,7 +282,12 @@ export class HomeRuBlogTwentySevenComponent implements OnInit {
             'Торговля активами: золото, нефть и фондовые индексы по объёму и уровням',
           description:
             'Как торговать золотом, нефтью и фондовыми индексами: фундаментальные драйверы, особенности инструментов и подходы к анализу.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

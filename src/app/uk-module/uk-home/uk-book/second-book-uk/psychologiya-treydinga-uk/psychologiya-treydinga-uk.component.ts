@@ -31,16 +31,14 @@ export class PsychologiyaTreydingaUkComponent
     private themeService: ThemeservService,
   ) {}
 
-  ngAfterViewInit() {
-    
-  }
+  ngAfterViewInit() {}
   isDark!: boolean;
   languages = ['ua', 'en', 'ru']; // какие языки нужны
   currentLang = 'ua';
   dropdownOpen = false;
   menuOpen: boolean = false;
   ngOnInit() {
-      this.removeExistingSchema();
+    this.removeExistingSchema();
 
     this.titleService.setTitle(
       'Психологія трейдингу — Безкоштовна книга Ігоря Арапова',
@@ -51,18 +49,17 @@ export class PsychologiyaTreydingaUkComponent
       content:
         'Безкоштовна книга Ігоря Арапова: страх, жадібність, тілт, FOMO — практичний посібник з управління емоціями та психологією успішного трейдера. ISBN 979-8-90243-504-4',
     });
-     this.injectSchema(this.bookSchema());
+    this.injectSchema(this.bookSchema());
     this.injectSchema(this.webPageSchema());
-    this.injectSchema(this.faqSchema());
+    // this.injectSchema(this.faqSchema());
 
     this.meta.updateTag({
       name: 'keywords',
       content:
         'книга трейдинг, навчання трейдингу, форекс для початківців, технічний аналіз, об`ємний аналіз, Ігор Арапов, Smart Money',
     });
-this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
-    
-     
+    this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
+
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -79,10 +76,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
   toggleTheme() {
     this.isDark = !this.isDark;
     this.themeService.setTheme(this.isDark);
-
-     
   }
-  
 
   toggleDropdown() {
     this.dropdownOpen = !this.dropdownOpen;
@@ -114,8 +108,6 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
   }
   hovered: string | null = null;
 
-  
-
   downloadFile() {
     const link = document.createElement('a');
     link.href = '/assets/documents/Cover_Psihologiya_Ukrainian.jpg'; // путь к вашему файлу
@@ -127,7 +119,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
     window.open(url, '_blank');
   }
 
-   private removeExistingSchema(): void {
+  private removeExistingSchema(): void {
     this.document
       .querySelectorAll('script[type="application/ld+json"]')
       .forEach((script) => {
@@ -169,7 +161,11 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
       numberOfPages: 60,
       bookFormat: 'https://schema.org/EBook',
       bookEdition: '1-е видання',
-      inLanguage: { '@type': 'Language', name: 'Ukrainian', alternateName: 'uk' },
+      inLanguage: {
+        '@type': 'Language',
+        name: 'Ukrainian',
+        alternateName: 'uk',
+      },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       copyrightYear: 2025,
@@ -198,7 +194,12 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
       ],
       keywords:
         'трейдинг, форекс, технічний аналіз, обʼємний аналіз, біржа, інвестиції, smart money, навчання трейдингу',
-      author: { '@id': 'https://arapov.trade/#person' },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/uk',
+      },
       publisher: { '@id': 'https://arapov.trade/#organization' },
       image: {
         '@type': 'ImageObject',
@@ -258,7 +259,6 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
           },
         },
       },
-      
     };
   }
 
@@ -273,8 +273,15 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-12-18' });
         'Скачати безкоштовно книгу з трейдингу. ISBN 979-8-90243-504-4',
       inLanguage: 'uk',
       isPartOf: { '@id': 'https://arapov.trade/#website' },
-      about: { '@id': 'https://arapov.trade/uk/books/psihologiya-treydinga#book' },
-      author: { '@id': 'https://arapov.trade/#person' },
+      about: {
+        '@id': 'https://arapov.trade/uk/books/psihologiya-treydinga#book',
+      },
+      author: {
+        '@type': 'Person',
+        '@id': 'https://arapov.trade/#person',
+        name: 'Igor Arapov',
+        url: 'https://arapov.trade/uk',
+      },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {

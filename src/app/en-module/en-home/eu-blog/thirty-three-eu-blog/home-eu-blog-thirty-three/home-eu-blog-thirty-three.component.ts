@@ -41,10 +41,10 @@ export class HomeEuBlogThirtyThreeComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -255,7 +255,12 @@ export class HomeEuBlogThirtyThreeComponent implements OnInit {
             'Market Microstructure: How Price Forms, the Order Book, Spread, Liquidity and the Market Maker',
           description:
             'How market microstructure works: the order book, the tape, liquidity and iceberg orders. How to read the flow of orders and trades.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

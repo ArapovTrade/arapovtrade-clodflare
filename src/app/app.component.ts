@@ -462,10 +462,10 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         ) {
           description =
             segments[0] === 'ru'
-              ? 'Бесплатный курс по трейдингу с нуля: технический анализ, метод Вайкоффа, объёмный анализ, торговая система с положительным математическим ожиданием. 18 разделов, живые разборы сделок.'
+              ? 'Бесплатный курс по трейдингу с нуля: технический анализ, метод Вайкоффа, объёмный анализ, торговая система с положительным математическим ожиданием. 32 раздела, живые разборы сделок.'
               : segments[0] === 'uk'
-                ? 'Безкоштовний курс з трейдингу з нуля: технічний аналіз, метод Вайкоффа, об`ємний аналіз, торгова система з позитивним математичним очікуванням. 18 розділів, живі розбори угод.'
-                : 'Free trading course from scratch: technical analysis, Wyckoff method, volume analysis, complete trading system with positive mathematical expectancy. 18 sections, live trade breakdowns.';
+                ? 'Безкоштовний курс з трейдингу з нуля: технічний аналіз, метод Вайкоффа, об`ємний аналіз, торгова система з позитивним математичним очікуванням. 32 розділи, живі розбори угод.'
+                : 'Free trading course from scratch: technical analysis, Wyckoff method, volume analysis, complete trading system with positive mathematical expectancy. 32 sections, live trade breakdowns.';
         } else if (
           segments[1] === 'freestudying' &&
           segments[2] === 'tradingview-record'

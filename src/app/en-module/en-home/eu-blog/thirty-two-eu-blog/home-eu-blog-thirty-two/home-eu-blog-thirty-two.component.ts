@@ -41,10 +41,10 @@ export class HomeEuBlogThirtyTwoComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -252,7 +252,12 @@ export class HomeEuBlogThirtyTwoComponent implements OnInit {
             'How a Stock Exchange Works in Plain Terms: Market, Price, Order Book, Clearing',
           description:
             'What an exchange is, its types and functions, how trading is organized and how the exchange market differs from OTC. A guide for beginners.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

@@ -41,10 +41,10 @@ export class HomeRuBlogFiftyTwoComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -274,7 +274,12 @@ export class HomeRuBlogFiftyTwoComponent implements OnInit {
           headline: 'Индикатор ADX: что это и как измерять силу тренда',
           description:
             'Что показывает индикатор ADX, как отличить сильный тренд от вялого боковика и почему он измеряет силу движения, но не его направление.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

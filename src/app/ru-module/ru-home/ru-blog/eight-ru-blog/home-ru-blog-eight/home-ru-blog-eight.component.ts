@@ -43,10 +43,10 @@ export class HomeRuBlogEightComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -290,7 +290,12 @@ export class HomeRuBlogEightComponent implements OnInit {
             'Bitcoin в трейдинге: как анализировать и торговать BTC в 2026 году',
           description:
             'Что такое биткоин, как работает блокчейн, майнинг и ограниченная эмиссия, в чём ценность BTC и какие риски у первой криптовалюты.',
-          author: { '@id': 'https://arapov.trade/#person' },
+           author: {
+            '@type': 'Person',
+            '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/ru',
+          },
           publisher: {
             '@type': 'Organization',
             '@id': 'https://arapov.trade/#organization',

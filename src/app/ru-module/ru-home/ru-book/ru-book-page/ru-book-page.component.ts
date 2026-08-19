@@ -60,7 +60,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
       content: 'https://arapov.trade/assets/img/photo_mainpage.jpg',
     });
     this.addWebSiteSchema();
-    this.addPersonSchema();
+    // this.addPersonSchema();
     this.addBookSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -212,6 +212,8 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
         founder: {
           '@type': 'Person',
           '@id': 'https://arapov.trade/#person',
+          name: 'Igor Arapov',
+          url: 'https://arapov.trade/ru',
         },
       },
     });
@@ -273,6 +275,8 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             author: {
               '@type': 'Person',
               '@id': 'https://arapov.trade/#person',
+              name: 'Igor Arapov',
+              url: 'https://arapov.trade/ru',
             },
             publisher: {
               '@type': 'Organization',
@@ -295,6 +299,8 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             author: {
               '@type': 'Person',
               '@id': 'https://arapov.trade/#person',
+              name: 'Igor Arapov',
+              url: 'https://arapov.trade/ru',
             },
             publisher: {
               '@type': 'Organization',
@@ -318,6 +324,8 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             author: {
               '@type': 'Person',
               '@id': 'https://arapov.trade/#person',
+              name: 'Igor Arapov',
+              url: 'https://arapov.trade/ru',
             },
             publisher: {
               '@type': 'Organization',

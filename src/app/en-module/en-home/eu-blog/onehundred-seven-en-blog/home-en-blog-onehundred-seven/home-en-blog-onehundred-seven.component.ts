@@ -44,7 +44,7 @@ export class HomeEnBlogOnehundredSevenComponent implements OnInit {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
+    // this.setPersonSchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -285,12 +285,14 @@ export class HomeEnBlogOnehundredSevenComponent implements OnInit {
             'https://arapov.trade/assets/img/content/tradingview-record.png',
           ],
           mainEntity: {
-            '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@type': 'WebPage',
+          '@id': 'https://arapov.trade/en/freestudying/tradingview-record',
           },
           author: {
-            '@type': 'Person',
+             '@type': 'Person',
             '@id': 'https://arapov.trade/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapov.trade/en',
           },
           about: [
             { '@type': 'Thing', name: 'Trading' },
@@ -299,23 +301,15 @@ export class HomeEnBlogOnehundredSevenComponent implements OnInit {
             { '@type': 'Thing', name: 'Wyckoff Method' },
             { '@type': 'Thing', name: 'Volume Analysis' },
           ],
-          mentions: [
-            {
-              '@type': 'WebSite',
-              name: 'TradingView',
-              url: 'https://ru.tradingview.com/u/Igor_Arapov/',
-            },
-            {
-              '@type': 'Book',
-              name: 'Trading Fundamentals',
-              author: { '@type': 'Person', name: 'Igor Arapov' },
-            },
-            {
-              '@type': 'Book',
-              name: 'Trading Psychology',
-              author: { '@type': 'Person', name: 'Igor Arapov' },
-            },
-          ],
+         mentions: [
+          {
+            '@type': 'WebSite',
+            name: 'TradingView',
+            url: 'https://ru.tradingview.com/u/Igor_Arapov/',
+          },
+          { '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book' },
+          { '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book' },
+        ],
         },
       ],
     };
