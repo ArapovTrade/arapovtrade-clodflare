@@ -191,6 +191,10 @@ export class UkHomeComponent implements OnInit, OnDestroy {
         ? 'https://arapov.trade'
         : `https://arapov.trade/${lang}/main`;
 
+    // Локализация оставлена только там, где текст реально меняется по языку
+    // страницы. Канонические поля Person (name, sameAs, alternateName)
+    // языково-нейтральны и живут вне L — иначе @id-объединение узлов на
+    // трёх языках даст случайный победитель по имени.
     const L = {
       uk: {
         inLanguage: 'uk-UA',
@@ -200,10 +204,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
         description:
           'Незалежний дослідник у сфері поведінкових фінансів та психології трейдингу, ' +
           'трейдер на фінансових ринках і автор публікацій з трейдингу та поведінкових фінансів.',
-        award: [
-          'Кандидат у майстри спорту з шахів',
-          'Вибір редакції TradingView',
-        ],
         nuftName: 'Національний університет харчових технологій',
         coauthorName: 'Інна Ситник',
         eventName: 'Гостьова лекція з трейдингу та біржової діяльності',
@@ -219,10 +219,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
         description:
           'Независимый исследователь в области поведенческих финансов и психологии трейдинга, ' +
           'трейдер на финансовых рынках и автор публикаций по трейдингу и поведенческим финансам.',
-        award: [
-          'Кандидат в мастера спорта по шахматам',
-          'Выбор редакции TradingView',
-        ],
         nuftName: 'Национальный университет пищевых технологий',
         coauthorName: 'Инна Сытник',
         eventName: 'Гостевая лекция по трейдингу и биржевой деятельности',
@@ -238,10 +234,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
         description:
           'Independent researcher in behavioral finance and trading psychology, ' +
           'trader in financial markets, and author of trading and behavioral finance publications.',
-        award: [
-          'Candidate Master of Sports in chess',
-          "TradingView Editors' Pick",
-        ],
         nuftName: 'National University of Food Technologies',
         coauthorName: 'Inna Sytnyk',
         eventName: 'Guest lecture on trading and exchange markets',
@@ -356,19 +348,17 @@ export class UkHomeComponent implements OnInit, OnDestroy {
         {
           '@type': 'Person',
           '@id': PERSON_ID,
+          // Канонический name — языково-нейтральная латиница. Иначе @id
+          // объединяет три языковых узла (uk/ru/en) в один, и Google
+          // выбирает name случайным образом среди трёх версий.
           name: 'Игорь Арапов',
           alternateName: [
-            'Ігор Арапов',
-
             'Igor Arapov',
-            'Арапов Игорь',
-            'Арапов Ігор',
-            'Arapov Igor',
             'Ihor Arapov',
+            'Ігор Арапов',
             'Игорь Витальевич Арапов',
-            'Ігор Віталійович Арапов',
           ],
-         
+
           birthDate: '1990-09-30',
           jobTitle: L.jobTitle,
           description: L.description,
@@ -377,147 +367,30 @@ export class UkHomeComponent implements OnInit, OnDestroy {
           image:
             'https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
 
-          nationality: {
-            '@type': 'Country',
-            name: 'Ukraine',
-            alternateName: 'Україна',
+          nationality: { '@type': 'Country', name: 'Ukraine' },
+          alumniOf: {
+            '@type': 'CollegeOrUniversity',
+            name: 'Oles Honchar Dnipro National University',
+            url: 'https://www.dnu.dp.ua/',
           },
-          knowsLanguage: [
-            { '@type': 'Language', name: 'Russian', alternateName: 'ru' },
-            { '@type': 'Language', name: 'Ukrainian', alternateName: 'uk' },
-            { '@type': 'Language', name: 'English', alternateName: 'en' },
-          ],
-          hasOccupation: [
-            {
-              '@type': 'Role',
-              startDate: '2013',
-              hasOccupation: { '@type': 'Occupation', name: 'Trader' },
-            },
-            {
-              '@type': 'Role',
-              startDate: '2026',
-              hasOccupation: {
-                '@type': 'Occupation',
-                name: 'Independent Researcher',
-              },
-            },
-          ],
           affiliation: { '@id': NUFT_ID },
           worksFor: { '@id': ORG_ID },
 
           knowsAbout: [
             'behavioral finance',
             'trading psychology',
-            'cognitive biases',
-            'psychology of investment decisions',
-            'financial markets',
-            'technical analysis',
-            'volume analysis',
             'Wyckoff Method',
             'Smart Money Concepts',
-            'market structure',
-            'risk management',
           ],
-          alumniOf: {
-            '@type': 'CollegeOrUniversity',
-            name: 'Oles Honchar Dnipro National University',
-            url: 'https://www.dnu.dp.ua/',
-          },
-          award: L.award,
 
-          // Только уникальный идентификатор, которого нет в sameAs.
-          identifier: [
-            {
-              '@type': 'PropertyValue',
-              propertyID: 'Google Knowledge Graph',
-              value: 'kg:/g/11ysn_rm8l',
-            },
-          ],
+          // Один канонический URL без языкового параметра — sameAs должен
+          // указывать на идентичный ресурс независимо от языка страницы.
           sameAs: [
             'https://www.wikidata.org/wiki/Q137454477',
             'https://orcid.org/0009-0003-0430-778X',
-            'https://isni.org/isni/0000000529518564',
-            `https://scholar.google.com/citations?user=N440tWQAAAAJ&hl=${lang}`,
-            'https://openalex.org/A5127355048',
-            'https://www.semanticscholar.org/author/2421286270',
-            'https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10402456',
-            'https://www.researchgate.net/scientific-contributions/2341564479',
-            'https://www.google.com/search?kgmid=/g/11ysn_rm8l',
+            'https://scholar.google.com/citations?user=N440tWQAAAAJ',
+            'https://ru.tradingview.com/u/Igor_Arapov/',
             'https://www.linkedin.com/in/igor-arapov',
-            'https://medium.com/@arapov.trade',
-            'https://www.youtube.com/channel/UCebXvNxbdin-dvXz4g8Jp4Q',
-            'https://www.goodreads.com/author/show/66848566',
-            'https://openlibrary.org/authors/OL16073686A',
-            'https://bookwire.bowker.com/author/Igor-Arapov-40225801',
-            'http://www.irbis-nbuv.gov.ua/cgi-bin/irbis64r_81/cgiirbis_64.exe?Z21ID=&I21DBN=VFEIR&P21DBN=VFEIR&S21STN=1&S21REF=10&S21FMT=fullw&C21COM=S&S21CNR=20&S21P01=3&S21P02=0&S21P03=A=&S21COLORTERMS=0&S21STR=%D0%90%D1%80%D0%B0%D0%BF%D0%BE%D0%B2%2C%20%D0%86%D0%B3%D0%BE%D1%80',
-          ],
-
-          // FIXME: эти три NewsArticle не локализованы (не через L), но
-          // сейчас содержат русский name/headline/url для ВСЕХ трёх языков
-          // страницы (uk/ru/en), при этом inLanguage у первого и третьего
-          // указан 'ru', хотя раньше (на /uk) там был украинский текст и
-          // путь /ua/money/... — сверить и перенести в L, если нужны
-          // разные версии на разных языках.
-          subjectOf: [
-            {
-              '@type': 'NewsArticle',
-              name: 'Бесплатная библиотека по трейдингу: интервью с автором курса, включающего более 50 статей',
-              headline:
-                'Бесплатная библиотека по трейдингу: интервью с автором курса, включающего более 50 статей',
-              author: {
-                '@type': 'Person',
-                name: 'Денис Мацеевский',
-                url: 'https://ua.news/ru/%D0%94%D0%B5%D0%BD%D0%B8%D1%81%20%D0%9C%D0%B0%D1%86%D0%B5%D1%94%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9',
-              },
-              url: 'https://ua.news/ru/money/bezkoshtovna-biblioteka-z-treidingu-interviu-z-avtorom-kursu-na-50-statei',
-              datePublished: '2026-08-10T17:12:00+03:00',
-              inLanguage: 'ru',
-              image:
-                'https://cdn-cabinet.ua.news/uploads/images/24e524524e454e/dsc_1344.webp',
-              publisher: {
-                '@type': 'Organization',
-                name: 'ua.news',
-                url: 'https://ua.news/',
-              },
-            },
-            {
-              '@type': 'NewsArticle',
-              name: 'Про трейдинг і біржову діяльність – здобувачам освітньої програми «Цифровий бізнес»',
-              headline:
-                'Про трейдинг і біржову діяльність – здобувачам освітньої програми «Цифровий бізнес»',
-              author: {
-                '@type': 'Organization',
-                name: 'National University of Food Technologies',
-                url: 'https://nuft.edu.ua/',
-              },
-              url: 'https://nuft.edu.ua/news/podiyi/pppro-trejding-i-birzhovu-diyalnist-%E2%80%93-zdobuvacham-osvitnoyi-programi',
-              datePublished: '2026-03-19T14:00:00+02:00',
-              inLanguage: 'uk',
-              image:
-                'https://nuft.edu.ua/assets/images/News/2026/03/19/ekonomteoriya1-18-03-2026.jpg',
-              publisher: { '@id': NUFT_ID },
-            },
-            {
-              '@type': 'NewsArticle',
-              name: 'Несмотря на войну и кризисы: Игорь Арапов объясняет, кто всегда зарабатывает на фондовых рынках',
-              headline:
-                'Несмотря на войну и кризисы: Игорь Арапов объясняет, кто всегда зарабатывает на фондовых рынках',
-              author: {
-                '@type': 'Organization',
-                name: 'ua.news',
-                url: 'https://ua.news/',
-              },
-              url: 'https://ua.news/ru/money/nezvazhaiuchi-na-viinu-ta-krizi-igor-arapov-poiasniuie-khto-zavzhdi-zarobliaie-na-fondovikh-rinkakh',
-              datePublished: '2026-04-15T19:00:00+02:00',
-              inLanguage: 'ru',
-              image:
-                'https://cdn-cabinet.ua.news/uploads/images/sulzhenko/kaver_arapov.webp',
-              publisher: {
-                '@type': 'Organization',
-                name: 'ua.news',
-                url: 'https://ua.news',
-              },
-            },
           ],
         },
 
@@ -525,12 +398,7 @@ export class UkHomeComponent implements OnInit, OnDestroy {
           '@type': 'Person',
           '@id': COAUTHOR_ID,
           name: L.coauthorName,
-          alternateName: [
-            'Inna Sytnyk',
-            'Інна Ситник',
-            'Инна Сытник',
-            'I. P. Sytnyk',
-          ],
+          alternateName: ['Inna Sytnyk', 'Інна Ситник', 'Инна Сытник'],
           jobTitle: 'Doctor of Science, Head of Department',
           affiliation: { '@id': NUFT_ID },
           sameAs: [
@@ -562,11 +430,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
             'https://www.wikidata.org/wiki/Q138504696',
             'https://doi.org/10.32702/2306-6814.2026.4.96',
           ],
-          identifier: {
-            '@type': 'PropertyValue',
-            propertyID: 'UDC',
-            value: '336.76:159.9',
-          },
           isPartOf: {
             '@type': 'Periodical',
             name: 'Інвестиції: практика та досвід',
@@ -591,11 +454,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
             'https://www.wikidata.org/wiki/Q138496096',
             'https://doi.org/10.5281/zenodo.18792055',
           ],
-          identifier: {
-            '@type': 'PropertyValue',
-            propertyID: 'UDC',
-            value: '336.76:159.9',
-          },
           publisher: {
             '@type': 'Organization',
             name: 'Social Science Research Network (SSRN)',
@@ -654,8 +512,6 @@ export class UkHomeComponent implements OnInit, OnDestroy {
               addressCountry: 'UA',
             },
           },
-          organizer: { '@id': NUFT_ID },
-          performer: { '@id': PERSON_ID },
           offers: {
             '@type': 'Offer',
             price: '0',
@@ -664,6 +520,10 @@ export class UkHomeComponent implements OnInit, OnDestroy {
             url: 'https://nuft.edu.ua/news/podiyi/pppro-trejding-i-birzhovu-diyalnist-%E2%80%93-zdobuvacham-osvitnoyi-programi',
             validFrom: '2026-03-19T00:00:00+02:00',
           },
+          organizer: { '@id': NUFT_ID },
+          performer: { '@id': PERSON_ID },
+          // offers убран: разовое прошедшее бесплатное мероприятие не
+          // нуждается в блоке актуальности/доступности билетов.
         },
       ],
     };
