@@ -368,8 +368,7 @@ export class UkHomeComponent implements OnInit, OnDestroy {
             'Игорь Витальевич Арапов',
             'Ігор Віталійович Арапов',
           ],
-          givenName: 'Igor',
-          familyName: 'Arapov',
+         
           birthDate: '1990-09-30',
           jobTitle: L.jobTitle,
           description: L.description,
