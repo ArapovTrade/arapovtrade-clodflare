@@ -42,15 +42,7 @@ export class UkStudyingHomeComponent
   }
 
   ngAfterViewInit() {
-    setTimeout(() => {
-      if (typeof AOS !== 'undefined') {
-        AOS.init({
-          duration: 1000,
-          once: false,
-          offset: 100,
-        });
-      }
-    }, 500); // Задержка 0.5s
+     
   }
   isMenuOpen = false;
 
@@ -77,7 +69,7 @@ export class UkStudyingHomeComponent
   ngOnInit(): void {
     this.lang.setNumber(1);
     this.removeExistingWebPageSchema();
-    this.addWebSiteSchema();
+    // this.addWebSiteSchema();
 
     this.titleService.setTitle(
       'Курси трейдингу онлайн від Ігоря Арапова | Навчання трейдингу з нуля',

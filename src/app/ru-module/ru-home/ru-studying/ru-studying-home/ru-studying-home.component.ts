@@ -76,7 +76,7 @@ export class RuStudyingHomeComponent
   menuOpen: boolean = false;
   ngOnInit(): void {
     this.removeExistingWebPageSchema();
-    this.addWebSiteSchema();
+    // this.addWebSiteSchema();
 
     this.lang.setNumber(2);
     this.titleService.setTitle(

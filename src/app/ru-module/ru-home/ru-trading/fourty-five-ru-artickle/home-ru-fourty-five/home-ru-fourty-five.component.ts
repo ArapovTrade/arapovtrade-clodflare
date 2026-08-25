@@ -52,7 +52,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     // this.setHowToSchema();
     // this.setVideoObjectSchema();
     // this.setGlossarySchema();
-    this.setEducationalOccupationalProgramSchema();
+    // this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
