@@ -47,7 +47,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     this.setBreadcrumbSchema();
     // this.setFaqSchema();
     // this.setHowToSchema();
-    this.setVideoObjectSchema();
+    // this.setVideoObjectSchema();
     // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
@@ -348,12 +348,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
             'Smart Money',
             'об`ємний аналіз',
           ],
-          video: [
-            {
-              '@id':
-                'https://arapov.trade/uk/freestudying/freeeducation#video2',
-            },
-          ],
+           
         },
       ],
     });

@@ -49,7 +49,7 @@ export class HomeEnFourtyFiveComponent implements OnInit {
     // this.setFaqSchema();
     this.setBreadcrumbSchema();
     // this.setHowToSchema();
-    this.setVideoObjectSchema();
+    // this.setVideoObjectSchema();
     // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
@@ -328,12 +328,7 @@ export class HomeEnFourtyFiveComponent implements OnInit {
             'Smart Money',
             'Volume analysis',
           ],
-          video: [
-            {
-              '@id':
-                'https://arapov.trade/en/freestudying/freeeducation#video2',
-            },
-          ],
+           
         },
       ],
     });

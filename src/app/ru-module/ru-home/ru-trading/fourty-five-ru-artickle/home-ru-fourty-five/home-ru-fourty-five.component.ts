@@ -50,7 +50,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.setBreadcrumbSchema();
     // this.setFaqSchema();
     // this.setHowToSchema();
-    this.setVideoObjectSchema();
+    // this.setVideoObjectSchema();
     // this.setGlossarySchema();
     this.setEducationalOccupationalProgramSchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
@@ -397,12 +397,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
             'Smart Money',
             'объёмный анализ',
           ],
-          video: [
-            {
-              '@id':
-                'https://arapov.trade/ru/freestudying/freeeducation#video2',
-            },
-          ],
+          
         },
       ],
     });
