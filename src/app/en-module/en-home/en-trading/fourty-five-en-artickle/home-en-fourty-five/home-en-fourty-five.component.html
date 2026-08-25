@@ -12,24 +12,20 @@
           />
           <div class="free-courses_main-container">
             <main lang="en">
-              <article class="pad6">
+              
+                 <article class="pad6">
                 <h1>Free Trading Course for Beginners</h1>
                 <p>
-                  This free, self-paced course takes you from the basics to a
-                  complete trading system you can practise on a demo account. It
-                  is built around volume analysis and the Wyckoff method,
-                  without indicators sold as ready signals and without promises
-                  of quick profit. Work through the 32 sections in order, then
-                  prove the system over 100 demo trades before you risk real
-                  money.
+                  This free, self-paced course takes you from the basics of
+                  the trading terminal to a complete trading system built on
+                  volume analysis and the Wyckoff method, without indicators
+                  sold as ready signals and without promises of quick profit.
+                  All 32 sections are arranged sequentially, with live chart
+                  examples shown as illustrations and video breakdowns for
+                  each topic — work through them at your own pace, then prove
+                  the system over 100 demo trades before you risk real money.
                 </p>
-                <p>
-                  I kept only what I actually use at the chart: how to read
-                  structure and volume, where professional money acts, how to
-                  size a position and manage the exit. The goal is not to make
-                  trading sound easy, but to give you a clear method and an
-                  honest picture of what consistency really takes.
-                </p>
+                 
                 <h2>Course Contents</h2>
                 <p><strong> Introduction</strong></p>
                 <ul>
@@ -45,21 +41,6 @@
                       [ngStyle]="{ cursor: 'pointer' }"
                       (click)="navigateTo('start')"
                       >How to Start Learning Trading</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      [ngStyle]="{ cursor: 'pointer' }"
-                      (click)="navigateTo('quickstart')"
-                      >What is a Quick Start in Trading</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      [ngStyle]="{ cursor: 'pointer' }"
-                      (click)="navigateTo('how')"
-                      fragment="how"
-                      >How to Work Through the Course</a
                     >
                   </li>
                 </ul>
@@ -90,6 +71,13 @@
                       (click)="navigateTo('spredLotLongShort')"
                       fragment="spredLotLongShort"
                       >Trading Basics: Spread, Lot, Long and Short</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('ordertypes')"
+                      >Types of Exchange Orders</a
                     >
                   </li>
                   <li>
@@ -142,20 +130,13 @@
                     >
                   </li>
                 </ul>
-                <p><strong> Volume Analysis and Orders</strong></p>
+                <p><strong> Volume Analysis</strong></p>
                 <ul>
                   <li>
                     <a
                       [ngStyle]="{ cursor: 'pointer' }"
                       (click)="navigateTo('volume')"
                       >Volume Analysis of the Market</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      [ngStyle]="{ cursor: 'pointer' }"
-                      (click)="navigateTo('ordertypes')"
-                      >Types of Exchange Orders</a
                     >
                   </li>
                 </ul>
@@ -214,6 +195,20 @@
                       [ngStyle]="{ cursor: 'pointer' }"
                       (click)="navigateTo('fear')"
                       >Fear and Greed in Trading</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('cognitivebiases')"
+                      >Cognitive Biases in Trading</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('reducingbias')"
+                      >How to Reduce the Impact of Cognitive Biases</a
                     >
                   </li>
                   <li>
@@ -301,43 +296,7 @@
                   </li>
                 </ul>
                 <br />
-                <p>
-                  My name is
-                  <a
-                    target="_blank"
-                    class="linkrefinto"
-                    href="https://www.linkedin.com/in/igor-arapov"
-                    >Igor Arapov</a
-                  >. I have been trading financial markets since 2013. Over that
-                  time I kept the methods I actually rely on and compiled them
-                  in this course. No unnecessary theory, only what I use in my
-                  own live trading.
-                </p>
-                <br />
-                <div
-                  id="video2"
-                  style="
-                    position: relative;
-                    padding-bottom: 56.25%;
-                    height: 0;
-                    overflow: hidden;
-                  "
-                >
-                  <iframe
-                    src="https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq"
-                    title="Trading Course for Beginners | From Theory to Your First Trade"
-                    style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      width: 100%;
-                      height: 100%;
-                      border: 0;
-                    "
-                    allowfullscreen
-                  >
-                  </iframe>
-                </div>
+                
                 <br />
                 <!-- ============================================================ -->
                 <!-- A1. INTRODUCTION                                              -->
@@ -359,7 +318,8 @@
                   </li>
                   <li>
                     <strong>Psychology and Risk Management</strong> — position
-                    sizing, fear and greed, indicators, fundamental analysis
+                    sizing, fear and greed, cognitive biases, indicators,
+                    fundamental analysis
                   </li>
                   <li>
                     <strong>Trading System</strong> — three live trade
@@ -376,6 +336,21 @@
                     mathematical expectation, transition to a live account
                   </li>
                 </ol>
+                <p>
+                  This roadmap follows the same logic as the video course
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=ZHhJqYzyaO4"
+                    >«Бесплатный курс трейдинга: метод Вайкоффа и объемный
+                    анализ | Smart Money» (Free Trading Course: the Wyckoff
+                    Method and Volume Analysis | Smart Money)</a
+                  >, where in an hour and a half we walk through the same
+                  path from theory to practice — just as a general overview.
+                  Here, in the written course, each of these topics is broken
+                  down in more depth: with separate sections, live chart
+                  examples, and additional videos for each specific topic.
+                </p>
                 <p>
                   The course covers everything you need to get started: from
                   basic concepts to a complete trading system with a positive
@@ -426,90 +401,10 @@
                   lost through impatience is far harder to recover than spending
                   an extra month on preparation.
                 </p>
-                <h2 id="quickstart">What is a Quick Start in Trading</h2>
                 <p>
-                  I want to clarify one thing upfront — a beginner who is only
-                  starting to trade on the market simply cannot physically
-                  become a complete trader, because they lack the skill and
-                  experience, and often the theoretical foundation. This is
-                  exactly what training solves — when a beginner learns from an
-                  experienced trader, they not only gain theoretical knowledge,
-                  but most importantly receive a ready-made
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">trading system</span></dfn
-                  >. A trading system is the fastest possible way to start
-                  trading on financial markets!
-                </p>
-                <p>
-                  A
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">trading system</span></dfn
-                  >
-                  is a set of clear rules for determining when to enter and exit
-                  the market. Minimum deliberation — just a clear plan of
-                  action. When a beginner adopts such a system during training,
-                  they have not yet become an experienced market participant,
-                  but they can already operate on the same level as those who
-                  have been doing this for years — because in essence the
-                  experienced trader's system does the work for them.
-                </p>
-                <p>
-                  The course you are about to study gives you not only the
-                  theoretical foundation but also a
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">complete trading system</span></dfn
-                  >
-                  — all you need to do is practice it on a demo account. In the
-                  "Trader's Trading System" section you will see how the trend
-                  structure of the market changes and what stages it passes
-                  through before changing. I always wait for this complex of
-                  factors before determining which direction to open trades — if
-                  you do the same, you will reach practice as quickly as
-                  possible!
-                </p>
-                <h2 id="how">How to Work Through the Course</h2>
-                <p>
-                  The course consists of 31 sections — arranged sequentially
-                  from the basics to
-                  <a
-                    class="linkrefinto"
-                    href="https://arapov.trade/en/freestudying/practic"
-                    >practice</a
-                  >. Each section includes theory and how it is applied in
-                  practice to forecast the market. In this course I do not cover
-                  the operation of trading terminals, as there are many of them,
-                  but they all share a similar operating principle — the trader
-                  must buy or sell an asset through a broker or
-                  <a
-                    class="linkrefinto"
-                    href="https://arapov.trade/en/freestudying/how-exchange-works"
-                    >exchange</a
-                  >
-                  in order to profit from the price difference.
-                </p>
-                <p>
-                  We will study only the key principles of technical analysis
-                  which you can then practice on a demo account. All general
-                  <a
-                    class="linkrefinto"
-                    href="https://arapov.trade/en/freestudying"
-                    >trading theory</a
-                  >
-                  is outside the scope of this course, but it is available in
-                  the articles on the site and you can always refer to it if you
-                  want to learn more.
-                </p>
-                <p>
-                  I deliberately limit the amount of information at the start,
-                  because over many years of teaching trading I have noticed
-                  that beginners struggle with the specific terminology of this
-                  profession, which in turn slows down the learning process and
-                  takes them away from the goal.
-                </p>
-                <p>
-                  The step-by-step plan is in place — now we need the tool. Let
-                  us open the terminal and learn how to read the chart we will
-                  be working with throughout this course.
+                  The plan is set — now we need the tool. Let us open the
+                  terminal and learn how to read the chart we will be working
+                  with throughout this course.
                 </p>
                 <br />
                 <!-- ============================================================ -->
@@ -972,7 +867,164 @@
                   longs from support levels. This is the same logic we cover in
                   the market phases section.
                 </p>
+                <p>
+                  Long and short define the direction of a trade. But before
+                  opening the trade itself, we need the last piece of basic
+                  exchange mechanics — how you actually place a buy or sell
+                  instruction: the types of exchange orders.
+                </p>
                 <br />
+                <h2 id="ordertypes">Types of Exchange Orders</h2>
+                <div class="flex">
+                  <img
+                    class="pictureImg"
+                    loading="lazy"
+                    src="/assets/img/content/ordettypes_en1.png"
+                    alt="Types of Exchange Orders — Market and Pending"
+                  />
+                </div>
+                <p>
+                  An
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">order</span></dfn
+                  >
+                  is an instruction to the broker to buy or sell an asset. All
+                  orders fall into two main types: market and pending.
+                </p>
+                <h4>Market Order</h4>
+                <p>
+                  A
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">market order</span></dfn
+                  >
+                  is executed immediately at the current market price. Two
+                  types:
+                </p>
+                <ul>
+                  <li><strong>Buy</strong> — purchase at the current price</li>
+                  <li><strong>Sell</strong> — sell at the current price</li>
+                </ul>
+                <p>
+                  Advantage — instant execution. Disadvantage — the price may
+                  differ from expected due to
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">slippage</span></dfn
+                  >, especially during major news releases when the order book
+                  thins out.
+                </p>
+                <h4>Pending Order</h4>
+                <p>
+                  A
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">pending order</span></dfn
+                  >
+                  is only executed when price reaches a specified level. Three
+                  categories:
+                </p>
+                <p><strong>Limit:</strong></p>
+                <ul>
+                  <li>
+                    <strong>Buy Limit</strong> — buy below the current price.
+                    Used when the trader expects price to first dip to the
+                    required level before moving up.
+                  </li>
+                  <li>
+                    <strong>Sell Limit</strong> — sell above the current price.
+                    Used when the trader expects price to rise to a resistance
+                    level and reverse downward.
+                  </li>
+                </ul>
+                <p><strong>Stop:</strong></p>
+                <ul>
+                  <li>
+                    <strong>Buy Stop</strong> — buy above the current price.
+                    Used to enter in the direction of the impulse when a
+                    resistance level breaks. This is the order type that
+                    triggers when price breaks a PCL upward.
+                  </li>
+                  <li>
+                    <strong>Sell Stop</strong> — sell below the current price.
+                    Used to enter in the direction of the impulse when a support
+                    level breaks. This is the order type that triggers when
+                    price breaks a PCL downward.
+                  </li>
+                </ul>
+                <p><strong>Stop Limit:</strong></p>
+                <ul>
+                  <li>
+                    <strong>Buy Stop Limit</strong> — a combined order:
+                    activates as a Stop above the market, executes as a Limit.
+                    Provides control over the execution price when a level
+                    breaks.
+                  </li>
+                  <li>
+                    <strong>Sell Stop Limit</strong> — the same, but for selling
+                    below the market.
+                  </li>
+                </ul>
+                <p>
+                  This whole mechanism is broken down on a real terminal in the
+                  video
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=Y4WZAl34jbc"
+                    >«Как устроена биржа: ордера, фьючерсы, шорт и торговые
+                    сессии» (How the Exchange Works: Orders, Futures, Short
+                    Selling and Trading Sessions)</a
+                  >.
+                </p>
+                <h4>The Order Book — How Pending Orders Look</h4>
+                <div class="flex">
+                  <img
+                    class="pictureImg"
+                    loading="lazy"
+                    src="/assets/img/content/ordettypes_en2.png"
+                    alt="Order Book — Bid, Ask, Last, Limit Buy and Sell Orders"
+                  />
+                </div>
+                <p>
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Bid price</span></dfn
+                  >
+                  — the best buy price: the maximum price buyers are willing to
+                  pay right now.
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Ask price</span></dfn
+                  >
+                  — the best sell price: the minimum price sellers are willing
+                  to accept. The difference between Bid and Ask is the spread.
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Last price</span></dfn
+                  >
+                  — the price of the most recently completed trade.
+                </p>
+                <p>
+                  The key thing to understand schematically: pending orders act
+                  as a "barrier" to price movement in either direction.
+                </p>
+                <h4>Example of How Market Orders Affect Price</h4>
+                <div class="flex">
+                  <img
+                    class="pictureImg"
+                    loading="lazy"
+                    src="/assets/img/content/ordettypes_en3.png"
+                    alt="Schematic of Pending Order Placement Relative to Current Price"
+                  />
+                </div>
+                <p>
+                  Looking at this picture it is immediately clear that limit
+                  buyers are preventing price from moving downward, while limit
+                  sellers are preventing price from moving upward. On this logic
+                  we will build the next principle for working with levels and
+                  market liquidity.
+                </p>
+                <p>
+                  The mechanics of orders are now clear. The last piece of
+                  basic exchange infrastructure is leverage, which determines
+                  how much volume you can actually trade with the capital you
+                  have.
+                </p>
                 <h2 id="levarage">What is Leverage in Trading</h2>
                 <p>
                   Before opening a live account with a broker, you need to fully
@@ -1334,7 +1386,17 @@
                 </p>
                 <p>
                   We have covered what a trend looks like structurally — impulse
-                  waves, pullbacks, weakening. But structure alone does not
+                  waves, pullbacks, weakening. The whole topic of levels,
+                  patterns and false breaks is broken down on real charts in
+                  the video
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=hch9D_3hVrg"
+                    >«Технический анализ с нуля: уровни, паттерны и ложный
+                    пробой» (Technical Analysis from Scratch: Levels,
+                    Patterns and False Breakouts)</a
+                  >. But structure alone does not
                   answer the main question: who is behind this movement? This is
                   exactly where technical analysis ends and volume analysis
                   begins — the tool that lets you see not just the form of a
@@ -1407,149 +1469,21 @@
                   professional activity.
                 </p>
                 <p>
-                  Volume shows the activity of professionals. To understand
-                  exactly how they act — we need to understand the mechanics of
-                  orders: it is orders that create the levels and volume spikes
-                  we see on the chart.
-                </p>
-                <h2 id="ordertypes">Types of Exchange Orders</h2>
-                <div class="flex">
-                  <img
-                    class="pictureImg"
-                    loading="lazy"
-                    src="/assets/img/content/ordettypes_en1.png"
-                    alt="Types of Exchange Orders — Market and Pending"
-                  />
-                </div>
-                <p>
-                  An
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">order</span></dfn
-                  >
-                  is an instruction to the broker to buy or sell an asset. All
-                  orders fall into two main types: market and pending.
-                </p>
-                <h4>Market Order</h4>
-                <p>
-                  A
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">market order</span></dfn
-                  >
-                  is executed immediately at the current market price. Two
-                  types:
-                </p>
-                <ul>
-                  <li><strong>Buy</strong> — purchase at the current price</li>
-                  <li><strong>Sell</strong> — sell at the current price</li>
-                </ul>
-                <p>
-                  Advantage — instant execution. Disadvantage — the price may
-                  differ from expected due to
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">slippage</span></dfn
-                  >, especially during major news releases when the order book
-                  thins out.
-                </p>
-                <h4>Pending Order</h4>
-                <p>
-                  A
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">pending order</span></dfn
-                  >
-                  is only executed when price reaches a specified level. Three
-                  categories:
-                </p>
-                <p><strong>Limit:</strong></p>
-                <ul>
-                  <li>
-                    <strong>Buy Limit</strong> — buy below the current price.
-                    Used when the trader expects price to first dip to the
-                    required level before moving up.
-                  </li>
-                  <li>
-                    <strong>Sell Limit</strong> — sell above the current price.
-                    Used when the trader expects price to rise to a resistance
-                    level and reverse downward.
-                  </li>
-                </ul>
-                <p><strong>Stop:</strong></p>
-                <ul>
-                  <li>
-                    <strong>Buy Stop</strong> — buy above the current price.
-                    Used to enter in the direction of the impulse when a
-                    resistance level breaks. This is the order type that
-                    triggers when price breaks a PCL upward.
-                  </li>
-                  <li>
-                    <strong>Sell Stop</strong> — sell below the current price.
-                    Used to enter in the direction of the impulse when a support
-                    level breaks. This is the order type that triggers when
-                    price breaks a PCL downward.
-                  </li>
-                </ul>
-                <p><strong>Stop Limit:</strong></p>
-                <ul>
-                  <li>
-                    <strong>Buy Stop Limit</strong> — a combined order:
-                    activates as a Stop above the market, executes as a Limit.
-                    Provides control over the execution price when a level
-                    breaks.
-                  </li>
-                  <li>
-                    <strong>Sell Stop Limit</strong> — the same, but for selling
-                    below the market.
-                  </li>
-                </ul>
-                <h4>The Order Book — How Pending Orders Look</h4>
-                <div class="flex">
-                  <img
-                    class="pictureImg"
-                    loading="lazy"
-                    src="/assets/img/content/ordettypes_en2.png"
-                    alt="Order Book — Bid, Ask, Last, Limit Buy and Sell Orders"
-                  />
-                </div>
-                <p>
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">Bid price</span></dfn
-                  >
-                  — the best buy price: the maximum price buyers are willing to
-                  pay right now.
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">Ask price</span></dfn
-                  >
-                  — the best sell price: the minimum price sellers are willing
-                  to accept. The difference between Bid and Ask is the spread.
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">Last price</span></dfn
-                  >
-                  — the price of the most recently completed trade.
-                </p>
-                <p>
-                  The key thing to understand schematically: pending orders act
-                  as a "barrier" to price movement in either direction.
-                </p>
-                <h4>Example of How Market Orders Affect Price</h4>
-                <div class="flex">
-                  <img
-                    class="pictureImg"
-                    loading="lazy"
-                    src="/assets/img/content/ordettypes_en3.png"
-                    alt="Schematic of Pending Order Placement Relative to Current Price"
-                  />
-                </div>
-                <p>
-                  Looking at this picture it is immediately clear that limit
-                  buyers are preventing price from moving downward, while limit
-                  sellers are preventing price from moving upward. On this logic
-                  we will build the next principle for working with levels and
-                  market liquidity.
-                </p>
-                <p>
-                  Now that the mechanics of orders are understood, let us apply
-                  them to the real market. It is precisely the interaction of
-                  large capital with pending orders that creates the explosive
-                  price movements we will analyze next.
+                  Volume shows the activity of professionals — the full
+                  breakdown of volume analysis and accumulation phases is in
+                  the video
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=15GVAkZI6DI"
+                    >«Метод Вайкоффа с нуля: объёмный анализ, цена и
+                    стоимость, фазы накопления» (The Wyckoff Method from
+                    Scratch: Volume Analysis, Price and Value, Accumulation
+                    Phases)</a
+                  >. To understand exactly how professional capital acts — we
+                  need to understand the mechanics of orders: it is orders
+                  that create the levels and volume spikes we see on the
+                  chart.
                 </p>
                 <br />
                 <!-- ============================================================ -->
@@ -1636,7 +1570,16 @@
                   >. For us as traders, the levels at which such explosive price
                   movements occur are of special importance — they are excellent
                   starting points for identifying market imbalance and the
-                  beginning of a trend.
+                  beginning of a trend. I go deeper into liquidity, order
+                  blocks and large-capital manipulation in the video
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=4Gxguf2Gm2M"
+                    >«Smart Money с нуля: ликвидность, ордер-блоки и
+                    манипуляции крупного капитала» (Smart Money from Scratch:
+                    Liquidity, Order Blocks and Big-Capital Manipulation)</a
+                  >.
                 </p>
                 <h2 id="wyckoff">The Wyckoff Method</h2>
                 <p>
@@ -1653,7 +1596,17 @@
                   — a market analysis system developed by Richard Wyckoff in the
                   early 20th century. The core idea: the market is controlled by
                   large players (banks, funds, market makers), and their actions
-                  leave traces on the chart through price and volume.
+                  leave traces on the chart through price and volume. If you
+                  want to go through the whole topic in one sitting, there is
+                  a separate
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=ZHhJqYzyaO4"
+                    >free course «Бесплатный курс трейдинга: метод Вайкоффа и
+                    объемный анализ | Smart Money» (Free Trading Course: the
+                    Wyckoff Method and Volume Analysis | Smart Money)</a
+                  >.
                 </p>
                 <h2 id="effort">
                   The Effort vs Result Principle in the Wyckoff Method
@@ -1951,6 +1904,92 @@
                   important to change your mindset. Trading can be enjoyable,
                   but the primary goal of professional trading is to generate
                   profit.
+                </p>
+                <h2 id="cognitivebiases">Cognitive Biases in Trading</h2>
+                <p>
+                  Beyond emotional traps, a trader's decisions are
+                  systematically shaped by cognitive biases — persistent
+                  deviations from rational thinking. The most studied one is
+                  the
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">disposition effect</span></dfn
+                  >: a trader rushes to lock in a small profit for the
+                  feeling of "winning," but holds onto a losing position
+                  because closing it means admitting a mistake. Researchers
+                  estimate this "steals" more than 4% of annual returns, and
+                  the probability of selling a winning position is 50%
+                  higher than selling a losing one.
+                </p>
+                <p>
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Overconfidence</span></dfn
+                  >
+                  leads traders to overestimate their ability to forecast
+                  the market — resulting in excessive trading activity and
+                  underestimated risk; once commissions and spread are
+                  factored in, the result ends up worse than a passive
+                  investor's. Closely related is
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">illusion of control</span></dfn
+                  >
+                  — the belief that "reading the chart" allows one to
+                  predict price movement, an illusion only reinforced by
+                  platforms packed with dozens of indicators that create the
+                  appearance of scientifically grounded forecasts.
+                </p>
+                <p>
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Confirmation bias</span></dfn
+                  >
+                  drives traders to seek out only signals that confirm an
+                  already-open position, ignoring exit signals — social
+                  media, financial news, and trader communities only
+                  amplify this effect.
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">Anchoring bias</span></dfn
+                  >
+                  ties decisions to the entry price or past highs instead of
+                  new information, while
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">herding behavior</span></dfn
+                  >
+                  pushes traders to buy overvalued assets along with the
+                  crowd — amplifying overall market volatility.
+                </p>
+                <h2 id="reducingbias">
+                  How to Reduce the Impact of Cognitive Biases
+                </h2>
+                <p>
+                  Cognitive biases cannot be eliminated entirely — but their
+                  impact on specific decisions can be reduced. A formalized
+                  trading system with mechanical entry and exit rules works
+                  directly against the disposition effect: a stop-loss set
+                  in advance acts as a self-control device and prevents
+                  delaying the acceptance of a loss.
+                </p>
+                <p>
+                  A second working tool is a trading journal that records
+                  not just the financial outcome but the psychological state
+                  at the moment of the decision: regularly reviewing the
+                  journal reveals a trader's own recurring mistakes, rather
+                  than abstract mistakes made by "traders in general." This
+                  is complemented by financial literacy — understanding the
+                  random nature of short-term price moves reduces
+                  overtrading and the illusion of control, while fully
+                  algorithmic trading based on predefined rules removes the
+                  emotional component from trade execution.
+                </p>
+                <p>
+                  A detailed breakdown of these mechanisms and statistics
+                  for each bias is available in the article
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://doi.org/10.32702/2306-6814.2026.4.96"
+                    >"Psychology of Investment Decisions: Cognitive Biases
+                    of Retail Traders in Financial Markets"</a
+                  >, co-authored with Professor Inna Sytnyk (journal
+                  "Investments: Practice and Experience," No. 4, 2026).
                 </p>
                 <h2 id="indicatorsInTrading">About Indicators in Trading</h2>
                 <p>
@@ -2421,34 +2460,6 @@
                   trader a mathematical edge over the distance of trades.
                 </p>
                 <p>
-                  In joint work with Professor
-                  <a
-                    class="linkrefinto"
-                    target="_blank"
-                    href="https://nuft.edu.ua/nnieiy/kafedra-et/"
-                    >Inna Sytnyk</a
-                  >
-                  we thoroughly systematized the main
-                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                    ><span itemprop="name">cognitive biases</span></dfn
-                  >
-                  of retail traders — this topic has been well studied by Nobel
-                  laureates ("<a
-                    target="_blank"
-                    class="linkrefinto"
-                    href="https://doi.org/10.32702/2306-6814.2026.4.96"
-                    >Psychology of Investment Decisions: Cognitive Biases of
-                    Retail Traders in Financial Markets</a
-                  >," journal "Investments: Practice and Experience," No. 4,
-                  2026, DOI: 10.32702/2306-6814.2026.4.96, UDC 336.76:159.9).
-                  Most of these biases manifest precisely during moments of
-                  uncertainty — when the trader cannot calmly accept that the
-                  stop was hit or profit did not reach the target. The key
-                  conclusion: psychology fundamentally works against the retail
-                  trader — and the first thing a trader must do is learn not to
-                  let emotions influence trading decisions.
-                </p>
-                <p>
                   The bottom line: exiting a position is not about finding the
                   ideal point on a chart. It is about constant acceptance of
                   uncertainty and the
@@ -2515,7 +2526,17 @@
                 <p>
                   These calculations show how effective the 1:3 model is! If you
                   select trades at this ratio, even being right only one time in
-                  three trades still yields a positive result!
+                  three trades still yields a positive result! Why drawdowns
+                  hurt more than winrate does — and why the math still works
+                  out — is covered in the video
+                  <a
+                    target="_blank"
+                    class="linkrefinto"
+                    href="https://www.youtube.com/watch?v=5PLGouidw-A"
+                    >«Почему теряют депозит: риск-менеджмент, психология и
+                    математическое ожидание» (Why Traders Lose Their Deposit:
+                    Risk Management, Psychology and Expected Value)</a
+                  >.
                 </p>
                 <br />
                 <!-- ============================================================ -->
