@@ -58,7 +58,7 @@ export class HomeRuBlogFiftyFourComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Графические паттерны в трейдинге | Arapov.trade',
+      'Графические паттерны в трейдинге: что это и как их читать',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -56,7 +56,7 @@ export class HomeUkBlogTwentyEightComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Фундаментальний аналіз ринку | Arapov.trade');
+    this.titleService.setTitle('Фундаментальний аналіз: як аналізувати ринки');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

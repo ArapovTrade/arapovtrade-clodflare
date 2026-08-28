@@ -57,7 +57,7 @@ export class HomeRuBlogTenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Арбитраж криптовалют | Arapov.trade');
+    this.titleService.setTitle('Арбитраж криптовалют: как работает | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

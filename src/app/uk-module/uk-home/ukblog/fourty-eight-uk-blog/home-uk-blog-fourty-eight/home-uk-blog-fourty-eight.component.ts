@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Хвилі Елліотта: основи та структура | Arapov.trade',
+      'Теорія хвиль Елліотта: правила і підрахунок хвиль',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

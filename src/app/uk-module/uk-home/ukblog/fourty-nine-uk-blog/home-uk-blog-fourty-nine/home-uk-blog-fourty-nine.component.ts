@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Рівні Фібоначчі в технічному аналізі | Arapov.trade',
+      'Що таке рівні Фібоначчі | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

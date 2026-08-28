@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Управління угодою: вхід, супровід, вихід | Arapov.trade',
+      'Управління угодою: як вести відкриті позиції | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

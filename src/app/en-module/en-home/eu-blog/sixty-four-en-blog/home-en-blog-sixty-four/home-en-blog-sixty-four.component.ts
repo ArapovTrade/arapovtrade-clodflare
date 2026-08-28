@@ -54,7 +54,7 @@ export class HomeEnBlogSixtyFourComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading System That Works — Real Examples with Entry & Exit Rules',
+      'Trading Strategies That Work | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

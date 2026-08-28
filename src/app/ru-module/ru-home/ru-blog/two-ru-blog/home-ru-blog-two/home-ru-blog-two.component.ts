@@ -58,7 +58,7 @@ export class HomeRuBlogTwoComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Пулы ликвидности: что это и как работают | Arapov.trade',
+      'Что такое пул ликвидности и как его использовать в трейдинге',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({

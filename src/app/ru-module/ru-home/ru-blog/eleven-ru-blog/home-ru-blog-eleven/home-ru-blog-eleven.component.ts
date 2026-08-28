@@ -57,7 +57,7 @@ export class HomeRuBlogElevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Основы криптовалют для начинающих | Arapov.trade',
+      'Основы криптовалют для новичков | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

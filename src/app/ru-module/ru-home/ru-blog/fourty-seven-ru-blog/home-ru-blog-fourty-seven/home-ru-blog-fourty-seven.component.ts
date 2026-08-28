@@ -57,7 +57,7 @@ export class HomeRuBlogFourtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Индикатор MACD: сигналы и дивергенции | Arapov.trade',
+      'Индикатор MACD: описание и применение в трейдинге',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

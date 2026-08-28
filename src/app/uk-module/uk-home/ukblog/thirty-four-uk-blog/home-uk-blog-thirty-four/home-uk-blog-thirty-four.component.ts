@@ -56,7 +56,7 @@ export class HomeUkBlogThirtyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Види ордерів на біржі | Arapov.trade');
+    this.titleService.setTitle('Типи ордерів у трейдингу: маркет, ліміт, стоп');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 

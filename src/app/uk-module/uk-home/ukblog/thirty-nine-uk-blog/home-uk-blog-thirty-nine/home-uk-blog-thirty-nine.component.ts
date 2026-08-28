@@ -57,7 +57,7 @@ export class HomeUkBlogThirtyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Управління ризиками в трейдингу | Arapov.trade',
+      'Ризик-менеджмент у трейдингу: правила, які працюють',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

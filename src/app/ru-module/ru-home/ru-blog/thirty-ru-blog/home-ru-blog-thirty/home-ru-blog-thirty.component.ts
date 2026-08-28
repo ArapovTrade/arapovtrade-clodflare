@@ -56,7 +56,7 @@ export class HomeRuBlogThirtyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Деривативы, фьючерсы и спот | Arapov.trade');
+    this.titleService.setTitle('Спот, фьючерсы и деривативы: в чём разница');
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
       name: 'description',

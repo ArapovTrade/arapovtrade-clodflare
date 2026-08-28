@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyNineComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Облігації: купон, номінал, дохідність | Arapov.trade',
+      'Облігації: як працюють інвестиції з фіксованим доходом',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

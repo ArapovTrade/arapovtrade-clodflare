@@ -57,7 +57,7 @@ export class HomeUkBlogFiveteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Криптостейкінг: переваги та ризики | Arapov.trade',
+      'Крипто-стейкінг: що це і як заробити | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

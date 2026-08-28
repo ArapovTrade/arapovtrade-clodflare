@@ -55,7 +55,7 @@ export class HomeEuBlogThirtyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Market Microstructure: Order Book and Tape | Arapov.trade',
+      'Market Microstructure Explained for Traders',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

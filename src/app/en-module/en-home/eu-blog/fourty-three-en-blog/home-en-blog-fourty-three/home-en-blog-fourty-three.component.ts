@@ -55,7 +55,7 @@ export class HomeEnBlogFourtyThreeComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Trading System: How to Build and Optimize | Arapov.trade',
+      'How to Build a Trading System | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

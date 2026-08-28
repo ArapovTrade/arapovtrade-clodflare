@@ -57,7 +57,7 @@ export class HomeUkBlogTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Пули ліквідності: що це і як працюють | Arapov.trade',
+      'Зони ліквідності в трейдингу: де полюють на стопи',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

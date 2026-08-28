@@ -54,7 +54,7 @@ export class HomeEnBlogFourtyTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Styles: Scalping, Day Trading, Swing | Arapov.trade',
+      'Trading Styles Compared: Scalping, Day, Swing, Position',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

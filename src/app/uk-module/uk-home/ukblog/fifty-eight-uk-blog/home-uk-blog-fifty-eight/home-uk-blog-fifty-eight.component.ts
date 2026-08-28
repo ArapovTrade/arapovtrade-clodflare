@@ -54,7 +54,7 @@ export class HomeUkBlogFiftyEightComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Індикатор Ішимоку: хмара Кумо | Arapov.trade');
+    this.titleService.setTitle('Що таке хмара Ішимоку | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

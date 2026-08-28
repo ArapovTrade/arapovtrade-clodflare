@@ -54,7 +54,7 @@ export class HomeEnBlogTwentyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Bonds: Coupon, Face Value, Yield | Arapov.trade',
+      'Bonds Explained: How Fixed Income Investing Works',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

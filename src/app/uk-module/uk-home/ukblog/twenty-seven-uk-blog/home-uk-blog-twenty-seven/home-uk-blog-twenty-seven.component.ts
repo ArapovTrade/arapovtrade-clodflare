@@ -57,7 +57,7 @@ export class HomeUkBlogTwentySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгівля активами: золото, нафта, індекси | Arapov.trade',
+      'Що можна торгувати: активи для трейдингу | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -57,7 +57,7 @@ export class HomeRuBlogFiftyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Полосы Боллинджера | Arapov.trade');
+    this.titleService.setTitle('Полосы Боллинджера: как использовать их в трейдинге');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

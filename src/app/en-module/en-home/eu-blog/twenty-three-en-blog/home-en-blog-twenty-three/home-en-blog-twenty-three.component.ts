@@ -54,7 +54,7 @@ export class HomeEnBlogTwentyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Market Volume Analysis | Arapov.trade');
+    this.titleService.setTitle('Volume Analysis in Trading: How to Read It');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

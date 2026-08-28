@@ -54,7 +54,7 @@ export class HomeEnBlogFourtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Elliott Waves: Basics and Structure | Arapov.trade',
+      'Elliott Wave Theory: Rules and Wave Count Guide',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

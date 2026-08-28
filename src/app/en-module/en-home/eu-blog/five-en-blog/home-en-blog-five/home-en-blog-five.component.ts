@@ -55,7 +55,7 @@ export class HomeEnBlogFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'XRP (Ripple) Trading: What Makes Analysis Different | Arapov.trade',
+      'XRP (Ripple) Explained: Use Case and How It Works',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

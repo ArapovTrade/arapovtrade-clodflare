@@ -54,7 +54,7 @@ export class HomeEuBlogFiftyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ichimoku Cloud Indicator: Kumo Cloud | Arapov.trade',
+      'What Is the Ichimoku Cloud? | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

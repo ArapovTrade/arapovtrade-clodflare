@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Усереднення та мартингейл у трейдингу | Arapov.trade',
+      'Стратегія Мартингейл у трейдингу: чи працює вона',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

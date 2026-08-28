@@ -57,7 +57,7 @@ export class HomeRuBlogTwentyFourComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Метод Вайкоффа | Arapov.trade');
+    this.titleService.setTitle('Метод Вайкоффа в трейдинге | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

@@ -54,7 +54,7 @@ export class HomeEnBlogTwentySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Psychology: How to Control Emotions | Arapov.trade',
+      'Trading Psychology: Mastering Emotions and Discipline',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

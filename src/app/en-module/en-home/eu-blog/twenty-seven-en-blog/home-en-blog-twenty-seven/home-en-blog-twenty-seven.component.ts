@@ -55,7 +55,7 @@ export class HomeEnBlogTwentySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Assets: Gold, Oil, Indices | Arapov.trade',
+      'What Can You Trade? Assets Explained',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

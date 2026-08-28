@@ -58,7 +58,7 @@ export class HomeRuBlogFiftySevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Индикатор VWAP: средневзвешенная по объёму | Arapov.trade',
+      'VWAP индикатор: что это в трейдинге и как использовать',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -56,7 +56,7 @@ export class HomeUkBlogNineteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Токеноміка: як оцінити криптопроєкт | Arapov.trade',
+      'Токеноміка: пропозиція, попит і корисність',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

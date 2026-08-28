@@ -56,7 +56,7 @@ export class HomeRuBlogFiftySixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Стратегия пробоя уровня | Arapov.trade');
+    this.titleService.setTitle('Стратегия пробоя в трейдинге: как торговать пробои');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

@@ -64,7 +64,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Курс трейдинга для начинающих с нуля — 32 раздела бесплатно',
+      'Курсы по трейдингу для начинающих | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

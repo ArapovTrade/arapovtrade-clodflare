@@ -57,7 +57,7 @@ export class HomeRuBlogTwentyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Облигации: купон, номинал, доходность | Arapov.trade',
+      'Что такое облигации и как на них заработать | Arapov.trade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

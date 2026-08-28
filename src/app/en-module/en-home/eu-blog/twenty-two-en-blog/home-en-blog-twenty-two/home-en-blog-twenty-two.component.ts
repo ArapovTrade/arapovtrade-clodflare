@@ -53,7 +53,7 @@ export class HomeEnBlogTwentyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('DeFi: Decentralized Finance | Arapov.trade');
+    this.titleService.setTitle('DeFi Explained: Decentralized Finance for Beginners');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

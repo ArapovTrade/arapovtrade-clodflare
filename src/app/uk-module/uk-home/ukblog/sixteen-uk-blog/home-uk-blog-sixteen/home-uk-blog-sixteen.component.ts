@@ -57,7 +57,7 @@ export class HomeUkBlogSixteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ethereum (ETH): як аналізувати та торгувати | Arapov.trade',
+      'Ethereum: що це і як він працює | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

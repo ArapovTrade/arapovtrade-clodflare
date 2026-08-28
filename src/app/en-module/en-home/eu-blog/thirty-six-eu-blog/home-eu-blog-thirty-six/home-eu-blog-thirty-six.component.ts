@@ -55,7 +55,7 @@ export class HomeEuBlogThirtySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Copy Trading: Why It`s Not Really Trading | Arapov.trade',
+      'What Is Copy Trading? How It Works | Arapov.trade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

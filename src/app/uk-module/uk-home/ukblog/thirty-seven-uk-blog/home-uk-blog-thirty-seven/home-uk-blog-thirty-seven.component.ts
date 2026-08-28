@@ -57,7 +57,7 @@ export class HomeUkBlogThirtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгові платформи та брокер: як обрати | Arapov.trade',
+      'Як обрати брокера для трейдингу | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

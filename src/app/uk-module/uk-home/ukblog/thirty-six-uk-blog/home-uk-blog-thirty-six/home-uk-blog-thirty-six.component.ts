@@ -57,7 +57,7 @@ export class HomeUkBlogThirtySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Копітрейдинг: чому це не трейдинг | Arapov.trade',
+      'Що таке копітрейдинг і як він працює | Arapov.trade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

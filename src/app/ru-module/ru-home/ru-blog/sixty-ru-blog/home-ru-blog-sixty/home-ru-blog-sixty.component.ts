@@ -57,7 +57,7 @@ export class HomeRuBlogSixtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Индикаторы в трейдинге: виды и применение | Arapov.trade',
+      'Лучшие индикаторы для трейдинга: обзор и сравнение',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

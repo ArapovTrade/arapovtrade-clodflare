@@ -56,7 +56,7 @@ export class HomeRuBlogThirtyNineComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Управление рисками в трейдинге | Arapov.trade');
+    this.titleService.setTitle('Риск-менеджмент в трейдинге: что это и как работает');
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
       name: 'description',

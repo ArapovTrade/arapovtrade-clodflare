@@ -57,7 +57,7 @@ export class HomeUkBlogFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'XRP (Ripple): особливості аналізу в трейдингу | Arapov.trade',
+      'XRP (Ripple): що це і як працює | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

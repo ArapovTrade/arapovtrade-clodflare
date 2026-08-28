@@ -61,7 +61,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Курс трейдингу для початківців з нуля — 32 розділи безкоштовно',
+      'Курс з трейдингу для початківців | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

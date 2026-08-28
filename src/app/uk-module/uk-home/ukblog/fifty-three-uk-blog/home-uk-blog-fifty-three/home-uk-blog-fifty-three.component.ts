@@ -57,7 +57,7 @@ export class HomeUkBlogFiftyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Як читати графік: основи технічного аналізу | Arapov.trade',
+      'Як читати торгові графіки (гайд для початківців) | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -57,7 +57,7 @@ export class HomeRuBlogThirtyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Микроструктура рынка: стакан и лента | Arapov.trade',
+      'Микроструктура рынка: как формируется цена | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
@@ -281,7 +281,7 @@ export class HomeRuBlogThirtyThreeComponent implements OnInit {
             'Микроструктура рынка: как формируется цена, стакан, спред, ликвидность и маркетмейкер',
           description:
             'Как устроена микроструктура рынка: биржевой стакан, лента принтов, ликвидность и айсберг-ордера. Как читать поток заявок и сделок.',
-           author: {
+          author: {
             '@type': 'Person',
             '@id': 'https://arapov.trade/#person',
             name: 'Igor Arapov',

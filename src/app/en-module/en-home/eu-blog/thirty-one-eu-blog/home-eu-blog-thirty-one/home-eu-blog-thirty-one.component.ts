@@ -55,7 +55,7 @@ export class HomeEuBlogThirtyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Forex Market: How It Works and How to Trade | Arapov.trade',
+      'Forex Trading Guide: How the Currency Market Works',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -58,7 +58,7 @@ export class HomeRuBlogEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Bitcoin в трейдинге: анализ и торговля BTC в 2026 | Arapov.trade',
+      'Как торговать биткоинами на бирже: торговля BTC в 2026',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

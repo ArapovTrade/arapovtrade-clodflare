@@ -57,7 +57,7 @@ export class HomeRuBlogFourtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Управление сделкой: вход, сопровождение, выход | Arapov.trade',
+      'Управление сделкой в трейдинге: что это такое | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

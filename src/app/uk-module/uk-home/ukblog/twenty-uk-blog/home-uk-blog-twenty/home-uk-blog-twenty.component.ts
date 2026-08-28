@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Зберігання криптовалюти: гаманці та безпека | Arapov.trade',
+      'Як безпечно зберігати криптовалюту: гаманці',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

@@ -58,7 +58,7 @@ export class HomeRuBlogFourtyNineComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Уровни Фибоначчи в техническом анализе | Arapov.trade',
+      'Уровни Фибоначчи: что это и как использовать в трейдинге',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -55,7 +55,7 @@ export class HomeEnBlogOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Imbalance and FVG (Fair Value Gap) | Arapov.trade',
+      'Fair Value Gap (FVG): Meaning and How to Trade It',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

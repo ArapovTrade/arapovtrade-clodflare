@@ -58,7 +58,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Торговые платформы и брокер: как выбрать | Arapov.trade',
+      'Как выбрать брокера для трейдинга | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({

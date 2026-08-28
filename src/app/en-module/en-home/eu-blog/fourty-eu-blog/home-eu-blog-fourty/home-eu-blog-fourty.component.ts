@@ -54,7 +54,7 @@ export class HomeEuBlogFourtyComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Trade Management: Entry, Handling, Exit | Arapov.trade',
+      'Trade Management: How to Handle Open Positions',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

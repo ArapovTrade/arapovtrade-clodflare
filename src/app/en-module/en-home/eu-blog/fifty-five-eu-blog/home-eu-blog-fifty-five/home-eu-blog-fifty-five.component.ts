@@ -56,7 +56,7 @@ export class HomeEuBlogFiftyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Candlestick Patterns: How to Read Japanese Candles | Arapov.trade',
+      'Candlestick Patterns Explained: A Guide for Traders',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -56,7 +56,7 @@ export class HomeUkBlogFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Концепція Smart Money (SMC) | Arapov.trade');
+    this.titleService.setTitle('Smart Money Concepts (SMC): повний гайд з трейдингу');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

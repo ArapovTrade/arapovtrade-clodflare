@@ -53,7 +53,7 @@ export class HomeEuBlogFiftyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('ADX Indicator: Trend Strength | Arapov.trade');
+    this.titleService.setTitle('Average Directional Index (ADX) Explained');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

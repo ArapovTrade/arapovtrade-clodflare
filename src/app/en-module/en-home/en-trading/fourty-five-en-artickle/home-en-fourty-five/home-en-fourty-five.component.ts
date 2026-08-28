@@ -61,7 +61,7 @@ export class HomeEnFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Free Trading Course for Beginners — 32 Lessons From Scratch',
+      'Free Online Trading Courses | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyFourComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Метод Вайкоффа: обʼємний аналіз ринку | Arapov.trade',
+      'Метод Вайкоффа: накопичення та розподіл | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

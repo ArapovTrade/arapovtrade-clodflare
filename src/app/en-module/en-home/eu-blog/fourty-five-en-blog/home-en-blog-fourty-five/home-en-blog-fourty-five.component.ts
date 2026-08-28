@@ -55,7 +55,7 @@ export class HomeEnBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'RSI Indicator: Overbought and Oversold | Arapov.trade',
+      'What Is RSI? Relative Strength Index Explained',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

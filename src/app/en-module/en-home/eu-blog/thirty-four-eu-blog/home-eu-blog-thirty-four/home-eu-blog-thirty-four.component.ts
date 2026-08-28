@@ -54,7 +54,7 @@ export class HomeEuBlogThirtyFourComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Types of Orders on the Exchange | Arapov.trade',
+      'Types of Trading Orders Explained | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

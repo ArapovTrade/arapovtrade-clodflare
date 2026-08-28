@@ -55,7 +55,7 @@ export class HomeEuBlogThirtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Platforms and Broker: How to Choose | Arapov.trade',
+      'How to Choose a Trading Broker | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

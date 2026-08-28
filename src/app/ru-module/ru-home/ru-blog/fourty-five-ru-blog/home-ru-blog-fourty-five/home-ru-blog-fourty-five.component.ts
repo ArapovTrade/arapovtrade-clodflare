@@ -57,7 +57,7 @@ export class HomeRuBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Индикатор RSI: перекупленность и перепроданность | Arapov.trade',
+      'Индикатор RSI в трейдинге: формула и торговая стратегия',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

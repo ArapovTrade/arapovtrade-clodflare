@@ -59,7 +59,7 @@ export class HomeUkBlogSixtyFourComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгова система трейдера — практичний посібник з прикладами угод',
+      'Торгові стратегії – практичні приклади для початківців',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

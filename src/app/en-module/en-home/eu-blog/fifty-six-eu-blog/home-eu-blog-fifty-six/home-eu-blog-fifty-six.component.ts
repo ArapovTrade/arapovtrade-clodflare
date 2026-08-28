@@ -54,7 +54,7 @@ export class HomeEuBlogFiftySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Level Breakout Strategy | Arapov.trade');
+    this.titleService.setTitle('Breakout Trading Strategy: Rules and Entry Setups');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

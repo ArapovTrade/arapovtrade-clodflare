@@ -58,7 +58,7 @@ export class HomeRuBlogThreeComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Ордер-блок (Order Block) в трейдинге | Arapov.trade',
+      'Order Block в трейдинге | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

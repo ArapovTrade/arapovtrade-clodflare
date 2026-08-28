@@ -57,7 +57,7 @@ export class HomeUkBlogSevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Bitcoin-ETF: що це і як впливає на ринок | Arapov.trade',
+      'Bitcoin ETF: що це і як працює | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -56,7 +56,7 @@ export class HomeRuBlogFourtySixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Скользящие средние в трейдинге | Arapov.trade');
+    this.titleService.setTitle('Скользящая средняя в трейдинге: как использовать и формула');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

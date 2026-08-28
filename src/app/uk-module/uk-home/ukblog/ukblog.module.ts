@@ -56,7 +56,7 @@ const routes: Routes = [
       //     import('../ukblog/onehundred-ten-uk-blog/onehundred-ten-uk-blog.module').then(
       //       (m) => m.OnehundredTenUkBlogModule,
       //     ),
-      // },
+      // }, 
        {
         path: 'practic', //64 1
         loadChildren: () =>

@@ -53,7 +53,7 @@ export class HomeEnBlogThreeComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Order Block in Trading | Arapov.trade');
+    this.titleService.setTitle('Order Blocks Explained: How to Spot Institutional Zones');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

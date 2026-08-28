@@ -58,7 +58,7 @@ export class HomeRuBlogFiftyThreeComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Как читать график: основы технического анализа | Arapov.trade',
+      ' Как читать графики в трейдинге | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

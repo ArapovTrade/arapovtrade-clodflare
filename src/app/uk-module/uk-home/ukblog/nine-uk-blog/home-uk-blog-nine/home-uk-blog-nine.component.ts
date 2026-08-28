@@ -55,7 +55,7 @@ export class HomeUkBlogNineComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Халвінг біткоїна: що це | Arapov.trade');
+    this.titleService.setTitle('Халвінг біткоїна: вплив на ціну та пропозицію');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

@@ -53,7 +53,7 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Chart Patterns in Trading | Arapov.trade');
+    this.titleService.setTitle('Chart Patterns Guide: Bullish and Bearish Setups');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

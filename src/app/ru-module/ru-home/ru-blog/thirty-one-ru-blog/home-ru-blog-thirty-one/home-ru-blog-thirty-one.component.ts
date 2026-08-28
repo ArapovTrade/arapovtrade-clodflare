@@ -57,7 +57,7 @@ export class HomeRuBlogThirtyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Рынок Forex: как работает и как торговать | Arapov.trade',
+      'Как начать торговать на Форекс | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({

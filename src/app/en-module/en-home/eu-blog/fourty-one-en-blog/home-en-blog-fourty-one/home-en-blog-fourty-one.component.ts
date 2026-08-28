@@ -54,7 +54,7 @@ export class HomeEnBlogFourtyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading for Beginners: Where to Start | Arapov.trade',
+      'How to Start Trading: Step-by-Step Guide',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

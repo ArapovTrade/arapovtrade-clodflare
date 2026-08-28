@@ -57,7 +57,7 @@ export class HomeUkBlogEighteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Стейблкоїни та Tether (USDT) | Arapov.trade');
+    this.titleService.setTitle('Стейблкоїни: як працює Tether (USDT) | Arapov.trade');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

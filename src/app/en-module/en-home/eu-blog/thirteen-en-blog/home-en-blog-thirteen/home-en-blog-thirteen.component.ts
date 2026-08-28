@@ -55,7 +55,7 @@ export class HomeEnBlogThirteenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Crypto Perpetuals and Margin Trading | Arapov.trade',
+      'Perpetual Futures Explained: Crypto Margin Trading',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

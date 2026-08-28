@@ -57,7 +57,7 @@ export class HomeRuBlogFiftyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Индикатор Ишимоку: облако Кумо | Arapov.trade');
+    this.titleService.setTitle('Облако Ишимоку: как использовать индикатор в трейдинге');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

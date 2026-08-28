@@ -54,7 +54,7 @@ export class HomeEnBlogElevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Cryptocurrency Basics for Beginners | Arapov.trade',
+      'Cryptocurrency Explained: A Beginner`s Guide',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

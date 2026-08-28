@@ -57,7 +57,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Бессрочные фьючерсы и маржинальная торговля в крипте | Arapov.trade',
+      'Бессрочные фьючерсы и маржинальная торговля | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

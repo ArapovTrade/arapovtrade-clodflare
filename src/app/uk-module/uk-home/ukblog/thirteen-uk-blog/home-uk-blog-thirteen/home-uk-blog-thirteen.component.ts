@@ -57,7 +57,7 @@ export class HomeUkBlogThirteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Безстрокові ф’ючерси та маржинальна торгівля в крипті | Arapov.trade',
+      'Безстрокові ф`ючерси: маржинальна торгівля криптою',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

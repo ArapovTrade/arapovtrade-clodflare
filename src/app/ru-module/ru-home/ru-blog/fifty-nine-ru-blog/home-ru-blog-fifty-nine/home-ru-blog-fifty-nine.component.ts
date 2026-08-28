@@ -58,7 +58,7 @@ export class HomeRuBlogFiftyNineComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Нейросети и ИИ в трейдинге: что умеют | Arapov.trade',
+      'ИИ в трейдинге: как используется искусственный интеллект',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

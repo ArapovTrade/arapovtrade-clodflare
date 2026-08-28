@@ -56,7 +56,7 @@ export class HomeEnBlogTwentyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Averaging and Martingale in Trading | Arapov.trade',
+      'Martingale Strategy in Trading: Does It Work',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

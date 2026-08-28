@@ -54,7 +54,7 @@ export class HomeEnBlogSixteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'How to Analyze and Trade Ethereum (ETH) | Arapov.trade',
+      'Ethereum Explained: Smart Contracts and How It Works',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

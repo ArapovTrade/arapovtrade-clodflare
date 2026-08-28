@@ -54,7 +54,7 @@ export class HomeEnBlogTwentyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Wyckoff Method | Arapov.trade');
+    this.titleService.setTitle('Wyckoff Method: Accumulation and Distribution Explained');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

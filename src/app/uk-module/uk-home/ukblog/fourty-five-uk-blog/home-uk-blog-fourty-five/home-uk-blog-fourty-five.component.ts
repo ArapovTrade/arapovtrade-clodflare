@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Індикатор RSI: перекупленість і перепроданість | Arapov.trade',
+      'Що таке RSI: індекс відносної сили | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

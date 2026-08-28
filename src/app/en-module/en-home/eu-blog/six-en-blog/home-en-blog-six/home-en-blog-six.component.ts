@@ -53,7 +53,7 @@ export class HomeEnBlogSixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Bitcoin Dominance (BTC.D) | Arapov.trade');
+    this.titleService.setTitle('Bitcoin Dominance Explained: What It Signals');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

@@ -54,7 +54,7 @@ export class HomeEuBlogFiftyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Neural Networks and AI in Trading: What They Can Do | Arapov.trade',
+      'How Is AI Used in Trading? | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

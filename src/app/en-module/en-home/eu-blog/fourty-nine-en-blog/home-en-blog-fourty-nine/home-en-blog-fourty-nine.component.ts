@@ -55,7 +55,7 @@ export class HomeEnBlogFourtyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Fibonacci Levels in Technical Analysis | Arapov.trade',
+      'What Is a Fibonacci Retracement? | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

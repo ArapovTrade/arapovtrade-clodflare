@@ -58,7 +58,7 @@ export class HomeUkBlogThirtyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Трейдер та інвестор: у чому різниця | Arapov.trade',
+      'Трейдинг чи інвестиції: у чому різниця | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

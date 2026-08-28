@@ -54,7 +54,7 @@ export class HomeEuBlogThirtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trader vs Investor: What’s the Difference | Arapov.trade',
+      'Trading vs Investing: Which Is Right for You',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

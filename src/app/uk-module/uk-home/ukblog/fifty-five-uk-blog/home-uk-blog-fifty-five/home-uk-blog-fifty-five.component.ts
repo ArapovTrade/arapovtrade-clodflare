@@ -57,7 +57,7 @@ export class HomeUkBlogFiftyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Свічкові патерни: як читати японські свічки | Arapov.trade',
+      'Свічкові патерни: гайд для трейдерів | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

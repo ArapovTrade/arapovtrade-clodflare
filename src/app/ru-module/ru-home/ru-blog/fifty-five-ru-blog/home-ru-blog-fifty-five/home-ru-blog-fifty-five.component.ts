@@ -57,7 +57,7 @@ export class HomeRuBlogFiftyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Свечные паттерны: как читать японские свечи | Arapov.trade',
+      'Свечные паттерны в трейдинге: что это и как их читать',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

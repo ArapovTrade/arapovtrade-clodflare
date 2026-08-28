@@ -57,7 +57,7 @@ export class HomeRuBlogNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Халвинг биткоина: что это | Arapov.trade');
+    this.titleService.setTitle('Халвинг биткоина: что это и как работает');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

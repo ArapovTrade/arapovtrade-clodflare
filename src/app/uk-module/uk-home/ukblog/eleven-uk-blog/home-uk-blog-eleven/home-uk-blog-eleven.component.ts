@@ -56,7 +56,7 @@ export class HomeUkBlogElevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Основи криптовалют для початківців | Arapov.trade',
+      'Криптовалюта: що це таке — гайд для початківців',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

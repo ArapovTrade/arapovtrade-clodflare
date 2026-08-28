@@ -55,7 +55,7 @@ export class HomeRuBlogFiftyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Индикатор ADX: сила тренда | Arapov.trade');
+    this.titleService.setTitle('Индикатор ADX в трейдинге: как определить силу тренда');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

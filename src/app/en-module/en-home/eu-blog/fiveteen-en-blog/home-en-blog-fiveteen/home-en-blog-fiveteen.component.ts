@@ -54,7 +54,7 @@ export class HomeEnBlogFiveteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Crypto Staking: Advantages and Risks | Arapov.trade',
+      'Crypto Staking Explained: How to Earn Rewards',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

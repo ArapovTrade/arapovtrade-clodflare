@@ -55,7 +55,7 @@ export class HomeEnBlogFourtySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Moving Averages in Trading | Arapov.trade');
+    this.titleService.setTitle('Moving Averages: Types and How to Use Them');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

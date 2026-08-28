@@ -54,7 +54,7 @@ export class HomeEnBlogFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Smart Money Concept (SMC) | Arapov.trade');
+    this.titleService.setTitle('Smart Money Concepts (SMC): Full Trading Guide');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

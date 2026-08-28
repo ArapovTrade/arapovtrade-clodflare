@@ -56,7 +56,7 @@ export class HomeRuBlogEighteenComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Стейблкоины и Tether (USDT) | Arapov.trade');
+    this.titleService.setTitle('Стейблкоин Tether (USDT) | Arapov.trade');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

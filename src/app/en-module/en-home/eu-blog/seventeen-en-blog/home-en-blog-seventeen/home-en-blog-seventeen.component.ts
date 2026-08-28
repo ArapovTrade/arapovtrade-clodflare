@@ -54,7 +54,7 @@ export class HomeEnBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Memecoins: What They Are and Why It’s a Casino | Arapov.trade',
+      'Memecoins Explained: Hype, Risk and How They Work',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

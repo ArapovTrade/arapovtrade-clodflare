@@ -56,7 +56,7 @@ export class HomeUkBlogFiftyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Смуги Боллінджера | Arapov.trade');
+    this.titleService.setTitle('Що таке смуги Боллінджера | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

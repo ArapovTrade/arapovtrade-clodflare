@@ -57,7 +57,7 @@ export class HomeRuBlogThirtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Трейдер и инвестор: в чём разница | Arapov.trade',
+      'Трейдинг или инвестиции: в чём разница',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

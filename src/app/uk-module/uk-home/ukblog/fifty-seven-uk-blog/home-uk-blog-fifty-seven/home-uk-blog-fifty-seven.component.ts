@@ -57,7 +57,7 @@ export class HomeUkBlogFiftySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Індикатор VWAP: середньозважена за обсягом | Arapov.trade',
+      'Що таке VWAP у трейдингу | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

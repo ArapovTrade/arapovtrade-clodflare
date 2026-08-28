@@ -56,7 +56,7 @@ export class HomeUkBlogFiftyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Нейромережі та ШІ в трейдингу: що вміють | Arapov.trade',
+      'Як штучний інтелект використовують у трейдингу | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

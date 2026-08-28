@@ -60,7 +60,7 @@ export class HomeUkBlogEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Bitcoin у трейдингу: аналіз і торгівля BTC у 2026 | Arapov.trade',
+      'Біткоїн: що це і як він працює у 2026 | Arapov.trade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

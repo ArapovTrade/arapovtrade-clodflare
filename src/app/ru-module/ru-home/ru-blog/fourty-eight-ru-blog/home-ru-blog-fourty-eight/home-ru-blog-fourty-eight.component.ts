@@ -57,7 +57,7 @@ export class HomeRuBlogFourtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Волны Эллиотта: основы и структура | Arapov.trade',
+      'Волны Эллиотта: что это и как применять в трейдинге',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

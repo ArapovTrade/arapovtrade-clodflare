@@ -56,7 +56,7 @@ export class HomeUkBlogTwentyThreeComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Об’ємний аналіз ринку | Arapov.trade');
+    this.titleService.setTitle('Аналіз обʼєму в трейдингу: як його читати');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

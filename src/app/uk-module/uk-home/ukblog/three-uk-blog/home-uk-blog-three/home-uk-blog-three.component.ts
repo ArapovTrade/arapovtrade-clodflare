@@ -57,7 +57,7 @@ export class HomeUkBlogThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ордер-блок (Order Block) у трейдингу | Arapov.trade',
+      'Order Block: що це і як знайти інституційні зони',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

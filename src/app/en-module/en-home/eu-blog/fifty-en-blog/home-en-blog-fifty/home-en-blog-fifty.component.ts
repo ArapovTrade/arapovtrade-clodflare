@@ -53,7 +53,7 @@ export class HomeEnBlogFiftyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Bollinger Bands | Arapov.trade');
+    this.titleService.setTitle('What Are Bollinger Bands? | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

@@ -55,7 +55,7 @@ export class HomeEnBlogFourtySevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'MACD Indicator: Signals and Divergences | Arapov.trade',
+      'What Is MACD? Moving Average Convergence/Divergence',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

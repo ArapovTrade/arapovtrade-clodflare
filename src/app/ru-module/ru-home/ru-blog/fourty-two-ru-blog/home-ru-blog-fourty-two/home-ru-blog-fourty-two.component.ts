@@ -57,7 +57,7 @@ export class HomeRuBlogFourtyTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Стили трейдинга: скальпинг, дейтрейдинг, свинг | Arapov.trade',
+      'Стили трейдинга: скальпинг, дейтрейдинг, свинг, позиционная торговля',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

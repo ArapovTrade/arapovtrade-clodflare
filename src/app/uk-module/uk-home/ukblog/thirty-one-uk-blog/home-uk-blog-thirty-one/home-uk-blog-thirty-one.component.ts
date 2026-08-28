@@ -56,7 +56,7 @@ export class HomeUkBlogThirtyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ринок Forex: як працює та як торгувати | Arapov.trade',
+      'Форекс: як працює валютний ринок | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });

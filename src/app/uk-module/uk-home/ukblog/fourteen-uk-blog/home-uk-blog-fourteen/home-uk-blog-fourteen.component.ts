@@ -57,7 +57,7 @@ export class HomeUkBlogFourteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ризики та скам у криптовалюті: як захиститися | Arapov.trade',
+      'Крипто-шахрайство: на що звертати увагу | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

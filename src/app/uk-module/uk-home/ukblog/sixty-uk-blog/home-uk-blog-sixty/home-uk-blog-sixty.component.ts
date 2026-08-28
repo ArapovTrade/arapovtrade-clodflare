@@ -57,7 +57,7 @@ export class HomeUkBlogSixtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Індикатори в трейдингу: види та застосування | Arapov.trade',
+      'Найкращі індикатори для трейдингу: повний гайд',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

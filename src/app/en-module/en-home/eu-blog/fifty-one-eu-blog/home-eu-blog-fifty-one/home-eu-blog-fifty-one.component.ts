@@ -54,7 +54,7 @@ export class HomeEuBlogFiftyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'ATR Indicator: Market Volatility | Arapov.trade',
+      'What Is Average True Range (ATR)?',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

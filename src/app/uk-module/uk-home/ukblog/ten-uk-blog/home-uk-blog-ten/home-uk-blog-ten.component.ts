@@ -56,7 +56,7 @@ export class HomeUkBlogTenComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Арбітраж криптовалют | Arapov.trade');
+    this.titleService.setTitle('Криптоарбітраж: що це і як на цьому заробляють');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Solana (SOL): гайд по криптовалюті | Arapov.trade',
+      'Solana: що це і як вона працює | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

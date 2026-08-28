@@ -57,7 +57,7 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торговая система: как построить и оптимизировать | Arapov.trade',
+      'Торговая система в трейдинге: что это и как её создать',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

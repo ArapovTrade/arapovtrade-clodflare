@@ -54,7 +54,7 @@ export class HomeEuBlogFiftyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'How to Read a Chart: Technical Analysis Basics | Arapov.trade',
+      'How to Read Trading Charts (Beginner`s Guide)',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

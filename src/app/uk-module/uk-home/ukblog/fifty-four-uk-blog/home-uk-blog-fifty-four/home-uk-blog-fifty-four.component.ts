@@ -56,7 +56,7 @@ export class HomeUkBlogFiftyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Графічні патерни в трейдингу | Arapov.trade');
+    this.titleService.setTitle('Графічні патерни: бичачі та ведмежі формації');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

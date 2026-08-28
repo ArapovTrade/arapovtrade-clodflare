@@ -55,7 +55,7 @@ export class HomeEnBlogTenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Crypto Arbitrage | Arapov.trade');
+    this.titleService.setTitle('Crypto Arbitrage Explained: How Traders Profit');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

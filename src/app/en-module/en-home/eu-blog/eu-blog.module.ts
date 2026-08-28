@@ -34,7 +34,7 @@ const routes: Routes = [
             (m) => m.OnehundredSevenEnBlogModule,
           ),
       },
-      
+       
        {
         path: 'practic', //64 1
         loadChildren: () =>

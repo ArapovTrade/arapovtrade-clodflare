@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Трейдинг для початківців: з чого почати | Arapov.trade',
+      'Як почати торгувати: покроковий гайд | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

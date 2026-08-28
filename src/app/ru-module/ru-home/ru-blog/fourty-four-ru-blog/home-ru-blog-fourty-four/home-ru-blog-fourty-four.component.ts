@@ -56,7 +56,7 @@ export class HomeRuBlogFourtyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Стохастический осциллятор | Arapov.trade');
+    this.titleService.setTitle('Стохастический осциллятор: как применять в трейдинге');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

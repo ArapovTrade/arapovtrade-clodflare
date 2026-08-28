@@ -55,7 +55,7 @@ export class HomeEnBlogNineteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Tokenomics: How to Assess a Crypto Project | Arapov.trade',
+      'Tokenomics Explained: Supply, Demand and Utility',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

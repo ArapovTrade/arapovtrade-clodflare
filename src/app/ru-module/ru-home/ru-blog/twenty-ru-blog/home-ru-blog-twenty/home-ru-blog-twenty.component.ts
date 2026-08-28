@@ -57,7 +57,7 @@ export class HomeRuBlogTwentyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Хранение криптовалюты: кошельки и безопасность | Arapov.trade',
+      'Хранение крипты: кошельки и безопасность | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

@@ -57,7 +57,7 @@ export class HomeUkBlogThirtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Проп-трейдинг: що це і як пройти челендж | Arapov.trade',
+      'Що таке проп-трейдинг: гайд для початківців | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

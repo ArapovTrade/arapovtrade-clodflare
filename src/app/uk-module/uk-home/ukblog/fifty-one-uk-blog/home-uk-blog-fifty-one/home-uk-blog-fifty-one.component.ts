@@ -57,7 +57,7 @@ export class HomeUkBlogFiftyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Індикатор ATR: волатильність ринку | Arapov.trade',
+      'Що таке ATR (середній справжній діапазон) | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

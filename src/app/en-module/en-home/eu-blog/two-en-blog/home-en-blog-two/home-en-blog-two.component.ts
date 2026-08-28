@@ -54,7 +54,7 @@ export class HomeEnBlogTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Liquidity Pools: What They Are and How They Work | Arapov.trade',
+      'Liquidity Pools in Trading: Where Stops Get Hunted',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

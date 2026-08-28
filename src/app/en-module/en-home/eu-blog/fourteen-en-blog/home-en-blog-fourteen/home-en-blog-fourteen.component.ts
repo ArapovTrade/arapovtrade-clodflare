@@ -55,7 +55,7 @@ export class HomeEnBlogFourteenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Crypto Risks and Scams: How to Stay Safe | Arapov.trade',
+      'Crypto Scams: Red Flags to Watch For | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

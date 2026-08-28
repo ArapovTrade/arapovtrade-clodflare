@@ -57,7 +57,7 @@ export class HomeUkBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Мемкоїни: що це і чому це казино | Arapov.trade',
+      'Мемкоїни: хайп, ризики і як вони працюють',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

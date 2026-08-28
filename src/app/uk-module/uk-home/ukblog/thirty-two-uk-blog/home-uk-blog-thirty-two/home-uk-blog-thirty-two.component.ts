@@ -56,7 +56,7 @@ export class HomeUkBlogThirtyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Як працює біржа | Arapov.trade');
+    this.titleService.setTitle('Як працюють біржі | Arapov.trade');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 

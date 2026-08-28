@@ -58,7 +58,7 @@ export class HomeRuBlogFourteenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Риски и скам в криптовалюте: как защититься | Arapov.trade',
+      'Риски в криптовалюте: как защититься | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

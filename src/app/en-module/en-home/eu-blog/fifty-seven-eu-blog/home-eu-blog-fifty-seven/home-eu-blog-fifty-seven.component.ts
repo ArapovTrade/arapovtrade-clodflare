@@ -55,7 +55,7 @@ export class HomeEuBlogFiftySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'VWAP Indicator: Volume Weighted Average Price | Arapov.trade',
+      'What Is VWAP in Trading? | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

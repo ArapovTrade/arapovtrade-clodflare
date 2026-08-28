@@ -57,7 +57,7 @@ export class HomeUkBlogFourtyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгова система: як побудувати та оптимізувати | Arapov.trade',
+      'Як побудувати торгову систему | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

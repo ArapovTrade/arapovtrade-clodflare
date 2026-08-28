@@ -54,7 +54,7 @@ export class HomeEnBlogTwentyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Cryptocurrency Storage: Wallets and Security | Arapov.trade',
+      'How to Store Crypto Safely: Wallets Compared',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

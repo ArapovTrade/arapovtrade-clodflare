@@ -55,7 +55,7 @@ export class HomeEnBlogTwentyOneComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Solana (SOL): Cryptocurrency Guide | Arapov.trade',
+      'Solana Explained: Speed, Fees and How It Works',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

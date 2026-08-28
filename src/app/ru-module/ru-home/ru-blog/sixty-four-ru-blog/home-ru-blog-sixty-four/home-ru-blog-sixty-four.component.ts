@@ -58,7 +58,7 @@ export class HomeRuBlogSixtyFourComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торговая стратегия в трейдинге — практические примеры для начинающих',
+      'Торговые стратегии — практические примеры для начинающих',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

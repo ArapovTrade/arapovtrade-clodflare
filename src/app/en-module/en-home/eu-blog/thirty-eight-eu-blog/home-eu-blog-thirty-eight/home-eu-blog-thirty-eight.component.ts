@@ -55,7 +55,7 @@ export class HomeEuBlogThirtyEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Prop Trading: What It Is and How to Pass a Challenge | Arapov.trade',
+      'What Is Prop Trading? A Beginner`s Guide | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

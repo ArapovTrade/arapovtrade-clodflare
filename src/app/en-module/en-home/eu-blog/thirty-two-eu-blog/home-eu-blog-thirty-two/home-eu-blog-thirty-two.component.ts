@@ -54,7 +54,7 @@ export class HomeEuBlogThirtyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('How an Exchange Works | Arapov.trade');
+    this.titleService.setTitle('How Stock Exchanges Work | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

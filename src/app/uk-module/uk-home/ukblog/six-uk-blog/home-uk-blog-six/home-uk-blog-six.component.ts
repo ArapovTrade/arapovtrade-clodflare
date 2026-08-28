@@ -56,7 +56,7 @@ export class HomeUkBlogSixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Домінація біткоїна (BTC.D) | Arapov.trade');
+    this.titleService.setTitle('Домінація біткоїна: що це означає | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

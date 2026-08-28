@@ -57,7 +57,7 @@ export class HomeRuBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Мемкоины: что это и почему это казино | Arapov.trade',
+      'Мемкоины: что это и кто на них зарабатывает | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

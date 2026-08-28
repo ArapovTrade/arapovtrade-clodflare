@@ -53,7 +53,7 @@ export class HomeEnBlogTwentyEightComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Fundamental Market Analysis | Arapov.trade');
+    this.titleService.setTitle('Fundamental Analysis: How to Analyze Markets');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',

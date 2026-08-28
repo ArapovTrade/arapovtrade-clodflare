@@ -56,7 +56,7 @@ export class HomeUkBlogThirtyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Мікроструктура ринку: стакан і стрічка | Arapov.trade',
+      'Мікроструктура ринку: пояснення для трейдерів',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
