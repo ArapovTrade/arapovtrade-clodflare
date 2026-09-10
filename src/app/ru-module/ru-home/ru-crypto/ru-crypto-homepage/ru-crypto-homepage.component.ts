@@ -102,7 +102,7 @@ export class RuCryptoHomepageComponent
       setTimeout(() => {
         const element = this.document.getElementById(fragment);
         if (element) {
-          const offset = 80;
+          const offset = 50;
           const top =
             element.getBoundingClientRect().top + window.pageYOffset - offset;
           window.scrollTo({ top, behavior: 'smooth' });

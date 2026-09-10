@@ -581,9 +581,7 @@
   padding: 0;
   font-size: 11px;
 }
-.rectangless_graff-phone-dark, .rectangless_graff-phone-light {
-  display: none;
-}
+ 
 .bitcoin-widget_svg-phone{
   display: none;
 }
@@ -596,10 +594,10 @@
 @media (max-width: 766px) {
   .open-ecosystem {
     padding: 0 20px;
-    margin-bottom: 120px;
+    margin-bottom: 330px;
   }
   .open-ecosystem_title-block {
-    margin-top: 40px;
+    margin-top:70px;
   }
   .open-ecosystem_label {
     width: 220px;
@@ -607,6 +605,7 @@
   }
   .open-ecosystem_header {
     font-size: 38px;
+    margin-top: 40px;
     height: fit-content;
   }
   .open-ecosystem_text {
@@ -615,7 +614,7 @@
   }
   .open-ecosystem_btn {
        width: 227px;
-    margin: 35px auto 0;
+    margin: 45px auto 20px;
   }
  .open-ecosystem_cards{
   margin-top: 35px;
@@ -682,24 +681,13 @@
  .rectangless_graff{
   display: none;
  }
- .rectangless_graff-phone-dark, .rectangless_graff-phone-light{
-          position: absolute;
-        display: block;
-        min-width: 783px;
-        min-height: 289px;
-        left: -204px;
-        top: 78px;
-        width: 100%;
- }
  
-.rectangless_graff-phone-dark svg {
-  width: 100%;
-}
-.rectangless_graff-phone-light svg {
-  width: 100%;
-}
+ 
+ 
 .forex-widget{
-  display: none;
+   
+           top: 762px;
+        left: 110px;
 }
 .spx-widget{
   width: 88px;
@@ -785,6 +773,28 @@ width: 90px;
 }
 
 
+@media (min-width: 402px) and (max-width: 450px) {
+   .open-ecosystem_card{
+    width: 48%;
+    height: 140px;
+    padding: 12px;
+   }
+   .forex-widget[_ngcontent-ng-c2831142186] {
+        top:800px;
+        left: 110px;
+    }
+    .frame_block-title{
+      font-size: 11px;
+    }
+    .frame_block-text{
+      font-size: 9px;
+    }
+    .frame_block-link{
+      font-size: 10px;
+      margin-top: 10px;
+    }
+}
+
 
 
 
@@ -801,6 +811,9 @@ width: 90px;
 
 .desc {
   display: block;
+}
+.what-is-arapov-trade {
+  position: relative; 
 }
 .text-decor{
   font-weight: bolder;
@@ -858,7 +871,7 @@ width: 90px;
   position: absolute;
   width: 3168.693px;
   height: 2063.346px;
-  top: -647.437px;
+  top: 0;
   left: -300px;
   background: url(/assets/redesignArapovTrade/img/BGshapes1.png) no-repeat
     center;
@@ -1010,7 +1023,7 @@ position: absolute;
 .mask-gradient {
      position: absolute;
     width: 100%;
-     height: 800px;
+     height: 750px;
     top: 150px;
 
   left: 0;
@@ -4999,7 +5012,7 @@ margin-top: 30px;
     top: 907px;
   }
    .mask-gradient{
-    height:800px;
+    height:700px;
   }
 }
 @media (min-width: 767px) and (max-width: 900px) {
@@ -5286,24 +5299,24 @@ border-radius: 20px 20px 20px 20px;
 @media (min-width:650px) and (max-width:766px) {
   .mask-gradient{
     height:280px;
-    top: 850px;
+    top: 800px;
   }
 }
 @media (min-width:407px) and (max-width:450px) {
   .mask-gradient{
           height: 294px;
-        top: 1000px;
+        top: 950px;
     }
 }
 @media (min-width:451px) and (max-width:486px) {
   .mask-gradient{
           height: 294px;
-        top: 957px;
+        top: 907px;
     }
 }
 @media (min-width:375px) and (max-width:406px) {
   .mask-gradient{
         height: 328px;
-        top: 1007px;
+        top: 957px;
     }
 }
