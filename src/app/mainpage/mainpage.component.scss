@@ -581,9 +581,7 @@
   padding: 0;
   font-size: 11px;
 }
-.rectangless_graff-phone-dark, .rectangless_graff-phone-light {
-  display: none;
-}
+ 
 .bitcoin-widget_svg-phone{
   display: none;
 }
@@ -596,10 +594,10 @@
 @media (max-width: 766px) {
   .open-ecosystem {
     padding: 0 20px;
-    margin-bottom: 220px;
+    margin-bottom: 330px;
   }
   .open-ecosystem_title-block {
-    margin-top: 40px;
+    margin-top:70px;
   }
   .open-ecosystem_label {
     width: 220px;
@@ -607,6 +605,7 @@
   }
   .open-ecosystem_header {
     font-size: 38px;
+    margin-top: 40px;
     height: fit-content;
   }
   .open-ecosystem_text {
@@ -615,7 +614,7 @@
   }
   .open-ecosystem_btn {
        width: 227px;
-    margin: 35px auto 0;
+    margin: 45px auto 20px;
   }
  .open-ecosystem_cards{
   margin-top: 35px;
@@ -682,24 +681,13 @@
  .rectangless_graff{
   display: none;
  }
- .rectangless_graff-phone-dark, .rectangless_graff-phone-light{
-          position: absolute;
-        display: block;
-        min-width: 783px;
-        min-height: 289px;
-        left: -204px;
-        top: 78px;
-        width: 100%;
- }
  
-.rectangless_graff-phone-dark svg {
-  width: 100%;
-}
-.rectangless_graff-phone-light svg {
-  width: 100%;
-}
+ 
+ 
 .forex-widget{
-  display: none;
+   
+           top: 762px;
+        left: 110px;
 }
 .spx-widget{
   width: 88px;
@@ -785,8 +773,27 @@ width: 90px;
 }
 
 
-
-
+@media (min-width: 402px) and (max-width: 450px) {
+   .open-ecosystem_card{
+    width: 48%;
+    height: 140px;
+    padding: 12px;
+   }
+   .forex-widget[_ngcontent-ng-c2831142186] {
+        top:800px;
+        left: 110px;
+    }
+    .frame_block-title{
+      font-size: 11px;
+    }
+    .frame_block-text{
+      font-size: 9px;
+    }
+    .frame_block-link{
+      font-size: 10px;
+      margin-top: 10px;
+    }
+}
 
 
 
