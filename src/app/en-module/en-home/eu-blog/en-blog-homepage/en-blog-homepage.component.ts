@@ -109,7 +109,7 @@ export class EnBlogHomepageComponent implements OnInit {
     this.paginator.itemsPerPageLabel = '';
     this.lang.setNumber(3);
     this.titleService.setTitle(
-      'Online Trading Training | Free Trading Courses from Igor Arapov',
+      'Free Trading Course for Beginners | Igor Arapov',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -120,7 +120,7 @@ export class EnBlogHomepageComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Free online trading education by Igor Arapov — complete step-by-step course from scratch, analysis of trading strategies, risk management, and practical exercises. Learn trading and cryptocurrencies remotely and for free.',
+        'Learn trading for free with a step-by-step course and 60 articles covering technical and volume analysis, risk management, cryptocurrencies, and trading strategies.',
     });
     this.filteredArticles = this.artickleServ.englishArticles();
     this.enGroups = this.artickleServ.getEnglishGroups();

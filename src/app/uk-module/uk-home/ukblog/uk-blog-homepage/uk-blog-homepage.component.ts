@@ -108,13 +108,13 @@ export class UkBlogHomepageComponent implements OnInit {
     this.paginator.itemsPerPageLabel = '';
     this.lang.setNumber(1);
     this.titleService.setTitle(
-      'Навчання трейдингу онлайн | Безкоштовні курси трейдерів від Ігоря Арапова',
+      'Навчання трейдингу безкоштовно з нуля | Ігор Арапов',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Безкоштовне  навчання трейдингу від Ігоря Арапова — повний покроковий курс з нуля, розбір торгових стратегій, управління ризиками та практичні заняття. Вивчайте трейдинг і криптовалюти дистанційно та безкоштовно.',
+        'Безкоштовне навчання трейдингу з нуля: покроковий курс, 60 статей, технічний та обʼємний аналіз, ризик-менеджмент, криптовалюти й торгові стратегії.',
     });
     this.meta.updateTag({
       name: 'keywords',

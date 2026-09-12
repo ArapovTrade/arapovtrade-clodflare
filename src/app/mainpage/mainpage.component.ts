@@ -50,13 +50,13 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.removeExistingWebPageSchema();
 
     this.titleService.setTitle(
-      'Безкоштовне навчання трейдингу від Ігоря Арапова'
+      'Безкоштовне навчання трейдингу та фінансовим ринкам | Arapov.Trade'
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
+        'Arapov.Trade — безкоштовне навчання трейдингу та фінансовим ринкам: курси, статті, аналіз ринку, ризик-менеджмент, психологія та криптовалюти.',
     });
 
     this.meta.updateTag({
@@ -70,15 +70,15 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
 
 
     this.meta.updateTag({
-      property: 'og:title',
-      content:
-        'Безкоштовне навчання трейдингу від Ігоря Арапова',
-    });
-    this.meta.updateTag({
-      property: 'og:description',
-      content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
-    });
+  property: 'og:title',
+  content: 'Arapov.Trade — безкоштовна платформа з трейдингу',
+});
+
+this.meta.updateTag({
+  property: 'og:description',
+  content:
+    'Безкоштовна освітня екосистема про фінансові ринки: покроковий курс, статті, відео та книги з трейдингу, аналізу ринку й управління ризиками.',
+});
     this.meta.updateTag({ property: 'og:image:width', content: '1200' });
     this.meta.updateTag({ property: 'og:image:height', content: '600' });
     this.meta.updateTag({

@@ -72,7 +72,7 @@ export class UkStudyingHomeComponent
     // this.addWebSiteSchema();
 
     this.titleService.setTitle(
-      'Курси трейдингу онлайн від Ігоря Арапова | Навчання трейдингу з нуля',
+      'Курси трейдингу онлайн з наставником | Ігор Арапов',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
@@ -81,7 +81,7 @@ export class UkStudyingHomeComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Онлайн-курси з трейдингу від Ігоря Арапова — навчання трейдингу з нуля, дистанційно та безкоштовно. Вивчайте технічний та фундаментальний аналіз, торгові стратегії та управління ризиками крок за кроком.',
+        'Навчання трейдингу онлайн з наставником: торгова система, технічний та обʼємний аналіз, метод Вайкоффа, ризик-менеджмент і практика.',
     });
     this.meta.updateTag({
       name: 'keywords',

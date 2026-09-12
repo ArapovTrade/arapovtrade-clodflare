@@ -80,7 +80,7 @@ export class RuStudyingHomeComponent
 
     this.lang.setNumber(2);
     this.titleService.setTitle(
-      'Курсы трейдинга онлайн от Игоря Арапова | Обучение трейдингу с нуля',
+      'Курсы трейдинга онлайн с наставником | Игорь Арапов',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
@@ -89,7 +89,7 @@ export class RuStudyingHomeComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Онлайн-курсы по трейдингу от Игоря Арапова — обучение трейдингу с нуля, дистанционно и бесплатно. Изучайте технический и фундаментальный анализ, торговые стратегии и управление рисками шаг за шагом.',
+        'Обучение трейдингу онлайн с наставником: торговая система, технический и объёмный анализ, метод Вайкоффа, риск-менеджмент и практика.',
     });
     this.meta.updateTag({
       name: 'keywords',

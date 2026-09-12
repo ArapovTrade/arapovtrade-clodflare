@@ -78,7 +78,7 @@ export class RuHomeComponent implements OnInit, AfterViewInit, OnDestroy {
       userMessage: new FormControl('', Validators.required),
     });
     this.titleService.setTitle(
-      'Игорь Арапов — трейдер, автор книг и курса по трейдингу',
+      'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
@@ -92,7 +92,7 @@ export class RuHomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Игорь Арапов — независимый исследователь в области психологии инвестиционных решений и поведенческих финансов, практикующий трейдер с 2013 года, автор 9 книг с ISBN, соавтор рецензируемой статьи, лектор НУХТ',
+        'Игорь Арапов — специалист финансовых рынков и трейдер с 2013 года. Профессиональная подготовка по регулированию рынков капитала, исследования, книги и академическая деятельность.',
     });
     this.meta.updateTag({
       name: 'keywords',

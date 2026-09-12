@@ -70,7 +70,7 @@ export class EnStudyingHomeComponent
 
     this.lang.setNumber(3);
     this.titleService.setTitle(
-      'Online Trading Courses by Igor Arapov | Trading Education from Scratch',
+      'Online Trading Course with a Mentor | Igor Arapov',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
@@ -79,7 +79,7 @@ export class EnStudyingHomeComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Online trading courses by Igor Arapov — learn trading from scratch, remotely and for free. Study technical and fundamental analysis, trading strategies and risk management step by step.',
+        'Learn trading online with a mentor: trading system, technical and volume analysis, the Wyckoff method, risk management and practical training.',
     });
     this.meta.updateTag({
       name: 'keywords',

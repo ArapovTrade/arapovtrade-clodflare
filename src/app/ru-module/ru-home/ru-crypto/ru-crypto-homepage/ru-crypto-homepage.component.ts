@@ -43,13 +43,13 @@ export class RuCryptoHomepageComponent
     this.removeExistingWebPageSchema();
 
     this.titleService.setTitle(
-      'Бесплатное обучение трейдингу от Игоря Арапова',
+      'Бесплатное обучение трейдингу и финансовым рынкам | Arapov.Trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Бесплатный курс по трейдингу Игоря Арапова: 51+ статей и 78+ видео. Изучайте теханализ, риск-менеджмент и торговые стратегии онлайн',
+        'Arapov.Trade — бесплатное обучение трейдингу и финансовым рынкам: курсы, статьи, анализ рынка, риск-менеджмент, психология и криптовалюты.',
     });
 
     this.meta.updateTag({
@@ -65,6 +65,23 @@ export class RuCryptoHomepageComponent
       property: 'og:image',
       content: 'https://arapov.trade/assets/img/photo_mainpage.jpg',
     });
+    this.meta.updateTag({
+
+  property: 'og:title',
+
+  content: 'Arapov.Trade — бесплатная платформа по трейдингу',
+
+});
+
+this.meta.updateTag({
+
+  property: 'og:description',
+
+  content:
+
+    'Бесплатная образовательная экосистема по финансовым рынкам: пошаговый курс, статьи, видео и книги по трейдингу, анализу рынка и управлению рисками.',
+
+});
     this.addWebSiteSchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {

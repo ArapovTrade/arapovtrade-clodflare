@@ -51,12 +51,12 @@ export class EnCryptoHomepageComponent
   ngOnInit() {
     this.removeExistingWebPageSchema();
 
-    this.titleService.setTitle('Free trading education from Igor Arapov');
+    this.titleService.setTitle('Free Trading & Financial Markets Education | Arapov.Trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Igor Arapov`s Free Trading Course: 51+ Articles and 78+ Videos. Study Technical Analysis, Risk Management, and Trading Strategies Online',
+        'Arapov.Trade offers free trading and financial markets education: courses, articles, market analysis, risk management, psychology and crypto.',
     });
 
     this.meta.updateTag({
@@ -64,7 +64,16 @@ export class EnCryptoHomepageComponent
       content:
         'Trading, Trading education , Technical analysis, Financial exchange, Trading system, Igor Arapov',
     });
+    this.meta.updateTag({
+  property: 'og:title',
+  content: 'Arapov.Trade — Free Trading Education Platform',
+});
 
+this.meta.updateTag({
+  property: 'og:description',
+  content:
+    'A free financial markets education ecosystem with a step-by-step trading course, articles, videos and books on market analysis and risk management.',
+});
     this.meta.updateTag({ name: 'datePublished', content: '2025-06-07' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-05-29' });
 

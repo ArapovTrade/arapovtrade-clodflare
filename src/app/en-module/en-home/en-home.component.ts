@@ -75,7 +75,7 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
       userMessage: new FormControl('', Validators.required),
     });
     this.titleService.setTitle(
-      'Igor Arapov — Trader, Author of Trading Books & Course',
+      'Igor Arapov — Financial Markets Specialist | Arapov.Trade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
 
@@ -89,7 +89,7 @@ export class EnHomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Igor Arapov is an independent researcher in the psychology of investment decisions and behavioral finance, a practicing trader since 2013, author of 9 ISBN-registered books, co-author of a peer-reviewed article, and guest lecturer at NUFT.',
+        'Igor Arapov is a financial markets specialist and trader since 2013. Professional training in capital markets regulation, research, books, and academic activity.',
     });
     this.meta.updateTag({
       name: 'keywords',

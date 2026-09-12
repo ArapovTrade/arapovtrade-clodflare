@@ -118,7 +118,7 @@ export class RuBlogHomepageComponent implements OnInit {
     this.paginator.itemsPerPageLabel = '';
 
     this.titleService.setTitle(
-      'Обучение трейдингу онлайн | Бесплатные курсы трейдеров от Игоря Арапова',
+      'Обучение трейдингу бесплатно с нуля | Игорь Арапов',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 
@@ -130,7 +130,7 @@ export class RuBlogHomepageComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Бесплатное обучение трейдингу от Игоря Арапова — полный пошаговый курс с нуля, разбор торговых стратегий, управление рисками и практические занятия. Изучайте трейдинг и криптовалюты дистанционно и бесплатно.',
+        'Бесплатное обучение трейдингу с нуля: пошаговый курс, 60 статей, технический и объёмный анализ, риск-менеджмент, криптовалюты и торговые стратегии.',
     });
 
     this.filteredArticles = this.artickleServ.russianssArticles();

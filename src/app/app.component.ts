@@ -229,19 +229,19 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
           }
         } else if (segments[0] == '') {
           title =
-            'Безкоштовне навчання трейдингу від Ігоря Арапова';
+            'Arapov.Trade — безкоштовна платформа з трейдингу';
         } else if (segments[1] === 'main' && segments[0] === 'ru') {
           title =
-            'Бесплатное обучение трейдингу от Игоря Арапова';
+            'Arapov.Trade — бесплатная платформа по трейдингу';
         } else if (segments[1] === 'main' && segments[0] === 'en') {
           title =
-            'Free trading education from Igor Arapov';
+            'Arapov.Trade — Free Trading Education Platform';
         } else if (segments[1] === 'studying' && segments[0] === 'ru') {
-          title = 'Курсы по трейдингу онлайн | Обучение трейдингу с нуля';
+          title = 'Обучение трейдингу с наставником | Игорь Арапов';
         } else if (segments[1] === 'studying' && segments[0] === 'uk') {
-          title = 'Курси трейдингу онлайн | Навчання трейдингу з нуля';
+          title = 'Навчання трейдингу з наставником | Ігор Арапов';
         } else if (segments[1] === 'studying' && segments[0] === 'en') {
-          title = 'Online Trading Courses | Learn Trading from Scratch';
+          title = 'Trading Course with a Mentor | Igor Arapov';
         } else if (segments[1] === 'books' && segments[0] === 'ru') {
           title = 'Мои книги | Обучение трейдингу с нуля';
         } else if (segments[1] === 'books' && segments[0] === 'uk') {
@@ -356,16 +356,16 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         } else if (segments[1] === 'freestudying') {
           title =
             segments[0] === 'ru'
-              ? 'Обучение трейдингу онлайн | Бесплатные курсы трейдеров от Игоря Арапова'
+              ? 'Бесплатное обучение трейдингу с нуля | Arapov.Trade'
               : segments[0] === 'en'
-                ? 'Online Trading Training | Free Trading Courses from Igor Arapov'
-                : 'Навчання трейдингу онлайн | Безкоштовні курси трейдерів від Ігоря Арапова';
+                ? 'Free Trading Course for Beginners | Arapov.Trade'
+                : 'Безкоштовне навчання трейдингу з нуля | Arapov.Trade';
         } else if (segments[0] === 'uk') {
-          title = 'Навчання трейдингу з нуля безкоштовно | Ігор Арапов';
+          title = 'Ігор Арапов — фахівець у галузі фінансових ринків';
         } else if (segments[0] === 'en') {
-          title = 'Free Trading Training from Scratch | Igor Arapov';
+          title = 'Igor Arapov — Financial Markets Specialist';
         } else {
-          title = 'Обучение трейдингу с нуля бесплатно | Игорь Арапов';
+          title = 'Игорь Арапов — специалист в области финансовых рынков';
         }
 
         let description = '';
@@ -376,13 +376,13 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
             'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн';
         } else if (segments[1] === 'studying' && segments[0] === 'ru') {
           description =
-            'Онлайн-курсы по трейдингу от Игоря Арапова — обучение трейдингу и инвестициям с нуля, дистанционно и бесплатно. Изучайте технический и фундаментальный анализ, торговые стратегии и управление рисками шаг за шагом.';
+            'Персональное обучение трейдингу с практикующим наставником: анализ рынка, торговая система, риск-менеджмент и практика под руководством трейдера.';
         } else if (segments[1] === 'studying' && segments[0] === 'uk') {
           description =
-            'Онлайн-курси з трейдингу від Ігоря Арапова — навчання трейдингу та інвестиціям з нуля, дистанційно та безкоштовно. Вивчайте технічний та фундаментальний аналіз, торгові стратегії та управління ризиками крок за кроком.';
+            'Персональне навчання трейдингу з практикуючим наставником: аналіз ринку, торгова система, ризик-менеджмент і практика під керівництвом трейдера.';
         } else if (segments[1] === 'studying' && segments[0] === 'en') {
           description =
-            'Online trading courses by Igor Arapov — trading and investment education from scratch, remotely and free. Learn technical and fundamental analysis, trading strategies, and risk management step by step.';
+            'Personal trading education with an experienced mentor: market analysis, trading system, risk management and practical training with a trader.';
         } else if (segments[1] === 'books' && segments[0] === 'ru') {
           description =
             'Мои книги по трейдингу | Практические руководства для начинающих и профессионалов от трейдера с 12-летним опытом';
@@ -516,19 +516,19 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         } else if (segments[1] === 'freestudying') {
           description =
             segments[0] === 'ru'
-              ? 'Бесплатное обучение трейдингу от Игоря Арапова — полный пошаговый курс с нуля, разбор торговых стратегий, управление рисками и практические занятия. Изучайте трейдинг и криптовалюты дистанционно и бесплатно.'
+              ? 'Пошаговый курс и библиотека из 60 материалов: от устройства биржи и технического анализа до риск-менеджмента, криптовалют и торговых стратегий.'
               : segments[0] === 'en'
-                ? 'Free online trading education by Igor Arapov — complete step-by-step course from scratch, analysis of trading strategies, risk management, and practical exercises. Learn trading and cryptocurrencies remotely and for free.'
-                : 'Безкоштовне  навчання трейдингу від Ігоря Арапова — повний покроковий курс з нуля, розбір торгових стратегій, управління ризиками та практичні заняття. Вивчайте трейдинг і криптовалюти дистанційно та безкоштовно.';
+                ? 'A step-by-step trading course and library of 60 resources covering market basics, technical analysis, risk management, cryptocurrencies, and trading strategies.'
+                : 'Покроковий курс і бібліотека з 60 матеріалів: від устрою біржі та технічного аналізу до ризик-менеджменту, криптовалют і торгових стратегій.';
         } else if (segments[0] === 'uk') {
           description =
-            'Навчання трейдингу з нуля безкоштовно від Ігоря Арапова — курси трейдингу онлайн, технічний та фундаментальний аналіз, торгівля криптовалютами та валютними парами крок за кроком.';
+            'Практикуючий трейдер з 2013 року, незалежний дослідник та автор книг. Професійна підготовка у сфері регулювання ринків капіталу та управління активами.';
         } else if (segments[0] === 'en') {
           description =
-            'Free trading education from scratch by Igor Arapov — online trading courses, technical and fundamental analysis, trading cryptocurrencies and currency pairs step by step.';
+            'Practicing trader since 2013, independent researcher and author. Professional training in capital markets regulation and institutional investor asset management.';
         } else {
           description =
-            'Обучение трейдингу с нуля бесплатно от Игоря Арапова — онлайн-курсы трейдинга, технический и фундаментальный анализ, торговля криптовалютами и валютными парами шаг за шагом.';
+            'Практикующий трейдер с 2013 года, независимый исследователь и автор книг. Профессиональная подготовка в области регулирования рынков капитала и управления активами.';
         }
 
         const image =
@@ -616,9 +616,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
     // Получаем путь без параметров и якорей
     let path = this.router.url.split('?')[0].split('#')[0];
 
-    // === Особый случай: главная страница ===
-    // '/' → 'https://arapov.trade'
-    // '/ru' → 'https://arapov.trade/ru'  (без слэша в конце)
+    
     if (path === '/' || path === '') {
       this.renderer.setAttribute(canonicalLink, 'href', 'https://arapov.trade');
     } else {
@@ -632,37 +630,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
     this.renderer.appendChild(this.document.head, canonicalLink);
   }
 
-  //FAQ
-  // private addingFaqScript(langcode: string, path: string) {
-  //   const faqSchema = this.faqservise.returnSchema(langcode, path);
-
-  //   const scriptss = this.document.querySelectorAll(
-  //     'script[type="application/ld+json"]',
-  //   );
-  //   let faqScript: HTMLScriptElement | any = null;
-  //   scriptss.forEach((script) => {
-  //     try {
-  //       const jsonContent = JSON.parse(script.textContent || '{}');
-  //       if (jsonContent['@type'] === 'FAQPage') {
-  //         faqScript = script;
-  //       }
-  //     } catch (e) {
-  //       // Игнорируем некорректный JSON
-  //     }
-  //   });
-
-  //   // Если скрипт FAQPage найден, заменяем его
-  //   if (faqScript) {
-  //     faqScript.text = JSON.stringify(faqSchema);
-  //   } else {
-  //     // Если скрипт не найден, создаём новый
-
-  //     const scriptr = this.document.createElement('script');
-  //     scriptr.type = 'application/ld+json';
-  //     scriptr.text = JSON.stringify(faqSchema);
-  //     this.document.head.appendChild(scriptr);
-  //   }
-  // }
+   
 
 //ХЛЕБНЫЕ КРОХИ
   private generateBreadcrumbs() {
