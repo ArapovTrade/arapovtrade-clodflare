@@ -641,57 +641,77 @@
 
       <div class="author-page_main-block_proc-block">
 
-        <div class="proc-block_item">
-         <div
-           class="proc-block_tick"
-           [ngStyle]="{
-             border: isDark
-               ? '3px solid rgba(255, 255, 255, 0.16)'
-               : '3px solid rgba(0, 130, 204, 0.16)',
-           }"
-         >
-           <img
-             [src]="
-               isDark
-                 ? '/assets/redesignArapovTrade/img/tick-dark.png'
-                 : '/assets/redesignArapovTrade/img/tick-light.png'
-             "
-             alt="img"
-           />
-         </div>
+       
+<div class="proc-block_item">
+  <div
+    class="proc-block_tick"
+    [ngStyle]="{
+      border: isDark
+        ? '3px solid rgba(255, 255, 255, 0.16)'
+        : '3px solid rgba(0, 130, 204, 0.16)',
+    }"
+  >
+    <img
+      [src]="
+        isDark
+          ? '/assets/redesignArapovTrade/img/tick-dark.png'
+          : '/assets/redesignArapovTrade/img/tick-light.png'
+      "
+      alt="img"
+    />
+  </div>
+
+  <div class="proc-block_descr">
+    <div
+      class="proc-block_descr-title"
+      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+    >
+      Professional Training
+    </div>
+    <div
+      class="proc-block_descr-text"
+      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+    >
+      In 2026, he completed professional training at the Ukrainian
+      Institute of Stock Market Development under the programme
+      <a
+        [ngStyle]="{
+          color: isDark ? '#fdff8b' : '#0074e6',
+        }"
+        target="_blank"
+        class="linkrefinto"
+        style="text-decoration: underline"
+        href="https://www.instagram.com/p/DdLxP1MjEfO/"
+        >“Fundamentals of Capital Markets Regulation and the Pension
+        System of Ukraine: Institutional Investor Asset Management”.</a
+      >
+
+      The programme covers key topics from the taxonomy of qualification
+      examinations established by the National Securities and Stock
+      Market Commission of Ukraine (NSSMC) for asset management company
+      (AMC) specialists. Certificate OZ No. 2026-018-UA, issued on
+      11 September 2026.
+      <br />
+      <a
+        [ngStyle]="{
+          color: isDark ? '#fdff8b' : '#0074e6',
+        }"
+        target="_blank"
+        class="linkrefinto"
+        style="text-decoration: underline"
+        href="https://www.instagram.com/p/DdcLV5IjIAy/"
+      >
+        “Special Legislation on Capital Markets and Organised Commodity
+        Markets: Institutional Investor Asset Management
+        (Section of Programme III)”</a
+      >. Advanced professional training in the specific legislation
+      governing the activities of institutional investor asset
+      management companies. Certificate No. 193/UA-3.
+    </div>
+  </div>
+</div>
 
 
-         <div class="proc-block_descr">
-           <div
-             class="proc-block_descr-title"
-             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-           >
-            Professional Training
-           </div>
-           <div
-             class="proc-block_descr-text"
-             [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-           >
-              In 2026, completed professional training at the Ukrainian Institute of Stock Market Development in the program
-               <a
-               [ngStyle]="{
-                 color: isDark ? '#fdff8b' : '#0074e6',
-               }"
-               target="_blank"
-               class="linkrefinto"
-               style="text-decoration: underline"
-               href="https://www.instagram.com/p/DdLxP1MjEfO/"
-               >“Fundamentals of Capital Markets Regulation and the Pension System of Ukraine: Institutional Investor Asset Management.”</a>
-             
-
-
-The program covers key topics from the NSSMC qualification examination taxonomy for asset management company (AMC) professionals.
-
-
-Certificate ОЗ No. 2026-018-УА dated September 11, 2026.
-           </div>
-         </div>
-       </div>
 
 
 
@@ -1388,30 +1408,215 @@ Certificate ОЗ No. 2026-018-УА dated September 11, 2026.
 
 
 
-<h3  [ngClass]="{
-         'trading-definition-small': true,
-         'gradient-orange': isDark,
-         'gradient-blue': !isDark,
-       }">Professional Training in Capital Markets and Asset Management</h3>
-       <p  class="trading-definition-text"
-       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
-      
-     In 2026, Igor Arapov completed professional training at the Ukrainian Institute of Stock Market Development under the program “Fundamentals of Capital Markets Regulation and the Pension System of Ukraine: Institutional Investor Asset Management.”
 
+<h3
+  [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }"
+>
+  Professional Training in Capital Markets and Asset Management
+</h3>
 
-The training focused on the institutional side of financial markets — how capital markets function not from the perspective of an individual trader, but from the perspective of professional market participants, asset management companies, and institutional investors.
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  In 2026, Igor Arapov completed specialised professional training at the
+  Ukrainian Institute of Stock Market Development (UIRFR) in
+  capital markets and institutional investor asset management. The training
+  combined the study of the financial market's regulatory framework,
+  specialised legislation, the activities of professional market participants,
+  financial and investment analysis, asset valuation, financial mathematics,
+  and investment risk management.
 
+  The training focused on understanding how financial markets operate from
+  the perspective of professional market participants, particularly
+  asset management companies (AMCs), collective investment institutions,
+  and non-state pension funds.
+</p>
 
-The program covered the fundamentals of the functioning and state regulation of Ukraine’s capital markets, financial instruments, the activities of professional market participants, the principles governing collective investment institutions and non-state pension funds, as well as the specifics of institutional investor asset management.
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">Capital Markets Regulation and Professional Activities</h4>
 
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  The first stage of training focused on the organisation and state
+  regulation of Ukraine's capital markets, financial instruments,
+  the activities of professional market participants, the operating
+  principles of collective investment institutions and non-state pension
+  funds, and the specific features of institutional investor asset
+  management.
 
-Particular attention was given to the regulatory environment in which asset management companies (AMCs) operate and to the professional qualification requirements for their employees. The program includes key topics from Program I (Module I) and selected topics from Program III (Module III) of the NSSMC qualification examinations for asset management professionals.
+  Particular attention was paid to the regulatory environment governing
+  asset management companies, professional qualification requirements
+  for their employees, and the legislation regulating the activities
+  of market participants.
 
+  The programme covered key topics from the examination taxonomy of
+  Programme I (Module I) and selected topics from Programme III
+  (Module III) of the qualification examinations administered by the
+  National Securities and Stock Market Commission of Ukraine (NSSMC).
+</p>
 
-For Igor Arapov, this training complemented many years of practical experience in financial markets. While trading and analytical activities primarily focus on price behavior, liquidity, volume, and trading decision-making, the professional program provided a deeper understanding of another level of the market — its regulation, institutional structure, and mechanisms of professional asset management.
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">
+  Specialised Legislation and Institutional Investor Asset Management
+</h4>
 
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  The next stage of professional training focused on an in-depth
+  study of the specialised legislation governing the activities
+  of institutional investor asset management companies.
 
-The training took place from August 31 to September 11, 2026. Upon completion of the program, the Ukrainian Institute of Stock Market Development issued Certificate ОЗ No. 2026-018-УА dated September 11, 2026.</p>
+  The training covered the legal mechanisms of investment
+  activities, the organisation of asset management, interactions
+  between professional market participants, and the regulatory
+  requirements applicable to asset management companies.
+
+  Studying specialised legislation provided a deeper understanding
+  of the institutional structure of financial markets, the legal
+  foundations of professional asset management, and the specific
+  features of investment institutions operating in Ukraine.
+</p>
+
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">Investment Asset Analysis and Valuation</h4>
+
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  The practice-oriented stage of training focused on methods of
+  asset analysis and valuation used in investment decision-making
+  and institutional investor asset management.
+
+  The programme included the study of three main approaches to
+  tangible asset valuation: the cost, income, and market approaches.
+  For financial assets and businesses, the asset-based, income,
+  and comparative approaches to determining value were examined.
+
+  Particular attention was paid to the valuation of shares and
+  equity stakes, determining the market capitalisation of publicly
+  traded companies, the concept of value-based management
+  (VBM — Value-Based Management), control premiums, and
+  discounts for lack of control.
+
+  Business valuation using the comparative approach included
+  financial multiples such as P/E (price-to-earnings),
+  P/S (price-to-sales), P/BV (price-to-book value),
+  and other economic and statistical indicators.
+
+  The study of these methods aimed to develop a systematic
+  understanding of financial instrument valuation, the factors
+  affecting business value, and the application of valuation
+  results in investment decision-making.
+</p>
+
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">Financial Mathematics and Investment Models</h4>
+
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  A separate training module focused on financial mathematics,
+  the time value of money, and methods for determining
+  investment returns.
+
+  The programme covered the calculation of the present and
+  future value of money, the application of simple and compound
+  interest, cash flow discounting, and the evaluation of
+  alternative investment opportunities.
+
+  Topics included the discounted cash flow method
+  (DCF — Discounted Cash Flow), the minimum acceptable
+  rate of return (MARR — Minimum Acceptable Rate of Return),
+  the weighted average cost of capital (WACC — Weighted
+  Average Cost of Capital), and methods for determining
+  the required rate of return, including risk and
+  illiquidity premiums.
+
+  The study of financial asset pricing models included
+  the capital asset pricing model (CAPM — Capital Asset
+  Pricing Model), the beta coefficient, and arbitrage
+  pricing theory (APT — Arbitrage Pricing Theory).
+
+  This module brought together financial and investment
+  analysis methods used to value assets, determine required
+  returns, and support investment decisions.
+</p>
+
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">Investment Risk Management and Portfolio Construction</h4>
+
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  A significant part of the professional training was devoted
+  to risk management systems within institutional investor
+  asset management.
+
+  The programme covered qualitative risk analysis, risk
+  classification and mapping, the concept of expected
+  losses, the identification of loss-risk zones, and
+  financial decision-making based on investors' attitudes
+  towards risk.
+
+  Methods for optimising and mitigating investment risks
+  were examined, including diversification, principles
+  of investment portfolio construction, hedging, and
+  the use of derivative financial instruments.
+
+  Particular attention was paid to the relationship
+  between return and risk, the organisation of risk
+  management processes, and interactions between
+  asset managers and other departments within
+  asset management companies.
+
+  The professional training also covered internal
+  audit, internal control, and compliance in
+  non-bank financial institutions operating
+  in capital markets.
+</p>
+
+<h4 [ngClass]="{
+    'trading-definition-small': true,
+    'gradient-orange': isDark,
+    'gradient-blue': !isDark,
+  }">Application of Professional Training</h4>
+
+<p class="trading-definition-text"
+ [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }">
+  For Igor Arapov, studying at the Ukrainian Institute of Stock
+  Market Development complemented his many years of practical
+  experience in financial markets and research in behavioral finance.
+
+  While his earlier activities primarily focused on market
+  structure, price behaviour, liquidity, trading volumes, and
+  the psychology of decision-making, specialised professional
+  training broadened this foundation through the study of
+  institutional asset management, financial valuation,
+  investment models, and the capital markets regulatory framework.
+
+  The knowledge acquired spans interconnected areas of
+  financial activity:
+  capital markets regulation, institutional investor asset
+  management, financial and investment analysis, asset valuation,
+  financial mathematics, portfolio management, risk management,
+  and internal control.
+</p>
+
 
 
    </div>
