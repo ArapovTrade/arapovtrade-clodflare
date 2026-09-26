@@ -193,6 +193,10 @@ export class UkStudyingHomeComponent
       } catch (e) {}
     });
   }
+  goToExternal(url: string): void {
+  window.open(url, '_blank'); // '_blank' — новая вкладка
+  // или window.location.href = url; — переход в текущей вкладке
+}
   private addWebSiteSchema() {
     const exists = Array.from(
       this.document.querySelectorAll('script[type="application/ld+json"]'),

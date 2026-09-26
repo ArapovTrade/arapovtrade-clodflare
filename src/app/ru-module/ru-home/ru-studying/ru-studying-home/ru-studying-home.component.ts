@@ -186,7 +186,10 @@ export class RuStudyingHomeComponent
 
     progress.style.height = `${percent * 100}%`;
   }
-
+    goToExternal(url: string): void {
+  window.open(url, '_blank'); // '_blank' — новая вкладка
+  // или window.location.href = url; — переход в текущей вкладке
+}
   private removeExistingWebPageSchema(): void {
     const scripts = this.document.querySelectorAll(
       'script[type="application/ld+json"]',
