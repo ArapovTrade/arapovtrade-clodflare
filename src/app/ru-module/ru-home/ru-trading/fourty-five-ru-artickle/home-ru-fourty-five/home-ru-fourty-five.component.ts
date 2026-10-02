@@ -47,6 +47,7 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
     this.removeSelectedSchemas();
     this.setArticleSchema();
     // this.setPersonSchema();
+    this.setCourseSchema();
     this.setBreadcrumbSchema();
     // this.setFaqSchema();
     // this.setHowToSchema();
@@ -357,6 +358,93 @@ export class HomeRuFourtyFiveComponent implements OnInit, AfterViewInit {
       ],
     });
   }
+
+  // COURSE
+  private setCourseSchema(): void {
+  this.addJsonLdSchema({
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Course',
+        '@id':
+          'https://arapov.trade/ru/freestudying/freeeducation#course',
+
+        name:
+          'Бесплатный курс по трейдингу для начинающих',
+
+        description:
+          'Бесплатный курс трейдинга для начинающих: 32 раздела в 7 блоках — от механики биржи до торговой системы и практики на демосчёте. Метод Вайкоффа, технический и объёмный анализ, риск-менеджмент и психология трейдинга.',
+
+        url:
+          'https://arapov.trade/ru/freestudying/freeeducation',
+
+        inLanguage: 'ru-RU',
+
+        provider: {
+          '@id': 'https://arapov.trade/#organization',
+        },
+
+        author: {
+          '@id': 'https://arapov.trade/#person',
+        },
+
+        educationalLevel: 'Beginner',
+
+        teaches: [
+          'Financial Markets',
+          'Exchange Market Structure',
+          'Technical Analysis',
+          'Volume Analysis',
+          'Wyckoff Method',
+          'Smart Money Concepts',
+          'Risk Management',
+          'Money Management',
+          'Trading Psychology',
+          'Trading System Development',
+        ],
+
+        about: [
+          {
+            '@type': 'Thing',
+            name: 'Trading Education',
+          },
+          {
+            '@type': 'Thing',
+            name: 'Financial Markets',
+          },
+          {
+            '@type': 'Thing',
+            name: 'Technical Analysis',
+          },
+          {
+            '@type': 'Thing',
+            name: 'Volume Analysis',
+          },
+          {
+            '@type': 'Thing',
+            name: 'Risk Management',
+          },
+        ],
+
+        hasCourseInstance: {
+          '@type': 'CourseInstance',
+
+          courseMode: 'online',
+
+          instructor: {
+            '@id': 'https://arapov.trade/#person',
+          },
+        },
+
+        isPartOf: {
+          '@id': 'https://arapov.trade/#website',
+        },
+      },
+    ],
+  });
+}
+
+
   // ============================================================
   //  ARTICLE
   // ============================================================
