@@ -231,19 +231,7 @@ this.meta.updateTag({
         'Free trading education by Igor Arapov. 51+ articles, 78+ video lessons.',
       inLanguage: 'en-US',
       publisher: {
-        '@type': 'Organization',
-        '@id': 'https://arapov.trade/#organization',
-        name: 'Arapov.Trade',
-        url: 'https://arapov.trade',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://arapov.trade/favicon.ico',
-        },
-        founder: {
-          '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
-          name: 'Igor Arapov',
-        },
+       '@id': 'https://arapov.trade/#organization'
       },
     });
 

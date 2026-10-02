@@ -216,19 +216,7 @@ this.meta.updateTag({
         'Бесплатное обучение трейдингу от Игоря Арапова. 51+ статей, 78+ видеоуроков.',
       inLanguage: 'ru-RU',
       publisher: {
-        '@type': 'Organization',
-        '@id': 'https://arapov.trade/#organization',
-        name: 'Arapov.Trade',
-        url: 'https://arapov.trade',
-        logo: {
-          '@type': 'ImageObject',
-          url: 'https://arapov.trade/favicon.ico',
-        },
-        founder: {
-          '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
-          name: 'Igor Arapov',
-        },
+        '@id': 'https://arapov.trade/#organization'
       },
       potentialAction: {
         '@type': 'SearchAction',
