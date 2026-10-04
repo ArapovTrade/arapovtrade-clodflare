@@ -9,7 +9,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs'; import { ActivatedRoute } from '@angular/router';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
@@ -26,7 +26,7 @@ export class HomeRuBlogSixtyEightComponent {
     private cdr: ChangeDetectorRef,
     private router: Router,
     private themeService: ThemeservService,
-    private artickleServ: ArticlesService,
+    private artickleServ: ArticlesService,private route: ActivatedRoute,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -41,11 +41,11 @@ export class HomeRuBlogSixtyEightComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +57,42 @@ export class HomeRuBlogSixtyEightComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Рыночный аукцион и сентимент: механика ценообразования | Arapov.trade',
+      'Объёмный анализ, Вайкофф и Smart Money — вопросы и ответы | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Рыночный аукцион и сентимент — как анализировать баланс спроса и предложения, настроения участников и находить точки входа',
+        'Вопросы и ответы об объёмах, профиле рынка, методе Вайкоффа, накоплении, распределении, Smart Money, ликвидности, Order Block и FVG. Ссылки на подробные материалы.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-12' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/marketauctiondevelops.webp',
+      content: '/assets/img/content/trading-faq-volume-wyckoff-smc.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

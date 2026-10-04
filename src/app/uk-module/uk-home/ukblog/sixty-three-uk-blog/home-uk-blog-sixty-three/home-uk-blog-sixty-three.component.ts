@@ -6,7 +6,7 @@ import {
   Renderer2,
   signal,
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT } from '@angular/common';import { ActivatedRoute } from '@angular/router';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
@@ -27,7 +27,8 @@ export class HomeUkBlogSixtyThreeComponent {
     private router: Router,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
-    private renderer: Renderer2,
+    private renderer: Renderer2,private route: ActivatedRoute,
+
     @Inject(DOCUMENT) private document: Document,
   ) {}
   private routerSubscription!: Subscription;
@@ -41,11 +42,11 @@ export class HomeUkBlogSixtyThreeComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,24 +58,45 @@ export class HomeUkBlogSixtyThreeComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Smart Money: маніпуляції ринком та контроль натовпу | Arapov.trade',
+      'Ризик і психологія трейдингу — питання та відповіді | ArapovTrade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Дізнайтеся, як Smart Money маніпулюють ринком та контролюють натовп. Методи інституціоналів: хибні пробої, вибивання стопів, новинні маніпуляції. Практичні поради для трейдерів.',
+        'Питання та відповіді про ризик, розмір позиції, стоп-лос, усереднення та психологію трейдингу. Короткі пояснення й посилання на матеріали ArapovTrade.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-08' });this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/smartmoneycontrol.png',
+      content: '/assets/img/content/trading-faq-risk-psychology.jpg',
     });
 
     this.gerRandom();
+ this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();

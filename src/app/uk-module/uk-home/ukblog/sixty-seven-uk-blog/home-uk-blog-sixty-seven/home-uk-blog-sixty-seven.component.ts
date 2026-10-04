@@ -9,7 +9,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';import { ActivatedRoute } from '@angular/router';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
@@ -26,7 +26,7 @@ export class HomeUkBlogSixtySevenComponent {
     private cdr: ChangeDetectorRef,
     private router: Router,
     private themeService: ThemeservService,
-    private artickleServ: ArticlesService,
+    private artickleServ: ArticlesService,    private route: ActivatedRoute,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -41,11 +41,11 @@ export class HomeUkBlogSixtySevenComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +57,44 @@ export class HomeUkBlogSixtySevenComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Обсяговий аналіз трендів: практичний посібник | ArapovTrade',
+      'Як влаштовані фінансові ринки — питання та відповіді | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Дізнайтеся, як використовувати обсяги для аналізу ринкових трендів. Фази тренду, індикатори обсягу, виявлення хибних пробоїв та стратегії Smart Money.',
+        'Питання та відповіді про біржу, книгу ордерів, типи заявок, Forex, кредитне плече, фʼючерси, опціони, облігації та макроекономіку. Посилання на докладні матеріали.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-12' }); this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/trendvolumeanalysis.webp',
+      content: '/assets/img/content/trading-faq-financial-markets.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();

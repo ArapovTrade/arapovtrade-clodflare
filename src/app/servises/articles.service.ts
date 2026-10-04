@@ -1437,5 +1437,234 @@ export class ArticlesService {
       groupsEng: ['Trade Examples'],
       id: 65,
     },
+
+ 
+
+
+
+
+
+
+
+
+    
+
+     {
+      titleUkr: 'Питання та відповіді з трейдингу',
+      linkUkr: 'trading-faq',
+      descrEn:
+        'Answers to trading questions: exchange mechanics, technical and volume analysis, Wyckoff, Smart Money, risk, and cryptocurrencies. Links to in-depth resources.',
+      titleRus: 'Вопросы и ответы по трейдингу',
+      titleEn: 'Trading Q&A',
+      descrUkr:
+        'Відповіді на питання про трейдінг: пристрій біржі, технічний та об`ємний аналіз, Вайкофф, Smart Money, ризик та криптовалюти. Посилання на детальні матеріали.',
+      descrRus:
+        'Ответы на вопросы о трейдинге: устройство биржи, технический и объёмный анализ, Вайкофф, Smart Money, риск и криптовалюты. Ссылки на подробные материалы.',
+      realTitleRus: 'Вопросы и ответы по трейдингу — библиотека ArapovTrade',
+      realTitleUkr: 'Запитання та відповіді з трейдингу — бібліотека ArapovTrade',
+      realTitleEn: 'Trading Q&A — ArapovTrade Library',
+      imgUkr: '/assets/img/content/trading-faq.jpg',
+      groupsRus: ['Трейдинг для начинающих'],
+      groupsUkr: ['Трейдинг для початківців'],
+      groupsEng: ['Trading for Beginners'],
+      id: 67,
+    },
+
+
+    {
+  titleUkr: 'Початок торгівлі та торгова система',
+  linkUkr: 'trading-faq-getting-started',
+  descrEn:
+    'Trading Q&A for beginners: learning, brokers, platforms, trading styles, and trading systems. Short answers with links to detailed ArapovTrade resources.',
+  titleRus: 'Начало торговли и торговая система',
+  titleEn: 'Getting Started and Trading Systems',
+  descrUkr:
+    'Питання та відповіді для початківців: навчання, брокери, платформи, стилі торгівлі та торгова система. Короткі пояснення й посилання на матеріали ArapovTrade.',
+  descrRus:
+    'Вопросы и ответы для начинающих: обучение, брокеры, платформы, стили торговли и торговая система. Короткие объяснения и ссылки на материалы ArapovTrade.',
+  realTitleRus:
+    'Начало торговли и торговая система — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Початок торгівлі та торгова система — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Getting Started and Trading Systems — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-getting-started.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 68,
+},
+{
+  titleUkr: 'Ризик і психологія трейдингу',
+  linkUkr: 'trading-faq-risk-psychology',
+  descrEn:
+    'Trading Q&A on risk management, position sizing, stop-losses, averaging, and psychology. Short answers with links to detailed ArapovTrade resources.',
+  titleRus: 'Риск и психология трейдинга',
+  titleEn: 'Trading Risk and Psychology',
+  descrUkr:
+    'Питання та відповіді про ризик, розмір позиції, стоп-лос, усереднення та психологію трейдингу. Короткі пояснення й посилання на матеріали ArapovTrade.',
+  descrRus:
+    'Вопросы и ответы о риске, размере позиции, стоп-лоссе, усреднении и психологии трейдинга. Короткие объяснения и ссылки на материалы ArapovTrade.',
+  realTitleRus:
+    'Риск и психология трейдинга — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Ризик і психологія трейдингу — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Trading Risk and Psychology — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-risk-psychology.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 69,
+},
+{
+  titleUkr: 'Графіки та технічний аналіз',
+  linkUkr: 'trading-faq-chart-analysis',
+  descrEn:
+    'Technical analysis Q&A: trends, support and resistance, breakouts, candlesticks, chart patterns, Elliott waves, and Fibonacci. Links to detailed resources.',
+  titleRus: 'Графики и технический анализ',
+  titleEn: 'Charts and Technical Analysis',
+  descrUkr:
+    'Питання та відповіді про тренди, рівні, пробої, свічки, графічні фігури, хвилі Елліотта та Фібоначчі. Посилання на детальні матеріали ArapovTrade.',
+  descrRus:
+    'Вопросы и ответы о трендах, уровнях, пробоях, свечах, графических фигурах, волнах Эллиотта и Фибоначчи. Ссылки на подробные материалы ArapovTrade.',
+  realTitleRus:
+    'Графики и технический анализ — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Графіки та технічний аналіз — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Charts and Technical Analysis — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-chart-analysis.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 70,
+},
+{
+  titleUkr: 'Індикатори та волатильність',
+  linkUkr: 'trading-faq-indicators',
+  descrEn:
+    'Trading indicator Q&A: ATR, RSI, MACD, ADX, VWAP, moving averages, Bollinger Bands, and Ichimoku. Signals, limitations, and links to detailed resources.',
+  titleRus: 'Индикаторы и волатильность',
+  titleEn: 'Indicators and Volatility',
+  descrUkr:
+    'Питання та відповіді про ATR, RSI, MACD, ADX, VWAP, ковзні середні, смуги Боллінджера та Ішимоку. Сигнали, обмеження й посилання на докладні пояснення.',
+  descrRus:
+    'Вопросы и ответы об ATR, RSI, MACD, ADX, VWAP, скользящих средних, полосах Боллинджера и Ишимоку. Сигналы, ограничения и ссылки на подробные объяснения.',
+  realTitleRus:
+    'Индикаторы и волатильность — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Індикатори та волатильність — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Indicators and Volatility — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-indicators.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 71,
+},
+{
+  titleUkr: 'Як влаштовані фінансові ринки',
+  linkUkr: 'trading-faq-financial-markets',
+  descrEn:
+    'Financial markets Q&A: exchanges, order books, order types, Forex, leverage, futures, options, bonds, and macroeconomics. Links to detailed resources.',
+  titleRus: 'Устройство финансовых рынков',
+  titleEn: 'How Financial Markets Work',
+  descrUkr:
+    'Питання та відповіді про біржу, книгу ордерів, типи заявок, Forex, кредитне плече, фʼючерси, опціони, облігації та макроекономіку. Посилання на докладні матеріали.',
+  descrRus:
+    'Вопросы и ответы о бирже, стакане, типах ордеров, Forex, кредитном плече, фьючерсах, опционах, облигациях и макроэкономике. Ссылки на подробные материалы.',
+  realTitleRus:
+    'Устройство финансовых рынков — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Як влаштовані фінансові ринки — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'How Financial Markets Work — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-financial-markets.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 72,
+},
+{
+  titleUkr: 'Обʼємний аналіз, Вайкофф і Smart Money',
+  linkUkr: 'trading-faq-volume-wyckoff-smc',
+  descrEn:
+    'Q&A on volume analysis, Volume Profile, Wyckoff, accumulation, distribution, Smart Money, liquidity, order blocks, and FVG. Links to detailed resources.',
+  titleRus: 'Объёмный анализ, Вайкофф и Smart Money',
+  titleEn: 'Volume Analysis, Wyckoff and Smart Money',
+  descrUkr:
+    'Питання та відповіді про обʼєми, профіль ринку, метод Вайкоффа, накопичення, розподіл, Smart Money, ліквідність, Order Block і FVG. Посилання на докладні матеріали.',
+  descrRus:
+    'Вопросы и ответы об объёмах, профиле рынка, методе Вайкоффа, накоплении, распределении, Smart Money, ликвидности, Order Block и FVG. Ссылки на подробные материалы.',
+  realTitleRus:
+    'Объёмный анализ, Вайкофф и Smart Money — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Обʼємний аналіз, Вайкофф і Smart Money — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Volume Analysis, Wyckoff and Smart Money — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-volume-wyckoff-smc.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 73,
+},
+{
+  titleUkr: 'Криптовалюти: устрій і безпека',
+  linkUkr: 'trading-faq-crypto-mechanics',
+  descrEn:
+    'Cryptocurrency Q&A: wallets, seed phrases, stablecoins, DeFi, staking, tokenomics, perpetual futures, arbitrage, and scams. Links to detailed resources.',
+  titleRus: 'Криптовалюты: устройство и безопасность',
+  titleEn: 'Cryptocurrencies: Mechanics and Security',
+  descrUkr:
+    'Питання та відповіді про криптогаманці, seed-фрази, стейблкоїни, DeFi, стейкінг, токеноміку, фʼючерси, арбітраж і шахрайство. Посилання на докладні матеріали.',
+  descrRus:
+    'Вопросы и ответы о криптокошельках, seed-фразах, стейблкоинах, DeFi, стейкинге, токеномике, фьючерсах, арбитраже и мошенничестве. Ссылки на подробные материалы.',
+  realTitleRus:
+    'Криптовалюты: устройство и безопасность — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Криптовалюти: устрій і безпека — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Cryptocurrency Mechanics and Security — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-crypto-mechanics.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 74,
+},
+{
+  titleUkr: 'Bitcoin, альткоїни та ринкові цикли',
+  linkUkr: 'trading-faq-bitcoin-altcoins',
+  descrEn:
+    'Q&A on Bitcoin, Ethereum, Solana, XRP, halving, Bitcoin ETFs, BTC dominance, ETH/BTC, and market cycles. Links to detailed ArapovTrade resources.',
+  titleRus: 'Bitcoin, альткоины и рыночные циклы',
+  titleEn: 'Bitcoin, Altcoins and Market Cycles',
+  descrUkr:
+    'Питання та відповіді про Bitcoin, Ethereum, Solana, XRP, халвінг, Bitcoin ETF, домінування BTC, ETH/BTC і ринкові цикли. Посилання на матеріали ArapovTrade.',
+  descrRus:
+    'Вопросы и ответы о Bitcoin, Ethereum, Solana, XRP, халвинге, Bitcoin ETF, доминации BTC, ETH/BTC и рыночных циклах. Ссылки на материалы ArapovTrade.',
+  realTitleRus:
+    'Bitcoin, альткоины и рыночные циклы — вопросы и ответы | ArapovTrade',
+  realTitleUkr:
+    'Bitcoin, альткоїни та ринкові цикли — питання та відповіді | ArapovTrade',
+  realTitleEn:
+    'Bitcoin, Altcoins and Market Cycles — Q&A | ArapovTrade',
+  imgUkr:
+    '/assets/img/content/trading-faq-bitcoin-altcoins.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 75,
+},
+
+
+
   ];
 }

@@ -9,7 +9,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs';import { ActivatedRoute } from '@angular/router';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
@@ -23,7 +23,7 @@ export class HomeUkBlogSeventyComponent {
   constructor(
     private meta: Meta,
     private titleService: Title,
-    private cdr: ChangeDetectorRef,
+    private cdr: ChangeDetectorRef,    private route: ActivatedRoute,
     private router: Router,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
@@ -41,11 +41,11 @@ export class HomeUkBlogSeventyComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,22 +57,42 @@ export class HomeUkBlogSeventyComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Метод Вайкоффа: аналіз обсягів та ринкових циклів | Arapov.trade',
+      'Bitcoin, альткоїни та ринкові цикли — питання та відповіді | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Метод Вайкоффа — аналіз ринкових фаз, обсягів та поведінки великих гравців для розуміння структури ринку',
+        'Питання та відповіді про Bitcoin, Ethereum, Solana, XRP, халвінг, Bitcoin ETF, домінування BTC, ETH/BTC і ринкові цикли. Посилання на матеріали ArapovTrade.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-13' });this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/wyckoffsvolumeconcept.webp',
+      content: '/assets/img/content/trading-faq-bitcoin-altcoins.jpg',
     });
 
     this.gerRandom();
+   this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

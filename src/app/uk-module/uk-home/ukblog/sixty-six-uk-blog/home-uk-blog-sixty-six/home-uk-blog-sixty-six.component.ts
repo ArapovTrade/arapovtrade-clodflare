@@ -6,7 +6,7 @@ import {
   Renderer2,
   signal,
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT } from '@angular/common';import { ActivatedRoute } from '@angular/router';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
@@ -25,7 +25,8 @@ export class HomeUkBlogSixtySixComponent {
     private titleService: Title,
     private cdr: ChangeDetectorRef,
     private router: Router,
-    private themeService: ThemeservService,
+    private themeService: ThemeservService, private route: ActivatedRoute,
+
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
@@ -41,11 +42,11 @@ export class HomeUkBlogSixtySixComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +58,44 @@ export class HomeUkBlogSixtySixComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Об`ємний Аналіз у Трейдингу: Рівні Об`єму та Точки Входу | Ігор Арапов',
+      'Індикатори та волатильність — питання та відповіді | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Об`ємний аналіз у трейдингу: як знаходити рівні максимального об`єму, використовувати Volume Profile та POC для точних входів. Повний посібник з прикладами.',
+        'Питання та відповіді про ATR, RSI, MACD, ADX, VWAP, ковзні середні, смуги Боллінджера та Ішимоку. Сигнали, обмеження й посилання на докладні пояснення.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-11' }); this.meta.updateTag({ name: 'dateModified', content: '2026-06-04' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/peakvolumelevels.webp',
+      content: '/assets/img/content/trading-faq-indicators.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();

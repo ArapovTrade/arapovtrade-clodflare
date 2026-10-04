@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
-import { artickle } from '../../../../../servises/articles.service';
+import { artickle } from '../../../../../servises/articles.service';import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
@@ -25,7 +25,7 @@ export class HomeRuBlogSixtyThreeComponent {
     private titleService: Title,
     private cdr: ChangeDetectorRef,
     private router: Router,
-    private themeService: ThemeservService,
+    private themeService: ThemeservService,  private route: ActivatedRoute,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
@@ -41,11 +41,11 @@ export class HomeRuBlogSixtyThreeComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -58,24 +58,44 @@ export class HomeRuBlogSixtyThreeComponent {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Smart Money: манипуляции рынком и контроль толпы | Arapov.trade',
+      'Риск и психология трейдинга — вопросы и ответы | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Узнайте, как Smart Money манипулируют рынком и контролируют толпу. Методы институционалов: ложные пробои, выбивание стопов, новостные манипуляции. Практические советы для трейдеров.',
+        'Вопросы и ответы о риске, размере позиции, стоп-лоссе, усреднении и психологии трейдинга. Короткие объяснения и ссылки на материалы ArapovTrade.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-08' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/smartmoneycontrol.png',
+      content: '/assets/img/content/trading-faq-risk-psychology.jpg',
     });
 
     this.gerRandom();
+   this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();

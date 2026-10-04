@@ -10,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
 
@@ -25,7 +25,7 @@ export class HomeRuBlogSixtyFiveComponent {
     private titleService: Title,
     private cdr: ChangeDetectorRef,
     private router: Router,
-    private themeService: ThemeservService,
+    private themeService: ThemeservService,    private route: ActivatedRoute,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
@@ -41,11 +41,11 @@ export class HomeRuBlogSixtyFiveComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +57,42 @@ export class HomeRuBlogSixtyFiveComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Биржевой Стакан и Лента Принтов: Как Читать Order Book | Игорь Арапов',
+      'Графики и технический анализ — вопросы и ответы | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Биржевой стакан и лента принтов: полное руководство по анализу Order Book и Time & Sales. Как читать глубину рынка, находить крупных игроков и избегать манипуляций.',
+        'Вопросы и ответы о трендах, уровнях, пробоях, свечах, графических фигурах, волнах Эллиотта и Фибоначчи. Ссылки на подробные материалы ArapovTrade.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-11' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/smartmoneystockorderbook.png',
+      content: '/assets/img/content/trading-faq-chart-analysis.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

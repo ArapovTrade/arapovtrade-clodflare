@@ -10,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router'; import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
 
@@ -27,7 +27,7 @@ export class HomeEnBlogSeventyComponent {
     private router: Router,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
-    private renderer: Renderer2,
+    private renderer: Renderer2,   private route: ActivatedRoute,
     @Inject(DOCUMENT) private document: Document,
   ) {}
   private routerSubscription!: Subscription;
@@ -40,11 +40,11 @@ export class HomeEnBlogSeventyComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -55,24 +55,44 @@ export class HomeEnBlogSeventyComponent {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Wyckoff Method: Volume Analysis and Market Cycles | Arapov.trade',
+      'Bitcoin, Altcoins and Market Cycles — Q&A | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Wyckoff Method — analyzing market phases, volume and institutional behavior to understand market structure and find entry points',
+        'Q&A on Bitcoin, Ethereum, Solana, XRP, halving, Bitcoin ETFs, BTC dominance, ETH/BTC, and market cycles. Links to detailed ArapovTrade resources.',
     });
     this.meta.updateTag({ name: 'author', content: 'Igor Arapov' });
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-13' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/wyckoffsvolumeconcept.webp',
+      content: '/assets/img/content/trading-faq-bitcoin-altcoins.jpg',
     });
 
     this.gerRandom();
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();

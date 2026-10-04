@@ -10,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router'; import { ActivatedRoute } from '@angular/router';
 import { ArticlesService } from '../../../../../servises/articles.service';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -26,7 +26,7 @@ export class HomeEnBlogSixtyThreeComponent {
     private cdr: ChangeDetectorRef,
     private router: Router,
     private themeService: ThemeservService,
-    private artickleServ: ArticlesService,
+    private artickleServ: ArticlesService,  private route: ActivatedRoute,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -40,11 +40,11 @@ export class HomeEnBlogSixtyThreeComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
@@ -54,23 +54,42 @@ export class HomeEnBlogSixtyThreeComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Smart Money: Market Manipulation and Crowd Control | Arapov.trade',
+      'Trading Risk and Psychology — Q&A | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Learn how Smart Money manipulates markets and controls the crowd. Institutional methods: false breakouts, stop hunting, news manipulation. Practical tips for traders.',
+        'Trading Q&A on risk management, position sizing, stop-losses, averaging, and psychology. Short answers with links to detailed ArapovTrade resources.',
     });
     this.meta.updateTag({ name: 'author', content: 'Igor Arapov' });
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-08' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/smartmoneycontrol.png',
+      content: '/assets/img/content/trading-faq-risk-psychology.jpg',
     });
 
     this.gerRandom();
+   this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

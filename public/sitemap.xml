@@ -2263,4 +2263,249 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/books/osnovy-treydinga-tom-two"/>
   </url>
 
+  <!-- Trading Q&A: publish these URLs together with the FAQ pages. -->
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-getting-started</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-getting-started</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-getting-started</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-getting-started"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-getting-started"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-risk-psychology</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-risk-psychology</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-risk-psychology</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-risk-psychology"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-risk-psychology"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-chart-analysis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-chart-analysis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-chart-analysis</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-chart-analysis"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-chart-analysis"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-indicators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-indicators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-indicators</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-indicators"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-indicators"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-financial-markets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-financial-markets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-financial-markets</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-financial-markets"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-financial-markets"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-volume-wyckoff-smc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-volume-wyckoff-smc</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-volume-wyckoff-smc"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-crypto-mechanics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-crypto-mechanics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-crypto-mechanics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/trading-faq-bitcoin-altcoins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/trading-faq-bitcoin-altcoins</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/trading-faq-bitcoin-altcoins"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
+  </url>
+
 </urlset>

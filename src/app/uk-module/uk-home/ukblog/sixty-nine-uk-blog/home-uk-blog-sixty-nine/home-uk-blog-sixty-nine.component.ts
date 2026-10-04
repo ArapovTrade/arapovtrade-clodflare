@@ -6,7 +6,7 @@ import {
   Renderer2,
   signal,
 } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT } from '@angular/common';import { ActivatedRoute } from '@angular/router';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
@@ -26,7 +26,7 @@ export class HomeUkBlogSixtyNineComponent {
     private cdr: ChangeDetectorRef,
     private router: Router,
     private themeService: ThemeservService,
-    private artickleServ: ArticlesService,
+    private artickleServ: ArticlesService,   private route: ActivatedRoute,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -41,11 +41,11 @@ export class HomeUkBlogSixtyNineComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,7 +57,7 @@ export class HomeUkBlogSixtyNineComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Аналіз обсягів: акції vs ф`ючерси — ключові відмінності | Arapov.trade',
+      'Криптовалюти: устрій і безпека — питання та відповіді | ArapovTrade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,16 +65,36 @@ export class HomeUkBlogSixtyNineComponent {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Аналіз обсягів на фондовому та ф`ючерсному ринках — відмінності в даних, методах інтерпретації та практичному застосуванні',
+        'Питання та відповіді про криптогаманці, seed-фрази, стейблкоїни, DeFi, стейкінг, токеноміку, фʼючерси, арбітраж і шахрайство. Посилання на докладні матеріали.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-13' }); this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/volumeandfuturesmarket.webp',
+      content: '/assets/img/content/trading-faq-crypto-mechanics.jpg',
     });
 
     this.gerRandom();
+ this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

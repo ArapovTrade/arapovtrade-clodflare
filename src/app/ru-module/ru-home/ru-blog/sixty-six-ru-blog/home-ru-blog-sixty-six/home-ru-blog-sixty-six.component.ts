@@ -10,7 +10,7 @@ import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';import { ActivatedRoute } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
 
@@ -25,7 +25,7 @@ export class HomeRuBlogSixtySixComponent {
     private titleService: Title,
     private cdr: ChangeDetectorRef,
     private router: Router,
-    private themeService: ThemeservService,
+    private themeService: ThemeservService,   private route: ActivatedRoute,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
     @Inject(DOCUMENT) private document: Document,
@@ -41,11 +41,11 @@ export class HomeRuBlogSixtySixComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +57,42 @@ export class HomeRuBlogSixtySixComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Объёмный Анализ в Трейдинге: Уровни Объёма и Точки Входа | Игорь Арапов',
+      'Индикаторы и волатильность — вопросы и ответы | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Объёмный анализ в трейдинге: как находить уровни максимального объёма, использовать Volume Profile и POC для точных входов. Полное руководство с примерами.',
+        'Вопросы и ответы об ATR, RSI, MACD, ADX, VWAP, скользящих средних, полосах Боллинджера и Ишимоку. Сигналы, ограничения и ссылки на подробные объяснения.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-11' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-06-04' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/peakvolumelevels.webp',
+      content: '/assets/img/content/trading-faq-indicators.jpg',
     });
 
     this.gerRandom();
+   this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

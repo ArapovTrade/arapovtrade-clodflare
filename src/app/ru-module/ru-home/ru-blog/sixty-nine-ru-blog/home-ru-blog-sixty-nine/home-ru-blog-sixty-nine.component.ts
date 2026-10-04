@@ -7,7 +7,7 @@ import {
   signal,
 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { ThemeservService } from '../../../../../servises/themeserv.service';
+import { ThemeservService } from '../../../../../servises/themeserv.service';import { ActivatedRoute } from '@angular/router';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
@@ -24,7 +24,7 @@ export class HomeRuBlogSixtyNineComponent {
     private meta: Meta,
     private titleService: Title,
     private cdr: ChangeDetectorRef,
-    private router: Router,
+    private router: Router,private route: ActivatedRoute,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
@@ -41,11 +41,11 @@ export class HomeRuBlogSixtyNineComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -58,23 +58,42 @@ export class HomeRuBlogSixtyNineComponent {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Анализ объемов: акции vs фьючерсы — ключевые различия | Arapov.trade',
+      'Криптовалюты: устройство и безопасность — вопросы и ответы | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Анализ объемов на фондовом и фьючерсном рынках — различия в данных, методах интерпретации и практическом применении для трейдинга',
+        'Вопросы и ответы о криптокошельках, seed-фразах, стейблкоинах, DeFi, стейкинге, токеномике, фьючерсах, арбитраже и мошенничестве. Ссылки на подробные материалы.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-13' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+     this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/volumeandfuturesmarket.webp',
+      content: '/assets/img/content/trading-faq-crypto-mechanics.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

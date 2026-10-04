@@ -12,6 +12,7 @@ import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 import { ArticlesService } from '../../../../../servises/articles.service';
 
 @Component({
@@ -27,8 +28,9 @@ export class HomeUkBlogSixtyOneComponent {
     private router: Router,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
+    private route: ActivatedRoute,
     private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
   ) {}
   private routerSubscription!: Subscription;
   private themeSubscription!: Subscription;
@@ -41,11 +43,11 @@ export class HomeUkBlogSixtyOneComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +59,44 @@ export class HomeUkBlogSixtyOneComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Smart Money Concepts: Повний Посібник з SMC | Arapov.trade'
+      'Запитання та відповіді з трейдингу — бібліотека ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Smart Money Concepts (SMC) — повний посібник з торгівлі на боці інституційних учасників. Order Blocks, Fair Value Gaps, ліквідність та стратегії входу.',
+        'Відповіді на питання про трейдінг: пристрій біржі, технічний та об`ємний аналіз, Вайкофф, Smart Money, ризик та криптовалюти. Посилання на детальні матеріали.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-07' }); this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-04' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-04' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/smartmoneyconceptsguide.webp',
+      content: '/assets/img/content/trading-faq.jpg',
     });
 
     this.gerRandom();
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
   }
+  scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
+  }
+
   randomArticleRus: any = [];
   gerRandom() {
     this.randomArticleRus = this.artickleServ.getRandomUkArticles();
@@ -88,7 +111,6 @@ export class HomeUkBlogSixtyOneComponent {
       title: 'Базовий курс',
       link: 'https://arapov.trade/uk/freestudying/freeeducation',
     },
-     
   ];
 
   onGroupChange(event: Event) {
@@ -158,7 +180,7 @@ export class HomeUkBlogSixtyOneComponent {
     // Показываем 5 случайных статей при фокусе, если инпут пуст
     if (!this.searchQuery) {
       const shuffled = [...this.artickleServ.ukrArtickles].sort(
-        () => Math.random() - 0.5
+        () => Math.random() - 0.5,
       );
       this.displayedArticles = shuffled.slice(0, this.maxResults);
     }
@@ -173,7 +195,7 @@ export class HomeUkBlogSixtyOneComponent {
   onSearchChange() {
     // Логика асинхронного поиска
     const filtered = this.artickleServ.ukrArtickles.filter((a) =>
-      a.titleUkr.toLowerCase().includes(this.searchQuery.toLowerCase())
+      a.titleUkr.toLowerCase().includes(this.searchQuery.toLowerCase()),
     );
     this.displayedArticles = filtered.slice(0, this.maxResults);
   }
@@ -195,7 +217,7 @@ export class HomeUkBlogSixtyOneComponent {
     const path: string =
       this.router.url.split('/')[this.router.url.split('/').length - 1];
     let index = this.artickleServ.ukrArtickles.findIndex(
-      (a) => a.linkUkr == path
+      (a) => a.linkUkr == path,
     );
 
     if (this.artickleServ.ukrArtickles.length - 1 == index) {
@@ -212,7 +234,7 @@ export class HomeUkBlogSixtyOneComponent {
     const path: string =
       this.router.url.split('/')[this.router.url.split('/').length - 1];
     let index = this.artickleServ.ukrArtickles.findIndex(
-      (a) => a.linkUkr == path
+      (a) => a.linkUkr == path,
     );
 
     if (index == 1) {
@@ -237,7 +259,7 @@ export class HomeUkBlogSixtyOneComponent {
     ];
 
     const scripts = this.document.querySelectorAll(
-      'script[type="application/ld+json"]'
+      'script[type="application/ld+json"]',
     );
 
     scripts.forEach((script) => {
@@ -250,7 +272,7 @@ export class HomeUkBlogSixtyOneComponent {
 
         const shouldRemove = candidates.some(
           (entry: any) =>
-            entry['@type'] && typesToRemove.includes(entry['@type'])
+            entry['@type'] && typesToRemove.includes(entry['@type']),
         );
 
         if (shouldRemove) {
@@ -290,7 +312,7 @@ export class HomeUkBlogSixtyOneComponent {
           image:
             'https://arapov.trade/assets/img/content/smartmoneyconceptsguide.webp',
           datePublished: '2024-06-15T00:00:00+03:00',
-         dateModified: '2026-04-15T00:00:00Z',
+          dateModified: '2026-04-15T00:00:00Z',
           inLanguage: 'uk',
           author: {
             '@id': 'https://arapov.trade/uk#person',
@@ -398,12 +420,12 @@ export class HomeUkBlogSixtyOneComponent {
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
-              'Арапов Игорь',
-              'I. Arapov',
-              'Игорь Арапов',
-              'І. В. Арапов',
-              'Арапов Ігор',
-              'Arapov Igor',
+        'Арапов Игорь',
+        'I. Arapov',
+        'Игорь Арапов',
+        'І. В. Арапов',
+        'Арапов Ігор',
+        'Arapov Igor',
       ],
       url: 'https://arapov.trade/uk',
       image:
@@ -417,9 +439,13 @@ export class HomeUkBlogSixtyOneComponent {
         'https://github.com/ArapovTrade',
         'https://ua.linkedin.com/in/arapovtrade',
         'https://www.youtube.com/@ArapovTrade',
-        'https://t.me/ArapovTrade'
+        'https://t.me/ArapovTrade',
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+      jobTitle: [
+        'Незалежний дослідник',
+        'трейдер',
+        'автор і засновник arapov.trade',
+      ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };

@@ -780,70 +780,70 @@ const routes: Routes = [
       //     ),
       // },
 
-      // {
-      //   path: 'smartmoneyconceptsguide', //61
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-one-en-blog/sixty-one-en-blog.module').then(
-      //       (m) => m.SixtyOneEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'smartmoneystrategies', //62
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-two-en-blog/sixty-two-en-blog.module').then(
-      //       (m) => m.SixtyTwoEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'smartmoneycontrol', //63
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-three-en-blog/sixty-three-en-blog.module').then(
-      //       (m) => m.SixtyThreeEnBlogModule,
-      //     ),
-      // },
+      {
+        path: 'trading-faq', //61 
+        loadChildren: () =>
+          import('../eu-blog/sixty-one-en-blog/sixty-one-en-blog.module').then(
+            (m) => m.SixtyOneEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-getting-started', //62
+        loadChildren: () =>
+          import('../eu-blog/sixty-two-en-blog/sixty-two-en-blog.module').then(
+            (m) => m.SixtyTwoEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-risk-psychology', //63 
+        loadChildren: () =>
+          import('../eu-blog/sixty-three-en-blog/sixty-three-en-blog.module').then(
+            (m) => m.SixtyThreeEnBlogModule,
+          ),
+      },
      
-      // {
-      //   path: 'stockorderbook', //65
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-five-en-blog/sixty-five-en-blog.module').then(
-      //       (m) => m.SixtyFiveEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'peakvolumelevels', //66
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-six-en-blog/sixty-six-en-blog.module').then(
-      //       (m) => m.SixtySixEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'trendvolumeanalysis', //67
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-seven-en-blog/sixty-seven-en-blog.module').then(
-      //       (m) => m.SixtySevenEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'marketauctiondevelops', //68
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-eight-en-blog/sixty-eight-en-blog.module').then(
-      //       (m) => m.SixtyEightEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'volumeandfuturesmarket', //69
-      //   loadChildren: () =>
-      //     import('../eu-blog/sixty-nine-en-blog/sixty-nine-en-blog.module').then(
-      //       (m) => m.SixtyNineEnBlogModule,
-      //     ),
-      // },
-      // {
-      //   path: 'wyckoffsvolumeconcept', //70
-      //   loadChildren: () =>
-      //     import('../eu-blog/seventy-en-blog/seventy-en-blog.module').then(
-      //       (m) => m.SeventyEnBlogModule,
-      //     ),
-      // },
+      {
+        path: 'trading-faq-chart-analysis', //65
+        loadChildren: () =>
+          import('../eu-blog/sixty-five-en-blog/sixty-five-en-blog.module').then(
+            (m) => m.SixtyFiveEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-indicators', //66
+        loadChildren: () =>
+          import('../eu-blog/sixty-six-en-blog/sixty-six-en-blog.module').then(
+            (m) => m.SixtySixEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-financial-markets', //67
+        loadChildren: () =>
+          import('../eu-blog/sixty-seven-en-blog/sixty-seven-en-blog.module').then(
+            (m) => m.SixtySevenEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-volume-wyckoff-smc', //68
+        loadChildren: () =>
+          import('../eu-blog/sixty-eight-en-blog/sixty-eight-en-blog.module').then(
+            (m) => m.SixtyEightEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-crypto-mechanics', //69 
+        loadChildren: () =>
+          import('../eu-blog/sixty-nine-en-blog/sixty-nine-en-blog.module').then(
+            (m) => m.SixtyNineEnBlogModule,
+          ),
+      },
+      {
+        path: 'trading-faq-bitcoin-altcoins', //70
+        loadChildren: () =>
+          import('../eu-blog/seventy-en-blog/seventy-en-blog.module').then(
+            (m) => m.SeventyEnBlogModule,
+          ),
+      },
       // {
       //   path: 'newstrading', //71
       //   loadChildren: () =>
