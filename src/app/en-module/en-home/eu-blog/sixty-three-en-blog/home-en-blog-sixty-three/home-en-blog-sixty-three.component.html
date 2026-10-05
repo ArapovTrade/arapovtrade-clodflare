@@ -1,458 +1,1085 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="en">
-             <header>
-               <h1>Trading Risk and Psychology: questions and answers</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             <p>How to limit losses, size positions, and follow trading rules under emotional pressure.</p>
-             <p>Short answers based on the ArapovTrade library. Each answer links to a detailed explanation. Trading approaches are presented as Igor Arapov&#x27;s explanations; first-person wording refers to the author.</p>
-             <nav aria-label="Contents"><h2>Contents</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-risk-management')" [ngStyle]="{ cursor: 'pointer' }">How to Protect Your Capital From Big Losses</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-trade-management')" [ngStyle]="{ cursor: 'pointer' }">When to Cut Losses and When to Let Winners Run</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-averaging-martingale')" [ngStyle]="{ cursor: 'pointer' }">Why Averaging Down Is So Dangerous</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-trading-psychology')" [ngStyle]="{ cursor: 'pointer' }">How Fear and Greed Control Your Trading Decisions</a></li>
-             </ul></nav>
-             <section id="topic-risk-management" aria-labelledby="heading-risk-management">
-             <h2 id="heading-risk-management">How to Protect Your Capital From Big Losses</h2>
-             <div class="faq-item" id="question-en-risk-management-01">
-             <h3>How do risk management and money management differ?</h3>
-             <p>Capital management has two halves: risk management keeps the account from zeroing out, money management lets it grow, and without the first the second does not work.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-02">
-             <h3>What reasons does the author give for retail trading losses?</h3>
-             <p>74-89 percent of retail accounts are in the red; what kills them is not bad luck but excessive risk with no system, small profits against fat losses, and arguing with the trend.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-03">
-             <h3>How do losing streaks and drawdowns affect account recovery?</h3>
-             <p>It is not the win rate that burns the account but variance: losses come in streaks of five to ten in a row, a minus of 20 percent needs a plus of 25, and a minus of 50 already needs a plus of 100.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-04">
-             <h3>Why does the author discuss a 1-2% risk-per-trade rule?</h3>
-             <p>A streak of five to ten losses in a row comes to everyone: at 10 percent risk it sweeps the account away, at 1-2 percent it only scratches it, and that is where the rule comes from.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-05">
-             <h3>How does the author calculate position size from risk and stop distance?</h3>
-             <p>The lot is counted last: risk 1-2 percent, stop by the level, distance in pips, and only then a lot such that you lose exactly the planned amount at the stop; 200 dollars of risk at a 50-pip stop give 0.4 of a lot.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-06">
-             <h3>What role does a stop-loss play in the author&#x27;s risk management?</h3>
-             <p>A stop is not a loss but a payment for the right to stay in the game: set it right at entry, hide it behind a level with a margin, and do not move it into the red.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-07">
-             <h3>How does the risk-reward ratio affect the required win rate?</h3>
-             <p>The ratio dictates the win rate you need: 1:1 requires winning more than half the time, 1:2 settles for a third, 1:3 for a quarter; holding a third is within reach, holding half almost no one pulls off.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-08">
-             <h3>How is the expected value of a trading system related to win rate and payoff?</h3>
-             <p>Expected value is built from win rate and ratio; at 33 percent wins and 1:3 the average result is about plus 0.32 per dollar of risk, and this lever is in your hands, not the market&#x27;s.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-risk-management-09">
-             <h3>How does reinvesting affect a trading account over time?</h3>
-             <p>Compound interest does not create income, it multiplies an already-existing result: 5 percent a month with reinvesting gives about 80 percent a year instead of 60, but with a losing system it just as well speeds up the blowup.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n006">
-             <h3>What is the difference between standard, mini and micro lots in Forex?</h3>
-             <p>A standard Forex lot usually represents 100,000 units of the base currency, a mini lot 10,000, and a micro lot 1,000. Lot size affects the monetary value of price movements and position risk. Check the instrument specification.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f004">
-             <h3>Why can three currency positions amount to one dollar bet?</h3>
-             <p>Different currency pairs can share exposure to the same US dollar move. Their risks are not necessarily independent. The library therefore considers combined exposure rather than only the risk limit of each trade.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-trade-management" aria-labelledby="heading-trade-management">
-             <h2 id="heading-trade-management">When to Cut Losses and When to Let Winners Run</h2>
-             <div class="faq-item" id="question-en-trade-management-01">
-             <h3>What does trade management involve after entry?</h3>
-             <p>Trade management is the work after the entry: the take takes the profit, break-even removes the risk, trailing carries the profit, and all of them turn the exit from an emotion into a rule.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-02">
-             <h3>What is a take-profit order used for?</h3>
-             <p>A take-profit is a pending order that itself closes the position at a set level; it is a mirror of the stop, and it removes the greed from the exit by fixing the plan before the trade.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-03">
-             <h3>How does the author choose take-profit levels and partial exits?</h3>
-             <p>Set the take from the structure of the market, not from a desired sum: in a long a little below strong resistance, in a short a little above strong support; take part of the profit at the near level, hold the remainder under a distant target with the stop at break-even.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-04">
-             <h3>How does the author combine a profit target with risk-reward?</h3>
-             <p>A take without a stop is an empty noise: the profit up to the target should cover the risk at least two or three times over, otherwise I don&#x27;t take the trade; a target already set by a level I do not push away when price approaches it.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-05">
-             <h3>What does moving a stop to break-even mean in the author&#x27;s method?</h3>
-             <p>Break-even is the stop at the entry point: it removes the risk from the trade, but if you move it early, the insurance turns into the loss of good positions.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-06">
-             <h3>Why can moving a stop to break-even too early cut profits?</h3>
-             <p>Move the stop to break-even only after price has gone the distance and held above a level on volume; right up against the entry an ordinary pullback knocks it out, and the trade goes off to the target without you.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-07">
-             <h3>How does volatility affect trailing-stop distance?</h3>
-             <p>A trailing stop reveals itself in a trend and rides on with the move beyond a fixed take; the whole setup is the distance from volatility, since a tight one is knocked out by a pullback, a wide one gives back profit, and in a flat a trailing stop is better not hung at all.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trade-management-08">
-             <h3>Why does the author prefer simple risk limits to beginner hedging?</h3>
-             <p>A beginner does not need a hedge: limiting a loss is simpler and cheaper with a stop-loss and a risk of one to two percent per trade, while two opposing positions only add costs and confusion.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-averaging-martingale" aria-labelledby="heading-averaging-martingale">
-             <h2 id="heading-averaging-martingale">Why Averaging Down Is So Dangerous</h2>
-             <div class="faq-item" id="question-en-averaging-martingale-01">
-             <h3>What does adding to a position do to its average price and exposure?</h3>
-             <p>Averaging moves the average price by adding to a position, but at x2 volume after a drop from 10 to 5 thousand it is just a doubled bet in an already losing trade.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/averaging-martingale">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-averaging-martingale-02">
-             <h3>Why does the author warn against averaging against the trend?</h3>
-             <p>Adding against the trend buys where the market is driving the stubborn to the slaughter, and the trend goes far: the euro slid from about 1.40 to around 1.05 over several months in 2014 and 2015, and the average price is powerless here.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/averaging-martingale">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-averaging-martingale-03">
-             <h3>What psychological motives does the author identify behind adding to losses?</h3>
-             <p>Adding to a minus is a trade not with the market but with your own ego: behind it stand denial of the mistake and hope, and they turn a drawdown to 80 into a real hole.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/averaging-martingale">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-averaging-martingale-04">
-             <h3>Why can Martingale position sizing fail during a losing streak?</h3>
-             <p>On the seventh loss the Martingale needs a x128 bet, and it is dangerous because it often wins small and trains you to feel in control, until one long streak erases everything.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/averaging-martingale">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-averaging-martingale-05">
-             <h3>How does the author distinguish planned additions from rescuing a losing trade?</h3>
-             <p>The plan decides in advance: the stop is hit, you exit; set a fixed small risk, and allow adding only with the trend as a multiplier to the plus, not as a rescue of a minus.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/averaging-martingale">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-trading-psychology" aria-labelledby="heading-trading-psychology">
-             <h2 id="heading-trading-psychology">How Fear and Greed Control Your Trading Decisions</h2>
-             <div class="faq-item" id="question-en-trading-psychology-01">
-             <h3>Why does the author consider trading psychology essential to a strategy?</h3>
-             <p>The market punishes not ignorance of indicators but predictable errors of thinking: professional money takes from the crowd through its emotions, and as long as fear and greed rule decisions, any system bleeds out.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-02">
-             <h3>How does the author distinguish trading as a business from gambling?</h3>
-             <p>The same chart can be traded like a casino or like a business, and the head decides it: an entry with no understanding of why puts you on negative expectancy, while a system with small risk and a ratio from 1:3 keeps the maths in the black.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-03">
-             <h3>How do fear, greed, euphoria and tilt affect trading decisions?</h3>
-             <p>Fear and greed swing you from extreme to extreme, and tilt after a loss blows the account in an evening; a beginner travels from total recklessness to fearing every trade, and the cure for both edges is one, rules instead of feelings.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-04">
-             <h3>What is FOMO, and how does the author suggest responding to it?</h3>
-             <p>FOMO wakes you at the very top, when the pros take profit and hand it to the latecomers: bitcoin from 126 down to 60 thousand showed it in pure form, and the best remedy is to remember that the market owes no one anything and the next bus will come.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-05">
-             <h3>How does the author connect crowd emotions with accumulation and distribution?</h3>
-             <p>The market transfers money from the emotional crowd to cold capital: the crowd sells in fear at the bottom (accumulation) and buys in euphoria at the top (distribution), while big capital stands on the other side of its emotions, so for me psychology and method are one whole.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-06">
-             <h3>What cognitive biases does ArapovTrade identify in trading?</h3>
-             <p>Biases hit more quietly than emotions: most of all loss aversion (the loss is held, the profit cut), plus confirmation bias, the anchor to the entry price, the herd effect and overconfidence; willpower won&#x27;t remove them, you can only notice and sidestep them.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-07">
-             <h3>How does the author approach drawdown psychology and losing streaks?</h3>
-             <p>A losing streak is the normal statistics of a profitable system, not a breakage; after a drawdown you are pulled to win it back, after wins comes a swelled head, and both pits are about judging yourself by one trade; the cure is small risk per trade and a journal that separates a bad decision from an unlucky outcome.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-08">
-             <h3>What routines does the author use to limit emotional trading?</h3>
-             <p>Emotions can&#x27;t be beaten in the moment, they are taken out of the equation in advance: a trading plan, a stop, small risk, a journal, a trade limit and a pause after a loss instead of revenge, plus seeing a loss as a cost line, not a failure.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-trading-psychology-09">
-             <h3>How does the author describe the development of a trader&#x27;s psychology?</h3>
-             <p>Psychology moves through stages: a beginner&#x27;s recklessness, fear after the first losses with thrashing in search of a grail, and finally maturity, where a trade is a line in the journal rather than adrenaline; the path can&#x27;t be jumped, only shortened, and drawdowns teach harder than theory.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f095">
-             <h3>How does the sunk-cost fallacy affect a trader?</h3>
-             <p>Past costs may encourage continuing a failed decision to justify earlier investment. In trading, this can mean adding money to a losing position without a fresh rationale. The author contrasts it with predefined risk rules.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f096">
-             <h3>What is recency bias in trading?</h3>
-             <p>Recent outcomes may receive too much weight in expectations. A short winning streak can encourage expectations of continued success and excessive risk. The author assesses a system over a series of trades and consistent rule execution.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f097">
-             <h3>Why is expecting a rise after five declines a gambler&#x27;s fallacy?</h3>
-             <p>A repeated outcome alone does not prove the next one must reverse. That expectation is the gambler&#x27;s fallacy. Decisions need market conditions and system rules rather than simply counting consecutive moves.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-psychology">In-depth explanation</a></p>
-             </div>
-             </section>
-             <nav aria-label="Other library topics"><h2>Other library topics</h2><ul>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-getting-started">Getting Started and Trading Systems</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-chart-analysis">Charts and Technical Analysis</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-indicators">Indicators and Volatility</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-financial-markets">How Financial Markets Work</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-volume-wyckoff-smc">Volume Analysis, Wyckoff and Smart Money</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-crypto-mechanics">Cryptocurrency Mechanics and Security</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, Altcoins and Market Cycles</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             </nav>
-             <section><h2>About the author</h2><p>The library materials were prepared by Igor Arapov, a practising trader since 2013.</p><p><a class="linkrefinto" href="https://arapov.trade/en/main">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="en">
+              <header>
+                <h1>Trading Risk and Psychology: questions and answers</h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                    >All topics: Trading Q&amp;A</a
+                  >
+                </p>
+                <p>
+                  How to limit losses, size positions, and follow trading rules
+                  under emotional pressure.
+                </p>
+                <p>
+                  Short answers based on the ArapovTrade library. Each answer
+                  links to a detailed explanation. Trading approaches are
+                  presented as Igor Arapov&#x27;s explanations; first-person
+                  wording refers to the author.
+                </p>
+                <nav aria-label="Contents">
+                  <h2>Contents</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-risk-management')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How to Protect Your Capital From Big Losses</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-trade-management')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >When to Cut Losses and When to Let Winners Run</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-averaging-martingale')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Why Averaging Down Is So Dangerous</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-trading-psychology')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Fear and Greed Control Your Trading Decisions</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-risk-management"
+                  aria-labelledby="heading-risk-management"
+                >
+                  <h2 id="heading-risk-management">
+                    How to Protect Your Capital From Big Losses
+                  </h2>
+                  <div class="faq-item" id="question-en-risk-management-01">
+                    <h3>How do risk management and money management differ?</h3>
+                    <p>
+                      Capital management has two halves: risk management keeps
+                      the account from zeroing out, money management lets it
+                      grow, and without the first the second does not work.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-02">
+                    <h3>
+                      What reasons does the author give for retail trading
+                      losses?
+                    </h3>
+                    <p>
+                      74-89 percent of retail accounts are in the red; what
+                      kills them is not bad luck but excessive risk with no
+                      system, small profits against fat losses, and arguing with
+                      the trend.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-03">
+                    <h3>
+                      How do losing streaks and drawdowns affect account
+                      recovery?
+                    </h3>
+                    <p>
+                      It is not the win rate that burns the account but
+                      variance: losses come in streaks of five to ten in a row,
+                      a minus of 20 percent needs a plus of 25, and a minus of
+                      50 already needs a plus of 100.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-04">
+                    <h3>
+                      Why does the author discuss a 1-2% risk-per-trade rule?
+                    </h3>
+                    <p>
+                      A streak of five to ten losses in a row comes to everyone:
+                      at 10 percent risk it sweeps the account away, at 1-2
+                      percent it only scratches it, and that is where the rule
+                      comes from.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-05">
+                    <h3>
+                      How does the author calculate position size from risk and
+                      stop distance?
+                    </h3>
+                    <p>
+                      The lot is counted last: risk 1-2 percent, stop by the
+                      level, distance in pips, and only then a lot such that you
+                      lose exactly the planned amount at the stop; 200 dollars
+                      of risk at a 50-pip stop give 0.4 of a lot.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-06">
+                    <h3>
+                      What role does a stop-loss play in the author&#x27;s risk
+                      management?
+                    </h3>
+                    <p>
+                      A stop is not a loss but a payment for the right to stay
+                      in the game: set it right at entry, hide it behind a level
+                      with a margin, and do not move it into the red.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-07">
+                    <h3>
+                      How does the risk-reward ratio affect the required win
+                      rate?
+                    </h3>
+                    <p>
+                      The ratio dictates the win rate you need: 1:1 requires
+                      winning more than half the time, 1:2 settles for a third,
+                      1:3 for a quarter; holding a third is within reach,
+                      holding half almost no one pulls off.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-08">
+                    <h3>
+                      How is the expected value of a trading system related to
+                      win rate and payoff?
+                    </h3>
+                    <p>
+                      Expected value is built from win rate and ratio; at 33
+                      percent wins and 1:3 the average result is about plus 0.32
+                      per dollar of risk, and this lever is in your hands, not
+                      the market&#x27;s.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-risk-management-09">
+                    <h3>
+                      How does reinvesting affect a trading account over time?
+                    </h3>
+                    <p>
+                      Compound interest does not create income, it multiplies an
+                      already-existing result: 5 percent a month with
+                      reinvesting gives about 80 percent a year instead of 60,
+                      but with a losing system it just as well speeds up the
+                      blowup.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n006">
+                    <h3>
+                      What is the difference between standard, mini and micro
+                      lots in Forex?
+                    </h3>
+                    <p>
+                      A standard Forex lot usually represents 100,000 units of
+                      the base currency, a mini lot 10,000, and a micro lot
+                      1,000. Lot size affects the monetary value of price
+                      movements and position risk. Check the instrument
+                      specification.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f004">
+                    <h3>
+                      Why can three currency positions amount to one dollar bet?
+                    </h3>
+                    <p>
+                      Different currency pairs can share exposure to the same US
+                      dollar move. Their risks are not necessarily independent.
+                      The library therefore considers combined exposure rather
+                      than only the risk limit of each trade.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/risk-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-trade-management"
+                  aria-labelledby="heading-trade-management"
+                >
+                  <h2 id="heading-trade-management">
+                    When to Cut Losses and When to Let Winners Run
+                  </h2>
+                  <div class="faq-item" id="question-en-trade-management-01">
+                    <h3>What does trade management involve after entry?</h3>
+                    <p>
+                      Trade management is the work after the entry: the take
+                      takes the profit, break-even removes the risk, trailing
+                      carries the profit, and all of them turn the exit from an
+                      emotion into a rule.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-02">
+                    <h3>What is a take-profit order used for?</h3>
+                    <p>
+                      A take-profit is a pending order that itself closes the
+                      position at a set level; it is a mirror of the stop, and
+                      it removes the greed from the exit by fixing the plan
+                      before the trade.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-03">
+                    <h3>
+                      How does the author choose take-profit levels and partial
+                      exits?
+                    </h3>
+                    <p>
+                      Set the take from the structure of the market, not from a
+                      desired sum: in a long a little below strong resistance,
+                      in a short a little above strong support; take part of the
+                      profit at the near level, hold the remainder under a
+                      distant target with the stop at break-even.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-04">
+                    <h3>
+                      How does the author combine a profit target with
+                      risk-reward?
+                    </h3>
+                    <p>
+                      A take without a stop is an empty noise: the profit up to
+                      the target should cover the risk at least two or three
+                      times over, otherwise I don&#x27;t take the trade; a
+                      target already set by a level I do not push away when
+                      price approaches it.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-05">
+                    <h3>
+                      What does moving a stop to break-even mean in the
+                      author&#x27;s method?
+                    </h3>
+                    <p>
+                      Break-even is the stop at the entry point: it removes the
+                      risk from the trade, but if you move it early, the
+                      insurance turns into the loss of good positions.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-06">
+                    <h3>
+                      Why can moving a stop to break-even too early cut profits?
+                    </h3>
+                    <p>
+                      Move the stop to break-even only after price has gone the
+                      distance and held above a level on volume; right up
+                      against the entry an ordinary pullback knocks it out, and
+                      the trade goes off to the target without you.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-07">
+                    <h3>How does volatility affect trailing-stop distance?</h3>
+                    <p>
+                      A trailing stop reveals itself in a trend and rides on
+                      with the move beyond a fixed take; the whole setup is the
+                      distance from volatility, since a tight one is knocked out
+                      by a pullback, a wide one gives back profit, and in a flat
+                      a trailing stop is better not hung at all.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trade-management-08">
+                    <h3>
+                      Why does the author prefer simple risk limits to beginner
+                      hedging?
+                    </h3>
+                    <p>
+                      A beginner does not need a hedge: limiting a loss is
+                      simpler and cheaper with a stop-loss and a risk of one to
+                      two percent per trade, while two opposing positions only
+                      add costs and confusion.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trade-management"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-averaging-martingale"
+                  aria-labelledby="heading-averaging-martingale"
+                >
+                  <h2 id="heading-averaging-martingale">
+                    Why Averaging Down Is So Dangerous
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-en-averaging-martingale-01"
+                  >
+                    <h3>
+                      What does adding to a position do to its average price and
+                      exposure?
+                    </h3>
+                    <p>
+                      Averaging moves the average price by adding to a position,
+                      but at x2 volume after a drop from 10 to 5 thousand it is
+                      just a doubled bet in an already losing trade.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/averaging-martingale"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-averaging-martingale-02"
+                  >
+                    <h3>
+                      Why does the author warn against averaging against the
+                      trend?
+                    </h3>
+                    <p>
+                      Adding against the trend buys where the market is driving
+                      the stubborn to the slaughter, and the trend goes far: the
+                      euro slid from about 1.40 to around 1.05 over several
+                      months in 2014 and 2015, and the average price is
+                      powerless here.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/averaging-martingale"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-averaging-martingale-03"
+                  >
+                    <h3>
+                      What psychological motives does the author identify behind
+                      adding to losses?
+                    </h3>
+                    <p>
+                      Adding to a minus is a trade not with the market but with
+                      your own ego: behind it stand denial of the mistake and
+                      hope, and they turn a drawdown to 80 into a real hole.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/averaging-martingale"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-averaging-martingale-04"
+                  >
+                    <h3>
+                      Why can Martingale position sizing fail during a losing
+                      streak?
+                    </h3>
+                    <p>
+                      On the seventh loss the Martingale needs a x128 bet, and
+                      it is dangerous because it often wins small and trains you
+                      to feel in control, until one long streak erases
+                      everything.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/averaging-martingale"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-averaging-martingale-05"
+                  >
+                    <h3>
+                      How does the author distinguish planned additions from
+                      rescuing a losing trade?
+                    </h3>
+                    <p>
+                      The plan decides in advance: the stop is hit, you exit;
+                      set a fixed small risk, and allow adding only with the
+                      trend as a multiplier to the plus, not as a rescue of a
+                      minus.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/averaging-martingale"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-trading-psychology"
+                  aria-labelledby="heading-trading-psychology"
+                >
+                  <h2 id="heading-trading-psychology">
+                    How Fear and Greed Control Your Trading Decisions
+                  </h2>
+                  <div class="faq-item" id="question-en-trading-psychology-01">
+                    <h3>
+                      Why does the author consider trading psychology essential
+                      to a strategy?
+                    </h3>
+                    <p>
+                      The market punishes not ignorance of indicators but
+                      predictable errors of thinking: professional money takes
+                      from the crowd through its emotions, and as long as fear
+                      and greed rule decisions, any system bleeds out.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-02">
+                    <h3>
+                      How does the author distinguish trading as a business from
+                      gambling?
+                    </h3>
+                    <p>
+                      The same chart can be traded like a casino or like a
+                      business, and the head decides it: an entry with no
+                      understanding of why puts you on negative expectancy,
+                      while a system with small risk and a ratio from 1:3 keeps
+                      the maths in the black.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-03">
+                    <h3>
+                      How do fear, greed, euphoria and tilt affect trading
+                      decisions?
+                    </h3>
+                    <p>
+                      Fear and greed swing you from extreme to extreme, and tilt
+                      after a loss blows the account in an evening; a beginner
+                      travels from total recklessness to fearing every trade,
+                      and the cure for both edges is one, rules instead of
+                      feelings.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-04">
+                    <h3>
+                      What is FOMO, and how does the author suggest responding
+                      to it?
+                    </h3>
+                    <p>
+                      FOMO wakes you at the very top, when the pros take profit
+                      and hand it to the latecomers: bitcoin from 126 down to 60
+                      thousand showed it in pure form, and the best remedy is to
+                      remember that the market owes no one anything and the next
+                      bus will come.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-05">
+                    <h3>
+                      How does the author connect crowd emotions with
+                      accumulation and distribution?
+                    </h3>
+                    <p>
+                      The market transfers money from the emotional crowd to
+                      cold capital: the crowd sells in fear at the bottom
+                      (accumulation) and buys in euphoria at the top
+                      (distribution), while big capital stands on the other side
+                      of its emotions, so for me psychology and method are one
+                      whole.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-06">
+                    <h3>
+                      What cognitive biases does ArapovTrade identify in
+                      trading?
+                    </h3>
+                    <p>
+                      Biases hit more quietly than emotions: most of all loss
+                      aversion (the loss is held, the profit cut), plus
+                      confirmation bias, the anchor to the entry price, the herd
+                      effect and overconfidence; willpower won&#x27;t remove
+                      them, you can only notice and sidestep them.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-07">
+                    <h3>
+                      How does the author approach drawdown psychology and
+                      losing streaks?
+                    </h3>
+                    <p>
+                      A losing streak is the normal statistics of a profitable
+                      system, not a breakage; after a drawdown you are pulled to
+                      win it back, after wins comes a swelled head, and both
+                      pits are about judging yourself by one trade; the cure is
+                      small risk per trade and a journal that separates a bad
+                      decision from an unlucky outcome.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-08">
+                    <h3>
+                      What routines does the author use to limit emotional
+                      trading?
+                    </h3>
+                    <p>
+                      Emotions can&#x27;t be beaten in the moment, they are
+                      taken out of the equation in advance: a trading plan, a
+                      stop, small risk, a journal, a trade limit and a pause
+                      after a loss instead of revenge, plus seeing a loss as a
+                      cost line, not a failure.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-trading-psychology-09">
+                    <h3>
+                      How does the author describe the development of a
+                      trader&#x27;s psychology?
+                    </h3>
+                    <p>
+                      Psychology moves through stages: a beginner&#x27;s
+                      recklessness, fear after the first losses with thrashing
+                      in search of a grail, and finally maturity, where a trade
+                      is a line in the journal rather than adrenaline; the path
+                      can&#x27;t be jumped, only shortened, and drawdowns teach
+                      harder than theory.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f095">
+                    <h3>How does the sunk-cost fallacy affect a trader?</h3>
+                    <p>
+                      Past costs may encourage continuing a failed decision to
+                      justify earlier investment. In trading, this can mean
+                      adding money to a losing position without a fresh
+                      rationale. The author contrasts it with predefined risk
+                      rules.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f096">
+                    <h3>What is recency bias in trading?</h3>
+                    <p>
+                      Recent outcomes may receive too much weight in
+                      expectations. A short winning streak can encourage
+                      expectations of continued success and excessive risk. The
+                      author assesses a system over a series of trades and
+                      consistent rule execution.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f097">
+                    <h3>
+                      Why is expecting a rise after five declines a
+                      gambler&#x27;s fallacy?
+                    </h3>
+                    <p>
+                      A repeated outcome alone does not prove the next one must
+                      reverse. That expectation is the gambler&#x27;s fallacy.
+                      Decisions need market conditions and system rules rather
+                      than simply counting consecutive moves.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/trading-psychology"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Other library topics">
+                  <h2>Other library topics</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-getting-started"
+                        >Getting Started and Trading Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-chart-analysis"
+                        >Charts and Technical Analysis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-indicators"
+                        >Indicators and Volatility</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-financial-markets"
+                        >How Financial Markets Work</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-volume-wyckoff-smc"
+                        >Volume Analysis, Wyckoff and Smart Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-crypto-mechanics"
+                        >Cryptocurrency Mechanics and Security</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, Altcoins and Market Cycles</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                      >All topics: Trading Q&amp;A</a
+                    >
+                  </p>
+                </nav>
+               <section>
+  <h2>About the Library Materials</h2>
+  <p>
+    This section is based on materials from the ArapovTrade library and
+    Igor Arapov’s educational videos. Here you can find
+    definitions, comparisons of instruments, explanations of market
+    mechanics, and discussions of the author’s approach to trading.
+  </p>
+  <p>
+    The library’s author is
+    <a class="linkrefinto" href="https://arapov.trade/en"
+      >Igor Arapov</a
+    >, a practicing trader since 2013. The in-depth materials
+    provide context for each question; the short answers serve as
+    a starting point for exploring the topic.
+  </p>
+</section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    PREVIOUS <span class="page_none_block">ARTICLE</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    NEXT <span class="page_none_block">ARTICLE</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Filter by category
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   PREVIOUS <span class="page_none_block">ARTICLE</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   NEXT <span class="page_none_block">ARTICLE</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Popular
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/en/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleEn"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleEn }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Filter by category
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Popular
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/en/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleEn"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleEn }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -461,78 +1088,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Our projects are available to everyone
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Our projects are available to everyone
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Choose a topic that interests you and start learning
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Choose a topic that interests you and start learning
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-

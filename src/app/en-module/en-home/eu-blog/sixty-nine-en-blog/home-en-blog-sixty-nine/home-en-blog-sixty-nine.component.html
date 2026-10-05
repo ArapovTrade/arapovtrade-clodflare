@@ -1,615 +1,1663 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="en">
-             <header>
-               <h1>Cryptocurrency Mechanics and Security: questions and answers</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             <p>How wallets, stablecoins, DeFi, staking, tokenomics and crypto derivatives work, and what risks to consider.</p>
-             <p>Short answers based on the ArapovTrade library. Each answer links to a detailed explanation. Trading approaches are presented as Igor Arapov&#x27;s explanations; first-person wording refers to the author.</p>
-             <nav aria-label="Contents"><h2>Contents</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-basics')" [ngStyle]="{ cursor: 'pointer' }">How Crypto Actually Works</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-storage')" [ngStyle]="{ cursor: 'pointer' }">Hot Wallet vs Cold Wallet: Which Do You Need</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-stablecoins-tether')" [ngStyle]="{ cursor: 'pointer' }">Is Tether Actually Backed 1:1</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-perpetuals-margin')" [ngStyle]="{ cursor: 'pointer' }">How Perpetual Contracts Differ From Regular Futures</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-defi')" [ngStyle]="{ cursor: 'pointer' }">How DeFi Replaces Banks With Code</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-staking')" [ngStyle]="{ cursor: 'pointer' }">How Staking Actually Generates Yield</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-tokenomics')" [ngStyle]="{ cursor: 'pointer' }">How to Evaluate a Token&#x27;s Tokenomics</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-arbitrage')" [ngStyle]="{ cursor: 'pointer' }">How Price Differences Between Exchanges Get Exploited</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-risks-scams')" [ngStyle]="{ cursor: 'pointer' }">How to Spot a Crypto Scam Before You Lose Money</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-memecoins')" [ngStyle]="{ cursor: 'pointer' }">Why Memecoins Have No Fundamental Value</a></li>
-             </ul></nav>
-             <section id="topic-crypto-basics" aria-labelledby="heading-crypto-basics">
-             <h2 id="heading-crypto-basics">How Crypto Actually Works</h2>
-             <div class="faq-item" id="question-en-crypto-basics-01">
-             <h3>How does ArapovTrade describe cryptocurrency and its sources of value?</h3>
-             <p>Cryptocurrency is a digital asset with no state guarantor, the value of most coins rests on demand alone, and the exception is Bitcoin with its 21 million cap.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-02">
-             <h3>How does the author explain blockchain records and transfer responsibility?</h3>
-             <p>A blockchain is a shared ledger across many nodes, so a record cannot be forged, but the usual protection is gone too: a mistaken transfer no one will reverse.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-03">
-             <h3>How does the author compare Bitcoin, Ether, altcoins and stablecoins?</h3>
-             <p>Bitcoin is digital gold, Ether a platform, the rest altcoins of varying quality; alts follow Bitcoin amplified, and their main risks are thin liquidity, jolting volatility and the chance of delisting. A stablecoin holds its rate to the dollar and serves as a safe harbor and a trading pair, but an algorithmic peg with no reserves is unreliable.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-04">
-             <h3>What crypto-market differences and risks does the author emphasize?</h3>
-             <p>The main difference of crypto is the absence of a regulator and high volatility, and the basics themselves are ninety percent about risk, not technology.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-05">
-             <h3>What criteria does the author use when choosing a crypto exchange and wallet?</h3>
-             <p>Choose an exchange by reliability, regulation, liquidity, and fees, not by bonuses, and keep large amounts not on the exchange but in a separate wallet.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-06">
-             <h3>What should be planned before placing a first crypto trade?</h3>
-             <p>The first trade is a plan, not a button: enter at a level with a predefined stop, and use a limit order instead of rushing at market.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-07">
-             <h3>How does the author combine levels, volume and supply factors in crypto analysis?</h3>
-             <p>The crypto market reads through levels and volume plus its own supply side (emission, halvings, whale flows); Bitcoin dominance is a map of money, not a signal, and the main pits for a beginner are market-maker manipulation and the myth of easy arbitrage.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-basics-08">
-             <h3>Why does the author suggest starting crypto trading on demo?</h3>
-             <p>Start on demo until a steady plus, then a small real account with a stop: people lose not on the choice of exchange but on haste and emotion.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f036">
-             <h3>What does KYC mean on a cryptocurrency exchange?</h3>
-             <p>KYC is a customer identification process that involves verifying identity. It relates to service rules and participant requirements. Identity verification alone does not establish an exchange&#x27;s reliability.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-basics">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-storage" aria-labelledby="heading-crypto-storage">
-             <h2 id="heading-crypto-storage">Hot Wallet vs Cold Wallet: Which Do You Need</h2>
-             <div class="faq-item" id="question-en-crypto-storage-01">
-             <h3>How do hot, cold and exchange-based crypto storage differ?</h3>
-             <p>A wallet stores keys, not coins: a hot one is online and handy for small change, a cold one is offline and safer for large capital, and on an exchange the keys are not yours.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-storage-02">
-             <h3>What protection does the source attribute to a hardware wallet?</h3>
-             <p>A hardware wallet keeps the key inside the device, so even on an infected computer the coins are intact; the most a virus can do is swap the address, and that is visible on the screen, while the seed phrase serves as the backup.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-storage-03">
-             <h3>Why does the author keep seed phrases offline?</h3>
-             <p>The seed phrase is access to everything in the form of 12 or 24 words, so offline only and no photos or cloud; in 2026 the scarier thing is not a hack but being talked into entering the phrase yourself under a deepfake.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-storage-04">
-             <h3>How does the author organize device purchase, backups and fund separation?</h3>
-             <p>Buy the device only from the official maker (a pre-filled seed in the box is a scam), back the seed up by hand or on metal in two separate places and test a small recovery, keep roughly 90 percent in cold and 10 on the exchange, use multi-signature for large sums, and leave a way for someone you trust to recover the coins if something happens to you.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-storage-05">
-             <h3>How does the author divide funds between an exchange and personal storage?</h3>
-             <p>Not your keys, not your coins: keep only the trading remainder on the exchange, the main capital in cold, and people lose more often not because of the wallet but because of storing everything in one place.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f045">
-             <h3>Why does an authenticator avoid the SIM-swap risk of SMS codes?</h3>
-             <p>SMS codes depend on a phone number that may be hijacked through a SIM swap. An authenticator removes that particular dependency. Phishing and device compromise remain separate risks.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/ru/freestudying/crypto-storage">Original source in Russian</a></p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">English resource on this topic</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f046">
-             <h3>What is address poisoning in transaction history?</h3>
-             <p>An attacker inserts a transaction involving an address resembling the intended recipient&#x27;s, hoping it will be copied from history. Check the entire address and the trusted source from which it was obtained.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/ru/freestudying/crypto-storage">Original source in Russian</a></p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">English resource on this topic</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f047">
-             <h3>How does multisignature reduce dependence on one key?</h3>
-             <p>A transfer requires several independent approvals, so stealing one key may not be enough to move funds. Keys should be kept separately and recovery arrangements planned.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-storage">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-stablecoins-tether" aria-labelledby="heading-stablecoins-tether">
-             <h2 id="heading-stablecoins-tether">Is Tether Actually Backed 1:1</h2>
-             <div class="faq-item" id="question-en-stablecoins-tether-01">
-             <h3>How does the author describe stablecoins and peg mechanisms?</h3>
-             <p>A stable is a coin near the dollar at one to one; the rate is held in three ways, and the algorithmic one, with no live reserves, breaks more easily than the rest.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-stablecoins-tether-02">
-             <h3>How does the author compare USDT, USDC and DAI?</h3>
-             <p>USDT is taken for liquidity, USDC for transparency of reporting, DAI for decentralization; there is no ideal one, and for a trader USDT is also a convenient parking spot between trades.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-stablecoins-tether-03">
-             <h3>What reserve and reporting issues does the source discuss for Tether?</h3>
-             <p>USDT is reliable exactly as far as Tether&#x27;s reserves are real: more than eighty percent in US government bonds, but the company is offshore, long published attestations rather than full audits, and for the US market it issued a separate coin, USAT.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-stablecoins-tether-04">
-             <h3>How does issuer freezing affect the risks of centralized stablecoins?</h3>
-             <p>A centralized stablecoin is an IOU whose issuer can freeze or blacklist tokens at any address on a regulator&#x27;s order, as Circle and Tether have both done; a decentralized coin like DAI removes that switch but adds smart-contract risk, so hold in one coin only what you could lose to either a depeg or a freeze.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-stablecoins-tether-05">
-             <h3>What lesson does the author draw from the UST collapse?</h3>
-             <p>The UST collapse in 2022 evaporated around sixty billion in a few days; the algo-peg rests only on the crowd&#x27;s faith, so I hold nothing large in it, and I treat stables as cash.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f040">
-             <h3>How does a synthetic stablecoin differ from one backed by bank reserves?</h3>
-             <p>A synthetic model maintains its peg using crypto positions and hedging rather than relying solely on bank reserves. Stability depends on those positions, counterparties, and market conditions.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/ru/freestudying/stablecoins-tether">Original source in Russian</a></p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">English resource on this topic</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f041">
-             <h3>Can a stablecoin issuer freeze tokens at an address?</h3>
-             <p>Some centralized stablecoins allow tokens at specific addresses to be frozen. This depends on the contract design and issuer privileges. It is a feature of centralized control over transfers.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f042">
-             <h3>Why must the network match when transferring USDT?</h3>
-             <p>The same ticker does not imply the same transfer network. Sender and recipient must support the chosen blockchain and token. A mismatch can make funds inaccessible or cause a loss.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stablecoins-tether">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-perpetuals-margin" aria-labelledby="heading-crypto-perpetuals-margin">
-             <h2 id="heading-crypto-perpetuals-margin">How Perpetual Contracts Differ From Regular Futures</h2>
-             <div class="faq-item" id="question-en-crypto-perpetuals-margin-01">
-             <h3>How does a perpetual futures contract differ from an expiring future?</h3>
-             <p>A perpetual futures contract has no expiry and is held as long as you like; unlike a regular future it has no term, and funding keeps its price tied to spot.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-perpetuals-margin-02">
-             <h3>What is the funding payment described in the source?</h3>
-             <p>Funding is a payment between longs and shorts every eight hours, not an exchange fee; it holds the perp&#x27;s price near spot, and on a long hold it works as a cost against you.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-perpetuals-margin-03">
-             <h3>How does leverage change profit and loss relative to collateral?</h3>
-             <p>Leverage multiplies any move both ways: at x10 a one-percent gain is ten percent of profit, a one-percent loss is ten percent of the collateral; isolated margin and low leverage are safer for a beginner.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-perpetuals-margin-04">
-             <h3>How does the author explain leverage and liquidation distance?</h3>
-             <p>The liquidation price is closer to entry the higher the leverage: at x50 two percent against you is enough to zero the account; low leverage, a stop before the liquidation level, and one to two percent risk per trade keep you away from it.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-perpetuals-margin-05">
-             <h3>What does the author describe as a cascade of crypto liquidations?</h3>
-             <p>On perps the crowd&#x27;s money is redistributed not in its favor: the speculative inflow creates volatility, and a cascade of liquidations of overheated longs carries funds into the market; volume shows where large capital stands.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-defi" aria-labelledby="heading-defi">
-             <h2 id="heading-defi">How DeFi Replaces Banks With Code</h2>
-             <div class="faq-item" id="question-en-defi-01">
-             <h3>What is DeFi in the author&#x27;s explanation?</h3>
-             <p>DeFi is finance through smart contracts without banks: a wallet gives access, code sets the rules, but all the responsibility for your funds is on you too.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/defi">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-defi-02">
-             <h3>How does custody differ between CeFi and DeFi?</h3>
-             <p>The line is custody: CeFi means a company holds your coins and can help or fail you, DeFi means you hold your keys with full control and no one to call when it breaks.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/defi">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-defi-03">
-             <h3>What building blocks and dependencies does the source identify in DeFi?</h3>
-             <p>DeFi stacks four pieces, exchanges, lending, stablecoins and oracles, that plug into each other, and that same composability means a fault in one link can spread through the rest.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/defi">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-defi-04">
-             <h3>What swaps, lending and liquidity-pool operations does the source describe?</h3>
-             <p>Swap tokens, take and give loans, put funds into pools for interest; one rule holds: the higher the promised percentage, the higher the risk behind it, and abnormal figures are either a loss or a pyramid.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/defi">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-defi-05">
-             <h3>What smart-contract risks does the author emphasize in DeFi?</h3>
-             <p>The main risk is a hole in the smart contract: the code is public, the bug will be found, and the money leaves for good; not your keys, not your coins, and an audit lowers the risk but does not remove it.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/defi">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-staking" aria-labelledby="heading-crypto-staking">
-             <h2 id="heading-crypto-staking">How Staking Actually Generates Yield</h2>
-             <div class="faq-item" id="question-en-crypto-staking-01">
-             <h3>What does the source mean by staking in a Proof of Stake network?</h3>
-             <p>Staking is locking coins in a Proof of Stake network for a percentage; you put up a reliability account rather than placing money on a bank deposit.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-staking">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-staking-02">
-             <h3>Why does the source distinguish Proof of Stake assets from Bitcoin?</h3>
-             <p>Only Proof of Stake coins like Ethereum, Solana or Cardano can be staked, not bitcoin; and since rewards are usually paid from new issuance, a sky-high percentage often signals inflation that dilutes the coin rather than free money.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-staking">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-staking-03">
-             <h3>How does the author compare validator operation and delegation?</h3>
-             <p>You can stake yourself through a validator or more simply by delegation, the income is usually a few percent a year, but it is a payment for risk, not insurance.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-staking">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-staking-04">
-             <h3>What are lock-up, unbonding and slashing in the source&#x27;s explanation?</h3>
-             <p>Lock-up is while the coin works, unbonding is a no-reward exit queue (from a couple of days to 3-4 weeks), and slashing is a penalty for validator faults that, under delegation, falls on you as well.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-staking">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-staking-05">
-             <h3>Which staking risks does the author emphasize?</h3>
-             <p>The main risk is not the percentage but the coin price under it, plus the freeze and slashing, which is why I do not freeze what can sharply cheapen.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-staking">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-tokenomics" aria-labelledby="heading-tokenomics">
-             <h2 id="heading-tokenomics">How to Evaluate a Token&#x27;s Tokenomics</h2>
-             <div class="faq-item" id="question-en-tokenomics-01">
-             <h3>What is tokenomics?</h3>
-             <p>Tokenomics is the internal economy of a token (issuance, distribution, utility, incentives); the long-run price is decided by the balance of supply and demand, not by hype.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/tokenomics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-tokenomics-02">
-             <h3>Which five tokenomics parameters does the source suggest examining?</h3>
-             <p>Break down five parameters: supply and emission, distribution, vesting (the unlock schedule), the token&#x27;s utility, and the gap between the current and the fully diluted capitalization.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/tokenomics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-tokenomics-03">
-             <h3>How does the author interpret vesting, cliffs and token unlocks?</h3>
-             <p>Vesting is the schedule, an unlock is the event on it; a linear unlock the market digests smoothly, while a cliff tranche lands at once and presses the price; watch the share of circulating supply and the calendar (TokenUnlocks, CoinGecko, docs).</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/tokenomics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-tokenomics-04">
-             <h3>What tokenomics lessons does the source draw from Bitcoin, Ether and LUNA?</h3>
-             <p>Bitcoin (capped, fair launch, store of value) and ether (uncapped but heavy utility and burn) are two opposite yet workable models; Terra&#x27;s LUNA is the opposite lesson, a self-referential mint with no real backing that spiraled to zero, which is the pattern to spot before buying.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/tokenomics">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-tokenomics-05">
-             <h3>What tokenomics warning signs does the author identify?</h3>
-             <p>Good tokenomics is a limited supply, a reasonable distribution, transparent vesting, and real utility; short team vesting, no unlock schedule, and a token with no use are the red flags.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/tokenomics">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-arbitrage" aria-labelledby="heading-crypto-arbitrage">
-             <h2 id="heading-crypto-arbitrage">How Price Differences Between Exchanges Get Exploited</h2>
-             <div class="faq-item" id="question-en-crypto-arbitrage-01">
-             <h3>How does the author describe price gaps in crypto arbitrage?</h3>
-             <p>Arbitrage is the price gap of a coin between exchanges. It comes from venues being out of sync and closes itself in a fraction of a second, so you can&#x27;t catch it by hand.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-arbitrage-02">
-             <h3>How do inter-exchange and triangular arbitrage differ?</h3>
-             <p>Two forms: inter-exchange gets stuck on time and the fee for moving the coin, triangular skips the move but feeds on micro-gaps that the bots take first.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-arbitrage-03">
-             <h3>What other types of crypto arbitrage does the source discuss?</h3>
-             <p>Beyond inter-exchange and triangular there are statistical, funding-rate and DEX arbitrage, but each leans even harder on algorithms, capital and infrastructure, so none of them is the easy retail income it is sold as.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-arbitrage-04">
-             <h3>What trade-offs and risks does the author identify in P2P arbitrage?</h3>
-             <p>P2P arbitrage sells crypto into a local premium of a few percent in countries with currency controls, and because it is not a speed race it is the one form retail can reach; but it swaps the bots for counterparty risk, account freezes and AML checks, and any guaranteed-percentage P2P offer is usually a Ponzi.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-arbitrage-05">
-             <h3>Why does the author emphasize infrastructure and costs in crypto arbitrage?</h3>
-             <p>Arbitrage is a contest of servers, not analysis, and a private trader is behind from the start. Speed, fees and transfers eat the gap, and a promise of profit without risk is most often the hallmark of fraudsters.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n086">
-             <h3>What does a delta-neutral spot-and-futures position mean?</h3>
-             <p>Buying spot and taking a comparable short perpetual futures position can offset much of the directional price exposure. Funding, basis changes, costs, and execution still affect the result. Directional neutrality does not mean zero risk.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-arbitrage">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-risks-scams" aria-labelledby="heading-crypto-risks-scams">
-             <h2 id="heading-crypto-risks-scams">How to Spot a Crypto Scam Before You Lose Money</h2>
-             <div class="faq-item" id="question-en-crypto-risks-scams-01">
-             <h3>What five categories of crypto risk does ArapovTrade identify?</h3>
-             <p>There are five kinds of risk: price swings, deception, technical hacks with lost keys, state decisions, and psychology, and the very ease of entry shoves a beginner into the last and most dangerous of them.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-risks-scams">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-risks-scams-02">
-             <h3>Why does the author emphasize the possibility of deep crypto drawdowns?</h3>
-             <p>Bitcoin folded 80 percent in crises and the small fry goes to zero, because crypto has no floor beneath it, and saved capital here is worth more than any lucky coin.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-risks-scams">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-risks-scams-03">
-             <h3>What common crypto-fraud schemes does the source describe?</h3>
-             <p>The schemes are many, empty projects, pyramids, phishing, counterfeit exchanges, but the hook is always one: if you were promised guaranteed profit, you are facing crooks.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-risks-scams">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-risks-scams-04">
-             <h3>How does a pump-and-dump scheme develop?</h3>
-             <p>Bought up low, inflated with ads, dumped on the crowd, then supply presses demand and turnover dies until the venue delists the coin, which is why I steer clear of anything that has already flown up.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-risks-scams">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-crypto-risks-scams-05">
-             <h3>What warning signs does the author look for before sending funds?</h3>
-             <p>A scam is given away by haste, a nameless team, and a request about keys; bake regulatory uncertainty into position size, and one rule clears nine traps out of ten: a guarantee of income equals fraud.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/crypto-risks-scams">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-memecoins" aria-labelledby="heading-memecoins">
-             <h2 id="heading-memecoins">Why Memecoins Have No Fundamental Value</h2>
-             <div class="faq-item" id="question-en-memecoins-01">
-             <h3>How does the author define a memecoin?</h3>
-             <p>A memecoin is a coin with no product and no technology: the price rests only on hype, memes and the crowd&#x27;s belief, and depends only on how many people believe in it right now.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-memecoins-02">
-             <h3>How do liquidity and manipulation affect memecoin trading?</h3>
-             <p>A memecoin&#x27;s price moves on the crowd&#x27;s fear and greed; pump-and-dump and rug pull move money from late to early participants, and low liquidity lets a whale move the price easily.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-memecoins-03">
-             <h3>How does the author relate memecoin prices to supply and public attention?</h3>
-             <p>Most memecoins carry a huge or uncapped supply, so there is no scarcity; the price is just a live measure of attention, swung by celebrities and prone to 50-90% daily moves, and the vast majority fade to nothing once the hype passes.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-memecoins-04">
-             <h3>What approach does the author take to the risk of memecoin speculation?</h3>
-             <p>This is not trading but a lottery: the method cannot be read here, the volume is distorted by manipulation; if you play, only with money you can afford to lose in full, and a guarantee of multiples is fraud.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n044">
-             <h3>What does a memecoin launchpad do, and what risks does easy issuance create?</h3>
-             <p>A launchpad simplifies token creation and initial distribution. A low entry barrier increases the number of projects that may lack lasting value. The author highlights thin liquidity, concentrated holdings, and dependence on participant attention.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n087">
-             <h3>How does a bonding curve determine the next token purchase price?</h3>
-             <p>A bonding curve relates token prices to issuance or purchase parameters. In the model described, successive purchases increase the next purchase price, creating different entry conditions for early and late participants.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/memecoins">In-depth explanation</a></p>
-             </div>
-             </section>
-             <nav aria-label="Other library topics"><h2>Other library topics</h2><ul>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-getting-started">Getting Started and Trading Systems</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-risk-psychology">Trading Risk and Psychology</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-chart-analysis">Charts and Technical Analysis</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-indicators">Indicators and Volatility</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-financial-markets">How Financial Markets Work</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-volume-wyckoff-smc">Volume Analysis, Wyckoff and Smart Money</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, Altcoins and Market Cycles</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             </nav>
-             <section><h2>About the author</h2><p>The library materials were prepared by Igor Arapov, a practising trader since 2013.</p><p><a class="linkrefinto" href="https://arapov.trade/en/main">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="en">
+              <header>
+                <h1>
+                  Cryptocurrency Mechanics and Security: questions and answers
+                </h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                    >All topics: Trading Q&amp;A</a
+                  >
+                </p>
+                <p>
+                  How wallets, stablecoins, DeFi, staking, tokenomics and crypto
+                  derivatives work, and what risks to consider.
+                </p>
+                <p>
+                  Short answers based on the ArapovTrade library. Each answer
+                  links to a detailed explanation. Trading approaches are
+                  presented as Igor Arapov&#x27;s explanations; first-person
+                  wording refers to the author.
+                </p>
+                <nav aria-label="Contents">
+                  <h2>Contents</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-basics')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Crypto Actually Works</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-storage')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Hot Wallet vs Cold Wallet: Which Do You Need</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-stablecoins-tether')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Is Tether Actually Backed 1:1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="
+                          scrollToFragment('topic-crypto-perpetuals-margin')
+                        "
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Perpetual Contracts Differ From Regular Futures</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-defi')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How DeFi Replaces Banks With Code</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-staking')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Staking Actually Generates Yield</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-tokenomics')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How to Evaluate a Token&#x27;s Tokenomics</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-arbitrage')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Price Differences Between Exchanges Get
+                        Exploited</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-risks-scams')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How to Spot a Crypto Scam Before You Lose Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-memecoins')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Why Memecoins Have No Fundamental Value</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-crypto-basics"
+                  aria-labelledby="heading-crypto-basics"
+                >
+                  <h2 id="heading-crypto-basics">How Crypto Actually Works</h2>
+                  <div class="faq-item" id="question-en-crypto-basics-01">
+                    <h3>
+                      How does ArapovTrade describe cryptocurrency and its
+                      sources of value?
+                    </h3>
+                    <p>
+                      Cryptocurrency is a digital asset with no state guarantor,
+                      the value of most coins rests on demand alone, and the
+                      exception is Bitcoin with its 21 million cap.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-02">
+                    <h3>
+                      How does the author explain blockchain records and
+                      transfer responsibility?
+                    </h3>
+                    <p>
+                      A blockchain is a shared ledger across many nodes, so a
+                      record cannot be forged, but the usual protection is gone
+                      too: a mistaken transfer no one will reverse.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-03">
+                    <h3>
+                      How does the author compare Bitcoin, Ether, altcoins and
+                      stablecoins?
+                    </h3>
+                    <p>
+                      Bitcoin is digital gold, Ether a platform, the rest
+                      altcoins of varying quality; alts follow Bitcoin
+                      amplified, and their main risks are thin liquidity,
+                      jolting volatility and the chance of delisting. A
+                      stablecoin holds its rate to the dollar and serves as a
+                      safe harbor and a trading pair, but an algorithmic peg
+                      with no reserves is unreliable.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-04">
+                    <h3>
+                      What crypto-market differences and risks does the author
+                      emphasize?
+                    </h3>
+                    <p>
+                      The main difference of crypto is the absence of a
+                      regulator and high volatility, and the basics themselves
+                      are ninety percent about risk, not technology.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-05">
+                    <h3>
+                      What criteria does the author use when choosing a crypto
+                      exchange and wallet?
+                    </h3>
+                    <p>
+                      Choose an exchange by reliability, regulation, liquidity,
+                      and fees, not by bonuses, and keep large amounts not on
+                      the exchange but in a separate wallet.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-06">
+                    <h3>
+                      What should be planned before placing a first crypto
+                      trade?
+                    </h3>
+                    <p>
+                      The first trade is a plan, not a button: enter at a level
+                      with a predefined stop, and use a limit order instead of
+                      rushing at market.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-07">
+                    <h3>
+                      How does the author combine levels, volume and supply
+                      factors in crypto analysis?
+                    </h3>
+                    <p>
+                      The crypto market reads through levels and volume plus its
+                      own supply side (emission, halvings, whale flows); Bitcoin
+                      dominance is a map of money, not a signal, and the main
+                      pits for a beginner are market-maker manipulation and the
+                      myth of easy arbitrage.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-basics-08">
+                    <h3>
+                      Why does the author suggest starting crypto trading on
+                      demo?
+                    </h3>
+                    <p>
+                      Start on demo until a steady plus, then a small real
+                      account with a stop: people lose not on the choice of
+                      exchange but on haste and emotion.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f036">
+                    <h3>What does KYC mean on a cryptocurrency exchange?</h3>
+                    <p>
+                      KYC is a customer identification process that involves
+                      verifying identity. It relates to service rules and
+                      participant requirements. Identity verification alone does
+                      not establish an exchange&#x27;s reliability.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-basics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-storage"
+                  aria-labelledby="heading-crypto-storage"
+                >
+                  <h2 id="heading-crypto-storage">
+                    Hot Wallet vs Cold Wallet: Which Do You Need
+                  </h2>
+                  <div class="faq-item" id="question-en-crypto-storage-01">
+                    <h3>
+                      How do hot, cold and exchange-based crypto storage differ?
+                    </h3>
+                    <p>
+                      A wallet stores keys, not coins: a hot one is online and
+                      handy for small change, a cold one is offline and safer
+                      for large capital, and on an exchange the keys are not
+                      yours.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-storage-02">
+                    <h3>
+                      What protection does the source attribute to a hardware
+                      wallet?
+                    </h3>
+                    <p>
+                      A hardware wallet keeps the key inside the device, so even
+                      on an infected computer the coins are intact; the most a
+                      virus can do is swap the address, and that is visible on
+                      the screen, while the seed phrase serves as the backup.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-storage-03">
+                    <h3>Why does the author keep seed phrases offline?</h3>
+                    <p>
+                      The seed phrase is access to everything in the form of 12
+                      or 24 words, so offline only and no photos or cloud; in
+                      2026 the scarier thing is not a hack but being talked into
+                      entering the phrase yourself under a deepfake.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-storage-04">
+                    <h3>
+                      How does the author organize device purchase, backups and
+                      fund separation?
+                    </h3>
+                    <p>
+                      Buy the device only from the official maker (a pre-filled
+                      seed in the box is a scam), back the seed up by hand or on
+                      metal in two separate places and test a small recovery,
+                      keep roughly 90 percent in cold and 10 on the exchange,
+                      use multi-signature for large sums, and leave a way for
+                      someone you trust to recover the coins if something
+                      happens to you.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-storage-05">
+                    <h3>
+                      How does the author divide funds between an exchange and
+                      personal storage?
+                    </h3>
+                    <p>
+                      Not your keys, not your coins: keep only the trading
+                      remainder on the exchange, the main capital in cold, and
+                      people lose more often not because of the wallet but
+                      because of storing everything in one place.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f045">
+                    <h3>
+                      Why does an authenticator avoid the SIM-swap risk of SMS
+                      codes?
+                    </h3>
+                    <p>
+                      SMS codes depend on a phone number that may be hijacked
+                      through a SIM swap. An authenticator removes that
+                      particular dependency. Phishing and device compromise
+                      remain separate risks.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/ru/freestudying/crypto-storage"
+                        >Original source in Russian</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >English resource on this topic</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f046">
+                    <h3>What is address poisoning in transaction history?</h3>
+                    <p>
+                      An attacker inserts a transaction involving an address
+                      resembling the intended recipient&#x27;s, hoping it will
+                      be copied from history. Check the entire address and the
+                      trusted source from which it was obtained.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/ru/freestudying/crypto-storage"
+                        >Original source in Russian</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >English resource on this topic</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f047">
+                    <h3>
+                      How does multisignature reduce dependence on one key?
+                    </h3>
+                    <p>
+                      A transfer requires several independent approvals, so
+                      stealing one key may not be enough to move funds. Keys
+                      should be kept separately and recovery arrangements
+                      planned.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-storage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-stablecoins-tether"
+                  aria-labelledby="heading-stablecoins-tether"
+                >
+                  <h2 id="heading-stablecoins-tether">
+                    Is Tether Actually Backed 1:1
+                  </h2>
+                  <div class="faq-item" id="question-en-stablecoins-tether-01">
+                    <h3>
+                      How does the author describe stablecoins and peg
+                      mechanisms?
+                    </h3>
+                    <p>
+                      A stable is a coin near the dollar at one to one; the rate
+                      is held in three ways, and the algorithmic one, with no
+                      live reserves, breaks more easily than the rest.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-stablecoins-tether-02">
+                    <h3>How does the author compare USDT, USDC and DAI?</h3>
+                    <p>
+                      USDT is taken for liquidity, USDC for transparency of
+                      reporting, DAI for decentralization; there is no ideal
+                      one, and for a trader USDT is also a convenient parking
+                      spot between trades.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-stablecoins-tether-03">
+                    <h3>
+                      What reserve and reporting issues does the source discuss
+                      for Tether?
+                    </h3>
+                    <p>
+                      USDT is reliable exactly as far as Tether&#x27;s reserves
+                      are real: more than eighty percent in US government bonds,
+                      but the company is offshore, long published attestations
+                      rather than full audits, and for the US market it issued a
+                      separate coin, USAT.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-stablecoins-tether-04">
+                    <h3>
+                      How does issuer freezing affect the risks of centralized
+                      stablecoins?
+                    </h3>
+                    <p>
+                      A centralized stablecoin is an IOU whose issuer can freeze
+                      or blacklist tokens at any address on a regulator&#x27;s
+                      order, as Circle and Tether have both done; a
+                      decentralized coin like DAI removes that switch but adds
+                      smart-contract risk, so hold in one coin only what you
+                      could lose to either a depeg or a freeze.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-stablecoins-tether-05">
+                    <h3>
+                      What lesson does the author draw from the UST collapse?
+                    </h3>
+                    <p>
+                      The UST collapse in 2022 evaporated around sixty billion
+                      in a few days; the algo-peg rests only on the crowd&#x27;s
+                      faith, so I hold nothing large in it, and I treat stables
+                      as cash.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f040">
+                    <h3>
+                      How does a synthetic stablecoin differ from one backed by
+                      bank reserves?
+                    </h3>
+                    <p>
+                      A synthetic model maintains its peg using crypto positions
+                      and hedging rather than relying solely on bank reserves.
+                      Stability depends on those positions, counterparties, and
+                      market conditions.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/ru/freestudying/stablecoins-tether"
+                        >Original source in Russian</a
+                      >
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >English resource on this topic</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f041">
+                    <h3>
+                      Can a stablecoin issuer freeze tokens at an address?
+                    </h3>
+                    <p>
+                      Some centralized stablecoins allow tokens at specific
+                      addresses to be frozen. This depends on the contract
+                      design and issuer privileges. It is a feature of
+                      centralized control over transfers.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f042">
+                    <h3>Why must the network match when transferring USDT?</h3>
+                    <p>
+                      The same ticker does not imply the same transfer network.
+                      Sender and recipient must support the chosen blockchain
+                      and token. A mismatch can make funds inaccessible or cause
+                      a loss.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/stablecoins-tether"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-perpetuals-margin"
+                  aria-labelledby="heading-crypto-perpetuals-margin"
+                >
+                  <h2 id="heading-crypto-perpetuals-margin">
+                    How Perpetual Contracts Differ From Regular Futures
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-en-crypto-perpetuals-margin-01"
+                  >
+                    <h3>
+                      How does a perpetual futures contract differ from an
+                      expiring future?
+                    </h3>
+                    <p>
+                      A perpetual futures contract has no expiry and is held as
+                      long as you like; unlike a regular future it has no term,
+                      and funding keeps its price tied to spot.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-crypto-perpetuals-margin-02"
+                  >
+                    <h3>
+                      What is the funding payment described in the source?
+                    </h3>
+                    <p>
+                      Funding is a payment between longs and shorts every eight
+                      hours, not an exchange fee; it holds the perp&#x27;s price
+                      near spot, and on a long hold it works as a cost against
+                      you.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-crypto-perpetuals-margin-03"
+                  >
+                    <h3>
+                      How does leverage change profit and loss relative to
+                      collateral?
+                    </h3>
+                    <p>
+                      Leverage multiplies any move both ways: at x10 a
+                      one-percent gain is ten percent of profit, a one-percent
+                      loss is ten percent of the collateral; isolated margin and
+                      low leverage are safer for a beginner.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-crypto-perpetuals-margin-04"
+                  >
+                    <h3>
+                      How does the author explain leverage and liquidation
+                      distance?
+                    </h3>
+                    <p>
+                      The liquidation price is closer to entry the higher the
+                      leverage: at x50 two percent against you is enough to zero
+                      the account; low leverage, a stop before the liquidation
+                      level, and one to two percent risk per trade keep you away
+                      from it.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-en-crypto-perpetuals-margin-05"
+                  >
+                    <h3>
+                      What does the author describe as a cascade of crypto
+                      liquidations?
+                    </h3>
+                    <p>
+                      On perps the crowd&#x27;s money is redistributed not in
+                      its favor: the speculative inflow creates volatility, and
+                      a cascade of liquidations of overheated longs carries
+                      funds into the market; volume shows where large capital
+                      stands.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-perpetuals-margin"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section id="topic-defi" aria-labelledby="heading-defi">
+                  <h2 id="heading-defi">How DeFi Replaces Banks With Code</h2>
+                  <div class="faq-item" id="question-en-defi-01">
+                    <h3>What is DeFi in the author&#x27;s explanation?</h3>
+                    <p>
+                      DeFi is finance through smart contracts without banks: a
+                      wallet gives access, code sets the rules, but all the
+                      responsibility for your funds is on you too.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/defi"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-defi-02">
+                    <h3>How does custody differ between CeFi and DeFi?</h3>
+                    <p>
+                      The line is custody: CeFi means a company holds your coins
+                      and can help or fail you, DeFi means you hold your keys
+                      with full control and no one to call when it breaks.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/defi"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-defi-03">
+                    <h3>
+                      What building blocks and dependencies does the source
+                      identify in DeFi?
+                    </h3>
+                    <p>
+                      DeFi stacks four pieces, exchanges, lending, stablecoins
+                      and oracles, that plug into each other, and that same
+                      composability means a fault in one link can spread through
+                      the rest.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/defi"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-defi-04">
+                    <h3>
+                      What swaps, lending and liquidity-pool operations does the
+                      source describe?
+                    </h3>
+                    <p>
+                      Swap tokens, take and give loans, put funds into pools for
+                      interest; one rule holds: the higher the promised
+                      percentage, the higher the risk behind it, and abnormal
+                      figures are either a loss or a pyramid.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/defi"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-defi-05">
+                    <h3>
+                      What smart-contract risks does the author emphasize in
+                      DeFi?
+                    </h3>
+                    <p>
+                      The main risk is a hole in the smart contract: the code is
+                      public, the bug will be found, and the money leaves for
+                      good; not your keys, not your coins, and an audit lowers
+                      the risk but does not remove it.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/defi"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-staking"
+                  aria-labelledby="heading-crypto-staking"
+                >
+                  <h2 id="heading-crypto-staking">
+                    How Staking Actually Generates Yield
+                  </h2>
+                  <div class="faq-item" id="question-en-crypto-staking-01">
+                    <h3>
+                      What does the source mean by staking in a Proof of Stake
+                      network?
+                    </h3>
+                    <p>
+                      Staking is locking coins in a Proof of Stake network for a
+                      percentage; you put up a reliability account rather than
+                      placing money on a bank deposit.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-staking"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-staking-02">
+                    <h3>
+                      Why does the source distinguish Proof of Stake assets from
+                      Bitcoin?
+                    </h3>
+                    <p>
+                      Only Proof of Stake coins like Ethereum, Solana or Cardano
+                      can be staked, not bitcoin; and since rewards are usually
+                      paid from new issuance, a sky-high percentage often
+                      signals inflation that dilutes the coin rather than free
+                      money.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-staking"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-staking-03">
+                    <h3>
+                      How does the author compare validator operation and
+                      delegation?
+                    </h3>
+                    <p>
+                      You can stake yourself through a validator or more simply
+                      by delegation, the income is usually a few percent a year,
+                      but it is a payment for risk, not insurance.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-staking"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-staking-04">
+                    <h3>
+                      What are lock-up, unbonding and slashing in the
+                      source&#x27;s explanation?
+                    </h3>
+                    <p>
+                      Lock-up is while the coin works, unbonding is a no-reward
+                      exit queue (from a couple of days to 3-4 weeks), and
+                      slashing is a penalty for validator faults that, under
+                      delegation, falls on you as well.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-staking"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-staking-05">
+                    <h3>Which staking risks does the author emphasize?</h3>
+                    <p>
+                      The main risk is not the percentage but the coin price
+                      under it, plus the freeze and slashing, which is why I do
+                      not freeze what can sharply cheapen.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-staking"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-tokenomics"
+                  aria-labelledby="heading-tokenomics"
+                >
+                  <h2 id="heading-tokenomics">
+                    How to Evaluate a Token&#x27;s Tokenomics
+                  </h2>
+                  <div class="faq-item" id="question-en-tokenomics-01">
+                    <h3>What is tokenomics?</h3>
+                    <p>
+                      Tokenomics is the internal economy of a token (issuance,
+                      distribution, utility, incentives); the long-run price is
+                      decided by the balance of supply and demand, not by hype.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/tokenomics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-tokenomics-02">
+                    <h3>
+                      Which five tokenomics parameters does the source suggest
+                      examining?
+                    </h3>
+                    <p>
+                      Break down five parameters: supply and emission,
+                      distribution, vesting (the unlock schedule), the
+                      token&#x27;s utility, and the gap between the current and
+                      the fully diluted capitalization.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/tokenomics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-tokenomics-03">
+                    <h3>
+                      How does the author interpret vesting, cliffs and token
+                      unlocks?
+                    </h3>
+                    <p>
+                      Vesting is the schedule, an unlock is the event on it; a
+                      linear unlock the market digests smoothly, while a cliff
+                      tranche lands at once and presses the price; watch the
+                      share of circulating supply and the calendar
+                      (TokenUnlocks, CoinGecko, docs).
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/tokenomics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-tokenomics-04">
+                    <h3>
+                      What tokenomics lessons does the source draw from Bitcoin,
+                      Ether and LUNA?
+                    </h3>
+                    <p>
+                      Bitcoin (capped, fair launch, store of value) and ether
+                      (uncapped but heavy utility and burn) are two opposite yet
+                      workable models; Terra&#x27;s LUNA is the opposite lesson,
+                      a self-referential mint with no real backing that spiraled
+                      to zero, which is the pattern to spot before buying.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/tokenomics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-tokenomics-05">
+                    <h3>
+                      What tokenomics warning signs does the author identify?
+                    </h3>
+                    <p>
+                      Good tokenomics is a limited supply, a reasonable
+                      distribution, transparent vesting, and real utility; short
+                      team vesting, no unlock schedule, and a token with no use
+                      are the red flags.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/tokenomics"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-arbitrage"
+                  aria-labelledby="heading-crypto-arbitrage"
+                >
+                  <h2 id="heading-crypto-arbitrage">
+                    How Price Differences Between Exchanges Get Exploited
+                  </h2>
+                  <div class="faq-item" id="question-en-crypto-arbitrage-01">
+                    <h3>
+                      How does the author describe price gaps in crypto
+                      arbitrage?
+                    </h3>
+                    <p>
+                      Arbitrage is the price gap of a coin between exchanges. It
+                      comes from venues being out of sync and closes itself in a
+                      fraction of a second, so you can&#x27;t catch it by hand.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-arbitrage-02">
+                    <h3>
+                      How do inter-exchange and triangular arbitrage differ?
+                    </h3>
+                    <p>
+                      Two forms: inter-exchange gets stuck on time and the fee
+                      for moving the coin, triangular skips the move but feeds
+                      on micro-gaps that the bots take first.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-arbitrage-03">
+                    <h3>
+                      What other types of crypto arbitrage does the source
+                      discuss?
+                    </h3>
+                    <p>
+                      Beyond inter-exchange and triangular there are
+                      statistical, funding-rate and DEX arbitrage, but each
+                      leans even harder on algorithms, capital and
+                      infrastructure, so none of them is the easy retail income
+                      it is sold as.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-arbitrage-04">
+                    <h3>
+                      What trade-offs and risks does the author identify in P2P
+                      arbitrage?
+                    </h3>
+                    <p>
+                      P2P arbitrage sells crypto into a local premium of a few
+                      percent in countries with currency controls, and because
+                      it is not a speed race it is the one form retail can
+                      reach; but it swaps the bots for counterparty risk,
+                      account freezes and AML checks, and any
+                      guaranteed-percentage P2P offer is usually a Ponzi.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-arbitrage-05">
+                    <h3>
+                      Why does the author emphasize infrastructure and costs in
+                      crypto arbitrage?
+                    </h3>
+                    <p>
+                      Arbitrage is a contest of servers, not analysis, and a
+                      private trader is behind from the start. Speed, fees and
+                      transfers eat the gap, and a promise of profit without
+                      risk is most often the hallmark of fraudsters.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n086">
+                    <h3>
+                      What does a delta-neutral spot-and-futures position mean?
+                    </h3>
+                    <p>
+                      Buying spot and taking a comparable short perpetual
+                      futures position can offset much of the directional price
+                      exposure. Funding, basis changes, costs, and execution
+                      still affect the result. Directional neutrality does not
+                      mean zero risk.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-arbitrage"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-risks-scams"
+                  aria-labelledby="heading-crypto-risks-scams"
+                >
+                  <h2 id="heading-crypto-risks-scams">
+                    How to Spot a Crypto Scam Before You Lose Money
+                  </h2>
+                  <div class="faq-item" id="question-en-crypto-risks-scams-01">
+                    <h3>
+                      What five categories of crypto risk does ArapovTrade
+                      identify?
+                    </h3>
+                    <p>
+                      There are five kinds of risk: price swings, deception,
+                      technical hacks with lost keys, state decisions, and
+                      psychology, and the very ease of entry shoves a beginner
+                      into the last and most dangerous of them.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-risks-scams"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-risks-scams-02">
+                    <h3>
+                      Why does the author emphasize the possibility of deep
+                      crypto drawdowns?
+                    </h3>
+                    <p>
+                      Bitcoin folded 80 percent in crises and the small fry goes
+                      to zero, because crypto has no floor beneath it, and saved
+                      capital here is worth more than any lucky coin.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-risks-scams"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-risks-scams-03">
+                    <h3>
+                      What common crypto-fraud schemes does the source describe?
+                    </h3>
+                    <p>
+                      The schemes are many, empty projects, pyramids, phishing,
+                      counterfeit exchanges, but the hook is always one: if you
+                      were promised guaranteed profit, you are facing crooks.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-risks-scams"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-risks-scams-04">
+                    <h3>How does a pump-and-dump scheme develop?</h3>
+                    <p>
+                      Bought up low, inflated with ads, dumped on the crowd,
+                      then supply presses demand and turnover dies until the
+                      venue delists the coin, which is why I steer clear of
+                      anything that has already flown up.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-risks-scams"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-crypto-risks-scams-05">
+                    <h3>
+                      What warning signs does the author look for before sending
+                      funds?
+                    </h3>
+                    <p>
+                      A scam is given away by haste, a nameless team, and a
+                      request about keys; bake regulatory uncertainty into
+                      position size, and one rule clears nine traps out of ten:
+                      a guarantee of income equals fraud.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/crypto-risks-scams"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-memecoins"
+                  aria-labelledby="heading-memecoins"
+                >
+                  <h2 id="heading-memecoins">
+                    Why Memecoins Have No Fundamental Value
+                  </h2>
+                  <div class="faq-item" id="question-en-memecoins-01">
+                    <h3>How does the author define a memecoin?</h3>
+                    <p>
+                      A memecoin is a coin with no product and no technology:
+                      the price rests only on hype, memes and the crowd&#x27;s
+                      belief, and depends only on how many people believe in it
+                      right now.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-memecoins-02">
+                    <h3>
+                      How do liquidity and manipulation affect memecoin trading?
+                    </h3>
+                    <p>
+                      A memecoin&#x27;s price moves on the crowd&#x27;s fear and
+                      greed; pump-and-dump and rug pull move money from late to
+                      early participants, and low liquidity lets a whale move
+                      the price easily.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-memecoins-03">
+                    <h3>
+                      How does the author relate memecoin prices to supply and
+                      public attention?
+                    </h3>
+                    <p>
+                      Most memecoins carry a huge or uncapped supply, so there
+                      is no scarcity; the price is just a live measure of
+                      attention, swung by celebrities and prone to 50-90% daily
+                      moves, and the vast majority fade to nothing once the hype
+                      passes.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-memecoins-04">
+                    <h3>
+                      What approach does the author take to the risk of memecoin
+                      speculation?
+                    </h3>
+                    <p>
+                      This is not trading but a lottery: the method cannot be
+                      read here, the volume is distorted by manipulation; if you
+                      play, only with money you can afford to lose in full, and
+                      a guarantee of multiples is fraud.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n044">
+                    <h3>
+                      What does a memecoin launchpad do, and what risks does
+                      easy issuance create?
+                    </h3>
+                    <p>
+                      A launchpad simplifies token creation and initial
+                      distribution. A low entry barrier increases the number of
+                      projects that may lack lasting value. The author
+                      highlights thin liquidity, concentrated holdings, and
+                      dependence on participant attention.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n087">
+                    <h3>
+                      How does a bonding curve determine the next token purchase
+                      price?
+                    </h3>
+                    <p>
+                      A bonding curve relates token prices to issuance or
+                      purchase parameters. In the model described, successive
+                      purchases increase the next purchase price, creating
+                      different entry conditions for early and late
+                      participants.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/memecoins"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Other library topics">
+                  <h2>Other library topics</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-getting-started"
+                        >Getting Started and Trading Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-risk-psychology"
+                        >Trading Risk and Psychology</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-chart-analysis"
+                        >Charts and Technical Analysis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-indicators"
+                        >Indicators and Volatility</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-financial-markets"
+                        >How Financial Markets Work</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-volume-wyckoff-smc"
+                        >Volume Analysis, Wyckoff and Smart Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, Altcoins and Market Cycles</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                      >All topics: Trading Q&amp;A</a
+                    >
+                  </p>
+                </nav>
+                <section>
+  <h2>About the Library Materials</h2>
+  <p>
+    This section is based on materials from the ArapovTrade library and
+    Igor Arapov’s educational videos. Here you can find
+    definitions, comparisons of instruments, explanations of market
+    mechanics, and discussions of the author’s approach to trading.
+  </p>
+  <p>
+    The library’s author is
+    <a class="linkrefinto" href="https://arapov.trade/en"
+      >Igor Arapov</a
+    >, a practicing trader since 2013. The in-depth materials
+    provide context for each question; the short answers serve as
+    a starting point for exploring the topic.
+  </p>
+</section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    PREVIOUS <span class="page_none_block">ARTICLE</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    NEXT <span class="page_none_block">ARTICLE</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Filter by category
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   PREVIOUS <span class="page_none_block">ARTICLE</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   NEXT <span class="page_none_block">ARTICLE</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Popular
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/en/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleEn"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleEn }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Filter by category
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Popular
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/en/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleEn"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleEn }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -618,78 +1666,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Our projects are available to everyone
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Our projects are available to everyone
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Choose a topic that interests you and start learning
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Choose a topic that interests you and start learning
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-

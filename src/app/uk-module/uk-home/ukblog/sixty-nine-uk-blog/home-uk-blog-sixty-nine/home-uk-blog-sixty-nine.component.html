@@ -1,550 +1,1293 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="uk">
-             <header>
-               <h1>Криптовалюти: устрій і безпека: питання та відповіді</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             <p>Як влаштовані криптогаманці, стейблкоїни, DeFi, стейкінг, токеноміка та криптодеривативи; які ризики враховувати.</p>
-             <p>Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під кожною відповіддю є посилання на докладне пояснення. Авторські торгові підходи подано як пояснення Ігоря Арапова; формулювання від першої особи належать автору.</p>
-             <nav aria-label="Зміст"><h2>Зміст</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-basics')" [ngStyle]="{ cursor: 'pointer' }">Як насправді працює криптовалюта</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-storage')" [ngStyle]="{ cursor: 'pointer' }">Гарячий гаманець проти холодного: що обрати</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-stablecoins-tether')" [ngStyle]="{ cursor: 'pointer' }">Чи справді Tether забезпечений 1:1</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-perpetuals-margin')" [ngStyle]="{ cursor: 'pointer' }">Чим безстрокові контракти відрізняються від звичайних ф&#x27;ючерсів</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-defi')" [ngStyle]="{ cursor: 'pointer' }">Як DeFi замінює банки кодом</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-staking')" [ngStyle]="{ cursor: 'pointer' }">Як стейкінг генерує прибуток</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-tokenomics')" [ngStyle]="{ cursor: 'pointer' }">Як оцінити токеноміку проєкту</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-arbitrage')" [ngStyle]="{ cursor: 'pointer' }">Як трейдери використовують різницю цін між біржами</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-crypto-risks-scams')" [ngStyle]="{ cursor: 'pointer' }">Як розпізнати крипто-шахрайство вчасно</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-memecoins')" [ngStyle]="{ cursor: 'pointer' }">Чому мемкоїни не мають фундаментальної цінності</a></li>
-             </ul></nav>
-             <section id="topic-crypto-basics" aria-labelledby="heading-crypto-basics">
-             <h2 id="heading-crypto-basics">Як насправді працює криптовалюта</h2>
-             <div class="faq-item" id="question-uk-crypto-basics-01">
-             <h3>Що таке криптовалюта простими словами?</h3>
-             <p>Криптовалюта це цифровий актив без держгаранта, цінність більшості монет тримається лише на попиті, а виняток біткоїн з лімітом 21 мільйон.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-02">
-             <h3>Як блокчейн повʼязаний із децентралізацією?</h3>
-             <p>Блокчейн це спільний реєстр у багатьох вузлів, тому запис не підробити, але й звичного захисту немає: помилковий переказ ніхто не скасує.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-03">
-             <h3>Чим Bitcoin, альткоїни та стейблкоїни відрізняються?</h3>
-             <p>Біткоїн це цифрове золото, ефір платформа, решта альткоїни різної якості; альти ходять за біткоїном з підсиленням, і їхні головні ризики це тонка ліквідність, ривкова волатильність і шанс делістингу. Стейблкоїн тримає курс біля долара і служить тихою гаванню та торговою парою, але алгоритмічна прив&#x27;язка без резервів ненадійна.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-04">
-             <h3>Чим крипта відрізняється від традиційних фінансів: ключові ризики?</h3>
-             <p>Головна відмінність крипти це відсутність регулятора й висока волатильність, а самі основи на дев&#x27;яносто відсотків про ризик, а не про технологію.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-05">
-             <h3>З чого почати криптотрейдинг: вибір біржі та гаманця?</h3>
-             <p>Обирай біржу за надійністю, регуляцією, ліквідністю та комісіями, а не за бонусами, і великі суми тримай не на біржі, а в окремому гаманці.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-06">
-             <h3>Як відкрити першу угоду на криптобіржі?</h3>
-             <p>Перша угода це план, а не кнопка: вхід за рівнем із заздалегідь визначеним стопом, і лімітний ордер замість поспіху за ринком.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-07">
-             <h3>Як читати крипторинок новачкові?</h3>
-             <p>Крипторинок читається за рівнями та обсягом плюс своя сторона пропозиції (емісія, халвінги, потоки китів); домінація біткоїна це карта грошей, а не сигнал, а головні ями для новачка це маніпуляції маркетмейкерів і міф про легкий арбітраж.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-basics-08">
-             <h3>Демо рахунок проти реального: з чого краще почати?</h3>
-             <p>Починай з демо до стабільного плюса, потім маленький реальний рахунок зі стопом: програють не на виборі біржі, а на поспіху й емоціях.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f036">
-             <h3>Що означає KYC на криптобіржі?</h3>
-             <p>KYC — ідентифікація клієнта через підтвердження особи. Процедура повʼязана з правилами обслуговування та вимогами до учасників. Сама перевірка не гарантує надійності майданчика.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-basics">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-storage" aria-labelledby="heading-crypto-storage">
-             <h2 id="heading-crypto-storage">Гарячий гаманець проти холодного: що обрати</h2>
-             <div class="faq-item" id="question-uk-crypto-storage-01">
-             <h3>Що таке гарячий і холодний гаманець і в чому різниця?</h3>
-             <p>Гаманець зберігає ключі, а не монети: гарячий онлайн і зручний для дрібноти, холодний офлайн і безпечніший для великого капіталу, а на біржі ключі не ваші.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-storage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-storage-02">
-             <h3>Від яких загроз захищає апаратний гаманець?</h3>
-             <p>Апаратний гаманець тримає ключ усередині пристрою, тому навіть на зараженому компʼютері монети цілі; максимум вірусу це підміна адреси, і її видно на екрані, а резервом служить сід-фраза.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-storage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-storage-03">
-             <h3>Що таке seed-фраза й чому її не зберігають онлайн?</h3>
-             <p>Сід-фраза це доступ до всього у вигляді 12 або 24 слів, тому тільки офлайн і без фото та хмари; у 2026 страшніший не злом, а вмовляння самому ввести фразу під дипфейк.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-storage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-storage-04">
-             <h3>Як розділяти торгове та довгострокове зберігання криптовалют?</h3>
-             <p>Не ваші ключі, не ваші монети: на біржі тримай тільки торговий залишок, основний капітал у холоді, а втрачають частіше не через гаманець, а через зберігання всього в одному місці.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-storage">Докладний розбір</a></p>
-             </div>
-             
-             
-             
-             </section>
-             <section id="topic-stablecoins-tether" aria-labelledby="heading-stablecoins-tether">
-             <h2 id="heading-stablecoins-tether">Чи справді Tether забезпечений 1:1</h2>
-             <div class="faq-item" id="question-uk-stablecoins-tether-01">
-             <h3>Що таке стейблкоїн і як тримається привʼязка до долара?</h3>
-             <p>Стейбл це монета біля долара за курсом один до одного; курс тримають трьома шляхами, і алгоритмічний, без живих резервів, ламається легше за інші.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stablecoins-tether">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-stablecoins-tether-02">
-             <h3>Чим USDT, USDC і DAI відрізняються за забезпеченням?</h3>
-             <p>USDT беруть за ліквідність, USDC за прозорість звітності, DAI за децентралізацію; ідеального немає, і для трейдера USDT це ще й зручна парковка між угодами.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stablecoins-tether">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-stablecoins-tether-03">
-             <h3>Що перевіряти під час оцінки забезпечення USDT?</h3>
-             <p>USDT надійний рівно настільки, наскільки реальні резерви Tether: більше вісімдесяти відсотків у держоблігаціях США, але компанія офшорна, під закон США не підпадає і для ринку США випустила окрему монету USAT.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stablecoins-tether">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-stablecoins-tether-04">
-             <h3>Чому стейблкоїн може втратити привʼязку до валюти?</h3>
-             <p>Обвал UST у 2022 випарував близько шістдесяти мільярдів за кілька днів; алгопривʼязка стоїть лише на вірі натовпу, тому в ній я велике не тримаю, а стейбли сприймаю як кеш.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stablecoins-tether">Докладний розбір</a></p>
-             </div>
-             
-             
-             <div class="faq-item" id="question-uk-f042">
-             <h3>Чому під час переказу USDT потрібно погодити мережу?</h3>
-             <p>Однаковий тикер не означає однакову мережу. Відправник і одержувач мають підтримувати обраний блокчейн та відповідний токен. Помилка може спричинити втрату або недоступність коштів.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stablecoins-tether">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-perpetuals-margin" aria-labelledby="heading-crypto-perpetuals-margin">
-             <h2 id="heading-crypto-perpetuals-margin">Чим безстрокові контракти відрізняються від звичайних ф&#x27;ючерсів</h2>
-             <div class="faq-item" id="question-uk-crypto-perpetuals-margin-01">
-             <h3>Що таке безстроковий фʼючерс (perpetual) і чим він відрізняється від звичайного?</h3>
-             <p>Безстроковий фʼючерс це контракт без дати експірації, який тримають скільки завгодно; на відміну від звичайного фʼючерса строку в нього немає, і привʼязку до спота тримає фандинг.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-perpetuals-margin-02">
-             <h3>Що таке фандинг (funding rate) простими словами?</h3>
-             <p>Фандинг це виплати між лонгами й шортами кожні вісім годин, а не комісія біржі; він тримає ціну перпетуала біля спота, а при довгому утриманні працює як витрата проти вас.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-perpetuals-margin-03">
-             <h3>Як маржа й кредитне плече впливають на прибуток і збиток?</h3>
-             <p>Плече множить будь-який рух в обидва боки: при x10 один відсоток у плюс це десять відсотків прибутку, а один відсоток у мінус це десять відсотків застави; новачку безпечніша ізольована маржа і низьке плече.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-perpetuals-margin-04">
-             <h3>Від чого залежить ціна ліквідації криптопозиції?</h3>
-             <p>Ціна ліквідації тим ближче до входу, чим вище плече: при x50 вистачає двох відсотків проти вас, щоб обнулити депозит; тримає від неї низьке плече, стоп раніше за рівень ліквідації і ризик один-два відсотки на угоду.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-perpetuals-margin-05">
-             <h3>Як це виглядає на крипторинку: ризики на конкретному прикладі?</h3>
-             <p>На перпетуалах гроші натовпу перерозподіляються не на його користь: спекулятивний приплив створює волатильність, а каскад ліквідацій перегрітих лонгів уводить депозити в ринок; обсяг показує, де стоїть великий капітал.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-defi" aria-labelledby="heading-defi">
-             <h2 id="heading-defi">Як DeFi замінює банки кодом</h2>
-             <div class="faq-item" id="question-uk-defi-01">
-             <h3>Що таке DeFi простими словами?</h3>
-             <p>DeFi це фінанси через смартконтракти без банків: доступ дає гаманець, правила задає код, але й уся відповідальність за кошти на тобі.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/defi">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-defi-02">
-             <h3>Що можна робити в DeFi: обмін, кредити, пули?</h3>
-             <p>Міняти токени, брати й давати кредити, заводити кошти в пули під відсоток; правило одне: що вищий обіцяний відсоток, то вищий ризик за ним, аномальні цифри це або втрата, або піраміда.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/defi">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-defi-03">
-             <h3>Які ризики мають протоколи DeFi та смартконтракти?</h3>
-             <p>Головний ризик це діра в смартконтракті: код публічний, баг знайдуть, і гроші підуть безповоротно; не твої ключі це не твої монети, аудит ризик знижує, але не прибирає.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/defi">Докладний розбір</a></p>
-             </div>
-             
-             
-             </section>
-             <section id="topic-crypto-staking" aria-labelledby="heading-crypto-staking">
-             <h2 id="heading-crypto-staking">Як стейкінг генерує прибуток</h2>
-             <div class="faq-item" id="question-uk-crypto-staking-01">
-             <h3>Що таке стейкінг криптовалюти?</h3>
-             <p>Стейкінг це блокування монет у мережі Proof of Stake під відсоток, по суті ви вносите заставу надійності, а не кладете гроші на вклад.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-staking">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-staking-02">
-             <h3>Як працює стейкінг і скільки можна заробити?</h3>
-             <p>Стейкати можна самому через валідатора або простіше делегуванням, дохід зазвичай кілька відсотків річних, але це плата за ризик, а не страховка.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-staking">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-staking-03">
-             <h3>Що означають блокування, unbonding і slashing?</h3>
-             <p>Блокування це поки монета працює, анбондинг це черга на вихід без винагороди (від пари днів до 3-4 тижнів), слешинг це штраф за порушення валідатора, який при делегуванні лягає й на вас.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-staking">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-staking-04">
-             <h3>Які ризики враховувати перед стейкінгом?</h3>
-             <p>Головний ризик не відсоток, а ціна монети під ним плюс заморозка й слешинг, тому я не морожу те, що може різко подешевшати.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-staking">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-tokenomics" aria-labelledby="heading-tokenomics">
-             <h2 id="heading-tokenomics">Як оцінити токеноміку проєкту</h2>
-             <div class="faq-item" id="question-uk-tokenomics-01">
-             <h3>Що таке токеноміка простими словами?</h3>
-             <p>Токеноміка це внутрішня економіка токена (випуск, розподіл, корисність, стимули); ціну в довгу вирішує баланс попиту і пропозиції, а не хайп.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/tokenomics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-tokenomics-02">
-             <h3>Які параметри токеноміки потрібно зіставляти?</h3>
-             <p>Розбирайте п&#x27;ять параметрів: пропозицію та емісію, розподіл, вестинг (графік розблокувань), корисність токена і розрив між поточною та повністю розведеною капіталізацією.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/tokenomics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-tokenomics-03">
-             <h3>Чим vesting, cliff і unlock відрізняються?</h3>
-             <p>Вестинг це графік, анлок це подія за ним; лінійний розблок ринок перетравлює плавно, а кліфф-транш виходить разом і тисне на ціну; дивіться частку від обігу і календар (TokenUnlocks, CoinGecko, техдок).</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/tokenomics">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-tokenomics-04">
-             <h3>Як відрізнити продуманий проєкт від пустушки?</h3>
-             <p>Хороша токеноміка це обмежена пропозиція, розумний розподіл, прозорий вестинг і реальна користь; короткий вестинг команди, відсутність графіка розблокувань і токен без користі це червоні прапорці.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/tokenomics">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-crypto-arbitrage" aria-labelledby="heading-crypto-arbitrage">
-             <h2 id="heading-crypto-arbitrage">Як трейдери використовують різницю цін між біржами</h2>
-             <div class="faq-item" id="question-uk-crypto-arbitrage-01">
-             <h3>Що таке криптоарбітраж?</h3>
-             <p>Арбітраж це зазор у ціні монети між біржами. Виникає він з несинхронності майданчиків і сам себе гасить за частки секунди, тому руками його не вхопити.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-arbitrage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-arbitrage-02">
-             <h3>Чим міжбіржовий арбітраж відрізняється від трикутного?</h3>
-             <p>Дві форми: міжбіржова вʼязне в часі й платі за перегін монети, трикутна перегін обходить, але живиться мікрозазорами, які першими знімають роботи.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-arbitrage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-arbitrage-03">
-             <h3>Чому арбітраж недоступний роздрібним трейдерам: швидкість і комісії?</h3>
-             <p>Арбітраж це змагання серверів, а не аналіз, і приватник у ньому завідомо позаду. Швидкість, комісії й перекази зʼїдають зазор, а обіцянка доходу без ризику найчастіше почерк аферистів.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-arbitrage">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-arbitrage-04">
-             <h3>Які особливості та ризики має P2P-арбітраж?</h3>
-             <p>P2P-арбітраж це заробіток на різниці курсів купівлі та продажу фіатом за звʼязкою, з маржею в один-три відсотки за коло. В Україні через обмеження на вивід коштів він особливо популярний, але це бізнес на обороті з ризиком контрагента, блокування рахунку й податками, а не легкі гроші без ризику.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-arbitrage">Докладний розбір</a></p>
-             </div>
-             
-             </section>
-             <section id="topic-crypto-risks-scams" aria-labelledby="heading-crypto-risks-scams">
-             <h2 id="heading-crypto-risks-scams">Як розпізнати крипто-шахрайство вчасно</h2>
-             <div class="faq-item" id="question-uk-crypto-risks-scams-01">
-             <h3>Які ризики в крипті чатують на новачка?</h3>
-             <p>Видів ризику п&#x27;ять: коливання ціни, обман, технічні зломи з втратою ключів, рішення держав і психологія, і сама легкість входу заштовхує новачка в останній, найнебезпечніший із них.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-risks-scams">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-risks-scams-02">
-             <h3>Чому біткоїн падає на 80% і що таке волатильність крипти?</h3>
-             <p>Біткоїн складався на 80 відсотків у кризи, а дрібнота йде в нуль, бо опори знизу в крипти немає, і збережений капітал тут цінніший за будь-яку вдалу монету.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-risks-scams">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-risks-scams-03">
-             <h3>Які схеми криптошахрайства описано в бібліотеці?</h3>
-             <p>Схем маса, порожні проєкти, піраміди, фішинг, підроблені біржі, але гачок усюди один: пообіцяли гарантований прибуток, отже перед вами шахраї.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-risks-scams">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-risks-scams-04">
-             <h3>Як працює pump and dump?</h3>
-             <p>Набрали по низу, роздули рекламою, злили на натовп, далі пропозиція тисне попит і оборот гасне, поки майданчик не делістить монету, тому я обходжу все, що вже злетіло.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-risks-scams">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-crypto-risks-scams-05">
-             <h3>Як розпізнати скам і знизити ризики заздалегідь?</h3>
-             <p>Скам видають поспіх, безіменна команда й прохання про ключі, регуляторну неясність закладай у розмір позиції, а одне правило знімає дев&#x27;ять пасток із десяти: гарантія доходу дорівнює обман.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/crypto-risks-scams">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-memecoins" aria-labelledby="heading-memecoins">
-             <h2 id="heading-memecoins">Чому мемкоїни не мають фундаментальної цінності</h2>
-             <div class="faq-item" id="question-uk-memecoins-01">
-             <h3>Що таке мемкоїн простими словами?</h3>
-             <p>Мемкоїн це монета без продукту й технології: ціна тримається лише на хайпі, мемах і вірі натовпу й залежить тільки від того, скільки людей зараз у неї вірить.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/memecoins">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-memecoins-02">
-             <h3>Чому мемкоїни це казино: хайп, ліквідність і маніпуляції?</h3>
-             <p>Ціна мемкоїна рухається на страху й жадібності натовпу; памп-дамп і раг-пул перекладають гроші від пізніх до ранніх, а низька ліквідність дозволяє киту легко рухати ціну.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/memecoins">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-memecoins-03">
-             <h3>Як ставитися до мемкоїнів тверезо?</h3>
-             <p>Це не трейдинг, а лотерея: метод тут не читається, об&#x27;єм спотворений маніпуляціями; граєш тільки тими грошима, що не страшно втратити повністю, а гарантія іксів це шахрайство.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/memecoins">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n044">
-             <h3>Що робить лаунчпад мемкоїнів і які ризики спрощеного випуску?</h3>
-             <p>Лаунчпад спрощує створення й запуск токенів. Низький поріг збільшує кількість проєктів без стійкої цінності. Автор звертає увагу на тонку ліквідність, концентрацію токенів і залежність ціни від уваги учасників.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/memecoins">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n087">
-             <h3>Як бондинг-крива задає ціну наступної купівлі токена?</h3>
-             <p>Бондинг-крива повʼязує ціну з параметрами випуску або купівлі токена. В описаній моделі наступні купівлі підвищують ціну нової купівлі, створюючи різні умови для ранніх і пізніх учасників.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/memecoins">Докладний розбір</a></p>
-             </div>
-             </section>
-             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-chart-analysis">Графіки та технічний аналіз</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             </nav>
-             <section><h2>Про автора</h2><p>Матеріали бібліотеки підготував Ігор Арапов, практикуючий трейдер із 2013 року.</p><p><a class="linkrefinto" href="https://arapov.trade/uk">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="uk">
+              <header>
+                <h1>Криптовалюти: устрій і безпека: питання та відповіді</h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                    >Усі теми: питання та відповіді з трейдингу</a
+                  >
+                </p>
+                <p>
+                  Як влаштовані криптогаманці, стейблкоїни, DeFi, стейкінг,
+                  токеноміка та криптодеривативи; які ризики враховувати.
+                </p>
+                <p>
+                  Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під
+                  кожною відповіддю є посилання на докладне пояснення. Авторські
+                  торгові підходи подано як пояснення Ігоря Арапова;
+                  формулювання від першої особи належать автору.
+                </p>
+                <nav aria-label="Зміст">
+                  <h2>Зміст</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-basics')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як насправді працює криптовалюта</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-storage')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Гарячий гаманець проти холодного: що обрати</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-stablecoins-tether')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Чи справді Tether забезпечений 1:1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="
+                          scrollToFragment('topic-crypto-perpetuals-margin')
+                        "
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Чим безстрокові контракти відрізняються від звичайних
+                        ф&#x27;ючерсів</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-defi')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як DeFi замінює банки кодом</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-staking')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як стейкінг генерує прибуток</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-tokenomics')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як оцінити токеноміку проєкту</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-arbitrage')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як трейдери використовують різницю цін між біржами</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-crypto-risks-scams')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як розпізнати крипто-шахрайство вчасно</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-memecoins')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Чому мемкоїни не мають фундаментальної цінності</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-crypto-basics"
+                  aria-labelledby="heading-crypto-basics"
+                >
+                  <h2 id="heading-crypto-basics">
+                    Як насправді працює криптовалюта
+                  </h2>
+                  <div class="faq-item" id="question-uk-crypto-basics-01">
+                    <h3>Що таке криптовалюта простими словами?</h3>
+                    <p>
+                      Криптовалюта це цифровий актив без держгаранта, цінність
+                      більшості монет тримається лише на попиті, а виняток
+                      біткоїн з лімітом 21 мільйон.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-02">
+                    <h3>Як блокчейн повʼязаний із децентралізацією?</h3>
+                    <p>
+                      Блокчейн це спільний реєстр у багатьох вузлів, тому запис
+                      не підробити, але й звичного захисту немає: помилковий
+                      переказ ніхто не скасує.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-03">
+                    <h3>
+                      Чим Bitcoin, альткоїни та стейблкоїни відрізняються?
+                    </h3>
+                    <p>
+                      Біткоїн це цифрове золото, ефір платформа, решта альткоїни
+                      різної якості; альти ходять за біткоїном з підсиленням, і
+                      їхні головні ризики це тонка ліквідність, ривкова
+                      волатильність і шанс делістингу. Стейблкоїн тримає курс
+                      біля долара і служить тихою гаванню та торговою парою, але
+                      алгоритмічна прив&#x27;язка без резервів ненадійна.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-04">
+                    <h3>
+                      Чим крипта відрізняється від традиційних фінансів: ключові
+                      ризики?
+                    </h3>
+                    <p>
+                      Головна відмінність крипти це відсутність регулятора й
+                      висока волатильність, а самі основи на дев&#x27;яносто
+                      відсотків про ризик, а не про технологію.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-05">
+                    <h3>
+                      З чого почати криптотрейдинг: вибір біржі та гаманця?
+                    </h3>
+                    <p>
+                      Обирай біржу за надійністю, регуляцією, ліквідністю та
+                      комісіями, а не за бонусами, і великі суми тримай не на
+                      біржі, а в окремому гаманці.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-06">
+                    <h3>Як відкрити першу угоду на криптобіржі?</h3>
+                    <p>
+                      Перша угода це план, а не кнопка: вхід за рівнем із
+                      заздалегідь визначеним стопом, і лімітний ордер замість
+                      поспіху за ринком.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-07">
+                    <h3>Як читати крипторинок новачкові?</h3>
+                    <p>
+                      Крипторинок читається за рівнями та обсягом плюс своя
+                      сторона пропозиції (емісія, халвінги, потоки китів);
+                      домінація біткоїна це карта грошей, а не сигнал, а головні
+                      ями для новачка це маніпуляції маркетмейкерів і міф про
+                      легкий арбітраж.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-basics-08">
+                    <h3>Демо рахунок проти реального: з чого краще почати?</h3>
+                    <p>
+                      Починай з демо до стабільного плюса, потім маленький
+                      реальний рахунок зі стопом: програють не на виборі біржі,
+                      а на поспіху й емоціях.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f036">
+                    <h3>Що означає KYC на криптобіржі?</h3>
+                    <p>
+                      KYC — ідентифікація клієнта через підтвердження особи.
+                      Процедура повʼязана з правилами обслуговування та вимогами
+                      до учасників. Сама перевірка не гарантує надійності
+                      майданчика.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-basics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-storage"
+                  aria-labelledby="heading-crypto-storage"
+                >
+                  <h2 id="heading-crypto-storage">
+                    Гарячий гаманець проти холодного: що обрати
+                  </h2>
+                  <div class="faq-item" id="question-uk-crypto-storage-01">
+                    <h3>
+                      Що таке гарячий і холодний гаманець і в чому різниця?
+                    </h3>
+                    <p>
+                      Гаманець зберігає ключі, а не монети: гарячий онлайн і
+                      зручний для дрібноти, холодний офлайн і безпечніший для
+                      великого капіталу, а на біржі ключі не ваші.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-storage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-storage-02">
+                    <h3>Від яких загроз захищає апаратний гаманець?</h3>
+                    <p>
+                      Апаратний гаманець тримає ключ усередині пристрою, тому
+                      навіть на зараженому компʼютері монети цілі; максимум
+                      вірусу це підміна адреси, і її видно на екрані, а резервом
+                      служить сід-фраза.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-storage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-storage-03">
+                    <h3>Що таке seed-фраза й чому її не зберігають онлайн?</h3>
+                    <p>
+                      Сід-фраза це доступ до всього у вигляді 12 або 24 слів,
+                      тому тільки офлайн і без фото та хмари; у 2026 страшніший
+                      не злом, а вмовляння самому ввести фразу під дипфейк.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-storage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-storage-04">
+                    <h3>
+                      Як розділяти торгове та довгострокове зберігання
+                      криптовалют?
+                    </h3>
+                    <p>
+                      Не ваші ключі, не ваші монети: на біржі тримай тільки
+                      торговий залишок, основний капітал у холоді, а втрачають
+                      частіше не через гаманець, а через зберігання всього в
+                      одному місці.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-storage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-stablecoins-tether"
+                  aria-labelledby="heading-stablecoins-tether"
+                >
+                  <h2 id="heading-stablecoins-tether">
+                    Чи справді Tether забезпечений 1:1
+                  </h2>
+                  <div class="faq-item" id="question-uk-stablecoins-tether-01">
+                    <h3>
+                      Що таке стейблкоїн і як тримається привʼязка до долара?
+                    </h3>
+                    <p>
+                      Стейбл це монета біля долара за курсом один до одного;
+                      курс тримають трьома шляхами, і алгоритмічний, без живих
+                      резервів, ламається легше за інші.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/stablecoins-tether"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-stablecoins-tether-02">
+                    <h3>
+                      Чим USDT, USDC і DAI відрізняються за забезпеченням?
+                    </h3>
+                    <p>
+                      USDT беруть за ліквідність, USDC за прозорість звітності,
+                      DAI за децентралізацію; ідеального немає, і для трейдера
+                      USDT це ще й зручна парковка між угодами.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/stablecoins-tether"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-stablecoins-tether-03">
+                    <h3>Що перевіряти під час оцінки забезпечення USDT?</h3>
+                    <p>
+                      USDT надійний рівно настільки, наскільки реальні резерви
+                      Tether: більше вісімдесяти відсотків у держоблігаціях США,
+                      але компанія офшорна, під закон США не підпадає і для
+                      ринку США випустила окрему монету USAT.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/stablecoins-tether"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-stablecoins-tether-04">
+                    <h3>Чому стейблкоїн може втратити привʼязку до валюти?</h3>
+                    <p>
+                      Обвал UST у 2022 випарував близько шістдесяти мільярдів за
+                      кілька днів; алгопривʼязка стоїть лише на вірі натовпу,
+                      тому в ній я велике не тримаю, а стейбли сприймаю як кеш.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/stablecoins-tether"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
 
+                  <div class="faq-item" id="question-uk-f042">
+                    <h3>
+                      Чому під час переказу USDT потрібно погодити мережу?
+                    </h3>
+                    <p>
+                      Однаковий тикер не означає однакову мережу. Відправник і
+                      одержувач мають підтримувати обраний блокчейн та
+                      відповідний токен. Помилка може спричинити втрату або
+                      недоступність коштів.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/stablecoins-tether"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-perpetuals-margin"
+                  aria-labelledby="heading-crypto-perpetuals-margin"
+                >
+                  <h2 id="heading-crypto-perpetuals-margin">
+                    Чим безстрокові контракти відрізняються від звичайних
+                    ф&#x27;ючерсів
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-uk-crypto-perpetuals-margin-01"
+                  >
+                    <h3>
+                      Що таке безстроковий фʼючерс (perpetual) і чим він
+                      відрізняється від звичайного?
+                    </h3>
+                    <p>
+                      Безстроковий фʼючерс це контракт без дати експірації, який
+                      тримають скільки завгодно; на відміну від звичайного
+                      фʼючерса строку в нього немає, і привʼязку до спота тримає
+                      фандинг.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-crypto-perpetuals-margin-02"
+                  >
+                    <h3>Що таке фандинг (funding rate) простими словами?</h3>
+                    <p>
+                      Фандинг це виплати між лонгами й шортами кожні вісім
+                      годин, а не комісія біржі; він тримає ціну перпетуала біля
+                      спота, а при довгому утриманні працює як витрата проти
+                      вас.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-crypto-perpetuals-margin-03"
+                  >
+                    <h3>
+                      Як маржа й кредитне плече впливають на прибуток і збиток?
+                    </h3>
+                    <p>
+                      Плече множить будь-який рух в обидва боки: при x10 один
+                      відсоток у плюс це десять відсотків прибутку, а один
+                      відсоток у мінус це десять відсотків застави; новачку
+                      безпечніша ізольована маржа і низьке плече.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-crypto-perpetuals-margin-04"
+                  >
+                    <h3>Від чого залежить ціна ліквідації криптопозиції?</h3>
+                    <p>
+                      Ціна ліквідації тим ближче до входу, чим вище плече: при
+                      x50 вистачає двох відсотків проти вас, щоб обнулити
+                      депозит; тримає від неї низьке плече, стоп раніше за
+                      рівень ліквідації і ризик один-два відсотки на угоду.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-crypto-perpetuals-margin-05"
+                  >
+                    <h3>
+                      Як це виглядає на крипторинку: ризики на конкретному
+                      прикладі?
+                    </h3>
+                    <p>
+                      На перпетуалах гроші натовпу перерозподіляються не на його
+                      користь: спекулятивний приплив створює волатильність, а
+                      каскад ліквідацій перегрітих лонгів уводить депозити в
+                      ринок; обсяг показує, де стоїть великий капітал.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-perpetuals-margin"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section id="topic-defi" aria-labelledby="heading-defi">
+                  <h2 id="heading-defi">Як DeFi замінює банки кодом</h2>
+                  <div class="faq-item" id="question-uk-defi-01">
+                    <h3>Що таке DeFi простими словами?</h3>
+                    <p>
+                      DeFi це фінанси через смартконтракти без банків: доступ
+                      дає гаманець, правила задає код, але й уся
+                      відповідальність за кошти на тобі.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/defi"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-defi-02">
+                    <h3>Що можна робити в DeFi: обмін, кредити, пули?</h3>
+                    <p>
+                      Міняти токени, брати й давати кредити, заводити кошти в
+                      пули під відсоток; правило одне: що вищий обіцяний
+                      відсоток, то вищий ризик за ним, аномальні цифри це або
+                      втрата, або піраміда.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/defi"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-defi-03">
+                    <h3>Які ризики мають протоколи DeFi та смартконтракти?</h3>
+                    <p>
+                      Головний ризик це діра в смартконтракті: код публічний,
+                      баг знайдуть, і гроші підуть безповоротно; не твої ключі
+                      це не твої монети, аудит ризик знижує, але не прибирає.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/defi"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-staking"
+                  aria-labelledby="heading-crypto-staking"
+                >
+                  <h2 id="heading-crypto-staking">
+                    Як стейкінг генерує прибуток
+                  </h2>
+                  <div class="faq-item" id="question-uk-crypto-staking-01">
+                    <h3>Що таке стейкінг криптовалюти?</h3>
+                    <p>
+                      Стейкінг це блокування монет у мережі Proof of Stake під
+                      відсоток, по суті ви вносите заставу надійності, а не
+                      кладете гроші на вклад.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-staking"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-staking-02">
+                    <h3>Як працює стейкінг і скільки можна заробити?</h3>
+                    <p>
+                      Стейкати можна самому через валідатора або простіше
+                      делегуванням, дохід зазвичай кілька відсотків річних, але
+                      це плата за ризик, а не страховка.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-staking"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-staking-03">
+                    <h3>Що означають блокування, unbonding і slashing?</h3>
+                    <p>
+                      Блокування це поки монета працює, анбондинг це черга на
+                      вихід без винагороди (від пари днів до 3-4 тижнів),
+                      слешинг це штраф за порушення валідатора, який при
+                      делегуванні лягає й на вас.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-staking"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-staking-04">
+                    <h3>Які ризики враховувати перед стейкінгом?</h3>
+                    <p>
+                      Головний ризик не відсоток, а ціна монети під ним плюс
+                      заморозка й слешинг, тому я не морожу те, що може різко
+                      подешевшати.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-staking"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-tokenomics"
+                  aria-labelledby="heading-tokenomics"
+                >
+                  <h2 id="heading-tokenomics">Як оцінити токеноміку проєкту</h2>
+                  <div class="faq-item" id="question-uk-tokenomics-01">
+                    <h3>Що таке токеноміка простими словами?</h3>
+                    <p>
+                      Токеноміка це внутрішня економіка токена (випуск,
+                      розподіл, корисність, стимули); ціну в довгу вирішує
+                      баланс попиту і пропозиції, а не хайп.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/tokenomics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-tokenomics-02">
+                    <h3>Які параметри токеноміки потрібно зіставляти?</h3>
+                    <p>
+                      Розбирайте п&#x27;ять параметрів: пропозицію та емісію,
+                      розподіл, вестинг (графік розблокувань), корисність токена
+                      і розрив між поточною та повністю розведеною
+                      капіталізацією.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/tokenomics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-tokenomics-03">
+                    <h3>Чим vesting, cliff і unlock відрізняються?</h3>
+                    <p>
+                      Вестинг це графік, анлок це подія за ним; лінійний розблок
+                      ринок перетравлює плавно, а кліфф-транш виходить разом і
+                      тисне на ціну; дивіться частку від обігу і календар
+                      (TokenUnlocks, CoinGecko, техдок).
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/tokenomics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-tokenomics-04">
+                    <h3>Як відрізнити продуманий проєкт від пустушки?</h3>
+                    <p>
+                      Хороша токеноміка це обмежена пропозиція, розумний
+                      розподіл, прозорий вестинг і реальна користь; короткий
+                      вестинг команди, відсутність графіка розблокувань і токен
+                      без користі це червоні прапорці.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/tokenomics"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-arbitrage"
+                  aria-labelledby="heading-crypto-arbitrage"
+                >
+                  <h2 id="heading-crypto-arbitrage">
+                    Як трейдери використовують різницю цін між біржами
+                  </h2>
+                  <div class="faq-item" id="question-uk-crypto-arbitrage-01">
+                    <h3>Що таке криптоарбітраж?</h3>
+                    <p>
+                      Арбітраж це зазор у ціні монети між біржами. Виникає він з
+                      несинхронності майданчиків і сам себе гасить за частки
+                      секунди, тому руками його не вхопити.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-arbitrage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-arbitrage-02">
+                    <h3>
+                      Чим міжбіржовий арбітраж відрізняється від трикутного?
+                    </h3>
+                    <p>
+                      Дві форми: міжбіржова вʼязне в часі й платі за перегін
+                      монети, трикутна перегін обходить, але живиться
+                      мікрозазорами, які першими знімають роботи.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-arbitrage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-arbitrage-03">
+                    <h3>
+                      Чому арбітраж недоступний роздрібним трейдерам: швидкість
+                      і комісії?
+                    </h3>
+                    <p>
+                      Арбітраж це змагання серверів, а не аналіз, і приватник у
+                      ньому завідомо позаду. Швидкість, комісії й перекази
+                      зʼїдають зазор, а обіцянка доходу без ризику найчастіше
+                      почерк аферистів.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-arbitrage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-arbitrage-04">
+                    <h3>Які особливості та ризики має P2P-арбітраж?</h3>
+                    <p>
+                      P2P-арбітраж це заробіток на різниці курсів купівлі та
+                      продажу фіатом за звʼязкою, з маржею в один-три відсотки
+                      за коло. В Україні через обмеження на вивід коштів він
+                      особливо популярний, але це бізнес на обороті з ризиком
+                      контрагента, блокування рахунку й податками, а не легкі
+                      гроші без ризику.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-arbitrage"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-crypto-risks-scams"
+                  aria-labelledby="heading-crypto-risks-scams"
+                >
+                  <h2 id="heading-crypto-risks-scams">
+                    Як розпізнати крипто-шахрайство вчасно
+                  </h2>
+                  <div class="faq-item" id="question-uk-crypto-risks-scams-01">
+                    <h3>Які ризики в крипті чатують на новачка?</h3>
+                    <p>
+                      Видів ризику п&#x27;ять: коливання ціни, обман, технічні
+                      зломи з втратою ключів, рішення держав і психологія, і
+                      сама легкість входу заштовхує новачка в останній,
+                      найнебезпечніший із них.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-risks-scams"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-risks-scams-02">
+                    <h3>
+                      Чому біткоїн падає на 80% і що таке волатильність крипти?
+                    </h3>
+                    <p>
+                      Біткоїн складався на 80 відсотків у кризи, а дрібнота йде
+                      в нуль, бо опори знизу в крипти немає, і збережений
+                      капітал тут цінніший за будь-яку вдалу монету.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-risks-scams"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-risks-scams-03">
+                    <h3>Які схеми криптошахрайства описано в бібліотеці?</h3>
+                    <p>
+                      Схем маса, порожні проєкти, піраміди, фішинг, підроблені
+                      біржі, але гачок усюди один: пообіцяли гарантований
+                      прибуток, отже перед вами шахраї.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-risks-scams"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-risks-scams-04">
+                    <h3>Як працює pump and dump?</h3>
+                    <p>
+                      Набрали по низу, роздули рекламою, злили на натовп, далі
+                      пропозиція тисне попит і оборот гасне, поки майданчик не
+                      делістить монету, тому я обходжу все, що вже злетіло.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-risks-scams"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-crypto-risks-scams-05">
+                    <h3>Як розпізнати скам і знизити ризики заздалегідь?</h3>
+                    <p>
+                      Скам видають поспіх, безіменна команда й прохання про
+                      ключі, регуляторну неясність закладай у розмір позиції, а
+                      одне правило знімає дев&#x27;ять пасток із десяти:
+                      гарантія доходу дорівнює обман.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/crypto-risks-scams"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-memecoins"
+                  aria-labelledby="heading-memecoins"
+                >
+                  <h2 id="heading-memecoins">
+                    Чому мемкоїни не мають фундаментальної цінності
+                  </h2>
+                  <div class="faq-item" id="question-uk-memecoins-01">
+                    <h3>Що таке мемкоїн простими словами?</h3>
+                    <p>
+                      Мемкоїн це монета без продукту й технології: ціна
+                      тримається лише на хайпі, мемах і вірі натовпу й залежить
+                      тільки від того, скільки людей зараз у неї вірить.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/memecoins"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-memecoins-02">
+                    <h3>
+                      Чому мемкоїни це казино: хайп, ліквідність і маніпуляції?
+                    </h3>
+                    <p>
+                      Ціна мемкоїна рухається на страху й жадібності натовпу;
+                      памп-дамп і раг-пул перекладають гроші від пізніх до
+                      ранніх, а низька ліквідність дозволяє киту легко рухати
+                      ціну.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/memecoins"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-memecoins-03">
+                    <h3>Як ставитися до мемкоїнів тверезо?</h3>
+                    <p>
+                      Це не трейдинг, а лотерея: метод тут не читається,
+                      об&#x27;єм спотворений маніпуляціями; граєш тільки тими
+                      грошима, що не страшно втратити повністю, а гарантія іксів
+                      це шахрайство.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/memecoins"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n044">
+                    <h3>
+                      Що робить лаунчпад мемкоїнів і які ризики спрощеного
+                      випуску?
+                    </h3>
+                    <p>
+                      Лаунчпад спрощує створення й запуск токенів. Низький поріг
+                      збільшує кількість проєктів без стійкої цінності. Автор
+                      звертає увагу на тонку ліквідність, концентрацію токенів і
+                      залежність ціни від уваги учасників.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/memecoins"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n087">
+                    <h3>
+                      Як бондинг-крива задає ціну наступної купівлі токена?
+                    </h3>
+                    <p>
+                      Бондинг-крива повʼязує ціну з параметрами випуску або
+                      купівлі токена. В описаній моделі наступні купівлі
+                      підвищують ціну нової купівлі, створюючи різні умови для
+                      ранніх і пізніх учасників.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/memecoins"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Інші теми бібліотеки">
+                  <h2>Інші теми бібліотеки</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-getting-started"
+                        >Початок торгівлі та торгова система</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-risk-psychology"
+                        >Ризик і психологія трейдингу</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-chart-analysis"
+                        >Графіки та технічний аналіз</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-indicators"
+                        >Індикатори та волатильність</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-financial-markets"
+                        >Як влаштовані фінансові ринки</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
+                        >Обʼємний аналіз, Вайкофф і Smart Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, альткоїни та ринкові цикли</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                      >Усі теми: питання та відповіді з трейдингу</a
+                    >
+                  </p>
+                </nav>
+                <section>
+                  <h2>Про матеріали бібліотеки</h2>
+                  <p>
+                    Розділ укладено на основі матеріалів бібліотеки ArapovTrade
+                    та навчальних відео Ігоря Арапова. Тут можна знайти
+                    визначення, порівняння інструментів, пояснення ринкової
+                    механіки та розбори авторського підходу до трейдингу.
+                  </p>
+                  <p>
+                    Автор бібліотеки —
+                    <a class="linkrefinto" href="https://arapov.trade/uk"
+                      >Ігор Арапов</a
+                    >, практикуючий трейдер з 2013 року. Докладні матеріали
+                    розкривають контекст кожного питання; короткі відповіді
+                    слугують відправною точкою для вивчення теми.
+                  </p>
+                </section>
+              </article>
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                  <span class="previous_page_text-block">
+                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
-                 <span class="previous_page_text-block">
-                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Фільтр за категоріями
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Популярне
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Фільтр за категоріями
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/uk/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleUkr"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleUkr }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
+                <!-- Our projects  -->
 
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Популярне
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/uk/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleUkr"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleUkr }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -553,78 +1296,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Наші проєкти доступні кожному охочому
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Наші проєкти доступні кожному охочому
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Оберіть тему, яка вас цікавить, і почніть навчання
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Оберіть тему, яка вас цікавить, і почніть навчання
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-

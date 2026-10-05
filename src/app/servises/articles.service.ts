@@ -98,11 +98,12 @@ export class ArticlesService {
   getRandomUkArticles() {
     // const shuffled = [...this.ukrArtickles].sort(() => 0.5 - Math.random());
     // return shuffled.slice(0, 4);
-     const targetLinks = [
+     const targetLinks = [ 
+      'trading-faq',
       'chart-reading',
       'volume-analysis',
-      'market-microstructure',
-      'risk-management',
+      'market-microstructure', 
+      
     ];
     return this.ukrArtickles.filter((article) =>
       targetLinks.includes(article.linkUkr),
@@ -111,11 +112,12 @@ export class ArticlesService {
   getRandomUkArticlesFive() {
     // const shuffled = [...this.ukrArtickles].sort(() => 0.5 - Math.random());
     // return shuffled.slice(0, 5);
-    const targetLinks = [
+    const targetLinks = [ 
+      'trading-faq',
       'chart-reading',
       'volume-analysis',
       'market-microstructure',
-      'risk-management',
+       
     ];
     return this.ukrArtickles.filter((article) =>
       targetLinks.includes(article.linkUkr),

@@ -1,502 +1,1164 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="uk">
-             <header>
-               <h1>Графіки та технічний аналіз: питання та відповіді</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             <p>Як читати рух ціни, знаходити рівні та оцінювати свічні й графічні структури.</p>
-             <p>Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під кожною відповіддю є посилання на докладне пояснення. Авторські торгові підходи подано як пояснення Ігоря Арапова; формулювання від першої особи належать автору.</p>
-             <nav aria-label="Зміст"><h2>Зміст</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-chart-reading')" [ngStyle]="{ cursor: 'pointer' }">Читання цінового графіка крок за кроком</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-breakout-strategy')" [ngStyle]="{ cursor: 'pointer' }">Як торгувати пробої рівнів</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-candlestick-patterns')" [ngStyle]="{ cursor: 'pointer' }">Як читати японські свічки</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-chart-patterns')" [ngStyle]="{ cursor: 'pointer' }">Які графічні патерни справді працюють</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-elliott-waves')" [ngStyle]="{ cursor: 'pointer' }">Як правильно рахувати хвилі Елліотта</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-fibonacci-levels')" [ngStyle]="{ cursor: 'pointer' }">Як будувати та використовувати рівні Фібоначчі</a></li>
-             </ul></nav>
-             <section id="topic-chart-reading" aria-labelledby="heading-chart-reading">
-             <h2 id="heading-chart-reading">Читання цінового графіка крок за кроком</h2>
-             <div class="faq-item" id="question-uk-chart-reading-01">
-             <h3>Що таке технічний аналіз і на чому він тримається?</h3>
-             <p>Технічний аналіз читає ринок за ціною й об&#x27;ємом, виходячи з того що вся інформація вже в ціні; найоб&#x27;єктивніше в ньому це рівні, які всі бачать однаково, а фігури й індикатори куди суб&#x27;єктивніші.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-02">
-             <h3>Чим лінійний графік відрізняється від барного та свічкового?</h3>
-             <p>Торговий графік буває лінійним, барним і свічковим: лінійний показує лише закриття й годиться для загальної картини, а бар і свічка несуть повні дані про ціну за період, відкриття, верх, низ і закриття.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-03">
-             <h3>Чи відрізняються дані бару та японської свічки?</h3>
-             <p>Бар і свічка несуть однакову четвірку, відкриття, верх, низ і закриття, тільки свічка накидає кольорове тіло й схоплюється з льоту; але сама по собі самотня свічка це приблизно рівні шанси, і сенс вона набуває лише на зоні з об&#x27;ємом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-04">
-             <h3>Що таке таймфрейм і як його обирати?</h3>
-             <p>Таймфрейм задає, скільки часу вміщає одна свічка, від хвилини до тижня, і заодно окреслює ваш стиль; новачку рівніше на старших періодах, годині й дні, де тихіший шум, вільготніше з аналізом і менше з&#x27;їдає спред.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-05">
-             <h3>Як проводити аналіз від старшого таймфрейму до молодшого?</h3>
-             <p>Старший таймфрейм завжди головніший: він задає напрям, а молодший потрібен лише для входу в його бік, тому я йду згори вниз, від тренду й зон на старшому до точки входу на молодшому.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-06">
-             <h3>Як розрізняти тренд, флет, баланс і дисбаланс?</h3>
-             <p>Ринок завжди в одній із трьох фаз: висхідний тренд, низхідний тренд або флет; флет це баланс і цінова коробка накопичення чи розподілу, тренд це дисбаланс, а яка коробка перед тобою, підказує об&#x27;єм; спершу визнач фазу, потім обирай прийом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-07">
-             <h3>Чому підтримку та опір розглядають як зони?</h3>
-             <p>Рівень це зона, де ціна раніше розверталася, підтримка знизу, опір зверху, і працюють вони на пам&#x27;яті ринку; будуй його як діапазон по кількох торканнях і підтверджуй об&#x27;ємом, а не тягни лінію по піку.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-08">
-             <h3>Як торгувати від рівня до рівня та враховувати хибний пробій?</h3>
-             <p>Базова стратегія це купівля біля підтримки з ціллю на опір і навпаки, зі стопом одразу за зоною й входом за реакцією; справжній пробій іде на зрослому об&#x27;ємі й закріплюється, а хибний накол млявий і одразу повертається, тому чекай ретесту.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-09">
-             <h3>Як будувати та використовувати торгові канали?</h3>
-             <p>Канал це зона між двома паралельними лініями, нахил ділить їх на висхідний, низхідний і горизонтальний; будують за реальними точками й не натягують під ідею, а вхід я беру не від торкання, а за реакцією й об&#x27;ємом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-10">
-             <h3>Як імпульс, відкат і зміна пріоритету описують структуру руху?</h3>
-             <p>Тренд складається з імпульсів на об&#x27;ємі та відкатів без нього; поки оновлюються максимуми й мінімуми, структура ціла і я йду за трендом, а злом структури показує, що аукціон змінився. Чесний розворот видають три ознаки поспіль, накол, пробій рівня й ретест, і всі три я підтверджую зростанням об&#x27;єму.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-11">
-             <h3>Чи працюють фігури та індикатори і чому вони переоцінені?</h3>
-             <p>Фігури варто знати в обличчя, але як сигнал вони дають приблизно 50 на 50, бо їх бачать усі й великий знімає на них ліквідність; індикатори запізнюються, тому надійніше рівень і об&#x27;єм, а з фігур я беру хіба що прапор заради проекції цілі.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-reading-12">
-             <h3>Як перейти від читання ціни до аналізу обʼєму?</h3>
-             <p>Читання графіка це фундамент, але рівень лише показує, де шукати угоду, а реальний інтерес підтверджує об’єм; коли я додав об’ємний аналіз до чистих рівнів, якість рішень помітно зросла.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-breakout-strategy" aria-labelledby="heading-breakout-strategy">
-             <h2 id="heading-breakout-strategy">Як торгувати пробої рівнів</h2>
-             <div class="faq-item" id="question-uk-breakout-strategy-01">
-             <h3>Що таке пробій рівня підтримки та опору?</h3>
-             <p>Пробій це прохід ціни крізь зону, яку раніше не брали, але сам вихід за рівень ще нічого не означає: крупний капітал часто спершу вибиває стопи хибним рухом, а рівень це діапазон, а не лінія.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-breakout-strategy-02">
-             <h3>Як відрізнити справжній пробій від хибного за обсягом?</h3>
-             <p>Справжній пробій іде зі зростанням обсягу, хибний його позбавлений: зусилля за рівень без обсягу і без закріплення це перша ознака прокола, тому обсяг для мене головний фільтр.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-breakout-strategy-03">
-             <h3>Чому ціна повертається після пробою: хибний пробій і збір ліквідності?</h3>
-             <p>Великому гравцю потрібні зустрічні ордери, тому він заводить ціну за рівень, де натовп тримає стопи, і набирає проти них позицію, а потім розвертає ринок; прокол це не невдача, а інженерна пастка.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-breakout-strategy-04">
-             <h3>Чим вхід на пробої відрізняється від входу на ретесті?</h3>
-             <p>Вхід не на пробої, а на ретесті: дочекайся відкату до пробитого рівня і пін-бара на зрослому обсязі, тоді працюй у напрямі пробою; на хибному проколі все те саме, але вхід проти вибитого натовпу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-breakout-strategy-05">
-             <h3>Де ставити стоп-лосс і ціль на пробої?</h3>
-             <p>Стоп за екстремум відкату або прокола плюс запас, ціль на наступному імпульсному рівні; беру лише угоди від 1:2, в ідеалі 1:3, і роблю протилежне інстинкту: чекаю ретест, а не стрибаю в пробій.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-candlestick-patterns" aria-labelledby="heading-candlestick-patterns">
-             <h2 id="heading-candlestick-patterns">Як читати японські свічки</h2>
-             <div class="faq-item" id="question-uk-candlestick-patterns-01">
-             <h3>Що таке японські свічки і як їх читати?</h3>
-             <p>Свічка тримає чотири ціни за період; велике тіло це домінація однієї сторони, довгі тіні це відмова від рівнів, а найважливіше закриття, за ним видно, хто лишився господарем.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-02">
-             <h3>Чим бичача свічка відрізняється від ведмежої?</h3>
-             <p>Закриття вище відкриття бичача, нижче ведмежа, колір вторинний; але велике тіло на млявому об&#x27;ємі це пустушка, силу свічці дає лише об&#x27;єм.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-03">
-             <h3>Що показує пін-бар біля рівня?</h3>
-             <p>Пін-бар це довга тінь з маленьким тілом, слід відкидання рівня: тінь удвічі-втричі довша за тіло, бичачий з нижньою тінню видає слабкість продавців, ведмежий з верхньою слабкість покупців, але працює він лише на рівні.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-04">
-             <h3>Що означає свічкове поглинання?</h3>
-             <p>Поглинання це два бари, де другий перекриває тіло першого й закривається назад; велике тіло сильніше, дрібне слабке, а сенс воно має лише на рівні, як на євро три торкання і три відскоки.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-05">
-             <h3>Чим відрізняються молот, доджі та вечірня зірка?</h3>
-             <p>Молот це довга нижня тінь і натяк на розворот угору, доджі це нерішучість і пауза, вечірня зірка це три свічки на вершині й натяк униз, але всі вони сигнал лише на сильному рівні, а в порожнечі шум.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-06">
-             <h3>Чи працюють свічкові патерни і які найточніші?</h3>
-             <p>Гола свічка це монетка приблизно порівну, а команду дає рівень, свічка лише уточнює момент; молот у чистому полі пропускаю, на перевіреній підтримці з об&#x27;ємом беру, бо свічка це фінальний мазок, а не сигнал сам по собі.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n020">
-             <h3>Що таке харамі й чому воно не підтверджує розворот саме по собі?</h3>
-             <p>Харамі — поєднання свічок, у якому тіло меншої свічки розташоване всередині тіла попередньої більшої. Це може означати паузу або ослаблення імпульсу. Автор чекає виходу з діапазону й реакції обʼєму.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f018">
-             <h3>Чим повішений відрізняється від молота?</h3>
-             <p>Обидві свічки мають невелике тіло та довгу нижню тінь. Молот розглядають після падіння, повішений — після зростання. Контекст і подальша реакція ціни важливіші за назву свічки.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-chart-patterns" aria-labelledby="heading-chart-patterns">
-             <h2 id="heading-chart-patterns">Які графічні патерни справді працюють</h2>
-             <div class="faq-item" id="question-uk-chart-patterns-01">
-             <h3>Що таке цінові фігури і чому мозок шукає їх у хаосі?</h3>
-             <p>Цінова фігура це візерунок, який мозок знаходить у хаосі ціни, але ринок поважати його не зобов&#x27;язаний, тож надійніше спиратися не на форму, а на рівні.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-02">
-             <h3>Чим розворотні фігури відрізняються від фігур продовження?</h3>
-             <p>Розворотні фігури ловлять кінець тренду, продовження його паузу, але будь-яку читай лише з обсягом і на старшому таймфреймі, інакше це просто картинка.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-03">
-             <h3>Як підтверджувати фігуру «голова та плечі»?</h3>
-             <p>Три вершини з головою по центру і лінією шиї під ними, але розворот вважається лише з пробою шиї на обсязі, а перший прокол часто струшування за стопами, а не сигнал.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-04">
-             <h3>Чому подвійна вершина або дно не гарантують розвороту?</h3>
-             <p>Два максимуми в одній стелі з пробоєм лінії шиї вниз, але поки шия ціла це флет, а не фігура, і вирішує обсяг: нижче на другій вершині, вище на пробої.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-05">
-             <h3>Які види трикутників бувають на графіку?</h3>
-             <p>Стиснення ціни між збіжними лініями із затухаючим обсягом; у висхідного натяк угору, у низхідного вниз, у симетричного напрям заздалегідь неясний, і вхід я беру за пробоєм межі з обсягом, а не за фігурою.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-06">
-             <h3>Чим прапор відрізняється від вимпела?</h3>
-             <p>Прапор це різка паличка на обсязі плюс млявий відкат проти тренду, вимпел це та сама пауза збіжним трикутником, вхід на пробої з обсягом після хибного проколу, а не на першому проколі.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-07">
-             <h3>Як автор оцінює фігуру «чашка з ручкою»?</h3>
-             <p>Заокруглена корекція плюс коротка ручка з пробоєм угору, але цінність не в контурі, а в ручці, де хибний прокол збирає стопи; вхід після закріплення з обсягом, стоп під мінімум ручки.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-08">
-             <h3>Як працює патерн 1-2-3?</h3>
-             <p>Три точки на сильному рівні, розворот за пробоєм точки 2, але вхід у точці 3 дає короткий стоп і найкраще співвідношення; за точками читається набір великого капіталу, а відрізняє фігуру від геометрії обсяг.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-chart-patterns-09">
-             <h3>Чи працюють фігури і що я дивлюся замість них?</h3>
-             <p>Голий контур спрацьовує приблизно навпіл і переваги не дає; фігури програмують натовп, а великий збирає на них ліквідність, тому я дивлюся рівень, хибний прокол та обсяг, а не форму, і завжди зі стопом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n017">
-             <h3>Що означають висхідний і низхідний клин на графіку?</h3>
-             <p>У клина обидві межі зближуються та нахилені в один бік. Висхідний клин розглядають як можливе ослаблення зростання, низхідний — падіння. Автор оцінює вихід і обʼєм, оскільки форма не гарантує результату.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-elliott-waves" aria-labelledby="heading-elliott-waves">
-             <h2 id="heading-elliott-waves">Як правильно рахувати хвилі Елліотта</h2>
-             <div class="faq-item" id="question-uk-elliott-waves-01">
-             <h3>Що таке хвильова теорія Елліотта?</h3>
-             <p>Хвильова теорія Елліотта описує ринок через повторювані хвилі, що відображають психологію натовпу: повний цикл це вісім хвиль, пʼять імпульсних за трендом і три корекційних проти, а структура фрактальна.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-elliott-waves-02">
-             <h3>Як співвідносяться імпульсні й корекційні хвилі Елліотта?</h3>
-             <p>У кожної хвилі своя психологія, від боязкої першої до ейфоричної пʼятої на слабшаючому обсязі; є три жорсткі правила й орієнтири за Фібоначчі (відкати 38–62 відсотки, ціль третьої близько 162), але це ймовірності, а не гарантія.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-elliott-waves-03">
-             <h3>Чи працюють хвилі Елліотта: проблема субʼєктивності?</h3>
-             <p>Головна біда теорії це субʼєктивність: один графік десять аналітиків розмічають по-різному, а хвилі легко підганяються заднім числом, тому я віддаю перевагу обʼєктивним рівням, обсягу і фазам за Вайкоффом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-fibonacci-levels" aria-labelledby="heading-fibonacci-levels">
-             <h2 id="heading-fibonacci-levels">Як будувати та використовувати рівні Фібоначчі</h2>
-             <div class="faq-item" id="question-uk-fibonacci-levels-01">
-             <h3>Що таке рівні корекції Фібоначчі?</h3>
-             <p>Фібоначчі розмічає ймовірну глибину відкату, але працює не магія чисел, а масова увага трейдерів до цих позначок.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-02">
-             <h3>Як побудувати сітку Фібоначчі на графіку?</h3>
-             <p>Тягну сітку по тілу чіткого імпульсу від старту до кінця руху, а на дрібних коливаннях вона дає лише кашу з хибних рівнів.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-03">
-             <h3>Що означають рівні Фібоначчі 38,2%, 50% і 61,8%?</h3>
-             <p>61.8 найсильніший рівень, але ціна не розвертається точно на лінії, тому я читаю реакцію в зоні, а не факт торкання.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-04">
-             <h3>Чи працюють рівні Фібоначчі: звʼязка з обсягом?</h3>
-             <p>Одна лінія Фібоначчі бреше, тому беру вхід лише при збігу з реальним рівнем і обсягом, тримаючи ризик-прибуток від 1:3.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f033">
-             <h3>Чим розширення Фібоначчі відрізняються від рівнів корекції?</h3>
-             <p>Корекційні рівні лежать усередині вихідного руху, а розширення — за його межами й служать орієнтирами цілей. У матеріалі розглядаються 127,2%, 161,8% та 261,8% без гарантії досягнення.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-             </div>
-             
-             </section>
-             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             </nav>
-             <section><h2>Про автора</h2><p>Матеріали бібліотеки підготував Ігор Арапов, практикуючий трейдер із 2013 року.</p><p><a class="linkrefinto" href="https://arapov.trade/uk">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="uk">
+              <header>
+                <h1>Графіки та технічний аналіз: питання та відповіді</h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                    >Усі теми: питання та відповіді з трейдингу</a
+                  >
+                </p>
+                <p>
+                  Як читати рух ціни, знаходити рівні та оцінювати свічні й
+                  графічні структури.
+                </p>
+                <p>
+                  Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під
+                  кожною відповіддю є посилання на докладне пояснення. Авторські
+                  торгові підходи подано як пояснення Ігоря Арапова;
+                  формулювання від першої особи належать автору.
+                </p>
+                <nav aria-label="Зміст">
+                  <h2>Зміст</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-chart-reading')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Читання цінового графіка крок за кроком</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-breakout-strategy')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як торгувати пробої рівнів</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-candlestick-patterns')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як читати японські свічки</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-chart-patterns')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Які графічні патерни справді працюють</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-elliott-waves')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як правильно рахувати хвилі Елліотта</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-fibonacci-levels')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як будувати та використовувати рівні Фібоначчі</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-chart-reading"
+                  aria-labelledby="heading-chart-reading"
+                >
+                  <h2 id="heading-chart-reading">
+                    Читання цінового графіка крок за кроком
+                  </h2>
+                  <div class="faq-item" id="question-uk-chart-reading-01">
+                    <h3>Що таке технічний аналіз і на чому він тримається?</h3>
+                    <p>
+                      Технічний аналіз читає ринок за ціною й об&#x27;ємом,
+                      виходячи з того що вся інформація вже в ціні;
+                      найоб&#x27;єктивніше в ньому це рівні, які всі бачать
+                      однаково, а фігури й індикатори куди суб&#x27;єктивніші.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-02">
+                    <h3>
+                      Чим лінійний графік відрізняється від барного та
+                      свічкового?
+                    </h3>
+                    <p>
+                      Торговий графік буває лінійним, барним і свічковим:
+                      лінійний показує лише закриття й годиться для загальної
+                      картини, а бар і свічка несуть повні дані про ціну за
+                      період, відкриття, верх, низ і закриття.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-03">
+                    <h3>Чи відрізняються дані бару та японської свічки?</h3>
+                    <p>
+                      Бар і свічка несуть однакову четвірку, відкриття, верх,
+                      низ і закриття, тільки свічка накидає кольорове тіло й
+                      схоплюється з льоту; але сама по собі самотня свічка це
+                      приблизно рівні шанси, і сенс вона набуває лише на зоні з
+                      об&#x27;ємом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-04">
+                    <h3>Що таке таймфрейм і як його обирати?</h3>
+                    <p>
+                      Таймфрейм задає, скільки часу вміщає одна свічка, від
+                      хвилини до тижня, і заодно окреслює ваш стиль; новачку
+                      рівніше на старших періодах, годині й дні, де тихіший шум,
+                      вільготніше з аналізом і менше з&#x27;їдає спред.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-05">
+                    <h3>
+                      Як проводити аналіз від старшого таймфрейму до молодшого?
+                    </h3>
+                    <p>
+                      Старший таймфрейм завжди головніший: він задає напрям, а
+                      молодший потрібен лише для входу в його бік, тому я йду
+                      згори вниз, від тренду й зон на старшому до точки входу на
+                      молодшому.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-06">
+                    <h3>Як розрізняти тренд, флет, баланс і дисбаланс?</h3>
+                    <p>
+                      Ринок завжди в одній із трьох фаз: висхідний тренд,
+                      низхідний тренд або флет; флет це баланс і цінова коробка
+                      накопичення чи розподілу, тренд це дисбаланс, а яка
+                      коробка перед тобою, підказує об&#x27;єм; спершу визнач
+                      фазу, потім обирай прийом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-07">
+                    <h3>Чому підтримку та опір розглядають як зони?</h3>
+                    <p>
+                      Рівень це зона, де ціна раніше розверталася, підтримка
+                      знизу, опір зверху, і працюють вони на пам&#x27;яті ринку;
+                      будуй його як діапазон по кількох торканнях і підтверджуй
+                      об&#x27;ємом, а не тягни лінію по піку.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-08">
+                    <h3>
+                      Як торгувати від рівня до рівня та враховувати хибний
+                      пробій?
+                    </h3>
+                    <p>
+                      Базова стратегія це купівля біля підтримки з ціллю на опір
+                      і навпаки, зі стопом одразу за зоною й входом за реакцією;
+                      справжній пробій іде на зрослому об&#x27;ємі й
+                      закріплюється, а хибний накол млявий і одразу
+                      повертається, тому чекай ретесту.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-09">
+                    <h3>Як будувати та використовувати торгові канали?</h3>
+                    <p>
+                      Канал це зона між двома паралельними лініями, нахил ділить
+                      їх на висхідний, низхідний і горизонтальний; будують за
+                      реальними точками й не натягують під ідею, а вхід я беру
+                      не від торкання, а за реакцією й об&#x27;ємом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-10">
+                    <h3>
+                      Як імпульс, відкат і зміна пріоритету описують структуру
+                      руху?
+                    </h3>
+                    <p>
+                      Тренд складається з імпульсів на об&#x27;ємі та відкатів
+                      без нього; поки оновлюються максимуми й мінімуми,
+                      структура ціла і я йду за трендом, а злом структури
+                      показує, що аукціон змінився. Чесний розворот видають три
+                      ознаки поспіль, накол, пробій рівня й ретест, і всі три я
+                      підтверджую зростанням об&#x27;єму.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-11">
+                    <h3>
+                      Чи працюють фігури та індикатори і чому вони переоцінені?
+                    </h3>
+                    <p>
+                      Фігури варто знати в обличчя, але як сигнал вони дають
+                      приблизно 50 на 50, бо їх бачать усі й великий знімає на
+                      них ліквідність; індикатори запізнюються, тому надійніше
+                      рівень і об&#x27;єм, а з фігур я беру хіба що прапор
+                      заради проекції цілі.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-reading-12">
+                    <h3>Як перейти від читання ціни до аналізу обʼєму?</h3>
+                    <p>
+                      Читання графіка це фундамент, але рівень лише показує, де
+                      шукати угоду, а реальний інтерес підтверджує об’єм; коли я
+                      додав об’ємний аналіз до чистих рівнів, якість рішень
+                      помітно зросла.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-reading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-breakout-strategy"
+                  aria-labelledby="heading-breakout-strategy"
+                >
+                  <h2 id="heading-breakout-strategy">
+                    Як торгувати пробої рівнів
+                  </h2>
+                  <div class="faq-item" id="question-uk-breakout-strategy-01">
+                    <h3>Що таке пробій рівня підтримки та опору?</h3>
+                    <p>
+                      Пробій це прохід ціни крізь зону, яку раніше не брали, але
+                      сам вихід за рівень ще нічого не означає: крупний капітал
+                      часто спершу вибиває стопи хибним рухом, а рівень це
+                      діапазон, а не лінія.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/breakout-strategy"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-breakout-strategy-02">
+                    <h3>
+                      Як відрізнити справжній пробій від хибного за обсягом?
+                    </h3>
+                    <p>
+                      Справжній пробій іде зі зростанням обсягу, хибний його
+                      позбавлений: зусилля за рівень без обсягу і без
+                      закріплення це перша ознака прокола, тому обсяг для мене
+                      головний фільтр.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/breakout-strategy"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-breakout-strategy-03">
+                    <h3>
+                      Чому ціна повертається після пробою: хибний пробій і збір
+                      ліквідності?
+                    </h3>
+                    <p>
+                      Великому гравцю потрібні зустрічні ордери, тому він
+                      заводить ціну за рівень, де натовп тримає стопи, і набирає
+                      проти них позицію, а потім розвертає ринок; прокол це не
+                      невдача, а інженерна пастка.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/breakout-strategy"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-breakout-strategy-04">
+                    <h3>
+                      Чим вхід на пробої відрізняється від входу на ретесті?
+                    </h3>
+                    <p>
+                      Вхід не на пробої, а на ретесті: дочекайся відкату до
+                      пробитого рівня і пін-бара на зрослому обсязі, тоді працюй
+                      у напрямі пробою; на хибному проколі все те саме, але вхід
+                      проти вибитого натовпу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/breakout-strategy"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-breakout-strategy-05">
+                    <h3>Де ставити стоп-лосс і ціль на пробої?</h3>
+                    <p>
+                      Стоп за екстремум відкату або прокола плюс запас, ціль на
+                      наступному імпульсному рівні; беру лише угоди від 1:2, в
+                      ідеалі 1:3, і роблю протилежне інстинкту: чекаю ретест, а
+                      не стрибаю в пробій.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/breakout-strategy"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-candlestick-patterns"
+                  aria-labelledby="heading-candlestick-patterns"
+                >
+                  <h2 id="heading-candlestick-patterns">
+                    Як читати японські свічки
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-01"
+                  >
+                    <h3>Що таке японські свічки і як їх читати?</h3>
+                    <p>
+                      Свічка тримає чотири ціни за період; велике тіло це
+                      домінація однієї сторони, довгі тіні це відмова від
+                      рівнів, а найважливіше закриття, за ним видно, хто лишився
+                      господарем.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-02"
+                  >
+                    <h3>Чим бичача свічка відрізняється від ведмежої?</h3>
+                    <p>
+                      Закриття вище відкриття бичача, нижче ведмежа, колір
+                      вторинний; але велике тіло на млявому об&#x27;ємі це
+                      пустушка, силу свічці дає лише об&#x27;єм.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-03"
+                  >
+                    <h3>Що показує пін-бар біля рівня?</h3>
+                    <p>
+                      Пін-бар це довга тінь з маленьким тілом, слід відкидання
+                      рівня: тінь удвічі-втричі довша за тіло, бичачий з нижньою
+                      тінню видає слабкість продавців, ведмежий з верхньою
+                      слабкість покупців, але працює він лише на рівні.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-04"
+                  >
+                    <h3>Що означає свічкове поглинання?</h3>
+                    <p>
+                      Поглинання це два бари, де другий перекриває тіло першого
+                      й закривається назад; велике тіло сильніше, дрібне слабке,
+                      а сенс воно має лише на рівні, як на євро три торкання і
+                      три відскоки.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-05"
+                  >
+                    <h3>Чим відрізняються молот, доджі та вечірня зірка?</h3>
+                    <p>
+                      Молот це довга нижня тінь і натяк на розворот угору, доджі
+                      це нерішучість і пауза, вечірня зірка це три свічки на
+                      вершині й натяк униз, але всі вони сигнал лише на сильному
+                      рівні, а в порожнечі шум.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-candlestick-patterns-06"
+                  >
+                    <h3>Чи працюють свічкові патерни і які найточніші?</h3>
+                    <p>
+                      Гола свічка це монетка приблизно порівну, а команду дає
+                      рівень, свічка лише уточнює момент; молот у чистому полі
+                      пропускаю, на перевіреній підтримці з об&#x27;ємом беру,
+                      бо свічка це фінальний мазок, а не сигнал сам по собі.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n020">
+                    <h3>
+                      Що таке харамі й чому воно не підтверджує розворот саме по
+                      собі?
+                    </h3>
+                    <p>
+                      Харамі — поєднання свічок, у якому тіло меншої свічки
+                      розташоване всередині тіла попередньої більшої. Це може
+                      означати паузу або ослаблення імпульсу. Автор чекає виходу
+                      з діапазону й реакції обʼєму.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f018">
+                    <h3>Чим повішений відрізняється від молота?</h3>
+                    <p>
+                      Обидві свічки мають невелике тіло та довгу нижню тінь.
+                      Молот розглядають після падіння, повішений — після
+                      зростання. Контекст і подальша реакція ціни важливіші за
+                      назву свічки.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/candlestick-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-chart-patterns"
+                  aria-labelledby="heading-chart-patterns"
+                >
+                  <h2 id="heading-chart-patterns">
+                    Які графічні патерни справді працюють
+                  </h2>
+                  <div class="faq-item" id="question-uk-chart-patterns-01">
+                    <h3>
+                      Що таке цінові фігури і чому мозок шукає їх у хаосі?
+                    </h3>
+                    <p>
+                      Цінова фігура це візерунок, який мозок знаходить у хаосі
+                      ціни, але ринок поважати його не зобов&#x27;язаний, тож
+                      надійніше спиратися не на форму, а на рівні.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-02">
+                    <h3>
+                      Чим розворотні фігури відрізняються від фігур продовження?
+                    </h3>
+                    <p>
+                      Розворотні фігури ловлять кінець тренду, продовження його
+                      паузу, але будь-яку читай лише з обсягом і на старшому
+                      таймфреймі, інакше це просто картинка.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-03">
+                    <h3>Як підтверджувати фігуру «голова та плечі»?</h3>
+                    <p>
+                      Три вершини з головою по центру і лінією шиї під ними, але
+                      розворот вважається лише з пробою шиї на обсязі, а перший
+                      прокол часто струшування за стопами, а не сигнал.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-04">
+                    <h3>
+                      Чому подвійна вершина або дно не гарантують розвороту?
+                    </h3>
+                    <p>
+                      Два максимуми в одній стелі з пробоєм лінії шиї вниз, але
+                      поки шия ціла це флет, а не фігура, і вирішує обсяг: нижче
+                      на другій вершині, вище на пробої.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-05">
+                    <h3>Які види трикутників бувають на графіку?</h3>
+                    <p>
+                      Стиснення ціни між збіжними лініями із затухаючим обсягом;
+                      у висхідного натяк угору, у низхідного вниз, у
+                      симетричного напрям заздалегідь неясний, і вхід я беру за
+                      пробоєм межі з обсягом, а не за фігурою.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-06">
+                    <h3>Чим прапор відрізняється від вимпела?</h3>
+                    <p>
+                      Прапор це різка паличка на обсязі плюс млявий відкат проти
+                      тренду, вимпел це та сама пауза збіжним трикутником, вхід
+                      на пробої з обсягом після хибного проколу, а не на першому
+                      проколі.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-07">
+                    <h3>Як автор оцінює фігуру «чашка з ручкою»?</h3>
+                    <p>
+                      Заокруглена корекція плюс коротка ручка з пробоєм угору,
+                      але цінність не в контурі, а в ручці, де хибний прокол
+                      збирає стопи; вхід після закріплення з обсягом, стоп під
+                      мінімум ручки.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-08">
+                    <h3>Як працює патерн 1-2-3?</h3>
+                    <p>
+                      Три точки на сильному рівні, розворот за пробоєм точки 2,
+                      але вхід у точці 3 дає короткий стоп і найкраще
+                      співвідношення; за точками читається набір великого
+                      капіталу, а відрізняє фігуру від геометрії обсяг.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-chart-patterns-09">
+                    <h3>Чи працюють фігури і що я дивлюся замість них?</h3>
+                    <p>
+                      Голий контур спрацьовує приблизно навпіл і переваги не
+                      дає; фігури програмують натовп, а великий збирає на них
+                      ліквідність, тому я дивлюся рівень, хибний прокол та
+                      обсяг, а не форму, і завжди зі стопом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n017">
+                    <h3>Що означають висхідний і низхідний клин на графіку?</h3>
+                    <p>
+                      У клина обидві межі зближуються та нахилені в один бік.
+                      Висхідний клин розглядають як можливе ослаблення
+                      зростання, низхідний — падіння. Автор оцінює вихід і
+                      обʼєм, оскільки форма не гарантує результату.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/chart-patterns"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-elliott-waves"
+                  aria-labelledby="heading-elliott-waves"
+                >
+                  <h2 id="heading-elliott-waves">
+                    Як правильно рахувати хвилі Елліотта
+                  </h2>
+                  <div class="faq-item" id="question-uk-elliott-waves-01">
+                    <h3>Що таке хвильова теорія Елліотта?</h3>
+                    <p>
+                      Хвильова теорія Елліотта описує ринок через повторювані
+                      хвилі, що відображають психологію натовпу: повний цикл це
+                      вісім хвиль, пʼять імпульсних за трендом і три корекційних
+                      проти, а структура фрактальна.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/elliott-waves"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-elliott-waves-02">
+                    <h3>
+                      Як співвідносяться імпульсні й корекційні хвилі Елліотта?
+                    </h3>
+                    <p>
+                      У кожної хвилі своя психологія, від боязкої першої до
+                      ейфоричної пʼятої на слабшаючому обсязі; є три жорсткі
+                      правила й орієнтири за Фібоначчі (відкати 38–62 відсотки,
+                      ціль третьої близько 162), але це ймовірності, а не
+                      гарантія.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/elliott-waves"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-elliott-waves-03">
+                    <h3>
+                      Чи працюють хвилі Елліотта: проблема субʼєктивності?
+                    </h3>
+                    <p>
+                      Головна біда теорії це субʼєктивність: один графік десять
+                      аналітиків розмічають по-різному, а хвилі легко
+                      підганяються заднім числом, тому я віддаю перевагу
+                      обʼєктивним рівням, обсягу і фазам за Вайкоффом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/elliott-waves"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-fibonacci-levels"
+                  aria-labelledby="heading-fibonacci-levels"
+                >
+                  <h2 id="heading-fibonacci-levels">
+                    Як будувати та використовувати рівні Фібоначчі
+                  </h2>
+                  <div class="faq-item" id="question-uk-fibonacci-levels-01">
+                    <h3>Що таке рівні корекції Фібоначчі?</h3>
+                    <p>
+                      Фібоначчі розмічає ймовірну глибину відкату, але працює не
+                      магія чисел, а масова увага трейдерів до цих позначок.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fibonacci-levels"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-fibonacci-levels-02">
+                    <h3>Як побудувати сітку Фібоначчі на графіку?</h3>
+                    <p>
+                      Тягну сітку по тілу чіткого імпульсу від старту до кінця
+                      руху, а на дрібних коливаннях вона дає лише кашу з хибних
+                      рівнів.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fibonacci-levels"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-fibonacci-levels-03">
+                    <h3>Що означають рівні Фібоначчі 38,2%, 50% і 61,8%?</h3>
+                    <p>
+                      61.8 найсильніший рівень, але ціна не розвертається точно
+                      на лінії, тому я читаю реакцію в зоні, а не факт торкання.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fibonacci-levels"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-fibonacci-levels-04">
+                    <h3>Чи працюють рівні Фібоначчі: звʼязка з обсягом?</h3>
+                    <p>
+                      Одна лінія Фібоначчі бреше, тому беру вхід лише при збігу
+                      з реальним рівнем і обсягом, тримаючи ризик-прибуток від
+                      1:3.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fibonacci-levels"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f033">
+                    <h3>
+                      Чим розширення Фібоначчі відрізняються від рівнів
+                      корекції?
+                    </h3>
+                    <p>
+                      Корекційні рівні лежать усередині вихідного руху, а
+                      розширення — за його межами й служать орієнтирами цілей. У
+                      матеріалі розглядаються 127,2%, 161,8% та 261,8% без
+                      гарантії досягнення.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fibonacci-levels"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Інші теми бібліотеки">
+                  <h2>Інші теми бібліотеки</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-getting-started"
+                        >Початок торгівлі та торгова система</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-risk-psychology"
+                        >Ризик і психологія трейдингу</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-indicators"
+                        >Індикатори та волатильність</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-financial-markets"
+                        >Як влаштовані фінансові ринки</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
+                        >Обʼємний аналіз, Вайкофф і Smart Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-crypto-mechanics"
+                        >Криптовалюти: устрій і безпека</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, альткоїни та ринкові цикли</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                      >Усі теми: питання та відповіді з трейдингу</a
+                    >
+                  </p>
+                </nav>
+                <section>
+  <h2>Про матеріали бібліотеки</h2>
+  <p>
+    Розділ укладено на основі матеріалів бібліотеки ArapovTrade та
+    навчальних відео Ігоря Арапова. Тут можна знайти
+    визначення, порівняння інструментів, пояснення ринкової
+    механіки та розбори авторського підходу до трейдингу.
+  </p>
+  <p>
+    Автор бібліотеки —
+    <a class="linkrefinto" href="https://arapov.trade/uk"
+      >Ігор Арапов</a
+    >, практикуючий трейдер з 2013 року. Докладні матеріали
+    розкривають контекст кожного питання; короткі відповіді слугують
+    відправною точкою для вивчення теми.
+  </p>
+</section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Фільтр за категоріями
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Популярне
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/uk/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleUkr"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleUkr }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Фільтр за категоріями
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Популярне
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/uk/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleUkr"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleUkr }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -505,78 +1167,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Наші проєкти доступні кожному охочому
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Наші проєкти доступні кожному охочому
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Оберіть тему, яка вас цікавить, і почніть навчання
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Оберіть тему, яка вас цікавить, і почніть навчання
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-

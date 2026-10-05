@@ -1,521 +1,1309 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="en">
-             <header>
-               <h1>Volume Analysis, Wyckoff and Smart Money: questions and answers</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             <p>How to compare price and volume, read Wyckoff phases, and assess liquidity, order blocks and FVGs.</p>
-             <p>Short answers based on the ArapovTrade library. Each answer links to a detailed explanation. Trading approaches are presented as Igor Arapov&#x27;s explanations; first-person wording refers to the author.</p>
-             <nav aria-label="Contents"><h2>Contents</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-volume-analysis')" [ngStyle]="{ cursor: 'pointer' }">Why Volume Confirms or Denies Price Moves</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-wyckoff-method')" [ngStyle]="{ cursor: 'pointer' }">How the Wyckoff Method Reveals Institutional Activity</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-smart-money-guide')" [ngStyle]="{ cursor: 'pointer' }">How Institutions Move the Market</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-liquidity-pools')" [ngStyle]="{ cursor: 'pointer' }">How to Spot Liquidity Zones on a Chart</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-order-block')" [ngStyle]="{ cursor: 'pointer' }">What an Order Block Looks Like on a Chart</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-imbalance-fvg')" [ngStyle]="{ cursor: 'pointer' }">How Imbalances Form and Get Filled</a></li>
-             </ul></nav>
-             <section id="topic-volume-analysis" aria-labelledby="heading-volume-analysis">
-             <h2 id="heading-volume-analysis">Why Volume Confirms or Denies Price Moves</h2>
-             <div class="faq-item" id="question-en-volume-analysis-01">
-             <h3>What is volume analysis, and why compare volume with neighboring bars?</h3>
-             <p>Volume analysis is reading the market by the number of trades that passed, not by price alone; what matters is not the figure itself but its dynamic relative to neighboring bars, and so the phases of accumulation and distribution of large capital show through.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-02">
-             <h3>What is Wyckoff&#x27;s effort-result principle?</h3>
-             <p>The effort and result principle checks volume against the price move: high volume with a wide candle means the market is going, while big volume with price standing still means someone is absorbing the flow, and that is the main reversal signal.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-03">
-             <h3>How does the author interpret volume alongside rising and falling prices?</h3>
-             <p>Volume is neutral, direction is set by the price under it: rising volume on a fall is sellers, on a rise buyers; and divergence, when a new high comes on lower volume, warns of a reversal earlier than price itself.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-04">
-             <h3>How does the author explain demand deficits, supply deficits and the path of least resistance?</h3>
-             <p>The cause of a fall is a deficit of demand, when the large buyer leaves, and the cause of a rise a deficit of supply; a skyscraper of volume on rising or falling bars shows the path of least resistance, and I use it as a guiding filter with a mandatory scenario cancellation point.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-05">
-             <h3>How does the source connect Volume Profile, POC, value area, delta and absorption?</h3>
-             <p>A peak level is the price with the maximum volume, the POC, and around it lies the value area with boundaries VAH and VAL; delta hints at direction, while absorption and an untested POC often work as a reversal and as a magnet.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-06">
-             <h3>How does the author connect Steidlmayer&#x27;s Market Profile with Wyckoff analysis?</h3>
-             <p>Market Profile is the market as an auction, where price plus time give value: the POC in the center of the value area, above expensive, below cheap; the profile answers where it is fair, and Wyckoff why and in which phase.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-07">
-             <h3>How does the author select volume levels and wait for an entry reaction?</h3>
-             <p>A strong level is the coincidence of a fat volume peak with the market&#x27;s memory and a Wyckoff phase: I mark the zones on the higher timeframe, wait for the price reaction at the entry, keep a short stop and take a risk-to-profit from three to one.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-volume-analysis-08">
-             <h3>How does the author combine technical analysis with volume and choose a data source?</h3>
-             <p>Volume and technical analysis are layers, not rivals: a level with volume is more reliable than a level in silence; honest volume is only on CME futures, on forex it is tick-based with error, in crypto it is painted, and a grail I do not consider volume.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n062">
-             <h3>How does an Automatic Rally define an accumulation range?</h3>
-             <p>An Automatic Rally is the first significant rebound after a Selling Climax. In the accumulation schematic, its high helps establish the upper boundary of the developing range. Subsequent tests help assess the structure.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n064">
-             <h3>How does an Upthrust mirror a Spring?</h3>
-             <p>A Spring moves below an accumulation range and returns inside it. An Upthrust or UTAD is the corresponding event near the upper boundary of a distribution range. The author assesses these events alongside volume and subsequent price action.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n066">
-             <h3>How does a Sign of Strength differ from a Last Point of Support?</h3>
-             <p>SOS represents buying strength and movement out of a range. LPS is a subsequent pullback or test of support. They describe different stages of the structure rather than two names for the same signal.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n067">
-             <h3>How does open interest differ from trading volume?</h3>
-             <p>Volume measures contracts traded during a period; open interest measures contracts that remain open. High volume can accompany either opening or closing positions, so the two metrics provide different information.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f087">
-             <h3>How do HVN and LVN differ in Volume Profile?</h3>
-             <p>HVN marks high accumulated volume and LVN low volume. The author considers dense nodes possible areas of price acceptance or hesitation and sparse areas possible fast-travel zones. These are contextual observations, not guaranteed outcomes.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f088">
-             <h3>How does a session profile differ from a composite profile?</h3>
-             <p>A session profile covers one trading session. A composite profile combines a longer period. The selected period changes the scale of the levels and the purpose of the analysis.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f091">
-             <h3>What is the Initial Balance in Market Profile?</h3>
-             <p>Initial Balance is the range of the first hour of the selected session. The author considers an active breakout a possible reference for the day&#x27;s direction, subject to context and subsequent price behaviour.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f092">
-             <h3>What are single prints in Market Profile?</h3>
-             <p>Single prints are areas of isolated profile prints associated with rapid price movement. The author watches for possible revisits. Their presence does not guarantee that price will return.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-wyckoff-method" aria-labelledby="heading-wyckoff-method">
-             <h2 id="heading-wyckoff-method">How the Wyckoff Method Reveals Institutional Activity</h2>
-             <div class="faq-item" id="question-en-wyckoff-method-01">
-             <h3>What three laws underpin the Wyckoff method described in the source?</h3>
-             <p>The Wyckoff method reads the market by volume and price so as to see the actions of large capital rather than guess; beneath it lie three laws: supply and demand, cause and effect, effort and result.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-wyckoff-method-02">
-             <h3>What are accumulation, markup, distribution and markdown?</h3>
-             <p>The Wyckoff cycle is four phases: accumulation (a range after a fall with fading volume), markup in steps, distribution at the top, and markdown; determining the current phase is the main skill of the method.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-wyckoff-method-03">
-             <h3>What accumulation and spring behavior does the author look for on a chart?</h3>
-             <p>Accumulation is given away by a range after a decline with narrowing candles and fading volume, and the key is the spring, a false break down with a return and a secondary test; the phase is not guessed but awaited through volume confirmation up.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-wyckoff-method-04">
-             <h3>How does the author adapt Wyckoff analysis to Forex and crypto volume data?</h3>
-             <p>The method is universal, but the reliability of volume decides it: most honest are CME futures, on forex a currency is read by its futures, on crypto the patterns are sharper but on small coins there is more manipulation; a win rate of about 70 to 30 with reward to risk of three to one already gives an edge.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n069">
-             <h3>Who is Wyckoff&#x27;s Composite Operator?</h3>
-             <p>The Composite Operator is an analytical model of large participants&#x27; collective actions used to explain accumulation and distribution. It does not imply that one participant controls the entire market.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-n070">
-             <h3>What happens in Wyckoff accumulation phases A through E?</h3>
-             <p>Phase A stops the decline, B develops the range, C tests supply, D shows strength and progression toward a breakout, and E moves into an advance outside the range. Actual markets need not follow the schematic perfectly.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-smart-money-guide" aria-labelledby="heading-smart-money-guide">
-             <h2 id="heading-smart-money-guide">How Institutions Move the Market</h2>
-             <div class="faq-item" id="question-en-smart-money-guide-01">
-             <h3>How does the author describe Smart Money and its difference from the crowd?</h3>
-             <p>Smart Money are large pros with big capital and information; what separates them from the crowd is not a secret but the approach: they buy cheap in panic and sell dear in euphoria, while retail does exactly the reverse.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-02">
-             <h3>Why do large participants build and unload positions in smaller orders?</h3>
-             <p>The large player cannot buy all at once without shoving price, so it splits volume into small and iceberg orders; the quiet build at the bottom is accumulation, the sell-off at the top is distribution by Wyckoff.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-03">
-             <h3>How does the author connect Smart Money with Wyckoff phases?</h3>
-             <p>Behind Smart Money sits a three-phase Wyckoff script: accumulation at the bottom from a frightened crowd, a trend along the path of least resistance and distribution at the top on euphoria; and a fall often starts not from seller pressure but from the buyer leaving, a demand deficit.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-04">
-             <h3>How does the source interpret market control, liquidity and manipulation?</h3>
-             <p>Control is not a conspiracy but work with the predictability of the crowd: illegal spoofing exists and is punished, but ordinary manipulation is collecting liquidity at obvious levels, and a market maker lives off the spread, not off your blow-up.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-05">
-             <h3>How does the author distinguish bull traps, bear traps and real moves?</h3>
-             <p>The two main traps are stop hunting and the false breakout past an obvious level: a bull trap catches buyers, a bear trap sellers, and what tells them from a real move is volume, not the false break itself.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-06">
-             <h3>What traces does the author look for when assessing large-player activity?</h3>
-             <p>A large player is given away by three traces: a volume spike, a liquidity grab through a false break and an accumulation range before the exit; but without volume any zone is guesswork, so I check every trace against activity.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-07">
-             <h3>Why does the author add exchange volume to price-based SMC analysis?</h3>
-             <p>Pure SMC marks order blocks and imbalances off price alone, which is easy to fit after the fact; I add exchange volume from CME as the real footprint of large capital, and it lifts the win rate from about six to seven out of ten, which at one to three over the long run is what decides it.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-08">
-             <h3>What are liquidity, order blocks, imbalance, BOS and CHoCH in SMC?</h3>
-             <p>The concept stands on liquidity (clusters of stops at obvious levels), the order block (the last opposing candle before an impulse), the imbalance and structure BOS and CHoCH, but behind all the terms sits one and the same build and dump of a position by the large player.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-09">
-             <h3>Which myths and trading mistakes does the author identify in SMC?</h3>
-             <p>The main SMC myths are the conspiracy (in reality the large player simply needs liquidity at clusters of stops) and faith in magic markup (the market draws dozens of zones, and without phase and volume it is guesswork); but the costliest of all is entering without a stop and a calculated risk.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-smart-money-guide-10">
-             <h3>How does the author structure an entry after a liquidity grab?</h3>
-             <p>The scheme is one: find the impulse level, wait for liquidity to exhaust and the false break, and only after the grab enter behind the large player with the stop beyond the false break at risk to reward from 1 to 3; the stop is not where everyone puts it, the entry is not head-on, and a trap to me is a signal, not a threat.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/smart-money-guide">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-liquidity-pools" aria-labelledby="heading-liquidity-pools">
-             <h2 id="heading-liquidity-pools">How to Spot Liquidity Zones on a Chart</h2>
-             <div class="faq-item" id="question-en-liquidity-pools-01">
-             <h3>What is a liquidity pool in SMC terminology?</h3>
-             <p>A liquidity pool is a stack of stops and orders at obvious levels: buy-side above highs, sell-side below lows, densest at equal highs and equal lows.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-liquidity-pools-02">
-             <h3>How does the author relate a liquidity grab, stop hunt and liquidity sweep?</h3>
-             <p>A grab, a stop hunt and a sweep are one mechanic at different speeds: stops collected for counter-volume, the same as a Wyckoff spring, given away by a volume spike on the false break.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-liquidity-pools-03">
-             <h3>Where does the author look for likely liquidity zones?</h3>
-             <p>Hunt pools in obvious spots: equal extremes, day and week highs and lows, Asian-session boundaries and round numbers, and let a volume spike on the false break confirm the zone.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-liquidity-pools-04">
-             <h3>What confirmation does the author wait for after a liquidity grab?</h3>
-             <p>The false break is not the entry but the cue: wait for the return into the range and the reaction, stop beyond the extreme of the false break, target the opposite pool, and never park your stop on the most obvious level.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f078">
-             <h3>How does internal liquidity differ from external liquidity?</h3>
-             <p>External liquidity is considered beyond the range&#x27;s outer highs and lows; internal liquidity relates to local structures within it. The author uses the sequence of their tests to interpret a developing price scenario.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-order-block" aria-labelledby="heading-order-block">
-             <h2 id="heading-order-block">What an Order Block Looks Like on a Chart</h2>
-             <div class="faq-item" id="question-en-order-block-01">
-             <h3>What is an order block in the author&#x27;s explanation?</h3>
-             <p>An order block is the last opposing candle before an impulse, the footprint of a position built by big money: bullish is a demand zone, bearish a supply zone, and a volume spike is what confirms it.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-order-block-02">
-             <h3>How does the author locate an order block across timeframes?</h3>
-             <p>A real block sits in front of an impulse that breaks structure, and the core of the zone is the candle body: find it on the higher timeframe, refine the entry on a lower one.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-order-block-03">
-             <h3>How does the author plan an order-block entry, stop and target?</h3>
-             <p>Enter on the return into the block after a liquidity sweep and a reaction with volume, stop beyond the far edge of the zone, target at the opposite pool, risk-to-reward from 1 to 3.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f074">
-             <h3>What is order-block mitigation?</h3>
-             <p>In SMC terminology, mitigation refers to a return to and reaction at a previously identified order block. In the author&#x27;s model, some interest may be absorbed during the first test. A later revisit needs fresh assessment.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-f075">
-             <h3>What is a breaker block?</h3>
-             <p>A breaker is a former order block that has been breached and is considered in a new role. Demand may become resistance, or supply support. The author relates this to structural change and participant reactions.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">In-depth explanation</a></p>
-             </div>
-             </section>
-             <section id="topic-imbalance-fvg" aria-labelledby="heading-imbalance-fvg">
-             <h2 id="heading-imbalance-fvg">How Imbalances Form and Get Filled</h2>
-             <div class="faq-item" id="question-en-imbalance-fvg-01">
-             <h3>How does the source distinguish imbalance from a Fair Value Gap?</h3>
-             <p>An imbalance is a supply-demand skew after a sharp move, and an FVG is its visible three-candle gap; a volume deficit on one side sits behind every gap, and because the market reaches for balance, price comes back to the zone.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/imbalance-fvg">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-imbalance-fvg-02">
-             <h3>What is the three-candle rule for identifying bullish and bearish FVGs?</h3>
-             <p>Spot an FVG by three candles: for a bullish one the third low sits above the first high, for a bearish one it is mirrored; take only gaps on elevated volume near key levels into work.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/imbalance-fvg">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-imbalance-fvg-03">
-             <h3>How does the author approach a retracement into an FVG?</h3>
-             <p>Wait for the pull-back to the zone and enter along the impulse, but only on a reaction and drying volume at risk to reward from 1 to 2; price does not always return, so you never enter blind, and the stop goes behind the far edge.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/imbalance-fvg">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-imbalance-fvg-04">
-             <h3>How does the author connect an order block with a subsequent imbalance?</h3>
-             <p>Imbalance plus order block plus volume is a strong zone: first the build-up in the order block, then the burst and its trail; alone and without volume these are just rectangles that promise nothing.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/imbalance-fvg">In-depth explanation</a></p>
-             </div>
-             <div class="faq-item" id="question-en-imbalance-fvg-05">
-             <h3>How does the author assess an FVG&#x27;s significance using volume and value levels?</h3>
-             <p>An imbalance and an FVG are repackaged volume analysis: the zone only points to a place, while the call to enter comes from large interest confirmed by volume, and the honest gaps I look for at value levels, never entering blind.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/en/freestudying/imbalance-fvg">In-depth explanation</a></p>
-             </div>
-             </section>
-             <nav aria-label="Other library topics"><h2>Other library topics</h2><ul>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-getting-started">Getting Started and Trading Systems</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-risk-psychology">Trading Risk and Psychology</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-chart-analysis">Charts and Technical Analysis</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-indicators">Indicators and Volatility</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-financial-markets">How Financial Markets Work</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-crypto-mechanics">Cryptocurrency Mechanics and Security</a></li>
-             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, Altcoins and Market Cycles</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
-             </nav>
-             <section><h2>About the author</h2><p>The library materials were prepared by Igor Arapov, a practising trader since 2013.</p><p><a class="linkrefinto" href="https://arapov.trade/en/main">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="en">
+              <header>
+                <h1>
+                  Volume Analysis, Wyckoff and Smart Money: questions and
+                  answers
+                </h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                    >All topics: Trading Q&amp;A</a
+                  >
+                </p>
+                <p>
+                  How to compare price and volume, read Wyckoff phases, and
+                  assess liquidity, order blocks and FVGs.
+                </p>
+                <p>
+                  Short answers based on the ArapovTrade library. Each answer
+                  links to a detailed explanation. Trading approaches are
+                  presented as Igor Arapov&#x27;s explanations; first-person
+                  wording refers to the author.
+                </p>
+                <nav aria-label="Contents">
+                  <h2>Contents</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-volume-analysis')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Why Volume Confirms or Denies Price Moves</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-wyckoff-method')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How the Wyckoff Method Reveals Institutional
+                        Activity</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-smart-money-guide')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Institutions Move the Market</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-liquidity-pools')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How to Spot Liquidity Zones on a Chart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-order-block')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >What an Order Block Looks Like on a Chart</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-imbalance-fvg')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >How Imbalances Form and Get Filled</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-volume-analysis"
+                  aria-labelledby="heading-volume-analysis"
+                >
+                  <h2 id="heading-volume-analysis">
+                    Why Volume Confirms or Denies Price Moves
+                  </h2>
+                  <div class="faq-item" id="question-en-volume-analysis-01">
+                    <h3>
+                      What is volume analysis, and why compare volume with
+                      neighboring bars?
+                    </h3>
+                    <p>
+                      Volume analysis is reading the market by the number of
+                      trades that passed, not by price alone; what matters is
+                      not the figure itself but its dynamic relative to
+                      neighboring bars, and so the phases of accumulation and
+                      distribution of large capital show through.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-02">
+                    <h3>What is Wyckoff&#x27;s effort-result principle?</h3>
+                    <p>
+                      The effort and result principle checks volume against the
+                      price move: high volume with a wide candle means the
+                      market is going, while big volume with price standing
+                      still means someone is absorbing the flow, and that is the
+                      main reversal signal.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-03">
+                    <h3>
+                      How does the author interpret volume alongside rising and
+                      falling prices?
+                    </h3>
+                    <p>
+                      Volume is neutral, direction is set by the price under it:
+                      rising volume on a fall is sellers, on a rise buyers; and
+                      divergence, when a new high comes on lower volume, warns
+                      of a reversal earlier than price itself.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-04">
+                    <h3>
+                      How does the author explain demand deficits, supply
+                      deficits and the path of least resistance?
+                    </h3>
+                    <p>
+                      The cause of a fall is a deficit of demand, when the large
+                      buyer leaves, and the cause of a rise a deficit of supply;
+                      a skyscraper of volume on rising or falling bars shows the
+                      path of least resistance, and I use it as a guiding filter
+                      with a mandatory scenario cancellation point.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-05">
+                    <h3>
+                      How does the source connect Volume Profile, POC, value
+                      area, delta and absorption?
+                    </h3>
+                    <p>
+                      A peak level is the price with the maximum volume, the
+                      POC, and around it lies the value area with boundaries VAH
+                      and VAL; delta hints at direction, while absorption and an
+                      untested POC often work as a reversal and as a magnet.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-06">
+                    <h3>
+                      How does the author connect Steidlmayer&#x27;s Market
+                      Profile with Wyckoff analysis?
+                    </h3>
+                    <p>
+                      Market Profile is the market as an auction, where price
+                      plus time give value: the POC in the center of the value
+                      area, above expensive, below cheap; the profile answers
+                      where it is fair, and Wyckoff why and in which phase.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-07">
+                    <h3>
+                      How does the author select volume levels and wait for an
+                      entry reaction?
+                    </h3>
+                    <p>
+                      A strong level is the coincidence of a fat volume peak
+                      with the market&#x27;s memory and a Wyckoff phase: I mark
+                      the zones on the higher timeframe, wait for the price
+                      reaction at the entry, keep a short stop and take a
+                      risk-to-profit from three to one.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-volume-analysis-08">
+                    <h3>
+                      How does the author combine technical analysis with volume
+                      and choose a data source?
+                    </h3>
+                    <p>
+                      Volume and technical analysis are layers, not rivals: a
+                      level with volume is more reliable than a level in
+                      silence; honest volume is only on CME futures, on forex it
+                      is tick-based with error, in crypto it is painted, and a
+                      grail I do not consider volume.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n062">
+                    <h3>
+                      How does an Automatic Rally define an accumulation range?
+                    </h3>
+                    <p>
+                      An Automatic Rally is the first significant rebound after
+                      a Selling Climax. In the accumulation schematic, its high
+                      helps establish the upper boundary of the developing
+                      range. Subsequent tests help assess the structure.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n064">
+                    <h3>How does an Upthrust mirror a Spring?</h3>
+                    <p>
+                      A Spring moves below an accumulation range and returns
+                      inside it. An Upthrust or UTAD is the corresponding event
+                      near the upper boundary of a distribution range. The
+                      author assesses these events alongside volume and
+                      subsequent price action.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n066">
+                    <h3>
+                      How does a Sign of Strength differ from a Last Point of
+                      Support?
+                    </h3>
+                    <p>
+                      SOS represents buying strength and movement out of a
+                      range. LPS is a subsequent pullback or test of support.
+                      They describe different stages of the structure rather
+                      than two names for the same signal.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n067">
+                    <h3>How does open interest differ from trading volume?</h3>
+                    <p>
+                      Volume measures contracts traded during a period; open
+                      interest measures contracts that remain open. High volume
+                      can accompany either opening or closing positions, so the
+                      two metrics provide different information.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f087">
+                    <h3>How do HVN and LVN differ in Volume Profile?</h3>
+                    <p>
+                      HVN marks high accumulated volume and LVN low volume. The
+                      author considers dense nodes possible areas of price
+                      acceptance or hesitation and sparse areas possible
+                      fast-travel zones. These are contextual observations, not
+                      guaranteed outcomes.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f088">
+                    <h3>
+                      How does a session profile differ from a composite
+                      profile?
+                    </h3>
+                    <p>
+                      A session profile covers one trading session. A composite
+                      profile combines a longer period. The selected period
+                      changes the scale of the levels and the purpose of the
+                      analysis.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f091">
+                    <h3>What is the Initial Balance in Market Profile?</h3>
+                    <p>
+                      Initial Balance is the range of the first hour of the
+                      selected session. The author considers an active breakout
+                      a possible reference for the day&#x27;s direction, subject
+                      to context and subsequent price behaviour.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f092">
+                    <h3>What are single prints in Market Profile?</h3>
+                    <p>
+                      Single prints are areas of isolated profile prints
+                      associated with rapid price movement. The author watches
+                      for possible revisits. Their presence does not guarantee
+                      that price will return.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/volume-analysis"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-wyckoff-method"
+                  aria-labelledby="heading-wyckoff-method"
+                >
+                  <h2 id="heading-wyckoff-method">
+                    How the Wyckoff Method Reveals Institutional Activity
+                  </h2>
+                  <div class="faq-item" id="question-en-wyckoff-method-01">
+                    <h3>
+                      What three laws underpin the Wyckoff method described in
+                      the source?
+                    </h3>
+                    <p>
+                      The Wyckoff method reads the market by volume and price so
+                      as to see the actions of large capital rather than guess;
+                      beneath it lie three laws: supply and demand, cause and
+                      effect, effort and result.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-wyckoff-method-02">
+                    <h3>
+                      What are accumulation, markup, distribution and markdown?
+                    </h3>
+                    <p>
+                      The Wyckoff cycle is four phases: accumulation (a range
+                      after a fall with fading volume), markup in steps,
+                      distribution at the top, and markdown; determining the
+                      current phase is the main skill of the method.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-wyckoff-method-03">
+                    <h3>
+                      What accumulation and spring behavior does the author look
+                      for on a chart?
+                    </h3>
+                    <p>
+                      Accumulation is given away by a range after a decline with
+                      narrowing candles and fading volume, and the key is the
+                      spring, a false break down with a return and a secondary
+                      test; the phase is not guessed but awaited through volume
+                      confirmation up.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-wyckoff-method-04">
+                    <h3>
+                      How does the author adapt Wyckoff analysis to Forex and
+                      crypto volume data?
+                    </h3>
+                    <p>
+                      The method is universal, but the reliability of volume
+                      decides it: most honest are CME futures, on forex a
+                      currency is read by its futures, on crypto the patterns
+                      are sharper but on small coins there is more manipulation;
+                      a win rate of about 70 to 30 with reward to risk of three
+                      to one already gives an edge.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n069">
+                    <h3>Who is Wyckoff&#x27;s Composite Operator?</h3>
+                    <p>
+                      The Composite Operator is an analytical model of large
+                      participants&#x27; collective actions used to explain
+                      accumulation and distribution. It does not imply that one
+                      participant controls the entire market.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-n070">
+                    <h3>
+                      What happens in Wyckoff accumulation phases A through E?
+                    </h3>
+                    <p>
+                      Phase A stops the decline, B develops the range, C tests
+                      supply, D shows strength and progression toward a
+                      breakout, and E moves into an advance outside the range.
+                      Actual markets need not follow the schematic perfectly.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/wyckoff-method"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-smart-money-guide"
+                  aria-labelledby="heading-smart-money-guide"
+                >
+                  <h2 id="heading-smart-money-guide">
+                    How Institutions Move the Market
+                  </h2>
+                  <div class="faq-item" id="question-en-smart-money-guide-01">
+                    <h3>
+                      How does the author describe Smart Money and its
+                      difference from the crowd?
+                    </h3>
+                    <p>
+                      Smart Money are large pros with big capital and
+                      information; what separates them from the crowd is not a
+                      secret but the approach: they buy cheap in panic and sell
+                      dear in euphoria, while retail does exactly the reverse.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-02">
+                    <h3>
+                      Why do large participants build and unload positions in
+                      smaller orders?
+                    </h3>
+                    <p>
+                      The large player cannot buy all at once without shoving
+                      price, so it splits volume into small and iceberg orders;
+                      the quiet build at the bottom is accumulation, the
+                      sell-off at the top is distribution by Wyckoff.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-03">
+                    <h3>
+                      How does the author connect Smart Money with Wyckoff
+                      phases?
+                    </h3>
+                    <p>
+                      Behind Smart Money sits a three-phase Wyckoff script:
+                      accumulation at the bottom from a frightened crowd, a
+                      trend along the path of least resistance and distribution
+                      at the top on euphoria; and a fall often starts not from
+                      seller pressure but from the buyer leaving, a demand
+                      deficit.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-04">
+                    <h3>
+                      How does the source interpret market control, liquidity
+                      and manipulation?
+                    </h3>
+                    <p>
+                      Control is not a conspiracy but work with the
+                      predictability of the crowd: illegal spoofing exists and
+                      is punished, but ordinary manipulation is collecting
+                      liquidity at obvious levels, and a market maker lives off
+                      the spread, not off your blow-up.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-05">
+                    <h3>
+                      How does the author distinguish bull traps, bear traps and
+                      real moves?
+                    </h3>
+                    <p>
+                      The two main traps are stop hunting and the false breakout
+                      past an obvious level: a bull trap catches buyers, a bear
+                      trap sellers, and what tells them from a real move is
+                      volume, not the false break itself.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-06">
+                    <h3>
+                      What traces does the author look for when assessing
+                      large-player activity?
+                    </h3>
+                    <p>
+                      A large player is given away by three traces: a volume
+                      spike, a liquidity grab through a false break and an
+                      accumulation range before the exit; but without volume any
+                      zone is guesswork, so I check every trace against
+                      activity.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-07">
+                    <h3>
+                      Why does the author add exchange volume to price-based SMC
+                      analysis?
+                    </h3>
+                    <p>
+                      Pure SMC marks order blocks and imbalances off price
+                      alone, which is easy to fit after the fact; I add exchange
+                      volume from CME as the real footprint of large capital,
+                      and it lifts the win rate from about six to seven out of
+                      ten, which at one to three over the long run is what
+                      decides it.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-08">
+                    <h3>
+                      What are liquidity, order blocks, imbalance, BOS and CHoCH
+                      in SMC?
+                    </h3>
+                    <p>
+                      The concept stands on liquidity (clusters of stops at
+                      obvious levels), the order block (the last opposing candle
+                      before an impulse), the imbalance and structure BOS and
+                      CHoCH, but behind all the terms sits one and the same
+                      build and dump of a position by the large player.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-09">
+                    <h3>
+                      Which myths and trading mistakes does the author identify
+                      in SMC?
+                    </h3>
+                    <p>
+                      The main SMC myths are the conspiracy (in reality the
+                      large player simply needs liquidity at clusters of stops)
+                      and faith in magic markup (the market draws dozens of
+                      zones, and without phase and volume it is guesswork); but
+                      the costliest of all is entering without a stop and a
+                      calculated risk.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-smart-money-guide-10">
+                    <h3>
+                      How does the author structure an entry after a liquidity
+                      grab?
+                    </h3>
+                    <p>
+                      The scheme is one: find the impulse level, wait for
+                      liquidity to exhaust and the false break, and only after
+                      the grab enter behind the large player with the stop
+                      beyond the false break at risk to reward from 1 to 3; the
+                      stop is not where everyone puts it, the entry is not
+                      head-on, and a trap to me is a signal, not a threat.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/smart-money-guide"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-liquidity-pools"
+                  aria-labelledby="heading-liquidity-pools"
+                >
+                  <h2 id="heading-liquidity-pools">
+                    How to Spot Liquidity Zones on a Chart
+                  </h2>
+                  <div class="faq-item" id="question-en-liquidity-pools-01">
+                    <h3>What is a liquidity pool in SMC terminology?</h3>
+                    <p>
+                      A liquidity pool is a stack of stops and orders at obvious
+                      levels: buy-side above highs, sell-side below lows,
+                      densest at equal highs and equal lows.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/liquidity-pools"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-liquidity-pools-02">
+                    <h3>
+                      How does the author relate a liquidity grab, stop hunt and
+                      liquidity sweep?
+                    </h3>
+                    <p>
+                      A grab, a stop hunt and a sweep are one mechanic at
+                      different speeds: stops collected for counter-volume, the
+                      same as a Wyckoff spring, given away by a volume spike on
+                      the false break.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/liquidity-pools"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-liquidity-pools-03">
+                    <h3>
+                      Where does the author look for likely liquidity zones?
+                    </h3>
+                    <p>
+                      Hunt pools in obvious spots: equal extremes, day and week
+                      highs and lows, Asian-session boundaries and round
+                      numbers, and let a volume spike on the false break confirm
+                      the zone.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/liquidity-pools"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-liquidity-pools-04">
+                    <h3>
+                      What confirmation does the author wait for after a
+                      liquidity grab?
+                    </h3>
+                    <p>
+                      The false break is not the entry but the cue: wait for the
+                      return into the range and the reaction, stop beyond the
+                      extreme of the false break, target the opposite pool, and
+                      never park your stop on the most obvious level.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/liquidity-pools"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f078">
+                    <h3>
+                      How does internal liquidity differ from external
+                      liquidity?
+                    </h3>
+                    <p>
+                      External liquidity is considered beyond the range&#x27;s
+                      outer highs and lows; internal liquidity relates to local
+                      structures within it. The author uses the sequence of
+                      their tests to interpret a developing price scenario.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/liquidity-pools"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-order-block"
+                  aria-labelledby="heading-order-block"
+                >
+                  <h2 id="heading-order-block">
+                    What an Order Block Looks Like on a Chart
+                  </h2>
+                  <div class="faq-item" id="question-en-order-block-01">
+                    <h3>
+                      What is an order block in the author&#x27;s explanation?
+                    </h3>
+                    <p>
+                      An order block is the last opposing candle before an
+                      impulse, the footprint of a position built by big money:
+                      bullish is a demand zone, bearish a supply zone, and a
+                      volume spike is what confirms it.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/order-block"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-order-block-02">
+                    <h3>
+                      How does the author locate an order block across
+                      timeframes?
+                    </h3>
+                    <p>
+                      A real block sits in front of an impulse that breaks
+                      structure, and the core of the zone is the candle body:
+                      find it on the higher timeframe, refine the entry on a
+                      lower one.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/order-block"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-order-block-03">
+                    <h3>
+                      How does the author plan an order-block entry, stop and
+                      target?
+                    </h3>
+                    <p>
+                      Enter on the return into the block after a liquidity sweep
+                      and a reaction with volume, stop beyond the far edge of
+                      the zone, target at the opposite pool, risk-to-reward from
+                      1 to 3.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/order-block"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f074">
+                    <h3>What is order-block mitigation?</h3>
+                    <p>
+                      In SMC terminology, mitigation refers to a return to and
+                      reaction at a previously identified order block. In the
+                      author&#x27;s model, some interest may be absorbed during
+                      the first test. A later revisit needs fresh assessment.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/order-block"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-f075">
+                    <h3>What is a breaker block?</h3>
+                    <p>
+                      A breaker is a former order block that has been breached
+                      and is considered in a new role. Demand may become
+                      resistance, or supply support. The author relates this to
+                      structural change and participant reactions.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/order-block"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-imbalance-fvg"
+                  aria-labelledby="heading-imbalance-fvg"
+                >
+                  <h2 id="heading-imbalance-fvg">
+                    How Imbalances Form and Get Filled
+                  </h2>
+                  <div class="faq-item" id="question-en-imbalance-fvg-01">
+                    <h3>
+                      How does the source distinguish imbalance from a Fair
+                      Value Gap?
+                    </h3>
+                    <p>
+                      An imbalance is a supply-demand skew after a sharp move,
+                      and an FVG is its visible three-candle gap; a volume
+                      deficit on one side sits behind every gap, and because the
+                      market reaches for balance, price comes back to the zone.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/imbalance-fvg"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-imbalance-fvg-02">
+                    <h3>
+                      What is the three-candle rule for identifying bullish and
+                      bearish FVGs?
+                    </h3>
+                    <p>
+                      Spot an FVG by three candles: for a bullish one the third
+                      low sits above the first high, for a bearish one it is
+                      mirrored; take only gaps on elevated volume near key
+                      levels into work.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/imbalance-fvg"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-imbalance-fvg-03">
+                    <h3>
+                      How does the author approach a retracement into an FVG?
+                    </h3>
+                    <p>
+                      Wait for the pull-back to the zone and enter along the
+                      impulse, but only on a reaction and drying volume at risk
+                      to reward from 1 to 2; price does not always return, so
+                      you never enter blind, and the stop goes behind the far
+                      edge.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/imbalance-fvg"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-imbalance-fvg-04">
+                    <h3>
+                      How does the author connect an order block with a
+                      subsequent imbalance?
+                    </h3>
+                    <p>
+                      Imbalance plus order block plus volume is a strong zone:
+                      first the build-up in the order block, then the burst and
+                      its trail; alone and without volume these are just
+                      rectangles that promise nothing.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/imbalance-fvg"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-en-imbalance-fvg-05">
+                    <h3>
+                      How does the author assess an FVG&#x27;s significance
+                      using volume and value levels?
+                    </h3>
+                    <p>
+                      An imbalance and an FVG are repackaged volume analysis:
+                      the zone only points to a place, while the call to enter
+                      comes from large interest confirmed by volume, and the
+                      honest gaps I look for at value levels, never entering
+                      blind.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/en/freestudying/imbalance-fvg"
+                        >In-depth explanation</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Other library topics">
+                  <h2>Other library topics</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-getting-started"
+                        >Getting Started and Trading Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-risk-psychology"
+                        >Trading Risk and Psychology</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-chart-analysis"
+                        >Charts and Technical Analysis</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-indicators"
+                        >Indicators and Volatility</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-financial-markets"
+                        >How Financial Markets Work</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-crypto-mechanics"
+                        >Cryptocurrency Mechanics and Security</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/en/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, Altcoins and Market Cycles</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/en/freestudying/trading-faq"
+                      >All topics: Trading Q&amp;A</a
+                    >
+                  </p>
+                </nav>
+                <section>
+  <h2>About the Library Materials</h2>
+  <p>
+    This section is based on materials from the ArapovTrade library and
+    Igor Arapov’s educational videos. Here you can find
+    definitions, comparisons of instruments, explanations of market
+    mechanics, and discussions of the author’s approach to trading.
+  </p>
+  <p>
+    The library’s author is
+    <a class="linkrefinto" href="https://arapov.trade/en"
+      >Igor Arapov</a
+    >, a practicing trader since 2013. The in-depth materials
+    provide context for each question; the short answers serve as
+    a starting point for exploring the topic.
+  </p>
+</section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    PREVIOUS <span class="page_none_block">ARTICLE</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    NEXT <span class="page_none_block">ARTICLE</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Filter by category
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   PREVIOUS <span class="page_none_block">ARTICLE</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   NEXT <span class="page_none_block">ARTICLE</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Popular
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/en/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleEn"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleEn }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Filter by category
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Popular
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/en/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleEn"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleEn }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -524,78 +1312,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Our projects are available to everyone
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Our projects are available to everyone
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Choose a topic that interests you and start learning
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Choose a topic that interests you and start learning
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-

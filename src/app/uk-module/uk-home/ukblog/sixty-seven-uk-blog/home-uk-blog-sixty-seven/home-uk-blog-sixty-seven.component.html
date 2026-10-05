@@ -1,636 +1,1660 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="uk">
-             <header>
-               <h1>Як влаштовані фінансові ринки: питання та відповіді</h1>
-             </header>
-             <article>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             <p>Як працюють біржа, ордери, Forex, фʼючерси, опціони та облігації; як економічні події повʼязані з ринками.</p>
-             <p>Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під кожною відповіддю є посилання на докладне пояснення. Авторські торгові підходи подано як пояснення Ігоря Арапова; формулювання від першої особи належать автору.</p>
-             <nav aria-label="Зміст"><h2>Зміст</h2><ul>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-how-exchange-works')" [ngStyle]="{ cursor: 'pointer' }">Що відбувається, коли ви розміщуєте ордер</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-market-microstructure')" [ngStyle]="{ cursor: 'pointer' }">Як насправді виконуються та зіставляються ордери</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-order-types')" [ngStyle]="{ cursor: 'pointer' }">Що таке ордер і які бувають типи</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-forex-guide')" [ngStyle]="{ cursor: 'pointer' }">Як правильно почати торгувати на форексі</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-fundamental-analysis')" [ngStyle]="{ cursor: 'pointer' }">Як читати економічні дані як трейдер</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-assets-trading')" [ngStyle]="{ cursor: 'pointer' }">Акції, форекс, крипта, товари: у чому різниця</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-derivatives-futures-spot')" [ngStyle]="{ cursor: 'pointer' }">На якому ринку торгувати — спот чи ф&#x27;ючерси</a></li>
-             <li><a class="linkrefinto" (click)="scrollToFragment('topic-bonds-guide')" [ngStyle]="{ cursor: 'pointer' }">Що відбувається, коли ви купуєте облігацію</a></li>
-             </ul></nav>
-             <section id="topic-how-exchange-works" aria-labelledby="heading-how-exchange-works">
-             <h2 id="heading-how-exchange-works">Що відбувається, коли ви розміщуєте ордер</h2>
-             <div class="faq-item" id="question-uk-how-exchange-works-01">
-             <h3>Що таке біржа і чим вона відрізняється від брокера?</h3>
-             <p>Біржа це сам майданчик, брокер ваш доступ до нього, і на біржі ви бачите весь ринок, а на позабіржовому лише зріз через посередника.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-02">
-             <h3>Хто бере участь у біржовій торгівлі?</h3>
-             <p>На біржі сходяться дві сили: великий капітал (банки й фонди) і роздрібний натовп, а доступ та ліквідність їм дають брокер, маркетмейкер і клірингова палата; сенс роботи в тому, щоб за обсягом бачити бік великого капіталу, а не натовпу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-03">
-             <h3>Що таке акція простими словами і чому її ціна рухається?</h3>
-             <p>Акція це частка в компанії й базовий інструмент ринку, але ціну в моменті рухає не ярлик &quot;хороша компанія&quot;, а попит і пропозиція у стакані.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-04">
-             <h3>Що торгують на біржі та що йде поза біржею?</h3>
-             <p>Через біржу торгують не лише акції, а й облігації, ф&#x27;ючерси, сировину й валюту, а устрій усюди однаковий, тож починати варто з одного інструмента; при цьому частина ринку позабіржова, як Форекс, де єдиного чесного обсягу попросту немає.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-05">
-             <h3>Як формується ціна на біржі: попит, пропозиція і спред?</h3>
-             <p>Біржова ціна це ціна останньої угоди, народжена балансом попиту й пропозиції, а падає ринок часто не від продавців, а від вичерпаного попиту.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-06">
-             <h3>Що показує біржовий стакан і які ордери рухають ціну?</h3>
-             <p>Стакан це карта попиту й пропозиції в реальному часі: лімітна заявка стоїть і чекає, а ринкова виконується одразу й рухає ціну, проїдаючи ліквідність.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-07">
-             <h3>Яку функцію виконує клірингова палата?</h3>
-             <p>Кліринг знімає ризик неплатежу, тому обсяг на регульованій біржі чесний, і саме за ним видно сліди розумних грошей, а не приблизну картину з децентралізованих майданчиків.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-how-exchange-works-08">
-             <h3>Коли краще торгувати: біржові сесії?</h3>
-             <p>Найліквідніший момент це перетин Лондона й США, і я краще відторгую менше, але в це вікно, ніж весь день по тонкому ринку.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n049">
-             <h3>Як додатковий випуск акцій зменшує частку акціонера?</h3>
-             <p>Якщо компанія випускає нові акції, а акціонер не збільшує свій пакет, його відсоткова частка зменшується. Це називають розмиванням: кількість його акцій може залишитися незмінною, але загальна кількість зростає.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f063">
-             <h3>Чим звичайні акції відрізняються від привілейованих?</h3>
-             <p>Звичайні акції зазвичай дають право голосу. Привілейовані можуть передбачати пріоритет у дивідендах та інші права за умовами випуску. Назва типу акцій не гарантує виплат.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/how-exchange-works">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-market-microstructure" aria-labelledby="heading-market-microstructure">
-             <h2 id="heading-market-microstructure">Як насправді виконуються та зіставляються ордери</h2>
-             <div class="faq-item" id="question-uk-market-microstructure-01">
-             <h3>Як формується ціна на біржі: попит, пропозиція та обсяг?</h3>
-             <p>Ціна це згода попиту та пропозиції, а не чиєсь рішення; причину гадати необов&#x27;язково, підсумок сутички проступає в обсязі, за яким і видно, хто тримає рух.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-market-microstructure-02">
-             <h3>Що означають Bid і Ask у книзі заявок?</h3>
-             <p>Bid це найкраща ціна купівлі, Ask найкраща ціна продажу, між ними спред; стакан це знімок однієї секунди, і порожній стакан небезпечний, адже навіть середній наказ протягує ціну, коли їй немає на що спертися.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-market-microstructure-03">
-             <h3>Чому спред важливий для коротких угод?</h3>
-             <p>Спред повторюється в кожній угоді: при трьох пунктах для скальпера з ціллю 5-10 це величезна частка цілі, а для входу на сотні пунктів дрібниця; рідше й точніше майже завжди дешевше, а нульовий спред не безкоштовний.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-market-microstructure-04">
-             <h3>Як ліквідність впливає на виконання заявки?</h3>
-             <p>Ліквідність це вбирання ордера без зсуву ціни; на тонкому ринку широкий спред і проковзування, а зони скупчення стопів це пули, до яких великий капітал жене ціну заради хибного накола, тому стоп ховаю із запасом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-market-microstructure-05">
-             <h3>Чим волатильність відрізняється від напряму руху?</h3>
-             <p>Волатильність це розмах, а не напрямок, і ходить циклами: стиснення змінюється вибухом, за Вайкоффом стиснення часто накопичення; ATR беру як міру ризику для стопа в півтора-три ATR і розміру позиції, але не як сигнал на вхід.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-market-microstructure-06">
-             <h3>Хто такий маркетмейкер?</h3>
-             <p>Маркетмейкер це лімітний учасник, що дає ліквідність і заробляє на спреді, а не полює особисто за вами; частіше трейдер втрачає, бо сам поставив стоп в очевидному місці й зайшов проти капіталу, тому я читаю обсяг, а не стакан.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/market-microstructure">Докладний розбір</a></p>
-             </div>
-             
-             </section>
-             <section id="topic-order-types" aria-labelledby="heading-order-types">
-             <h2 id="heading-order-types">Що таке ордер і які бувають типи</h2>
-             <div class="faq-item" id="question-uk-order-types-01">
-             <h3>Що таке біржовий ордер і які вони бувають?</h3>
-             <p>Ордер це команда брокеру на заданих умовах, і тримається все на трьох китах: ринковий це швидкість без контролю ціни, лімітний це контроль ціни без гарантії виконання, стоп це спляча заявка до свого рівня.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-02">
-             <h3>Чому ринковий ордер може виконатися з прослизанням?</h3>
-             <p>Ринковий ордер виконується миттєво, але великий обсяг крокує по склянці й сам рухає ціну, а розплата за швидкість це спред і прослизання, яке найсильніше б&#x27;є на тонкому ринку і новинах.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-03">
-             <h3>Чи гарантує лімітний ордер виконання?</h3>
-             <p>Лімітний ордер це контроль ціни ціною негарантованого виконання; великі гроші заходять лімітом, щоб не штовхати ціну проти себе, і знімають ту ліквідність, що наливає в ринок роздріб своїми ринковими заявками.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-04">
-             <h3>Як працюють Buy Stop і Sell Stop?</h3>
-             <p>Стоп-ордер спить до свого рівня і на дотику стає ринковим; Buy Stop ставлять вище ціни, Sell Stop нижче, а скупчення стопів при спрацюванні лавиною виливається в ринок, тому зони стопів це паливо для руху.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-05">
-             <h3>Чим стоп-лімітний ордер відрізняється від стоп-маркету?</h3>
-             <p>Стоп-лімітний це заявка з двох цін, яка контролює ціну, але може не виконатися, а стоп-маркет виконується завжди за доступною ціною: один гарантує ціну, інший вихід, тому на захист депозиту я беру стоп-маркет.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-06">
-             <h3>Як захисний стоп повʼязаний із розміром позиції?</h3>
-             <p>Стоп-лосс сам закриває позицію на заздалегідь порахованому збитку, і з плечем без нього рахунок обнуляється на різкому русі; ставлять його за структурним рівнем із запасом і від нього рахують обсяг при ризику один-два відсотки на угоду.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-07">
-             <h3>Чому ринок вибиває стопи: механіка полювання на стопи?</h3>
-             <p>Ринок вибиває стопи там, де їх тримає натовп, за круглим числом і явним рівнем: ціну заводять туди хибним проколом на слабкому обсязі й розвертають, тому свій стоп я ховаю за рівнем із запасом, а не на ньому.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-08">
-             <h3>Що робить трейлінг-стоп?</h3>
-             <p>Трейлінг-стоп тягне захист слідом за ціною й замикає вже взятий прибуток, перескакуючи за свіжі екстремуми; зсувати стоп припустимо лише в плюс і в жодному разі в мінус заради надії на розворот.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-09">
-             <h3>Що таке айсберг-ордер?</h3>
-             <p>Айсберг це велика заявка, порізана на видимі скибки при схованій масі; на рівні він виглядає як поглинання зустрічного потоку, але без L2 і стрічки новачку легше ловити його відбиток в обсязі, ніж сам прихований ордер.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-order-types-10">
-             <h3>Чим алгоритмічне виконання відрізняється від спуфінгу?</h3>
-             <p>Алго-ордер дробить велику заявку, щоб крупний капітал набрав обсяг і не посунув ціну; склянку можна підробити спуфінгом, а обсяг не можна, тому крупного я шукаю за сплеском обсягу без руху ціни на сильному рівні.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n051">
-             <h3>Чим відрізняються умови ордерів Day, GTC, IOC і FOK?</h3>
-             <p>Day діє до завершення сесії; GTC — до виконання чи скасування з урахуванням правил майданчика. IOC негайно виконує доступну частину та скасовує залишок. FOK вимагає негайного повного виконання або скасування.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n082">
-             <h3>Як працює звʼязка ордерів OCO?</h3>
-             <p>OCO повʼязує два ордери: виконання одного скасовує другий. Приклад у матеріалі — стоп-лос і тейк-профіт. Порядок роботи залежить від реалізації на майданчику.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/order-types">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-forex-guide" aria-labelledby="heading-forex-guide">
-             <h2 id="heading-forex-guide">Як правильно почати торгувати на форексі</h2>
-             <div class="faq-item" id="question-uk-forex-guide-01">
-             <h3>Що таке Forex і як влаштований валютний ринок?</h3>
-             <p>Forex це всесвітній ринок обміну валют, торгують на ньому парами, скажімо євро до долара; він найбільший і найліквідніший, проте децентралізований, тому чесного обсягу по валюті немає, і я зчитую її за рівнями та індексом долара.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-02">
-             <h3>Хто бере участь у валютному ринку?</h3>
-             <p>Сили на форексі незрівнянні: центробанки і великі банки задають тренди ставками, маркетмейкери тримають ліквідність, а роздріб це мала частка обороту, тому я йду за великим капіталом, а не намагаюся його обігнати.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-03">
-             <h3>Чим Forex відрізняється від фондового ринку?</h3>
-             <p>Валютний ринок децентралізований, торгується цілодобово п&#x27;ять днів і щедрий на плече, тоді як у біржових акцій є централізований обсяг; і вирішує для трейдера не розмір, а саме брак чесного обсягу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-04">
-             <h3>Що означають лонг і шорт валютної пари?</h3>
-             <p>Лонг це ставка на зростання, шорт на падіння через продаж взятого в борг, у шорті збиток згори не обмежений, а результат застигає лише в мить закриття, тому я планую вхід, стоп і ціль заздалегідь.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-05">
-             <h3>Що таке своп за перенесення валютної позиції?</h3>
-             <p>Своп це плата за ніч від різниці ставок, у середу потрійна за вихідні, дейтрейдер її не платить, а при утриманні на тижні вона помітно з&#x27;їдає результат, тому я вважаю своп частиною вартості угоди.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-06">
-             <h3>Як кредитне плече впливає на ризик валютної позиції?</h3>
-             <p>Плече однаково множить прибуток і збиток: при 1:100 вистачає руху в один відсоток, щоб винести рахунок, маржин-кол це попередження, стоп-аут примусове закриття, а на гепі як із франком 2015 баланс іде в мінус, тому я танцюю від ризику і ставлю стоп першим.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-07">
-             <h3>Як контролювати валютний ризик позиції?</h3>
-             <p>Валютний ризик це збиток від ходу курсу проти позиції, і плече роздуває його в рази; хеджування деривативами це для бізнесу, а захист приватника це стоп у кожній угоді, ризик один-два відсотки, скромне плече і фокус на дистанції.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-08">
-             <h3>Що таке carry trade і які його ризики?</h3>
-             <p>Кері-трейд це заробіток на різниці ставок через своп, але не пасивний дохід, а ставка з плечем на стабільність курсу: один різкий рух стирає накопичене за місяці, тому головний ризик тут не ставка, а курс.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-09">
-             <h3>Як торгові сесії впливають на Forex?</h3>
-             <p>Сесій чотири за фінансовими центрами, і торгує не час, а обсяг: робоче вікно це перетин Лондона і Нью-Йорка, головні пари живуть у ньому, а тонкий азіат, ніч і свята частіше шум, який краще перечекати.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-forex-guide-10">
-             <h3>Як використовувати DXY під час аналізу валют?</h3>
-             <p>DXY це контекст напряму, а не сигнал: у більшості пар є долар, тому спершу я дивлюся його силу, зворотна кореляція з євродоларом близько мінус одиниці, а вхід шукаю вже на графіку пари за рівнем і реакцією.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n052">
-             <h3>Чому розмір піпса в парах з єною відрізняється?</h3>
-             <p>Для більшості валютних пар піпс зазвичай дорівнює 0,0001, а для пар з єною — 0,01. Це повʼязано з прийнятим масштабом котирування. Грошова вартість піпса залежить також від обсягу позиції й валюти розрахунку.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n083">
-             <h3>Чим основні валютні пари відрізняються від кросів та екзотики?</h3>
-             <p>Основні пари містять долар США, кроси утворені без нього. Екзотичні пари включають менш широко торговані валюти й можуть мати вищі витрати. Ліквідність і виконання оцінюють для конкретної пари.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/forex-guide">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-fundamental-analysis" aria-labelledby="heading-fundamental-analysis">
-             <h2 id="heading-fundamental-analysis">Як читати економічні дані як трейдер</h2>
-             <div class="faq-item" id="question-uk-fundamental-analysis-01">
-             <h3>Що таке фундаментальний аналіз і навіщо він трейдеру?</h3>
-             <p>Фундаментал оцінює справедливу вартість через економіку, ставки й звітність; для інвестора на кшталт Баффетта це сила, але трейдеру він каже чому рухається ціна, а не коли входити.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-02">
-             <h3>Які економічні фактори рухають фінансові ринки?</h3>
-             <p>Рухають ринками ставки центробанків, інфляція, зайнятість, торговий баланс, PMI, сировина й геополітика; золото при цьому стоїть осібно як захист, і попит на нього спалахує на страху.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-03">
-             <h3>Навіщо зіставляти ВВП, PMI, інфляцію та зайнятість з очікуваннями?</h3>
-             <p>ВВП запізнюється, PMI випереджає з межею 50, інфляція й зайнятість правлять ставкою; але ринок рухає не факт, а його розрив з очікуванням, тому в сам вихід даних я не входжу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-04">
-             <h3>Як рішення центробанків можуть впливати на валюти й активи?</h3>
-             <p>Ставка вгору міцнить долар і тисне ризик, вниз навпаки, а лаг понад пів року розтягує тренди; ФРС задає тон світу, і я не вгадую засідання, а йду за реакцією капіталу на графіку.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-05">
-             <h3>Що означають режими risk-on і risk-off?</h3>
-             <p>Макро бʼє по ринку через ставку: дорогі гроші міцнять долар і вмикають ризик-офф, дешеві женуть капітал в акції, сировину й крипту в режим ризик-он, а в центрі системи стоїть долар.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-06">
-             <h3>Навіщо трейдеру економічний календар?</h3>
-             <p>Календар це розклад новин із прогнозом і важливістю; його задача попередити, а не дати сигнал, тому найсильніше смикають ринок NFP першої пʼятниці, інфляція, ставки ФРС і ВВП.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-07">
-             <h3>Чому ринок реагує на очікування, а Smart Money діє заздалегідь?</h3>
-             <p>Ринок живе очікуваннями, а не фактом: великий капітал за Вайкоффом готується за пів року-рік, тому роздроб спізнюється, а я входжу за слідом обсягу біля рівня, не за прогнозом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-fundamental-analysis-08">
-             <h3>Чим небезпечний вхід під час значної новини?</h3>
-             <p>Не входь у момент новини, де спред і подвійний викид вибивають навіть правильний напрямок; чекай, поки пил осяде, і бери вхід за обсягом і реакцією ціни біля рівня, тримаючи фундаментал лише як фон.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n055">
-             <h3>Що показує звіт COT і чому це фон, а не миттєвий сигнал?</h3>
-             <p>COT показує розподіл фʼючерсних позицій між категоріями учасників. Дані публікуються із затримкою, тому автор використовує їх для оцінки позиціонування й ринкового фону, а не негайного входу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fundamental-analysis">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-assets-trading" aria-labelledby="heading-assets-trading">
-             <h2 id="heading-assets-trading">Акції, форекс, крипта, товари: у чому різниця</h2>
-             <div class="faq-item" id="question-uk-assets-trading-01">
-             <h3>Які фактори враховувати під час аналізу золота XAU/USD?</h3>
-             <p>XAU/USD це ціна унції золота в доларах, захисний актив із драйвером у вигляді ставок ФРС; читаю його за обсягом ф&#x27;ючерсів CME і круглими рівнями, а ризик через різкі рухи тримаю близько половини відсотка.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/assets-trading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-assets-trading-02">
-             <h3>Чим WTI відрізняється від Brent і що впливає на нафту?</h3>
-             <p>Нафта доступна ф&#x27;ючерсами CL на WTI (NYMEX) і Brent (ICE), а зазор між марками звуть спредом Brent-WTI; ціну женуть попит, квоти ОПЕК+ і геополітика, але для мене це фон, вхід беру за обсягом.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/assets-trading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-assets-trading-03">
-             <h3>Що таке фондовий індекс і як отримати до нього експозицію?</h3>
-             <p>Індекс це кошик акцій в одне число; Dow і Nikkei рахують за ціною паперу, S&amp;P 500 за капіталізацією, а Nasdaq жвавіший за всіх; беруть їх через ETF (SPY, QQQ) і ф&#x27;ючерси E-mini, тоді як плечові ETF вдовгу підточують рахунок.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/assets-trading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-assets-trading-04">
-             <h3>Як адаптувати рівні та обʼєм до різних активів?</h3>
-             <p>Золото, нафту й індекси я читаю однаково, за рівнями, обсягом і хибним наколом на біржових ф&#x27;ючерсах, а не на CFD; новину тримаю як фон, ризик через волатильність близько половини відсотка, і плече новачку не раджу.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/assets-trading">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f084">
-             <h3>Як звіт EIA про запаси нафти входить у ринковий фон?</h3>
-             <p>Дані запасів доповнюють оцінку попиту та пропозиції. Реакція залежить і від очікувань учасників. Автор використовує подію як фон, після чого аналізує ціну й обʼєм.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/assets-trading">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-derivatives-futures-spot" aria-labelledby="heading-derivatives-futures-spot">
-             <h2 id="heading-derivatives-futures-spot">На якому ринку торгувати — спот чи ф&#x27;ючерси</h2>
-             <div class="faq-item" id="question-uk-derivatives-futures-spot-01">
-             <h3>Що таке деривативи простими словами?</h3>
-             <p>Ви торгуєте не актив, а контракт на нього, видів деривативів чотири, і для мене цінні саме біржові ф&#x27;ючерси, бо тільки вони дають чесний обсяг.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-derivatives-futures-spot-02">
-             <h3>Що таке ф&#x27;ючерс і як він працює?</h3>
-             <p>Ф&#x27;ючерс це зобов&#x27;язуючий біржовий контракт через клірингову палату, і більшість ф&#x27;ючерсів розрахункові, тож вагон нафти ніхто не везе, а спекулянт закривається до експірації.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-derivatives-futures-spot-03">
-             <h3>Чим спот відрізняється від ф&#x27;ючерсів?</h3>
-             <p>Спот це володіння активом без плеча, де втрачаєш максимум вкладене; ф&#x27;ючерс це контракт на ціну з плечем, строком життя й ризиком ліквідації: BTC зі ста до вісімдесяти на споті перечекаєш, а з плечем тебе винесе.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-derivatives-futures-spot-04">
-             <h3>Чому ф&#x27;ючерси небезпечні для новачка?</h3>
-             <p>Маржа мала, але прибуток і збиток рахуються від повного контракту: на крипті BTC по 71 тисячі при ході до 50 уже мінус 28 відсотків, тому ризик в угоді я тримаю в один-два відсотки.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-derivatives-futures-spot-05">
-             <h3>Чому початківцю корисно вивчити спот перед фʼючерсами?</h3>
-             <p>Новачку безпечніше спот: немає плеча й ліквідації, можна вчитися, не обнуляючи рахунок за ніч; до ф&#x27;ючерсів переходь пізніше, зрозумівши плече, маржу та ліквідацію, за правилом купити й тримати це спот, потрібен шорт це ф&#x27;ючерс.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f030">
-             <h3>Що таке позабіржовий своп?</h3>
-             <p>Своп — договір про обмін платежами за погодженою схемою. Умови визначають сторони, зазвичай поза біржею. Він належить до сімейства похідних інструментів.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f069">
-             <h3>Чим право за опціоном відрізняється від зобовʼязання за фʼючерсом?</h3>
-             <p>Покупець опціону отримує право на передбачену угоду, але не зобовʼязаний ним скористатися; за право сплачує премію. Фʼючерс передбачає зобовʼязання сторін. Структура ризику та виконання відрізняється.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f070">
-             <h3>Чим форвард відрізняється від біржового фʼючерса?</h3>
-             <p>Форвард укладається на індивідуально погоджених умовах. Фʼючерс має стандартизовані параметри та біржову інфраструктуру розрахунків. Це впливає на ліквідність, прозорість і виконання зобовʼязань.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-f071">
-             <h3>Що відбувається за переоцінки фʼючерсної позиції та нестачі забезпечення?</h3>
-             <p>Зміна ціни відображається на забезпеченні позиції. За його нестачі можуть вимагати поповнення або скорочення позиції; можливе примусове закриття. Умови залежать від біржі та брокера.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/derivatives-futures-spot">Докладний розбір</a></p>
-             </div>
-             </section>
-             <section id="topic-bonds-guide" aria-labelledby="heading-bonds-guide">
-             <h2 id="heading-bonds-guide">Що відбувається, коли ви купуєте облігацію</h2>
-             <div class="faq-item" id="question-uk-bonds-guide-01">
-             <h3>Що таке облігації?</h3>
-             <p>Облігація це оформлений борг: ви кредитор, вам обіцяють повернути номінал до дати погашення і платити купон; на відміну від акції це борг із фіксованими умовами, а не частка в бізнесі.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bonds-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-bonds-guide-02">
-             <h3>Як працюють облігації: номінал, купон, дохідність, погашення?</h3>
-             <p>Ціна облігації обернено повʼязана зі ставкою: ставка росте, нові випуски дають більше, і старі папери з низьким купоном дешевшають; купив дешевше номіналу, дохідність вища за купон.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bonds-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-bonds-guide-03">
-             <h3>Які види облігацій існують і які ризики вони мають?</h3>
-             <p>Надійний не означає безризиковий: у держпаперів лишається ризик ставки, у корпоративних ще й ризик дефолту; надвисока дохідність це плата за ризик, а не подарунок.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bonds-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n058">
-             <h3>Що показує дюрація облігації?</h3>
-             <p>Дюрація допомагає оцінювати чутливість ціни облігації до зміни дохідності. За інших рівних умов вища дюрація означає сильнішу реакцію ціни. У матеріалі цей показник повʼязаний із процентним ризиком.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bonds-guide">Докладний розбір</a></p>
-             </div>
-             <div class="faq-item" id="question-uk-n084">
-             <h3>Що таке інверсія кривої дохідності?</h3>
-             <p>Інверсія означає, що дохідність коротких облігацій вища за дохідність довших. Її розглядають як показник очікувань та макроекономічної напруги. Автор використовує її як фон, а не точний календар майбутніх подій.</p>
-             <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bonds-guide">Докладний розбір</a></p>
-             </div>
-             
-             </section>
-             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-chart-analysis">Графіки та технічний аналіз</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             </nav>
-             <section><h2>Про автора</h2><p>Матеріали бібліотеки підготував Ігор Арапов, практикуючий трейдер із 2013 року.</p><p><a class="linkrefinto" href="https://arapov.trade/uk">Igor Arapov / ArapovTrade</a></p></section>
-             </article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="uk">
+              <header>
+                <h1>Як влаштовані фінансові ринки: питання та відповіді</h1>
+              </header>
+              <article>
+                <p>
+                  <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                    >Усі теми: питання та відповіді з трейдингу</a
+                  >
+                </p>
+                <p>
+                  Як працюють біржа, ордери, Forex, фʼючерси, опціони та
+                  облігації; як економічні події повʼязані з ринками.
+                </p>
+                <p>
+                  Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під
+                  кожною відповіддю є посилання на докладне пояснення. Авторські
+                  торгові підходи подано як пояснення Ігоря Арапова;
+                  формулювання від першої особи належать автору.
+                </p>
+                <nav aria-label="Зміст">
+                  <h2>Зміст</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-how-exchange-works')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Що відбувається, коли ви розміщуєте ордер</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="
+                          scrollToFragment('topic-market-microstructure')
+                        "
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як насправді виконуються та зіставляються ордери</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-order-types')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Що таке ордер і які бувають типи</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-forex-guide')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як правильно почати торгувати на форексі</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-fundamental-analysis')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Як читати економічні дані як трейдер</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-assets-trading')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Акції, форекс, крипта, товари: у чому різниця</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="
+                          scrollToFragment('topic-derivatives-futures-spot')
+                        "
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >На якому ринку торгувати — спот чи ф&#x27;ючерси</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        (click)="scrollToFragment('topic-bonds-guide')"
+                        [ngStyle]="{ cursor: 'pointer' }"
+                        >Що відбувається, коли ви купуєте облігацію</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+                <section
+                  id="topic-how-exchange-works"
+                  aria-labelledby="heading-how-exchange-works"
+                >
+                  <h2 id="heading-how-exchange-works">
+                    Що відбувається, коли ви розміщуєте ордер
+                  </h2>
+                  <div class="faq-item" id="question-uk-how-exchange-works-01">
+                    <h3>Що таке біржа і чим вона відрізняється від брокера?</h3>
+                    <p>
+                      Біржа це сам майданчик, брокер ваш доступ до нього, і на
+                      біржі ви бачите весь ринок, а на позабіржовому лише зріз
+                      через посередника.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-02">
+                    <h3>Хто бере участь у біржовій торгівлі?</h3>
+                    <p>
+                      На біржі сходяться дві сили: великий капітал (банки й
+                      фонди) і роздрібний натовп, а доступ та ліквідність їм
+                      дають брокер, маркетмейкер і клірингова палата; сенс
+                      роботи в тому, щоб за обсягом бачити бік великого
+                      капіталу, а не натовпу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-03">
+                    <h3>
+                      Що таке акція простими словами і чому її ціна рухається?
+                    </h3>
+                    <p>
+                      Акція це частка в компанії й базовий інструмент ринку, але
+                      ціну в моменті рухає не ярлик &quot;хороша компанія&quot;,
+                      а попит і пропозиція у стакані.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-04">
+                    <h3>Що торгують на біржі та що йде поза біржею?</h3>
+                    <p>
+                      Через біржу торгують не лише акції, а й облігації,
+                      ф&#x27;ючерси, сировину й валюту, а устрій усюди
+                      однаковий, тож починати варто з одного інструмента; при
+                      цьому частина ринку позабіржова, як Форекс, де єдиного
+                      чесного обсягу попросту немає.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-05">
+                    <h3>
+                      Як формується ціна на біржі: попит, пропозиція і спред?
+                    </h3>
+                    <p>
+                      Біржова ціна це ціна останньої угоди, народжена балансом
+                      попиту й пропозиції, а падає ринок часто не від продавців,
+                      а від вичерпаного попиту.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-06">
+                    <h3>
+                      Що показує біржовий стакан і які ордери рухають ціну?
+                    </h3>
+                    <p>
+                      Стакан це карта попиту й пропозиції в реальному часі:
+                      лімітна заявка стоїть і чекає, а ринкова виконується
+                      одразу й рухає ціну, проїдаючи ліквідність.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-07">
+                    <h3>Яку функцію виконує клірингова палата?</h3>
+                    <p>
+                      Кліринг знімає ризик неплатежу, тому обсяг на регульованій
+                      біржі чесний, і саме за ним видно сліди розумних грошей, а
+                      не приблизну картину з децентралізованих майданчиків.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-how-exchange-works-08">
+                    <h3>Коли краще торгувати: біржові сесії?</h3>
+                    <p>
+                      Найліквідніший момент це перетин Лондона й США, і я краще
+                      відторгую менше, але в це вікно, ніж весь день по тонкому
+                      ринку.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n049">
+                    <h3>
+                      Як додатковий випуск акцій зменшує частку акціонера?
+                    </h3>
+                    <p>
+                      Якщо компанія випускає нові акції, а акціонер не збільшує
+                      свій пакет, його відсоткова частка зменшується. Це
+                      називають розмиванням: кількість його акцій може
+                      залишитися незмінною, але загальна кількість зростає.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f063">
+                    <h3>
+                      Чим звичайні акції відрізняються від привілейованих?
+                    </h3>
+                    <p>
+                      Звичайні акції зазвичай дають право голосу. Привілейовані
+                      можуть передбачати пріоритет у дивідендах та інші права за
+                      умовами випуску. Назва типу акцій не гарантує виплат.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/how-exchange-works"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-market-microstructure"
+                  aria-labelledby="heading-market-microstructure"
+                >
+                  <h2 id="heading-market-microstructure">
+                    Як насправді виконуються та зіставляються ордери
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-01"
+                  >
+                    <h3>
+                      Як формується ціна на біржі: попит, пропозиція та обсяг?
+                    </h3>
+                    <p>
+                      Ціна це згода попиту та пропозиції, а не чиєсь рішення;
+                      причину гадати необов&#x27;язково, підсумок сутички
+                      проступає в обсязі, за яким і видно, хто тримає рух.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-02"
+                  >
+                    <h3>Що означають Bid і Ask у книзі заявок?</h3>
+                    <p>
+                      Bid це найкраща ціна купівлі, Ask найкраща ціна продажу,
+                      між ними спред; стакан це знімок однієї секунди, і
+                      порожній стакан небезпечний, адже навіть середній наказ
+                      протягує ціну, коли їй немає на що спертися.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-03"
+                  >
+                    <h3>Чому спред важливий для коротких угод?</h3>
+                    <p>
+                      Спред повторюється в кожній угоді: при трьох пунктах для
+                      скальпера з ціллю 5-10 це величезна частка цілі, а для
+                      входу на сотні пунктів дрібниця; рідше й точніше майже
+                      завжди дешевше, а нульовий спред не безкоштовний.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-04"
+                  >
+                    <h3>Як ліквідність впливає на виконання заявки?</h3>
+                    <p>
+                      Ліквідність це вбирання ордера без зсуву ціни; на тонкому
+                      ринку широкий спред і проковзування, а зони скупчення
+                      стопів це пули, до яких великий капітал жене ціну заради
+                      хибного накола, тому стоп ховаю із запасом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-05"
+                  >
+                    <h3>Чим волатильність відрізняється від напряму руху?</h3>
+                    <p>
+                      Волатильність це розмах, а не напрямок, і ходить циклами:
+                      стиснення змінюється вибухом, за Вайкоффом стиснення часто
+                      накопичення; ATR беру як міру ризику для стопа в
+                      півтора-три ATR і розміру позиції, але не як сигнал на
+                      вхід.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-market-microstructure-06"
+                  >
+                    <h3>Хто такий маркетмейкер?</h3>
+                    <p>
+                      Маркетмейкер це лімітний учасник, що дає ліквідність і
+                      заробляє на спреді, а не полює особисто за вами; частіше
+                      трейдер втрачає, бо сам поставив стоп в очевидному місці й
+                      зайшов проти капіталу, тому я читаю обсяг, а не стакан.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/market-microstructure"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-order-types"
+                  aria-labelledby="heading-order-types"
+                >
+                  <h2 id="heading-order-types">
+                    Що таке ордер і які бувають типи
+                  </h2>
+                  <div class="faq-item" id="question-uk-order-types-01">
+                    <h3>Що таке біржовий ордер і які вони бувають?</h3>
+                    <p>
+                      Ордер це команда брокеру на заданих умовах, і тримається
+                      все на трьох китах: ринковий це швидкість без контролю
+                      ціни, лімітний це контроль ціни без гарантії виконання,
+                      стоп це спляча заявка до свого рівня.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-02">
+                    <h3>Чому ринковий ордер може виконатися з прослизанням?</h3>
+                    <p>
+                      Ринковий ордер виконується миттєво, але великий обсяг
+                      крокує по склянці й сам рухає ціну, а розплата за
+                      швидкість це спред і прослизання, яке найсильніше б&#x27;є
+                      на тонкому ринку і новинах.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-03">
+                    <h3>Чи гарантує лімітний ордер виконання?</h3>
+                    <p>
+                      Лімітний ордер це контроль ціни ціною негарантованого
+                      виконання; великі гроші заходять лімітом, щоб не штовхати
+                      ціну проти себе, і знімають ту ліквідність, що наливає в
+                      ринок роздріб своїми ринковими заявками.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-04">
+                    <h3>Як працюють Buy Stop і Sell Stop?</h3>
+                    <p>
+                      Стоп-ордер спить до свого рівня і на дотику стає ринковим;
+                      Buy Stop ставлять вище ціни, Sell Stop нижче, а скупчення
+                      стопів при спрацюванні лавиною виливається в ринок, тому
+                      зони стопів це паливо для руху.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-05">
+                    <h3>
+                      Чим стоп-лімітний ордер відрізняється від стоп-маркету?
+                    </h3>
+                    <p>
+                      Стоп-лімітний це заявка з двох цін, яка контролює ціну,
+                      але може не виконатися, а стоп-маркет виконується завжди
+                      за доступною ціною: один гарантує ціну, інший вихід, тому
+                      на захист депозиту я беру стоп-маркет.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-06">
+                    <h3>Як захисний стоп повʼязаний із розміром позиції?</h3>
+                    <p>
+                      Стоп-лосс сам закриває позицію на заздалегідь порахованому
+                      збитку, і з плечем без нього рахунок обнуляється на
+                      різкому русі; ставлять його за структурним рівнем із
+                      запасом і від нього рахують обсяг при ризику один-два
+                      відсотки на угоду.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-07">
+                    <h3>
+                      Чому ринок вибиває стопи: механіка полювання на стопи?
+                    </h3>
+                    <p>
+                      Ринок вибиває стопи там, де їх тримає натовп, за круглим
+                      числом і явним рівнем: ціну заводять туди хибним проколом
+                      на слабкому обсязі й розвертають, тому свій стоп я ховаю
+                      за рівнем із запасом, а не на ньому.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-08">
+                    <h3>Що робить трейлінг-стоп?</h3>
+                    <p>
+                      Трейлінг-стоп тягне захист слідом за ціною й замикає вже
+                      взятий прибуток, перескакуючи за свіжі екстремуми; зсувати
+                      стоп припустимо лише в плюс і в жодному разі в мінус
+                      заради надії на розворот.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-09">
+                    <h3>Що таке айсберг-ордер?</h3>
+                    <p>
+                      Айсберг це велика заявка, порізана на видимі скибки при
+                      схованій масі; на рівні він виглядає як поглинання
+                      зустрічного потоку, але без L2 і стрічки новачку легше
+                      ловити його відбиток в обсязі, ніж сам прихований ордер.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-order-types-10">
+                    <h3>
+                      Чим алгоритмічне виконання відрізняється від спуфінгу?
+                    </h3>
+                    <p>
+                      Алго-ордер дробить велику заявку, щоб крупний капітал
+                      набрав обсяг і не посунув ціну; склянку можна підробити
+                      спуфінгом, а обсяг не можна, тому крупного я шукаю за
+                      сплеском обсягу без руху ціни на сильному рівні.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n051">
+                    <h3>
+                      Чим відрізняються умови ордерів Day, GTC, IOC і FOK?
+                    </h3>
+                    <p>
+                      Day діє до завершення сесії; GTC — до виконання чи
+                      скасування з урахуванням правил майданчика. IOC негайно
+                      виконує доступну частину та скасовує залишок. FOK вимагає
+                      негайного повного виконання або скасування.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n082">
+                    <h3>Як працює звʼязка ордерів OCO?</h3>
+                    <p>
+                      OCO повʼязує два ордери: виконання одного скасовує другий.
+                      Приклад у матеріалі — стоп-лос і тейк-профіт. Порядок
+                      роботи залежить від реалізації на майданчику.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/order-types"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-forex-guide"
+                  aria-labelledby="heading-forex-guide"
+                >
+                  <h2 id="heading-forex-guide">
+                    Як правильно почати торгувати на форексі
+                  </h2>
+                  <div class="faq-item" id="question-uk-forex-guide-01">
+                    <h3>Що таке Forex і як влаштований валютний ринок?</h3>
+                    <p>
+                      Forex це всесвітній ринок обміну валют, торгують на ньому
+                      парами, скажімо євро до долара; він найбільший і
+                      найліквідніший, проте децентралізований, тому чесного
+                      обсягу по валюті немає, і я зчитую її за рівнями та
+                      індексом долара.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-02">
+                    <h3>Хто бере участь у валютному ринку?</h3>
+                    <p>
+                      Сили на форексі незрівнянні: центробанки і великі банки
+                      задають тренди ставками, маркетмейкери тримають
+                      ліквідність, а роздріб це мала частка обороту, тому я йду
+                      за великим капіталом, а не намагаюся його обігнати.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-03">
+                    <h3>Чим Forex відрізняється від фондового ринку?</h3>
+                    <p>
+                      Валютний ринок децентралізований, торгується цілодобово
+                      п&#x27;ять днів і щедрий на плече, тоді як у біржових
+                      акцій є централізований обсяг; і вирішує для трейдера не
+                      розмір, а саме брак чесного обсягу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-04">
+                    <h3>Що означають лонг і шорт валютної пари?</h3>
+                    <p>
+                      Лонг це ставка на зростання, шорт на падіння через продаж
+                      взятого в борг, у шорті збиток згори не обмежений, а
+                      результат застигає лише в мить закриття, тому я планую
+                      вхід, стоп і ціль заздалегідь.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-05">
+                    <h3>Що таке своп за перенесення валютної позиції?</h3>
+                    <p>
+                      Своп це плата за ніч від різниці ставок, у середу потрійна
+                      за вихідні, дейтрейдер її не платить, а при утриманні на
+                      тижні вона помітно з&#x27;їдає результат, тому я вважаю
+                      своп частиною вартості угоди.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-06">
+                    <h3>
+                      Як кредитне плече впливає на ризик валютної позиції?
+                    </h3>
+                    <p>
+                      Плече однаково множить прибуток і збиток: при 1:100
+                      вистачає руху в один відсоток, щоб винести рахунок,
+                      маржин-кол це попередження, стоп-аут примусове закриття, а
+                      на гепі як із франком 2015 баланс іде в мінус, тому я
+                      танцюю від ризику і ставлю стоп першим.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-07">
+                    <h3>Як контролювати валютний ризик позиції?</h3>
+                    <p>
+                      Валютний ризик це збиток від ходу курсу проти позиції, і
+                      плече роздуває його в рази; хеджування деривативами це для
+                      бізнесу, а захист приватника це стоп у кожній угоді, ризик
+                      один-два відсотки, скромне плече і фокус на дистанції.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-08">
+                    <h3>Що таке carry trade і які його ризики?</h3>
+                    <p>
+                      Кері-трейд це заробіток на різниці ставок через своп, але
+                      не пасивний дохід, а ставка з плечем на стабільність
+                      курсу: один різкий рух стирає накопичене за місяці, тому
+                      головний ризик тут не ставка, а курс.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-09">
+                    <h3>Як торгові сесії впливають на Forex?</h3>
+                    <p>
+                      Сесій чотири за фінансовими центрами, і торгує не час, а
+                      обсяг: робоче вікно це перетин Лондона і Нью-Йорка,
+                      головні пари живуть у ньому, а тонкий азіат, ніч і свята
+                      частіше шум, який краще перечекати.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-forex-guide-10">
+                    <h3>Як використовувати DXY під час аналізу валют?</h3>
+                    <p>
+                      DXY це контекст напряму, а не сигнал: у більшості пар є
+                      долар, тому спершу я дивлюся його силу, зворотна кореляція
+                      з євродоларом близько мінус одиниці, а вхід шукаю вже на
+                      графіку пари за рівнем і реакцією.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n052">
+                    <h3>Чому розмір піпса в парах з єною відрізняється?</h3>
+                    <p>
+                      Для більшості валютних пар піпс зазвичай дорівнює 0,0001,
+                      а для пар з єною — 0,01. Це повʼязано з прийнятим
+                      масштабом котирування. Грошова вартість піпса залежить
+                      також від обсягу позиції й валюти розрахунку.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n083">
+                    <h3>
+                      Чим основні валютні пари відрізняються від кросів та
+                      екзотики?
+                    </h3>
+                    <p>
+                      Основні пари містять долар США, кроси утворені без нього.
+                      Екзотичні пари включають менш широко торговані валюти й
+                      можуть мати вищі витрати. Ліквідність і виконання оцінюють
+                      для конкретної пари.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/forex-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-fundamental-analysis"
+                  aria-labelledby="heading-fundamental-analysis"
+                >
+                  <h2 id="heading-fundamental-analysis">
+                    Як читати економічні дані як трейдер
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-01"
+                  >
+                    <h3>
+                      Що таке фундаментальний аналіз і навіщо він трейдеру?
+                    </h3>
+                    <p>
+                      Фундаментал оцінює справедливу вартість через економіку,
+                      ставки й звітність; для інвестора на кшталт Баффетта це
+                      сила, але трейдеру він каже чому рухається ціна, а не коли
+                      входити.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-02"
+                  >
+                    <h3>Які економічні фактори рухають фінансові ринки?</h3>
+                    <p>
+                      Рухають ринками ставки центробанків, інфляція, зайнятість,
+                      торговий баланс, PMI, сировина й геополітика; золото при
+                      цьому стоїть осібно як захист, і попит на нього спалахує
+                      на страху.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-03"
+                  >
+                    <h3>
+                      Навіщо зіставляти ВВП, PMI, інфляцію та зайнятість з
+                      очікуваннями?
+                    </h3>
+                    <p>
+                      ВВП запізнюється, PMI випереджає з межею 50, інфляція й
+                      зайнятість правлять ставкою; але ринок рухає не факт, а
+                      його розрив з очікуванням, тому в сам вихід даних я не
+                      входжу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-04"
+                  >
+                    <h3>
+                      Як рішення центробанків можуть впливати на валюти й
+                      активи?
+                    </h3>
+                    <p>
+                      Ставка вгору міцнить долар і тисне ризик, вниз навпаки, а
+                      лаг понад пів року розтягує тренди; ФРС задає тон світу, і
+                      я не вгадую засідання, а йду за реакцією капіталу на
+                      графіку.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-05"
+                  >
+                    <h3>Що означають режими risk-on і risk-off?</h3>
+                    <p>
+                      Макро бʼє по ринку через ставку: дорогі гроші міцнять
+                      долар і вмикають ризик-офф, дешеві женуть капітал в акції,
+                      сировину й крипту в режим ризик-он, а в центрі системи
+                      стоїть долар.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-06"
+                  >
+                    <h3>Навіщо трейдеру економічний календар?</h3>
+                    <p>
+                      Календар це розклад новин із прогнозом і важливістю; його
+                      задача попередити, а не дати сигнал, тому найсильніше
+                      смикають ринок NFP першої пʼятниці, інфляція, ставки ФРС і
+                      ВВП.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-07"
+                  >
+                    <h3>
+                      Чому ринок реагує на очікування, а Smart Money діє
+                      заздалегідь?
+                    </h3>
+                    <p>
+                      Ринок живе очікуваннями, а не фактом: великий капітал за
+                      Вайкоффом готується за пів року-рік, тому роздроб
+                      спізнюється, а я входжу за слідом обсягу біля рівня, не за
+                      прогнозом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-fundamental-analysis-08"
+                  >
+                    <h3>Чим небезпечний вхід під час значної новини?</h3>
+                    <p>
+                      Не входь у момент новини, де спред і подвійний викид
+                      вибивають навіть правильний напрямок; чекай, поки пил
+                      осяде, і бери вхід за обсягом і реакцією ціни біля рівня,
+                      тримаючи фундаментал лише як фон.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n055">
+                    <h3>
+                      Що показує звіт COT і чому це фон, а не миттєвий сигнал?
+                    </h3>
+                    <p>
+                      COT показує розподіл фʼючерсних позицій між категоріями
+                      учасників. Дані публікуються із затримкою, тому автор
+                      використовує їх для оцінки позиціонування й ринкового
+                      фону, а не негайного входу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/fundamental-analysis"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-assets-trading"
+                  aria-labelledby="heading-assets-trading"
+                >
+                  <h2 id="heading-assets-trading">
+                    Акції, форекс, крипта, товари: у чому різниця
+                  </h2>
+                  <div class="faq-item" id="question-uk-assets-trading-01">
+                    <h3>
+                      Які фактори враховувати під час аналізу золота XAU/USD?
+                    </h3>
+                    <p>
+                      XAU/USD це ціна унції золота в доларах, захисний актив із
+                      драйвером у вигляді ставок ФРС; читаю його за обсягом
+                      ф&#x27;ючерсів CME і круглими рівнями, а ризик через різкі
+                      рухи тримаю близько половини відсотка.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/assets-trading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-assets-trading-02">
+                    <h3>
+                      Чим WTI відрізняється від Brent і що впливає на нафту?
+                    </h3>
+                    <p>
+                      Нафта доступна ф&#x27;ючерсами CL на WTI (NYMEX) і Brent
+                      (ICE), а зазор між марками звуть спредом Brent-WTI; ціну
+                      женуть попит, квоти ОПЕК+ і геополітика, але для мене це
+                      фон, вхід беру за обсягом.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/assets-trading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-assets-trading-03">
+                    <h3>
+                      Що таке фондовий індекс і як отримати до нього експозицію?
+                    </h3>
+                    <p>
+                      Індекс це кошик акцій в одне число; Dow і Nikkei рахують
+                      за ціною паперу, S&amp;P 500 за капіталізацією, а Nasdaq
+                      жвавіший за всіх; беруть їх через ETF (SPY, QQQ) і
+                      ф&#x27;ючерси E-mini, тоді як плечові ETF вдовгу
+                      підточують рахунок.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/assets-trading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-assets-trading-04">
+                    <h3>Як адаптувати рівні та обʼєм до різних активів?</h3>
+                    <p>
+                      Золото, нафту й індекси я читаю однаково, за рівнями,
+                      обсягом і хибним наколом на біржових ф&#x27;ючерсах, а не
+                      на CFD; новину тримаю як фон, ризик через волатильність
+                      близько половини відсотка, і плече новачку не раджу.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/assets-trading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f084">
+                    <h3>
+                      Як звіт EIA про запаси нафти входить у ринковий фон?
+                    </h3>
+                    <p>
+                      Дані запасів доповнюють оцінку попиту та пропозиції.
+                      Реакція залежить і від очікувань учасників. Автор
+                      використовує подію як фон, після чого аналізує ціну й
+                      обʼєм.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/assets-trading"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-derivatives-futures-spot"
+                  aria-labelledby="heading-derivatives-futures-spot"
+                >
+                  <h2 id="heading-derivatives-futures-spot">
+                    На якому ринку торгувати — спот чи ф&#x27;ючерси
+                  </h2>
+                  <div
+                    class="faq-item"
+                    id="question-uk-derivatives-futures-spot-01"
+                  >
+                    <h3>Що таке деривативи простими словами?</h3>
+                    <p>
+                      Ви торгуєте не актив, а контракт на нього, видів
+                      деривативів чотири, і для мене цінні саме біржові
+                      ф&#x27;ючерси, бо тільки вони дають чесний обсяг.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-derivatives-futures-spot-02"
+                  >
+                    <h3>Що таке ф&#x27;ючерс і як він працює?</h3>
+                    <p>
+                      Ф&#x27;ючерс це зобов&#x27;язуючий біржовий контракт через
+                      клірингову палату, і більшість ф&#x27;ючерсів
+                      розрахункові, тож вагон нафти ніхто не везе, а спекулянт
+                      закривається до експірації.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-derivatives-futures-spot-03"
+                  >
+                    <h3>Чим спот відрізняється від ф&#x27;ючерсів?</h3>
+                    <p>
+                      Спот це володіння активом без плеча, де втрачаєш максимум
+                      вкладене; ф&#x27;ючерс це контракт на ціну з плечем,
+                      строком життя й ризиком ліквідації: BTC зі ста до
+                      вісімдесяти на споті перечекаєш, а з плечем тебе винесе.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-derivatives-futures-spot-04"
+                  >
+                    <h3>Чому ф&#x27;ючерси небезпечні для новачка?</h3>
+                    <p>
+                      Маржа мала, але прибуток і збиток рахуються від повного
+                      контракту: на крипті BTC по 71 тисячі при ході до 50 уже
+                      мінус 28 відсотків, тому ризик в угоді я тримаю в один-два
+                      відсотки.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div
+                    class="faq-item"
+                    id="question-uk-derivatives-futures-spot-05"
+                  >
+                    <h3>
+                      Чому початківцю корисно вивчити спот перед фʼючерсами?
+                    </h3>
+                    <p>
+                      Новачку безпечніше спот: немає плеча й ліквідації, можна
+                      вчитися, не обнуляючи рахунок за ніч; до ф&#x27;ючерсів
+                      переходь пізніше, зрозумівши плече, маржу та ліквідацію,
+                      за правилом купити й тримати це спот, потрібен шорт це
+                      ф&#x27;ючерс.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f030">
+                    <h3>Що таке позабіржовий своп?</h3>
+                    <p>
+                      Своп — договір про обмін платежами за погодженою схемою.
+                      Умови визначають сторони, зазвичай поза біржею. Він
+                      належить до сімейства похідних інструментів.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f069">
+                    <h3>
+                      Чим право за опціоном відрізняється від зобовʼязання за
+                      фʼючерсом?
+                    </h3>
+                    <p>
+                      Покупець опціону отримує право на передбачену угоду, але
+                      не зобовʼязаний ним скористатися; за право сплачує премію.
+                      Фʼючерс передбачає зобовʼязання сторін. Структура ризику
+                      та виконання відрізняється.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f070">
+                    <h3>Чим форвард відрізняється від біржового фʼючерса?</h3>
+                    <p>
+                      Форвард укладається на індивідуально погоджених умовах.
+                      Фʼючерс має стандартизовані параметри та біржову
+                      інфраструктуру розрахунків. Це впливає на ліквідність,
+                      прозорість і виконання зобовʼязань.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-f071">
+                    <h3>
+                      Що відбувається за переоцінки фʼючерсної позиції та
+                      нестачі забезпечення?
+                    </h3>
+                    <p>
+                      Зміна ціни відображається на забезпеченні позиції. За його
+                      нестачі можуть вимагати поповнення або скорочення позиції;
+                      можливе примусове закриття. Умови залежать від біржі та
+                      брокера.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/derivatives-futures-spot"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <section
+                  id="topic-bonds-guide"
+                  aria-labelledby="heading-bonds-guide"
+                >
+                  <h2 id="heading-bonds-guide">
+                    Що відбувається, коли ви купуєте облігацію
+                  </h2>
+                  <div class="faq-item" id="question-uk-bonds-guide-01">
+                    <h3>Що таке облігації?</h3>
+                    <p>
+                      Облігація це оформлений борг: ви кредитор, вам обіцяють
+                      повернути номінал до дати погашення і платити купон; на
+                      відміну від акції це борг із фіксованими умовами, а не
+                      частка в бізнесі.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/bonds-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-bonds-guide-02">
+                    <h3>
+                      Як працюють облігації: номінал, купон, дохідність,
+                      погашення?
+                    </h3>
+                    <p>
+                      Ціна облігації обернено повʼязана зі ставкою: ставка
+                      росте, нові випуски дають більше, і старі папери з низьким
+                      купоном дешевшають; купив дешевше номіналу, дохідність
+                      вища за купон.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/bonds-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-bonds-guide-03">
+                    <h3>Які види облігацій існують і які ризики вони мають?</h3>
+                    <p>
+                      Надійний не означає безризиковий: у держпаперів лишається
+                      ризик ставки, у корпоративних ще й ризик дефолту;
+                      надвисока дохідність це плата за ризик, а не подарунок.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/bonds-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n058">
+                    <h3>Що показує дюрація облігації?</h3>
+                    <p>
+                      Дюрація допомагає оцінювати чутливість ціни облігації до
+                      зміни дохідності. За інших рівних умов вища дюрація
+                      означає сильнішу реакцію ціни. У матеріалі цей показник
+                      повʼязаний із процентним ризиком.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/bonds-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                  <div class="faq-item" id="question-uk-n084">
+                    <h3>Що таке інверсія кривої дохідності?</h3>
+                    <p>
+                      Інверсія означає, що дохідність коротких облігацій вища за
+                      дохідність довших. Її розглядають як показник очікувань та
+                      макроекономічної напруги. Автор використовує її як фон, а
+                      не точний календар майбутніх подій.
+                    </p>
+                    <p>
+                      <a
+                        class="linkrefinto"
+                        href="https://arapov.trade/uk/freestudying/bonds-guide"
+                        >Докладний розбір</a
+                      >
+                    </p>
+                  </div>
+                </section>
+                <nav aria-label="Інші теми бібліотеки">
+                  <h2>Інші теми бібліотеки</h2>
+                  <ul>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-getting-started"
+                        >Початок торгівлі та торгова система</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-risk-psychology"
+                        >Ризик і психологія трейдингу</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-chart-analysis"
+                        >Графіки та технічний аналіз</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-indicators"
+                        >Індикатори та волатильність</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
+                        >Обʼємний аналіз, Вайкофф і Smart Money</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-crypto-mechanics"
+                        >Криптовалюти: устрій і безпека</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="linkrefinto"
+                        href="/uk/freestudying/trading-faq-bitcoin-altcoins"
+                        >Bitcoin, альткоїни та ринкові цикли</a
+                      >
+                    </li>
+                  </ul>
+                  <p>
+                    <a class="linkrefinto" href="/uk/freestudying/trading-faq"
+                      >Усі теми: питання та відповіді з трейдингу</a
+                    >
+                  </p>
+                </nav>
+               <section>
+  <h2>Про матеріали бібліотеки</h2>
+  <p>
+    Розділ укладено на основі матеріалів бібліотеки ArapovTrade та
+    навчальних відео Ігоря Арапова. Тут можна знайти
+    визначення, порівняння інструментів, пояснення ринкової
+    механіки та розбори авторського підходу до трейдингу.
+  </p>
+  <p>
+    Автор бібліотеки —
+    <a class="linkrefinto" href="https://arapov.trade/uk"
+      >Ігор Арапов</a
+    >, практикуючий трейдер з 2013 року. Докладні матеріали
+    розкривають контекст кожного питання; короткі відповіді слугують
+    відправною точкою для вивчення теми.
+  </p>
+</section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Фільтр за категоріями
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Популярне
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/uk/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleUkr"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleUkr }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Фільтр за категоріями
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Популярне
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/uk/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleUkr"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleUkr }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -639,78 +1663,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Наші проєкти доступні кожному охочому
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Наші проєкти доступні кожному охочому
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Оберіть тему, яка вас цікавить, і почніть навчання
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Оберіть тему, яка вас цікавить, і почніть навчання
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
