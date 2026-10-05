@@ -100,7 +100,7 @@ export class ArticlesService {
     // return shuffled.slice(0, 4);
      const targetLinks = [ 
       'trading-faq',
-      'chart-reading',
+      'library-knowledge-map',
       'volume-analysis',
       'market-microstructure', 
       
@@ -114,7 +114,7 @@ export class ArticlesService {
     // return shuffled.slice(0, 5);
     const targetLinks = [ 
       'trading-faq',
-      'chart-reading',
+      'library-knowledge-map',
       'volume-analysis',
       'market-microstructure',
        

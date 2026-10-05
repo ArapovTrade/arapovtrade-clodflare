@@ -410,6 +410,8 @@
             class="menu-title-block menu-title_text"
             >Питання та відповіді</a
           >
+
+          
         </div>
 
         <div class="menu">
@@ -441,7 +443,15 @@
             class="menu-title-block menu-title_text"
             >Безкоштовний курс з трейдингу</a
           >
-           
+            <a
+            href="/uk/freestudying/library-knowledge-map"
+            (click)="
+              $event.preventDefault();
+              navigateTo('uk/freestudying/library-knowledge-map')
+            "
+            class="menu-title-block menu-title_text"
+            >Карта знань</a
+          >
         </div>
       </div>
     </div>

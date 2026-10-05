@@ -448,7 +448,15 @@
             class="menu-title-block menu-title_text"
             >Бесплатный курс по трейдингу</a
           >
-           
+              <a
+            href="/ru/freestudying/library-knowledge-map"
+            (click)="
+              $event.preventDefault();
+              navigateTo('ru/freestudying/library-knowledge-map')
+            "
+            class="menu-title-block menu-title_text"
+            >Карта знаний</a
+          >
         </div>
       </div>
     </div>
