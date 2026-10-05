@@ -11,7 +11,7 @@ import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
-import { Meta, Title } from '@angular/platform-browser';
+import { Meta, Title } from '@angular/platform-browser';import { ActivatedRoute } from '@angular/router';
 import { ArticlesService } from '../../../../../servises/articles.service';
 
 @Component({
@@ -24,7 +24,7 @@ export class HomeUkBlogSeventyOneComponent {
     private meta: Meta,
     private titleService: Title,
     private cdr: ChangeDetectorRef,
-    private router: Router,
+    private router: Router, private route: ActivatedRoute,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
@@ -41,11 +41,11 @@ export class HomeUkBlogSeventyOneComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -56,23 +56,41 @@ export class HomeUkBlogSeventyOneComponent {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Торгівля на новинах: стратегії трейдера');
+    this.titleService.setTitle('Карта знань із трейдингу — бібліотека ArapovTrade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Дізнайтесь, як торгувати на новинах: вплив економічних подій, стратегії трейдингу та мінімізація ризиків від ArapovTrade.',
+        'Карта знань ArapovTrade: ринкова механіка, технічний та об’ємний аналіз, Вайкофф, Smart Money, ризик і криптовалюти. Поняття, зв’язки та джерела.',
     });
 
-     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
-
-  this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+ this.meta.updateTag({ name: 'datePublished', content: '2026-10-05' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-05' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/newstrading.webp',
+      content: '/assets/img/content/library-knowledge-map-v2.jpg',
     });
 
     this.gerRandom();
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

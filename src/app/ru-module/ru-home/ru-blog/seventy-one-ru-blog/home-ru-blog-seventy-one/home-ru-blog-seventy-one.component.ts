@@ -9,7 +9,7 @@ import {
 import { DOCUMENT } from '@angular/common';
 import { ThemeservService } from '../../../../../servises/themeserv.service';
 import { artickle } from '../../../../../servises/articles.service';
-import { Subscription } from 'rxjs';
+import { Subscription } from 'rxjs'; import { ActivatedRoute } from '@angular/router';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { ArticlesService } from '../../../../../servises/articles.service';
@@ -24,7 +24,7 @@ export class HomeRuBlogSeventyOneComponent {
     private meta: Meta,
     private titleService: Title,
     private cdr: ChangeDetectorRef,
-    private router: Router,
+    private router: Router,private route: ActivatedRoute,
     private themeService: ThemeservService,
     private artickleServ: ArticlesService,
     private renderer: Renderer2,
@@ -41,11 +41,11 @@ export class HomeRuBlogSeventyOneComponent {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setArticleSchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,23 +57,42 @@ export class HomeRuBlogSeventyOneComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торговля на новостях в трейдинге | ArapovTrade',
+      'Карта знаний по трейдингу — библиотека ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Торговля на новостях: как минимизировать риски? Советы от ArapovTrade по стратегиям и волатильности.',
+        'Карта знаний ArapovTrade: рыночная механика, технический и объёмный анализ, Вайкофф, Smart Money, риск и криптовалюты. Понятия, связи и источники.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-14' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-05' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-05' });
     this.meta.updateTag({
       property: 'og:image',
-      content: '/assets/img/content/newstrading.webp',
+      content: '/assets/img/content/library-knowledge-map-v2.jpg',
     });
 
     this.gerRandom();
+    this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+   scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 50;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
   randomArticleRus: any = [];
   gerRandom() {

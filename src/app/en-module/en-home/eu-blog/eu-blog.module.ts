@@ -844,13 +844,13 @@ const routes: Routes = [
             (m) => m.SeventyEnBlogModule,
           ),
       },
-      // {
-      //   path: 'newstrading', //71
-      //   loadChildren: () =>
-      //     import('../eu-blog/seventy-one-en-blog/seventy-one-en-blog.module').then(
-      //       (m) => m.SeventyOneEnBlogModule,
-      //     ),
-      // },
+      {
+        path: 'library-knowledge-map', //71
+        loadChildren: () =>
+          import('../eu-blog/seventy-one-en-blog/seventy-one-en-blog.module').then(
+            (m) => m.SeventyOneEnBlogModule,
+          ),
+      },
       // {
       //   path: 'economiccalendar', //72
       //   loadChildren: () =>

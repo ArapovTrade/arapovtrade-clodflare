@@ -2508,4 +2508,34 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins"/>
   </url>
 
+
+
+
+  <url>
+    <loc>https://arapov.trade/uk/freestudying/library-knowledge-map</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/ru/freestudying/library-knowledge-map</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+  </url>
+  <url>
+    <loc>https://arapov.trade/en/freestudying/library-knowledge-map</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapov.trade/ru/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapov.trade/en/freestudying/library-knowledge-map"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapov.trade/uk/freestudying/library-knowledge-map"/>
+  </url>
 </urlset>

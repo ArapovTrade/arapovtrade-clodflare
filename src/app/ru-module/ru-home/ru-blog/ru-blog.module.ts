@@ -867,13 +867,13 @@ const routes: Routes = [
             (m) => m.SeventyRuBlogModule,
           ),
       },
-      // {
-      //   path: 'newstrading', //71
-      //   loadChildren: () =>
-      //     import('../ru-blog/seventy-one-ru-blog/seventy-one-ru-blog.module').then(
-      //       (m) => m.SeventyOneRuBlogModule,
-      //     ),
-      // },
+      {
+        path: 'library-knowledge-map', //71
+        loadChildren: () =>
+          import('../ru-blog/seventy-one-ru-blog/seventy-one-ru-blog.module').then(
+            (m) => m.SeventyOneRuBlogModule,
+          ),
+      },
       // {
       //   path: 'economiccalendar', //72
       //   loadChildren: () =>

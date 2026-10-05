@@ -1668,5 +1668,33 @@ export class ArticlesService {
 
 
 
+  {
+  titleUkr: 'Карта знань із трейдингу',
+  linkUkr: 'library-knowledge-map',
+  descrEn:
+    'Explore the ArapovTrade knowledge map: market mechanics, technical and volume analysis, Wyckoff, Smart Money, risk and crypto. Concepts, connections and sources.',
+  titleRus: 'Карта знаний по трейдингу',
+  titleEn: 'Trading Knowledge Map',
+  descrUkr:
+    'Карта знань ArapovTrade: ринкова механіка, технічний та об’ємний аналіз, Вайкофф, Smart Money, ризик і криптовалюти. Поняття, зв’язки та джерела.',
+  descrRus:
+    'Карта знаний ArapovTrade: рыночная механика, технический и объёмный анализ, Вайкофф, Smart Money, риск и криптовалюты. Понятия, связи и источники.',
+  realTitleRus:
+    'Карта знаний по трейдингу — библиотека ArapovTrade',
+  realTitleUkr:
+    'Карта знань із трейдингу — бібліотека ArapovTrade',
+  realTitleEn:
+    'Trading Knowledge Map — ArapovTrade Library',
+  imgUkr:
+    '/assets/img/content/library-knowledge-map-v2.jpg',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 76,
+},
+
+
+
+
   ];
 }
