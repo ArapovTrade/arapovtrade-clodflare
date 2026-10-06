@@ -30,6 +30,7 @@ export class MetaservService {
 
       legalName: 'ФОП Арапов І.В.',
       taxID: '3314507171',
+      foundingDate: '2020-07',
       url: 'https://arapov.trade',
       sameAs: [
         'https://www.wikidata.org/wiki/Q140744162',

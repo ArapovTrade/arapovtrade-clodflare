@@ -1,1564 +1,653 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="en">
-              <header>
-                <h1>Indicators and Volatility: questions and answers</h1>
-              </header>
-              <article>
-                <p>
-                  <a class="linkrefinto" href="/en/freestudying/trading-faq"
-                    >All topics: Trading Q&amp;A</a
-                  >
-                </p>
-                <p>
-                  What ATR, RSI, MACD, ADX, VWAP and other indicators measure,
-                  how to interpret signals, and where their limitations lie.
-                </p>
-                <p>
-                  Short answers based on the ArapovTrade library. Each answer
-                  links to a detailed explanation. Trading approaches are
-                  presented as Igor Arapov&#x27;s explanations; first-person
-                  wording refers to the author.
-                </p>
-                <nav aria-label="Contents">
-                  <h2>Contents</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-trading-indicators')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Which Trading Indicators Actually Work</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-adx-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How Strong Is the Current Trend</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-atr-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How to Use ATR to Measure Volatility</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-macd-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Understanding the MACD Indicator</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-rsi-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How the Relative Strength Index Works</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="
-                          scrollToFragment('topic-stochastic-oscillator')
-                        "
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How to Read the Stochastic Oscillator</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-moving-averages')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Simple vs Exponential Moving Averages Explained</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-vwap-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Using VWAP to Time Entries and Exits</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-bollinger-bands')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How Bollinger Bands Measure Volatility</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-ichimoku-cloud')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Reading the Ichimoku Kinko Hyo Indicator</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-                <section
-                  id="topic-trading-indicators"
-                  aria-labelledby="heading-trading-indicators"
-                >
-                  <h2 id="heading-trading-indicators">
-                    Which Trading Indicators Actually Work
-                  </h2>
-                  <div class="faq-item" id="question-en-trading-indicators-01">
-                    <h3>
-                      What are trading indicators, and why do many lag price?
-                    </h3>
-                    <p>
-                      An indicator is a formula built from past closed candles,
-                      so by nature it shows what the market has already done;
-                      the lag is not a settings defect but a property, and the
-                      ceiling of an indicator is describing the past.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/trading-indicators"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-trading-indicators-02">
-                    <h3>
-                      Why does the author avoid entries based only on indicator
-                      crossovers?
-                    </h3>
-                    <p>
-                      Crossovers of the stochastic , MACD, and movings feel like
-                      they work on the first trades, but over a hundred to three
-                      hundred trades they come out like a coin flip with no
-                      durable edge; I do not build an entry on them, I look at
-                      the level and volume.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/trading-indicators"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-trading-indicators-03">
-                    <h3>What are regular and hidden divergence on a chart?</h3>
-                    <p>
-                      Divergence is a disagreement of price and an indicator:
-                      price gives a new extreme while the indicator does not;
-                      bullish hints up, bearish down, hidden at continuation,
-                      but it is a hint of a weakening impulse, not an entry
-                      point.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/trading-indicators"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-trading-indicators-04">
-                    <h3>
-                      Why does the author require confirmation beyond indicator
-                      divergence?
-                    </h3>
-                    <p>
-                      On an indicator divergence lags and in a strong trend
-                      gives false signals; on gold 4H I do not enter on
-                      divergence alone, I wait for the level, a reversal candle,
-                      and volume, and it is more honest to look at the
-                      disagreement of price with volume rather than with an
-                      oscillator.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/trading-indicators"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-trading-indicators-05">
-                    <h3>
-                      Which volume and volatility tools does the author find
-                      useful?
-                    </h3>
-                    <p>
-                      Volume and volatility (ATR) are useful, because they show
-                      the cause, not the trace; an oscillator by definition
-                      catches up to the market, so I build the decision on
-                      levels and volume, while an indicator only complements but
-                      never replaces an understanding of supply and demand.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/trading-indicators"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-adx-indicator"
-                  aria-labelledby="heading-adx-indicator"
-                >
-                  <h2 id="heading-adx-indicator">
-                    How Strong Is the Current Trend
-                  </h2>
-                  <div class="faq-item" id="question-en-adx-indicator-01">
-                    <h3>What does ADX measure?</h3>
-                    <p>
-                      ADX is a line that measures only the strength of a move,
-                      not its side; the scale runs from zero to one hundred, and
-                      it is itself a consequence, not a cause: price is moved by
-                      volume and the actions of a big participant, while ADX
-                      merely reads the result.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-adx-indicator-02">
-                    <h3>
-                      How does the author interpret ADX as a trend-strength
-                      filter?
-                    </h3>
-                    <p>
-                      Above twenty-five is usually a trend, below twenty a
-                      range; ADX counts how strongly one side outweighs the
-                      other, but this is a recalculation of a move that has
-                      already happened, so it lags and suits a filter rather
-                      than a leading signal.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-adx-indicator-03">
-                    <h3>How do +DI, -DI and ADX threshold levels differ?</h3>
-                    <p>
-                      +DI and -DI show the side (who is stronger, buyers or
-                      sellers), while the ADX levels show strength: below 20 a
-                      flat, 20-25 a nascent move, above 25 a trend, above 40
-                      strong and often already overheated; all of it is a filter
-                      of conditions, not an entry signal.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-adx-indicator-04">
-                    <h3>
-                      How can ADX be used to distinguish trend and range
-                      regimes?
-                    </h3>
-                    <p>
-                      Use ADX to pick the regime: above 25 the market trends and
-                      trend-following and breakouts have a chance, below 20 it
-                      ranges and mean-reversion fits; a breakout with ADX rising
-                      through 25 has conviction, and a +DI/-DI crossover is only
-                      worth acting on with ADX above 25 and rising.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-adx-indicator-05">
-                    <h3>
-                      Why does a high ADX reading not provide an entry
-                      direction?
-                    </h3>
-                    <p>
-                      Do not enter a trade just because ADX is high: it does not
-                      know the side and often lights up already in the thick of
-                      the move; keep it as a filter of the flat, and take entry
-                      and direction from levels and volume.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-sup-p015-s03">
-                    <h3>
-                      How is ADX calculated, and what period is commonly used?
-                    </h3>
-                    <p>
-                      ADX smooths DX, an index based on the relative difference
-                      between +DI and −DI. A period of 14 is commonly used.
-                      Changing the period changes sensitivity but does not
-                      remove reliance on past price movements.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/ru/freestudying/adx-indicator"
-                        >Original source in Russian</a
-                      >
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/adx-indicator"
-                        >English resource on this topic</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-atr-indicator"
-                  aria-labelledby="heading-atr-indicator"
-                >
-                  <h2 id="heading-atr-indicator">
-                    How to Use ATR to Measure Volatility
-                  </h2>
-                  <div class="faq-item" id="question-en-atr-indicator-01">
-                    <h3>What does Average True Range measure?</h3>
-                    <p>
-                      ATR is the range of price averaged over fourteen candles;
-                      it runs high both in a rise and in a fall, so the side of
-                      the move cannot be read from it.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-atr-indicator-02">
-                    <h3>
-                      How does the author use ATR when choosing stop distance?
-                    </h3>
-                    <p>
-                      Hide the stop beyond the current ATR range, not under a
-                      local level: on a calm market it is tighter, on a stormy
-                      one wider, and noise stops sweeping it out.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-atr-indicator-03">
-                    <h3>
-                      How does the author combine ATR multipliers, position size
-                      and trailing stops?
-                    </h3>
-                    <p>
-                      Set the stop at a multiple of ATR (about 1.5x intraday, 2x
-                      swing, 3x position) and let the same range fix the
-                      position size, so risk in money stays even across calm and
-                      wild instruments; trailing a few ATRs below the high (the
-                      chandelier exit) lets a winner run while volatility is
-                      wide.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-atr-indicator-04">
-                    <h3>
-                      How does the author interpret an unusually high ATR
-                      reading?
-                    </h3>
-                    <p>
-                      ATR at a peak says the move has run out of breath: not a
-                      signal to close at once, but a reason to pull the stop to
-                      break-even and prepare the exit.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-atr-indicator-05">
-                    <h3>
-                      How does the author use ATR compression when watching
-                      false breakouts?
-                    </h3>
-                    <p>
-                      ATR compression before a session is a setup for a false
-                      break: price is led past the level to collect stops, and
-                      it pays to work against that break rather than after it.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-n092">
-                    <h3>How is a candle&#x27;s True Range calculated?</h3>
-                    <p>
-                      True Range is the largest of the high minus low, the
-                      absolute difference between the high and previous close,
-                      and the absolute difference between the low and previous
-                      close. It accounts for gaps as well as the candle&#x27;s
-                      visible range.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-n093">
-                    <h3>Why normalize ATR by an asset&#x27;s price?</h3>
-                    <p>
-                      Absolute ATR depends on price scale and quotation units.
-                      Dividing it by price and expressing it as a percentage
-                      allows relative comparisons. The periods and timeframes
-                      being compared should also be consistent.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/ru/freestudying/atr-indicator"
-                        >Original source in Russian</a
-                      >
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >English resource on this topic</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-f021">
-                    <h3>How does Chandelier Exit use ATR?</h3>
-                    <p>
-                      For a long position, the described approach places a
-                      protective stop several ATR units below the high reached
-                      during the move. The reference follows the developing
-                      price action. It is a volatility-based exit method rather
-                      than a reversal forecast.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/atr-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-macd-indicator"
-                  aria-labelledby="heading-macd-indicator"
-                >
-                  <h2 id="heading-macd-indicator">
-                    Understanding the MACD Indicator
-                  </h2>
-                  <div class="faq-item" id="question-en-macd-indicator-01">
-                    <h3>How is MACD constructed from moving averages?</h3>
-                    <p>
-                      MACD is the difference of the 12 and 26 averages plus the
-                      9-period signal: visual and clear, but the whole neatness
-                      rests on the assumption that an averaged past will predict
-                      the future.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-macd-indicator-02">
-                    <h3>
-                      What are the main MACD signals described in ArapovTrade?
-                    </h3>
-                    <p>
-                      The four basic MACD signals are the line crossover, the
-                      histogram (momentum strength), the zero-line cross, and
-                      divergence (a price-indicator mismatch, bullish and
-                      bearish); divergence is the most valuable of them because
-                      it leads the reversal.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-macd-indicator-03">
-                    <h3>
-                      How do MACD settings and signal timing affect
-                      interpretation?
-                    </h3>
-                    <p>
-                      The default 12, 26, 9 is the place to start; faster
-                      settings and lower timeframes only add false crossovers;
-                      and among the signals the histogram slope leads while the
-                      zero-line cross trails, yet every one of them is still a
-                      lagging read of past price.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-macd-indicator-04">
-                    <h3>Why can MACD and stochastic readings conflict?</h3>
-                    <p>
-                      When MACD is right, what fires is not it but the level,
-                      the volume and the false break beneath it; and next to the
-                      stochastic it easily contradicts itself, since both are
-                      calculated from the same past price.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-macd-indicator-05">
-                    <h3>
-                      Why does the author treat MACD as background rather than
-                      an entry system?
-                    </h3>
-                    <p>
-                      MACD lags by construction, it is a derivative of what the
-                      market has already done, so keep it at most for
-                      background, and look for the edge in levels, volume and
-                      price action.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-sup-p017-s04">
-                    <h3>
-                      Why can MACD readings differ between minute and daily
-                      charts?
-                    </h3>
-                    <p>
-                      Each calculation reflects its own period, so a short-term
-                      pullback can conflict with a longer-term trend. In the
-                      author&#x27;s approach, the higher timeframe provides
-                      context for interpreting the lower one.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/ru/freestudying/macd-indicator"
-                        >Original source in Russian</a
-                      >
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/macd-indicator"
-                        >English resource on this topic</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-rsi-indicator"
-                  aria-labelledby="heading-rsi-indicator"
-                >
-                  <h2 id="heading-rsi-indicator">
-                    How the Relative Strength Index Works
-                  </h2>
-                  <div class="faq-item" id="question-en-rsi-indicator-01">
-                    <h3>What is RSI, and what does its 50 line indicate?</h3>
-                    <p>
-                      RSI is an oscillator from 0 to 100 built from the average
-                      rise and fall over 14 candles; the central 50 line says
-                      more about the balance of forces than the 70 and 30 zones
-                      do.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-rsi-indicator-02">
-                    <h3>
-                      Why are RSI readings above 70 or below 30 not automatic
-                      trade commands?
-                    </h3>
-                    <p>
-                      The 70 and 30 zones are not a command: in a trend RSI
-                      hangs in the extreme zone for a long time; first decide
-                      trend or range, then check the signal against a level and
-                      volume.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-rsi-indicator-03">
-                    <h3>How does the author assess RSI divergence?</h3>
-                    <p>
-                      Divergence hints at a move fading, but solo it is
-                      unreliable and drags on; it works only in tandem with a
-                      strong level and an inflow of volume.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-rsi-indicator-04">
-                    <h3>
-                      What limitations does the author identify in RSI entry
-                      signals?
-                    </h3>
-                    <p>
-                      RSI is calculated from closed candles and lags, knowing
-                      nothing of the news or a large player; it is a good
-                      thermometer of state but a poor generator of entries.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-rsi-indicator-05">
-                    <h3>
-                      How does the author use RSI settings and thresholds in
-                      different regimes?
-                    </h3>
-                    <p>
-                      Start at 14 and don&#x27;t chase a magic period; widen the
-                      bands to 80/20 in strong trends; mean-revert from 70/30
-                      only in a range, lean on the 50 line for trend
-                      continuation, and let a level and volume make the actual
-                      entry.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-rsi-indicator-06">
-                    <h3>
-                      What does the author&#x27;s experience suggest about
-                      searching for perfect RSI settings?
-                    </h3>
-                    <p>
-                      There is no perfect RSI setting, there is context; keep it
-                      as a thermometer of state and look for the entry by a
-                      level and volume, not trading 70 and 30 against the trend.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-sup-p018-s02">
-                    <h3>What is the RSI formula in simple terms?</h3>
-                    <p>
-                      First calculate RS, the ratio of average gains to average
-                      losses. Then RSI = 100 − 100 / (1 + RS). For example, RS =
-                      1.5 gives RSI = 60.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/ru/freestudying/rsi-indicator"
-                        >Original source in Russian</a
-                      >
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/rsi-indicator"
-                        >English resource on this topic</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-stochastic-oscillator"
-                  aria-labelledby="heading-stochastic-oscillator"
-                >
-                  <h2 id="heading-stochastic-oscillator">
-                    How to Read the Stochastic Oscillator
-                  </h2>
-                  <div
-                    class="faq-item"
-                    id="question-en-stochastic-oscillator-01"
-                  >
-                    <h3>
-                      What do the stochastic oscillator&#x27;s %K and %D lines
-                      represent?
-                    </h3>
-                    <p>
-                      The stochastic is a momentum indicator: it compares the
-                      close with the range of highs and lows over a period and
-                      plots two lines from 0 to 100, where %K is the main one
-                      and %D the smoothed signal.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/stochastic-oscillator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-en-stochastic-oscillator-02"
-                  >
-                    <h3>
-                      How are stochastic settings such as 14, 3, 3 interpreted?
-                    </h3>
-                    <p>
-                      %K measures where the close sits in the recent high-low
-                      range from 0 to 100 and %D is its smoothed signal line;
-                      the default 14, 3, 3 (the slow stochastic) is the sane
-                      starting point, faster settings only add noise, and there
-                      is no magic number.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/stochastic-oscillator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-en-stochastic-oscillator-03"
-                  >
-                    <h3>
-                      What do stochastic zones, crossovers and divergence
-                      describe?
-                    </h3>
-                    <p>
-                      The stochastic has three signals: zones above 80 and below
-                      20, the %K and %D cross, and divergence; but overbought is
-                      not a command to sell, only price closing near the top of
-                      its range.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/stochastic-oscillator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-en-stochastic-oscillator-04"
-                  >
-                    <h3>
-                      How does the author use stochastic differently in ranges
-                      and trends?
-                    </h3>
-                    <p>
-                      In a range the stochastic reliably works the zones of 80
-                      and 20, while in a strong trend it sticks to the extreme
-                      zone and generates signals against the move, so in a trend
-                      I watch it only with the trend.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/stochastic-oscillator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-en-stochastic-oscillator-05"
-                  >
-                    <h3>
-                      Why does the author avoid stacking stochastic and
-                      moving-average signals?
-                    </h3>
-                    <p>
-                      Indicators are derived from one price and lag, so stacking
-                      them on each other only piles up a muddle; instead I read
-                      volume and levels, since volume is the cause of a move,
-                      not its trace.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/stochastic-oscillator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-moving-averages"
-                  aria-labelledby="heading-moving-averages"
-                >
-                  <h2 id="heading-moving-averages">
-                    Simple vs Exponential Moving Averages Explained
-                  </h2>
-                  <div class="faq-item" id="question-en-moving-averages-01">
-                    <h3>
-                      How does a simple moving average differ from an
-                      exponential moving average?
-                    </h3>
-                    <p>
-                      An average is an averaged line of past prices; the SMA is
-                      smooth and slow, the EMA faster thanks to the weight on
-                      fresh data, but both speak of the past.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/moving-averages"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-moving-averages-02">
-                    <h3>
-                      What limitations does the author identify in
-                      moving-average entries?
-                    </h3>
-                    <p>
-                      An average reports a reversal after the fact, and in a
-                      range it scatters false signals, and no ideal setting
-                      exists between noise and lag.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/moving-averages"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-moving-averages-03">
-                    <h3>
-                      How does the author assess moving averages as dynamic
-                      support or resistance?
-                    </h3>
-                    <p>
-                      People trade an average as dynamic support or resistance,
-                      buying the pullback to a 21 or 50 EMA; it works partly
-                      because everyone watches it, but the line slides every
-                      candle, so I treat it as context and trust a real
-                      horizontal level and volume instead.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/moving-averages"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-moving-averages-04">
-                    <h3>
-                      How can a 200-day moving average serve as a long-term
-                      trend filter?
-                    </h3>
-                    <p>
-                      The one honest role of an average is a rough trend filter
-                      on long horizons, such as the 200-day SMA, but as an entry
-                      signal it&#x27;s no good.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/moving-averages"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-n029">
-                    <h3>What are the Golden Cross and Death Cross?</h3>
-                    <p>
-                      A Golden Cross occurs when a faster moving average crosses
-                      above a slower one; a Death Cross is the reverse. The
-                      50-period and 200-period averages are commonly used. The
-                      author treats these as market-regime references and
-                      accounts for their lag.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/moving-averages"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-vwap-indicator"
-                  aria-labelledby="heading-vwap-indicator"
-                >
-                  <h2 id="heading-vwap-indicator">
-                    Using VWAP to Time Entries and Exits
-                  </h2>
-                  <div class="faq-item" id="question-en-vwap-indicator-01">
-                    <h3>
-                      What is VWAP, and why does it usually reset each session?
-                    </h3>
-                    <p>
-                      VWAP is the volume-weighted average price from the session
-                      open: where more trades went through, that price weighs
-                      more; it&#x27;s counted cumulatively and resets each day,
-                      so it&#x27;s primarily an intraday tool.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-vwap-indicator-02">
-                    <h3>
-                      How can institutions use VWAP as an execution benchmark?
-                    </h3>
-                    <p>
-                      A large fund stretches its execution and grades it against
-                      VWAP, so algorithms build the position around the average;
-                      those who bought above are glad to exit at breakeven on a
-                      pullback, and because of that price returns to VWAP so
-                      often.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-vwap-indicator-03">
-                    <h3>
-                      How does the author interpret price above or below VWAP?
-                    </h3>
-                    <p>
-                      Price above VWAP is a buyers&#x27; edge, below it a
-                      sellers&#x27; edge, on the line itself balance; the bands
-                      of one to three deviations hint at being stretched, but
-                      that&#x27;s not a button, and without volume confirmation
-                      I don&#x27;t enter off them.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-vwap-indicator-04">
-                    <h3>
-                      How does the author assess a VWAP reclaim or rejection?
-                    </h3>
-                    <p>
-                      VWAP is unreliable in the first 15-20 minutes and on thin
-                      names, and the five-minute chart is its usual home; rather
-                      than the bare touch, I read the reclaim or rejection of
-                      the line and let the volume on it decide whether the move
-                      is real.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-vwap-indicator-05">
-                    <h3>How does Anchored VWAP differ from session VWAP?</h3>
-                    <p>
-                      An anchored VWAP is the same VWAP but measured from a
-                      chosen point (a swing, news, the week&#x27;s open) and
-                      with no daily reset, so it works for swing trading on
-                      higher timeframes, not only intraday.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-vwap-indicator-06">
-                    <h3>
-                      How does the author combine VWAP with horizontal levels
-                      and volume?
-                    </h3>
-                    <p>
-                      VWAP&#x27;s strength appears at a coincidence with a
-                      horizontal level and a large volume, where three
-                      confirmations converge; for me it&#x27;s an add-on to
-                      volume and levels that conveniently highlights the
-                      session&#x27;s fair price, not a separate system.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/vwap-indicator"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-bollinger-bands"
-                  aria-labelledby="heading-bollinger-bands"
-                >
-                  <h2 id="heading-bollinger-bands">
-                    How Bollinger Bands Measure Volatility
-                  </h2>
-                  <div class="faq-item" id="question-en-bollinger-bands-01">
-                    <h3>What do Bollinger Bands measure?</h3>
-                    <p>
-                      The bands are a thermometer of volatility set two standard
-                      deviations from the average; they show the size of the
-                      move but stay silent about its direction.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/bollinger-bands"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-bollinger-bands-02">
-                    <h3>
-                      Why is touching a Bollinger Band not an automatic trade
-                      signal?
-                    </h3>
-                    <p>
-                      A touch of the band is not a signal: in a trend price
-                      walks along it for a long time, so at the edge I first
-                      read the phase, the level and the volume.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/bollinger-bands"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-bollinger-bands-03">
-                    <h3>What does a Bollinger Band squeeze indicate?</h3>
-                    <p>
-                      A squeeze is an attention signal, not a direction one: the
-                      market is gathering strength, but it shows the side with a
-                      hold and volume, not with the first false break out of the
-                      channel.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/bollinger-bands"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-bollinger-bands-04">
-                    <h3>
-                      How do BandWidth and Keltner Channels help identify a
-                      squeeze?
-                    </h3>
-                    <p>
-                      BandWidth puts a number on the squeeze and a Keltner
-                      Channel overlay turns it into a rule (bands inside means
-                      on, outside means it fires), but a measured squeeze still
-                      only flags that a move is loading, never its direction.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/bollinger-bands"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-bollinger-bands-05">
-                    <h3>
-                      How does the author combine Bollinger Bands with levels
-                      and volume?
-                    </h3>
-                    <p>
-                      The trio of band plus volume plus level separates a real
-                      breakout from an exhale, and one line on its own cannot do
-                      that.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/bollinger-bands"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-ichimoku-cloud"
-                  aria-labelledby="heading-ichimoku-cloud"
-                >
-                  <h2 id="heading-ichimoku-cloud">
-                    Reading the Ichimoku Kinko Hyo Indicator
-                  </h2>
-                  <div class="faq-item" id="question-en-ichimoku-cloud-01">
-                    <h3>
-                      What does the author say about Ichimoku&#x27;s five lines?
-                    </h3>
-                    <p>
-                      The five Ichimoku lines are kinds of moving average
-                      shifted in time; the pretty wrapper doesn&#x27;t change
-                      the fact that they&#x27;re computed from past price.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/ichimoku-cloud"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-ichimoku-cloud-02">
-                    <h3>
-                      How is price interpreted above, below or inside the
-                      Ichimoku cloud?
-                    </h3>
-                    <p>
-                      Price above the cloud is trend up, below it down, inside
-                      it a range; but what the cloud calls support usually
-                      coincides with an ordinary horizontal level.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/ichimoku-cloud"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-ichimoku-cloud-03">
-                    <h3>
-                      How does the author assess a Tenkan-Kijun crossover?
-                    </h3>
-                    <p>
-                      The TK cross is a crossing of two averages after the fact:
-                      by the time the signal lands the move is already done, so
-                      I take it only with the trend, against the trend never.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/ichimoku-cloud"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-en-ichimoku-cloud-04">
-                    <h3>
-                      Why does the author suggest learning direct chart reading
-                      before Ichimoku?
-                    </h3>
-                    <p>
-                      It&#x27;s easy to learn, but a beginner is better off not
-                      starting with it: trend and levels read faster directly,
-                      and you can return to the cloud later if you want.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/en/freestudying/ichimoku-cloud"
-                        >In-depth explanation</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <nav aria-label="Other library topics">
-                  <h2>Other library topics</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-getting-started"
-                        >Getting Started and Trading Systems</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-risk-psychology"
-                        >Trading Risk and Psychology</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-chart-analysis"
-                        >Charts and Technical Analysis</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-financial-markets"
-                        >How Financial Markets Work</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-volume-wyckoff-smc"
-                        >Volume Analysis, Wyckoff and Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-crypto-mechanics"
-                        >Cryptocurrency Mechanics and Security</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/en/freestudying/trading-faq-bitcoin-altcoins"
-                        >Bitcoin, Altcoins and Market Cycles</a
-                      >
-                    </li>
-                  </ul>
-                  <p>
-                    <a class="linkrefinto" href="/en/freestudying/trading-faq"
-                      >All topics: Trading Q&amp;A</a
-                    >
-                  </p>
-                </nav>
-                <section>
-  <h2>About the Library Materials</h2>
-  <p>
-    This section is based on materials from the ArapovTrade library and
-    Igor Arapov’s educational videos. Here you can find
-    definitions, comparisons of instruments, explanations of market
-    mechanics, and discussions of the author’s approach to trading.
-  </p>
-  <p>
-    The library’s author is
-    <a class="linkrefinto" href="https://arapov.trade/en"
-      >Igor Arapov</a
-    >, a practicing trader since 2013. The in-depth materials
-    provide context for each question; the short answers serve as
-    a starting point for exploring the topic.
-  </p>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="en">
+             <header>
+               <h1>Indicators and Volatility: questions and answers</h1>
+             </header>
+             <article class="faq-reading">
+<!-- Editorial rule: use natural beginner English in topic labels, questions and answers.
+     Do not repeat section titles as labels. Keep the content evergreen;
+     dates belong only in explanations of specific historical events. -->
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: trading questions and answers</a></p>
+<p>Find out what indicators measure and why their signals can fail. Each answer gives a starting point for the detailed lesson.</p>
+<nav class="faq-reading-nav" aria-label="Contents">
+<h2>Contents</h2>
+<ul>
+<li><a class="linkrefinto" href="#topic-trading-indicators" (click)="$event.preventDefault(); scrollToFragment('topic-trading-indicators')"><span aria-hidden="true">→ </span>Understanding indicator signals</a></li>
+<li><a class="linkrefinto" href="#topic-adx-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-adx-indicator')"><span aria-hidden="true">→ </span>Measuring trend strength</a></li>
+<li><a class="linkrefinto" href="#topic-atr-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-atr-indicator')"><span aria-hidden="true">→ </span>Measuring price fluctuations</a></li>
+<li><a class="linkrefinto" href="#topic-macd-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-macd-indicator')"><span aria-hidden="true">→ </span>Comparing price averages</a></li>
+<li><a class="linkrefinto" href="#topic-rsi-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-rsi-indicator')"><span aria-hidden="true">→ </span>Comparing gains and losses</a></li>
+<li><a class="linkrefinto" href="#topic-stochastic-oscillator" (click)="$event.preventDefault(); scrollToFragment('topic-stochastic-oscillator')"><span aria-hidden="true">→ </span>Locating price within a range</a></li>
+<li><a class="linkrefinto" href="#topic-moving-averages" (click)="$event.preventDefault(); scrollToFragment('topic-moving-averages')"><span aria-hidden="true">→ </span>Following average prices</a></li>
+<li><a class="linkrefinto" href="#topic-vwap-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-vwap-indicator')"><span aria-hidden="true">→ </span>Weighting prices by volume</a></li>
+<li><a class="linkrefinto" href="#topic-bollinger-bands" (click)="$event.preventDefault(); scrollToFragment('topic-bollinger-bands')"><span aria-hidden="true">→ </span>Watching changing price ranges</a></li>
+<li><a class="linkrefinto" href="#topic-ichimoku-cloud" (click)="$event.preventDefault(); scrollToFragment('topic-ichimoku-cloud')"><span aria-hidden="true">→ </span>Reading the cloud and its lines</a></li>
+</ul>
+</nav>
+<section class="faq-reading-topic" id="topic-trading-indicators" aria-labelledby="heading-trading-indicators">
+             <h2 id="heading-trading-indicators">1. Understanding indicator signals</h2>
+             <div class="faq-item" id="question-en-trading-indicators-01">
+<p class="faq-topic-label"><em>Trading indicators</em></p>
+<h3>What is a trading indicator?</h3>
+<p>It is a calculation based on market data, usually price or volume. Many indicators use past prices, so they react after movement has already started.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-trading-indicators-02">
+<p class="faq-topic-label"><em>Indicator crossovers</em></p>
+<h3>Is an indicator crossover enough to trade?</h3>
+<p>Arapov does not use a crossover alone as an entry. He also looks at levels and volume because crossovers can repeat without a lasting price move.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-trading-indicators-03">
+<p class="faq-topic-label"><em>Indicator divergence</em></p>
+<h3>What is divergence in trading?</h3>
+<p>Divergence means price and an indicator are not making matching highs or lows. It can suggest weakening momentum, but it is not a complete entry signal.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-trading-indicators-04">
+<p class="faq-topic-label"><em>Divergence confirmation</em></p>
+<h3>Does divergence guarantee a reversal?</h3>
+<p>No. It can persist through a strong trend. Arapov waits for a price-level reaction, a candle and volume rather than trading divergence alone.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-trading-indicators-05">
+<p class="faq-topic-label"><em>Volume and volatility tools</em></p>
+<h3>Which indicators does Arapov find useful?</h3>
+<p>He uses volume to assess trading activity and ATR to assess price fluctuations. They support his reading of price levels rather than replace it.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-adx-indicator" aria-labelledby="heading-adx-indicator">
+             <h2 id="heading-adx-indicator">2. Measuring trend strength</h2>
+             <div class="faq-item" id="question-en-adx-indicator-01">
+<p class="faq-topic-label"><em>ADX indicator</em></p>
+<h3>What does ADX measure?</h3>
+<p>ADX measures trend strength, not direction. A high reading does not tell you whether price is moving up or down.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-adx-indicator-02">
+<p class="faq-topic-label"><em>ADX trend strength</em></p>
+<h3>What does a high or low ADX mean?</h3>
+<p>Readings above about 25 are commonly associated with a trend, while those below about 20 suggest weaker directional movement. Arapov uses this as context rather than a forecast.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-adx-indicator-03">
+<p class="faq-topic-label"><em>ADX directional lines</em></p>
+<h3>What are +DI and −DI?</h3>
+<p>These lines describe upward and downward directional movement. ADX measures the strength of that movement, so the lines serve different purposes.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-adx-indicator-04">
+<p class="faq-topic-label"><em>ADX trend filter</em></p>
+<h3>Can ADX help distinguish a trend from a range?</h3>
+<p>It can help describe whether movement is strongly directional or weak. That can guide the choice of approach, but does not provide a trade by itself.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-adx-indicator-05">
+<p class="faq-topic-label"><em>ADX trade direction</em></p>
+<h3>Does a high ADX mean I should buy?</h3>
+<p>No. ADX does not identify direction and may be high after a large fall. Arapov takes direction from the chart and volume.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-sup-p015-s03">
+<p class="faq-topic-label"><em>ADX settings</em></p>
+<h3>What does the ADX period change?</h3>
+<p>It changes how much recent data is used and how quickly the indicator reacts. A 14-period setting is common, but changing it does not remove reliance on past movement.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/adx-indicator">English resource on this topic</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-atr-indicator" aria-labelledby="heading-atr-indicator">
+             <h2 id="heading-atr-indicator">3. Measuring price fluctuations</h2>
+             <div class="faq-item" id="question-en-atr-indicator-01">
+<p class="faq-topic-label"><em>ATR volatility</em></p>
+<h3>What does ATR measure?</h3>
+<p>ATR averages the size of price fluctuations over a chosen period, including gaps. It can rise during either an upward or downward move.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-atr-indicator-02">
+<p class="faq-topic-label"><em>ATR stop-loss</em></p>
+<h3>How can ATR help choose a stop distance?</h3>
+<p>It provides a guide to normal price fluctuations. Arapov uses it to avoid placing a stop so close that ordinary movement repeatedly triggers it.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-atr-indicator-03">
+<p class="faq-topic-label"><em>ATR and position size</em></p>
+<h3>Why adjust position size when an ATR stop gets wider?</h3>
+<p>A wider stop means more potential loss for the same position size. Reducing the size can keep the planned money risk similar when volatility increases.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-atr-indicator-04">
+<p class="faq-topic-label"><em>High ATR</em></p>
+<h3>What can an unusually high ATR mean?</h3>
+<p>It means recent price ranges are large. Arapov treats an extreme reading as a reason to review the trade and its exit, rather than an automatic reversal signal.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-atr-indicator-05">
+<p class="faq-topic-label"><em>Low ATR</em></p>
+<h3>Does low ATR tell me which way price will break?</h3>
+<p>No. It shows smaller recent price swings. Arapov watches how price behaves at a level, including the possibility of a false breakout.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-n092">
+<p class="faq-topic-label"><em>True Range</em></p>
+<h3>How does True Range account for gaps?</h3>
+<p>It compares the candle's high-low range with the distances from the previous close to the high and low. The largest distance is used.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-n093">
+<p class="faq-topic-label"><em>ATR percentage</em></p>
+<h3>Why compare ATR as a percentage of price?</h3>
+<p>The same cash move means different things for differently priced assets. Expressing ATR relative to price makes their volatility easier to compare on matching timeframes.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">English resource on this topic</a></p>
+</div>
+             <div class="faq-item" id="question-en-f021">
+<p class="faq-topic-label"><em>Chandelier Exit</em></p>
+<h3>What is a Chandelier Exit?</h3>
+<p>It is a trailing exit based on ATR. For a long trade, the stop follows at a chosen ATR distance below the high reached during the move.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-macd-indicator" aria-labelledby="heading-macd-indicator">
+             <h2 id="heading-macd-indicator">4. Comparing price averages</h2>
+             <div class="faq-item" id="question-en-macd-indicator-01">
+<p class="faq-topic-label"><em>MACD indicator</em></p>
+<h3>What is MACD?</h3>
+<p>MACD compares two moving averages and adds a signal line. It helps describe momentum, but is calculated from past prices.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-macd-indicator-02">
+<p class="faq-topic-label"><em>MACD signals</em></p>
+<h3>What signals can MACD show?</h3>
+<p>Traders watch line crossovers, the histogram, the zero line and divergence from price. Each needs context rather than being treated as a guaranteed entry.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-macd-indicator-03">
+<p class="faq-topic-label"><em>MACD settings</em></p>
+<h3>What do 12, 26 and 9 mean in MACD?</h3>
+<p>They are the periods used for the two moving averages and the signal line. Faster settings react sooner but can produce more short-lived signals.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-macd-indicator-04">
+<p class="faq-topic-label"><em>Conflicting indicator signals</em></p>
+<h3>Why can MACD and stochastic disagree?</h3>
+<p>They use price data differently, so their readings can conflict. Arapov checks the chart and volume instead of deciding by whichever indicator looks more convincing.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-macd-indicator-05">
+<p class="faq-topic-label"><em>MACD limitations</em></p>
+<h3>Why does Arapov avoid trading on MACD alone?</h3>
+<p>MACD responds to movement that has already happened. He uses it as background information while looking for entries through levels, volume and price behaviour.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-sup-p017-s04">
+<p class="faq-topic-label"><em>MACD timeframes</em></p>
+<h3>Why can MACD differ on hourly and daily charts?</h3>
+<p>Each chart uses a different set of price periods. A short pullback can therefore appear against a broader trend.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/macd-indicator">English resource on this topic</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-rsi-indicator" aria-labelledby="heading-rsi-indicator">
+             <h2 id="heading-rsi-indicator">5. Comparing gains and losses</h2>
+             <div class="faq-item" id="question-en-rsi-indicator-01">
+<p class="faq-topic-label"><em>RSI indicator</em></p>
+<h3>What is RSI?</h3>
+<p>RSI compares recent price gains and losses on a scale from 0 to 100. The 50 line helps show their balance.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-rsi-indicator-02">
+<p class="faq-topic-label"><em>RSI overbought and oversold</em></p>
+<h3>Does RSI above 70 mean I should sell?</h3>
+<p>No. RSI can stay high during a strong uptrend or low during a downtrend. Check the market situation rather than treating 70 and 30 as automatic commands.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-rsi-indicator-03">
+<p class="faq-topic-label"><em>RSI divergence</em></p>
+<h3>What is RSI divergence?</h3>
+<p>It occurs when price makes a new high or low that RSI does not match. Arapov checks the nearby level and volume before considering a reversal.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-rsi-indicator-04">
+<p class="faq-topic-label"><em>RSI signals</em></p>
+<h3>Can RSI tell me exactly when to enter?</h3>
+<p>No. It describes recent price movement and does not know what news or new orders will arrive. Arapov uses it as context, not a complete entry system.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-rsi-indicator-05">
+<p class="faq-topic-label"><em>RSI settings</em></p>
+<h3>Which RSI settings should a beginner learn first?</h3>
+<p>The common 14-period setting is a starting point. Learn how readings differ in trends and ranges before changing settings to chase better-looking signals.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-rsi-indicator-06">
+<p class="faq-topic-label"><em>Perfect indicator settings</em></p>
+<h3>Is there a perfect RSI setting?</h3>
+<p>Arapov's view is that market context matters more than a magic period. Changing the setting cannot make every signal work.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-sup-p018-s02">
+<p class="faq-topic-label"><em>RSI calculation</em></p>
+<h3>How is RSI calculated in simple terms?</h3>
+<p>It compares average gains with average losses over a period, then converts the ratio to a value between 0 and 100. Larger relative gains produce a higher reading.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/rsi-indicator">English resource on this topic</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-stochastic-oscillator" aria-labelledby="heading-stochastic-oscillator">
+             <h2 id="heading-stochastic-oscillator">6. Locating price within a range</h2>
+             <div class="faq-item" id="question-en-stochastic-oscillator-01">
+<p class="faq-topic-label"><em>Stochastic oscillator</em></p>
+<h3>What does the stochastic oscillator show?</h3>
+<p>It compares the closing price with the recent high-low range. Its main line, %K, and smoothed line, %D, are shown on a scale from 0 to 100.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stochastic-oscillator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-stochastic-oscillator-02">
+<p class="faq-topic-label"><em>Stochastic settings</em></p>
+<h3>What do 14, 3 and 3 mean?</h3>
+<p>They describe the lookback period and smoothing used by the indicator. They are common starting settings, not a formula for guaranteed trades.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stochastic-oscillator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-stochastic-oscillator-03">
+<p class="faq-topic-label"><em>Stochastic signals</em></p>
+<h3>Does stochastic above 80 mean price must fall?</h3>
+<p>No. It means the close is near the top of its recent range. Crossovers and divergence also need to be checked against the chart.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stochastic-oscillator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-stochastic-oscillator-04">
+<p class="faq-topic-label"><em>Stochastic in trends</em></p>
+<h3>Why can stochastic stay overbought for a long time?</h3>
+<p>In a strong uptrend, price can keep closing near the top of its range. Signals against that trend may therefore fail repeatedly.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stochastic-oscillator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-stochastic-oscillator-05">
+<p class="faq-topic-label"><em>Too many indicators</em></p>
+<h3>Does adding more indicators make a trade safer?</h3>
+<p>Not necessarily. Several indicators may repeat the same price information. Arapov prefers a clear chart with levels and volume to a stack of conflicting signals.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/stochastic-oscillator">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-moving-averages" aria-labelledby="heading-moving-averages">
+             <h2 id="heading-moving-averages">7. Following average prices</h2>
+             <div class="faq-item" id="question-en-moving-averages-01">
+<p class="faq-topic-label"><em>SMA vs EMA</em></p>
+<h3>How is an SMA different from an EMA?</h3>
+<p>An SMA gives equal weight to prices in its period. An EMA gives more weight to recent prices, so it usually reacts faster. Both use past data.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/moving-averages">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-moving-averages-02">
+<p class="faq-topic-label"><em>Moving-average signals</em></p>
+<h3>Why do moving averages give false signals?</h3>
+<p>They react after price moves and may cross repeatedly in a range. Changing the period trades off quicker reactions against more noise.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/moving-averages">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-moving-averages-03">
+<p class="faq-topic-label"><em>Moving-average support</em></p>
+<h3>Can a moving average act as support or resistance?</h3>
+<p>Traders may watch price reactions near a moving average. Arapov treats it as context and also checks fixed price levels and volume.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/moving-averages">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-moving-averages-04">
+<p class="faq-topic-label"><em>200-day moving average</em></p>
+<h3>What is the 200-day moving average used for?</h3>
+<p>It gives a broad view of the longer-term trend. Arapov sees it as a trend filter rather than a precise entry signal.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/moving-averages">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-n029">
+<p class="faq-topic-label"><em>Golden cross vs death cross</em></p>
+<h3>What are a golden cross and a death cross?</h3>
+<p>A golden cross is a faster moving average crossing above a slower one. A death cross is the reverse. The 50- and 200-period averages are commonly used.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/moving-averages">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-vwap-indicator" aria-labelledby="heading-vwap-indicator">
+             <h2 id="heading-vwap-indicator">8. Weighting prices by volume</h2>
+             <div class="faq-item" id="question-en-vwap-indicator-01">
+<p class="faq-topic-label"><em>VWAP indicator</em></p>
+<h3>What is VWAP?</h3>
+<p>VWAP is the average traded price weighted by volume. A session VWAP starts again each session and is mainly used for intraday analysis.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-vwap-indicator-02">
+<p class="faq-topic-label"><em>VWAP execution benchmark</em></p>
+<h3>Why do large traders compare trades with VWAP?</h3>
+<p>They can use it to assess the average price achieved while buying or selling a large amount. This makes VWAP an execution reference as well as a chart line.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-vwap-indicator-03">
+<p class="faq-topic-label"><em>Price above or below VWAP</em></p>
+<h3>What does price above VWAP mean?</h3>
+<p>It means price is above the session's volume-weighted average. Arapov checks the surrounding price action and volume rather than treating that position alone as a buy signal.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-vwap-indicator-04">
+<p class="faq-topic-label"><em>VWAP reclaim and rejection</em></p>
+<h3>What are a VWAP reclaim and rejection?</h3>
+<p>A reclaim means price moves back through VWAP and holds beyond it. A rejection means price approaches it and turns away. Arapov checks volume around the reaction.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-vwap-indicator-05">
+<p class="faq-topic-label"><em>Anchored VWAP</em></p>
+<h3>How is anchored VWAP different from session VWAP?</h3>
+<p>Anchored VWAP starts at a chosen event or chart point rather than resetting each session. It can therefore cover a longer move.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-vwap-indicator-06">
+<p class="faq-topic-label"><em>VWAP with price levels</em></p>
+<h3>Why combine VWAP with support and resistance?</h3>
+<p>A reaction where VWAP meets a meaningful price level can provide more context. Arapov checks volume there rather than relying on VWAP alone.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/vwap-indicator">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-bollinger-bands" aria-labelledby="heading-bollinger-bands">
+             <h2 id="heading-bollinger-bands">9. Watching changing price ranges</h2>
+             <div class="faq-item" id="question-en-bollinger-bands-01">
+<p class="faq-topic-label"><em>Bollinger Bands</em></p>
+<h3>What do Bollinger Bands show?</h3>
+<p>They show bands around a moving average based on how widely prices vary. Wider bands reflect greater recent variation; narrower bands reflect less.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/bollinger-bands">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-bollinger-bands-02">
+<p class="faq-topic-label"><em>Bollinger Band touches</em></p>
+<h3>Should I trade whenever price touches a band?</h3>
+<p>No. Price can follow a band during a strong trend. Arapov checks the market phase, level and volume before considering a trade.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/bollinger-bands">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-bollinger-bands-03">
+<p class="faq-topic-label"><em>Bollinger squeeze</em></p>
+<h3>What is a Bollinger squeeze?</h3>
+<p>It is a narrowing of the bands as price variation decreases. It flags a quieter market, but does not determine the direction of the next move.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/bollinger-bands">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-bollinger-bands-04">
+<p class="faq-topic-label"><em>BandWidth and Keltner Channels</em></p>
+<h3>How can BandWidth help spot a squeeze?</h3>
+<p>BandWidth measures how narrow the Bollinger Bands are. Comparing them with Keltner Channels can help define a squeeze, but still does not predict its direction.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/bollinger-bands">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-bollinger-bands-05">
+<p class="faq-topic-label"><em>Bollinger breakout</em></p>
+<h3>How does Arapov assess a breakout from the bands?</h3>
+<p>He checks whether price holds beyond the area and whether a meaningful level and volume support the move. Crossing a band alone is not enough.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/bollinger-bands">Read the full explanation</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-ichimoku-cloud" aria-labelledby="heading-ichimoku-cloud">
+             <h2 id="heading-ichimoku-cloud">10. Reading the cloud and its lines</h2>
+             <div class="faq-item" id="question-en-ichimoku-cloud-01">
+<p class="faq-topic-label"><em>Ichimoku lines</em></p>
+<h3>What are the Ichimoku lines based on?</h3>
+<p>They are calculated from past price ranges and plotted with different time shifts. They describe chart conditions rather than reveal future prices.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/ichimoku-cloud">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-ichimoku-cloud-02">
+<p class="faq-topic-label"><em>Ichimoku cloud</em></p>
+<h3>What does price above or below the cloud mean?</h3>
+<p>The usual interpretation is an upward trend above the cloud, a downward trend below it and uncertainty inside it. Arapov also checks ordinary price levels.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/ichimoku-cloud">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-ichimoku-cloud-03">
+<p class="faq-topic-label"><em>Tenkan-Kijun crossover</em></p>
+<h3>What is a Tenkan-Kijun crossover?</h3>
+<p>It is a crossing of two Ichimoku lines. Arapov considers it in the direction of the trend, recognising that it follows price movement.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/ichimoku-cloud">Read the full explanation</a></p>
+</div>
+             <div class="faq-item" id="question-en-ichimoku-cloud-04">
+<p class="faq-topic-label"><em>Learning Ichimoku</em></p>
+<h3>Should a beginner start with Ichimoku?</h3>
+<p>Arapov suggests first learning to read trends and levels directly. You can study the cloud later once the basic chart makes sense.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/en/freestudying/ichimoku-cloud">Read the full explanation</a></p>
+</div>
+             </section>
+             <nav aria-label="Other library topics"><h2>Other library topics</h2><ul>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-getting-started">Getting Started and Trading Systems</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-risk-psychology">Trading Risk and Psychology</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-chart-analysis">Charts and Technical Analysis</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-financial-markets">How Financial Markets Work</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-volume-wyckoff-smc">Volume Analysis, Wyckoff and Smart Money</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-crypto-mechanics">Cryptocurrency Mechanics and Security</a></li>
+             <li><a class="linkrefinto" href="/en/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, Altcoins and Market Cycles</a></li>
+             </ul>
+             <p><a class="linkrefinto" href="/en/freestudying/trading-faq">All topics: Trading Q&amp;A</a></p>
+             </nav>
+<section class="faq-reading-about">
+<h2>About the library materials</h2>
+<p>This section is based on the ArapovTrade library and Igor Arapov's educational videos. It provides definitions, comparisons of instruments, explanations of market mechanics and discussions of the author's approach to trading.</p>
+<p>The library's author is <a class="linkrefinto" href="https://arapov.trade/en"><strong>Igor Arapov</strong></a>, a practising trader since 2013. The detailed materials explain the context behind each question; the short answers provide a starting point for studying the topic.</p>
 </section>
-              </article>
+</article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    PREVIOUS <span class="page_none_block">ARTICLE</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    NEXT <span class="page_none_block">ARTICLE</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Filter by category
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   PREVIOUS <span class="page_none_block">ARTICLE</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Popular
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   NEXT <span class="page_none_block">ARTICLE</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/en/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleEn"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleEn }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Filter by category
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Popular
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/en/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleEn"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleEn }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -1567,71 +656,78 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Our projects are available to everyone
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Our projects are available to everyone
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Choose a topic that interests you and start learning
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Choose a topic that interests you and start learning
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
+

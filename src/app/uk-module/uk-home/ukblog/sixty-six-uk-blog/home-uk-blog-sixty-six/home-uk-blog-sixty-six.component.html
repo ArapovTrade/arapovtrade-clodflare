@@ -1,1219 +1,594 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="uk">
-              <header>
-                <h1>Індикатори та волатильність: питання та відповіді</h1>
-              </header>
-              <article>
-                <p>
-                  <a class="linkrefinto" href="/uk/freestudying/trading-faq"
-                    >Усі теми: питання та відповіді з трейдингу</a
-                  >
-                </p>
-                <p>
-                  Що вимірюють ATR, RSI, MACD, ADX, VWAP та інші індикатори, як
-                  читати сигнали та враховувати обмеження.
-                </p>
-                <p>
-                  Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під
-                  кожною відповіддю є посилання на докладне пояснення. Авторські
-                  торгові підходи подано як пояснення Ігоря Арапова;
-                  формулювання від першої особи належать автору.
-                </p>
-                <nav aria-label="Зміст">
-                  <h2>Зміст</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-trading-indicators')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Які індикатори реально працюють</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-adx-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Наскільки сильний поточний тренд</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-atr-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як використовувати ATR для оцінки волатильності</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-macd-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як розуміти індикатор MACD</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-rsi-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як працює індикатор RSI</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="
-                          scrollToFragment('topic-stochastic-oscillator')
-                        "
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як читати сигнали Стохастика</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-moving-averages')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Проста проти експоненційної ковзної середньої</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-vwap-indicator')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як використовувати VWAP для входів і виходів</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-bollinger-bands')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як смуги Боллінджера вимірюють волатильність</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-ichimoku-cloud')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як читати індикатор Ішимоку Кінко Хьо</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-                <section
-                  id="topic-trading-indicators"
-                  aria-labelledby="heading-trading-indicators"
-                >
-                  <h2 id="heading-trading-indicators">
-                    Які індикатори реально працюють
-                  </h2>
-                  <div class="faq-item" id="question-uk-trading-indicators-01">
-                    <h3>
-                      Що таке торгові індикатори і чому вони запізнюються?
-                    </h3>
-                    <p>
-                      Індикатор це формула з минулих закритих свічок, тому він
-                      за природою показує те, що ринок уже зробив; запізнення це
-                      не дефект налаштування, а властивість, і стеля індикатора
-                      це опис минулого.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-indicators"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-indicators-02">
-                    <h3>
-                      Чи достатньо сигналу стохастика, MACD або середньої для
-                      входу?
-                    </h3>
-                    <p>
-                      Перетини стохастика , MACD і мувінгів на перших угодах
-                      здаються робочими, а на сотні-трьох сотнях угод виходять
-                      як монетка без стійкого перевісу; я не будую на них вхід,
-                      а дивлюся рівень і обсяг.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-indicators"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-indicators-03">
-                    <h3>Що таке дивергенція і як вона виглядає на графіку?</h3>
-                    <p>
-                      Дивергенція це розбіжність ціни й індикатора: ціна дає
-                      новий екстремум, а індикатор ні; бичача натякає вгору,
-                      ведмежа вниз, прихована на продовження, але це натяк на
-                      слабкість імпульсу, а не точка входу.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-indicators"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-indicators-04">
-                    <h3>Чому дивергенція на індикаторі обманює?</h3>
-                    <p>
-                      На індикаторі дивергенція запізнюється і в сильному тренді
-                      дає хибні сигнали; на золоті 4H за однією дивергенцією я
-                      не входжу, чекаю рівень, розворотну свічу і обсяг, і
-                      чесніше дивитися розбіжність ціни з обсягом, а не з
-                      осцилятором.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-indicators"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-indicators-05">
-                    <h3>
-                      Які індикатори справді корисні: обсяг і волатильність?
-                    </h3>
-                    <p>
-                      Корисні обсяг і волатильність (ATR), бо показують причину,
-                      а не слід; осцилятор за визначенням наздоганяє ринок, тому
-                      рішення я будую на рівнях і обсязі, а індикатор лише
-                      доповнює, але не замінює розуміння попиту і пропозиції.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-indicators"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-adx-indicator"
-                  aria-labelledby="heading-adx-indicator"
-                >
-                  <h2 id="heading-adx-indicator">
-                    Наскільки сильний поточний тренд
-                  </h2>
-                  <div class="faq-item" id="question-uk-adx-indicator-01">
-                    <h3>Що таке індикатор ADX?</h3>
-                    <p>
-                      ADX це лінія, що міряє тільки силу руху, а не сторону;
-                      шкала від нуля до ста, і сам він наслідок, а не причина:
-                      рухають ціну обсяг і дії крупного учасника, ADX лише
-                      зчитує результат.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/adx-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-adx-indicator-02">
-                    <h3>Як ADX вимірює силу тренду?</h3>
-                    <p>
-                      Вище двадцяти п&#x27;яти зазвичай тренд, нижче двадцяти
-                      боковик; ADX рахує, наскільки переважає одна сторона, але
-                      це перерахунок уже здійсненого руху, тому він запізнюється
-                      і годиться фільтром, а не випереджальним сигналом.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/adx-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-adx-indicator-03">
-                    <h3>Як читати +DI, −DI та рівні ADX 20, 25 і 40?</h3>
-                    <p>
-                      +DI і -DI показують сторону (хто сильніший, покупці чи
-                      продавці), а рівні ADX силу: нижче 20 флет, 20-25
-                      зародження, вище 25 тренд, вище 40 сильний і часто вже
-                      перегрітий; усе це фільтр обстановки, а не сигнал на вхід.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/adx-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-adx-indicator-04">
-                    <h3>Чому ADX це фільтр, а не сигнал на вхід?</h3>
-                    <p>
-                      Не входь в угоду тільки тому, що ADX високий: сторону він
-                      не знає і часто загорається вже в розпалі руху; тримай
-                      його фільтром флету, а вхід і напрям бери за рівнями і
-                      обсягом.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/adx-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-atr-indicator"
-                  aria-labelledby="heading-atr-indicator"
-                >
-                  <h2 id="heading-atr-indicator">
-                    Як використовувати ATR для оцінки волатильності
-                  </h2>
-                  <div class="faq-item" id="question-uk-atr-indicator-01">
-                    <h3>Що таке ATR (Average True Range)?</h3>
-                    <p>
-                      ATR це усереднений за чотирнадцять свічок розмах ціни;
-                      високим він буває і на зростанні, і на падінні, тож
-                      сторону руху за ним не прочитати.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/atr-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-atr-indicator-02">
-                    <h3>Як ставити стоп-лосс за ATR?</h3>
-                    <p>
-                      Ховай стоп за поточний розмах ATR, а не під локальний
-                      рівень: на спокійному ринку він вужчий, на штормовому
-                      ширший, і шум перестає його вибивати.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/atr-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-atr-indicator-03">
-                    <h3>
-                      Як автор використовує високий ATR під час супроводу
-                      позиції?
-                    </h3>
-                    <p>
-                      ATR на маківці каже, що рух видихнувся: не сигнал
-                      закритися одразу, а привід тягнути стоп у беззбиток і
-                      готувати вихід.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/atr-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-atr-indicator-04">
-                    <h3>Що означають стиснення та розширення ATR?</h3>
-                    <p>
-                      Стиснення ATR перед сесією це заявка на хибний накол: ціну
-                      заводять за рівень зібрати стопи, і працювати вигідніше
-                      проти цього виходу, а не слідом за ним.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/atr-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-n092">
-                    <h3>Як розраховується істинний діапазон свічки?</h3>
-                    <p>
-                      Беруть найбільшу з трьох величин: максимум мінус мінімум
-                      свічки, абсолютну відстань від максимуму до попереднього
-                      закриття та від мінімуму до нього. Так враховуються
-                      розриви між періодами, а не лише висота свічки.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/atr-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-macd-indicator"
-                  aria-labelledby="heading-macd-indicator"
-                >
-                  <h2 id="heading-macd-indicator">
-                    Як розуміти індикатор MACD
-                  </h2>
-                  <div class="faq-item" id="question-uk-macd-indicator-01">
-                    <h3>Що таке індикатор MACD і як він розраховується?</h3>
-                    <p>
-                      MACD це різниця середніх 12 і 26 плюс сигнальна по 9:
-                      наочно й зрозуміло, але вся стрункість тримається на
-                      припущенні, що усереднене минуле передбачить майбутнє.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/macd-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-macd-indicator-02">
-                    <h3>Які основні сигнали розглядають у MACD?</h3>
-                    <p>
-                      Чотири базові сигнали MACD це перетин ліній, гістограма
-                      (сила імпульсу), перетин нуля і дивергенція (розходження
-                      ціни та індикатора, бича й ведмежа); дивергенція цінніша
-                      за решту, бо випереджає розворот.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/macd-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-macd-indicator-03">
-                    <h3>
-                      Чому MACD і стохастик можуть суперечити один одному?
-                    </h3>
-                    <p>
-                      Коли MACD правий, спрацьовує не він, а рівень, об&#x27;єм
-                      і накол під ним; а поруч зі стохастиком він легко
-                      суперечить сам собі, адже обидва рахуються з однієї
-                      минулої ціни.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/macd-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-macd-indicator-04">
-                    <h3>
-                      Чому MACD запізнюється і що ефективніше використовувати?
-                    </h3>
-                    <p>
-                      MACD запізнюється за конструкцією, це похідна від уже
-                      зробленого ринком, тому тримай його щонайбільше для фону,
-                      а перевагу шукай у рівнях, об&#x27;ємі та price action.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/macd-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-rsi-indicator"
-                  aria-labelledby="heading-rsi-indicator"
-                >
-                  <h2 id="heading-rsi-indicator">Як працює індикатор RSI</h2>
-                  <div class="faq-item" id="question-uk-rsi-indicator-01">
-                    <h3>Що таке RSI (індекс відносної сили)?</h3>
-                    <p>
-                      RSI це осцилятор від 0 до 100 із середніх зростання й
-                      падіння за 14 свічок; центральна лінія 50 про баланс сил
-                      говорить більше, ніж зони 70 і 30.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/rsi-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-rsi-indicator-02">
-                    <h3>
-                      Чи означають рівні RSI 70 і 30 обовʼязковий розворот?
-                    </h3>
-                    <p>
-                      Зони 70 і 30 це не команда: у тренді RSI висить у крайній
-                      зоні довго; спершу визнач тренд чи флет, потім звіряй
-                      сигнал з рівнем і об&#x27;ємом.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/rsi-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-rsi-indicator-03">
-                    <h3>Що показує дивергенція RSI?</h3>
-                    <p>
-                      Дивергенція натякає на згасання руху, але соло вона
-                      ненадійна й тягнеться довго; працює лише в зв&#x27;язці з
-                      сильним рівнем і виходом об&#x27;єму.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/rsi-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-rsi-indicator-04">
-                    <h3>Які обмеження має RSI?</h3>
-                    <p>
-                      RSI рахується із закритих свічок і запізнюється, не знаючи
-                      новин і великого гравця; це добрий градусник стану, але
-                      поганий генератор входів.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/rsi-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-rsi-indicator-05">
-                    <h3>Як автор застосовує RSI у власній практиці?</h3>
-                    <p>
-                      Ідеального налаштування RSI немає, є контекст; тримай його
-                      градусником стану, а вхід шукай за рівнем і об&#x27;ємом,
-                      не торгуючи 70 і 30 проти тренду.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/rsi-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-stochastic-oscillator"
-                  aria-labelledby="heading-stochastic-oscillator"
-                >
-                  <h2 id="heading-stochastic-oscillator">
-                    Як читати сигнали Стохастика
-                  </h2>
-                  <div
-                    class="faq-item"
-                    id="question-uk-stochastic-oscillator-01"
-                  >
-                    <h3>Що таке індикатор стохастик (%K і %D)?</h3>
-                    <p>
-                      Стохастик це індикатор імпульсу: він порівнює закриття з
-                      діапазоном максимумів і мінімумів за період і малює дві
-                      лінії від 0 до 100, де %K основна, а %D згладжена
-                      сигнальна.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/stochastic-oscillator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-stochastic-oscillator-02"
-                  >
-                    <h3>Які сигнали має стохастичний осцилятор?</h3>
-                    <p>
-                      У стохастика три сигнали: зони вище 80 і нижче 20, перетин
-                      %K і %D та дивергенція; але перекупленість це не команда
-                      продавати, а лише закриття ціни біля верху свого
-                      діапазону.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/stochastic-oscillator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-stochastic-oscillator-03"
-                  >
-                    <h3>
-                      Чому стохастик у флеті та тренді читають по-різному?
-                    </h3>
-                    <p>
-                      У флеті стохастик справно відпрацьовує зони 80 і 20, а в
-                      сильному тренді тижнями залипає біля краю й плодить
-                      сигнали проти руху, тому в тренді я дивлюся його лише за
-                      трендом.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/stochastic-oscillator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-stochastic-oscillator-04"
-                  >
-                    <h3>
-                      Чому стохастик і ковзна середня можуть показувати різні
-                      сценарії?
-                    </h3>
-                    <p>
-                      Індикатори похідні від однієї ціни й запізнюються, тому
-                      навішувати їх один на одного значить копити кашу в голові;
-                      я натомість читаю обсяг і рівні, адже обсяг це причина
-                      руху, а не його слід.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/stochastic-oscillator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-moving-averages"
-                  aria-labelledby="heading-moving-averages"
-                >
-                  <h2 id="heading-moving-averages">
-                    Проста проти експоненційної ковзної середньої
-                  </h2>
-                  <div class="faq-item" id="question-uk-moving-averages-01">
-                    <h3>
-                      Що таке ковзна середня і чим SMA відрізняється від EMA?
-                    </h3>
-                    <p>
-                      Середня це усереднена лінія минулих цін, SMA гладка й
-                      повільна, EMA швидша за рахунок ваги свіжих даних, але
-                      обидві говорять про минуле.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/moving-averages"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-moving-averages-02">
-                    <h3>
-                      Чому ковзні середні не працюють для внутрішньоденної
-                      торгівлі?
-                    </h3>
-                    <p>
-                      Середня повідомляє про розворот уже після нього, а у флеті
-                      сипле хибними сигналами, і ідеального налаштування між
-                      шумом і запізненням не існує.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/moving-averages"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-moving-averages-03">
-                    <h3>
-                      Де ковзні середні справді корисні: фільтр тренду за
-                      200-денною SMA?
-                    </h3>
-                    <p>
-                      Єдина чесна роль середньої це грубий фільтр тренду на
-                      великих строках, наприклад 200-денна SMA, але як сигнал
-                      входу вона не годиться.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/moving-averages"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-n029">
-                    <h3>Що називають золотим хрестом і хрестом смерті?</h3>
-                    <p>
-                      Золотий хрест — перетин швидкої середньої над повільною
-                      знизу вгору; хрест смерті — зворотний перетин. Часто
-                      розглядають середні за 50 і 200 періодів. Автор враховує
-                      запізнення цих сигналів.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/moving-averages"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-vwap-indicator"
-                  aria-labelledby="heading-vwap-indicator"
-                >
-                  <h2 id="heading-vwap-indicator">
-                    Як використовувати VWAP для входів і виходів
-                  </h2>
-                  <div class="faq-item" id="question-uk-vwap-indicator-01">
-                    <h3>Що таке VWAP (середньозважена за обсягом ціна)?</h3>
-                    <p>
-                      VWAP це середньозважена за обсягом ціна від початку сесії:
-                      де пройшло більше угод, у ціни більше ваги; рахується
-                      накопичувально й щодня обнуляється, тому це передусім
-                      внутрішньоденний інструмент.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/vwap-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-vwap-indicator-02">
-                    <h3>
-                      Як інституціонали використовують VWAP під час входу в
-                      позицію?
-                    </h3>
-                    <p>
-                      Великий фонд розтягує виконання й оцінює його за VWAP,
-                      тому алгоритми набирають позицію біля середньої; ті, хто
-                      відкупив вище, при відкаті раді вийти в нуль, і через це
-                      ціна так часто повертається до VWAP.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/vwap-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-vwap-indicator-03">
-                    <h3>Як використовують VWAP як внутрішньоденний рівень?</h3>
-                    <p>
-                      Ціна вище VWAP це перевага покупців, нижче перевага
-                      продавців, на самій лінії баланс; смуги в одне-три
-                      відхилення підказують розтягнутість, але це не кнопка, і
-                      без підтвердження обсягом я за ними не входжу.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/vwap-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-vwap-indicator-04">
-                    <h3>Чим Anchored VWAP відрізняється від сесійного VWAP?</h3>
-                    <p>
-                      Anchored VWAP це той самий VWAP, але від обраної точки
-                      (свінг, новина, відкриття тижня) і без денного скидання,
-                      тому він годиться для свінгу на старших таймфреймах, а не
-                      лише для інтрадею.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/vwap-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-vwap-indicator-05">
-                    <h3>Як поєднувати VWAP з рівнями та обʼємом?</h3>
-                    <p>
-                      Сила VWAP зʼявляється на збігу з горизонтальним рівнем і
-                      великим обсягом, де сходяться три підтвердження; для мене
-                      це довесок до обсягу й рівнів, що зручно підсвічує
-                      справедливу ціну сесії, а не окрема система.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/vwap-indicator"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-bollinger-bands"
-                  aria-labelledby="heading-bollinger-bands"
-                >
-                  <h2 id="heading-bollinger-bands">
-                    Як смуги Боллінджера вимірюють волатильність
-                  </h2>
-                  <div class="faq-item" id="question-uk-bollinger-bands-01">
-                    <h3>Що таке смуги Боллінджера і що вони показують?</h3>
-                    <p>
-                      Смуги це градусник волатильності на двох стандартних
-                      відхиленнях від середньої, він показує розмах руху, але
-                      мовчить про напрям.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/bollinger-bands"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-bollinger-bands-02">
-                    <h3>Чи можна торгувати відскок від смуг?</h3>
-                    <p>
-                      Торкання смуги це не сигнал: у тренді ціна йде вздовж неї
-                      довго, тому біля краю я спершу дивлюся фазу, рівень і
-                      обсяг.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/bollinger-bands"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-bollinger-bands-03">
-                    <h3>Що означає стиснення смуг Боллінджера?</h3>
-                    <p>
-                      Стиснення це сигнал уваги, а не напряму: ринок копить
-                      сили, але сторону покаже закріпленням і обсягом, а не
-                      першим виходом за канал.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/bollinger-bands"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-bollinger-bands-04">
-                    <h3>Як поєднувати смуги Боллінджера з обʼємом?</h3>
-                    <p>
-                      Звʼязка смуга плюс обсяг плюс рівень відділяє справжній
-                      пробій від видиху, а одна лінія на це не здатна.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/bollinger-bands"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-ichimoku-cloud"
-                  aria-labelledby="heading-ichimoku-cloud"
-                >
-                  <h2 id="heading-ichimoku-cloud">
-                    Як читати індикатор Ішимоку Кінко Хьо
-                  </h2>
-                  <div class="faq-item" id="question-uk-ichimoku-cloud-01">
-                    <h3>
-                      Що таке індикатор Ішимоку і з яких пʼяти ліній
-                      складається?
-                    </h3>
-                    <p>
-                      Пʼять ліній Ішимоку це різновиди ковзної середньої зі
-                      зсувом у часі; гарна обгортка не скасовує того, що
-                      рахуються вони з минулої ціни.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/ichimoku-cloud"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-ichimoku-cloud-02">
-                    <h3>Як читати ціну відносно хмари Ішимоку?</h3>
-                    <p>
-                      Ціна над хмарою тренд угору, під хмарою вниз, усередині
-                      боковик; але те, що хмара зве підтримкою, зазвичай
-                      збігається зі звичайним горизонтальним рівнем.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/ichimoku-cloud"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-ichimoku-cloud-03">
-                    <h3>Що означає перетин Тенкан і Кідзюн?</h3>
-                    <p>
-                      TK Cross це перетин двох середніх заднім числом: до
-                      моменту сигналу хід уже відбувся, тому беру його хіба що
-                      за трендом, проти тренду повз.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/ichimoku-cloud"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-ichimoku-cloud-04">
-                    <h3>Чи підходить Ішимоку новачкові?</h3>
-                    <p>
-                      Освоїти просто, але новачкові краще почати не з нього:
-                      тренд і рівні читаються напряму швидше, а до хмари за
-                      бажання повернешся пізніше.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/ichimoku-cloud"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <nav aria-label="Інші теми бібліотеки">
-                  <h2>Інші теми бібліотеки</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-getting-started"
-                        >Початок торгівлі та торгова система</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-risk-psychology"
-                        >Ризик і психологія трейдингу</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-chart-analysis"
-                        >Графіки та технічний аналіз</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-financial-markets"
-                        >Як влаштовані фінансові ринки</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
-                        >Обʼємний аналіз, Вайкофф і Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-crypto-mechanics"
-                        >Криптовалюти: устрій і безпека</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-bitcoin-altcoins"
-                        >Bitcoin, альткоїни та ринкові цикли</a
-                      >
-                    </li>
-                  </ul>
-                  <p>
-                    <a class="linkrefinto" href="/uk/freestudying/trading-faq"
-                      >Усі теми: питання та відповіді з трейдингу</a
-                    >
-                  </p>
-                </nav>
-               <section>
-  <h2>Про матеріали бібліотеки</h2>
-  <p>
-    Розділ укладено на основі матеріалів бібліотеки ArapovTrade та
-    навчальних відео Ігоря Арапова. Тут можна знайти
-    визначення, порівняння інструментів, пояснення ринкової
-    механіки та розбори авторського підходу до трейдингу.
-  </p>
-  <p>
-    Автор бібліотеки —
-    <a class="linkrefinto" href="https://arapov.trade/uk"
-      >Ігор Арапов</a
-    >, практикуючий трейдер з 2013 року. Докладні матеріали
-    розкривають контекст кожного питання; короткі відповіді слугують
-    відправною точкою для вивчення теми.
-  </p>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="uk">
+             <header>
+               <h1>Індикатори та волатильність: питання та відповіді</h1>
+             </header>
+             <article class="faq-reading">
+<!-- Editorial rule: use natural Ukrainian beginner language in topic labels,
+     questions and answers. Avoid repeating section titles. Keep content evergreen;
+     dates belong only in explanations of specific historical events. -->
+<p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
+<p>Дізнайтеся, що показують індикатори та чому їхні сигнали не завжди спрацьовують. Під кожною відповіддю є докладне пояснення.</p>
+<nav class="faq-reading-nav" aria-label="Зміст">
+<h2>Зміст</h2>
+<ul>
+<li><a class="linkrefinto" href="#topic-trading-indicators" (click)="$event.preventDefault(); scrollToFragment('topic-trading-indicators')"><span aria-hidden="true">→ </span>Як розуміти сигнали</a></li>
+<li><a class="linkrefinto" href="#topic-adx-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-adx-indicator')"><span aria-hidden="true">→ </span>Сила тренду: ADX</a></li>
+<li><a class="linkrefinto" href="#topic-atr-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-atr-indicator')"><span aria-hidden="true">→ </span>Коливання ціни: ATR</a></li>
+<li><a class="linkrefinto" href="#topic-macd-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-macd-indicator')"><span aria-hidden="true">→ </span>Рух ціни: MACD</a></li>
+<li><a class="linkrefinto" href="#topic-rsi-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-rsi-indicator')"><span aria-hidden="true">→ </span>Сила руху: RSI</a></li>
+<li><a class="linkrefinto" href="#topic-stochastic-oscillator" (click)="$event.preventDefault(); scrollToFragment('topic-stochastic-oscillator')"><span aria-hidden="true">→ </span>Ціна в діапазоні: стохастик</a></li>
+<li><a class="linkrefinto" href="#topic-moving-averages" (click)="$event.preventDefault(); scrollToFragment('topic-moving-averages')"><span aria-hidden="true">→ </span>Середня ціна й тренд</a></li>
+<li><a class="linkrefinto" href="#topic-vwap-indicator" (click)="$event.preventDefault(); scrollToFragment('topic-vwap-indicator')"><span aria-hidden="true">→ </span>Ціна з урахуванням обсягу: VWAP</a></li>
+<li><a class="linkrefinto" href="#topic-bollinger-bands" (click)="$event.preventDefault(); scrollToFragment('topic-bollinger-bands')"><span aria-hidden="true">→ </span>Діапазон коливань: Боллінджер</a></li>
+<li><a class="linkrefinto" href="#topic-ichimoku-cloud" (click)="$event.preventDefault(); scrollToFragment('topic-ichimoku-cloud')"><span aria-hidden="true">→ </span>Тренд і хмара Ішимоку</a></li>
+</ul>
+</nav>
+<section class="faq-reading-topic" id="topic-trading-indicators" aria-labelledby="heading-trading-indicators">
+             <h2 id="heading-trading-indicators">1. Як розуміти сигнали</h2>
+             <div class="faq-item" id="question-uk-trading-indicators-01">
+<p class="faq-topic-label"><em>Запізнення індикаторів</em></p>
+<h3>Чому індикатори запізнюються?</h3>
+<p>Вони обчислюються за минулими цінами. Тому показують те, що вже відбулося, а згладжування додає затримку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-indicators-02">
+<p class="faq-topic-label"><em>Перетин ліній</em></p>
+<h3>Чи можна входити лише за сигналом індикатора?</h3>
+<p>Арапов не вважає одного перетину достатнім. Він перевіряє рівень, обсяг і ризик, а правила оцінює на серії угод.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-indicators-03">
+<p class="faq-topic-label"><em>Дивергенція</em></p>
+<h3>Що таке дивергенція?</h3>
+<p>Розбіжність ціни й індикатора. Наприклад, ціна зробила нову вершину, а індикатор — ні. Це привід перевірити рух, а не гарантія розвороту.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-indicators-04">
+<p class="faq-topic-label"><em>Хибний сигнал</em></p>
+<h3>Чому дивергенція може не спрацювати?</h3>
+<p>Сильний рух може тривати навіть при ослабленні показника. Арапов чекає додаткової реакції біля рівня й дивиться на обсяг.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-indicators-05">
+<p class="faq-topic-label"><em>Обсяг і волатильність</em></p>
+<h3>Чим обсяг відрізняється від ATR?</h3>
+<p>Обсяг показує активність торгівлі, ATR — розмах коливань ціни. У підході Арапова вони доповнюють рівні та розрахунок ризику.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">Докладний розбір</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-adx-indicator" aria-labelledby="heading-adx-indicator">
+             <h2 id="heading-adx-indicator">2. Сила тренду: ADX</h2>
+             <div class="faq-item" id="question-uk-adx-indicator-01">
+<p class="faq-topic-label"><em>Напрямок ADX</em></p>
+<h3>Чи показує ADX, куди піде ціна?</h3>
+<p>Ні. Він оцінює силу руху за шкалою від 0 до 100. Високе значення можливе і при зростанні, і при падінні.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/adx-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-adx-indicator-02">
+<p class="faq-topic-label"><em>Значення ADX</em></p>
+<h3>Що означають значення ADX 20 і 25?</h3>
+<p>Низькі значення пов'язують зі слабкою спрямованістю, вищі — з вираженим трендом. Це орієнтири, а не точні межі зміни ринку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/adx-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-adx-indicator-03">
+<p class="faq-topic-label"><em>Лінії DI</em></p>
+<h3>Що показують +DI та −DI?</h3>
+<p>Вони описують рух угору й униз, а ADX — його вираженість. Показання допомагають оцінити ситуацію, але самі не задають угоду.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/adx-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-adx-indicator-04">
+<p class="faq-topic-label"><em>Фільтр тренду</em></p>
+<h3>Чому ADX не є готовим сигналом входу?</h3>
+<p>Він не визначає напрямок і може зрости вже після значної частини руху. Арапов вибирає вхід за ціною, рівнем та обсягом.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/adx-indicator">Докладний розбір</a></p>
+</div>
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-atr-indicator" aria-labelledby="heading-atr-indicator">
+             <h2 id="heading-atr-indicator">3. Коливання ціни: ATR</h2>
+             <div class="faq-item" id="question-uk-atr-indicator-01">
+<p class="faq-topic-label"><em>Розмах ціни ATR</em></p>
+<h3>Що показує ATR?</h3>
+<p>Середній розмах свічок з урахуванням стрибків між періодами. Він оцінює силу коливань, але не напрямок ціни.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-atr-indicator-02">
+<p class="faq-topic-label"><em>Стоп за ATR</em></p>
+<h3>Як використовувати ATR для стоп-лосу?</h3>
+<p>Порівняйте відстань до стопа зі звичайними коливаннями. Потім підберіть розмір позиції під допустиму грошову втрату.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-atr-indicator-03">
+<p class="faq-topic-label"><em>Високий ATR</em></p>
+<h3>Що робити, якщо ATR виріс?</h3>
+<p>Переглянути захист і розмір позиції з урахуванням ширших коливань. Саме високе значення не доводить швидкого розвороту.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-atr-indicator-04">
+<p class="faq-topic-label"><em>Зміна ATR</em></p>
+<h3>Що означає падіння та подальше зростання ATR?</h3>
+<p>Спокійні коливання змінюються ширшими. Напрямок за одним ATR визначити не можна: потрібно дивитися на саму ціну.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-n092">
+<p class="faq-topic-label"><em>Істинний діапазон</em></p>
+<h3>Чому при розрахунку ATR враховують минуле закриття?</h3>
+<p>Щоб врахувати стрибок між періодами. Без цього показник бачив би лише висоту поточної свічки й пропускав частину руху.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">Докладний розбір</a></p>
+</div>
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-macd-indicator" aria-labelledby="heading-macd-indicator">
+             <h2 id="heading-macd-indicator">4. Рух ціни: MACD</h2>
+             <div class="faq-item" id="question-uk-macd-indicator-01">
+<p class="faq-topic-label"><em>Лінії MACD</em></p>
+<h3>Як працює MACD?</h3>
+<p>Він порівнює дві згладжені середні ціни. Основна лінія зазвичай використовує періоди 12 і 26, сигнальна згладжує різницю за 9 періодів.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/macd-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-macd-indicator-02">
+<p class="faq-topic-label"><em>Сигнали MACD</em></p>
+<h3>Які сигнали показує MACD?</h3>
+<p>Перетини ліній, перехід через нуль, зміни стовпчиків і розбіжність із ціною. Вони описують рух, але не гарантують майбутній результат.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/macd-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-macd-indicator-03">
+<p class="faq-topic-label"><em>MACD і стохастик</em></p>
+<h3>Чому MACD і стохастик показують різне?</h3>
+<p>MACD порівнює середні, стохастик — закриття з діапазоном. Це різні розрахунки за ціною, тому вони не зобов'язані збігатися.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/macd-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-macd-indicator-04">
+<p class="faq-topic-label"><em>MACD та рівні</em></p>
+<h3>Чому Арапов не входить лише за MACD?</h3>
+<p>Індикатор згладжує минулі дані та запізнюється. Автор надає більше значення рівням, обсягам і поточній реакції ціни.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/macd-indicator">Докладний розбір</a></p>
+</div>
+             
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-rsi-indicator" aria-labelledby="heading-rsi-indicator">
+             <h2 id="heading-rsi-indicator">5. Сила руху: RSI</h2>
+             <div class="faq-item" id="question-uk-rsi-indicator-01">
+<p class="faq-topic-label"><em>Шкала RSI</em></p>
+<h3>Що таке RSI?</h3>
+<p>Індикатор від 0 до 100, який порівнює середні зростання й падіння ціни. Він допомагає оцінити рух, а не точно передбачити його.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-rsi-indicator-02">
+<p class="faq-topic-label"><em>Перекупленість RSI</em></p>
+<h3>Чи треба продавати, якщо RSI вище 70?</h3>
+<p>Не обов'язково. У сильному зростанні RSI може довго залишатися високим, а при падінні — низьким. Спочатку визначають стан ринку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-rsi-indicator-03">
+<p class="faq-topic-label"><em>Дивергенція RSI</em></p>
+<h3>Що означає дивергенція RSI?</h3>
+<p>Ціна оновлює вершину або мінімум, а RSI не підтверджує рух. Це може вказувати на ослаблення, але не задає час розвороту.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-rsi-indicator-04">
+<p class="faq-topic-label"><em>Обмеження RSI</em></p>
+<h3>Чому не можна торгувати лише за RSI?</h3>
+<p>Він використовує минулі ціни й може завчасно показувати рух проти тренду. Арапов не замінює ним цілісного плану угоди.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-rsi-indicator-05">
+<p class="faq-topic-label"><em>RSI у практиці</em></p>
+<h3>Як Арапов використовує RSI?</h3>
+<p>Як допоміжний показник стану. Вхід він шукає за рівнем і обсягом, а не автоматично за числами 70 або 30.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">Докладний розбір</a></p>
+</div>
+             
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-stochastic-oscillator" aria-labelledby="heading-stochastic-oscillator">
+             <h2 id="heading-stochastic-oscillator">6. Ціна в діапазоні: стохастик</h2>
+             <div class="faq-item" id="question-uk-stochastic-oscillator-01">
+<p class="faq-topic-label"><em>Діапазон стохастика</em></p>
+<h3>Що показує стохастик?</h3>
+<p>Положення ціни закриття відносно недавніх максимумів і мінімумів. Його основна та згладжена лінії зазвичай змінюються від 0 до 100.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stochastic-oscillator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-stochastic-oscillator-02">
+<p class="faq-topic-label"><em>Сигнали стохастика</em></p>
+<h3>Які сигнали є у стохастика?</h3>
+<p>Перетини ліній, крайні значення й дивергенція. Високий або низький показник сам по собі не означає обов'язкову купівлю чи продаж.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stochastic-oscillator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-stochastic-oscillator-03">
+<p class="faq-topic-label"><em>Стохастик у флеті</em></p>
+<h3>Чому стохастик по-різному читають у флеті та тренді?</h3>
+<p>У флеті ціна повертається між межами. У сильному тренді вона може довго залишатися біля краю, і крайній показник зберігається.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stochastic-oscillator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-stochastic-oscillator-04">
+<p class="faq-topic-label"><em>Стохастик і середня</em></p>
+<h3>Чому стохастик і середня суперечать одне одному?</h3>
+<p>Коротке положення ціни в діапазоні може відрізнятися від згладженого напрямку. Додавання ліній не завжди додає нову інформацію.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stochastic-oscillator">Докладний розбір</a></p>
+</div>
+             
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-moving-averages" aria-labelledby="heading-moving-averages">
+             <h2 id="heading-moving-averages">7. Середня ціна й тренд</h2>
+             <div class="faq-item" id="question-uk-moving-averages-01">
+<p class="faq-topic-label"><em>SMA і EMA</em></p>
+<h3>Чим SMA відрізняється від EMA?</h3>
+<p>SMA надає цінам однакову вагу. EMA більше враховує свіжі дані й зазвичай швидше реагує на зміни.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-moving-averages-02">
+<p class="faq-topic-label"><em>Середня у флеті</em></p>
+<h3>Чому середня дає багато хибних сигналів?</h3>
+<p>Без стійкого напрямку ціна часто перетинає лінію туди й назад. Швидша середня додає сигналів, повільніша — затримки.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-moving-averages-03">
+<p class="faq-topic-label"><em>Середня за 200 днів</em></p>
+<h3>Навіщо використовують 200-денну середню?</h3>
+<p>Як загальний орієнтир тривалого тренду. У підході автора положення ціни відносно неї не визначає точку входу саме по собі.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-n029">
+<p class="faq-topic-label"><em>Золотий хрест</em></p>
+<h3>Що таке золотий хрест і хрест смерті?</h3>
+<p>Золотий хрест — перетин швидкої середньої над повільною знизу вгору. Хрест смерті — зворотний перетин; обидва враховують уже минулий рух.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">Докладний розбір</a></p>
+</div>
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-vwap-indicator" aria-labelledby="heading-vwap-indicator">
+             <h2 id="heading-vwap-indicator">8. Ціна з урахуванням обсягу: VWAP</h2>
+             <div class="faq-item" id="question-uk-vwap-indicator-01">
+<p class="faq-topic-label"><em>Середня ціна з обсягом</em></p>
+<h3>Що таке VWAP?</h3>
+<p>Це середня ціна, де більший обсяг має більшу вагу. Сесійний VWAP починає розрахунок заново з новою сесією.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/vwap-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-vwap-indicator-02">
+<p class="faq-topic-label"><em>Ціна виконання</em></p>
+<h3>Навіщо великі учасники порівнюють угоди з VWAP?</h3>
+<p>Він дає орієнтир середньої ціни торгів за період. З ним можна порівняти виконання, але не побачити всі позиції конкретного фонду.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/vwap-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-vwap-indicator-03">
+<p class="faq-topic-label"><em>Рівень VWAP</em></p>
+<h3>Чи можна використовувати VWAP як рівень?</h3>
+<p>Арапов спостерігає реакцію біля лінії. Ціна над або під нею дає загальну картину, але не готову команду купівлі чи продажу.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/vwap-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-vwap-indicator-04">
+<p class="faq-topic-label"><em>Anchored VWAP</em></p>
+<h3>Чим Anchored VWAP відрізняється від сесійного?</h3>
+<p>Його рахують від вибраної точки, наприклад важливої вершини або новини. Розрахунок не обов'язково починається з торгової сесії.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/vwap-indicator">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-vwap-indicator-05">
+<p class="faq-topic-label"><em>VWAP та обсяги</em></p>
+<h3>Як поєднувати VWAP з рівнями й обсягами?</h3>
+<p>Шукати збіг орієнтирів і перевіряти реакцію ціни. VWAP доповнює аналіз, а не замінює правила й обмеження ризику.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/vwap-indicator">Докладний розбір</a></p>
+</div>
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-bollinger-bands" aria-labelledby="heading-bollinger-bands">
+             <h2 id="heading-bollinger-bands">9. Діапазон коливань: Боллінджер</h2>
+             <div class="faq-item" id="question-uk-bollinger-bands-01">
+<p class="faq-topic-label"><em>Ширина смуг Боллінджера</em></p>
+<h3>Що показують смуги Боллінджера?</h3>
+<p>Межі навколо середньої ціни. Їхня ширина змінюється разом із коливаннями, допомагаючи оцінити розмах руху.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bollinger-bands">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-bollinger-bands-02">
+<p class="faq-topic-label"><em>Торкання смуги</em></p>
+<h3>Чи означає торкання смуги розворот?</h3>
+<p>Ні. У тренді ціна може довго йти біля краю. Арапов спочатку дивиться на фазу ринку, рівень і обсяг.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bollinger-bands">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-bollinger-bands-03">
+<p class="faq-topic-label"><em>Стиснення Боллінджера</em></p>
+<h3>Що означає стиснення смуг?</h3>
+<p>Ціна коливається у вужчому діапазоні. Напрямок майбутнього виходу невідомий, тому автор чекає фактичної реакції.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bollinger-bands">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-bollinger-bands-04">
+<p class="faq-topic-label"><em>Боллінджер та обсяг</em></p>
+<h3>Навіщо дивитися обсяг разом зі смугами?</h3>
+<p>Щоб оцінити реакцію біля важливого рівня й відрізнити продовження від невдалого виходу. Одна лінія не пояснює всю ситуацію.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/bollinger-bands">Докладний розбір</a></p>
+</div>
+             
+             
+             </section>
+             <section class="faq-reading-topic" id="topic-ichimoku-cloud" aria-labelledby="heading-ichimoku-cloud">
+             <h2 id="heading-ichimoku-cloud">10. Тренд і хмара Ішимоку</h2>
+             <div class="faq-item" id="question-uk-ichimoku-cloud-01">
+<p class="faq-topic-label"><em>Лінії Ішимоку</em></p>
+<h3>З чого складається Ішимоку?</h3>
+<p>З п'яти ліній, дві утворюють хмару. Вони використовують минулі ціни, тому хмара попереду не означає знання майбутнього.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/ichimoku-cloud">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-ichimoku-cloud-02">
+<p class="faq-topic-label"><em>Ціна і хмара</em></p>
+<h3>Що означає ціна над або під хмарою Ішимоку?</h3>
+<p>Над хмарою зазвичай розглядають висхідну картину, під нею — низхідну. Усередині напрямок менш визначений; це орієнтири для перевірки.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/ichimoku-cloud">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-ichimoku-cloud-03">
+<p class="faq-topic-label"><em>Перетин TK</em></p>
+<h3>Що означає перетин Тенкан і Кідзюн?</h3>
+<p>Зміну співвідношення двох розрахованих ліній. Арапов перевіряє загальний рух і положення ціни, а не входить за самим перетином.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/ichimoku-cloud">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-ichimoku-cloud-04">
+<p class="faq-topic-label"><em>Ішимоку для початківця</em></p>
+<h3>Чи варто новачку починати з Ішимоку?</h3>
+<p>Арапов пропонує спочатку зрозуміти тренд і рівні на самій ціні. Тоді простіше розібратися з кількома лініями й обмеженнями розрахунку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/ichimoku-cloud">Докладний розбір</a></p>
+</div>
+             </section>
+             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-chart-analysis">Графіки та технічний аналіз</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
+             </nav>
+<section class="faq-reading-about">
+<h2>Про матеріали бібліотеки</h2>
+<p>Розділ укладено на основі матеріалів бібліотеки ArapovTrade та навчальних відео Ігоря Арапова. Тут можна знайти визначення, порівняння інструментів, пояснення ринкової механіки та розбори авторського підходу до трейдингу.</p>
+<p>Автор бібліотеки — <a class="linkrefinto" href="https://arapov.trade/uk"><strong>Ігор Арапов</strong></a>, практикуючий трейдер з 2013 року. Докладні матеріали розкривають контекст кожного питання; короткі відповіді слугують відправною точкою для вивчення теми.</p>
 </section>
-              </article>
+</article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Фільтр за категоріями
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Популярне
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/uk/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleUkr"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleUkr }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Фільтр за категоріями
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Популярне
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/uk/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleUkr"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleUkr }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -1222,71 +597,78 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Наші проєкти доступні кожному охочому
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Наші проєкти доступні кожному охочому
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Оберіть тему, яка вас цікавить, і почніть навчання
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Оберіть тему, яка вас цікавить, і почніть навчання
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
+

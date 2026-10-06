@@ -1,648 +1,520 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="en">
-              <header>
-                <h1>Trading Q&A — ArapovTrade Library</h1>
-              </header>
-              <article>
-                <p>
-                  How does an exchange work? How do you read charts and trading
-                  volume? What does ATR show? How does spot trading differ from
-                  futures? How do you calculate risk and position size? This
-                  section brings together the topics explained in the
-                  ArapovTrade library.
-                </p>
-                <p>
-                  Choose the topic that interests you. The topic pages combine
-                  short questions and answers with links to detailed articles.
-                  This lets you first understand the core idea, then explore
-                  definitions, examples and practical applications. Selected
-                  questions also include video explanations by Igor Arapov.
-                </p>
-                <nav aria-label="Questions and answers by topic">
-                  <h2>Choose a topic</h2>
-                  <ol>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('getting-started')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Getting Started and Trading Systems</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('risk-psychology')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Trading Risk and Psychology</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('chart-analysis')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Charts and Technical Analysis</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('indicators')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Indicators and Volatility</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('financial-markets')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >How Financial Markets Work</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('volume-wyckoff-smc')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Volume Analysis, Wyckoff and Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('crypto-mechanics')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Cryptocurrency Mechanics and Security</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('bitcoin-altcoins')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Bitcoin, Altcoins and Market Cycles</a
-                      >
-                    </li>
-                  </ol>
-                </nav>
-                <!-- Register the new /en/freestudying/trading-faq-* topic routes when creating the eight pages. -->
-                <section
-                  id="getting-started"
-                  aria-labelledby="getting-started-title"
-                >
-                  <h2 id="getting-started-title">
-                    Getting Started and Trading Systems
-                  </h2>
-                  <p>
-                    How to move from basic concepts to practice: choose a
-                    platform and a broker, understand different approaches to
-                    trading and establish the rules of your system.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Trading and investing, long
-                    and short positions, education, platforms, brokers, trading
-                    styles, prop trading, copy trading, AI in trading and
-                    testing a trading system.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>What is trading in simple terms?</li>
-                    <li>
-                      What is a trading terminal, and why do you need one?
-                    </li>
-                    <li>
-                      What are the main trading styles based on holding time?
-                    </li>
-                    <li>What is a trading system?</li>
-                    <li>What are prop trading and prop firms?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-getting-started"
-                      >Questions and answers: getting started and trading
-                      systems</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="risk-psychology"
-                  aria-labelledby="risk-psychology-title"
-                >
-                  <h2 id="risk-psychology-title">
-                    Trading Risk and Psychology
-                  </h2>
-                  <p>
-                    How to limit losses, calculate position size and follow
-                    trading rules under emotional pressure.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Risk management, position
-                    sizing, stop-loss and take-profit orders, expected value,
-                    losing streaks, averaging, martingale, fear, greed and
-                    discipline.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>
-                      How does risk management differ from money management?
-                    </li>
-                    <li>What does managing an open position involve?</li>
-                    <li>
-                      How does averaging change the average entry price of a
-                      position?
-                    </li>
-                    <li>
-                      Why is psychology important for following a trading
-                      system?
-                    </li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-risk-psychology"
-                      >Questions and answers: trading risk and psychology</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="chart-analysis"
-                  aria-labelledby="chart-analysis-title"
-                >
-                  <h2 id="chart-analysis-title">
-                    Charts and Technical Analysis
-                  </h2>
-                  <p>
-                    How to read price movements, identify levels and assess
-                    candlestick formations and chart patterns.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Timeframes, trends and
-                    ranges, support and resistance, channels, breakouts and
-                    retests, Japanese candlesticks, pin bars, chart patterns,
-                    Elliott waves and Fibonacci levels.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>What does technical market analysis study?</li>
-                    <li>What counts as a breakout of a price level?</li>
-                    <li>Which four prices does a Japanese candlestick show?</li>
-                    <li>What is a price pattern?</li>
-                    <li>What do Fibonacci retracement levels show?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-chart-analysis"
-                      >Questions and answers: charts and technical analysis</a
-                    >
-                  </p>
-                </section>
-                <section id="indicators" aria-labelledby="indicators-title">
-                  <h2 id="indicators-title">Indicators and Volatility</h2>
-                  <p>
-                    What indicators measure, how to interpret their signals and
-                    why those signals should be considered in their market
-                    context.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> ATR, ADX, RSI, MACD, the
-                    stochastic oscillator, moving averages, VWAP, Bollinger
-                    Bands and the Ichimoku Cloud.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>What does ATR measure?</li>
-                    <li>Does ADX show the direction of a trend?</li>
-                    <li>What is RSI?</li>
-                    <li>How is MACD constructed?</li>
-                    <li>What is VWAP?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-indicators"
-                      >Questions and answers: indicators and volatility</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="financial-markets"
-                  aria-labelledby="financial-markets-title"
-                >
-                  <h2 id="financial-markets-title">
-                    How Financial Markets Work
-                  </h2>
-                  <p>
-                    How participants and orders interact, how financial
-                    instruments differ and how economic events relate to
-                    markets.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Exchanges, brokers and
-                    market makers, the order book, bid and ask, spreads, order
-                    types, Forex, leverage, trading sessions, news, futures,
-                    options, stocks and bonds.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>
-                      How does an exchange organize trading, and what role does
-                      a broker play?
-                    </li>
-                    <li>How do market, limit and stop orders differ?</li>
-                    <li>
-                      What is Forex, and why are currencies traded in pairs?
-                    </li>
-                    <li>What is a derivative?</li>
-                    <li>How does a bond differ from a stock?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-financial-markets"
-                      >Questions and answers: how financial markets work</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="volume-wyckoff-smc"
-                  aria-labelledby="volume-wyckoff-smc-title"
-                >
-                  <h2 id="volume-wyckoff-smc-title">
-                    Volume Analysis, Wyckoff and Smart Money
-                  </h2>
-                  <p>
-                    How to compare price and volume, study market phases and
-                    examine liquidity structure.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Exchange volume and tick
-                    volume, Volume Profile, Market Profile, accumulation and
-                    distribution, Spring, Upthrust, effort and result, Smart
-                    Money, liquidity pools, Order Blocks and FVGs.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>What does volume analysis study?</li>
-                    <li>Which laws is the Wyckoff method based on?</li>
-                    <li>What is a liquidity pool in SMC terminology?</li>
-                    <li>What is called an order block in SMC?</li>
-                    <li>How does an imbalance differ from a Fair Value Gap?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-volume-wyckoff-smc"
-                      >Questions and answers: volume analysis, Wyckoff and Smart
-                      Money</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="crypto-mechanics"
-                  aria-labelledby="crypto-mechanics-title"
-                >
-                  <h2 id="crypto-mechanics-title">
-                    Cryptocurrency Mechanics and Security
-                  </h2>
-                  <p>
-                    How crypto instruments and services work, where to store
-                    assets and which risks to consider.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Wallets, keys and seed
-                    phrases, stablecoins, USDT, USDC and DAI, DeFi, staking,
-                    tokenomics, perpetual futures, funding rates, arbitrage,
-                    memecoins and scams.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>What is cryptocurrency in simple terms?</li>
-                    <li>How does a hot wallet differ from a cold wallet?</li>
-                    <li>How does a stablecoin maintain its currency peg?</li>
-                    <li>What is DeFi?</li>
-                    <li>What are the main risks of cryptocurrencies?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-crypto-mechanics"
-                      >Questions and answers: cryptocurrency mechanics and
-                      security</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="bitcoin-altcoins"
-                  aria-labelledby="bitcoin-altcoins-title"
-                >
-                  <h2 id="bitcoin-altcoins-title">
-                    Bitcoin, Altcoins and Market Cycles
-                  </h2>
-                  <p>
-                    Which features of individual cryptocurrencies and market
-                    metrics the library explores.
-                  </p>
-                  <p>
-                    <strong>Topics covered:</strong> Bitcoin, halving, Bitcoin
-                    ETFs, Ethereum, Solana, XRP, Bitcoin dominance, the ETH/BTC
-                    ratio, altseason, token supply and market cycles.
-                  </p>
-                  <p><strong>Example questions:</strong></p>
-                  <ul>
-                    <li>
-                      Which Bitcoin properties are important for understanding
-                      its market?
-                    </li>
-                    <li>
-                      What is Bitcoin halving, and how often does it happen?
-                    </li>
-                    <li>What is a Bitcoin ETF?</li>
-                    <li>How does Ethereum differ from Bitcoin?</li>
-                    <li>What is Bitcoin dominance?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/en/freestudying/trading-faq-bitcoin-altcoins"
-                      >Questions and answers: Bitcoin, altcoins and market
-                      cycles</a
-                    >
-                  </p>
-                </section>
-                <section>
-                  <h2>How to Use This Section</h2>
-                  <ol>
-                    <li>
-                      Choose a topic or find a familiar term in the section
-                      description.
-                    </li>
-                    <li>
-                      On the topic page, open a question and read the short
-                      answer.
-                    </li>
-                    <li>
-                      Follow the link to the detailed article to explore
-                      explanations and examples.
-                    </li>
-                    <li>
-                      If an answer includes a video explanation, use the link to
-                      the corresponding lesson chapter.
-                    </li>
-                  </ol>
-                  <p>
-                    The topics are connected: understanding orders helps explain
-                    liquidity, price analysis is complemented by volume, and a
-                    trading system combines entry, exit and risk-control rules.
-                    When studying a question, it is useful to explore related
-                    library materials.
-                  </p>
-                </section>
-                <section>
-  <h2>About the Library Materials</h2>
-  <p>
-    This section is based on materials from the ArapovTrade library and
-    Igor Arapov’s educational videos. Here you can find
-    definitions, comparisons of instruments, explanations of market
-    mechanics, and discussions of the author’s approach to trading.
-  </p>
-  <p>
-    The library’s author is
-    <a class="linkrefinto" href="https://arapov.trade/en"
-      >Igor Arapov</a
-    >, a practicing trader since 2013. The in-depth materials
-    provide context for each question; the short answers serve as
-    a starting point for exploring the topic.
-  </p>
-</section>
-              </article>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="en">
+             <header>
+               <h1>Trading Q&A — ArapovTrade Library</h1>
+             </header>
+             <article>
+               <p>What is trading? Where should you start learning? How do you read a chart, choose a broker and limit losses? Find simple answers across eight areas of the ArapovTrade library. No previous knowledge is needed.</p>
+               <p>Choose a topic, read a short explanation and follow the link when you are ready to explore it in more detail. All materials are available free of charge.</p>
+               <nav aria-label="Questions and answers by topic">
+                 <h2>Choose a topic</h2>
+                 <ol>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#getting-started" (click)="$event.preventDefault(); scrollToFragment('getting-started')">Getting Started and Trading Systems</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#risk-psychology" (click)="$event.preventDefault(); scrollToFragment('risk-psychology')">Trading Risk and Psychology</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#chart-analysis" (click)="$event.preventDefault(); scrollToFragment('chart-analysis')">Charts and Technical Analysis</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#indicators" (click)="$event.preventDefault(); scrollToFragment('indicators')">Indicators and Volatility</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#financial-markets" (click)="$event.preventDefault(); scrollToFragment('financial-markets')">How Financial Markets Work</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#volume-wyckoff-smc" (click)="$event.preventDefault(); scrollToFragment('volume-wyckoff-smc')">Volume Analysis, Wyckoff and Smart Money</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#crypto-mechanics" (click)="$event.preventDefault(); scrollToFragment('crypto-mechanics')">Cryptocurrency Mechanics and Security</a
+                     >
+                   </li>
+                   <li>
+                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
+                        href="#bitcoin-altcoins" (click)="$event.preventDefault(); scrollToFragment('bitcoin-altcoins')">Bitcoin, Altcoins and Market Cycles</a
+                     >
+                   </li>
+                 </ol>
+               </nav>
+               <!-- Register the new /en/freestudying/trading-faq-* topic routes when creating the eight pages. -->
+               <section
+                 id="getting-started"
+                 aria-labelledby="getting-started-title"
+               >
+                 <h2 id="getting-started-title">
+                   Getting Started and Trading Systems
+                 </h2>
+                 <p>Learn where to start, how to choose a broker and platform, practise your first trades and build a trading plan.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Trading and investing, long and short positions, education, platforms, brokers, trading styles, prop trading, copy trading, AI in trading and testing a trading system.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What is trading?</li>
+                   <li>Where should I start learning to trade?</li>
+                   <li>How do I choose a broker?</li>
+                   <li>What can I learn on a demo account?</li>
+                   <li>What are scalping, day trading and swing trading?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-getting-started"
+                     >Questions and answers: getting started and trading systems</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="risk-psychology"
+                 aria-labelledby="risk-psychology-title"
+               >
+                 <h2 id="risk-psychology-title">
+                   Trading Risk and Psychology
+                 </h2>
+                 <p>Learn how to limit a possible loss, choose your trade size and recognise decisions driven by fear or greed.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Risk management, position sizing, stop-loss and take-profit orders, expected value, losing streaks, averaging, martingale, fear, greed and discipline.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>How much should I risk on one trade?</li>
+                   <li>How do I calculate my trade size?</li>
+                   <li>Why set a stop-loss before entering?</li>
+                   <li>How can emotions interfere with a trading plan?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-risk-psychology"
+                     >Questions and answers: trading risk and psychology</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="chart-analysis"
+                 aria-labelledby="chart-analysis-title"
+               >
+                 <h2 id="chart-analysis-title">
+                   Charts and Technical Analysis
+                 </h2>
+                 <p>Learn to read candles, recognise trends and find levels where price may pause or turn.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Timeframes, trends and ranges, support and resistance, channels, breakouts and retests, Japanese candlesticks, pin bars, chart patterns, Elliott waves and Fibonacci levels.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What is technical analysis?</li>
+                   <li>What is a timeframe?</li>
+                   <li>What is a trend, and what is a range?</li>
+                   <li>What does a candlestick show?</li>
+                   <li>What is a breakout?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-chart-analysis"
+                     >Questions and answers: charts and technical analysis</a
+                   >
+                 </p>
+               </section>
+               <section id="indicators" aria-labelledby="indicators-title">
+                 <h2 id="indicators-title">Indicators and Volatility</h2>
+                 <p>Find out what indicators measure, how to read their signals and why one signal is not enough to open a trade.</p>
+                 <p>
+                   <strong>Topics covered:</strong> ATR, ADX, RSI, MACD, the stochastic oscillator, moving averages, VWAP, Bollinger Bands and the Ichimoku Cloud.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What does ATR measure?</li>
+                   <li>What is RSI?</li>
+                   <li>What is MACD?</li>
+                   <li>What is VWAP?</li>
+                   <li>What is a trading indicator?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-indicators"
+                     >Questions and answers: indicators and volatility</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="financial-markets"
+                 aria-labelledby="financial-markets-title"
+               >
+                 <h2 id="financial-markets-title">
+                   How Financial Markets Work
+                 </h2>
+                 <p>Understand exchanges, brokers and orders, and the differences between shares, currencies, bonds and trading contracts.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Exchanges, brokers and market makers, the order book, bid and ask, spreads, order types, Forex, leverage, trading sessions, news, futures, options, stocks and bonds.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>How is an exchange different from a broker?</li>
+                   <li>What is an order book?</li>
+                   <li>What is Forex?</li>
+                   <li>How is spot trading different from futures?</li>
+                   <li>How is a bond different from a share?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-financial-markets"
+                     >Questions and answers: how financial markets work</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="volume-wyckoff-smc"
+                 aria-labelledby="volume-wyckoff-smc-title"
+               >
+                 <h2 id="volume-wyckoff-smc-title">
+                   Volume Analysis, Wyckoff and Smart Money
+                 </h2>
+                 <p>Learn what volume shows, how large participants build positions and why price can break a level and quickly return.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Exchange volume and tick volume, Volume Profile, Market Profile, accumulation and distribution, Spring, Upthrust, effort and result, Smart Money, liquidity pools, Order Blocks and FVGs.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What does trading volume show?</li>
+                   <li>What is the Wyckoff method based on?</li>
+                   <li>What is a liquidity pool on a trading chart?</li>
+                   <li>What is an order block?</li>
+                   <li>How do I recognise an FVG?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-volume-wyckoff-smc"
+                     >Questions and answers: volume analysis, Wyckoff and Smart Money</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="crypto-mechanics"
+                 aria-labelledby="crypto-mechanics-title"
+               >
+                 <h2 id="crypto-mechanics-title">
+                   Cryptocurrency Mechanics and Security
+                 </h2>
+                 <p>Understand how cryptocurrencies work, where to keep coins and how to recognise risks and scams.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Wallets, keys and seed phrases, stablecoins, USDT, USDC and DAI, DeFi, staking, tokenomics, perpetual futures, funding rates, arbitrage, memecoins and scams.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What is cryptocurrency?</li>
+                   <li>How are hot, cold and exchange wallets different?</li>
+                   <li>Why should I keep my seed phrase offline?</li>
+                   <li>What is staking?</li>
+                   <li>What risks should a crypto beginner understand?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-crypto-mechanics"
+                     >Questions and answers: cryptocurrency mechanics and security</a
+                   >
+                 </p>
+               </section>
+               <section
+                 id="bitcoin-altcoins"
+                 aria-labelledby="bitcoin-altcoins-title"
+               >
+                 <h2 id="bitcoin-altcoins-title">
+                   Bitcoin, Altcoins and Market Cycles
+                 </h2>
+                 <p>Explore the differences between Bitcoin, Ethereum, Solana and XRP, and learn about halvings and crypto market cycles.</p>
+                 <p>
+                   <strong>Topics covered:</strong> Bitcoin, halving, Bitcoin ETFs, Ethereum, Solana, XRP, Bitcoin dominance, the ETH/BTC ratio, altseason, token supply and market cycles.
+                 </p>
+                 <p><strong>Example questions:</strong></p>
+                 <ul>
+                   <li>What makes Bitcoin different from many other cryptocurrencies?</li>
+                   <li>What is a Bitcoin halving?</li>
+                   <li>What do I own when I buy a Bitcoin ETF?</li>
+                   <li>How is Ethereum different from Bitcoin?</li>
+                   <li>What does Bitcoin dominance measure?</li>
+                 </ul>
+                 <p>
+                   <a
+                     class="linkrefinto"
+                     href="/en/freestudying/trading-faq-bitcoin-altcoins"
+                     >Questions and answers: Bitcoin, altcoins and market cycles</a
+                   >
+                 </p>
+               </section>
+               <section>
+                 <h2>How to Use This Section</h2>
+                 <ol>
+                   <li>Choose a topic that interests you.</li>
+                   <li>Find your question and read the short answer.</li>
+                   <li>Follow the link to the detailed article for explanations and examples.</li>
+                   <li>Return to the topic list when you want to explore another question.</li>
+                 </ol>
+                 <p>You can learn gradually: start with basic terms, then charts and volume, followed by trading rules and risk limits. Explore the topics in an order that works for you.</p>
+               </section>
+               <section>
+                 <h2>About the Library Materials</h2>
+                 <p>This section is based on the ArapovTrade library and Igor Arapov's educational videos. It provides definitions, comparisons of instruments, explanations of market mechanics and discussions of the author's approach to trading.</p>
+                 <p>The library's author is <a class="linkrefinto" href="https://arapov.trade/en"
+                     >Igor Arapov</a
+                   >, a practising trader since 2013. The detailed materials explain the context behind each question; the short answers provide a starting point for studying the topic.</p>
+               </section>
+             </article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    PREVIOUS <span class="page_none_block">ARTICLE</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    NEXT <span class="page_none_block">ARTICLE</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Filter by category
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   PREVIOUS <span class="page_none_block">ARTICLE</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Popular
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   NEXT <span class="page_none_block">ARTICLE</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/en/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleEn"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleEn }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Filter by category
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Popular
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/en/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleEn"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleEn }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -651,71 +523,78 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Our projects are available to everyone
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Our projects are available to everyone
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Choose a topic that interests you and start learning
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Choose a topic that interests you and start learning
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
+

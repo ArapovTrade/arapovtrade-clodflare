@@ -1,546 +1,357 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="uk">
-              <header>
-                <h1>
-                  Питання та відповіді з трейдингу — бібліотека ArapovTrade
-                </h1>
-              </header>
-              <article>
-                <p>
-                  Як працює біржа? Як читати графік та обʼєм? Що показує ATR? Як
-                  розрахувати ризик? Оберіть тему, прочитайте коротку відповідь
-                  і перейдіть до докладного матеріалу бібліотеки ArapovTrade.
-                </p>
-                <nav aria-label="Оберіть тему">
-                  <h2>Оберіть тему</h2>
-                  <ol>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('getting-started')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Початок торгівлі та торгова система</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('risk-psychology')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Ризик і психологія трейдингу</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('chart-analysis')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Графіки та технічний аналіз</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('indicators')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Індикатори та волатильність</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('financial-markets')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як влаштовані фінансові ринки</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('volume-wyckoff-smc')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Обʼємний аналіз, Вайкофф і Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('crypto-mechanics')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Криптовалюти: устрій і безпека</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('bitcoin-altcoins')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Bitcoin, альткоїни та ринкові цикли</a
-                      >
-                    </li>
-                  </ol>
-                </nav>
-                <section id="getting-started">
-                  <h2>Початок торгівлі та торгова система</h2>
-                  <p>
-                    Як перейти від основних понять до практики: навчання,
-                    брокери, платформи, стилі торгівлі та правила системи.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що таке трейдинг простими словами?</li>
-                    <li>Що таке торговий термінал і навіщо він потрібен?</li>
-                    <li>
-                      Що таке проп-трейдинг і проп-фірми простими словами?
-                    </li>
-                    <li>
-                      Які бувають стилі торгівлі і чим вони відрізняються?
-                    </li>
-                    <li>Що таке торгова система і навіщо вона потрібна?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-getting-started"
-                      >Початок торгівлі та торгова система: питання та
-                      відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="risk-psychology">
-                  <h2>Ризик і психологія трейдингу</h2>
-                  <p>
-                    Як обмежувати втрати, розраховувати позицію та дотримуватися
-                    торгових правил під емоційним тиском.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>
-                      Що таке управління капіталом і ризик-менеджмент у
-                      трейдингу?
-                    </li>
-                    <li>Що таке управління угодою в трейдингу?</li>
-                    <li>Чому психологія в трейдингу важливіша за стратегію?</li>
-                    <li>
-                      Що таке усереднення в трейдингу і як рахується середня
-                      ціна?
-                    </li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-risk-psychology"
-                      >Ризик і психологія трейдингу: питання та відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="chart-analysis">
-                  <h2>Графіки та технічний аналіз</h2>
-                  <p>
-                    Як читати рух ціни, знаходити рівні та оцінювати свічні й
-                    графічні структури.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що таке технічний аналіз і на чому він тримається?</li>
-                    <li>
-                      Що таке цінові фігури і чому мозок шукає їх у хаосі?
-                    </li>
-                    <li>Що таке пробій рівня підтримки та опору?</li>
-                    <li>Що таке японські свічки і як їх читати?</li>
-                    <li>Що таке хвильова теорія Елліотта?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-chart-analysis"
-                      >Графіки та технічний аналіз: питання та відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="indicators">
-                  <h2>Індикатори та волатильність</h2>
-                  <p>
-                    Що вимірюють ATR, RSI, MACD, ADX, VWAP та інші індикатори,
-                    як читати сигнали та враховувати обмеження.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>
-                      Що таке торгові індикатори і чому вони запізнюються?
-                    </li>
-                    <li>Що таке індикатор ADX?</li>
-                    <li>Що таке ATR (Average True Range)?</li>
-                    <li>Що таке індикатор MACD і як він розраховується?</li>
-                    <li>Що таке RSI (індекс відносної сили)?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-indicators"
-                      >Індикатори та волатильність: питання та відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="financial-markets">
-                  <h2>Як влаштовані фінансові ринки</h2>
-                  <p>
-                    Як працюють біржа, ордери, Forex, фʼючерси, опціони та
-                    облігації; як економічні події повʼязані з ринками.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що таке біржа і чим вона відрізняється від брокера?</li>
-                    <li>
-                      Як формується ціна на біржі: попит, пропозиція та обсяг?
-                    </li>
-                    <li>Що таке біржовий ордер і які вони бувають?</li>
-                    <li>Що таке Forex і як влаштований валютний ринок?</li>
-                    <li>Що таке деривативи простими словами?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-financial-markets"
-                      >Як влаштовані фінансові ринки: питання та відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="volume-wyckoff-smc">
-                  <h2>Обʼємний аналіз, Вайкофф і Smart Money</h2>
-                  <p>
-                    Як зіставляти ціну й обʼєм, читати фази Вайкоффа,
-                    ліквідність, Order Block та FVG.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що означає термін Smart Money?</li>
-                    <li>Що таке імбаланс і FVG у трейдингу?</li>
-                    <li>Що таке ордер блок у трейдингу?</li>
-                    <li>Що таке пул ліквідності у трейдингу?</li>
-                    <li>Що таке об&#x27;ємний аналіз ринку?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
-                      >Обʼємний аналіз, Вайкофф і Smart Money: питання та
-                      відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="crypto-mechanics">
-                  <h2>Криптовалюти: устрій і безпека</h2>
-                  <p>
-                    Як влаштовані криптогаманці, стейблкоїни, DeFi, стейкінг,
-                    токеноміка та криптодеривативи; які ризики враховувати.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що таке криптовалюта простими словами?</li>
-                    <li>
-                      Що таке безстроковий фʼючерс (perpetual) і чим він
-                      відрізняється від звичайного?
-                    </li>
-                    <li>Які ризики в крипті чатують на новачка?</li>
-                    <li>
-                      Що таке стейблкоїн і як тримається привʼязка до долара?
-                    </li>
-                    <li>
-                      Що таке гарячий і холодний гаманець і в чому різниця?
-                    </li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-crypto-mechanics"
-                      >Криптовалюти: устрій і безпека: питання та відповіді</a
-                    >
-                  </p>
-                </section>
-                <section id="bitcoin-altcoins">
-                  <h2>Bitcoin, альткоїни та ринкові цикли</h2>
-                  <p>
-                    Питання про Bitcoin, Ethereum, Solana, XRP, халвінг, ETF,
-                    домінування BTC та ринкові цикли.
-                  </p>
-                  <p><strong>Приклади питань:</strong></p>
-                  <ul>
-                    <li>Що таке біткоїн і як він працює простими словами?</li>
-                    <li>Що таке Bitcoin ETF і як він працює?</li>
-                    <li>
-                      Що таке Ethereum і чим він відрізняється від Bitcoin?
-                    </li>
-                    <li>
-                      Що таке Solana і чим вона відрізняється від Ethereum?
-                    </li>
-                    <li>Що таке XRP і для чого використовується Ripple?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/uk/freestudying/trading-faq-bitcoin-altcoins"
-                      >Bitcoin, альткоїни та ринкові цикли: питання та
-                      відповіді</a
-                    >
-                  </p>
-                </section>
-                <section>
-                  <h2>Як користуватися розділом</h2>
-                  <ol>
-                    <li>Оберіть тему або знайомий термін.</li>
-                    <li>
-                      На тематичній сторінці знайдіть питання та прочитайте
-                      коротку відповідь.
-                    </li>
-                    <li>
-                      Перейдіть до статті за докладними поясненнями й
-                      прикладами.
-                    </li>
-                  </ol>
-                </section>
-              <section>
-  <h2>Про матеріали бібліотеки</h2>
-  <p>
-    Розділ укладено на основі матеріалів бібліотеки ArapovTrade та
-    навчальних відео Ігоря Арапова. Тут можна знайти
-    визначення, порівняння інструментів, пояснення ринкової
-    механіки та розбори авторського підходу до трейдингу.
-  </p>
-  <p>
-    Автор бібліотеки —
-    <a class="linkrefinto" href="https://arapov.trade/uk"
-      >Ігор Арапов</a
-    >, практикуючий трейдер з 2013 року. Докладні матеріали
-    розкривають контекст кожного питання; короткі відповіді слугують
-    відправною точкою для вивчення теми.
-  </p>
-</section>
-              </article>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="uk">
+             <header>
+               <h1>Питання та відповіді з трейдингу — бібліотека ArapovTrade</h1>
+             </header>
+             <article>
+             <p>Що таке трейдинг? З чого почати навчання? Як читати графік, обрати брокера й обмежувати збитки? Тут зібрані прості відповіді за вісьмома напрямами бібліотеки ArapovTrade. Попередні знання не потрібні. Оберіть тему, прочитайте коротке пояснення й переходьте до докладної статті, коли захочете дізнатися більше. Усі матеріали доступні безкоштовно.</p>
+             <nav aria-label="Оберіть тему"><h2>Оберіть тему</h2><ol>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#getting-started" (click)="$event.preventDefault(); scrollToFragment('getting-started')">Початок торгівлі та торгова система</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#risk-psychology" (click)="$event.preventDefault(); scrollToFragment('risk-psychology')">Ризик і психологія трейдингу</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#chart-analysis" (click)="$event.preventDefault(); scrollToFragment('chart-analysis')">Графіки та технічний аналіз</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#indicators" (click)="$event.preventDefault(); scrollToFragment('indicators')">Індикатори та волатильність</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#financial-markets" (click)="$event.preventDefault(); scrollToFragment('financial-markets')">Як влаштовані фінансові ринки</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#volume-wyckoff-smc" (click)="$event.preventDefault(); scrollToFragment('volume-wyckoff-smc')">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#crypto-mechanics" (click)="$event.preventDefault(); scrollToFragment('crypto-mechanics')">Криптовалюти: устрій і безпека</a></li>
+             <li><a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }" href="#bitcoin-altcoins" (click)="$event.preventDefault(); scrollToFragment('bitcoin-altcoins')">Bitcoin, альткоїни та ринкові цикли</a></li>
+             </ol></nav>
+             <section id="getting-started"><h2>Початок торгівлі та торгова система</h2>
+             <p>З чого почати навчання, як обрати брокера й платформу, спробувати перші угоди та скласти торговий план.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що таке трейдинг простими словами?</li>
+             <li>З чого почати навчання трейдингу?</li>
+             <li>Як обрати надійного брокера?</li>
+             <li>Чим демо-рахунок відрізняється від реального?</li>
+             <li>Які бувають види трейдингу?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система: питання та відповіді</a></p>
+             </section>
+             <section id="risk-psychology"><h2>Ризик і психологія трейдингу</h2>
+             <p>Як заздалегідь обмежити можливий збиток, визначити розмір угоди й не торгувати під впливом страху або жадібності.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Скільки можна ризикувати в одній угоді?</li>
+             <li>Як розрахувати розмір угоди?</li>
+             <li>Як стоп-лос обмежує збиток?</li>
+             <li>Чому емоції заважають торгувати за планом?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу: питання та відповіді</a></p>
+             </section>
+             <section id="chart-analysis"><h2>Графіки та технічний аналіз</h2>
+             <p>Як читати свічки, помічати тренд і знаходити рівні, біля яких ціна може зупинитися або розвернутися.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що таке технічний аналіз?</li>
+             <li>Що таке таймфрейм?</li>
+             <li>Що таке тренд і флет?</li>
+             <li>Де ставити стоп і ціль при пробої?</li>
+             <li>Як перейти від графіка ціни до аналізу обсягів?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-chart-analysis">Графіки та технічний аналіз: питання та відповіді</a></p>
+             </section>
+             <section id="indicators"><h2>Індикатори та волатильність</h2>
+             <p>Що показують індикатори, як читати їхні сигнали й чому одного сигналу недостатньо для угоди.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що показує ATR?</li>
+             <li>Що таке RSI?</li>
+             <li>Як працює MACD?</li>
+             <li>Навіщо великі учасники порівнюють угоди з VWAP?</li>
+             <li>Чому індикатори запізнюються?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність: питання та відповіді</a></p>
+             </section>
+             <section id="financial-markets"><h2>Як влаштовані фінансові ринки</h2>
+             <p>Як працюють біржа й брокер, як виконуються заявки та чим відрізняються акції, валюти, облігації й торгові контракти.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Чим біржа відрізняється від брокера?</li>
+             <li>Що показує біржовий стакан?</li>
+             <li>Хто торгує на валютному ринку?</li>
+             <li>Що таке дериватив?</li>
+             <li>Чим опціон відрізняється від ф'ючерса?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки: питання та відповіді</a></p>
+             </section>
+             <section id="volume-wyckoff-smc"><h2>Обʼємний аналіз, Вайкофф і Smart Money</h2>
+             <p>Що показує обсяг, як великі учасники набирають позиції та чому ціна може пробити рівень і повернутися.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що показує обсяг у трейдингу?</li>
+             <li>На чому ґрунтується метод Вайкоффа?</li>
+             <li>Що таке зняття ліквідності?</li>
+             <li>Як знайти ордер-блок?</li>
+             <li>Чи достатньо повернення у FVG для угоди?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money: питання та відповіді</a></p>
+             </section>
+             <section id="crypto-mechanics"><h2>Криптовалюти: устрій і безпека</h2>
+             <p>Як працюють криптовалюти, де зберігати монети та як розпізнавати ризики й шахрайські схеми.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що таке криптовалюта простими словами?</li>
+             <li>Чим гарячий гаманець відрізняється від холодного?</li>
+             <li>Чому не можна зберігати сід-фразу у фото чи хмарі?</li>
+             <li>Що таке стейкінг?</li>
+             <li>Які ризики є у P2P-арбітражі?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека: питання та відповіді</a></p>
+             </section>
+             <section id="bitcoin-altcoins"><h2>Bitcoin, альткоїни та ринкові цикли</h2>
+             <p>Чим відрізняються Bitcoin, Ethereum, Solana й XRP, що таке халвінг і як розуміти зміни крипторинку.</p>
+             <p><strong>Приклади питань:</strong></p>
+             <ul>
+             <li>Що таке біткоїн?</li>
+             <li>Що таке халвінг біткоїна?</li>
+             <li>Що таке Bitcoin ETF?</li>
+             <li>Чим Ethereum відрізняється від Bitcoin?</li>
+             <li>Що таке домінація біткоїна?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли: питання та відповіді</a></p>
+             </section>
+             <section><h2>Як користуватися розділом</h2><ol>
+             <li>Оберіть тему, яка вас цікавить.</li>
+             <li>Знайдіть своє питання та прочитайте коротку відповідь.</li>
+             <li>Перейдіть за посиланням до докладної статті з поясненнями й прикладами.</li>
+             </ol></section>
+             <section><h2>Про матеріали бібліотеки</h2><p>Розділ укладено на основі матеріалів бібліотеки ArapovTrade та навчальних відео Ігоря Арапова. Тут можна знайти визначення, порівняння інструментів, пояснення ринкової механіки та розбори авторського підходу до трейдингу.</p><p>Автор бібліотеки — <a class="linkrefinto" href="https://arapov.trade/uk">Ігор Арапов</a>, практикуючий трейдер з 2013 року. Докладні матеріали розкривають контекст кожного питання; короткі відповіді слугують відправною точкою для вивчення теми.</p></section>
+             </article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Фільтр за категоріями
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Популярне
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/uk/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleUkr"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleUkr }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Фільтр за категоріями
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Популярне
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/uk/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleUkr"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleUkr }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -549,71 +360,78 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Наші проєкти доступні кожному охочому
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Наші проєкти доступні кожному охочому
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Оберіть тему, яка вас цікавить, і почніть навчання
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Оберіть тему, яка вас цікавить, і почніть навчання
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
+

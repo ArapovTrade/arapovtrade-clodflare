@@ -1,997 +1,498 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="uk">
-              <header>
-                <h1>Ризик і психологія трейдингу: питання та відповіді</h1>
-              </header>
-              <article>
-                <p>
-                  <a class="linkrefinto" href="/uk/freestudying/trading-faq"
-                    >Усі теми: питання та відповіді з трейдингу</a
-                  >
-                </p>
-                <p>
-                  Як обмежувати втрати, розраховувати позицію та дотримуватися
-                  торгових правил під емоційним тиском.
-                </p>
-                <p>
-                  Короткі відповіді за матеріалами бібліотеки ArapovTrade. Під
-                  кожною відповіддю є посилання на докладне пояснення. Авторські
-                  торгові підходи подано як пояснення Ігоря Арапова;
-                  формулювання від першої особи належать автору.
-                </p>
-                <nav aria-label="Зміст">
-                  <h2>Зміст</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-risk-management')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як захистити капітал від великих збитків</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-trade-management')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Коли фіксувати збиток, а коли тримати прибуток</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-averaging-martingale')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Чому усереднення позиції настільки небезпечне</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        (click)="scrollToFragment('topic-trading-psychology')"
-                        [ngStyle]="{ cursor: 'pointer' }"
-                        >Як страх і жадібність керують вашими рішеннями</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-                <section
-                  id="topic-risk-management"
-                  aria-labelledby="heading-risk-management"
-                >
-                  <h2 id="heading-risk-management">
-                    Як захистити капітал від великих збитків
-                  </h2>
-                  <div class="faq-item" id="question-uk-risk-management-01">
-                    <h3>
-                      Що таке управління капіталом і ризик-менеджмент у
-                      трейдингу?
-                    </h3>
-                    <p>
-                      В управління капіталом дві половини: ризик-менеджмент не
-                      дає обнулити рахунок, мані-менеджмент дає йому рости, і
-                      без першої друга не працює.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-02">
-                    <h3>Чому більшість трейдерів втрачають гроші?</h3>
-                    <p>
-                      У мінусі 74-89 відсотків роздрібних рахунків; убиває не
-                      невдача, а завищений ризик без системи, дрібні прибутки
-                      при жирних збитках і суперечка з трендом.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-03">
-                    <h3>
-                      Чому збитки йдуть серіями та як це повʼязано з просадкою?
-                    </h3>
-                    <p>
-                      Депозит спалює не вінрейт, а дисперсія: збитки йдуть
-                      смугами по пʼять-десять поспіль, мінус 20 відсотків
-                      вимагає плюс 25, а мінус 50 уже плюс 100.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-04">
-                    <h3>Навіщо обмежувати ризик невеликою часткою рахунку?</h3>
-                    <p>
-                      Смуга з пʼяти-десяти збитків поспіль приходить до кожного:
-                      ризик 10 відсотків вона зносить, ризик 1-2 відсотки лише
-                      дряпає, звідси й правило.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-05">
-                    <h3>Як розрахувати розмір позиції і лот під ризик?</h3>
-                    <p>
-                      Лот рахується останнім: ризик 1-2 відсотки, стоп за
-                      рівнем, відстань у пунктах, і тільки потім такий лот, щоб
-                      на стопі втратити рівно заплановане; 200 доларів ризику
-                      при стопі 50 пунктів дають 0,4 лота.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-06">
-                    <h3>Як стоп-лос допомагає контролювати ризик?</h3>
-                    <p>
-                      Стоп це не втрата, а плата за право лишитися в грі: став
-                      його одразу при вході, ховай за рівень із запасом і не
-                      рухай у мінус.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-07">
-                    <h3>
-                      Як співвідношення ризику та прибутку впливає на результат
-                      системи?
-                    </h3>
-                    <p>
-                      Співвідношення диктує потрібний вінрейт: 1:1 вимагає
-                      перемог частіше половини, 1:2 задовольняється третиною,
-                      1:3 чвертю; тримати третину до снаги, тримати половину
-                      майже ніхто не витягує.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-08">
-                    <h3>Що таке математичне сподівання торгової системи?</h3>
-                    <p>
-                      Математичне сподівання збирається з вінрейту і
-                      співвідношення; при 33 відсотках перемог і 1:3 середній
-                      результат близько плюс 0,32 на долар ризику, і важелем цим
-                      керуєш ти, а не ринок.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-risk-management-09">
-                    <h3>Як складний відсоток впливає на депозит?</h3>
-                    <p>
-                      Складний відсоток не створює дохід, а множить уже наявний
-                      результат: 5 відсотків на місяць з реінвестом дають
-                      близько 80 відсотків за рік замість 60, але при системі в
-                      мінус він так само прискорює злив.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-
-                  <div class="faq-item" id="question-uk-f004">
-                    <h3>
-                      Чому три валютні позиції можуть бути однією ставкою на
-                      долар?
-                    </h3>
-                    <p>
-                      Різні валютні пари можуть одночасно залежати від того
-                      самого руху долара. Їхні ризики не обовʼязково незалежні.
-                      Тому оцінюють сукупну експозицію, а не лише ліміт окремої
-                      угоди.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/risk-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-trade-management"
-                  aria-labelledby="heading-trade-management"
-                >
-                  <h2 id="heading-trade-management">
-                    Коли фіксувати збиток, а коли тримати прибуток
-                  </h2>
-                  <div class="faq-item" id="question-uk-trade-management-01">
-                    <h3>Що таке управління угодою в трейдингу?</h3>
-                    <p>
-                      Управління угодою це робота після входу: тейк забирає
-                      прибуток, беззбиток знімає ризик, трейлінг веде прибуток,
-                      і всі вони переводять вихід з емоції в правило.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-02">
-                    <h3>Що таке тейк-профіт?</h3>
-                    <p>
-                      Тейк-профіт це відкладений ордер, що сам закриває позицію
-                      на заданому рівні; це дзеркало стопа, і він знімає
-                      жадібність з виходу, фіксуючи план до угоди.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-03">
-                    <h3>Де ставити тейк-профіт: від рівнів, а не від суми?</h3>
-                    <p>
-                      Тейк став від структури ринку, а не від бажаної суми: у
-                      лонзі трохи нижче сильного опору, у шорті трохи вище
-                      сильної підтримки; частину прибутку бери на ближньому
-                      рівні, решту тримай під дальшу ціль зі стопом у беззбитку.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-04">
-                    <h3>Як зіставляти тейк-профіт зі стопом?</h3>
-                    <p>
-                      Тейк без стопа порожній звук: прибуток до цілі має
-                      перекривати ризик хоча б удвічі-втричі, інакше угоду не
-                      беру; уже поставлену за рівнем ціль не відсуваю, коли ціна
-                      до неї підходить.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-05">
-                    <h3>Що означає перенесення стопа в беззбиток?</h3>
-                    <p>
-                      Беззбиток це стоп у точці входу: він прибирає ризик з
-                      угоди, але якщо рушити його рано, страховка обертається
-                      втратою гарних позицій.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-06">
-                    <h3>Чому ранній беззбиток може погіршувати результати?</h3>
-                    <p>
-                      Переноси стоп у беззбиток тільки після того, як ціна
-                      пройшла шлях і закріпилася за рівнем на об&#x27;ємі;
-                      впритул до входу його виносить звичайний відкат, і угода
-                      йде до цілі без тебе.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-07">
-                    <h3>Що таке трейлінг-стоп і як визначати його відстань?</h3>
-                    <p>
-                      Трейлінг розкривається в тренді і їде з рухом далі за
-                      фіксований тейк; уся настройка це дистанція від
-                      волатильності, адже тісна вибиває відкатом, широка віддає
-                      прибуток, а у флеті трейлінг краще не вішати.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trade-management-08">
-                    <h3>
-                      Які складнощі хеджування важливо розуміти початківцю?
-                    </h3>
-                    <p>
-                      Початківцю хедж не потрібен: обмежити збиток простіше і
-                      дешевше стоп-лоссом і ризиком 1-2 відсотки на угоду, а дві
-                      зустрічні позиції лише додають витрат і плутанини.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trade-management"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-averaging-martingale"
-                  aria-labelledby="heading-averaging-martingale"
-                >
-                  <h2 id="heading-averaging-martingale">
-                    Чому усереднення позиції настільки небезпечне
-                  </h2>
-                  <div
-                    class="faq-item"
-                    id="question-uk-averaging-martingale-01"
-                  >
-                    <h3>
-                      Що таке усереднення в трейдингу і як рахується середня
-                      ціна?
-                    </h3>
-                    <p>
-                      Усереднення рухає середню ціну доливом до позиції, але при
-                      x2 обсязі після падіння з 10 до 5 тисяч це лише подвоєна
-                      ставка у вже програній угоді.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/averaging-martingale"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-averaging-martingale-02"
-                  >
-                    <h3>Чому усереднення проти тренду зливає депозит?</h3>
-                    <p>
-                      Долив проти тренду купує там, де ринок жене впертих на
-                      виніс, а тренд іде далеко: євро у 2014-2015 сповзло з 1.40
-                      приблизно до 1.05 за кілька місяців, і середня ціна тут
-                      безсила.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/averaging-martingale"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-averaging-martingale-03"
-                  >
-                    <h3>
-                      Чому трейдер усереднює збиток без початкового плану?
-                    </h3>
-                    <p>
-                      Долив у мінус це угода не з ринком, а з власним его: за
-                      ним стоять заперечення помилки і надія, і вони
-                      перетворюють просадку до 80 на реальну діру.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/averaging-martingale"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-averaging-martingale-04"
-                  >
-                    <h3>Чому мартингейл небезпечний за серії збитків?</h3>
-                    <p>
-                      На сьомому збитку мартингейлу потрібна ставка x128, а
-                      небезпечний він тим, що часто виграє по дрібному і привчає
-                      до контролю, поки одна довга серія не стирає все.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/averaging-martingale"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div
-                    class="faq-item"
-                    id="question-uk-averaging-martingale-05"
-                  >
-                    <h3>
-                      Як не усереднювати в мінус: план, ризик і долив тільки за
-                      трендом?
-                    </h3>
-                    <p>
-                      План вирішує заздалегідь: дійшов стоп, ти вийшов; став
-                      фіксований малий ризик, а долив припускай тільки за
-                      трендом як множник до плюса, але не як порятунок мінуса.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/averaging-martingale"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <section
-                  id="topic-trading-psychology"
-                  aria-labelledby="heading-trading-psychology"
-                >
-                  <h2 id="heading-trading-psychology">
-                    Як страх і жадібність керують вашими рішеннями
-                  </h2>
-                  <div class="faq-item" id="question-uk-trading-psychology-01">
-                    <h3>Чому психологія в трейдингу важливіша за стратегію?</h3>
-                    <p>
-                      Ринок карає не за незнання індикаторів, а за передбачувані
-                      помилки мислення: професійні гроші забирають у натовпу за
-                      рахунок його емоцій, і поки рішеннями правлять страх і
-                      жадібність, будь-яка система зливається.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-02">
-                    <h3>
-                      Чим системна торгівля відрізняється від азартної
-                      поведінки?
-                    </h3>
-                    <p>
-                      Один і той самий графік можна торгувати як казино або як
-                      бізнес, і вирішує це голова: вхід без розуміння навіщо
-                      ставить тебе на від&#x27;ємне матсподівання, а система з
-                      ризиком малою часткою і співвідношенням від 1:3 тримає
-                      математику в плюсі.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-03">
-                    <h3>Як страх, жадібність та ейфорія впливають на угоди?</h3>
-                    <p>
-                      Страх і жадібність гойдають з крайності в крайність, а
-                      тильт після збитку зливає депозит за вечір; новачок
-                      проходить шлях від повної безтурботності до страху перед
-                      кожною угодою, і ліки від обох країв одні це правила
-                      замість почуттів.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-04">
-                    <h3>Що таке FOMO в трейдингу?</h3>
-                    <p>
-                      FOMO будить вас на самому верху, коли профі фіксують
-                      прибуток і віддають його тим, хто спізнився: біткоїн зі
-                      126 до 60 тисяч показав це в чистому вигляді, а найкращий
-                      засіб це пам&#x27;ятати, що ринок нікому нічого не винен і
-                      наступний автобус буде.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-05">
-                    <h3>
-                      Як психологія натовпу повʼязана з діями великого капіталу?
-                    </h3>
-                    <p>
-                      Ринок переносить гроші від емоційного натовпу до холодного
-                      капіталу: натовп продає у страху на дні (накопичення) і
-                      купує в ейфорії на верхах (розподіл), а крупний капітал
-                      стоїть на іншому боці його емоцій, тому психологія і метод
-                      для мене одне ціле.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-06">
-                    <h3>Які когнітивні викривлення заважають трейдеру?</h3>
-                    <p>
-                      Викривлення б&#x27;ють непомітніше за емоції: найсильніше
-                      неприйняття втрат (збиток тримають, прибуток ріжуть), плюс
-                      упередженість підтвердження, якір до ціни входу, ефект
-                      натовпу і надмірна впевненість; силою волі їх не прибрати,
-                      можна лише помічати й обходити.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-07">
-                    <h3>Як оцінювати просадку та серію угод?</h3>
-                    <p>
-                      Збиткова серія це нормальна статистика прибуткової
-                      системи, а не поломка; після просадки тягне відігратися,
-                      після виграшів приходить зіркова хвороба, і обидві ями про
-                      оцінку себе за однією угодою; лікує малий ризик на угоду і
-                      журнал, який відділяє погане рішення від невдалого
-                      результату.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-08">
-                    <h3>
-                      Як тримати емоції в шорах: план, журнал і дисципліна?
-                    </h3>
-                    <p>
-                      Емоції не перемогти в моменті, їх виносять за дужки
-                      заздалегідь: торговий план, стоп, маленький ризик, журнал,
-                      ліміт угод і пауза після збитку замість відіграшу, плюс
-                      погляд на збиток як на статтю витрат, а не провал.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-trading-psychology-09">
-                    <h3>Як змінюється психологія трейдера зі стажем?</h3>
-                    <p>
-                      Психологія проходить стадії: безтурботність новачка, страх
-                      після перших збитків із метаннями в пошуках грааля і
-                      нарешті зрілість, де угода це рядок у журналі, а не
-                      адреналін; шлях не перестрибнути, можна лише скоротити, а
-                      просадки вчать сильніше за теорію.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-f095">
-                    <h3>Як помилка неповоротних витрат впливає на трейдера?</h3>
-                    <p>
-                      Минулі витрати можуть змушувати продовжувати невдале
-                      рішення, щоб виправдати вкладення. У трейдингу це
-                      проявляється в додаванні грошей до збиткової позиції без
-                      нового обґрунтування. Автор протиставляє цьому правила
-                      ризику.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-f096">
-                    <h3>Що таке ефект недавнього в трейдингу?</h3>
-                    <p>
-                      Останні результати можуть отримувати надмірну вагу в
-                      очікуваннях. Коротка серія успіхів спонукає чекати
-                      продовження та підвищувати ризик. Автор оцінює систему за
-                      серією угод і сталістю правил.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                  <div class="faq-item" id="question-uk-f097">
-                    <h3>
-                      Чому очікування зростання після пʼяти падінь є помилкою
-                      гравця?
-                    </h3>
-                    <p>
-                      Повторення результату саме по собі не доводить, що
-                      наступний має бути протилежним. Це помилка гравця. Рішення
-                      потребує аналізу ринкових умов і правил системи, а не
-                      підрахунку однакових рухів.
-                    </p>
-                    <p>
-                      <a
-                        class="linkrefinto"
-                        href="https://arapov.trade/uk/freestudying/trading-psychology"
-                        >Докладний розбір</a
-                      >
-                    </p>
-                  </div>
-                </section>
-                <nav aria-label="Інші теми бібліотеки">
-                  <h2>Інші теми бібліотеки</h2>
-                  <ul>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-getting-started"
-                        >Початок торгівлі та торгова система</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-chart-analysis"
-                        >Графіки та технічний аналіз</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-indicators"
-                        >Індикатори та волатильність</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-financial-markets"
-                        >Як влаштовані фінансові ринки</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-volume-wyckoff-smc"
-                        >Обʼємний аналіз, Вайкофф і Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-crypto-mechanics"
-                        >Криптовалюти: устрій і безпека</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="linkrefinto"
-                        href="/uk/freestudying/trading-faq-bitcoin-altcoins"
-                        >Bitcoin, альткоїни та ринкові цикли</a
-                      >
-                    </li>
-                  </ul>
-                  <p>
-                    <a class="linkrefinto" href="/uk/freestudying/trading-faq"
-                      >Усі теми: питання та відповіді з трейдингу</a
-                    >
-                  </p>
-                </nav>
-               <section>
-  <h2>Про матеріали бібліотеки</h2>
-  <p>
-    Розділ укладено на основі матеріалів бібліотеки ArapovTrade та
-    навчальних відео Ігоря Арапова. Тут можна знайти
-    визначення, порівняння інструментів, пояснення ринкової
-    механіки та розбори авторського підходу до трейдингу.
-  </p>
-  <p>
-    Автор бібліотеки —
-    <a class="linkrefinto" href="https://arapov.trade/uk"
-      >Ігор Арапов</a
-    >, практикуючий трейдер з 2013 року. Докладні матеріали
-    розкривають контекст кожного питання; короткі відповіді слугують
-    відправною точкою для вивчення теми.
-  </p>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="uk">
+             <header>
+               <h1>Ризик і психологія трейдингу: питання та відповіді</h1>
+             </header>
+             <article class="faq-reading">
+<!-- Editorial rule: use natural Ukrainian beginner language in topic labels,
+     questions and answers. Avoid repeating section titles. Keep content evergreen;
+     dates belong only in explanations of specific historical events. -->
+<p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
+<p>Дізнайтеся, як обмежувати збитки й не торгувати під впливом емоцій. Кожна відповідь веде до докладного матеріалу.</p>
+<nav class="faq-reading-nav" aria-label="Зміст">
+<h2>Зміст</h2>
+<ul>
+<li><a class="linkrefinto" href="#topic-risk-management" (click)="$event.preventDefault(); scrollToFragment('topic-risk-management')"><span aria-hidden="true">→ </span>Як обмежувати втрати</a></li>
+<li><a class="linkrefinto" href="#topic-trade-management" (click)="$event.preventDefault(); scrollToFragment('topic-trade-management')"><span aria-hidden="true">→ </span>Після відкриття угоди</a></li>
+<li><a class="linkrefinto" href="#topic-averaging-martingale" (click)="$event.preventDefault(); scrollToFragment('topic-averaging-martingale')"><span aria-hidden="true">→ </span>Додавання грошей у позицію</a></li>
+<li><a class="linkrefinto" href="#topic-trading-psychology" (click)="$event.preventDefault(); scrollToFragment('topic-trading-psychology')"><span aria-hidden="true">→ </span>Поведінка та рішення трейдера</a></li>
+</ul>
+</nav>
+<section class="faq-reading-topic" id="topic-risk-management" aria-labelledby="heading-risk-management">
+             <h2 id="heading-risk-management">1. Як обмежувати втрати</h2>
+             <div class="faq-item" id="question-uk-risk-management-01">
+<p class="faq-topic-label"><em>Ризик на угоду</em></p>
+<h3>Чим ризик-менеджмент відрізняється від управління капіталом?</h3>
+<p>Ризик-менеджмент обмежує можливі втрати. Управління капіталом визначає, скільки грошей виділяти на угоди та як змінювати їхній розмір.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-02">
+<p class="faq-topic-label"><em>Втрати у трейдингу</em></p>
+<h3>Чому трейдери втрачають гроші?</h3>
+<p>Через завеликий ризик, відсутність правил і спроби відігратися. Арапов наголошує: правильний вхід не врятує рахунок, якщо збитки не обмежені.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-03">
+<p class="faq-topic-label"><em>Серія збитків</em></p>
+<h3>Чому кілька збитків поспіль небезпечні?</h3>
+<p>Вони зменшують рахунок і посилюють емоції. Що більша втрата, то більше потрібно заробити на залишку грошей для відновлення.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-04">
+<p class="faq-topic-label"><em>Ліміт втрат</em></p>
+<h3>Скільки можна ризикувати в одній угоді?</h3>
+<p>У бібліотеці розглядається орієнтир 1–2% рахунку. Ризик потрібно узгоджувати із системою та іншими позиціями, щоб витримувати серії збитків.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-05">
+<p class="faq-topic-label"><em>Розмір позиції</em></p>
+<h3>Як розрахувати розмір угоди?</h3>
+<p>Визначте допустиму втрату в грошах і відстань до стопа. Підберіть кількість активу так, щоб плановий збиток не перевищував цю суму.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-06">
+<p class="faq-topic-label"><em>Стоп-лос</em></p>
+<h3>Як стоп-лос обмежує збиток?</h3>
+<p>Він задає вихід, коли ціна йде проти вашої ідеї. Арапов радить визначати його до входу й не відсувати через надію на розворот.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-07">
+<p class="faq-topic-label"><em>Ризик і прибуток</em></p>
+<h3>Як співвідношення ризику та прибутку впливає на результат?</h3>
+<p>Якщо прибуткова угода приносить більше, ніж втрачається в збитковій, вигравати можна рідше. Але підсумок також залежить від комісій і фактичних результатів.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-08">
+<p class="faq-topic-label"><em>Математичне сподівання</em></p>
+<h3>Що таке математичне сподівання у трейдингу?</h3>
+<p>Це середній результат угоди з урахуванням частоти та розміру прибутків і збитків. Воно допомагає оцінити систему на серії угод.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-risk-management-09">
+<p class="faq-topic-label"><em>Складний відсоток</em></p>
+<h3>Що таке складний відсоток?</h3>
+<p>Прибуток залишається на рахунку й бере участь у наступних операціях. Це може прискорювати зростання, але збитки зменшують основу для подальшої торгівлі.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             
+             <div class="faq-item" id="question-uk-f004">
+<p class="faq-topic-label"><em>Спільний ризик угод</em></p>
+<h3>Чому різні валютні угоди можуть мати один ризик?</h3>
+<p>Кілька пар можуть одночасно залежати від долара. Тоді його рух здатен принести збиток одразу за всіма такими позиціями.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">Докладний розбір</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-trade-management" aria-labelledby="heading-trade-management">
+             <h2 id="heading-trade-management">2. Після відкриття угоди</h2>
+             <div class="faq-item" id="question-uk-trade-management-01">
+<p class="faq-topic-label"><em>Відкрита позиція</em></p>
+<h3>Що робити після відкриття угоди?</h3>
+<p>Дотримуватися запланованих правил виходу, захисту та фіксації прибутку. Не змінювати рішення лише через страх чи бажання заробити більше.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-02">
+<p class="faq-topic-label"><em>Тейк-профіт</em></p>
+<h3>Що таке тейк-профіт?</h3>
+<p>Це заявка на закриття угоди при досягненні потрібної ціни прибутку. Вона дозволяє заздалегідь вибрати місце виходу.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-03">
+<p class="faq-topic-label"><em>Ціль угоди</em></p>
+<h3>Де поставити тейк-профіт?</h3>
+<p>Арапов орієнтується на значимі рівні графіка, а не бажану суму грошей. При купівлі ціллю може бути опір, при продажу — підтримка.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-04">
+<p class="faq-topic-label"><em>Співвідношення ризик/прибуток</em></p>
+<h3>Як порівняти можливий прибуток і збиток?</h3>
+<p>Порівняйте відстань від входу до цілі та до стопа. Так видно, скільки можна отримати відносно того, скільки ви ризикуєте втратити.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-05">
+<p class="faq-topic-label"><em>Беззбиток</em></p>
+<h3>Що означає перевести угоду в беззбиток?</h3>
+<p>Це перенесення стопа до ціни входу. Якщо ціна повернеться, угода закриється поблизу неї, але комісії можуть залишити невеликий збиток.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-06">
+<p class="faq-topic-label"><em>Ранній вихід</em></p>
+<h3>Чому ранній беззбиток може завадити угоді?</h3>
+<p>Звичайний відкат може закрити позицію перед подальшим рухом до цілі. Арапов пов'язує перенесення стопа з реакцією ціни біля рівня.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-07">
+<p class="faq-topic-label"><em>Трейлінг-стоп</em></p>
+<h3>Як вибрати відстань для трейлінг-стопа?</h3>
+<p>Врахуйте звичайний розмах руху ціни. Занадто близький стоп спрацьовує на дрібному відкаті, занадто далекий дозволяє віддати більше прибутку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trade-management-08">
+<p class="faq-topic-label"><em>Хеджування</em></p>
+<h3>Чому хеджування складне для новачка?</h3>
+<p>Зустрічні позиції додають витрати та ускладнюють розуміння загального результату. Арапов на початку віддає перевагу зрозумілому стопу й невеликій угоді.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trade-management">Докладний розбір</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-averaging-martingale" aria-labelledby="heading-averaging-martingale">
+             <h2 id="heading-averaging-martingale">3. Додавання грошей у позицію</h2>
+             <div class="faq-item" id="question-uk-averaging-martingale-01">
+<p class="faq-topic-label"><em>Середня ціна купівлі</em></p>
+<h3>Як усереднення змінює ціну покупки?</h3>
+<p>Після докупівлі середня ціна залежить від кількості активу за кожною ціною. Разом із позицією зростає і сума можливого збитку.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/averaging-martingale">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-averaging-martingale-02">
+<p class="faq-topic-label"><em>Докупівля у збиток</em></p>
+<h3>Чому небезпечно докуповувати актив, що падає?</h3>
+<p>Якщо падіння триватиме, більша позиція принесе більшу втрату грошей. Нижча середня ціна сама по собі не обмежує збиток.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/averaging-martingale">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-averaging-martingale-03">
+<p class="faq-topic-label"><em>Надія відігратися</em></p>
+<h3>Чому хочеться усереднювати збиток?</h3>
+<p>Важко визнати помилку й закрити втрату. Докупівля без початкового плану може стати емоційною спробою повернути гроші.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/averaging-martingale">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-averaging-martingale-04">
+<p class="faq-topic-label"><em>Мартингейл</em></p>
+<h3>Чому мартингейл небезпечний?</h3>
+<p>Збільшення ставки після програшу швидко підвищує потрібну суму. При подвоєнні вона зростає як 1, 2, 4, 8, і довга серія виснажує рахунок.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/averaging-martingale">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-averaging-martingale-05">
+<p class="faq-topic-label"><em>Додавання до позиції</em></p>
+<h3>Чим планове додавання відрізняється від порятунку збитку?</h3>
+<p>Планове додавання передбачене системою й враховує загальний ризик. Збільшення позиції лише для відігравання втрати не має такого обґрунтування.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/averaging-martingale">Докладний розбір</a></p>
+</div>
+             </section>
+             <section class="faq-reading-topic" id="topic-trading-psychology" aria-labelledby="heading-trading-psychology">
+             <h2 id="heading-trading-psychology">4. Поведінка та рішення трейдера</h2>
+             <div class="faq-item" id="question-uk-trading-psychology-01">
+<p class="faq-topic-label"><em>Емоції у трейдингу</em></p>
+<h3>Чому емоції заважають торгувати за планом?</h3>
+<p>Страх, жадібність і бажання відігратися змінюють рішення. Арапов пов'язує стабільну роботу з умінням виконувати правила навіть під тиском.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-02">
+<p class="faq-topic-label"><em>Торгівля чи азарт</em></p>
+<h3>Чим торгівля за системою відрізняється від азарту?</h3>
+<p>У системі є перевірені правила й обмеження втрат. Азартні дії спираються на імпульс і надію, а не на заздалегідь визначений план.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-03">
+<p class="faq-topic-label"><em>Страх і жадібність</em></p>
+<h3>Як страх і жадібність впливають на угоди?</h3>
+<p>Страх може змусити вийти раніше, жадібність — збільшити ризик. Після прибутку надмірна впевненість також підштовхує порушувати правила.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-04">
+<p class="faq-topic-label"><em>FOMO</em></p>
+<h3>Що таке FOMO у трейдингу?</h3>
+<p>Це страх упустити вигідне зростання. Він підштовхує входити без потрібних умов, замість спокійно чекати наступної угоди за планом.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-05">
+<p class="faq-topic-label"><em>Поведінка натовпу</em></p>
+<h3>Як емоції натовпу пов'язані з великими гравцями?</h3>
+<p>Арапов розглядає емоційні покупки й продажі як тло дій великих учасників. Цю ідею він перевіряє за ціною та обсягом.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-06">
+<p class="faq-topic-label"><em>Помилки мислення</em></p>
+<h3>Які помилки мислення заважають трейдеру?</h3>
+<p>Пошук лише підтверджень своєї думки, небажання приймати втрати й прив'язка до ціни входу. Корисно помічати їх у щоденнику угод.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-07">
+<p class="faq-topic-label"><em>Просадка рахунку</em></p>
+<h3>Як оцінювати просадку та серію угод?</h3>
+<p>Дивіться на загальну втрату й перевіряйте дотримання системи. Одна збиткова угода не доводить помилку, а прибуток не виправдовує порушення правил.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-08">
+<p class="faq-topic-label"><em>Контроль емоцій</em></p>
+<h3>Як менше піддаватися емоціям у торгівлі?</h3>
+<p>Заздалегідь визначайте ризик, стоп, правила угоди й умови перерви. Записуйте рішення та розбирайте їх після торгівлі.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-trading-psychology-09">
+<p class="faq-topic-label"><em>Досвід трейдера</em></p>
+<h3>Як змінюється ставлення до ризику з досвідом?</h3>
+<p>У бібліотеці описано шлях від початкової безтурботності через страх після втрат до спокійнішого виконання правил. Це опис досвіду, а не обов'язковий шлях кожного.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-f095">
+<p class="faq-topic-label"><em>Минулі витрати</em></p>
+<h3>Чому важко закрити угоду, в яку вже вкладено багато?</h3>
+<p>Хочеться виправдати минулі витрати. Але втрачені гроші не роблять продовження вигідним: оцінювати потрібно поточні умови й ризик.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-f096">
+<p class="faq-topic-label"><em>Останні результати</em></p>
+<h3>Чому кілька успішних угод можуть призвести до зайвого ризику?</h3>
+<p>Недавній успіх легко сприйняти як обіцянку продовження. Через це трейдер завищує ризик, хоча для оцінки потрібна довша історія.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             <div class="faq-item" id="question-uk-f097">
+<p class="faq-topic-label"><em>Помилка гравця</em></p>
+<h3>Чи має ціна зрости після п'яти падінь?</h3>
+<p>Ні. Саме число попередніх падінь не визначає наступний рух. Очікування обов'язкового протилежного результату називають помилкою гравця.</p>
+<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-psychology">Докладний розбір</a></p>
+</div>
+             </section>
+             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-chart-analysis">Графіки та технічний аналіз</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека</a></li>
+             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
+             </ul>
+             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
+             </nav>
+<section class="faq-reading-about">
+<h2>Про матеріали бібліотеки</h2>
+<p>Розділ укладено на основі матеріалів бібліотеки ArapovTrade та навчальних відео Ігоря Арапова. Тут можна знайти визначення, порівняння інструментів, пояснення ринкової механіки та розбори авторського підходу до трейдингу.</p>
+<p>Автор бібліотеки — <a class="linkrefinto" href="https://arapov.trade/uk"><strong>Ігор Арапов</strong></a>, практикуючий трейдер з 2013 року. Докладні матеріали розкривають контекст кожного питання; короткі відповіді слугують відправною точкою для вивчення теми.</p>
 </section>
-              </article>
+</article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Фільтр за категоріями
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Популярне
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/uk/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleUkr"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleUkr }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Фільтр за категоріями
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Популярне
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/uk/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleUkr"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleUkr }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -1000,71 +501,78 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Наші проєкти доступні кожному охочому
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Наші проєкти доступні кожному охочому
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Оберіть тему, яка вас цікавить, і почніть навчання
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Оберіть тему, яка вас цікавить, і почніть навчання
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
+

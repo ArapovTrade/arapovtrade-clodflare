@@ -1,683 +1,468 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="ru">
-              <header>
-                <h1>Вопросы и ответы по трейдингу — библиотека ArapovTrade</h1>
-              </header>
-              <article>
-                <p>
-                  Как устроена биржа? Как читать график и торговые объёмы? Что
-                  показывает ATR? Чем спот отличается от фьючерсов? Как
-                  рассчитывать риск и размер позиции? В этом разделе собраны
-                  направления, по которым можно найти объяснения в библиотеке
-                  ArapovTrade.
-                </p>
-                <p>
-                  Выберите интересующую тему. Тематические страницы объединяют
-                  короткие вопросы и ответы со ссылками на подробные статьи. Это
-                  позволяет сначала разобраться в сути вопроса, а затем перейти
-                  к определениям, примерам и применению метода. Для отдельных
-                  вопросов также предусмотрены видеоразборы Игоря Арапова.
-                </p>
-                <nav aria-label="Темы вопросов и ответов">
-                  <h2>Выберите тему</h2>
-                  <ol>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('getting-started')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Начало торговли и торговая система</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('risk-psychology')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Риск и психология трейдинга</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('chart-analysis')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Графики и технический анализ</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('indicators')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Индикаторы и волатильность</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('financial-markets')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Устройство финансовых рынков</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('volume-wyckoff-smc')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Объёмный анализ, Вайкофф и Smart Money</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('crypto-mechanics')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Криптовалюты: устройство и безопасность</a
-                      >
-                    </li>
-                    <li>
-                      <a class="linkrefinto"   (click)="scrollToFragment('bitcoin-altcoins')" [ngStyle]="{ cursor: 'pointer' }"
-                        >Bitcoin, альткоины и рыночные циклы</a
-                      >
-                    </li>
-                  </ol>
-                </nav>
-                <!-- Новые тематические маршруты /ru/freestudying/trading-faq-* необходимо зарегистрировать при создании восьми страниц. -->
-                <section
-                  id="getting-started"
-                  aria-labelledby="getting-started-title"
-                >
-                  <h2 id="getting-started-title">
-                    Начало торговли и торговая система
-                  </h2>
-                  <p>
-                    Как перейти от основных понятий к практике: выбрать
-                    платформу и брокера, понять способы торговли и сформировать
-                    правила своей системы.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Трейдинг и инвестирование,
-                    лонг и шорт, обучение, платформы, брокеры, стили торговли,
-                    проп-трейдинг, копитрейдинг, ИИ в трейдинге и проверка
-                    торговой системы.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Что такое трейдинг простыми словами?</li>
-                    <li>Что такое торговый терминал и зачем он нужен?</li>
-                    <li>
-                      Какие основные стили торговли различаются по времени
-                      удержания?
-                    </li>
-                    <li>Что такое торговая система?</li>
-                    <li>Что такое проп-трейдинг и проп-фирма?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-getting-started"
-                      >Вопросы и ответы: начало торговли и торговая система</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="risk-psychology"
-                  aria-labelledby="risk-psychology-title"
-                >
-                  <h2 id="risk-psychology-title">
-                    Риск и психология трейдинга
-                  </h2>
-                  <p>
-                    Как ограничивать потери, рассчитывать позицию и соблюдать
-                    торговые правила под эмоциональным давлением.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Риск-менеджмент, размер
-                    позиции, стоп-лосс и тейк-профит, математическое ожидание,
-                    серии убытков, усреднение, мартингейл, страх, жадность и
-                    дисциплина.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Чем риск-менеджмент отличается от мани-менеджмента?</li>
-                    <li>Что включает сопровождение открытой позиции?</li>
-                    <li>Как усреднение изменяет среднюю цену позиции?</li>
-                    <li>
-                      Почему психология важна для выполнения торговой системы?
-                    </li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-risk-psychology"
-                      >Вопросы и ответы: риск и психология трейдинга</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="chart-analysis"
-                  aria-labelledby="chart-analysis-title"
-                >
-                  <h2 id="chart-analysis-title">
-                    Графики и технический анализ
-                  </h2>
-                  <p>
-                    Как читать движение цены, находить уровни и оценивать
-                    свечные и графические структуры.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Таймфреймы, тренд и флэт,
-                    поддержка и сопротивление, каналы, пробой и ретест, японские
-                    свечи, пин-бар, графические фигуры, волны Эллиотта и уровни
-                    Фибоначчи.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Что изучает технический анализ рынка?</li>
-                    <li>Что считается пробоем уровня?</li>
-                    <li>Какие четыре цены показывает японская свеча?</li>
-                    <li>Что такое ценовой паттерн?</li>
-                    <li>Что показывают уровни коррекции Фибоначчи?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-chart-analysis"
-                      >Вопросы и ответы: графики и технический анализ</a
-                    >
-                  </p>
-                </section>
-                <section id="indicators" aria-labelledby="indicators-title">
-                  <h2 id="indicators-title">Индикаторы и волатильность</h2>
-                  <p>
-                    Что измеряют индикаторы, как интерпретировать их сигналы и
-                    почему их нужно сопоставлять с рыночным контекстом.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> ATR, ADX, RSI, MACD,
-                    стохастик, скользящие средние, VWAP, полосы Боллинджера и
-                    облако Ишимоку.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Что измеряет ATR?</li>
-                    <li>Показывает ли ADX направление тренда?</li>
-                    <li>Что такое RSI?</li>
-                    <li>Как устроен MACD?</li>
-                    <li>Что такое VWAP?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-indicators"
-                      >Вопросы и ответы: индикаторы и волатильность</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="financial-markets"
-                  aria-labelledby="financial-markets-title"
-                >
-                  <h2 id="financial-markets-title">
-                    Устройство финансовых рынков
-                  </h2>
-                  <p>
-                    Как взаимодействуют участники и ордера, чем различаются
-                    инструменты и как экономические события связаны с рынком.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Биржа, брокеры и
-                    маркетмейкеры, стакан, Bid и Ask, спред, типы ордеров,
-                    Forex, кредитное плечо, торговые сессии, новости, фьючерсы,
-                    опционы, акции и облигации.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>
-                      Как биржа организует торговлю и какую роль играет брокер?
-                    </li>
-                    <li>Чем отличаются рыночный, лимитный и стоп-ордер?</li>
-                    <li>
-                      Что такое Forex и почему на нём торгуют валютными парами?
-                    </li>
-                    <li>Что такое дериватив?</li>
-                    <li>Чем облигация отличается от акции?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-financial-markets"
-                      >Вопросы и ответы: устройство финансовых рынков</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="volume-wyckoff-smc"
-                  aria-labelledby="volume-wyckoff-smc-title"
-                >
-                  <h2 id="volume-wyckoff-smc-title">
-                    Объёмный анализ, Вайкофф и Smart Money
-                  </h2>
-                  <p>
-                    Как сопоставлять цену и объём, изучать фазы рынка и
-                    разбирать структуру ликвидности.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Биржевой и тиковый объём,
-                    Volume Profile, Market Profile, накопление и распределение,
-                    Spring, Upthrust, усилие и результат, Smart Money, пулы
-                    ликвидности, Order Block и FVG.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Что изучает объёмный анализ?</li>
-                    <li>На каких законах основан метод Вайкоффа?</li>
-                    <li>Что такое пул ликвидности в терминологии SMC?</li>
-                    <li>Что называют ордер-блоком в SMC?</li>
-                    <li>Чем имбаланс отличается от Fair Value Gap?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-volume-wyckoff-smc"
-                      >Вопросы и ответы: объёмный анализ, вайкофф и smart
-                      money</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="crypto-mechanics"
-                  aria-labelledby="crypto-mechanics-title"
-                >
-                  <h2 id="crypto-mechanics-title">
-                    Криптовалюты: устройство и безопасность
-                  </h2>
-                  <p>
-                    Как устроены криптоинструменты и сервисы, где хранить активы
-                    и какие риски учитывать.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Кошельки, ключи и seed-фраза,
-                    стейблкоины, USDT, USDC и DAI, DeFi, стейкинг, токеномика,
-                    бессрочные фьючерсы, funding rate, арбитраж, мемкоины и
-                    мошеннические схемы.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>Что такое криптовалюта простыми словами?</li>
-                    <li>Чем горячий кошелёк отличается от холодного?</li>
-                    <li>Как стейблкоин удерживает привязку к валюте?</li>
-                    <li>Что такое DeFi?</li>
-                    <li>Какие основные риски есть у криптовалют?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-crypto-mechanics"
-                      >Вопросы и ответы: криптовалюты: устройство и
-                      безопасность</a
-                    >
-                  </p>
-                </section>
-                <section
-                  id="bitcoin-altcoins"
-                  aria-labelledby="bitcoin-altcoins-title"
-                >
-                  <h2 id="bitcoin-altcoins-title">
-                    Bitcoin, альткоины и рыночные циклы
-                  </h2>
-                  <p>
-                    Какие особенности отдельных криптовалют и рыночных
-                    показателей рассматривает библиотека.
-                  </p>
-                  <p>
-                    <strong>Темы раздела:</strong> Bitcoin, халвинг, Bitcoin
-                    ETF, Ethereum, Solana, XRP, доминация Bitcoin, соотношение
-                    ETH/BTC, альтсезон, предложение токенов и рыночные циклы.
-                  </p>
-                  <p><strong>Примеры вопросов:</strong></p>
-                  <ul>
-                    <li>
-                      Какие свойства Bitcoin важны для понимания его рынка?
-                    </li>
-                    <li>
-                      Что такое халвинг Bitcoin и как часто он происходит?
-                    </li>
-                    <li>Что такое Bitcoin ETF?</li>
-                    <li>Чем Ethereum отличается от Bitcoin?</li>
-                    <li>Что такое доминация Bitcoin?</li>
-                  </ul>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="/ru/freestudying/trading-faq-bitcoin-altcoins"
-                      >Вопросы и ответы: bitcoin, альткоины и рыночные циклы</a
-                    >
-                  </p>
-                </section>
-                <section>
-                  <h2>Как пользоваться разделом</h2>
-                  <ol>
-                    <li>
-                      Выберите тему или найдите знакомый термин в описании
-                      раздела.
-                    </li>
-                    <li>
-                      На тематической странице откройте вопрос и прочитайте
-                      короткий ответ.
-                    </li>
-                    <li>
-                      Перейдите по ссылке к подробной статье, чтобы изучить
-                      объяснение и примеры.
-                    </li>
-                    <li>
-                      Если у ответа есть видеоразбор, используйте ссылку на
-                      соответствующую главу урока.
-                    </li>
-                  </ol>
-                  <p>
-                    Темы связаны между собой: устройство ордеров помогает
-                    понимать ликвидность, анализ цены дополняется объёмом, а
-                    торговая система объединяет условия входа, выхода и контроля
-                    риска. При изучении вопроса полезно переходить к связанным
-                    материалам библиотеки.
-                  </p>
-                </section>
-                <section>
-                  <h2>О материалах библиотеки</h2>
-                  <p>
-                    Раздел составлен по материалам библиотеки ArapovTrade и
-                    обучающих видео Игоря Арапова. Здесь можно найти
-                    определения, сравнения инструментов, объяснения рыночной
-                    механики и разборы авторского подхода к трейдингу.
-                  </p>
-                  <p>
-                    Автор библиотеки —
-                    <a class="linkrefinto" href="https://arapov.trade/ru"
-                      >Игорь Арапов</a
-                    >, практикующий трейдер с 2013 года. Подробные материалы
-                    раскрывают контекст каждого вопроса; короткие ответы служат
-                    отправной точкой для изучения темы.
-                  </p>
-                </section>
-              </article>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="ru">
+             <header>
+               <h1>Вопросы и ответы по трейдингу — библиотека ArapovTrade</h1>
+             </header>
+             <article>
+             <p>Что такое трейдинг? С чего начать обучение? Как читать график, выбирать брокера и ограничивать убытки? Здесь собраны простые ответы по восьми направлениям библиотеки ArapovTrade. Предварительные знания не нужны.</p>
+             <p>Выберите тему, прочитайте короткое объяснение и переходите к подробной статье, когда захотите разобраться глубже. Все материалы доступны бесплатно.</p>
+             <nav aria-label="Темы вопросов и ответов">
+             <h2>Выберите тему</h2>
+             <ol>
+             <li><a class="linkrefinto" href="#getting-started" (click)="$event.preventDefault(); scrollToFragment('getting-started')">Начало торговли и торговая система</a></li>
+             <li><a class="linkrefinto" href="#risk-psychology" (click)="$event.preventDefault(); scrollToFragment('risk-psychology')">Риск и психология трейдинга</a></li>
+             <li><a class="linkrefinto" href="#chart-analysis" (click)="$event.preventDefault(); scrollToFragment('chart-analysis')">Графики и технический анализ</a></li>
+             <li><a class="linkrefinto" href="#indicators" (click)="$event.preventDefault(); scrollToFragment('indicators')">Индикаторы и волатильность</a></li>
+             <li><a class="linkrefinto" href="#financial-markets" (click)="$event.preventDefault(); scrollToFragment('financial-markets')">Устройство финансовых рынков</a></li>
+             <li><a class="linkrefinto" href="#volume-wyckoff-smc" (click)="$event.preventDefault(); scrollToFragment('volume-wyckoff-smc')">Объёмный анализ, Вайкофф и Smart Money</a></li>
+             <li><a class="linkrefinto" href="#crypto-mechanics" (click)="$event.preventDefault(); scrollToFragment('crypto-mechanics')">Криптовалюты: устройство и безопасность</a></li>
+             <li><a class="linkrefinto" href="#bitcoin-altcoins" (click)="$event.preventDefault(); scrollToFragment('bitcoin-altcoins')">Bitcoin, альткоины и рыночные циклы</a></li>
+             </ol>
+             </nav>
+             <!-- Новые тематические маршруты /ru/freestudying/trading-faq-* необходимо зарегистрировать при создании восьми страниц. -->
+             <section id="getting-started" aria-labelledby="getting-started-title">
+             <h2 id="getting-started-title">Начало торговли и торговая система</h2>
+             <p>С чего начать обучение, как выбрать брокера и платформу, попробовать первые сделки и составить торговый план.</p>
+             <p><strong>Темы раздела:</strong> Трейдинг и инвестирование, лонг и шорт, обучение, платформы, брокеры, стили торговли, проп-трейдинг, копитрейдинг, ИИ в трейдинге и проверка торговой системы.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Что такое трейдинг простыми словами?</li>
+             <li>С чего начать обучение трейдингу?</li>
+             <li>Как выбрать брокера?</li>
+             <li>Чем демосчёт отличается от реального счёта?</li>
+             <li>Какие бывают виды трейдинга?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-getting-started">Вопросы и ответы: начало торговли и торговая система</a></p>
+             </section>
+             <section id="risk-psychology" aria-labelledby="risk-psychology-title">
+             <h2 id="risk-psychology-title">Риск и психология трейдинга</h2>
+             <p>Как заранее ограничить возможный убыток, выбрать размер сделки и не торговать под влиянием страха или жадности.</p>
+             <p><strong>Темы раздела:</strong> Риск-менеджмент, размер позиции, стоп-лосс и тейк-профит, математическое ожидание, серии убытков, усреднение, мартингейл, страх, жадность и дисциплина.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Сколько можно рисковать в одной сделке?</li>
+             <li>Как рассчитать размер сделки?</li>
+             <li>Зачем ставить стоп-лосс заранее?</li>
+             <li>Почему эмоции мешают соблюдать торговый план?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-risk-psychology">Вопросы и ответы: риск и психология трейдинга</a></p>
+             </section>
+             <section id="chart-analysis" aria-labelledby="chart-analysis-title">
+             <h2 id="chart-analysis-title">Графики и технический анализ</h2>
+             <p>Как читать свечи, замечать тренд и находить уровни, возле которых цена может остановиться или развернуться.</p>
+             <p><strong>Темы раздела:</strong> Таймфреймы, тренд и флэт, поддержка и сопротивление, каналы, пробой и ретест, японские свечи, пин-бар, графические фигуры, волны Эллиотта и уровни Фибоначчи.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Что такое технический анализ?</li>
+             <li>Что такое таймфрейм?</li>
+             <li>Что такое тренд и флет?</li>
+             <li>Что показывает японская свеча?</li>
+             <li>Что такое пробой уровня?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-chart-analysis">Вопросы и ответы: графики и технический анализ</a></p>
+             </section>
+             <section id="indicators" aria-labelledby="indicators-title">
+             <h2 id="indicators-title">Индикаторы и волатильность</h2>
+             <p>Что показывают индикаторы, как читать их сигналы и почему одного сигнала недостаточно для сделки.</p>
+             <p><strong>Темы раздела:</strong> ATR, ADX, RSI, MACD, стохастик, скользящие средние, VWAP, полосы Боллинджера и облако Ишимоку.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Что показывает ATR?</li>
+             <li>Что такое RSI?</li>
+             <li>Что такое Chandelier Exit?</li>
+             <li>Что такое золотой крест и крест смерти?</li>
+             <li>Почему индикаторы запаздывают?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-indicators">Вопросы и ответы: индикаторы и волатильность</a></p>
+             </section>
+             <section id="financial-markets" aria-labelledby="financial-markets-title">
+             <h2 id="financial-markets-title">Устройство финансовых рынков</h2>
+             <p>Как работают биржа и брокер, как исполняются заявки и чем отличаются акции, валюты, облигации и торговые контракты.</p>
+             <p><strong>Темы раздела:</strong> Биржа, брокеры и маркетмейкеры, стакан, Bid и Ask, спред, типы ордеров, Forex, кредитное плечо, торговые сессии, новости, фьючерсы, опционы, акции и облигации.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Как устроена биржа и зачем нужен брокер?</li>
+             <li>Чем стакан отличается от ленты сделок?</li>
+             <li>Что такое Forex?</li>
+             <li>Чем покупка на споте отличается от фьючерса?</li>
+             <li>Чем облигация отличается от акции?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-financial-markets">Вопросы и ответы: устройство финансовых рынков</a></p>
+             </section>
+             <section id="volume-wyckoff-smc" aria-labelledby="volume-wyckoff-smc-title">
+             <h2 id="volume-wyckoff-smc-title">Объёмный анализ, Вайкофф и Smart Money</h2>
+             <p>Что показывает объём, как крупные участники набирают позиции и почему цена может пробить уровень и вернуться.</p>
+             <p><strong>Темы раздела:</strong> Биржевой и тиковый объём, Volume Profile, Market Profile, накопление и распределение, Spring, Upthrust, усилие и результат, Smart Money, пулы ликвидности, Order Block и FVG.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Что показывает объём в трейдинге?</li>
+             <li>На чём основан метод Вайкоффа?</li>
+             <li>Что такое пул ликвидности в Smart Money?</li>
+             <li>Что такое ордер-блок?</li>
+             <li>Как найти FVG на графике?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-volume-wyckoff-smc">Вопросы и ответы: объёмный анализ, вайкофф и smart money</a></p>
+             </section>
+             <section id="crypto-mechanics" aria-labelledby="crypto-mechanics-title">
+             <h2 id="crypto-mechanics-title">Криптовалюты: устройство и безопасность</h2>
+             <p>Как работают криптовалюты, где хранить монеты и как распознавать риски и мошеннические схемы.</p>
+             <p><strong>Темы раздела:</strong> Кошельки, ключи и seed-фраза, стейблкоины, USDT, USDC и DAI, DeFi, стейкинг, токеномика, бессрочные фьючерсы, funding rate, арбитраж, мемкоины и мошеннические схемы.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Что такое криптовалюта?</li>
+             <li>Чем горячий кошелёк отличается от холодного?</li>
+             <li>Почему нельзя хранить сид-фразу в фото или облаке?</li>
+             <li>Что такое стейкинг?</li>
+             <li>Как обманывают владельцев криптовалют?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-crypto-mechanics">Вопросы и ответы: криптовалюты: устройство и безопасность</a></p>
+             </section>
+             <section id="bitcoin-altcoins" aria-labelledby="bitcoin-altcoins-title">
+             <h2 id="bitcoin-altcoins-title">Bitcoin, альткоины и рыночные циклы</h2>
+             <p>Чем отличаются Bitcoin, Ethereum, Solana и XRP, что такое халвинг и как понимать изменения крипторынка.</p>
+             <p><strong>Темы раздела:</strong> Bitcoin, халвинг, Bitcoin ETF, Ethereum, Solana, XRP, доминация Bitcoin, соотношение ETH/BTC, альтсезон, предложение токенов и рыночные циклы.</p>
+             <p><strong>Примеры вопросов:</strong></p>
+             <ul>
+             <li>Чем Bitcoin отличается от обычных денег?</li>
+             <li>Что такое халвинг Bitcoin?</li>
+             <li>Что такое Bitcoin ETF?</li>
+             <li>Чем Ethereum отличается от Bitcoin?</li>
+             <li>Что такое доминация Bitcoin?</li>
+             </ul>
+             <p><a class="linkrefinto" href="/ru/freestudying/trading-faq-bitcoin-altcoins">Вопросы и ответы: bitcoin, альткоины и рыночные циклы</a></p>
+             </section>
+             <section>
+             <h2>Как пользоваться разделом</h2>
+             <ol>
+             <li>Выберите тему, которая вам интересна.</li>
+             <li>Найдите свой вопрос и прочитайте короткий ответ.</li>
+             <li>Перейдите по ссылке к подробной статье с объяснениями и примерами.</li>
+             <li>Возвращайтесь к списку тем, когда захотите изучить следующий вопрос.</li>
+             </ol>
+             <p>Можно учиться постепенно: сначала понять основные слова, затем графики и объёмы, а после — правила сделок и ограничения риска. Выбирайте темы в удобном для вас порядке.</p>
+             </section>
+             <section>
+             <h2>О материалах библиотеки</h2>
+             <p>Раздел составлен по материалам библиотеки ArapovTrade и обучающих видео Игоря Арапова. Здесь можно найти определения, сравнения инструментов, объяснения рыночной механики и разборы авторского подхода к трейдингу.</p>
+             <p>Автор библиотеки — <a class="linkrefinto" href="https://arapov.trade/ru">Игорь Арапов</a>, практикующий трейдер с 2013 года. Подробные материалы раскрывают контекст каждого вопроса; короткие ответы служат отправной точкой для изучения темы.</p>
+             </section>
+             </article>
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
 
-                  <span class="previous_page_text-block">
-                    ПРЕДЫДУЩАЯ <span class="page_none_block">СТАТЬЯ</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    СЛЕДУЮЩАЯ <span class="page_none_block">СТАТЬЯ</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Фильтр по категориям
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+                 <span class="previous_page_text-block">
+                   ПРЕДЫДУЩАЯ <span class="page_none_block">СТАТЬЯ</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Популярное
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   СЛЕДУЮЩАЯ <span class="page_none_block">СТАТЬЯ</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/ru/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleRus"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleRus }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
 
-                <!-- Our projects  -->
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Фильтр по категориям
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{ 
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Популярное
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/ru/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleRus"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleRus }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{ 
          background: isDark
        ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
        : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
 
 
         }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Наши проекты доступны каждому желающему
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Наши проекты доступны каждому желающему
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Выбирайте интересующую Вас тему и начинайте увлекательно
-                      обучение
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Выбирайте интересующую Вас тему и начинайте увлекательно
+                     обучение
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+
+               
+               </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>
+
+
+
+
