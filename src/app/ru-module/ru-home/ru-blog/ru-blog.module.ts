@@ -854,7 +854,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'trading-faq-crypto-mechanics', //69
+        path: 'trading-faq-crypto-mechanics', //69 
         loadChildren: () =>
           import('../ru-blog/sixty-nine-ru-blog/sixty-nine-ru-blog.module').then(
             (m) => m.SixtyNineRuBlogModule,
