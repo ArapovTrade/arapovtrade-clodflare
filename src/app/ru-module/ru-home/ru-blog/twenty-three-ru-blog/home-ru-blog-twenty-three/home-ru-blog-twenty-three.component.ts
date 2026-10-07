@@ -61,7 +61,7 @@ export class HomeRuBlogTwentyThreeComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Как работает объёмный анализ рынка: профиль объёма, кластеры, дельта и почему объём — первичная причина движения цены.',
+        'Как читать торговые объёмы вместе с ценой: биржевой и тиковый объём, профиль, кластеры и дельта. Что данные показывают и чего не доказывают.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

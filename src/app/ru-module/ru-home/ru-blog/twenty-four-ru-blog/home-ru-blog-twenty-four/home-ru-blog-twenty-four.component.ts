@@ -62,7 +62,7 @@ export class HomeRuBlogTwentyFourComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Метод Вайкоффа: фазы накопления и распределения, действия крупных игроков и как объёмный анализ выявляет ключевые уровни рынка.',
+        'Метод Вайкоффа: цена и объём, три закона, фазы накопления и распределения, Spring и UTAD. Как проверять рыночную структуру и условия сценария.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

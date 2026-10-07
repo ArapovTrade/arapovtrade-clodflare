@@ -63,7 +63,7 @@ export class HomeRuBlogOneComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое имбаланс и FVG (Fair Value Gap), как находить зоны неэффективности на графике и почему цена часто возвращается их закрывать.',
+        'Что такое имбаланс и FVG, как определить область по трём свечам и проверить её границы. Почему возврат цены и полное закрытие разрыва не гарантированы.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

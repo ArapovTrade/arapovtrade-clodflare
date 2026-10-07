@@ -61,7 +61,7 @@ export class HomeRuBlogTwentyEightComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Основы фундаментального анализа: экономические показатели, ставки центробанков, новости и как они влияют на рынок и валютные курсы.',
+        'Как изучать отчётность компании, финансовые показатели, ставки и экономические данные. Фундаментальный анализ и роль ожиданий в движении цены.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

@@ -62,7 +62,7 @@ export class HomeRuBlogFiftyComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Полосы Боллинджера: настройки, сжатие и расширение, пробои и отскоки от границ. Как индикатор показывает волатильность и зоны перегрева.',
+        'Как рассчитывают полосы Боллинджера, что означают сжатие, расширение и выход цены за границу. Настройки, BandWidth и ограничения сигналов.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

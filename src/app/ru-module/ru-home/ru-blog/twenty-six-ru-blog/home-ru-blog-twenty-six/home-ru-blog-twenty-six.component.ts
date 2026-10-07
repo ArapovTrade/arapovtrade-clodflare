@@ -57,7 +57,7 @@ export class HomeRuBlogTwentySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Эмоции в трейдинге: как контролировать | Arapov.trade',
+      'Психология трейдинга: как контролировать эмоции',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

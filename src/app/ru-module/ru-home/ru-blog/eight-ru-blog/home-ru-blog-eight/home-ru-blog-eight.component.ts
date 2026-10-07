@@ -58,7 +58,7 @@ export class HomeRuBlogEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Как торговать биткоинами на бирже: торговля BTC в 2026',
+      'Торговля Bitcoin: анализ BTC и план сделки',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -66,7 +66,7 @@ export class HomeRuBlogEightComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое биткоин, как работает блокчейн, майнинг и ограниченная эмиссия, в чём ценность BTC и какие риски у первой криптовалюты.',
+        'Как выбрать рынок Bitcoin, читать уровни и объём BTC и составить план сделки с учётом риска. Устройство сети и влияние ставок на цену.',
     });
 
     this.gerRandom();

@@ -57,13 +57,13 @@ export class HomeRuBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Мемкоины: что это и кто на них зарабатывает | Arapov.trade',
+      'Мемкоины: как формируется цена и какие есть риски',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое мемкоины, на чём держится их цена, почему это чистая спекуляция на хайпе и как не остаться с обесценившимся токеном на руках.',
+        'Как устроены запуск и торговля мемкоинами, что влияет на цену и возможность продажи. Концентрация токенов, правила площадки и риск полной потери вложений.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

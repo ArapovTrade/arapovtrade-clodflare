@@ -63,7 +63,7 @@ export class HomeRuBlogFourtySevenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Индикатор MACD: настройки, сигнальная линия и гистограмма, пересечения и дивергенции. Как читать сигналы и не попадать на ложные.',
+        'Как устроены линии и гистограмма MACD, что показывают пересечения и дивергенции. Настройки, запаздывание и ограничения сигналов индикатора.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

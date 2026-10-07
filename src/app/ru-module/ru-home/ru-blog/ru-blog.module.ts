@@ -22,7 +22,7 @@ const routes: Routes = [
             (m) => m.FourtyFiveRuArtickleModule,
           ),
       }, 
-      {
+      { 
         path: 'about', //106 1
         loadChildren: () =>
           import('../ru-blog/onehundred-six-ru-blog/onehundred-six-ru-blog.module').then(

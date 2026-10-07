@@ -58,7 +58,7 @@ export class HomeRuBlogTwentySevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Торговля акциями на бирже для начинающих | Arapov.trade',
+      'Торговля золотом, нефтью и фондовыми индексами',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

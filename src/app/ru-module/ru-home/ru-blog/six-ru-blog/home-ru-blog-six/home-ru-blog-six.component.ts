@@ -57,7 +57,7 @@ export class HomeRuBlogSixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle(' Доминация биткоина: что это и как влияет на рынок?');
+    this.titleService.setTitle('Доминация Bitcoin: что показывает BTC.D');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
@@ -65,7 +65,7 @@ export class HomeRuBlogSixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое доминация биткоина (BTC.D), зачем следить за этим показателем и как доминирование BTC влияет на рынок и альткоины.',
+        'Как рассчитывают доминацию Bitcoin, почему меняется доля BTC и чем показатель отличается от цены и притока денег. Ограничения данных и связь с альтсезоном.',
     });
     this.gerRandom();
   }

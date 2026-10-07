@@ -57,7 +57,7 @@ export class HomeRuBlogTwentyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Solana криптовалюта: полное руководство по торговле',
+      'Solana (SOL): что это за криптовалюта',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -66,7 +66,7 @@ export class HomeRuBlogTwentyOneComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое Solana, как устроен блокчейн SOL, его экосистема DeFi и NFT, преимущества скорости и риски для трейдеров и инвесторов.',
+        'Что такое Solana и SOL, как связаны Proof of History, подтверждение операций, комиссии и стейкинг. Как оценивать активность сети и риск сделки.',
     });
 
     this.gerRandom();

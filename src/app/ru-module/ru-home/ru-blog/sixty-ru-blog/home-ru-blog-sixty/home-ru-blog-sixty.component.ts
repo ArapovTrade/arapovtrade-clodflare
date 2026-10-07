@@ -57,7 +57,7 @@ export class HomeRuBlogSixtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Лучшие индикаторы для трейдинга: обзор и сравнение',
+      'Индикаторы для трейдинга: виды, сигналы и выбор',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({

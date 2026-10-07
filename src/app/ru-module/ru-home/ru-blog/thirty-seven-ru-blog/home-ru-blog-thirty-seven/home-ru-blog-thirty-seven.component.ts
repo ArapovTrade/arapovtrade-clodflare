@@ -64,7 +64,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Как выбрать брокера и торговую платформу: регуляция, комиссии, исполнение ордеров и на что смотреть новичку, чтобы не попасть на кухню.',
+        'Как выбрать брокера и торговую платформу: проверить компанию и разрешения, сравнить комиссии, исполнение заявок и условия демосчёта.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

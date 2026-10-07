@@ -56,14 +56,14 @@ export class HomeRuBlogEighteenComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Стейблкоин Tether (USDT) | Arapov.trade');
+    this.titleService.setTitle('Стейблкоины: USDT, USDC, DAI и риски привязки');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое стейблкоины, как они держат привязку к доллару, чем USDT отличается от алгоритмических монет и какие у стейблкоинов риски.',
+        'Как стейблкоины удерживают цену около доллара, чем отличаются USDT, USDC и DAI. Что проверить в резервах, погашении, заморозке и сети перевода.',
     });
     this.gerRandom();
   }

@@ -64,7 +64,7 @@ export class HomeRuBlogFiftyNineComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что нейросети реально умеют на рынке, а что им не под силу, почему ИИ не предсказывает будущее и как использовать его как инструмент, а не оракула.',
+        'Как используют ИИ и нейросети в трейдинге, чем прогноз отличается от торгового решения и как проверять результат без утечки данных и переобучения.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

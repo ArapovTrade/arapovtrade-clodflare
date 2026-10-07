@@ -98,7 +98,7 @@ export class HomeRuBlogOnehundredSixComponent implements OnInit {
 
   ngOnInit(): void {
     this.removeSelectedSchemas();
-    this.setArticleSchema();
+    // this.setArticleSchema();
     // this.setPersonSchema();
 
     this.titleService.setTitle(
@@ -107,7 +107,7 @@ export class HomeRuBlogOnehundredSixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Образовательная платформа Игоря Арапова: 51+ статья, 9 книг с ISBN, 78+ видеоуроков на 3 языках. Бесплатное обучение трейдингу: Smart Money, метод Вайкоффа, объёмный анализ.',
+        'Образовательная библиотека Игоря Арапова: статьи, книги и учебные видео по трейдингу. Метод Вайкоффа, объёмный анализ и практика на демосчёте.',
     });
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {

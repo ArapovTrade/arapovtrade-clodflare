@@ -58,13 +58,13 @@ export class HomeRuBlogFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'XRP криптовалюта: особенности анализа Ripple',
+      'Что такое XRP и чем он отличается от Ripple',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое XRP и сеть Ripple, как работают трансграничные платежи, влияние судебного дела SEC и риски для трейдеров.',
+        'Чем XRP и сеть XRP Ledger отличаются от компании Ripple. Использование монеты, выпуск и блокировка монет, влияние новостей и риски покупки или перевода.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

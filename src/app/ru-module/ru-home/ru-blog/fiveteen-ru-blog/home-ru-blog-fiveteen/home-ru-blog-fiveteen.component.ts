@@ -63,7 +63,7 @@ export class HomeRuBlogFiveteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое стейкинг криптовалюты, как зарабатывать на блокировке монет, какая доходность реальна и какие риски у стейкинга.',
+        'Как работает стейкинг, чем различаются способы участия и откуда берутся награды. Условия выхода, штрафы и риски ликвидного стейкинга.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

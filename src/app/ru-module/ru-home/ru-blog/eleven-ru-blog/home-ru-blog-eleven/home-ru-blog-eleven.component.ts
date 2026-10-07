@@ -63,7 +63,7 @@ export class HomeRuBlogElevenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Основы криптовалют для начинающих: что такое блокчейн, биткоин и альткоины, как работает рынок и с чего начать трейдинг крипты безопасно.',
+        'Криптовалюта для начинающих: блокчейн, виды монет, биржи и кошельки. Что проверить перед первой покупкой и как тренироваться на демосчёте.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

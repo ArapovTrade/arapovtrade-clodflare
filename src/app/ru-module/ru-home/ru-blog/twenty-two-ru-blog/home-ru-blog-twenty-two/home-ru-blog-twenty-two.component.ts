@@ -63,7 +63,7 @@ export class HomeRuBlogTwentyTwoComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое DeFi, как работают обмен, кредиты и стейкинг без банков на смарт-контрактах и какие риски — от дыр в коде до потери средств — тут реальны.',
+        'Как работают обмен токенов, пулы ликвидности и займы под залог в DeFi. Источники дохода, условия вывода и риски программ и связанных активов.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

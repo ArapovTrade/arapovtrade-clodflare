@@ -57,13 +57,13 @@ export class HomeRuBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Индикатор RSI в трейдинге: формула и торговая стратегия',
+      'Индикатор RSI: что это и как использовать',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Индикатор RSI: как читать перекупленность и перепроданность, дивергенции и почему сигнал RSI работает только в контексте тренда.',
+        'Как рассчитывается RSI, что означают уровни перекупленности и перепроданности и дивергенция. Как учитывать тренд и ограничения индикатора.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

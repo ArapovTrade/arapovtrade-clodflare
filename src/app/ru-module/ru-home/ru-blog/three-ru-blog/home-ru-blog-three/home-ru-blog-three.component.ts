@@ -64,7 +64,7 @@ export class HomeRuBlogThreeComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое ордер-блок, как определить зону, где набирал позицию крупный игрок, какие бывают виды Order Block и как их торговать.',
+        'Что такое ордер-блок, как отметить зону на графике, проверить реакцию при возврате и заранее определить условия сделки.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

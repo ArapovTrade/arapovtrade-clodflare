@@ -62,7 +62,7 @@ export class HomeRuBlogFourComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое Smart Money Concept: структура рынка, ликвидность, Order Blocks и FVG. Как торгуют крупные игроки и как читать их следы.',
+        'Smart Money Concept: ликвидность, структура цены, ордер-блоки и FVG. Как сопоставлять цену и объём и проверять сценарий без догадок о конкретном участнике.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

@@ -64,7 +64,7 @@ export class HomeRuBlogTwentyFiveComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое усреднение и метод мартингейла, почему они кажутся выгодными и как именно сливают депозит новичков. Психология и математика риска.',
+        'Как усреднение меняет цену позиции и её риск, чем мартингейл отличается от планового долива и что проверить перед добавлением объёма.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

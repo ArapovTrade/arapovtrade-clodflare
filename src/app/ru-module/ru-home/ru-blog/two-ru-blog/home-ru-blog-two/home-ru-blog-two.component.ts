@@ -58,13 +58,13 @@ export class HomeRuBlogTwoComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Что такое пул ликвидности и как его использовать в трейдинге',
+      'Пулы ликвидности в трейдинге: стопы и уровни',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое пулы ликвидности, как Smart Money находят ликвидность за уровнями и используют скрытые зоны для манипуляции ценой.',
+        'Где в трейдинге предполагают скопления стопов и заявок, как проверяют выход за уровень и возврат. Чем эти зоны отличаются от пулов ликвидности DeFi.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

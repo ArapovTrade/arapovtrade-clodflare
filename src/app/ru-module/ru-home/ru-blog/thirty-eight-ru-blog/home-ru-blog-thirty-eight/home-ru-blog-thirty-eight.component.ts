@@ -64,7 +64,7 @@ export class HomeRuBlogThirtyEightComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое проп-трейдинг, как устроен челлендж проп-фирмы, её правила, выплаты и подводные камни торговли на чужом капитале.',
+        'Чем торговля на капитале фирмы отличается от платного проп-челленджа. Как проверить учебный счёт, лимиты потерь, условия выплат и договор.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

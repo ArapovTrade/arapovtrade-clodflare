@@ -64,7 +64,7 @@ export class HomeRuBlogSixtyFourComponent {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Торговая стратегия в трейдинге — что это такое, из чего состоит и почему важна для новичков. Примеры реальных сделок с разбором точек входа и выхода.',
+        'Практические разборы графиков Nasdaq, Bitcoin и фьючерса евро: уровень, реакция цены, условия входа и выхода. Как читать учебный торговый отчёт.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

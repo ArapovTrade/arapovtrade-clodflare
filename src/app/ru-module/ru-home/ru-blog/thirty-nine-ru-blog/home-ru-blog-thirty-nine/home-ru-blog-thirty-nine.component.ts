@@ -61,7 +61,7 @@ export class HomeRuBlogThirtyNineComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Управление рисками и капиталом: размер позиции, риск на сделку, стоп-лосс и почему именно риск-менеджмент сохраняет депозит на дистанции.',
+        'Риск-менеджмент в трейдинге: допустимая потеря, стоп-лосс, размер позиции и общий риск открытых сделок. Как учитывать расходы и серию убытков.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

@@ -63,7 +63,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Что такое бессрочные фьючерсы, кредитное плечо и маржинальная торговля в крипте, при чём тут фандинг и почему большое плечо ведёт к ликвидации.',
+        'Как работают бессрочные фьючерсы, фандинг, маржа и плечо. От чего зависит ликвидация и почему цена её запуска может отличаться от последней сделки.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

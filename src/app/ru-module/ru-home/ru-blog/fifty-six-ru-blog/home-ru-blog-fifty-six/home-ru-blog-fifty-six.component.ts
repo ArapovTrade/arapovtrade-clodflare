@@ -61,7 +61,7 @@ export class HomeRuBlogFiftySixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Как торговать пробой уровня: определение ключевых зон, подтверждение объёмом, ложные пробои и где ставить стоп. Стратегия для новичков и профи.',
+        'Как проверить пробой уровня и ретест, отличить возврат за границу от продолжения и задать условия входа и стопа. Почему один объём не подтверждает пробой.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
