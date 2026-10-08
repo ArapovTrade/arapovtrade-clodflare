@@ -57,7 +57,7 @@ export class HomeEnBlogOnehundredSevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Igor Arapov on TradingView: 242 Ideas, 5 Years of Public Analysis and Multiple Editor`s Pick',
+      'Igor Arapov on TradingView: Public Market Analysis',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeEnBlogOnehundredSevenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Igor Arapov — 242 timestamped TradingView ideas from 2021 to 2026: Wyckoff method, volume analysis, Bitcoin, gold, Forex. Multiple Editor`s Pick awards. Public track record verified via Wikidata Q137454477.',
+        'How to check Igor Arapov’s dated TradingView ideas, Bitcoin, oil and currency examples, Editors’ Picks and the difference between analysis and account performance.',
     });
 
     this.gerRandom();

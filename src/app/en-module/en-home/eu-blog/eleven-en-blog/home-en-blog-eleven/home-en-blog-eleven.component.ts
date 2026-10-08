@@ -54,13 +54,13 @@ export class HomeEnBlogElevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Cryptocurrency Explained: A Beginner`s Guide',
+      'Cryptocurrency for beginners: assets, exchanges and first trades',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Cryptocurrency basics for beginners: what blockchain, bitcoin and altcoins are, how the market works and how to start crypto trading safely.',
+        'Learn what cryptocurrency represents, how storage and exchanges differ, and what to check before a first purchase.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

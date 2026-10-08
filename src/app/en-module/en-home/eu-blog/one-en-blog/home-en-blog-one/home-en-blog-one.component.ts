@@ -55,13 +55,13 @@ export class HomeEnBlogOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Fair Value Gap (FVG): Meaning and How to Trade It',
+      'Fair Value Gap (FVG): how to mark and check it',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What imbalance and FVG (Fair Value Gap) are, how to find inefficiency zones on the chart and why price often returns to fill them.',
+        'Learn the bullish and bearish three-candle FVG rules, how fills differ, and what to check on a return. Separate candle geometry from order imbalance and guaranteed trading outcomes.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

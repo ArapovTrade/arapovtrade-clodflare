@@ -54,12 +54,12 @@ export class HomeEnBlogFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Smart Money Concepts (SMC): Full Trading Guide');
+    this.titleService.setTitle('Smart Money: what SMC means and how to use it');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What the Smart Money Concept is: market structure, liquidity, Order Blocks and FVG. How big players trade and how to read their footprints.',
+        'Understand Smart Money, liquidity, false breakouts and common SMC labels. Learn how price reactions and volume help test a scenario without identifying hidden bank orders.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

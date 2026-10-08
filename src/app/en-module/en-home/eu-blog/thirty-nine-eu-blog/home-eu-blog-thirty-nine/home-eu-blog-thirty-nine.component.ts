@@ -53,12 +53,12 @@ export class HomeEuBlogThirtyNineComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Risk Management in Trading: Rules That Work');
+    this.titleService.setTitle('Risk Management in Trading: Risk and Position Size');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Risk and capital management: position size, risk per trade, stop-loss and why risk management is what keeps your account alive over time.',
+        'Learn how to set a trading loss budget, calculate position size from a stop-loss, and check combined exposure, costs and losing streaks.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

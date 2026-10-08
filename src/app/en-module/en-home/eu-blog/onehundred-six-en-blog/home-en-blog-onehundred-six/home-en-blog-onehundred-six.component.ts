@@ -57,7 +57,7 @@ export class HomeEnBlogOnehundredSixComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'About ARAPOV.TRADE — Trading Education Platform',
+      'About Arapov.Trade: Trading Education and Resources',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeEnBlogOnehundredSixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Igor Arapov`s trading education platform: 51+ articles, 9 books with ISBN, 78+ video lessons in 3 languages. Free trading education: Smart Money, Wyckoff method, volume analysis.',
+        'Explore Igor Arapov’s free trading library, practical course, books and Russian-language videos. Find author information, publication identifiers and public records.',
     });
 
     this.gerRandom();

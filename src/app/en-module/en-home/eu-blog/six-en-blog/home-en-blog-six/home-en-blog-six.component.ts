@@ -53,14 +53,14 @@ export class HomeEnBlogSixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Bitcoin Dominance Explained: What It Signals');
+    this.titleService.setTitle('Bitcoin dominance: calculation and interpretation');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What Bitcoin dominance (BTC.D) is, why to track this metric and how BTC dominance affects the market and altcoins.',
+        'Learn what BTC.D measures, why provider data differs, and how to compare dominance with Bitcoin prices and altcoin performance without treating it as an entry signal.',
     });
     this.gerRandom();
   }

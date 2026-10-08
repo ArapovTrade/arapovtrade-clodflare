@@ -53,12 +53,12 @@ export class HomeEnBlogTwentyEightComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Fundamental Analysis: How to Analyze Markets');
+    this.titleService.setTitle('Fundamental analysis: company accounts, economic data and expectations');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'The basics of fundamental analysis: economic indicators, central bank rates, news and how they affect the market and exchange rates.',
+        'Learn how to read company accounts, interpret economic releases and compare expectations with results without turning an assessment into a guaranteed trade entry.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

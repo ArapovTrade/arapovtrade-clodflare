@@ -55,13 +55,13 @@ export class HomeEuBlogThirtyEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'What Is Prop Trading? A Beginner`s Guide | Arapov.trade',
+      'Prop trading: challenges, loss limits and payouts',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What prop trading is, how a prop firm challenge works, its rules, payouts and the hidden catches of trading on someone else’s capital.',
+        'Understand real proprietary trading versus simulated evaluations. Check loss limits, fees, funded-account terms and payout conditions before paying for a prop challenge.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

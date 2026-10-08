@@ -54,13 +54,13 @@ export class HomeEuBlogFiftyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'How Is AI Used in Trading? | Arapov.trade',
+      'AI in Trading: Uses, Testing and Limitations | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What neural networks really can do on the market, what is beyond them, why AI does not predict the future and how to use it as a tool, not an oracle.',
+        'Understand chatbots, forecasting models and trading bots. Learn how to check trade records, test AI-generated rules and avoid misleading performance claims.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

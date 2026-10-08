@@ -55,13 +55,13 @@ export class HomeEnBlogTwentySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'What Can You Trade? Assets Explained',
+      'Gold, oil and stock indices: products and trade size',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'How to trade gold, oil and stock indices: the fundamental drivers, the features of each instrument and approaches to analysis.',
+        'Learn how gold, Brent and WTI oil, and stock-index products differ. Compare ownership, delivery, costs and the cash value of a price move.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

@@ -55,13 +55,13 @@ export class HomeEnBlogThirteenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Perpetual Futures Explained: Crypto Margin Trading',
+      'Crypto Perpetual Futures: Funding, Margin and Liquidation | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What perpetual futures, leverage and margin trading in crypto are, why funding matters and why high leverage leads to liquidation.',
+        'Learn how crypto perpetual contracts use funding, margin and leverage. Check settlement units, liquidation references and stop settings before entering a trade.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

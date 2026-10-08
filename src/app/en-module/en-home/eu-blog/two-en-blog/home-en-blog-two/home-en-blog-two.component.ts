@@ -54,13 +54,13 @@ export class HomeEnBlogTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Liquidity Pools in Trading: Where Stops Get Hunted',
+      'Liquidity pools in trading: levels, sweeps and price reactions',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What liquidity pools are, how Smart Money finds liquidity beyond levels and uses hidden zones to manipulate price.',
+        'Learn where orders may cluster around highs and lows, how stops can affect a breakout, and how to check a liquidity sweep without assuming a reversal.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

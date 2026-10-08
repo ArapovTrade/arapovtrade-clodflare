@@ -149,13 +149,13 @@ export class CoverComponent implements OnInit, AfterViewInit, OnDestroy {
       this.cdr.detectChanges();
     });
 
-    this.routerSubscription = this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        if (typeof window !== 'undefined') {
-          window.scrollTo(0, 0);
-        }
-      }
-    });
+    // this.routerSubscription = this.router.events.subscribe((event) => {
+    //   if (event instanceof NavigationEnd) {
+    //     if (typeof window !== 'undefined') {
+    //       window.scrollTo(0, 0);
+    //     }
+    //   }
+    // });
 
     this.metaTegServ.addOrganizationSchema();
     this.languageService.languageCode$.subscribe((code) => {
@@ -169,6 +169,25 @@ export class CoverComponent implements OnInit, AfterViewInit, OnDestroy {
       .subscribe(() => {
         this.removeMetaDescriptionIfExists();
       });
+  this.route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.scrollToFragment(fragment);
+      }
+    });
+  }
+  scrollToFragment(fragment: string) {
+    // requestAnimationFrame надёжнее чем setTimeout
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        const element = this.document.getElementById(fragment);
+        if (element) {
+          const offset = 80;
+          const top =
+            element.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }, 400);
+    });
   }
 
    

@@ -55,7 +55,7 @@ export class HomeEnBlogNineteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Tokenomics Explained: Supply, Demand and Utility',
+      'Tokenomics: supply, unlocks and holder rights',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
@@ -63,7 +63,7 @@ export class HomeEnBlogNineteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'What tokenomics is, how coin distribution, issuance and unlocks affect price and why it reveals crash risk before you even buy a token.',
+        'Understand token supply, allocations, vesting and unlocks. Check holder rights and valuation inputs without treating tokenomics as a price forecast.',
     });
     this.gerRandom();
   }

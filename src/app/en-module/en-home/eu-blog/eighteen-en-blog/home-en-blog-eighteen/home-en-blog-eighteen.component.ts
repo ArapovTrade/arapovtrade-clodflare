@@ -53,14 +53,14 @@ export class HomeEnBlogEighteenComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Stablecoins Explained: How Tether (USDT) Works');
+    this.titleService.setTitle('Stablecoins: USDT, USDC, DAI and their risks');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What stablecoins are, how they hold the dollar peg, how USDT differs from algorithmic coins and what risks stablecoins carry.',
+        'Learn how stablecoin backing and redemption work, why dollar prices can move, and what to check before holding or transferring USDT, USDC or DAI.',
     });
 
     this.gerRandom();

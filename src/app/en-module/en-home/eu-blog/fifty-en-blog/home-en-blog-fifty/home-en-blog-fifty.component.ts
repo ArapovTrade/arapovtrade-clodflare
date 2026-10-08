@@ -53,12 +53,12 @@ export class HomeEnBlogFiftyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('What Are Bollinger Bands? | Arapov.trade');
+    this.titleService.setTitle('Bollinger Bands: what they show and how to use them');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Bollinger Bands: settings, squeeze and expansion, breakouts and bounces off the bands. How the indicator shows volatility and overheated zones.',
+        'Learn how Bollinger Bands are calculated and how to interpret touches, squeezes, W-bottoms, M-tops, %B and BandWidth without treating them as forecasts.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

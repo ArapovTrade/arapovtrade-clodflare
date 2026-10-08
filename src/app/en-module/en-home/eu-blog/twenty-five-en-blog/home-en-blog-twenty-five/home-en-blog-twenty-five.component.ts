@@ -56,13 +56,13 @@ export class HomeEnBlogTwentyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Martingale Strategy in Trading: Does It Work',
+      'Averaging Down and Martingale: Calculations and Risk',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What averaging and the martingale method are, why they look profitable and how exactly they drain a beginner’s account. The psychology and math of risk.',
+        'Calculate an average entry price, see how doubling after losses uses up an account, and check the total position risk before adding.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

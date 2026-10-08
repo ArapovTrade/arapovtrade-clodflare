@@ -53,14 +53,14 @@ export class HomeEnBlogNineComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Bitcoin Halving Explained: Effect on Price and Supply');
+    this.titleService.setTitle('Bitcoin halving: the subsidy, timing and price limits');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What Bitcoin halving is, when it happens, how the reward cut affects supply and why this event matters to miners and investors.',
+        'Learn what Bitcoin halving reduces, why its date is estimated, how fees change the miner-income calculation, and why issuance is not a price forecast.',
     });
 
     this.gerRandom();

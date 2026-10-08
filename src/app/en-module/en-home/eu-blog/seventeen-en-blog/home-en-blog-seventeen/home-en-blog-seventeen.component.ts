@@ -54,7 +54,7 @@ export class HomeEnBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Memecoins Explained: Hype, Risk and How They Work',
+      'Memecoins: Meaning, Liquidity and Risks | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -62,7 +62,7 @@ export class HomeEnBlogSeventeenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'What memecoins are, what holds their price up, why it is pure speculation on hype and how not to be left holding a worthless token.',
+        'Learn how memecoin prices and launches work. Check liquidity, creator permissions and actual sale proceeds before relying on a displayed gain.',
     });
     this.gerRandom();
   }

@@ -14,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: '', component: EnBlogHomepageComponent },
       {
-        path: 'freeeducation',
+        path: 'freeeducation', 
         loadChildren: () =>
           import('../en-trading/fourty-five-en-artickle/fourty-five-en-artickle.module').then(
             (m) => m.FourtyFiveEnArtickleModule,

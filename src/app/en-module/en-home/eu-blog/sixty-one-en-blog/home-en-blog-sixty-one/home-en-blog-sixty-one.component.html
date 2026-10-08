@@ -6,286 +6,135 @@
          <div class="m-right hero-section"></div>
          <div class="free-courses_main-container">
            <main lang="en">
-             <header>
-               <h1>Trading Q&A — ArapovTrade Library</h1>
-             </header>
-             <article>
-               <p>What is trading? Where should you start learning? How do you read a chart, choose a broker and limit losses? Find simple answers across eight areas of the ArapovTrade library. No previous knowledge is needed.</p>
-               <p>Choose a topic, read a short explanation and follow the link when you are ready to explore it in more detail. All materials are available free of charge.</p>
-               <nav aria-label="Questions and answers by topic">
-                 <h2>Choose a topic</h2>
-                 <ol>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#getting-started" (click)="$event.preventDefault(); scrollToFragment('getting-started')">Getting Started and Trading Systems</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#risk-psychology" (click)="$event.preventDefault(); scrollToFragment('risk-psychology')">Trading Risk and Psychology</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#chart-analysis" (click)="$event.preventDefault(); scrollToFragment('chart-analysis')">Charts and Technical Analysis</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#indicators" (click)="$event.preventDefault(); scrollToFragment('indicators')">Indicators and Volatility</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#financial-markets" (click)="$event.preventDefault(); scrollToFragment('financial-markets')">How Financial Markets Work</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#volume-wyckoff-smc" (click)="$event.preventDefault(); scrollToFragment('volume-wyckoff-smc')">Volume Analysis, Wyckoff and Smart Money</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#crypto-mechanics" (click)="$event.preventDefault(); scrollToFragment('crypto-mechanics')">Cryptocurrency Mechanics and Security</a
-                     >
-                   </li>
-                   <li>
-                     <a class="linkrefinto" [ngStyle]="{ cursor: 'pointer' }"
-                        href="#bitcoin-altcoins" (click)="$event.preventDefault(); scrollToFragment('bitcoin-altcoins')">Bitcoin, Altcoins and Market Cycles</a
-                     >
-                   </li>
-                 </ol>
-               </nav>
-               <!-- Register the new /en/freestudying/trading-faq-* topic routes when creating the eight pages. -->
-               <section
-                 id="getting-started"
-                 aria-labelledby="getting-started-title"
-               >
-                 <h2 id="getting-started-title">
-                   Getting Started and Trading Systems
-                 </h2>
-                 <p>Learn where to start, how to choose a broker and platform, practise your first trades and build a trading plan.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Trading and investing, long and short positions, education, platforms, brokers, trading styles, prop trading, copy trading, AI in trading and testing a trading system.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What is trading?</li>
-                   <li>Where should I start learning to trade?</li>
-                   <li>How do I choose a broker?</li>
-                   <li>What can I learn on a demo account?</li>
-                   <li>What are scalping, day trading and swing trading?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-getting-started"
-                     >Questions and answers: getting started and trading systems</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="risk-psychology"
-                 aria-labelledby="risk-psychology-title"
-               >
-                 <h2 id="risk-psychology-title">
-                   Trading Risk and Psychology
-                 </h2>
-                 <p>Learn how to limit a possible loss, choose your trade size and recognise decisions driven by fear or greed.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Risk management, position sizing, stop-loss and take-profit orders, expected value, losing streaks, averaging, martingale, fear, greed and discipline.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>How much should I risk on one trade?</li>
-                   <li>How do I calculate my trade size?</li>
-                   <li>Why set a stop-loss before entering?</li>
-                   <li>How can emotions interfere with a trading plan?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-risk-psychology"
-                     >Questions and answers: trading risk and psychology</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="chart-analysis"
-                 aria-labelledby="chart-analysis-title"
-               >
-                 <h2 id="chart-analysis-title">
-                   Charts and Technical Analysis
-                 </h2>
-                 <p>Learn to read candles, recognise trends and find levels where price may pause or turn.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Timeframes, trends and ranges, support and resistance, channels, breakouts and retests, Japanese candlesticks, pin bars, chart patterns, Elliott waves and Fibonacci levels.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What is technical analysis?</li>
-                   <li>What is a timeframe?</li>
-                   <li>What is a trend, and what is a range?</li>
-                   <li>What does a candlestick show?</li>
-                   <li>What is a breakout?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-chart-analysis"
-                     >Questions and answers: charts and technical analysis</a
-                   >
-                 </p>
-               </section>
-               <section id="indicators" aria-labelledby="indicators-title">
-                 <h2 id="indicators-title">Indicators and Volatility</h2>
-                 <p>Find out what indicators measure, how to read their signals and why one signal is not enough to open a trade.</p>
-                 <p>
-                   <strong>Topics covered:</strong> ATR, ADX, RSI, MACD, the stochastic oscillator, moving averages, VWAP, Bollinger Bands and the Ichimoku Cloud.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What does ATR measure?</li>
-                   <li>What is RSI?</li>
-                   <li>What is MACD?</li>
-                   <li>What is VWAP?</li>
-                   <li>What is a trading indicator?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-indicators"
-                     >Questions and answers: indicators and volatility</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="financial-markets"
-                 aria-labelledby="financial-markets-title"
-               >
-                 <h2 id="financial-markets-title">
-                   How Financial Markets Work
-                 </h2>
-                 <p>Understand exchanges, brokers and orders, and the differences between shares, currencies, bonds and trading contracts.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Exchanges, brokers and market makers, the order book, bid and ask, spreads, order types, Forex, leverage, trading sessions, news, futures, options, stocks and bonds.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>How is an exchange different from a broker?</li>
-                   <li>What is an order book?</li>
-                   <li>What is Forex?</li>
-                   <li>How is spot trading different from futures?</li>
-                   <li>How is a bond different from a share?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-financial-markets"
-                     >Questions and answers: how financial markets work</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="volume-wyckoff-smc"
-                 aria-labelledby="volume-wyckoff-smc-title"
-               >
-                 <h2 id="volume-wyckoff-smc-title">
-                   Volume Analysis, Wyckoff and Smart Money
-                 </h2>
-                 <p>Learn what volume shows, how large participants build positions and why price can break a level and quickly return.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Exchange volume and tick volume, Volume Profile, Market Profile, accumulation and distribution, Spring, Upthrust, effort and result, Smart Money, liquidity pools, Order Blocks and FVGs.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What does trading volume show?</li>
-                   <li>What is the Wyckoff method based on?</li>
-                   <li>What is a liquidity pool on a trading chart?</li>
-                   <li>What is an order block?</li>
-                   <li>How do I recognise an FVG?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-volume-wyckoff-smc"
-                     >Questions and answers: volume analysis, Wyckoff and Smart Money</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="crypto-mechanics"
-                 aria-labelledby="crypto-mechanics-title"
-               >
-                 <h2 id="crypto-mechanics-title">
-                   Cryptocurrency Mechanics and Security
-                 </h2>
-                 <p>Understand how cryptocurrencies work, where to keep coins and how to recognise risks and scams.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Wallets, keys and seed phrases, stablecoins, USDT, USDC and DAI, DeFi, staking, tokenomics, perpetual futures, funding rates, arbitrage, memecoins and scams.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What is cryptocurrency?</li>
-                   <li>How are hot, cold and exchange wallets different?</li>
-                   <li>Why should I keep my seed phrase offline?</li>
-                   <li>What is staking?</li>
-                   <li>What risks should a crypto beginner understand?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-crypto-mechanics"
-                     >Questions and answers: cryptocurrency mechanics and security</a
-                   >
-                 </p>
-               </section>
-               <section
-                 id="bitcoin-altcoins"
-                 aria-labelledby="bitcoin-altcoins-title"
-               >
-                 <h2 id="bitcoin-altcoins-title">
-                   Bitcoin, Altcoins and Market Cycles
-                 </h2>
-                 <p>Explore the differences between Bitcoin, Ethereum, Solana and XRP, and learn about halvings and crypto market cycles.</p>
-                 <p>
-                   <strong>Topics covered:</strong> Bitcoin, halving, Bitcoin ETFs, Ethereum, Solana, XRP, Bitcoin dominance, the ETH/BTC ratio, altseason, token supply and market cycles.
-                 </p>
-                 <p><strong>Example questions:</strong></p>
-                 <ul>
-                   <li>What makes Bitcoin different from many other cryptocurrencies?</li>
-                   <li>What is a Bitcoin halving?</li>
-                   <li>What do I own when I buy a Bitcoin ETF?</li>
-                   <li>How is Ethereum different from Bitcoin?</li>
-                   <li>What does Bitcoin dominance measure?</li>
-                 </ul>
-                 <p>
-                   <a
-                     class="linkrefinto"
-                     href="/en/freestudying/trading-faq-bitcoin-altcoins"
-                     >Questions and answers: Bitcoin, altcoins and market cycles</a
-                   >
-                 </p>
-               </section>
-               <section>
-                 <h2>How to Use This Section</h2>
-                 <ol>
-                   <li>Choose a topic that interests you.</li>
-                   <li>Find your question and read the short answer.</li>
-                   <li>Follow the link to the detailed article for explanations and examples.</li>
-                   <li>Return to the topic list when you want to explore another question.</li>
-                 </ol>
-                 <p>You can learn gradually: start with basic terms, then charts and volume, followed by trading rules and risk limits. Explore the topics in an order that works for you.</p>
-               </section>
-               <section>
-                 <h2>About the Library Materials</h2>
-                 <p>This section is based on the ArapovTrade library and Igor Arapov's educational videos. It provides definitions, comparisons of instruments, explanations of market mechanics and discussions of the author's approach to trading.</p>
-                 <p>The library's author is <a class="linkrefinto" href="https://arapov.trade/en"
-                     >Igor Arapov</a
-                   >, a practising trader since 2013. The detailed materials explain the context behind each question; the short answers provide a starting point for studying the topic.</p>
-               </section>
-             </article>
+<header><h1>Trading Questions and Answers: Choose a Topic</h1></header>
+<article class="faq-reading">
+<p>What is trading? Where should you start learning? How do you read a chart, choose a broker and limit losses? Find simple answers across eight areas of the ArapovTrade library. No previous knowledge is needed.</p>
+<p>Choose a topic, read a short explanation and follow the link when you are ready to explore it in more detail. All materials are available free of charge.</p>
+<nav class="faq-reading-nav" aria-label="Page contents"><h2>Choose a topic</h2><ul>
+<li><a class="linkrefinto" href="#getting-started" (click)="$event.preventDefault(); scrollToFragment('getting-started')"><span aria-hidden="true">→ </span>Getting Started and Trading Systems</a></li>
+<li><a class="linkrefinto" href="#risk-psychology" (click)="$event.preventDefault(); scrollToFragment('risk-psychology')"><span aria-hidden="true">→ </span>Trading Risk and Psychology</a></li>
+<li><a class="linkrefinto" href="#chart-analysis" (click)="$event.preventDefault(); scrollToFragment('chart-analysis')"><span aria-hidden="true">→ </span>Charts and Technical Analysis</a></li>
+<li><a class="linkrefinto" href="#indicators" (click)="$event.preventDefault(); scrollToFragment('indicators')"><span aria-hidden="true">→ </span>Indicators and Volatility</a></li>
+<li><a class="linkrefinto" href="#financial-markets" (click)="$event.preventDefault(); scrollToFragment('financial-markets')"><span aria-hidden="true">→ </span>How Financial Markets Work</a></li>
+<li><a class="linkrefinto" href="#volume-wyckoff-smc" (click)="$event.preventDefault(); scrollToFragment('volume-wyckoff-smc')"><span aria-hidden="true">→ </span>Volume Analysis, Wyckoff and Smart Money</a></li>
+<li><a class="linkrefinto" href="#crypto-mechanics" (click)="$event.preventDefault(); scrollToFragment('crypto-mechanics')"><span aria-hidden="true">→ </span>Cryptocurrency Mechanics and Security</a></li>
+<li><a class="linkrefinto" href="#bitcoin-altcoins" (click)="$event.preventDefault(); scrollToFragment('bitcoin-altcoins')"><span aria-hidden="true">→ </span>Bitcoin, Altcoins and Market Cycles</a></li>
+</ul></nav>
+<section id="getting-started" aria-labelledby="getting-started-title" class="faq-reading-topic"><h2 id="getting-started-title">Getting Started and Trading Systems</h2>
+<p>Learn where to start, how to choose a broker and platform, practise your first trades and build a trading plan.</p>
+<p>Topics covered: Trading and investing, long and short positions, education, platforms, brokers, trading styles, prop trading, copy trading, AI in trading and testing a trading system.</p>
+<p>Example questions:</p>
+<ul>
+<li>What is trading?</li>
+<li>Where should I start learning to trade?</li>
+<li>How do I choose a broker?</li>
+<li>What can I learn on a demo account?</li>
+<li>What are scalping, day trading and swing trading?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-getting-started">Questions and answers: getting started and trading systems</a></p>
+</section>
+<section id="risk-psychology" aria-labelledby="risk-psychology-title" class="faq-reading-topic"><h2 id="risk-psychology-title">Trading Risk and Psychology</h2>
+<p>Learn how to plan a possible loss, choose your trade size and recognise decisions driven by fear or greed.</p>
+<p>Topics covered: Risk management, position sizing, stop-loss and take-profit orders, expected value, losing streaks, averaging, martingale, fear, greed and discipline.</p>
+<p>Example questions:</p>
+<ul>
+<li>How much should I risk on one trade?</li>
+<li>How do I calculate my trade size?</li>
+<li>Why set a stop-loss before entering?</li>
+<li>How can emotions interfere with a trading plan?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-risk-psychology">Questions and answers: trading risk and psychology</a></p>
+</section>
+<section id="chart-analysis" aria-labelledby="chart-analysis-title" class="faq-reading-topic"><h2 id="chart-analysis-title">Charts and Technical Analysis</h2>
+<p>Learn to read candles, recognise trends and find levels where price may pause or turn.</p>
+<p>Topics covered: Timeframes, trends and ranges, support and resistance, channels, breakouts and retests, Japanese candlesticks, pin bars, chart patterns, Elliott waves and Fibonacci levels.</p>
+<p>Example questions:</p>
+<ul>
+<li>What is technical analysis?</li>
+<li>What is a timeframe?</li>
+<li>What is a trend, and what is a range?</li>
+<li>What does a candlestick show?</li>
+<li>What is a breakout?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-chart-analysis">Questions and answers: charts and technical analysis</a></p>
+</section>
+<section id="indicators" aria-labelledby="indicators-title" class="faq-reading-topic"><h2 id="indicators-title">Indicators and Volatility</h2>
+<p>Find out what indicators measure, how to read their signals and why one signal is not enough to open a trade.</p>
+<p>Topics covered: ATR, ADX, RSI, MACD, the stochastic oscillator, moving averages, VWAP, Bollinger Bands and the Ichimoku Cloud.</p>
+<p>Example questions:</p>
+<ul>
+<li>What does ATR measure?</li>
+<li>What is RSI?</li>
+<li>What is MACD?</li>
+<li>What is VWAP?</li>
+<li>What is a trading indicator?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-indicators">Questions and answers: indicators and volatility</a></p>
+</section>
+<section id="financial-markets" aria-labelledby="financial-markets-title" class="faq-reading-topic"><h2 id="financial-markets-title">How Financial Markets Work</h2>
+<p>Understand exchanges, brokers and orders, and the differences between shares, currencies, bonds and trading contracts.</p>
+<p>Topics covered: Exchanges, brokers and market makers, the order book, bid and ask, spreads, order types, Forex, leverage, trading sessions, news, futures, options, stocks and bonds.</p>
+<p>Example questions:</p>
+<ul>
+<li>How is an exchange different from a broker?</li>
+<li>What is an order book?</li>
+<li>What is Forex?</li>
+<li>How is spot trading different from futures?</li>
+<li>How is a bond different from a share?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-financial-markets">Questions and answers: how financial markets work</a></p>
+</section>
+<section id="volume-wyckoff-smc" aria-labelledby="volume-wyckoff-smc-title" class="faq-reading-topic"><h2 id="volume-wyckoff-smc-title">Volume Analysis, Wyckoff and Smart Money</h2>
+<p>Learn what trading volume measures and how it relates to price movement. A crossing of a marked level need not continue.</p>
+<p>Topics covered: Exchange volume and tick volume, Volume Profile, Market Profile, accumulation and distribution, Spring, Upthrust, effort and result, Smart Money, liquidity pools, Order Blocks and FVGs.</p>
+<p>Example questions:</p>
+<ul>
+<li>What does trading volume show?</li>
+<li>What is the Wyckoff method based on?</li>
+<li>What is a liquidity pool on a trading chart?</li>
+<li>What is an order block?</li>
+<li>How do I recognise an FVG?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-volume-wyckoff-smc">Questions and answers: volume analysis, Wyckoff and Smart Money</a></p>
+</section>
+<section id="crypto-mechanics" aria-labelledby="crypto-mechanics-title" class="faq-reading-topic"><h2 id="crypto-mechanics-title">Cryptocurrency Mechanics and Security</h2>
+<p>Understand how cryptocurrencies work, where to keep coins and how to recognise risks and scams.</p>
+<p>Topics covered: Wallets, keys and seed phrases, stablecoins, USDT, USDC and DAI, DeFi, staking, tokenomics, perpetual futures, funding rates, arbitrage, memecoins and scams.</p>
+<p>Example questions:</p>
+<ul>
+<li>What is cryptocurrency?</li>
+<li>How are hot, cold and exchange wallets different?</li>
+<li>Why should I keep my seed phrase offline?</li>
+<li>What is staking?</li>
+<li>What risks should a crypto beginner understand?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-crypto-mechanics">Questions and answers: cryptocurrency mechanics and security</a></p>
+</section>
+<section id="bitcoin-altcoins" aria-labelledby="bitcoin-altcoins-title" class="faq-reading-topic"><h2 id="bitcoin-altcoins-title">Bitcoin, Altcoins and Market Cycles</h2>
+<p>Explore the differences between Bitcoin, Ethereum, Solana and XRP, and learn about halvings and crypto market cycles.</p>
+<p>Topics covered: Bitcoin, halving, Bitcoin ETFs, Ethereum, Solana, XRP, Bitcoin dominance, the ETH/BTC ratio, altseason, token supply and market cycles.</p>
+<p>Example questions:</p>
+<ul>
+<li>What makes Bitcoin different from many other cryptocurrencies?</li>
+<li>What is a Bitcoin halving?</li>
+<li>What do I own when I buy a Bitcoin ETF?</li>
+<li>How is Ethereum different from Bitcoin?</li>
+<li>What does Bitcoin dominance measure?</li>
+</ul>
+<p><a class="linkrefinto" href="/en/freestudying/trading-faq-bitcoin-altcoins">Questions and answers: Bitcoin, altcoins and market cycles</a></p>
+</section>
+<h2>How to Use This Section</h2>
+<ol>
+<li>Choose a topic that interests you.</li>
+<li>Find your question and read the short answer.</li>
+<li>Follow the link to the detailed article for explanations and examples.</li>
+<li>Return to the topic list when you want to explore another question.</li>
+</ol>
+<p>You can learn gradually: start with basic terms, then charts and volume, followed by trading rules and risk limits. Explore the topics in an order that works for you.</p>
+<h2>About the Library Materials</h2>
+<p>This section is based on the ArapovTrade library and Igor Arapov&#x27;s educational videos. It provides definitions, comparisons of instruments, explanations of market mechanics and discussions of the author&#x27;s approach to trading.</p>
+<p>The library&#x27;s author is <a class="linkrefinto" href="https://arapov.trade/en"><strong>Igor Arapov</strong></a>, a practising trader since 2013. The detailed materials explain the context behind each question; the short answers provide a starting point for studying the topic.</p>
+</article>
 
 
              <div
@@ -538,7 +387,7 @@
                    class="side-bar_groups-title"
                    [ngStyle]="{ color: '#ffffff' }"
                  >
-                   Our projects are available to everyone
+                   Our learning resources are open to everyone
                    <hr
                      [ngStyle]="{
                        border: isDark
@@ -555,7 +404,7 @@
                      class="our_projects_title"
                      [ngStyle]="{ color: '#ffffff' }"
                    >
-                     Choose a topic that interests you and start learning
+                     Choose a topic and start learning
                    </div>
 
 
@@ -593,6 +442,8 @@
    </div>
  </div>
 </section>
+
+
 
 
 

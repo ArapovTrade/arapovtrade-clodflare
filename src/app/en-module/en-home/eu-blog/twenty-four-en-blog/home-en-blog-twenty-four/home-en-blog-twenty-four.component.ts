@@ -54,12 +54,12 @@ export class HomeEnBlogTwentyFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Wyckoff Method: Accumulation and Distribution Explained');
+    this.titleService.setTitle('Wyckoff method: accumulation, distribution and market phases');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'The Wyckoff method: accumulation and distribution phases, the actions of big players and how volume analysis reveals key market levels.',
+        'Learn the Wyckoff cycle, accumulation and distribution phases, springs and UTADs. Use price and volume to test an interpretation rather than assume a reversal.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

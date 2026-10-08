@@ -54,13 +54,13 @@ export class HomeEnBlogTwentySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Psychology: Mastering Emotions and Discipline',
+      'Trading Psychology: Fear, Greed and Following Your Rules',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'How emotions affect trading: fear, greed, FOMO and tilt. The cognitive biases and the techniques that help you trade by the system.',
+        'Understand fear, greed, FOMO and revenge trading. Use written conditions, risk limits and a decision record to identify changes made under pressure.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

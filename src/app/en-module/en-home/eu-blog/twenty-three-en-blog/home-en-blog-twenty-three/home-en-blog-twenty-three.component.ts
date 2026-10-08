@@ -54,12 +54,12 @@ export class HomeEnBlogTwentyThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Volume Analysis in Trading: How to Read It');
+    this.titleService.setTitle('Volume analysis: how to read trading volume');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'How market volume analysis works: volume profile, clusters, delta and why volume is the primary cause of price movement.',
+        'Learn what volume measures, how to compare it with price, and how exchange data, tick volume, profiles and footprints differ.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

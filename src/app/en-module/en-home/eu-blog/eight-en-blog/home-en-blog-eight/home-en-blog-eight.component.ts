@@ -54,7 +54,7 @@ export class HomeEnBlogEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Bitcoin Explained: How It Works and Why It Matters',
+      'Bitcoin for beginners: the network, price and trading markets',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
@@ -62,7 +62,7 @@ export class HomeEnBlogEightComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'What bitcoin is, how the blockchain, mining and limited supply work, where BTC’s value comes from and what risks the first cryptocurrency has.',
+        'Understand what BTC represents, distinguish coins from contracts and fund shares, and connect price observations with a conditional trade plan.',
     });
     this.gerRandom();
   }

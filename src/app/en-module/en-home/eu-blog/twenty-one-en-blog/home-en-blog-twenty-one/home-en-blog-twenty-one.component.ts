@@ -55,7 +55,7 @@ export class HomeEnBlogTwentyOneComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Solana Explained: Speed, Fees and How It Works',
+      'Solana and SOL: transactions, fees and trading basics',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
@@ -63,7 +63,7 @@ export class HomeEnBlogTwentyOneComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'What Solana is, how the SOL blockchain works, its DeFi and NFT ecosystem, the speed advantages and the risks for traders and investors.',
+        'Understand Solana and SOL, Proof of History, fees and staking. Check network activity and calculate trade quantity without treating technical news as a buying signal.',
     });
 
     this.gerRandom();

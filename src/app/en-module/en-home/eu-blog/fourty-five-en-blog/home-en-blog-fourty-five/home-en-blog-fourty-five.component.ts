@@ -55,13 +55,13 @@ export class HomeEnBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'What Is RSI? Relative Strength Index Explained',
+      'Relative Strength Indexs: SMA, EMA and how to read them',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'The RSI indicator: how to read overbought and oversold, divergences and why an RSI signal works only in the context of the trend.',
+        'Learn what RSI measures, how Wilder\u2019s calculation works, and how to interpret extreme readings and divergence. Check settings and limitations before using a signal.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

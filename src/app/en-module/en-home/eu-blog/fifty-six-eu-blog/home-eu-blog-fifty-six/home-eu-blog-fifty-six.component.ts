@@ -54,12 +54,12 @@ export class HomeEuBlogFiftySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Breakout Trading Strategy: Rules and Entry Setups');
+    this.titleService.setTitle('Breakout trading: levels, false breakouts and retests');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'How to trade a level breakout: spotting key zones, volume confirmation, false breakouts and where to place the stop. A strategy for all levels.',
+        'Learn what counts as a breakout, how a false breakout and retest differ, and how to plan the stop and target before entering.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

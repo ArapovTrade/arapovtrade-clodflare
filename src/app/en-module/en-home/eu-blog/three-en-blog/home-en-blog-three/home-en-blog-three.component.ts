@@ -53,12 +53,12 @@ export class HomeEnBlogThreeComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Order Blocks Explained: How to Spot Institutional Zones');
+    this.titleService.setTitle('Order blocks: how to mark and test a price area');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What an order block is, how to spot the zone where a big player built a position, what types of Order Block exist and how to trade them.',
+        'Learn how to mark an order-block candidate, check a return and define failure. Understand mitigation, breaker blocks and why a candle does not reveal remaining bank orders.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

@@ -54,13 +54,13 @@ export class HomeEnBlogSixtyFourComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Strategies That Work | Arapov.trade',
+      'Trading Strategy Examples: Levels, Entries and Risk',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Complete trading system with real trade examples. Step-by-step guide to finding entry points, setting stop-losses, and taking profits using false breakout strategy.',
+        'Follow annotated Nasdaq, Bitcoin and Euro FX scenarios from level to entry, protective exit and target. Read a student practice report without treating its figures as future probabilities.',
     });
     this.meta.updateTag({ name: 'author', content: 'Igor Arapov' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

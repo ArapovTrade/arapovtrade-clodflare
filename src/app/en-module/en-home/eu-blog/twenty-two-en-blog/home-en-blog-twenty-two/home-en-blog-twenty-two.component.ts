@@ -53,12 +53,12 @@ export class HomeEnBlogTwentyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('DeFi Explained: Decentralized Finance for Beginners');
+    this.titleService.setTitle('DeFi explained: swaps, loans, returns and risks');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'What DeFi is, how swaps, loans and staking work without banks on smart contracts and what risks, from code holes to lost funds, are real here.',
+        'Understand where DeFi assets go, how swaps and collateral-backed loans work, what pays a return, and which conditions affect withdrawals and losses.',
     });
 
     this.meta.updateTag({ name: 'author', content: 'Ihor Arapov' });
