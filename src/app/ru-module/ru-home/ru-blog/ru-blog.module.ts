@@ -112,7 +112,7 @@ const routes: Routes = [
           import('./seven-ru-blog/seven-ru-blog.module').then(
             (m) => m.SevenRuBlogModule,
           ),
-      },
+      }, 
       {
         path: 'bitcoin-guide', //8
         loadChildren: () =>
