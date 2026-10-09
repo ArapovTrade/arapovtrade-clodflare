@@ -12,72 +12,73 @@
 <article>
 <p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">MACD</span></dfn> показує різницю двох згладжених середніх ціни. За його лініями й стовпчиками можна порівняти просування руху та зміну розривів. Щоб прочитати показання, потрібно відрізнити основну лінію, її сигнальну середню та нуль.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-intro-uk.webp" alt="Основна лінія MACD порівнює середні ціни, сигнал згладжує MACD, а гістограма показує їхню різницю" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Індикатор перераховує доступні ціни. Він не називає учасників руху й сам не визначає майбутнього напрямку. Корисне запитання до нього конкретне: чи змінилося співвідношення середніх і що при цьому відбулося на самій ціні?</p>
-<h2 id="topic-01">З чого складається MACD</h2>
+<h2 id="topic-01" style="margin-top:40px;margin-bottom:16px;">З чого складається MACD</h2>
 <p>Назва Moving Average Convergence Divergence означає сходження й розходження ковзних середніх. Індикатор розробив Джеральд Аппель. У поширеному варіанті основна лінія дорівнює різниці експоненціальних середніх EMA за 12 і 26 періодів. Період тут є кількістю свічок; свічка об’єднує ціни за один часовий інтервал.</p>
 <p>Експоненціальна середня надає свіжим цінам більшу вагу, зберігаючи вплив попереднього розрахунку. Коротша, швидка EMA зазвичай раніше реагує на зміну, ніж довша, повільна. Механізм згладжування окремо розкриває матеріал про <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">ковзні середні</a>.</p>
 <p>Сигнальна лінія в поширеному варіанті є EMA готових значень MACD за дев’ять періодів. <dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">Гістограма MACD</span></dfn> відображає різницю між основною та сигнальною лініями у вигляді стовпчиків. Додатне значення означає, що MACD вище сигнальної, від’ємне означає нижче. Стовпчики не рахують покупок чи продавців.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-components-uk.webp" alt="Поширений розрахунок MACD як EMA12 мінус EMA26, сигналу EMA9 та гістограми MACD мінус сигнал" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-components-uk.webp" alt="Поширений розрахунок MACD як EMA12 мінус EMA26, сигналу EMA9 та гістограми MACD мінус сигнал" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Гістограму для такого відображення запропонував Томас Аспрей. Основна лінія порівнює дві середні самої ціни, а стовпчики порівнюють MACD з його середньою. Це різні відстані, тому вони можуть збільшуватися чи скорочуватися в різний час.</p>
 <p>Для навчального випадку візьмімо готові значення акції, частки компанії, у доларах: EMA12 = 105, EMA26 = 102, сигнальна лінія = 2. MACD = 105 − 102 = 3 долари. Гістограма = 3 − 2 = 1 долар. Основна лінія вище нуля та сигнальної; ці обчислення описують показання, а не прибуток угоди.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-calculation-uk.webp" alt="Навчальні значення акції: EMA12 105, EMA26 102, MACD 3, сигнал 2 та гістограма 1 долар" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-calculation-uk.webp" alt="Навчальні значення акції: EMA12 105, EMA26 102, MACD 3, сигнал 2 та гістограма 1 долар" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Результат виражений в одиницях ціни, а не у відсотках. Однакові значення різних інструментів не доводять однакової сили руху: ціни та масштаби коливань можуть різнитися. MACD не має фіксованої верхньої чи нижньої межі, тому універсального числа перекупленості для нього немає.</p>
 <img src="https://arapov.trade/assets/img/content/macdindicator2.png" alt="Свічки ф’ючерсу єни та панель MACD із двома лініями й стовпчиками" loading="lazy" />
-<h2 id="topic-02">Перетин сигнальної та перехід через нуль</h2>
+<h2 id="topic-02" style="margin-top:40px;margin-bottom:16px;">Перетин сигнальної та перехід через нуль</h2>
 <p>Коли основна лінія проходить сигнальну знизу вгору, гістограма переходить із від’ємних значень у додатні. За зворотного перетину вона стає від’ємною. Це два відображення тієї самої зміни різниці, а не два незалежні підтвердження.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-signal-cross-uk.webp" alt="Перетини MACD і сигналу в обидва боки змінюють знак гістограми та описують одну подію" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-signal-cross-uk.webp" alt="Перетини MACD і сигналу в обидва боки змінюють знак гістограми та описують одну подію" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Перехід основної лінії через нуль є іншою подією: швидка середня проходить повільну. Вище нуля EMA12 більша за EMA26, нижче нуля менша. MACD може пройти сигнальну вгору, залишаючись нижче нуля: різниця цінових середніх ще від’ємна, але вже вища за свою згладжену лінію.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-zero-uk.webp" alt="Знак MACD порівнює цінові середні; перетин сигналу вгору можливий нижче нуля" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-zero-uk.webp" alt="Знак MACD порівнює цінові середні; перетин сигналу вгору можливий нижче нуля" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Додатні стовпчики, що віддаляються від нуля вгору, показують збільшення різниці MACD і сигналу. Від’ємні стовпчики, які наближаються до нуля знизу, показують зменшення від’ємного розриву. Для читання називайте бік нуля й напрямок зміни відстані до нього. Саме слово «зростають» може описувати обидві різні ситуації.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-bars-uk.webp" alt="Додатні стовпчики віддаляються від нуля, а від’ємні наближаються до нього: зміна різних розривів" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-bars-uk.webp" alt="Додатні стовпчики віддаляються від нуля, а від’ємні наближаються до нього: зміна різних розривів" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Основна лінія може пройти сигнальну вниз, поки ціна ще зростає. Після уповільнення зростання розрив середніх здатен зменшитися раніше, ніж зміниться загальний напрямок. Перетин повідомляє про співвідношення розрахунків, а не доводить стійкого падіння.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-price-uk.webp" alt="Перетин MACD униз може відбутися під час зростання ціни і не доводить стійкого падіння" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Флет є коливанням ціни в діапазоні без стійкого просування в один бік. Повернення всередині нього можуть багато разів змінювати порядок ліній. Якщо кожне пересічення перетворювати на нову угоду, часті зміни відкритих купівель чи продажів додають витрат. Потрібно перевірити всі умови входу й виходу, включно з невдалими перетинами.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-range-uk.webp" alt="Повторні перетини у флеті додають витрат за частих змін угод; невдалі випадки теж перевіряють" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-03">Що означає дивергенція MACD</h2>
+<div class="flex"><img src="/assets/img/content/macd-range-uk.webp" alt="Повторні перетини у флеті додають витрат за частих змін угод; невдалі випадки теж перевіряють" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
+<h2 id="topic-03" style="margin-top:40px;margin-bottom:16px;">Що означає дивергенція MACD</h2>
 <p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">Дивергенція MACD</span></dfn> є розбіжністю відповідних поворотних точок ціни й індикатора. За звичайного ведмежого варіанта ціна формує вищу вершину, а MACD нижчу. За бичачого ціна формує нижчий мінімум, а мінімум MACD вищий за попередній.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-divergence-uk.webp" alt="Звичайна ведмежа та бичача дивергенція: відповідні вершини або мінімуми ціни й основної лінії MACD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-divergence-uk.webp" alt="Звичайна ведмежа та бичача дивергенція: відповідні вершини або мінімуми ціни й основної лінії MACD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Нова цінова вершина чи мінімум тоді не супроводжується таким самим розривом середніх. Це привід перевірити ослаблення просування, але не призначений момент розвороту. Ціна може продовжити напрямок після кількох розбіжностей.</p>
 <p>До перевірки виберіть серію: основну лінію або гістограму. Порівняння ціни з основною лінією й порівняння стовпчиків з MACD є різними спостереженнями. Не переходьте між ними після відомого результату, щоб отримати бажану форму.</p>
 <p>Після розбіжності перевірте, чи перестала ціна оновлювати важливу вершину або мінімум, чи утворила протилежну послідовність поворотів і як реагує біля позначеної області. <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Читання графіка</a> пояснює ці спостереження докладніше. Дивергенція ставить питання для перевірки, але не визначає готового входу.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-series-uk.webp" alt="Для дивергенції фіксують серію індикатора та окремо перевіряють повороти й реакцію самої ціни" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-04">Налаштування та часовий масштаб</h2>
+
+<h2 id="topic-04" style="margin-top:40px;margin-bottom:16px;">Налаштування та часовий масштаб</h2>
 <p>Параметри 12, 26, 9 задають періоди швидкої, повільної та сигнальної середніх. Це поширений початковий набір, а не доведений найкращий варіант кожного ринку. На годинному графіку використовують годинні дані, на денному денні; однакові числа не означають однакового часу.</p>
 <p>Коротші періоди зазвичай сильніше реагують на свіжі зміни, довші згладжують більше. Швидша реакція не гарантує точнішого рішення. Для іншого набору спочатку зафіксуйте параметри, потім застосуйте їх до всіх відібраних випадків.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-settings-uk.webp" alt="Періоди 12, 26 та 9 означають кількість свічок; швидша реакція не гарантує точнішого рішення" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Перевірте тип середніх і джерело ціни. TradingView дозволяє вибрати EMA або просту середню SMA окремо для основного розрахунку й сигналу. Проста середня надає значенням свого вікна однакову вагу. У стандартному MACD MetaTrader 5 сигнал є SMA за дев’ять періодів, а стовпчиками відображається сама основна серія.</p>
 <p>Тому з’ясуйте, що саме показує кожен стовпчик. Різниця MACD і сигналу та сама різниця швидкої й повільної цінових середніх мають різні значення. Відмінність зображень не є помилкою ринку: перед порівнянням потрібно вибрати однакові серії та джерело даних.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-platforms-uk.webp" alt="Поширена гістограма показує MACD мінус сигнал; стовпчики стандартного MetaTrader 5 показують сам MACD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/macd-platforms-uk.webp" alt="Поширена гістограма показує MACD мінус сигнал; стовпчики стандартного MetaTrader 5 показують сам MACD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>На поточній свічці остання ціна змінюється, і значення MACD теж оновлюється. Перетин може з’явитися й зникнути до закриття. Якщо правило вимагає завершеного періоду, історичний стовпчик не доводить, що остаточне показання було доступне всередині свічки.</p>
 <p>Таймфрейм є тривалістю однієї свічки. На меншому масштабі місцеве зниження може дати від’ємний MACD, поки на більшому він додатний. Різні послідовності цін описують різні частини руху; їх не потрібно сприймати як голосування про майбутнє.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-current-uk.webp" alt="Поточний перетин може зникнути до закриття; різні часові масштаби не є голосуванням про майбутнє" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-05">Як перевіряти MACD разом із ціною</h2>
+
+<h2 id="topic-05" style="margin-top:40px;margin-bottom:16px;">Як перевіряти MACD разом із ціною</h2>
 <p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/stochastic-oscillator">Стохастик</a> порівнює закриття з максимумом і мінімумом вибраного діапазону, MACD порівнює середні. Тому їхні події не зобов’язані збігатися. <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">RSI</a> також використовує інше співвідношення цінових змін. Збіг кількох формул не перетворює їх автоматично на незалежні відомості про учасників.</p>
 <p>У <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/freeeducation#indicatorsInTrading">розділі курсу про індикатори</a> Арапов залишає основою структуру руху, рівні та порівняння ціни з торговим обсягом, кількістю проторгованих одиниць. Після збитку автор спочатку пропонує перевірити виконання правила. Налаштування зберігають для навчальної серії, а момент їх зміни записують окремо.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-price-basis-uk.webp" alt="MACD, RSI та стохастик використовують різні формули цін; автор залишає основою структуру, рівні й обсяг" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<p>Конкретну перевірку ціни курс показує на ф’ючерсі євро. Ф’ючерс зобов’язує купити або продати базовий актив у визначений майбутній строк за погодженою ціною або здійснити передбачений контрактом грошовий розрахунок. Широка свічка зростання змінюється свічками меншого розмаху, потім ціна проходить локальні підтримки вниз. Підтримками тут є області попередніх зупинок падіння. Автор перевіряє нову низхідну структуру й реакцію після повернення, перш ніж прийняти новий сценарій. Подія MACD не замінює цієї послідовності.</p>
+
+<p>Конкретну перевірку ціни курс показує на ф’ючерсі євро. Ф’ючерс зобов’язує купити або продати базовий актив у визначений майбутній строк за погодженою ціною або здійснити передбачений контрактом грошовий розрахунок. Широка свічка зростання змінюється свічками меншого розмаху, потім ціна проходить локальні підтримки вниз.</p>
+<p> Підтримками тут є області попередніх зупинок падіння. Автор перевіряє нову низхідну структуру й реакцію після повернення, перш ніж прийняти новий сценарій. Подія MACD не замінює цієї послідовності.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-author-sequence-uk.webp" alt="Авторський приклад ф’ючерсу євро: широке зростання, менший розмах, прохід підтримок та перевірка нової структури" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Показання не задає допустимої втрати. Якщо розглядаєте угоду, визначте умову помилки й відповідну кількість інструмента окремо; цей зв’язок пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">ризик-менеджмент</a>. Збіг ліній не є причиною збільшувати кількість без нового розрахунку втрат.</p>
 <p>Для власної перевірки зафіксуйте одну подію, параметри та момент спостереження. Наприклад, виберіть перетин основної й сигнальної ліній на завершеній свічці. Не додавайте вимогу переходу нуля лише до вдалих випадків заднім числом. Збережіть інструмент, часовий масштаб і джерело даних у записі.</p>
 <p>Порівняйте ті самі правила угоди з вибраною подією й без неї, враховуючи витрати та невдалі випадки. Якщо налаштування постійно змінюються після перегляду результату, наступні випадки вже не перевіряють одну умову. Формула пояснює показання; користь конкретного правила потрібно перевірити на нових даних.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/macd-testing-uk.webp" alt="Перевірка MACD за сталої події й параметрів порівнює правила з умовою та без неї, включно з витратами й невдалими випадками" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-06">Часті запитання</h2>
+
+<h2 id="topic-06" style="margin-top:40px;margin-bottom:16px;">Часті запитання</h2>
 <mat-accordion>
 <mat-expansion-panel
                      class="highlight-box owl_link-box"
@@ -104,7 +105,7 @@
                      (closed)="panelOpenState.set(false)"
                    ><mat-expansion-panel-header><mat-panel-title>Чому MACD і стохастик показують різне?</mat-panel-title></mat-expansion-panel-header><div class="highlight-box owl_link-box"><p>MACD порівнює середні ціни, стохастик порівнює закриття з межами недавнього діапазону. Різні формули не зобов’язані давати однакові події; їхній збіг теж не гарантує вдалої угоди.</p></div></mat-expansion-panel>
 </mat-accordion>
-<h2 id="topic-07">Про автора</h2>
+<h2 id="topic-07" style="margin-top:40px;margin-bottom:16px;">Про автора</h2>
 <p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер із 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p>
 </article>
 
@@ -414,3 +415,4 @@
    </div>
  </div>
 </section>
+

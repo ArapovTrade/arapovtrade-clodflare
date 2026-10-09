@@ -1,349 +1,806 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="uk">
-<header><h1>Стохастик: розрахунок, згладжування та перевірка сигналів</h1></header>
-<article>
-<p><strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">Стохастик</span></dfn>, або Stochastic Oscillator,</strong> порівнює ціну закриття з найвищою та найнижчою цінами вибраного відрізка графіка. Результат показують на шкалі від 0 до 100. Це допомагає визначити положення закриття всередині діапазону й відділити його від подальшого згладжування ліній.</p>
-<!-- Ukrainian educational illustration: stochastic-intro-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-intro-uk.webp" alt="Стохастик порівнює закриття з межами вибраного вікна на шкалі від 0 до 100; початкове положення відрізняється від згладженої лінії" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Високе показання саме не визначає майбутнього падіння, низьке не обіцяє зростання. Для перевірки важливо назвати подію: наближення до межі шкали, вихід із зони чи перетин двох ліній. Ці умови описують різні зміни.</p>
-<section><h2 id="topic-01">Як стохастик порівнює закриття з діапазоном</h2>
-<p>Індикатор пов’язують із Джорджем Лейном та його колегами. На панелі основну лінію називають <strong>%K</strong>, сигнальну <strong>%D</strong>. Свічка або бар об’єднує ціни за один часовий інтервал. Період розрахунку задає кількість таких інтервалів, за які шукають найвищу та найнижчу ціни.</p>
-<p>Для початкового розрахунку беруть останнє закриття, найнижчий мінімум і найвищий максимум вибраних барів. Відстань між максимумом і мінімумом є шириною діапазону. Відстань від мінімуму до закриття ділять на цю ширину й множать на 100: <strong>початковий %K = (закриття − мінімум) / (максимум − мінімум) × 100</strong>.</p>
-<!-- Ukrainian educational illustration: stochastic-formula-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-formula-uk.webp" alt="Початковий відсоток K: різниця закриття й мінімуму поділена на різницю максимуму й мінімуму та помножена на 100" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>У навчальному випадку акція, частка компанії, має ціни в доларах. Найнижча ціна вибраного вікна становить 90, найвища 110, останнє закриття 105. Початковий %K = (105 − 90) / (110 − 90) × 100 = 75. Закриття розташоване на трьох чвертях відстані від нижньої межі до верхньої. Число 75 не є дохідністю чи ймовірністю зростання.</p>
-<!-- Ukrainian educational illustration: stochastic-example-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-example-uk.webp" alt="Навчальні ціни 90, 110 і 105 USD дають початковий K 75; це не дохідність чи ймовірність" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>За збігу закриття з максимумом початковий розрахунок дає 100, з мінімумом дає 0. Якщо максимум дорівнює мінімуму, ширина нульова й наведене ділення невизначене. Обробку такого відрізка потрібно перевірити в конкретній програмі, а не приписувати її числу звичайне значення формули.</p>
-<!-- Ukrainian educational illustration: stochastic-zero-range-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-zero-range-uk.webp" alt="За ненульового діапазону закриття на максимумі дає початковий K 100, на мінімумі 0; за рівних меж ділення невизначене й потрібна перевірка програми" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="uk">
+              <header>
+                <h1>
+                  Стохастик: розрахунок, згладжування та перевірка сигналів
+                </h1>
+              </header>
+              <article>
+                <p>
+                  <strong
+                    ><dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                      ><span itemprop="name">Стохастик</span></dfn
+                    >, або Stochastic Oscillator,</strong
+                  >
+                  порівнює ціну закриття з найвищою та найнижчою цінами
+                  вибраного відрізка графіка. Результат показують на шкалі від 0
+                  до 100. Це допомагає визначити положення закриття всередині
+                  діапазону й відділити його від подальшого згладжування ліній.
+                </p>
+                <!-- Ukrainian educational illustration: stochastic-intro-uk.webp -->
+                <div class="flex">
+                  <img
+                    src="/assets/img/content/stochastic-intro-uk.webp"
+                    alt="Стохастик порівнює закриття з межами вибраного вікна на шкалі від 0 до 100; початкове положення відрізняється від згладженої лінії"
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                      margin: 32px auto;
+                    "
+                  />
+                </div>
+                <p>
+                  Високе показання саме не визначає майбутнього падіння, низьке
+                  не обіцяє зростання. Для перевірки важливо назвати подію:
+                  наближення до межі шкали, вихід із зони чи перетин двох ліній.
+                  Ці умови описують різні зміни.
+                </p>
+                <section>
+                  <h2
+                    id="topic-01"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Як стохастик порівнює закриття з діапазоном
+                  </h2>
+                  <p>
+                    Індикатор пов’язують із Джорджем Лейном та його колегами. На
+                    панелі основну лінію називають <strong>%K</strong>,
+                    сигнальну <strong>%D</strong>. Свічка або бар об’єднує ціни
+                    за один часовий інтервал. Період розрахунку задає кількість
+                    таких інтервалів, за які шукають найвищу та найнижчу ціни.
+                  </p>
+                  <p>
+                    Для початкового розрахунку беруть останнє закриття,
+                    найнижчий мінімум і найвищий максимум вибраних барів.
+                    Відстань між максимумом і мінімумом є шириною діапазону.
+                    Відстань від мінімуму до закриття ділять на цю ширину й
+                    множать на 100:
+                    <strong
+                      >початковий %K = (закриття − мінімум) / (максимум −
+                      мінімум) × 100</strong
+                    >.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-formula-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-formula-uk.webp"
+                      alt="Початковий відсоток K: різниця закриття й мінімуму поділена на різницю максимуму й мінімуму та помножена на 100"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    У навчальному випадку акція, частка компанії, має ціни в
+                    доларах. Найнижча ціна вибраного вікна становить 90, найвища
+                    110, останнє закриття 105. Початковий %K = (105 − 90) / (110
+                    − 90) × 100 = 75. Закриття розташоване на трьох чвертях
+                    відстані від нижньої межі до верхньої. Число 75 не є
+                    дохідністю чи ймовірністю зростання.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-example-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-example-uk.webp"
+                      alt="Навчальні ціни 90, 110 і 105 USD дають початковий K 75; це не дохідність чи ймовірність"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    За збігу закриття з максимумом початковий розрахунок дає
+                    100, з мінімумом дає 0. Якщо максимум дорівнює мінімуму,
+                    ширина нульова й наведене ділення невизначене. Обробку
+                    такого відрізка потрібно перевірити в конкретній програмі, а
+                    не приписувати її числу звичайне значення формули.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-zero-range-uk.webp -->
 
-<!-- Ukrainian educational illustration: stochastic-smoothing-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-smoothing-uk.webp" alt="Усереднення послідовних показань зменшує швидкі коливання ціною затримки; згладжена лінія враховує не лише останнє закриття" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p><strong>Згладжування</strong> усереднює кілька послідовних показань. Наприклад, проста середня додає їх і ділить суму на кількість. Це послаблює частину швидких коливань, але затримує реакцію. Після такого усереднення основна лінія вже не зобов’язана точно відповідати положенню тільки останнього закриття.</p>
-<div class="flex"><img src="/assets/img/content/stochastic3.png" alt="Тижневі свічки ф’ючерсу фунта й дві лінії стохастика" class="pictureImg" loading="lazy" /></div>
-</section>
-<section><h2 id="topic-02">Швидкий, повільний і налаштовуваний варіанти</h2>
-<p>У <strong>Fast Stochastic</strong> основна %K відповідає початковому розрахунку, а %D є її простою середньою за три бари. У <strong>Slow Stochastic</strong> спочатку згладжують саму %K, потім обчислюють середню %D. <strong>Full Stochastic</strong> дозволяє окремо вибрати початкове вікно й обидва періоди усереднення.</p>
-<!-- Ukrainian educational illustration: stochastic-variants-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-variants-uk.webp" alt="Fast використовує початковий K і просту середню D за три бари; Slow згладжує K, потім D; Full дозволяє вибрати вікно й обидва усереднення" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>У стандартному STOCH TradingView початкове вікно має 14 барів, усереднення %K три, період %D три. Отже, основна лінія є середнім початкових значень, сигнальна є середнім основної. Число 75 з навчального випадку показує лише початковий %K: для готової згладженої лінії ще потрібні попередні показання.</p>
-<!-- Ukrainian educational illustration: stochastic-defaults-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-defaults-uk.webp" alt="Стандартний STOCH TradingView має вікно 14 барів та два усереднення по три; навчальні 75 є лише початковим K" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Назви полів важливіші за саму позначку «14, 3, 3». У MetaTrader окремо задають періоди %K і %D, сповільнення, метод середньої та використані ціни. Подібні підписи можуть приховувати різне усереднення. Перед порівнянням звірте конкретні параметри й формулу програми.</p>
-<!-- Ukrainian educational illustration: stochastic-fields-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-fields-uk.webp" alt="Для порівняння стохастика перевіряють назви полів, періоди K і D, сповільнення, метод середньої та використані ціни конкретної програми" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Таймфрейм є тривалістю одного часового бара чи свічки. Чотирнадцять хвилинних свічок та чотирнадцять денних охоплюють різні дані. Щоб правильно вибрати вихідні ціни, потрібне <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">читання графіка</a>. На ілюстрації показано тижневі свічки ф’ючерсу фунта, біржового контракту на майбутню дату, та панель із двома лініями стохастика.</p>
-<p>Коротше вікно чи менше усереднення зазвичай посилює реакцію на свіжі зміни. Довші параметри згладжують більше ціною затримки. Швидкість не доводить точнішого входу. Початкові параметри допомагають ознайомитися з формулою, але не є найкращими для кожного правила.</p>
-<!-- Ukrainian educational illustration: stochastic-scale-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-scale-uk.webp" alt="14 хвилинних і 14 денних барів використовують різні дані; коротші параметри чутливіші, довші більше згладжують, швидкість не доводить точності входу" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>На незавершеній свічці остання ціна, максимум і мінімум можуть змінитися. Лінії та перетини теж оновлюються. Якщо умова потребує закриття, перевіряйте завершений інтервал, зокрема обраний більший період, якщо індикатор використовує його дані.</p>
-<!-- Ukrainian educational illustration: stochastic-live-bar-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-live-bar-uk.webp" alt="На незавершеній свічці ціни, лінії та перетини можуть змінюватися; умову закриття перевіряють на завершеному інтервалі" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-</section>
-<section><h2 id="topic-03">Крайні зони та перетин ліній</h2>
-<p>Показання вище 80 зазвичай називають <strong>перекупленістю</strong>, нижче 20 <strong>перепроданістю</strong>. Ці слова описують верхню й нижню області розрахунку. Вони не є оцінкою справедливої вартості й не показують кількості покупців або їхніх грошей.</p>
-<p>Тренд є стійким просуванням ціни в обраному масштабі. Під час сильного зростання закриття можуть довго залишатися біля верхніх меж нових вікон, тому стохастик зберігає високі значення. За падіння можливий зворотний стан. Продаж тільки через 80 чи купівля тільки через 20 можуть опинитися проти руху, що триває.</p>
-<!-- Ukrainian educational illustration: stochastic-zones-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-zones-uk.webp" alt="Зони вище 80 та нижче 20 називають перекупленістю й перепроданістю; вони можуть зберігатися й не доводять розвороту" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Вихід із зони та перетин ліній відрізняються. Прохід %K нижче 80 змінює її положення щодо порога. Прохід %K під %D змінює порядок основної та сигнальної ліній. Ці події не зобов’язані відбутися на одній свічці.</p>
-<!-- Ukrainian educational illustration: stochastic-events-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-events-uk.webp" alt="Вихід K нижче 80 та прохід K під D є різними подіями і не обов’язково відбуваються на одній свічці" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Перетин %K над %D знизу вгору називають бичачим сигналом, зворотний ведмежим. Назви позначають припущення про напрямок, а не необхідний рух ціни. До перевірки запишіть вибраний перетин, параметри й момент завершення свічки; не змінюйте критерій після результату.</p>
-<!-- Ukrainian educational illustration: stochastic-crosses-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-crosses-uk.webp" alt="Абстрактні перетини: синя K проходить над помаранчевою D знизу вгору у бичачому варіанті й під неї згори вниз у ведмежому; назви не гарантують напрямку ціни" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Флет є коливанням усередині помітного діапазону без стійкого просування в один бік. Повернення стохастика можна зіставляти з поверненнями ціни від його меж, але сам діапазон здатен завершитися виходом за них. В індикатора немає механізму, який утримує ціну всередині. Перевіряйте фактичну реакцію, а не вважайте флет гарантією вдалого повернення.</p>
-<!-- Ukrainian educational illustration: stochastic-range-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-range-uk.webp" alt="Спочатку позначають діапазон і перевіряють фактичну реакцію; діапазон може завершитися виходом, індикатор не утримує ціну всередині" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>На схемі видно свічки й синю та помаранчеву лінії %K і %D. Вона допомагає розрізнити лінії, але не є набором точних вихідних цін для розрахунку. У навчальній перевірці використовуйте котирування й налаштування свого графіка, а не оцінку цифр за декоративною схемою.</p></section>
-<section><h2 id="topic-04">Як перевіряти дивергенцію стохастика</h2>
-<p>Дивергенція є розбіжністю відповідних поворотних точок ціни й індикатора. За звичайного <strong>ведмежого</strong> варіанта ціна формує вищу вершину, а вибрана лінія стохастика нижчу. За <strong>бичачого</strong> ціна формує нижчий мінімум, а мінімум лінії вищий за попередній. Порівнюють відповідні хвилі одного масштабу.</p>
-<!-- Ukrainian educational illustration: stochastic-divergence-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-divergence-uk.webp" alt="Абстрактна дивергенція: нижчий мінімум ціни та вищий мінімум вибраної лінії у бичачому варіанті; вища вершина ціни та нижча вершина лінії у ведмежому; відповідні хвилі не визначають часу розвороту" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>Нова цінова крайня точка тоді не супроводжується таким самим положенням розрахунку в діапазоні. У рухомому вікні його верхня й нижня межі теж змінюються. Через це стохастик може знизитися навіть під час подальшого підвищення ціни. Розбіжність сама не визначає часу розвороту.</p>
-<p>До розмітки виберіть лінію, %K або %D, та відповідні цінові точки. Не переходьте між лініями після відомого результату, щоб знайти бажане розходження. Позначте потрібну наступну зміну ціни й умову скасування припущення. Якщо її немає, сама форма дивергенції не підтверджує угоди.</p>
-<div class="flex"><img src="/assets/img/content/stochastic2-uk.jpg" alt="Навчальні схематичні свічки та синя лінія K і помаранчева D; це розрізнення ролей, а не набір точних вихідних цін" class="pictureImg" loading="lazy" /></div>
-<!-- Ukrainian educational illustration: stochastic-divergence-check-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-divergence-check-uk.webp" alt="До розмітки вибирають K або D і відповідні цінові точки, наступну зміну та умову скасування; після результату лінію не змінюють" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-</section>
-<section><h2 id="topic-05">Як перевірити застосування стохастика</h2>
-<p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/rsi-indicator">RSI</a> порівнює згладжені прирости та зниження ціни, стохастик порівнює закриття з межами вікна. Різні формули відповідають на різні запитання. Їхні показання не зобов’язані збігатися; збіг не стає автоматично незалежним доказом.</p>
-<p>Stochastic RSI є іншим індикатором: положення в діапазоні визначають за готовими значеннями RSI, а не безпосередньо за цінами. Схожа назва не дозволяє переносити його показання у звичайний стохастик.</p>
-<p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">Ковзна середня</a> згладжує ціну в її власних одиницях. Стохастик оцінює відносне положення закриття у вікні. Низький стохастик разом зі спадною середньою можливий, коли ціна перебуває біля нижньої частини діапазону ринку, що падає. Такий стан не є помилкою формул.</p>
-<!-- Ukrainian educational illustration: stochastic-methods-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-methods-uk.webp" alt="Стохастик зіставляє закриття з межами вікна, RSI згладжені прирости й зниження, середня ціну в її одиницях, Stochastic RSI діапазон значень RSI" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>У <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/freeeducation#phases">розділі курсу про фази ринку</a> Арапов спочатку визначає структуру. За низхідної послідовності вершин і мінімумів він розглядає продаж після повернення до опору, області попередніх зупинок зростання. За висхідної розглядає купівлю після повернення до підтримки, області зупинок падіння. Автор перевіряє відновлення руху й ризик; за неясної структури пропускає угоду. Перетин стохастика не замінює цих умов.</p>
-<!-- Ukrainian educational illustration: stochastic-author-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-author-uk.webp" alt="Автор спочатку визначає структуру, за низхідної розглядає повернення до опору, за висхідної до підтримки, перевіряє відновлення руху й ризик та пропускає неясну структуру" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<p>У курсі індикатор має допоміжну роль: він потрібен для конкретного спостереження, яке можна послідовно перевірити. Основою залишаються структура, рівні й торговий обсяг, кількість проторгованих одиниць. Загальний матеріал про <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/trading-indicators">торгові індикатори</a> допомагає порівняти завдання різних розрахунків.</p>
-<p>Для вправи зафіксуйте інструмент, часовий масштаб, параметри та одну подію, наприклад перетин на завершеній свічці. Сховайте майбутні бари й розкривайте їх поступово. Збережіть відповідні й невдалі випадки, перевіряючи наступну реакцію ціни. Зміна параметрів після кожного незручного випадку вже не перевіряє одне правило.</p>
-<p>Подія стохастика не задає кількості інструмента чи допустимої втрати. Для можливої угоди потрібні окремі умови входу, виходу та розміру; їхній зв’язок пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">ризик-менеджмент</a>. Порівнюйте результати однакових правил з умовою індикатора й без неї, включно з витратами.</p>
-<!-- Ukrainian educational illustration: stochastic-test-uk.webp -->
-<div class="flex"><img src="/assets/img/content/stochastic-test-uk.webp" alt="Навчальна перевірка фіксує одну подію й параметри, поступово розкриває майбутні бари, зберігає невдалі випадки й витрати; окремі правила входу, виходу й кількості порівнюють з індикатором і без нього" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-</section>
-<section><h2 id="topic-06">Часті запитання</h2><mat-accordion>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     [expanded]="true"
-                   ><mat-expansion-panel-header><mat-panel-title>Що показує стохастик?</mat-panel-title></mat-expansion-panel-header><p>Початковий розрахунок порівнює закриття з максимумом і мінімумом вибраних барів. Після згладжування лінії також враховують попередні показання. Це положення в розрахунковому діапазоні, а не ймовірність майбутнього руху.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Що означає набір 14, 3, 3?</mat-panel-title></mat-expansion-panel-header><p>У поширеному варіанті це вікно 14 барів та два усереднення по три. Звірте назви полів, їхній порядок і формулу конкретної платформи: однаковий підпис не гарантує однакового розрахунку.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Чи потрібно продавати за стохастика вище 80?</mat-panel-title></mat-expansion-panel-header><p>Ні. Високе показання описує верхню область розрахунку. Під час сильного зростання воно може зберігатися, поки ціна піднімається далі. Сам поріг не доводить розвороту.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Що означає перетин %K та %D?</mat-panel-title></mat-expansion-panel-header><p>Основна лінія змінила положення відносно сигнальної. Перетин угору називають бичачим, униз ведмежим, але ці назви не гарантують напряму ціни. На незавершеній свічці подія може зникнути.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Чим стохастик відрізняється від RSI та середньої?</mat-panel-title></mat-expansion-panel-header><p>Стохастик порівнює закриття з діапазоном, RSI порівнює згладжені прирости й зниження, середня згладжує саму ціну. Різні показання можуть бути правильними одночасно: вони описують різні співвідношення.</p></mat-expansion-panel>
-</mat-accordion></section>
-<section><h2 id="topic-07">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер із 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section>
-</article>
+                  <!-- Ukrainian educational illustration: stochastic-smoothing-uk.webp -->
 
+                  <p>
+                    <strong>Згладжування</strong> усереднює кілька послідовних
+                    показань. Наприклад, проста середня додає їх і ділить суму
+                    на кількість. Це послаблює частину швидких коливань, але
+                    затримує реакцію. Після такого усереднення основна лінія вже
+                    не зобов’язана точно відповідати положенню тільки останнього
+                    закриття.
+                  </p>
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic3.png"
+                      alt="Тижневі свічки ф’ючерсу фунта й дві лінії стохастика"
+                      class="pictureImg"
+                      loading="lazy"
+                    />
+                  </div>
+                </section>
+                <section>
+                  <h2
+                    id="topic-02"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Швидкий, повільний і налаштовуваний варіанти
+                  </h2>
+                  <p>
+                    У <strong>Fast Stochastic</strong> основна %K відповідає
+                    початковому розрахунку, а %D є її простою середньою за три
+                    бари. У <strong>Slow Stochastic</strong> спочатку згладжують
+                    саму %K, потім обчислюють середню %D.
+                    <strong>Full Stochastic</strong> дозволяє окремо вибрати
+                    початкове вікно й обидва періоди усереднення.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-variants-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-variants-uk.webp"
+                      alt="Fast використовує початковий K і просту середню D за три бари; Slow згладжує K, потім D; Full дозволяє вибрати вікно й обидва усереднення"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    У стандартному STOCH TradingView початкове вікно має 14
+                    барів, усереднення %K три, період %D три. Отже, основна
+                    лінія є середнім початкових значень, сигнальна є середнім
+                    основної. Число 75 з навчального випадку показує лише
+                    початковий %K: для готової згладженої лінії ще потрібні
+                    попередні показання.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-defaults-uk.webp -->
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                  <p>
+                    Назви полів важливіші за саму позначку «14, 3, 3». У
+                    MetaTrader окремо задають періоди %K і %D, сповільнення,
+                    метод середньої та використані ціни. Подібні підписи можуть
+                    приховувати різне усереднення. Перед порівнянням звірте
+                    конкретні параметри й формулу програми.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-fields-uk.webp -->
 
+                  <p>
+                    Таймфрейм є тривалістю одного часового бара чи свічки.
+                    Чотирнадцять хвилинних свічок та чотирнадцять денних
+                    охоплюють різні дані. Щоб правильно вибрати вихідні ціни,
+                    потрібне
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/chart-reading"
+                      >читання графіка</a
+                    >. На ілюстрації показано тижневі свічки ф’ючерсу фунта,
+                    біржового контракту на майбутню дату, та панель із двома
+                    лініями стохастика.
+                  </p>
+                  <p>
+                    Коротше вікно чи менше усереднення зазвичай посилює реакцію
+                    на свіжі зміни. Довші параметри згладжують більше ціною
+                    затримки. Швидкість не доводить точнішого входу. Початкові
+                    параметри допомагають ознайомитися з формулою, але не є
+                    найкращими для кожного правила.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-scale-uk.webp -->
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                  <p>
+                    На незавершеній свічці остання ціна, максимум і мінімум
+                    можуть змінитися. Лінії та перетини теж оновлюються. Якщо
+                    умова потребує закриття, перевіряйте завершений інтервал,
+                    зокрема обраний більший період, якщо індикатор використовує
+                    його дані.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-live-bar-uk.webp -->
+                </section>
+                <section>
+                  <h2
+                    id="topic-03"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Крайні зони та перетин ліній
+                  </h2>
+                  <p>
+                    Показання вище 80 зазвичай називають
+                    <strong>перекупленістю</strong>, нижче 20
+                    <strong>перепроданістю</strong>. Ці слова описують верхню й
+                    нижню області розрахунку. Вони не є оцінкою справедливої
+                    вартості й не показують кількості покупців або їхніх грошей.
+                  </p>
+                  <p>
+                    Тренд є стійким просуванням ціни в обраному масштабі. Під
+                    час сильного зростання закриття можуть довго залишатися біля
+                    верхніх меж нових вікон, тому стохастик зберігає високі
+                    значення. За падіння можливий зворотний стан. Продаж тільки
+                    через 80 чи купівля тільки через 20 можуть опинитися проти
+                    руху, що триває.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-zones-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-zones-uk.webp"
+                      alt="Зони вище 80 та нижче 20 називають перекупленістю й перепроданістю; вони можуть зберігатися й не доводять розвороту"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    Вихід із зони та перетин ліній відрізняються. Прохід %K
+                    нижче 80 змінює її положення щодо порога. Прохід %K під %D
+                    змінює порядок основної та сигнальної ліній. Ці події не
+                    зобов’язані відбутися на одній свічці.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-events-uk.webp -->
+                  <div class="flex"></div>
+                  <p>
+                    Перетин %K над %D знизу вгору називають бичачим сигналом,
+                    зворотний ведмежим. Назви позначають припущення про
+                    напрямок, а не необхідний рух ціни. До перевірки запишіть
+                    вибраний перетин, параметри й момент завершення свічки; не
+                    змінюйте критерій після результату.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-crosses-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-crosses-uk.webp"
+                      alt="Абстрактні перетини: синя K проходить над помаранчевою D знизу вгору у бичачому варіанті й під неї згори вниз у ведмежому; назви не гарантують напрямку ціни"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    Флет є коливанням усередині помітного діапазону без стійкого
+                    просування в один бік. Повернення стохастика можна
+                    зіставляти з поверненнями ціни від його меж, але сам
+                    діапазон здатен завершитися виходом за них. В індикатора
+                    немає механізму, який утримує ціну всередині. Перевіряйте
+                    фактичну реакцію, а не вважайте флет гарантією вдалого
+                    повернення.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-range-uk.webp -->
 
+                  <p>
+                    На схемі видно свічки й синю та помаранчеву лінії %K і %D.
+                    Вона допомагає розрізнити лінії, але не є набором точних
+                    вихідних цін для розрахунку. У навчальній перевірці
+                    використовуйте котирування й налаштування свого графіка, а
+                    не оцінку цифр за декоративною схемою.
+                  </p>
+                </section>
+                <section>
+                  <h2
+                    id="topic-04"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Як перевіряти дивергенцію стохастика
+                  </h2>
+                  <p>
+                    Дивергенція є розбіжністю відповідних поворотних точок ціни
+                    й індикатора. За звичайного
+                    <strong>ведмежого</strong> варіанта ціна формує вищу
+                    вершину, а вибрана лінія стохастика нижчу. За
+                    <strong>бичачого</strong> ціна формує нижчий мінімум, а
+                    мінімум лінії вищий за попередній. Порівнюють відповідні
+                    хвилі одного масштабу.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-divergence-uk.webp -->
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic-divergence-uk.webp"
+                      alt="Абстрактна дивергенція: нижчий мінімум ціни та вищий мінімум вибраної лінії у бичачому варіанті; вища вершина ціни та нижча вершина лінії у ведмежому; відповідні хвилі не визначають часу розвороту"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        max-height: none;
+                        display: block;
+                        object-fit: contain;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <p>
+                    Нова цінова крайня точка тоді не супроводжується таким самим
+                    положенням розрахунку в діапазоні. У рухомому вікні його
+                    верхня й нижня межі теж змінюються. Через це стохастик може
+                    знизитися навіть під час подальшого підвищення ціни.
+                    Розбіжність сама не визначає часу розвороту.
+                  </p>
+                  <p>
+                    До розмітки виберіть лінію, %K або %D, та відповідні цінові
+                    точки. Не переходьте між лініями після відомого результату,
+                    щоб знайти бажане розходження. Позначте потрібну наступну
+                    зміну ціни й умову скасування припущення. Якщо її немає,
+                    сама форма дивергенції не підтверджує угоди.
+                  </p>
+                  <div class="flex">
+                    <img
+                      src="/assets/img/content/stochastic2-uk.jpg"
+                      alt="Навчальні схематичні свічки та синя лінія K і помаранчева D; це розрізнення ролей, а не набір точних вихідних цін"
+                      class="pictureImg"
+                      loading="lazy"
+                      style="
+                        display: block;
+                        width: 100%;
+                        max-width: 800px;
+                        height: auto;
+                        margin: 32px auto;
+                      "
+                    />
+                  </div>
+                  <!-- Ukrainian educational illustration: stochastic-divergence-check-uk.webp -->
+                </section>
+                <section>
+                  <h2
+                    id="topic-05"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Як перевірити застосування стохастика
+                  </h2>
+                  <p>
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/rsi-indicator"
+                      >RSI</a
+                    >
+                    порівнює згладжені прирости та зниження ціни, стохастик
+                    порівнює закриття з межами вікна. Різні формули відповідають
+                    на різні запитання. Їхні показання не зобов’язані збігатися;
+                    збіг не стає автоматично незалежним доказом.
+                  </p>
+                  <p>
+                    Stochastic RSI є іншим індикатором: положення в діапазоні
+                    визначають за готовими значеннями RSI, а не безпосередньо за
+                    цінами. Схожа назва не дозволяє переносити його показання у
+                    звичайний стохастик.
+                  </p>
+                  <p>
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/moving-averages"
+                      >Ковзна середня</a
+                    >
+                    згладжує ціну в її власних одиницях. Стохастик оцінює
+                    відносне положення закриття у вікні. Низький стохастик разом
+                    зі спадною середньою можливий, коли ціна перебуває біля
+                    нижньої частини діапазону ринку, що падає. Такий стан не є
+                    помилкою формул.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-methods-uk.webp -->
 
-                 <span class="previous_page_text-block">
-                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                  <p>
+                    У
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/freeeducation#phases"
+                      >розділі курсу про фази ринку</a
+                    >
+                    Арапов спочатку визначає структуру. За низхідної
+                    послідовності вершин і мінімумів він розглядає продаж після
+                    повернення до опору, області попередніх зупинок зростання.
+                    За висхідної розглядає купівлю після повернення до
+                    підтримки, області зупинок падіння. Автор перевіряє
+                    відновлення руху й ризик; за неясної структури пропускає
+                    угоду. Перетин стохастика не замінює цих умов.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-author-uk.webp -->
 
+                  <p>
+                    У курсі індикатор має допоміжну роль: він потрібен для
+                    конкретного спостереження, яке можна послідовно перевірити.
+                    Основою залишаються структура, рівні й торговий обсяг,
+                    кількість проторгованих одиниць. Загальний матеріал про
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/trading-indicators"
+                      >торгові індикатори</a
+                    >
+                    допомагає порівняти завдання різних розрахунків.
+                  </p>
+                  <p>
+                    Для вправи зафіксуйте інструмент, часовий масштаб, параметри
+                    та одну подію, наприклад перетин на завершеній свічці.
+                    Сховайте майбутні бари й розкривайте їх поступово. Збережіть
+                    відповідні й невдалі випадки, перевіряючи наступну реакцію
+                    ціни. Зміна параметрів після кожного незручного випадку вже
+                    не перевіряє одне правило.
+                  </p>
+                  <p>
+                    Подія стохастика не задає кількості інструмента чи
+                    допустимої втрати. Для можливої угоди потрібні окремі умови
+                    входу, виходу та розміру; їхній зв’язок пояснює
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/uk/freestudying/risk-management"
+                      >ризик-менеджмент</a
+                    >. Порівнюйте результати однакових правил з умовою
+                    індикатора й без неї, включно з витратами.
+                  </p>
+                  <!-- Ukrainian educational illustration: stochastic-test-uk.webp -->
+                </section>
+                <section>
+                  <h2
+                    id="topic-06"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Часті запитання
+                  </h2>
+                  <mat-accordion>
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      [expanded]="true"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Що показує стохастик?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        Початковий розрахунок порівнює закриття з максимумом і
+                        мінімумом вибраних барів. Після згладжування лінії також
+                        враховують попередні показання. Це положення в
+                        розрахунковому діапазоні, а не ймовірність майбутнього
+                        руху.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Що означає набір 14, 3, 3?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        У поширеному варіанті це вікно 14 барів та два
+                        усереднення по три. Звірте назви полів, їхній порядок і
+                        формулу конкретної платформи: однаковий підпис не
+                        гарантує однакового розрахунку.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Чи потрібно продавати за стохастика вище
+                          80?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        Ні. Високе показання описує верхню область розрахунку.
+                        Під час сильного зростання воно може зберігатися, поки
+                        ціна піднімається далі. Сам поріг не доводить розвороту.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Що означає перетин %K та %D?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        Основна лінія змінила положення відносно сигнальної.
+                        Перетин угору називають бичачим, униз ведмежим, але ці
+                        назви не гарантують напряму ціни. На незавершеній свічці
+                        подія може зникнути.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Чим стохастик відрізняється від RSI та
+                          середньої?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        Стохастик порівнює закриття з діапазоном, RSI порівнює
+                        згладжені прирости й зниження, середня згладжує саму
+                        ціну. Різні показання можуть бути правильними одночасно:
+                        вони описують різні співвідношення.
+                      </p></mat-expansion-panel
+                    >
+                  </mat-accordion>
+                </section>
+                <section>
+                  <h2
+                    id="topic-07"
+                    style="margin-top: 40px; margin-bottom: 16px"
+                  >
+                    Про автора
+                  </h2>
+                  <p>
+                    <a class="linkrefinto" href="https://arapov.trade/uk"
+                      ><strong><em>Ігор Арапов</em></strong></a
+                    >, практикуючий трейдер із 2013 року, автор бібліотеки
+                    ArapovTrade.
+                    <a
+                      class="linkrefinto"
+                      href="https://orcid.org/0009-0003-0430-778X"
+                      >ORCID: 0009-0003-0430-778X</a
+                    >.
+                  </p>
+                </section>
+              </article>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Фільтр за категоріями
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                  <span class="previous_page_text-block">
+                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Фільтр за категоріями
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Популярне
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Популярне
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/uk/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleUkr"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleUkr }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
+                <!-- Our projects  -->
 
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/uk/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleUkr"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleUkr }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -352,80 +809,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Наші проєкти доступні всім охочим
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Наші проєкти доступні всім охочим
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Виберіть цікаву для вас тему й розпочніть навчання
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Виберіть цікаву для вас тему й розпочніть навчання
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-

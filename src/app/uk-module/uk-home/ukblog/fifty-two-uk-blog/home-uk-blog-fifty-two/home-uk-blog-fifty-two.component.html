@@ -10,68 +10,69 @@
 <article>
 <p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">ADX (Average Directional Index)</span></dfn> описує силу спрямованого руху ціни. Трендом називають рух із послідовним оновленням максимумів і мінімумів угору або вниз. Високий ADX можливий в обох випадках: його число не вибирає сторону угоди й не показує ймовірності прибутку.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-intro-uk.webp" alt="ADX описує силу спрямованості під час зростання й падіння, але не вибирає сторону та не показує ймовірності прибутку" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-01">Що вимірює ADX і що показують DI</h2>
+<div class="flex"><img src="/assets/img/content/adx-intro-uk.webp" alt="ADX описує силу спрямованості під час зростання й падіння, але не вибирає сторону та не показує ймовірності прибутку" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
+<h2 id="topic-01" style="margin-top:40px;margin-bottom:16px;">Що вимірює ADX і що показують DI</h2>
 <p>Уеллс Вайлдер представив систему спрямованого руху у книзі 1978 року. Вона поєднує ADX із двома індексами, +DI та −DI; разом їх називають DMI. ADX має шкалу від 0 до 100. Значення 30 не означає зростання ціни на 30% або шанс заробити 30%.</p>
 <p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">+DI та -DI</span></dfn> отримують із змін максимумів і мінімумів сусідніх свічок. Свічка показує відкриття, найвищу й найнижчу ціну та закриття за один проміжок часу. Якщо +DI вище за −DI, у розрахунку переважає рух угору; за зворотного положення вниз. Це порівняння цінових даних, а не грошей чи намірів покупців і продавців.</p>
 <p>ADX згладжує відносний розрив між DI, відкидаючи знак різниці. Тому його лінія може підніматися, коли ціна падає. Напрямок перевіряють окремо за DI та послідовністю цінових вершин і спадів, яку пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">читання графіка</a>.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-di-uk.webp" alt="Взаємне положення DI описує напрямок, а ADX згладжує відносний розрив без знака; індекси не вимірюють гроші учасників" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-02">Як із цінових даних отримують ADX</h2>
+
+<h2 id="topic-02" style="margin-top:40px;margin-bottom:16px;">Як із цінових даних отримують ADX</h2>
 <p>Спочатку порівнюють, наскільки поточний максимум вищий за попередній і наскільки поточний мінімум нижчий за попередній. Якщо перша зміна більша й додатна, її записують як +DM, а −DM дорівнює нулю. Якщо друга більша й додатна, її записують як −DM, а +DM дорівнює нулю. За рівних змін або відсутності додатної зміни обидві величини нульові. DM тут означає спрямоване переміщення крайніх цін.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-dm-uk.webp" alt="Додатні зміни максимуму та мінімуму порівнюють для вибору DM; за рівності чи відсутності додатної зміни обидва DM нульові" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/adx-dm-uk.webp" alt="Додатні зміни максимуму та мінімуму порівнюють для вибору DM; за рівності чи відсутності додатної зміни обидва DM нульові" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Далі визначають істинний діапазон TR: найбільше з трьох відстаней. Перша між поточними максимумом і мінімумом, друга між максимумом і попереднім закриттям, третя між мінімумом і попереднім закриттям. Відстань завжди невід’ємна. Так у розрахунок потрапляє і рух від попереднього закриття, навіть якщо нова свічка відкрилася окремо від нього.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-tr-uk.webp" alt="TR вибирає найбільшу з трьох невід’ємних відстаней між крайніми цінами та попереднім закриттям" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<p>DM і TR згладжують, поєднуючи нові дані з попередніми. У класичному розрахунку з періодом 14 спочатку складають перші 14 значень кожного ряду. Потім від попередньої суми віднімають її чотирнадцяту частину й додають нове значення. Згладжені +DM і −DM ділять на згладжений TR та множать на 100: це +DI та −DI. Якщо згладжений TR дорівнює нулю, це ділення не визначене; перевірте обробку такого випадку на платформі. Істинний діапазон також використовує <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">ATR</a>, що вимірює розмах коливань, а не напрямок.</p>
+<div class="flex"><img src="/assets/img/content/adx-tr-uk.webp" alt="TR вибирає найбільшу з трьох невід’ємних відстаней між крайніми цінами та попереднім закриттям" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
+<p>DM і TR згладжують, поєднуючи нові дані з попередніми. У класичному розрахунку з періодом 14 спочатку складають перші 14 значень кожного ряду. Потім від попередньої суми віднімають її чотирнадцяту частину й додають нове значення.</p>
+<p> Згладжені +DM і −DM ділять на згладжений TR та множать на 100: це +DI та −DI. Якщо згладжений TR дорівнює нулю, це ділення не визначене; перевірте обробку такого випадку на платформі. Істинний діапазон також використовує <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">ATR</a>, що вимірює розмах коливань, а не напрямок.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-smoothing-uk.webp" alt="Згладжені DM та TR утворюють DI; початкові суми й оновлення за періоду 14 зберігають вплив попередніх даних" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Проміжний індекс DX порівнює розрив між DI з їхньою сумою. Вертикальні риски означають абсолютну величину: знак різниці відкидають. Назва −DI містить мінус, але саме значення індексу невід’ємне. Формула така: <strong>DX = 100 × |+DI − (−DI)| / (+DI + (−DI))</strong>. Якщо сума DI дорівнює нулю, ділення не визначене; обробку такого випадку перевіряють у конкретній платформі.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-dx-formula-uk.webp" alt="DX порівнює абсолютну різницю DI з їхньою сумою; мінус у назві DI не означає від’ємного значення" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>ADX є згладженою послідовністю DX. Перше значення беруть як середнє перших DX за вибрану кількість періодів. За періоду 14 наступне значення отримують так: попередній ADX множать на 13, додають новий DX і ділять на 14. Одне нове спостереження тому не замінює всієї історії.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-update-uk.webp" alt="ADX починають із середнього DX та оновлюють із попереднього ADX і нового DX за періоду 14" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-03">Один приклад: DX ще не є ADX</h2>
+
+<h2 id="topic-03" style="margin-top:40px;margin-bottom:16px;">Один приклад: DX ще не є ADX</h2>
 <p>Візьмімо умовні, вже розраховані +DI = 30 та −DI = 10. Різниця дорівнює 20, сума 40; DX = 100 × 20 / 40 = 50. Це відносний розрив індексів, а не зміна ціни на 50% і не ймовірність успішної угоди.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-example-dx-uk.webp" alt="Навчальні DI 30 і 10 дають різницю 20, суму 40 та DX 50, що не є зміною ціни чи ймовірністю" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/adx-example-dx-uk.webp" alt="Навчальні DI 30 і 10 дають різницю 20, суму 40 та DX 50, що не є зміною ціни чи ймовірністю" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Нехай попередній ADX із періодом 14 становив 20. Новий ADX = (20 × 13 + 50) / 14 ≈ 22,14. Поточний DX уже дорівнює 50, але ADX залишається нижчим через попередню історію. Якщо поміняти значення DI місцями, обидва результати залишаться такими самими, а напрямок переважного руху зміниться.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-example-adx-uk.webp" alt="Попередній ADX 20 та новий DX 50 дають ADX приблизно 22,14; перестановка DI змінює напрямок, але не розрив" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-04">Як читати значення 20, 25 і 40</h2>
+<div class="flex"><img src="/assets/img/content/adx-example-adx-uk.webp" alt="Попередній ADX 20 та новий DX 50 дають ADX приблизно 22,14; перестановка DI змінює напрямок, але не розрив" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
+<h2 id="topic-04" style="margin-top:40px;margin-bottom:16px;">Як читати значення 20, 25 і 40</h2>
 <p>Нижче 20 часто позначають слабку спрямованість, вище 25 виражений тренд, а між ними залишають проміжну область. Це поширені орієнтири, а не точні межі зміни ринку. Поріг перевіряють для свого інструмента, тривалості свічки та налаштувань.</p>
 <p>Значення вище 40 означає великий згладжений розрив DI. Воно не доводить, що рух виснажився чи що входити вже пізно. Високий ADX може триматися під час продовження тренду. За швидкої зміни напрямку попередній рух ще впливає на згладжену лінію.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-thresholds-uk.webp" alt="Пороги ADX 20, 25 і 40 є поширеними орієнтирами, а не універсальними межами чи доказом виснаження руху" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+<div class="flex"><img src="/assets/img/content/adx-thresholds-uk.webp" alt="Пороги ADX 20, 25 і 40 є поширеними орієнтирами, а не універсальними межами чи доказом виснаження руху" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto;"></div>
 <p>Рівень ADX і зміну його лінії читають окремо. ADX може знижуватися, поки ціна продовжує рухатися в попередній бік: зменшується згладжений розрив DI. Це не готовий сигнал розвороту. Низький ADX також не означає нерухомої ціни: широкі коливання в обидва боки можуть давати слабку спрямованість.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-level-change-uk.webp" alt="Рівень ADX і його зміну оцінюють окремо: спад не доводить розвороту, низьке число не означає нерухомої ціни" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-05">Період, дані та завершення свічки</h2>
+
+<h2 id="topic-05" style="margin-top:40px;margin-bottom:16px;">Період, дані та завершення свічки</h2>
 <p>Поширене початкове налаштування дорівнює 14. Це кількість свічок, а не завжди днів. На годинному графіку використовують годинні дані, на денному денні; відмінні значення не обов’язково є помилкою. Спочатку визначте, рух якої тривалості перевіряєте.</p>
 <p>Коротший період зазвичай прискорює реакцію, довший посилює згладжування. Швидкість не гарантує точності, а плавність надійності. Найкращого періоду для всіх ринків немає. Інший спосіб згладжування ціни розглядають <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/moving-averages">ковзні середні</a>.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-period-uk.webp" alt="Період 14 означає кількість свічок; коротший реагує швидше, довший згладжує більше без гарантії точності" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Перевірте назву й параметри інструмента на платформі. У TradingView окремий ADX показує лише свою лінію; DMI додає +DI та −DI. У DMI довжина DI та згладжування ADX задаються окремо. Для порівняння платформ потрібні однакові котирування, тривалість свічки, метод, початкове значення та достатня попередня історія: згладжування зберігає її вплив.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-platform-uk.webp" alt="ADX та DMI відрізняються набором ліній; для порівняння звіряють параметри, котирування, метод і початкову історію" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>На незавершеній свічці максимум і мінімум ще можуть змінитися, а разом із ними DI та ADX. Якщо правило передбачає перевірку після закриття, використовуйте завершені свічки. Інакше остаточне число на історичному графіку можна помилково прийняти за доступне раніше.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-current-uk.webp" alt="На поточній свічці крайні ціни, DI та ADX змінюються; правило закриття потребує завершеного інтервалу" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-06">Фільтр обстановки та окреме правило входу</h2>
+
+<h2 id="topic-06" style="margin-top:40px;margin-bottom:16px;">Фільтр обстановки та окреме правило входу</h2>
 <p>Фільтр задає умови, за яких ви розглядаєте вхід. Наприклад, заздалегідь вибраний поріг ADX обмежує пошук ділянками вираженого напрямку. Але він не визначає ціну входу, вихід або кількість куплених одиниць. Грошовий ризик потребує окремого розрахунку, який пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">керування ризиком</a>.</p>
 <p>Під час бокових коливань перетини DI можуть повторюватися. Поріг ADX відсіє частину випадків, але через затримку може також виключити початок корисного руху. Поліпшення результату будь-якої системи з цього не випливає. Окремі умови проходження ціною межі діапазону розглядає <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">стаття про пробої</a>.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-filter-uk.webp" alt="Фільтр ADX відбирає обстановку, але не визначає входу, виходу, кількості чи грошового ризику" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>У <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/freeeducation#indicatorsInTrading">розділі курсу про індикатори</a> Арапов залишає основою структуру ціни, рівні та торговий обсяг, кількість проторгованих одиниць. Після збитку автор пропонує спочатку перевірити виконання правила, зберегти налаштування для навчальної серії й окремо позначити момент їх зміни. Це перевірювана роль допоміжного показника, а не окрема система входу за ADX.</p>
 <p>У власному поясненні ADX Арапов також відводить йому роль фільтра: високого числа недостатньо для угоди, а зниження лінії не задає розвороту. Напрямок і умови входу автор шукає за ціною, рівнями та обсягом. Рівнями тут є області попередніх зупинок або змін руху. Таке пояснення не означає, що фільтр усуне всі збитки в діапазоні.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-author-uk.webp" alt="В авторському підході основою є структура ціни, рівні та обсяг, а ADX має допоміжну роль фільтра" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
+
 <p>Для перевірки запишіть поріг, обидва періоди DMI та момент спостереження свічки до перегляду результату. Порівняйте однакові правила входу й виходу з фільтром і без нього на всіх збережених випадках, включно з невдалими та витратами. Якщо змінили поріг після результату, позначте нове правило й перевірте його окремою серією.</p>
 <!-- UK educational illustration -->
-<div class="flex"><img src="/assets/img/content/adx-testing-uk.webp" alt="Умову ADX перевіряють за сталих порога, періодів і моменту спостереження на тих самих правилах із фільтром та без нього" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:20px auto;"></div>
-<h2 id="topic-07">Часті запитання</h2><mat-accordion>
+
+<h2 id="topic-07" style="margin-top:40px;margin-bottom:16px;">Часті запитання</h2><mat-accordion>
 <mat-expansion-panel
                      class="highlight-box owl_link-box"
                      [expanded]="true"
@@ -96,7 +97,7 @@
                      (opened)="panelOpenState.set(true)"
                      (closed)="panelOpenState.set(false)"
                    ><mat-expansion-panel-header><mat-panel-title>Що таке +DI та −DI?</mat-panel-title></mat-expansion-panel-header><p>Це індекси зі згладжених змін максимумів і мінімумів з урахуванням істинного діапазону, що охоплює також відстань від попереднього закриття. +DI вище за −DI означає переважання руху вгору в розрахунку, зворотне положення вниз. Вони не вимірюють грошей учасників.</p></mat-expansion-panel>
-</mat-accordion><h2 id="topic-08">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер з 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p>
+</mat-accordion><h2 id="topic-08" style="margin-top:40px;margin-bottom:16px;">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер з 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p>
 </article>
 
 

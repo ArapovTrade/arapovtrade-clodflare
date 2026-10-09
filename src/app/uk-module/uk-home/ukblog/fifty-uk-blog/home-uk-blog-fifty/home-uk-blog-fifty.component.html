@@ -1,1130 +1,354 @@
 <section class="" id="hero">
-  <div class="container">
-    <div class="section-i">
-      <div class="section-content">
-        <div class="hero-content">
-          <div class="m-right hero-section"></div>
-          <div class="free-courses_main-container">
-            <main lang="uk">
-              <header>
-                <h1>
-                  Смуги Боллінджера: розрахунок, стиснення та перевірка сигналів
-                </h1>
-              </header>
-              <article>
-                <section>
-                  <p>
-                    <strong
-                      ><dfn itemscope itemtype="https://schema.org/DefinedTerm"
-                        ><meta
-                          itemprop="name"
-                          content="Смуги Боллінджера (Bollinger Bands)"
-                        />Смуги Боллінджера</dfn
-                      >
-                      показують положення ціни відносно її середнього значення
-                      та розкид цін навколо нього.</strong
-                    >
-                    Індикатор складається із середньої та двох зовнішніх ліній.
-                    Ширина допомагає порівнювати коливання, але торкання краю
-                    саме не дає готової умови купівлі чи продажу.
-                  </p>
-                  
-                  <!-- Ukrainian educational illustration: bollinger-intro-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-intro-uk.webp"
-                      alt="Середня лінія; Дві зовнішні смуги; Положення ціни та розкид; Торкання краю не є готовою умовою угоди"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-01">Як обчислюють смуги Боллінджера</h2>
-                  <p>
-                    Джон Боллінджер розробив індикатор на початку 1980-х років.
-                    Свічка або бар об’єднує ціни за один часовий інтервал;
-                    закриттям називають його останню ціну. У класичному варіанті
-                    середня лінія є простою ковзною середньою, SMA: вибрані ціни
-                    додають і ділять суму на їхню кількість. Поширений
-                    початковий період становить 20 барів із цінами закриття.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-sma-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-sma-uk.webp"
-                      alt="SMA: сума цін закриття, поділена на кількість цін"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    <strong
-                      >Стандартне відхилення вимірює розкид цін навколо
-                      середнього.</strong
-                    >
-                    Зовнішні лінії віддалені від середньої на задану кількість
-                    таких відхилень. За більшого розкиду вибраних цін відхилення
-                    зростає, а відстань між смугами збільшується.
-                  </p>
-                  <p>
-                    Для описаного розрахунку спочатку знаходять середню ціну.
-                    Від кожної ціни віднімають середню, підносять різницю до
-                    квадрата, додають квадрати й ділять суму на кількість цін.
-                    Квадратний корінь результату є стандартним відхиленням.
-                    Середня та відхилення використовують те саме вікно даних.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-deviation-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-deviation-uk.webp"
-                      alt="Середня ціна; Різниці від середньої → квадрати; Сума квадратів ÷ кількість цін; Квадратний корінь; Одне вікно для середньої та відхилення"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Верхня смуга дорівнює середній плюс відхилення, помножене на
-                    коефіцієнт. Нижня дорівнює середній мінус той самий добуток.
-                    Налаштування 20 і 2 означають вікно з 20 барів та відступ на
-                    два стандартних відхилення. Це початкові параметри, які
-                    потрібно перевіряти для конкретного завдання.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-formulas-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-formulas-uk.webp"
-                      alt="Верхня: середня + коефіцієнт × відхилення; Нижня: середня − коефіцієнт × відхилення; 20 барів; коефіцієнт 2; Початкові параметри потребують перевірки"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <h3>Приклад розрахунку смуг</h3>
-                  <p>
-                    У навчальному випадку акція, частка компанії, має чотири
-                    закриття в доларах: 98, 100, 100 і 102. Коротке вікно
-                    вибране лише для арифметики. Середня становить 100 доларів.
-                    Квадрати відхилень дорівнюють 4, 0, 0 і 4, їхнє середнє
-                    дорівнює 2. Стандартне відхилення становить √2, приблизно
-                    1,4142 долара.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-mean-example-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-mean-example-uk.webp"
-                      alt="Чотири закриття: 98; 100; 100; 102 USD; Середня: 100 USD; Квадрати відхилень: 4; 0; 0; 4; Середнє квадратів: 2; Навчальне коротке вікно"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    За коефіцієнта 2 верхня смуга дорівнює 100 + 2 × √2,
-                    приблизно 102,83 долара; нижня дорівнює 100 − 2 × √2,
-                    приблизно 97,17 долара. Це значення за наведеними
-                    закриттями. Наступна ціна не зобов’язана залишатися
-                    всередині, а близькість до верхньої лінії не встановлює
-                    справедливої вартості акції.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-bands-example-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-bands-example-uk.webp"
-                      alt="Відхилення: √2 ≈ 1,4142 USD; Верхня: 100 + 2 × √2 ≈ 102,83 USD; Нижня: 100 − 2 × √2 ≈ 97,17 USD; Наступна ціна може вийти за смуги"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Два стандартних відхилення не означають, що 95 відсотків
-                    майбутніх цін будуть усередині. Розподіл ринкових цін не
-                    зобов’язаний відповідати статистичній моделі, для якої діє
-                    таке правило. Сам Боллінджер застерігає від цього
-                    припущення: коефіцієнт задає відступ лінії, а не ймовірність
-                    результату.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-probability-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-probability-uk.webp"
-                      alt="Коефіцієнт 2 задає відступ; Не означає 95% майбутніх цін усередині; Відступ лінії ≠ ймовірність результату"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-02">Як налаштувати індикатор на графіку</h2>
-                  <p>
-                    Період визначає кількість барів. Двадцять денних і двадцять
-                    годинних свічок охоплюють різні дані. Порівнюйте показання в
-                    одному часовому масштабі з відомими налаштуваннями; вибрати
-                    вихідні ціни допомагає
-                    <a
-                      class="linkrefinto"
-                      href="https://arapov.trade/uk/freestudying/chart-reading"
-                      >читання графіка</a
-                    >.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-timeframe-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-timeframe-uk.webp"
-                      alt="20 денних барів; 20 годинних барів; Різні дані; Порівнюйте один часовий масштаб і налаштування"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Перевірте джерело ціни, тип середньої та множник відхилення.
-                    За незмінних даних більший множник розширює смуги, менший
-                    звужує. Зміна періоду змінює і середню, і розкид, тому
-                    ширина не зобов’язана завжди зростати разом із періодом.
-                    Інший спосіб усереднення також може змінити лінії.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-settings-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-settings-uk.webp"
-                      alt="Незмінні дані: більший множник → ширші смуги; Менший множник → вужчі смуги; Інший період змінює середню та розкид; Ширина не зобов’язана зростати з періодом"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Звірте спосіб обчислення відхилення: ділення на кількість
-                    значень і на цю кількість мінус один дають різні результати.
-                    У навчальному випадку використано перший варіант.
-                    Відмінність між налаштуваннями програм не є новою подією
-                    самого ринку.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-method-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-method-uk.webp"
-                      alt="Ділення на кількість значень; Ділення на кількість мінус один; Різні результати; У прикладі: ділення на кількість; Різниця методів не є подією ринку"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    На незавершеному барі поточна ціна й лінії змінюються.
-                    Торкання або вихід усередині свічки може зникнути до її
-                    закриття. Якщо правило потребує закриття, перевіряйте
-                    завершений інтервал. Візуальне зміщення ліній не додає
-                    майбутніх даних.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-live-bar-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-live-bar-uk.webp"
-                      alt="Незавершений бар: ціна й лінії змінюються; Торкання може зникнути до закриття; Правило за закриттям → завершений інтервал; Зміщення ліній не додає майбутніх даних"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-03">
-                    Що означає торкання верхньої чи нижньої смуги
-                  </h2>
-                  <p>
-                    Біля верхньої смуги ціна висока відносно недавньої
-                    середньої, біля нижньої низька відносно неї. Це порівняння
-                    всередині розрахунку. Воно не доводить переоцінки чи
-                    недооцінки, тому торкання саме не зобов’язує продавати або
-                    купувати.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-relative-position-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-relative-position-uk.webp"
-                      alt="Біля верхньої: високо відносно середньої; Біля нижньої: низько відносно середньої; Не доводить переоцінки чи недооцінки; Торкання не зобов’язує купувати або продавати"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Тренд є стійким просуванням ціни в обраному масштабі. За
-                    сильного зростання ціна здатна багато разів торкатися
-                    верхньої смуги або закриватися вище. За падіння можливий
-                    зворотний стан біля нижньої. Це називають рухом уздовж
-                    смуги, walking the bands. Очікуваний розворот тоді може не
-                    настати.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-walking-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-walking-uk.webp"
-                      alt="Зростання: повторні торкання верхньої смуги; Падіння: можливий зворотний стан біля нижньої; Рух уздовж смуги; Очікуваний розворот може не настати"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    У боковому русі ціна коливається між помітними межами; у
-                    тренді послідовно оновлює крайні точки за напрямком.
-                    Спочатку опишіть саме цю поведінку, потім положення щодо
-                    смуг. Якщо очікували повернення, а ціна продовжує йти вздовж
-                    краю, початкове припущення не підтвердилося. Нове торкання
-                    не усуває цієї невідповідності.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-price-context-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-price-context-uk.webp"
-                      alt="Спочатку: поведінка ціни; Потім: положення щодо смуг; Ціна йде вздовж краю замість повернення; Нове торкання не підтверджує старого припущення"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-04">Що означає стиснення смуг</h2>
-                  <p>
-                    <strong
-                      >Стиснення означає зменшення розкиду цін вибраного
-                      вікна.</strong
-                    >
-                    Порівнюйте ширину з попередніми значеннями того самого
-                    інструмента за незмінних параметрів. Вузький на вигляд канал
-                    одного активу не обов’язково є таким самим незвичним станом
-                    для іншого.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-squeeze-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-squeeze-uk.webp"
-                      alt="Стиснення: менший розкид вибраного вікна; Порівняння з власною історією інструмента; Незмінні параметри; Вузькість різних активів не є однаково незвичною"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Після спокійного відрізка коливання можуть розширитися, але
-                    смуги не визначають моменту й напрямку такого переходу.
-                    Тривале стиснення не гарантує сильного руху. Щоб говорити
-                    про початок просування, потрібна фактична зміна ціни.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-expansion-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-expansion-uk.webp"
-                      alt="Після спокою коливання можуть розширитися; Смуги не задають моменту й напрямку; Стиснення не гарантує сильного руху; Потрібна фактична зміна ціни"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Вихід за смугу та вихід за межу цінового діапазону є різними
-                    подіями. Лінія індикатора рухається разом із розрахунком, а
-                    вибраний максимум або мінімум належить конкретному відрізку
-                    графіка. Якщо ціна не пройшла межі діапазону або швидко
-                    повернулася, вихід за смугу сам не підтверджує продовження.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-range-exit-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-range-exit-uk.webp"
-                      alt="Вихід за смугу ≠ вихід за ціновий діапазон; Смуга змінюється з розрахунком; Межа діапазону: вибраний максимум або мінімум; Швидке повернення не підтверджує продовження"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Розширення може супроводжувати і спрямований рух, і
-                    коливання в обидва боки. Воно не доводить завершення тренду.
-                    Інший вимір розмаху,
-                    <a
-                      class="linkrefinto"
-                      href="https://arapov.trade/uk/freestudying/atr-indicator"
-                      >ATR</a
-                    >, усереднює діапазони барів з урахуванням попереднього
-                    закриття. Його числа не тотожні розкиду закриттів у смугах.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-atr-comparison-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-atr-comparison-uk.webp"
-                      alt="Смуги: розкид вибраних закриттів; ATR: діапазони барів і попереднє закриття; Числа не тотожні; Розширення не доводить завершення тренду"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-05">W-дно та M-вершина</h2>
-                  <p>
-                    Смуги дозволяють зіставити два послідовні спади чи підйоми
-                    відносно змінного каналу. W-дно нагадує подвійне дно. В
-                    описаному Боллінджером варіанті перший спад проходить біля
-                    нижньої смуги або нижче, потім ціна повертається до
-                    середньої. Другий спад може оновити ціновий мінімум, але
-                    його закриття залишається всередині нижньої межі.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-w-sequence-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-w-sequence-uk.webp"
-                      alt="Перший спад: біля нижньої смуги або нижче; Повернення до середньої; Другий спад може бути нижчим за ціною; Друге закриття залишається всередині нижньої межі"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Опір є областю попередніх зупинок зростання, підтримка
-                    областю зупинок падіння. Після другого спаду перевіряють рух
-                    угору та проходження опору між двома спадами. Одних
-                    мінімумів недостатньо. Якщо зниження триває, відмінність
-                    щодо смуги не довела повороту. Для правила за закриттями
-                    вихід тіні свічки та закриття за краєм є різними умовами.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-w-confirmation-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-w-confirmation-uk.webp"
-                      alt="Після другого спаду: рух угору; Перевірити проходження проміжного опору; Одних мінімумів недостатньо; Тінь за краєм ≠ закриття за краєм"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    M-вершина описує зворотне порівняння. Після підйому до
-                    верхньої смуги або вище ціна повертається до середньої,
-                    потім знову підвищується. Навіть вища цінова вершина може не
-                    досягти нової верхньої смуги. Це можливе ослаблення
-                    відносного руху; подальше проходження підтримки перевіряє
-                    припущення про поворот.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-m-sequence-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-m-sequence-uk.webp"
-                      alt="Перший підйом: до верхньої смуги або вище; Повернення до середньої; Вища вершина може не досягти нової верхньої смуги; Проходження підтримки перевіряє можливий поворот"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    До перевірки виберіть точки, закриття та налаштування. Якщо
-                    підбирати зручні вершини після перегляду майбутніх свічок,
-                    модель можна пристосувати до бажаного висновку.
-                    Послідовність має бути видимою за даними, доступними на
-                    момент спостереження.
-                  </p>
-                </section>
-                <section>
-                  <h2 id="topic-06">Що показують %B та BandWidth</h2>
-                  <p>
-                    <strong
-                      >%B виражає положення ціни між смугами числом.</strong
-                    >
-                    Формула: %B = (ціна − нижня смуга) / (верхня смуга − нижня
-                    смуга). Тут 0 відповідає нижній лінії, 1 верхній, 0,5
-                    середній. Показання нижче 0 чи вище 1 означають вихід за
-                    відповідний край.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-percent-b-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-percent-b-uk.webp"
-                      alt="%B = (ціна − нижня смуга) ÷ (верхня − нижня); 0: нижня; 0,5: середня; 1: верхня; Нижче 0 або вище 1: за відповідним краєм"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    У тому самому навчальному випадку останнє закриття становить
-                    102 долари, смуги дорівнюють 100 ± 2 × √2. %B = (102 − (100
-                    − 2 × √2)) / (4 × √2), приблизно 0,854. Ціна вища за
-                    середню, але нижча за верхній край. Це частка ширини каналу,
-                    а не ймовірність угоди; у процентній шкалі вона становить
-                    приблизно 85,4 відсотка.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-percent-b-example-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-percent-b-example-uk.webp"
-                      alt="Закриття: 102 USD; Смуги: 100 ± 2 × √2 USD; %B ≈ 0,854 ≈ 85,4%; Вище середньої; нижче верхньої; Частка ширини, не ймовірність угоди"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    <strong>BandWidth вимірює відносну ширину смуг.</strong> У
-                    процентній шкалі: BandWidth = (верхня смуга − нижня смуга) /
-                    середня смуга × 100. Для тих самих даних отримуємо 4 × √2 /
-                    100 × 100, приблизно 5,66 відсотка. Програма може показувати
-                    частку без множення на 100, тому звірте шкалу.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-bandwidth-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-bandwidth-uk.webp"
-                      alt="BandWidth = (верхня − нижня) ÷ середня × 100; 4 × √2 ÷ 100 × 100 ≈ 5,66%; Програма може показувати частку; Звірте шкалу"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Якщо смуги збігаються, знаменник %B дорівнює нулю й формула
-                    не визначає положення всередині. Для BandWidth потрібна
-                    ненульова середня; звичайне тлумачення відносної ширини
-                    передбачає додатну ціну. %B описує положення, BandWidth
-                    ширину. Жоден із них сам не задає напрямку.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-undefined-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-undefined-uk.webp"
-                      alt="Смуги збігаються → %B не визначає положення; BandWidth потребує ненульової середньої; Звичайне тлумачення: додатна ціна; %B: положення; BandWidth: ширина; Самі не задають напрямку"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-07">Як перевірити застосування смуг</h2>
-                  <p>
-                    У
-                    <a
-                      class="linkrefinto"
-                      href="https://arapov.trade/uk/freestudying/freeeducation#indicatorsInTrading"
-                      >курсі Арапова</a
-                    >
-                    індикатор додає конкретне допоміжне спостереження до
-                    структури ціни, рівнів та торгового обсягу, кількості
-                    проторгованих одиниць. Після збитку автор спочатку перевіряє
-                    виконання правила, зберігає налаштування для навчальної
-                    серії та окремо позначає їхню зміну. Для смуг можна так само
-                    записати одну вимірювану умову й перевірити її послідовно;
-                    це не підтвердження окремої авторської системи входу за
-                    Боллінджером.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-author-method-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-author-method-uk.webp"
-                      alt="Допоміжне спостереження; Структура ціни, рівні та обсяг; Після збитку: перевірити виконання правила; Зберігати налаштування; зміни позначати окремо; Не підтверджує авторської системи входу за смугами"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    <a
-                      class="linkrefinto"
-                      href="https://arapov.trade/uk/freestudying/volume-analysis"
-                      >Обсяг і реакція ціни</a
-                    >
-                    додають відомості, яких немає в самих смугах. Вища
-                    активність не гарантує продовження й не встановлює
-                    особистості учасників. Перевіряйте, чи утримується нове
-                    положення ціни або вихід змінюється поверненням.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-volume-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-volume-uk.webp"
-                      alt="Обсяг: активність; Реакція ціни: утримання або повернення; Вища активність не гарантує продовження; Не встановлює особистості учасників"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    На початковій ілюстрації є свічки, червона крива,
-                    горизонтальні рівні та позначки BUY і SELL. Ця схема не
-                    показує розрахованих зовнішніх смуг. Її стрілки не є доказом
-                    результативності торгівлі від краю; для перевірки потрібні
-                    фактичні ціни та параметри індикатора.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-original-reading-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-original-reading-uk.webp"
-                      alt="Початкова ілюстрація: свічки, червона крива, рівні; Позначки BUY і SELL; Розрахованих зовнішніх смуг немає; Стрілки не доводять результативності; Для перевірки: фактичні ціни й параметри"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                  <p>
-                    Зафіксуйте період, джерело цін, множник і момент читання
-                    бара. Виберіть одну подію, наприклад стиснення відносно
-                    власної історії або послідовність W-дно. Розкривайте графік
-                    поступово без майбутніх свічок і зберігайте як відповідні,
-                    так і невдалі випадки. Якщо висновок виникає лише після
-                    зміни точок або параметрів заднім числом, це вже інше
-                    правило.
-                  </p>
-                  <!-- Ukrainian educational illustration: bollinger-practice-uk.webp -->
-                  <div class="flex">
-                    <img
-                      src="/assets/img/content/bollinger-practice-uk.webp"
-                      alt="Зафіксувати параметри та момент читання; Вибрати одну подію; Розкривати графік без майбутніх свічок; Зберігати відповідні й невдалі випадки; Зміна точок заднім числом — інше правило"
-                      class="pictureImg"
-                      loading="lazy"
-                      style="
-                        width: 100%;
-                        max-width: 800px;
-                        height: auto;
-                        max-height: none;
-                        display: block;
-                        object-fit: contain;
-                      "
-                    />
-                  </div>
-                </section>
-                <section>
-                  <h2 id="topic-08">Часті запитання</h2>
-                  <mat-accordion
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      [expanded]="true"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Що показують смуги Боллінджера?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        Середню ціну, розкид вибраних цін навколо неї та
-                        положення щодо зовнішніх меж. За більшого стандартного
-                        відхилення ширина зростає. Самі смуги не визначають
-                        майбутнього напрямку.
-                      </p></mat-expansion-panel
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      (opened)="panelOpenState.set(true)"
-                      (closed)="panelOpenState.set(false)"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Чи потрібно продавати після торкання верхньої
-                          смуги?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        Ні. За сильного зростання ціна може довго рухатися
-                        вздовж верхнього краю. Торкання описує відносне
-                        положення, а не доведений розворот.
-                      </p></mat-expansion-panel
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      (opened)="panelOpenState.set(true)"
-                      (closed)="panelOpenState.set(false)"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Що означає стиснення смуг?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        Розкид цін вибраного вікна зменшився. Незвичність
-                        стиснення оцінюють за історією того самого інструмента.
-                        Воно не визначає моменту, напрямку чи обов’язкової сили
-                        наступного руху.
-                      </p></mat-expansion-panel
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      (opened)="panelOpenState.set(true)"
-                      (closed)="panelOpenState.set(false)"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Що таке W-дно та M-вершина?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        Це послідовності двох спадів або підйомів із різним
-                        положенням щодо смуг. Подальше проходження проміжного
-                        опору чи підтримки перевіряє можливий поворот. Самих
-                        двох крайніх точок недостатньо.
-                      </p></mat-expansion-panel
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      (opened)="panelOpenState.set(true)"
-                      (closed)="panelOpenState.set(false)"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Що показують %B та BandWidth?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        %B показує частку відстані від нижньої смуги до верхньої
-                        та може вийти за межі від 0 до 1. BandWidth показує
-                        відносну ширину, іноді у відсотках. Це характеристики
-                        розрахунку, а не ймовірність прибуткової угоди.
-                      </p></mat-expansion-panel
-                    ><mat-expansion-panel
-                      class="highlight-box owl_link-box"
-                      (opened)="panelOpenState.set(true)"
-                      (closed)="panelOpenState.set(false)"
-                      ><mat-expansion-panel-header
-                        ><mat-panel-title
-                          >Навіщо дивитися обсяг разом зі
-                          смугами?</mat-panel-title
-                        ></mat-expansion-panel-header
-                      >
-                      <p>
-                        Обсяг показує активність, а реакція ціни допомагає
-                        перевірити, чи утримався вихід або змінився поверненням.
-                        Великий обсяг сам не доводить продовження й не
-                        встановлює учасників.
-                      </p></mat-expansion-panel
-                    ></mat-accordion
-                  >
-                </section>
-                <section>
-                  <h2 id="topic-09">Про автора</h2>
-                  <p>
-                    <a class="linkrefinto" href="https://arapov.trade/uk"
-                      ><strong><em>Ігор Арапов</em></strong></a
-                    >, практикуючий трейдер із 2013 року, автор бібліотеки
-                    ArapovTrade.
-                    <a
-                      class="linkrefinto"
-                      href="https://orcid.org/0009-0003-0430-778X"
-                      >ORCID: 0009-0003-0430-778X</a
-                    >.
-                  </p>
-                </section>
-              </article>
+ <div class="container">
+   <div class="section-i">
+     <div class="section-content">
+       <div class="hero-content">
+         <div class="m-right hero-section"></div>
+         <div class="free-courses_main-container">
+           <main lang="uk">
+<header><h1>Смуги Боллінджера: розрахунок, стиснення та перевірка сигналів</h1></header>
+<article><section><p><strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Смуги Боллінджера (Bollinger Bands)">Смуги Боллінджера</dfn> показують положення ціни відносно її середнього значення та розкид цін навколо нього.</strong> Індикатор складається із середньої та двох зовнішніх ліній. Ширина допомагає порівнювати коливання, але торкання краю саме не дає готової умови купівлі чи продажу.</p><div class="flex"><img src="https://arapov.trade/assets/img/content/bollingerbands2.jpg" alt="Схема свічок, червоної кривої та горизонтальних рівнів із позначками BUY і SELL" loading="lazy"></div>
+<!-- Ukrainian educational illustration: bollinger-intro-uk.webp -->
+<div class="flex"></div></section>
+<section><h2 id="topic-01" style="margin-top:40px;margin-bottom:16px;">Як обчислюють смуги Боллінджера</h2><p>Джон Боллінджер розробив індикатор на початку 1980-х років. Свічка або бар об’єднує ціни за один часовий інтервал; закриттям називають його останню ціну. У класичному варіанті середня лінія є простою ковзною середньою, SMA: вибрані ціни додають і ділять суму на їхню кількість. Поширений початковий період становить 20 барів із цінами закриття.</p>
+<!-- Ukrainian educational illustration: bollinger-sma-uk.webp -->
 
-              <div
-                class=""
-                [ngClass]="{
-                  'next-page-block': true,
-                }"
-                [ngStyle]="{
-                  background: isDark
-                    ? 'rgba(255, 255, 255, 0.05)'
-                    : 'rgba(255, 255, 255, 0.05)',
-                  border: isDark
-                    ? 'rgba(46, 46, 46, 1)'
-                    : 'rgba(0, 130, 204, 0.15)',
-                }"
-              >
-                <div
-                  (click)="goToPreviousPage()"
-                  [ngClass]="{
-                    previous_page: true,
+<p><strong>Стандартне відхилення вимірює розкид цін навколо середнього.</strong> Зовнішні лінії віддалені від середньої на задану кількість таких відхилень. За більшого розкиду вибраних цін відхилення зростає, а відстань між смугами збільшується.</p>
+<p>Для описаного розрахунку спочатку знаходять середню ціну. Від кожної ціни віднімають середню, підносять різницю до квадрата, додають квадрати й ділять суму на кількість цін. Квадратний корінь результату є стандартним відхиленням. Середня та відхилення використовують те саме вікно даних.</p>
+<!-- Ukrainian educational illustration: bollinger-deviation-uk.webp -->
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+<p>Верхня смуга дорівнює середній плюс відхилення, помножене на коефіцієнт. Нижня дорівнює середній мінус той самий добуток. Налаштування 20 і 2 означають вікно з 20 барів та відступ на два стандартних відхилення. Це початкові параметри, які потрібно перевіряти для конкретного завдання.</p>
+<!-- Ukrainian educational illustration: bollinger-formulas-uk.webp -->
 
-                  <span class="previous_page_text-block">
-                    ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                </div>
-                <div
-                  (click)="goToNextPage()"
-                  [ngClass]="{
-                    next_page: true,
+<h3 style="margin-top:40px;margin-bottom:16px;">Приклад розрахунку смуг</h3><p>У навчальному випадку акція, частка компанії, має чотири закриття в доларах: 98, 100, 100 і 102. Коротке вікно вибране лише для арифметики. Середня становить 100 доларів. Квадрати відхилень дорівнюють 4, 0, 0 і 4, їхнє середнє дорівнює 2. Стандартне відхилення становить √2, приблизно 1,4142 долара.</p>
+<!-- Ukrainian educational illustration: bollinger-mean-example-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-mean-example-uk.webp" alt="Чотири закриття: 98; 100; 100; 102 USD; Середня: 100 USD; Квадрати відхилень: 4; 0; 0; 4; Середнє квадратів: 2; Навчальне коротке вікно" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>За коефіцієнта 2 верхня смуга дорівнює 100 + 2 × √2, приблизно 102,83 долара; нижня дорівнює 100 − 2 × √2, приблизно 97,17 долара. Це значення за наведеними закриттями. Наступна ціна не зобов’язана залишатися всередині, а близькість до верхньої лінії не встановлює справедливої вартості акції.</p>
+<!-- Ukrainian educational illustration: bollinger-bands-example-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-bands-example-uk.webp" alt="Відхилення: √2 ≈ 1,4142 USD; Верхня: 100 + 2 × √2 ≈ 102,83 USD; Нижня: 100 − 2 × √2 ≈ 97,17 USD; Наступна ціна може вийти за смуги" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>Два стандартних відхилення не означають, що 95 відсотків майбутніх цін будуть усередині. Розподіл ринкових цін не зобов’язаний відповідати статистичній моделі, для якої діє таке правило. Сам Боллінджер застерігає від цього припущення: коефіцієнт задає відступ лінії, а не ймовірність результату.</p>
+<!-- Ukrainian educational illustration: bollinger-probability-uk.webp -->
+</section>
+<section><h2 id="topic-02" style="margin-top:40px;margin-bottom:16px;">Як налаштувати індикатор на графіку</h2><p>Період визначає кількість барів. Двадцять денних і двадцять годинних свічок охоплюють різні дані. Порівнюйте показання в одному часовому масштабі з відомими налаштуваннями; вибрати вихідні ціни допомагає <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">читання графіка</a>.</p>
+<!-- Ukrainian educational illustration: bollinger-timeframe-uk.webp -->
 
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{
-                    border: isDark
-                      ? '1px solid rgba(46, 46, 46, 1)'
-                      : '1px solid rgba(0, 130, 204, 0.15)',
-                  }"
-                >
-                  <span class="previous_page_text-block">
-                    НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
-                  </span>
-                  <svg
-                    class="previous_page_svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                      stroke="#BBC2C7"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </main>
-            <div class="free-courses_main-container_side-bar">
-              <div class="main-container_side-bar_groups">
-                <!-- //Groups -->
-                <div class="groups_phone">
-                  <div
-                    [ngClass]="{
-                      'side-bar_groups-wrapper': true,
+<p>Перевірте джерело ціни, тип середньої та множник відхилення. За незмінних даних більший множник розширює смуги, менший звужує. Зміна періоду змінює і середню, і розкид, тому ширина не зобов’язана завжди зростати разом із періодом. Інший спосіб усереднення також може змінити лінії.</p>
+<!-- Ukrainian educational illustration: bollinger-settings-uk.webp -->
 
-                      'shadow-box-dark': isDark,
-                      'shadow-box-light': !isDark,
-                    }"
-                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                  >
-                    <div
-                      class="side-bar_groups-title"
-                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                    >
-                      Фільтр за категоріями
-                      <hr
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #FFCD29'
-                            : '1px solid #0082CC',
-                          width: '100%',
-                        }"
-                      />
-                    </div>
+<p>Звірте спосіб обчислення відхилення: ділення на кількість значень і на цю кількість мінус один дають різні результати. У навчальному випадку використано перший варіант. Відмінність між налаштуваннями програм не є новою подією самого ринку.</p>
+<!-- Ukrainian educational illustration: bollinger-method-uk.webp -->
 
-                    <div *ngFor="let group of ukrGroups">
-                      <!-- class="inpFlex" -->
+<p>На незавершеному барі поточна ціна й лінії змінюються. Торкання або вихід усередині свічки може зникнути до її закриття. Якщо правило потребує закриття, перевіряйте завершений інтервал. Візуальне зміщення ліній не додає майбутніх даних.</p>
+<!-- Ukrainian educational illustration: bollinger-live-bar-uk.webp -->
+</section>
+<section><h2 id="topic-03" style="margin-top:40px;margin-bottom:16px;">Що означає торкання верхньої чи нижньої смуги</h2><p>Біля верхньої смуги ціна висока відносно недавньої середньої, біля нижньої низька відносно неї. Це порівняння всередині розрахунку. Воно не доводить переоцінки чи недооцінки, тому торкання саме не зобов’язує продавати або купувати.</p>
+<!-- Ukrainian educational illustration: bollinger-relative-position-uk.webp -->
 
-                      <label
-                        [ngStyle]="{
-                          color: checkedGroup.includes(group)
-                            ? isDark
-                              ? '#FFCD29'
-                              : '#0082CC'
-                            : isDark
-                              ? '#ffffff'
-                              : '#0C263A',
-                        }"
-                        [ngClass]="{
-                          'side-bar_groups-item': true,
-                          'side-bar_groups-item_dark': isDark,
-                          'side-bar_groups-item_light': !isDark,
-                        }"
-                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                      >
-                        <input
-                          type="checkbox"
-                          [checked]="this.grr.includes(group)"
-                          [value]="group"
-                          (change)="onGroupChange($event)"
-                          [class.checked-class]="checkedGroup.includes(group)"
-                        />
-                        <div class="group-name-with-count">
-                          <span (click)="moveToTheTop()">{{ group }} </span>
-                          <span class="article-count">
-                            {{ articleCounts[group] || 0 }}
-                          </span>
-                        </div>
-                      </label>
-                    </div>
-                  </div>
-                </div>
+<p>Тренд є стійким просуванням ціни в обраному масштабі. За сильного зростання ціна здатна багато разів торкатися верхньої смуги або закриватися вище. За падіння можливий зворотний стан біля нижньої. Це називають рухом уздовж смуги, walking the bands. Очікуваний розворот тоді може не настати.</p>
+<!-- Ukrainian educational illustration: bollinger-walking-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-walking-uk.webp" alt="Зростання: повторні торкання верхньої смуги; Падіння: можливий зворотний стан біля нижньої; Рух уздовж смуги; Очікуваний розворот може не настати" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>У боковому русі ціна коливається між помітними межами; у тренді послідовно оновлює крайні точки за напрямком. Спочатку опишіть саме цю поведінку, потім положення щодо смуг. Якщо очікували повернення, а ціна продовжує йти вздовж краю, початкове припущення не підтвердилося. Нове торкання не усуває цієї невідповідності.</p>
+<!-- Ukrainian educational illustration: bollinger-price-context-uk.webp -->
+</section>
+<section><h2 id="topic-04" style="margin-top:40px;margin-bottom:16px;">Що означає стиснення смуг</h2><p><strong>Стиснення означає зменшення розкиду цін вибраного вікна.</strong> Порівнюйте ширину з попередніми значеннями того самого інструмента за незмінних параметрів. Вузький на вигляд канал одного активу не обов’язково є таким самим незвичним станом для іншого.</p>
+<!-- Ukrainian educational illustration: bollinger-squeeze-uk.webp -->
 
-                <!-- Random pages -->
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    'random-pages_container': true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                  >
-                    Популярне
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+<p>Після спокійного відрізка коливання можуть розширитися, але смуги не визначають моменту й напрямку такого переходу. Тривале стиснення не гарантує сильного руху. Щоб говорити про початок просування, потрібна фактична зміна ціни.</p>
+<!-- Ukrainian educational illustration: bollinger-expansion-uk.webp -->
 
-                  <div class="articles-list">
-                    <div
-                      *ngFor="let article of randomArticleRus"
-                      class="article-item"
-                    >
-                      <a
-                        [routerLink]="['/uk/freestudying', article.linkUkr]"
-                        class="article-link"
-                      >
-                        <img
-                          [src]="article.imgUkr"
-                          [alt]="article.titleUkr"
-                          loading="lazy"
-                          class="article-img"
-                        />
-                        <span
-                          class="article-title"
-                          [ngClass]="{
-                            'article-title_dark': isDark,
-                            'article-title_light': !isDark,
-                          }"
-                        >
-                          {{ article.titleUkr }}
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+<p>Вихід за смугу та вихід за межу цінового діапазону є різними подіями. Лінія індикатора рухається разом із розрахунком, а вибраний максимум або мінімум належить конкретному відрізку графіка. Якщо ціна не пройшла межі діапазону або швидко повернулася, вихід за смугу сам не підтверджує продовження.</p>
+<!-- Ukrainian educational illustration: bollinger-range-exit-uk.webp -->
 
-                <!-- Our projects  -->
+<p>Розширення може супроводжувати і спрямований рух, і коливання в обидва боки. Воно не доводить завершення тренду. Інший вимір розмаху, <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/atr-indicator">ATR</a>, усереднює діапазони барів з урахуванням попереднього закриття. Його числа не тотожні розкиду закриттів у смугах.</p>
+<!-- Ukrainian educational illustration: bollinger-atr-comparison-uk.webp -->
+</section>
+<section><h2 id="topic-05" style="margin-top:40px;margin-bottom:16px;">W-дно та M-вершина</h2><p>Смуги дозволяють зіставити два послідовні спади чи підйоми відносно змінного каналу. W-дно нагадує подвійне дно. В описаному Боллінджером варіанті перший спад проходить біля нижньої смуги або нижче, потім ціна повертається до середньої. Другий спад може оновити ціновий мінімум, але його закриття залишається всередині нижньої межі.</p>
+<!-- Ukrainian educational illustration: bollinger-w-sequence-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-w-sequence-uk.webp" alt="Перший спад: біля нижньої смуги або нижче; Повернення до середньої; Другий спад може бути нижчим за ціною; Друге закриття залишається всередині нижньої межі" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>Опір є областю попередніх зупинок зростання, підтримка областю зупинок падіння. Після другого спаду перевіряють рух угору та проходження опору між двома спадами. Одних мінімумів недостатньо. Якщо зниження триває, відмінність щодо смуги не довела повороту. Для правила за закриттями вихід тіні свічки та закриття за краєм є різними умовами.</p>
+<!-- Ukrainian educational illustration: bollinger-w-confirmation-uk.webp -->
 
-                <div
-                  [ngClass]="{
-                    'side-bar_groups-wrapper': true,
-                    our_projects_container: true,
-                    'shadow-box-dark': isDark,
-                    'shadow-box-light': !isDark,
-                  }"
-                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-                >
-                  <!-- [ngStyle]="{
+<p>M-вершина описує зворотне порівняння. Після підйому до верхньої смуги або вище ціна повертається до середньої, потім знову підвищується. Навіть вища цінова вершина може не досягти нової верхньої смуги. Це можливе ослаблення відносного руху; подальше проходження підтримки перевіряє припущення про поворот.</p>
+<!-- Ukrainian educational illustration: bollinger-m-sequence-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-m-sequence-uk.webp" alt="Перший підйом: до верхньої смуги або вище; Повернення до середньої; Вища вершина може не досягти нової верхньої смуги; Проходження підтримки перевіряє можливий поворот" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>До перевірки виберіть точки, закриття та налаштування. Якщо підбирати зручні вершини після перегляду майбутніх свічок, модель можна пристосувати до бажаного висновку. Послідовність має бути видимою за даними, доступними на момент спостереження.</p></section>
+<section><h2 id="topic-06" style="margin-top:40px;margin-bottom:16px;">Що показують %B та BandWidth</h2><p><strong>%B виражає положення ціни між смугами числом.</strong> Формула: %B = (ціна − нижня смуга) / (верхня смуга − нижня смуга). Тут 0 відповідає нижній лінії, 1 верхній, 0,5 середній. Показання нижче 0 чи вище 1 означають вихід за відповідний край.</p>
+<!-- Ukrainian educational illustration: bollinger-percent-b-uk.webp -->
+
+<p>У тому самому навчальному випадку останнє закриття становить 102 долари, смуги дорівнюють 100 ± 2 × √2. %B = (102 − (100 − 2 × √2)) / (4 × √2), приблизно 0,854. Ціна вища за середню, але нижча за верхній край. Це частка ширини каналу, а не ймовірність угоди; у процентній шкалі вона становить приблизно 85,4 відсотка.</p>
+<!-- Ukrainian educational illustration: bollinger-percent-b-example-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-percent-b-example-uk.webp" alt="Закриття: 102 USD; Смуги: 100 ± 2 × √2 USD; %B ≈ 0,854 ≈ 85,4%; Вище середньої; нижче верхньої; Частка ширини, не ймовірність угоди" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p><strong>BandWidth вимірює відносну ширину смуг.</strong> У процентній шкалі: BandWidth = (верхня смуга − нижня смуга) / середня смуга × 100. Для тих самих даних отримуємо 4 × √2 / 100 × 100, приблизно 5,66 відсотка. Програма може показувати частку без множення на 100, тому звірте шкалу.</p>
+<!-- Ukrainian educational illustration: bollinger-bandwidth-uk.webp -->
+<div class="flex"><img src="/assets/img/content/bollinger-bandwidth-uk.webp" alt="BandWidth = (верхня − нижня) ÷ середня × 100; 4 × √2 ÷ 100 × 100 ≈ 5,66%; Програма може показувати частку; Звірте шкалу" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<p>Якщо смуги збігаються, знаменник %B дорівнює нулю й формула не визначає положення всередині. Для BandWidth потрібна ненульова середня; звичайне тлумачення відносної ширини передбачає додатну ціну. %B описує положення, BandWidth ширину. Жоден із них сам не задає напрямку.</p>
+<!-- Ukrainian educational illustration: bollinger-undefined-uk.webp -->
+</section>
+<section><h2 id="topic-07" style="margin-top:40px;margin-bottom:16px;">Як перевірити застосування смуг</h2><p>У <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/freeeducation#indicatorsInTrading">курсі Арапова</a> індикатор додає конкретне допоміжне спостереження до структури ціни, рівнів та торгового обсягу, кількості проторгованих одиниць. Після збитку автор спочатку перевіряє виконання правила, зберігає налаштування для навчальної серії та окремо позначає їхню зміну. Для смуг можна так само записати одну вимірювану умову й перевірити її послідовно; це не підтвердження окремої авторської системи входу за Боллінджером.</p>
+<!-- Ukrainian educational illustration: bollinger-author-method-uk.webp -->
+
+<p><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/volume-analysis">Обсяг і реакція ціни</a> додають відомості, яких немає в самих смугах. Вища активність не гарантує продовження й не встановлює особистості учасників. Перевіряйте, чи утримується нове положення ціни або вихід змінюється поверненням.</p>
+<!-- Ukrainian educational illustration: bollinger-volume-uk.webp -->
+
+<p>На початковій ілюстрації є свічки, червона крива, горизонтальні рівні та позначки BUY і SELL. Ця схема не показує розрахованих зовнішніх смуг. Її стрілки не є доказом результативності торгівлі від краю; для перевірки потрібні фактичні ціни та параметри індикатора.</p>
+<!-- Ukrainian educational illustration: bollinger-original-reading-uk.webp -->
+
+<p>Зафіксуйте період, джерело цін, множник і момент читання бара. Виберіть одну подію, наприклад стиснення відносно власної історії або послідовність W-дно. Розкривайте графік поступово без майбутніх свічок і зберігайте як відповідні, так і невдалі випадки. Якщо висновок виникає лише після зміни точок або параметрів заднім числом, це вже інше правило.</p>
+<!-- Ukrainian educational illustration: bollinger-practice-uk.webp -->
+</section>
+<section><h2 id="topic-08" style="margin-top:40px;margin-bottom:16px;">Часті запитання</h2><mat-accordion><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     [expanded]="true"
+                   ><mat-expansion-panel-header><mat-panel-title>Що показують смуги Боллінджера?</mat-panel-title></mat-expansion-panel-header><p>Середню ціну, розкид вибраних цін навколо неї та положення щодо зовнішніх меж. За більшого стандартного відхилення ширина зростає. Самі смуги не визначають майбутнього напрямку.</p></mat-expansion-panel><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     (opened)="panelOpenState.set(true)"
+                     (closed)="panelOpenState.set(false)"
+                   ><mat-expansion-panel-header><mat-panel-title>Чи потрібно продавати після торкання верхньої смуги?</mat-panel-title></mat-expansion-panel-header><p>Ні. За сильного зростання ціна може довго рухатися вздовж верхнього краю. Торкання описує відносне положення, а не доведений розворот.</p></mat-expansion-panel><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     (opened)="panelOpenState.set(true)"
+                     (closed)="panelOpenState.set(false)"
+                   ><mat-expansion-panel-header><mat-panel-title>Що означає стиснення смуг?</mat-panel-title></mat-expansion-panel-header><p>Розкид цін вибраного вікна зменшився. Незвичність стиснення оцінюють за історією того самого інструмента. Воно не визначає моменту, напрямку чи обов’язкової сили наступного руху.</p></mat-expansion-panel><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     (opened)="panelOpenState.set(true)"
+                     (closed)="panelOpenState.set(false)"
+                   ><mat-expansion-panel-header><mat-panel-title>Що таке W-дно та M-вершина?</mat-panel-title></mat-expansion-panel-header><p>Це послідовності двох спадів або підйомів із різним положенням щодо смуг. Подальше проходження проміжного опору чи підтримки перевіряє можливий поворот. Самих двох крайніх точок недостатньо.</p></mat-expansion-panel><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     (opened)="panelOpenState.set(true)"
+                     (closed)="panelOpenState.set(false)"
+                   ><mat-expansion-panel-header><mat-panel-title>Що показують %B та BandWidth?</mat-panel-title></mat-expansion-panel-header><p>%B показує частку відстані від нижньої смуги до верхньої та може вийти за межі від 0 до 1. BandWidth показує відносну ширину, іноді у відсотках. Це характеристики розрахунку, а не ймовірність прибуткової угоди.</p></mat-expansion-panel><mat-expansion-panel
+                     class="highlight-box owl_link-box"
+                     (opened)="panelOpenState.set(true)"
+                     (closed)="panelOpenState.set(false)"
+                   ><mat-expansion-panel-header><mat-panel-title>Навіщо дивитися обсяг разом зі смугами?</mat-panel-title></mat-expansion-panel-header><p>Обсяг показує активність, а реакція ціни допомагає перевірити, чи утримався вихід або змінився поверненням. Великий обсяг сам не доводить продовження й не встановлює учасників.</p></mat-expansion-panel></mat-accordion></section><section><h2 id="topic-09" style="margin-top:40px;margin-bottom:16px;">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер із 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
+
+
+             <div
+               class=""
+               [ngClass]="{
+                 'next-page-block': true,
+               }"
+               [ngStyle]="{
+                 background: isDark
+                   ? 'rgba(255, 255, 255, 0.05)'
+                   : 'rgba(255, 255, 255, 0.05)',
+                 border: isDark
+                   ? 'rgba(46, 46, 46, 1)'
+                   : 'rgba(0, 130, 204, 0.15)',
+               }"
+             >
+               <div
+                 (click)="goToPreviousPage()"
+                 [ngClass]="{
+                   previous_page: true,
+
+
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+
+
+                 <span class="previous_page_text-block">
+                   ПОПЕРЕДНЯ <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+               </div>
+               <div
+                 (click)="goToNextPage()"
+                 [ngClass]="{
+                   next_page: true,
+
+
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{
+                   border: isDark
+                     ? '1px solid rgba(46, 46, 46, 1)'
+                     : '1px solid rgba(0, 130, 204, 0.15)',
+                 }"
+               >
+                 <span class="previous_page_text-block">
+                   НАСТУПНА <span class="page_none_block">СТАТТЯ</span>
+                 </span>
+                 <svg
+                   class="previous_page_svg"
+                   width="6"
+                   height="10"
+                   viewBox="0 0 6 10"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg"
+                 >
+                   <path
+                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                     stroke="#BBC2C7"
+                     stroke-width="1.5"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                   />
+                 </svg>
+               </div>
+             </div>
+           </main>
+           <div class="free-courses_main-container_side-bar">
+             <div class="main-container_side-bar_groups">
+               <!-- //Groups -->
+               <div class="groups_phone">
+                 <div
+                   [ngClass]="{
+                     'side-bar_groups-wrapper': true,
+
+
+                     'shadow-box-dark': isDark,
+                     'shadow-box-light': !isDark,
+                   }"
+                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                 >
+                   <div
+                     class="side-bar_groups-title"
+                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                   >
+                     Фільтр за категоріями
+                     <hr
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #FFCD29'
+                           : '1px solid #0082CC',
+                         width: '100%',
+                       }"
+                     />
+                   </div>
+
+
+                   <div *ngFor="let group of ukrGroups">
+                     <!-- class="inpFlex" -->
+
+
+                     <label
+                       [ngStyle]="{
+                         color: checkedGroup.includes(group)
+                           ? isDark
+                             ? '#FFCD29'
+                             : '#0082CC'
+                           : isDark
+                             ? '#ffffff'
+                             : '#0C263A',
+                       }"
+                       [ngClass]="{
+                         'side-bar_groups-item': true,
+                         'side-bar_groups-item_dark': isDark,
+                         'side-bar_groups-item_light': !isDark,
+                       }"
+                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                     >
+                       <input
+                         type="checkbox"
+                         [checked]="this.grr.includes(group)"
+                         [value]="group"
+                         (change)="onGroupChange($event)"
+                         [class.checked-class]="checkedGroup.includes(group)"
+                       />
+                       <div class="group-name-with-count">
+                         <span (click)="moveToTheTop()">{{ group }} </span>
+                         <span class="article-count">
+                           {{ articleCounts[group] || 0 }}
+                         </span>
+                       </div>
+                     </label>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Random pages -->
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   'random-pages_container': true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                 >
+                   Популярне
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
+
+
+                 <div class="articles-list">
+                   <div
+                     *ngFor="let article of randomArticleRus"
+                     class="article-item"
+                   >
+                     <a
+                       [routerLink]="['/uk/freestudying', article.linkUkr]"
+                       class="article-link"
+                     >
+                       <img
+                         [src]="article.imgUkr"
+                         [alt]="article.titleUkr"
+                         loading="lazy"
+                         class="article-img"
+                       />
+                       <span
+                         class="article-title"
+                         [ngClass]="{
+                           'article-title_dark': isDark,
+                           'article-title_light': !isDark,
+                         }"
+                       >
+                         {{ article.titleUkr }}
+                       </span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+
+
+               <!-- Our projects  -->
+
+
+               <div
+                 [ngClass]="{
+                   'side-bar_groups-wrapper': true,
+                   our_projects_container: true,
+                   'shadow-box-dark': isDark,
+                   'shadow-box-light': !isDark,
+                 }"
+                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+               >
+                 <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -1133,71 +357,73 @@
 
 
        }" -->
-                  <div class="banner">
-                    <img
-                      [src]="
-                        isDark
-                          ? '/assets/redesignArapovTrade/img/banner.png'
-                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                      "
-                      alt="img"
-                    />
-                  </div>
-                  <div class="mask-our_project"></div>
-                  <div
-                    class="side-bar_groups-title"
-                    [ngStyle]="{ color: '#ffffff' }"
-                  >
-                    Наші проєкти доступні всім охочим
-                    <hr
-                      [ngStyle]="{
-                        border: isDark
-                          ? '1px solid #FFCD29'
-                          : '1px solid #0082CC',
-                        width: '100%',
-                      }"
-                    />
-                  </div>
+                 <div class="banner">
+                   <img
+                     [src]="
+                       isDark
+                         ? '/assets/redesignArapovTrade/img/banner.png'
+                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                     "
+                     alt="img"
+                   />
+                 </div>
+                 <div class="mask-our_project"></div>
+                 <div
+                   class="side-bar_groups-title"
+                   [ngStyle]="{ color: '#ffffff' }"
+                 >
+                   Наші проєкти доступні всім охочим
+                   <hr
+                     [ngStyle]="{
+                       border: isDark
+                         ? '1px solid #FFCD29'
+                         : '1px solid #0082CC',
+                       width: '100%',
+                     }"
+                   />
+                 </div>
 
-                  <div class="our_projects_block">
-                    <div
-                      class="our_projects_title"
-                      [ngStyle]="{ color: '#ffffff' }"
-                    >
-                      Виберіть цікаву для вас тему й розпочніть навчання
-                    </div>
 
-                    <div class="our_projects_buttons">
-                      <div
-                        class="our_projects_buttons-item"
-                        *ngFor="let item of projects; let i = index"
-                        (mouseenter)="hoveredIndex = i"
-                        (mouseleave)="hoveredIndex = null"
-                        [ngStyle]="{
-                          border: isDark
-                            ? '1px solid #6E4D00'
-                            : '1px solid #015F95',
-                          background: isDark
-                            ? hoveredIndex === i
-                              ? 'rgba(110, 77, 0, 1)'
-                              : 'rgba(255, 205, 41, 0.20)'
-                            : hoveredIndex === i
-                              ? 'rgba(1, 95, 149, 1)'
-                              : 'rgba(0, 130, 204, 0.20)',
-                        }"
-                      >
-                        <a [href]="item.link" target="_blank">{{
-                          item.title
-                        }}</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                 <div class="our_projects_block">
+                   <div
+                     class="our_projects_title"
+                     [ngStyle]="{ color: '#ffffff' }"
+                   >
+                     Виберіть цікаву для вас тему й розпочніть навчання
+                   </div>
+
+
+                   <div class="our_projects_buttons">
+                     <div
+                       class="our_projects_buttons-item"
+                       *ngFor="let item of projects; let i = index"
+                       (mouseenter)="hoveredIndex = i"
+                       (mouseleave)="hoveredIndex = null"
+                       [ngStyle]="{
+                         border: isDark
+                           ? '1px solid #6E4D00'
+                           : '1px solid #015F95',
+                         background: isDark
+                           ? hoveredIndex === i
+                             ? 'rgba(110, 77, 0, 1)'
+                             : 'rgba(255, 205, 41, 0.20)'
+                           : hoveredIndex === i
+                             ? 'rgba(1, 95, 149, 1)'
+                             : 'rgba(0, 130, 204, 0.20)',
+                       }"
+                     >
+                       <a [href]="item.link" target="_blank">{{
+                         item.title
+                       }}</a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
 </section>

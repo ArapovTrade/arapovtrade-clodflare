@@ -93,7 +93,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'xrp-ripple', //5 1 
+        path: 'xrp-ripple', //5 1  
         loadChildren: () =>
           import('./five-uk-blog/five-uk-blog.module').then(
             (m) => m.FiveUkBlogModule,

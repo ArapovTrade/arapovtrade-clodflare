@@ -8,90 +8,90 @@
            <main lang="uk">
 <header><h1>Індикатор ATR: істинний діапазон, розрахунок та захисний вихід</h1></header><article><p><strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="ATR (Average True Range)">ATR</dfn>, або середній істинний діапазон, вимірює розмір недавніх коливань ціни з урахуванням стрибків між інтервалами.</strong> Він допомагає порівняти розмах руху та відстань до захисного виходу. Показник не визначає, купувати чи продавати, і не встановлює ціни наступного розвороту.</p>
 <!-- Ukrainian educational illustration: atr-intro-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-intro-uk.webp" alt="Розмір недавніх коливань; Стрибки між інтервалами враховано; ATR не визначає напрямку" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-01">Що показує ATR</h2>
+<div class="flex"><img src="/assets/img/content/atr-intro-uk.webp" alt="Розмір недавніх коливань; Стрибки між інтервалами враховано; ATR не визначає напрямку" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
+<h2 id="topic-01" style="margin-top:40px;margin-bottom:16px;">Що показує ATR</h2>
 <p>Волатильність є мінливістю ціни. ATR оцінює її через діапазони барів, відстані між цінами за вибрані інтервали. Бар або свічка об’єднує ціни одного інтервалу, закриттям називають його останню ціну. Веллс Вайлдер представив індикатор у книзі «Нові концепції технічних торгових систем» 1978 року.</p>
 <p>ATR має ті самі одиниці, що котирування інструмента. Для акції, частки компанії, з ціною в доларах показник теж виражений у доларах. Це не відсоток і не втрата всього рахунку. Грошовий результат залежить також від кількості придбаних одиниць, тобто розміру позиції.</p>
 <!-- Ukrainian educational illustration: atr-units-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-units-uk.webp" alt="Одиниці ATR = одиниці котирування; Для акції в USD: ATR теж у USD; Результат залежить також від кількості" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>Таймфрейм є часовим інтервалом одного бара. На годинному графіку ATR усереднює годинні діапазони, на денному денні. ATR(14) означає період із 14 барів, а не обов’язково 14 днів. Денне значення не слід непомітно підставляти замість годинного в правило виходу.</p>
 <!-- Ukrainian educational illustration: atr-timeframe-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-timeframe-uk.webp" alt="ATR(14): 14 барів, не обов’язково днів; Годинні й денні діапазони різні; Не підміняти масштаб правила виходу" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>ATR може зростати під час підвищення та падіння ціни: він враховує розмір відстаней, а не знак руху. Напрямок і попередні крайні точки перевіряють на самому графіку; основи цього порівняння пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">читання графіка</a>.</p>
 <div class="flex"><img src="https://arapov.trade/assets/img/content/atrindicator333.png" alt="Чотиригодинні свічки та червона лінія ATR із періодом 14 і згладжуванням RMA" loading="lazy"></div>
-<h2 id="topic-02">Як обчислюють ATR</h2>
+<h2 id="topic-02" style="margin-top:40px;margin-bottom:16px;">Як обчислюють ATR</h2>
 <p>Спочатку для кожного бара визначають істинний діапазон, True Range, або TR. Різниця максимуму та мінімуму може пропустити стрибок від попереднього закриття. TR охоплює як відстань усередині поточного бара, так і відстані від попереднього закриття до його крайніх цін.</p>
 <p>Позначимо максимум поточного бара H, мінімум L, попереднє закриття Cprev. Вертикальні риски позначають модуль: відстань беруть без від’ємного знака. Формула <strong>TR = max(H − L, |H − Cprev|, |L − Cprev|)</strong> вибирає найбільше із трьох значень.</p>
 <!-- Ukrainian educational illustration: atr-tr-formula-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-tr-formula-uk.webp" alt="TR = max(H − L, |H − Cprev|, |L − Cprev|); H: максимум; L: мінімум; Cprev: попереднє закриття; Модуль: відстань без від’ємного знака" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>Якщо попереднє закриття всередині поточного діапазону, його ширина H − L є найбільшою з цих відстаней. Якщо закриття поза межами, більшим буде шлях до одного з нових крайніх значень. Так формула враховує розрив між інтервалами, який не видно з висоти поточної свічки.</p>
 <!-- Ukrainian educational illustration: atr-gap-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-gap-uk.webp" alt="Попереднє закриття всередині: TR = H − L; Поза межами: більша відстань до крайньої ціни; TR враховує розрив між інтервалами" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-gap-uk.webp" alt="Попереднє закриття всередині: TR = H − L; Поза межами: більша відстань до крайньої ціни; TR враховує розрив між інтервалами" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <p>У способі Вайлдера n означає кількість барів вибраного періоду. Початковий ATR є простою середньою перших n значень TR: їх додають і ділять суму на n. Далі згладжують кожне нове значення: <strong>новий ATR = (попередній ATR × (n − 1) + поточний TR) / n.</strong> Згладжування змінює середню поступово; вона не зобов’язана дорівнювати діапазону останнього бара.</p>
 <!-- Ukrainian educational illustration: atr-smoothing-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-smoothing-uk.webp" alt="Початковий ATR: сума перших n TR ÷ n; Новий ATR = (попередній ATR × (n − 1) + TR) ÷ n; n: кількість барів" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>У TradingView початковий спосіб згладжування ATR називається RMA та відповідає цьому розрахунку Вайлдера. Можна вибрати інше усереднення. Однаковий період сам не гарантує однакової лінії в різних програмах: звірте метод, початкову історію та джерело котирувань.</p>
 <!-- Ukrainian educational illustration: atr-platform-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-platform-uk.webp" alt="TradingView: початкове згладжування RMA; Метод, початкова історія, джерело цін; Один період не гарантує однакової лінії" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-03">Приклад розрахунку ATR</h2>
+
+<h2 id="topic-03" style="margin-top:40px;margin-bottom:16px;">Приклад розрахунку ATR</h2>
 <p>На навчальному денному графіку акції ціни наведені в доларах. Попереднє закриття становить 100, поточний максимум 105, мінімум 102, закриття 104. Відстань усередині дня дорівнює 105 − 102 = 3 доларам, але шлях від попереднього закриття більший.</p>
 <p>Три відстані дорівнюють 3, 5 і 2 доларам, тому TR становить 5. Нехай попередній ATR(14), уже обчислений за Вайлдером, дорівнює 3 доларам. Новий ATR = (3 × 13 + 5) / 14 = 3,142857, приблизно <strong>3,14 долара</strong>.</p>
 <!-- Ukrainian educational illustration: atr-example-tr-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-example-tr-uk.webp" alt="Навчальні ціни: USD; Cprev 100; H 105; L 102; закриття 104; 105 − 102 = 3; |105 − 100| = 5; |102 − 100| = 2; TR = max(3, 5, 2) = 5 USD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-example-tr-uk.webp" alt="Навчальні ціни: USD; Cprev 100; H 105; L 102; закриття 104; 105 − 102 = 3; |105 − 100| = 5; |102 − 100| = 2; TR = max(3, 5, 2) = 5 USD" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <!-- Ukrainian educational illustration: atr-example-update-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-example-update-uk.webp" alt="Попередній ATR(14): 3 USD; (3 × 13 + 5) ÷ 14 ≈ 3,142857 USD; Новий ATR ≈ 3,14 USD; TR 5 не зробив середню рівною 5" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-example-update-uk.webp" alt="Попередній ATR(14): 3 USD; (3 × 13 + 5) ÷ 14 ≈ 3,142857 USD; Новий ATR ≈ 3,14 USD; TR 5 не зробив середню рівною 5" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <p>Новий істинний діапазон 5 не зробив середню рівною 5: його вплив усереднений із попереднім значенням. Усередині формули зберігайте точність, округлюйте для показу результату. Раннє округлення та інша початкова історія можуть пояснити невеликі відмінності з платформою.</p>
 <!-- Ukrainian educational illustration: atr-precision-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-precision-uk.webp" alt="Точність — усередині формули; Округлення — для показу; Звірте початкову історію" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-04">Як вибрати період та порівняти показання</h2>
+
+<h2 id="topic-04" style="margin-top:40px;margin-bottom:16px;">Як вибрати період та порівняти показання</h2>
 <p>Період 14 є поширеним початковим налаштуванням, а не обов’язковим правилом. За того самого згладжування коротший період сильніше реагує на нові діапазони, довший змінюється повільніше. Налаштування перевіряють до відомого результату, замість вибору зручної лінії після нього.</p>
 <!-- Ukrainian educational illustration: atr-period-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-period-uk.webp" alt="14: поширене, не обов’язкове налаштування; За того самого згладжування:; Коротший період — сильніша реакція; Довший — повільніша зміна; Параметри зафіксувати до результату" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>Високий чи низький ATR порівнюють із недавніми значеннями того самого інструмента за однакових налаштувань. Абсолютні числа різних акцій не встановлюють їхньої відносної мінливості. Масштаб ціни та склад торгової сесії, відрізка роботи ринку, теж впливають на порівняння.</p>
 <!-- Ukrainian educational illustration: atr-comparison-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-comparison-uk.webp" alt="Той самий інструмент і налаштування; Звірити масштаб ціни й торгову сесію; Абсолютні ATR різних акцій не дають відносного порівняння" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>Для відносного масштабу використовують ATR у процентах, ATRP: <strong>ATR% = ATR / ціна закриття × 100.</strong> У тому самому випадку 3,142857 / 104 × 100 дає приблизно 3,02 відсотка. Для порівняння зберігайте однакові часовий масштаб, період і метод.</p>
 <!-- Ukrainian educational illustration: atr-relative-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-relative-uk.webp" alt="ATR% = ATR ÷ ціна закриття × 100; Навчально: 3,142857 ÷ 104 × 100 ≈ 3,02%; Ті самі масштаб, період і метод" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-relative-uk.webp" alt="ATR% = ATR ÷ ціна закриття × 100; Навчально: 3,142857 ÷ 104 × 100 ≈ 3,02%; Ті самі масштаб, період і метод" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <p>ATR% не є ймовірністю руху на 3,02 відсотка чи обіцяною дохідністю. Він виражає спостережений розмах відносно ціни. Для цієї формули потрібне ненульове закриття; звичайне порівняння додатної відносної величини передбачає додатну ціну.</p>
 <!-- Ukrainian educational illustration: atr-relative-conditions-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-relative-conditions-uk.webp" alt="Ненульове закриття: ділення визначене; Додатна ціна: звичайний додатний відносний масштаб; 3,02% — не ймовірність чи дохідність" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-05">Що означають зростання та зниження ATR</h2>
+
+<h2 id="topic-05" style="margin-top:40px;margin-bottom:16px;">Що означають зростання та зниження ATR</h2>
 <p>Зростання ATR означає, що нові істинні діапазони підвищують згладжене значення. Це може супроводжувати продовження спрямованого руху, різкий рух у протилежний бік або широкі коливання без сталого напрямку.</p>
 <p>Зниження ATR означає менший згладжений діапазон, але не обов’язково зупинку ціни. Просування може тривати невеликими барами. Спад показника не встановлює, що покупців більше немає чи напрямок руху вже змінився.</p>
 <p>Низький ATR не визначає сторони наступного виходу з цінового діапазону. Якщо ціна проходить його межу, перевіряють подальшу реакцію. Сам показник не відрізняє втриманий вихід від швидкого повернення й не дає завершеної умови входу.</p>
 <!-- Ukrainian educational illustration: atr-direction-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-direction-uk.webp" alt="Зростання ATR: більший згладжений розмах; Спад ATR не означає зупинки ціни; Низький ATR не визначає сторони виходу; Напрямок і втримання виходу — за ціною" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>На початковій ілюстрації показано чотиригодинні свічки та червону лінію ATR із періодом 14 і способом RMA. Її піки є великими значеннями розмаху на цьому відрізку. Вони не доводять виснаження учасників чи обов’язкового повороту; рішення про вихід потребує окремої умови за ціною.</p>
 <p>На незавершеному барі максимум і мінімум можуть змінитися, а разом із ними TR та ATR. Якщо правило використовує закриті бари, дочекайтеся завершення інтервалу. Перевірка за готовим історичним числом і дія за мінливою поточною лінією є різними умовами.</p>
 <!-- Ukrainian educational illustration: atr-live-bar-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-live-bar-uk.webp" alt="Незавершений бар: H і L змінюються; TR та ATR теж можуть змінитися; Правило закритих барів: завершений інтервал" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-06">Як застосовувати ATR до стоп-лосу</h2>
+
+<h2 id="topic-06" style="margin-top:40px;margin-bottom:16px;">Як застосовувати ATR до стоп-лосу</h2>
 <p>Стоп-лос задає умову захисного виходу, коли припущення про угоду не підтверджується. Спочатку визначте зміну ціни, яка скасовує вашу ідею, потім зіставте відстань до неї з недавнім розмахом. ATR допомагає оцінити цю відстань, але сама зручність вузького стопа не обґрунтовує його місця.</p>
 <!-- Ukrainian educational illustration: atr-stop-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-stop-uk.webp" alt="Спочатку зміна, що скасовує ідею; Потім відстань до захисного виходу; Зіставити відстань із ATR; Вузький стоп сам не обґрунтовує місця" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>Іноді відстань задають як кілька ATR. Множник належить правилам системи; універсального безпечного числа немає. Один ATR не є межею наступного руху, тому стоп на кількох ATR також може спрацювати. Сам індикатор не враховує комісій, різниці цін купівлі та продажу чи виконання за гіршою ціною.</p>
 <!-- Ukrainian educational illustration: atr-multiplier-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-multiplier-uk.webp" alt="Множник ATR — правило системи; Універсального безпечного числа немає; Один ATR не обмежує наступного руху; Витрати й виконання перевірити окремо" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>У <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/freeeducation#size">розділі курсу про розмір позиції</a> Арапов спочатку задає допустиму суму втрати, відстань до стопа та грошову вартість одиниці зміни ціни інструмента. Кількість округлюють униз до дозволеного кроку; якщо навіть мінімальна перевищує ліміт, угоду пропускають. Перед заявкою автор перевіряє витрати й допустиму кількість, а на навчальному рахунку з віртуальними коштами звіряє її з торговою програмою. ATR не замінює цих даних.</p>
 <!-- Ukrainian educational illustration: atr-author-size-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-author-size-uk.webp" alt="Ліміт втрати, відстань, вартість одиниці зміни ціни; Кількість округлити вниз до кроку; Втрата за мінімальної кількості перевищує ліміт: пропустити; Перед заявкою перевірити витрати й кількість" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+
 <p>За ширшої відстані та незмінної кількості розрахункова втрата зростає. Тому підвищення ATR після входу саме не дозволяє відсунути захист, залишивши попередню позицію. Обмеження грошового ризику та виконання пояснює <a class="linkrefinto" href="https://arapov.trade/uk/freestudying/risk-management">ризик-менеджмент</a>.</p>
 <!-- Ukrainian educational illustration: atr-wider-risk-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-wider-risk-uk.webp" alt="Ширша відстань + та сама кількість; Розрахункова втрата зростає; Зростання ATR не дозволяє саме відсунути захист" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-wider-risk-uk.webp" alt="Ширша відстань + та сама кількість; Розрахункова втрата зростає; Зростання ATR не дозволяє саме відсунути захист" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <p>Chandelier Exit є способом побудувати розрахункову лінію виходу з ATR. Для купівлі її розміщують нижче максимуму вибраного періоду на кілька ATR, для продажу вище мінімуму. Перетин оцінюють за правилом виходу, а не як доказ розвороту. Крайні ціни та ATR змінюються, тому лінія може рухатися в обидва боки; порядок перенесення фактичного захисного наказу задають окремо.</p>
 <!-- Ukrainian educational illustration: atr-chandelier-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-chandelier-uk.webp" alt="Chandelier Exit: розрахункова лінія; Купівля: нижче максимуму на кілька ATR; Продаж: вище мінімуму на кілька ATR; Перетин — умова виходу, не доказ розвороту" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
+<div class="flex"><img src="/assets/img/content/atr-chandelier-uk.webp" alt="Chandelier Exit: розрахункова лінія; Купівля: нижче максимуму на кілька ATR; Продаж: вище мінімуму на кілька ATR; Перетин — умова виходу, не доказ розвороту" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto"></div>
 <!-- Ukrainian educational illustration: atr-chandelier-rules-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-chandelier-rules-uk.webp" alt="Крайні ціни та ATR змінюються; Розрахункова лінія може рухатися в обидва боки; Фактичний захисний наказ: окреме правило перенесення" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
-<h2 id="topic-07">Як перевірити застосування ATR</h2>
+
+<h2 id="topic-07" style="margin-top:40px;margin-bottom:16px;">Як перевірити застосування ATR</h2>
 <p>Зафіксуйте інструмент, джерело цін, часовий масштаб, період і згладжування. Для одного завершеного бара порівняйте три відстані TR та перевірте оновлення ATR. Якщо число відрізняється від платформи, спочатку звірте параметри й доступну історію.</p>
 <p>Виберіть відрізок низьких значень та наступного розширення. Перевірте, чи ціна зростала, падала або змінювала напрямок. Це відділяє розмір коливань від їхнього напрямку й дозволяє перевірити, що саме додає показник.</p>
 <p>До відкриття позиції запишіть умову скасування ідеї, спосіб вибору відстані та дію за зростання коливань. Потім перевіряйте те саме правило у вдалих і невдалих випадках. Рухома лінія індикатора не повинна непомітно збільшувати визначений грошовий ризик.</p>
 <!-- Ukrainian educational illustration: atr-test-uk.webp -->
-<div class="flex"><img src="/assets/img/content/atr-test-uk.webp" alt="Інструмент, джерело, масштаб, період, згладжування; Завершений бар: три відстані TR й оновлення ATR; До входу: скасування ідеї, відстань, дія за розширення; Те саме правило у вдалих і невдалих випадках; Рухома лінія не має збільшувати грошового ризику" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain"></div>
 
-<section><h2 id="topic-08">Часті запитання</h2><mat-accordion><mat-expansion-panel
+
+<section><h2 id="topic-08" style="margin-top:40px;margin-bottom:16px;">Часті запитання</h2><mat-accordion><mat-expansion-panel
                      class="highlight-box owl_link-box"
                      [expanded]="true"
                    ><mat-expansion-panel-header><mat-panel-title>Що показує ATR?</mat-panel-title></mat-expansion-panel-header><p>Усереднений істинний діапазон недавніх барів, зокрема відстані від попереднього закриття. Він вимірює розмір коливань в одиницях ціни та не визначає майбутнього напрямку.</p></mat-expansion-panel><mat-expansion-panel
@@ -118,7 +118,7 @@
                      class="highlight-box owl_link-box"
                      (opened)="panelOpenState.set(true)"
                      (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Як Chandelier Exit пов’язаний з ATR?</mat-panel-title></mat-expansion-panel-header><p>Для купівлі його лінія розташована нижче максимуму періоду на кілька ATR, для продажу вище мінімуму. Перетин оцінюють за умовою виходу. Розрахункова лінія та фактичний захисний наказ потребують окремих правил.</p></mat-expansion-panel></mat-accordion></section><section><h2 id="topic-09">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер із 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
+                   ><mat-expansion-panel-header><mat-panel-title>Як Chandelier Exit пов’язаний з ATR?</mat-panel-title></mat-expansion-panel-header><p>Для купівлі його лінія розташована нижче максимуму періоду на кілька ATR, для продажу вище мінімуму. Перетин оцінюють за умовою виходу. Розрахункова лінія та фактичний захисний наказ потребують окремих правил.</p></mat-expansion-panel></mat-accordion></section><section><h2 id="topic-09" style="margin-top:40px;margin-bottom:16px;">Про автора</h2><p><a class="linkrefinto" href="https://arapov.trade/uk"><strong><em>Ігор Арапов</em></strong></a>, практикуючий трейдер із 2013 року, автор бібліотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
 
 
              <div
