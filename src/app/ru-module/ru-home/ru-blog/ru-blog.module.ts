@@ -471,7 +471,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'ai-in-trading', //59 1
+        path: 'ai-in-trading', //59 1 
         loadChildren: () =>
           import('./fifty-nine-ru-blog/fifty-nine-ru-blog.module').then(
             (m) => m.FiftyNineRuBlogModule,
