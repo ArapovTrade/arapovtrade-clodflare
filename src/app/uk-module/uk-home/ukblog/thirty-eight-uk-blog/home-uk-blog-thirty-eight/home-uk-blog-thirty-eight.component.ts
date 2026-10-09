@@ -57,13 +57,13 @@ export class HomeUkBlogThirtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Що таке проп-трейдинг: гайд для початківців | Arapov.trade',
+      'Проп-трейдинг: капітал фірми, відбір і виплати',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке проп-трейдинг, як влаштований челендж проп-фірми, її правила, виплати та підводні камені торгівлі на чужому капіталі.',
+        'Як відрізнити реальний капітал від симуляції, перевірити межі втрат, правила проп-челенджу, договір та умови винагороди.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

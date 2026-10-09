@@ -56,12 +56,12 @@ export class HomeUkBlogFiftySixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Стратегія пробою: правила та точки входу | Arapov.trade');
+    this.titleService.setTitle('Пробій рівня: вихід, ретест і хибний пробій | ArapovTrade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Як торгувати пробій рівня: визначення ключових зон, підтвердження обсягом, хибні пробої і де ставити стоп. Стратегія для новачків і профі.',
+        'Як перевірити вихід за рівень і ретест, порівняти обсяг із реакцією ціни та визначити скасування ідеї. Чому стоп не гарантує ціну виконання.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

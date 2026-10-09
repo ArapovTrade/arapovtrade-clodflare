@@ -57,7 +57,7 @@ export class HomeUkBlogThirtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Як обрати брокера для трейдингу | Arapov.trade',
+      'Як обрати платформу й брокера для трейдингу | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeUkBlogThirtySevenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Як обрати брокера і торгову платформу: регуляція, комісії, виконання ордерів і на що дивитися новачку, щоб не натрапити на кухню.',
+        'Як перевірити брокера й торгову платформу: компанія, дозволи, дані, деморахунок, повні витрати та умови виведення.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

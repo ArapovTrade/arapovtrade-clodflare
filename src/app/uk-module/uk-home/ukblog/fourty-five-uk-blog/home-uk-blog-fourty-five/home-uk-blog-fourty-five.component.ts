@@ -57,13 +57,13 @@ export class HomeUkBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Що таке RSI: індекс відносної сили | Arapov.trade',
+      'Індикатор RSI: розрахунок, крайні значення та дивергенція',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Індикатор RSI: як читати перекупленість і перепроданість, дивергенції і чому сигнал RSI працює лише в контексті тренду.',
+        'Як RSI порівнює зміни ціни, що означають зони 30 і 70, дивергенція та період. Один приклад розрахунку й перевірка допоміжної ролі.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

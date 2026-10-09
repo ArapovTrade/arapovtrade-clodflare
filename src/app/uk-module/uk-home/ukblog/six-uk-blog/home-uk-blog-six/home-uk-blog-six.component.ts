@@ -56,7 +56,7 @@ export class HomeUkBlogSixComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Домінація біткоїна: що це означає | Arapov.trade');
+    this.titleService.setTitle('Домінація Bitcoin: як обчислити та перевірити BTC.D');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
@@ -64,7 +64,7 @@ export class HomeUkBlogSixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке домінація біткоїна (BTC.D), навіщо стежити за цим показником і як домінування BTC впливає на ринок і альткоїни.',
+        'Формула домінації Bitcoin, різниця джерел і роль стейблкоїнів. Як відокремити частку від ціни, припливу грошей та індексу альтсезону перед рішенням.',
     });
 
     this.gerRandom();

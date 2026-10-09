@@ -57,13 +57,13 @@ export class HomeUkBlogFourtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Що таке MACD: сходження/розходження ковзних середніх',
+      'Індикатор MACD: лінії, гістограма та перевірка сигналів',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Індикатор MACD: налаштування, сигнальна лінія та гістограма, перетини та дивергенції. Як читати сигнали і не потрапляти на хибні.',
+        'Як розрізняти лінію MACD, сигнал і гістограму, перетини та дивергенцію. Один розрахунок, різні налаштування платформ і перевірка застосування.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

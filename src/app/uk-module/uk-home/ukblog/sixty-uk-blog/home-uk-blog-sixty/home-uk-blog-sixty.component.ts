@@ -57,7 +57,7 @@ export class HomeUkBlogSixtyComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Найкращі індикатори для трейдингу: повний гайд',
+      'Індикатори в трейдингу: що вони показують і як перевіряти сигнали',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
@@ -66,7 +66,7 @@ export class HomeUkBlogSixtyComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Індикатори в трейдингу: трендові, осцилятори та об’ємні. Як вони працюють, що показують і чому індикатор не сигнал сам по собі.',
+        'Що показують торгові індикатори, чому змінюються їхні значення та як перевіряти перетини й дивергенцію разом із ціною та обсягом.',
     });
 
     this.gerRandom();

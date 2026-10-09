@@ -56,13 +56,13 @@ export class HomeUkBlogFiftyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Як штучний інтелект використовують у трейдингу | Arapov.trade',
+      'ШІ в трейдингу: що може модель і як перевірити результат',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що нейромережі реально вміють на ринку, а що їм не до снаги, чому ШІ не передбачає майбутнє і як використати його як інструмент, а не оракула.',
+        'Як застосовувати ШІ для аналізу журналу й перевірки правил: дані, перенавчання, витік майбутньої інформації та умови виконання угод.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

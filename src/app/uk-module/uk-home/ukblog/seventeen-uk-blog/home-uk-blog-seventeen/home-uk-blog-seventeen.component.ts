@@ -57,13 +57,13 @@ export class HomeUkBlogSeventeenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Мемкоїни: хайп, ризики і як вони працюють',
+      'Мемкоїни: випуск, продаж і ризик втрати коштів',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке мемкоїни, на чому тримається їхня ціна, чому це чиста спекуляція на хайпі і як не лишитися зі знеціненим токеном на руках.',
+        'Як запускають мемкоїни та працює бондинг-крива. Різниця між екранною оцінкою й продажем, ліквідність, повноваження випуску та ризик повної втрати.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

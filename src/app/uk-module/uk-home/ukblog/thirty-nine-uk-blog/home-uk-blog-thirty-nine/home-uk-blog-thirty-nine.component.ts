@@ -57,7 +57,7 @@ export class HomeUkBlogThirtyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Ризик-менеджмент у трейдингу: правила, які працюють',
+      'Ризик-менеджмент у трейдингу: ризик і розмір позиції',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeUkBlogThirtyNineComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Управління ризиками і капіталом: розмір позиції, ризик на угоду, стоп-лосс і чому саме ризик-менеджмент зберігає депозит на дистанції.',
+        'Як визначити допустиму втрату, розрахувати розмір позиції за стопом і перевірити ризик відкритих угод, денний ліміт та просадку.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

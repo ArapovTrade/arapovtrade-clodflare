@@ -57,7 +57,7 @@ export class HomeUkBlogFiveteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Крипто-стейкінг: що це і як заробити | Arapov.trade',
+      'Стейкінг криптовалют: винагороди, виведення та ризики',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeUkBlogFiveteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке стейкінг криптовалюти, як заробляти на блокуванні монет, яка дохідність реальна і які ризики у стейкінгу.',
+        'Як працює стейкінг, валідатор і делегування. Як читати APR та APY, оцінювати результат у грошах, перевіряти вихід, слешинг і ліквідні токени.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

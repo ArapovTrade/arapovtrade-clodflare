@@ -57,13 +57,13 @@ export class HomeUkBlogThirteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Безстрокові ф`ючерси: маржинальна торгівля криптою',
+      'Безстрокові ф’ючерси: фандинг, маржа та ліквідація',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке безстрокові ф’ючерси, кредитне плече та маржинальна торгівля в крипті, до чого тут фандинг і чому велике плече веде до ліквідації.',
+        'Як визначити одиниці безстрокового контракту, врахувати фандинг і перевірити забезпечення, плече та ліквідацію перед навчальною заявкою.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

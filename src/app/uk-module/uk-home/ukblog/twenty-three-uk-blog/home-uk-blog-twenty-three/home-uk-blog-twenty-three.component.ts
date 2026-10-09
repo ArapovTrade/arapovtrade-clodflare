@@ -56,12 +56,12 @@ export class HomeUkBlogTwentyThreeComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Аналіз обʼєму в трейдингу: як його читати');
+    this.titleService.setTitle('Об’ємний аналіз: як читати обсяг разом із ціною');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Як працює об’ємний аналіз ринку: профіль обсягу, кластери, дельта і чому обсяг — первинна причина руху ціни.',
+        'Що вимірює торговий обсяг, чим відрізняються тикові дані, профіль і дельта та як перевіряти зусилля й результат без висновків про невідомого учасника.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

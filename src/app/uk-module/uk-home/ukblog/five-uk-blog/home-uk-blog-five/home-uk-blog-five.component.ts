@@ -57,13 +57,13 @@ export class HomeUkBlogFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'XRP (Ripple): що це і як працює | Arapov.trade',
+      'Що таке XRP і чим він відрізняється від Ripple',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке XRP і мережа Ripple, як працюють транскордонні платежі, вплив судової справи SEC та ризики для трейдерів.',
+        'Монета XRP, мережа XRPL і компанія Ripple: використання, випуск, escrow, графік, новини та мітка переказу. Як перевіряти фактичні умови.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

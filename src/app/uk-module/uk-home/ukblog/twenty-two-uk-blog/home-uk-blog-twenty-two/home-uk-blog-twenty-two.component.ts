@@ -56,14 +56,14 @@ export class HomeUkBlogTwentyTwoComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('DeFi: що таке децентралізовані фінанси | Arapov.trade');
+    this.titleService.setTitle('DeFi: обмін, позики, дохід і ризики децентралізованих фінансів');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке DeFi, як працюють обмін, кредити й стейкінг без банків на смартконтрактах і які ризики — від дір у коді до втрати коштів — тут реальні.',
+        'Як працюють програми DeFi, дозволи гаманця, пули ліквідності, позики під заставу та ліквідація. Що показує TVL і як перевіряти витрати та повернення коштів.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

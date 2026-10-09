@@ -57,13 +57,13 @@ export class HomeUkBlogTwentyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Стратегія Мартингейл у трейдингу: чи працює вона',
+      'Усереднення і мартингейл: середня ціна та ризик',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке усереднення і метод мартінгейла, чому вони здаються вигідними і як саме зливають депозит новачків. Психологія і математика ризику.',
+        'Як докупівля змінює середню ціну й втрату грошей, чому подвоєння ставок виснажує запас та що перевірити перед додаванням до позиції.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

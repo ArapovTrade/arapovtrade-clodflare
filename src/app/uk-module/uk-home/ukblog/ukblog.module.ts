@@ -422,7 +422,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'adx-indicator', //52 1
+        path: 'adx-indicator', //52 1 
         loadChildren: () =>
           import('./fifty-two-uk-blog/fifty-two-uk-blog.module').then(
             (m) => m.FiftyTwoUkBlogModule,

@@ -57,13 +57,13 @@ export class HomeUkBlogTwentySixComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Психологія трейдингу: емоції та дисципліна | Arapov.trade',
+      'Психологія трейдингу: емоції та виконання плану',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Як емоції впливають на трейдинг: страх, жадібність, FOMO і тільт. Когнітивні викривлення і техніки, які допомагають торгувати за системою.',
+        'Як помічати страх, FOMO, бажання відігратися й помилки мислення. Перевірка власних дій за планом, журналом і межами ризику.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

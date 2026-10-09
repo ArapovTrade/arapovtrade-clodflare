@@ -57,7 +57,7 @@ export class HomeUkBlogEighteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Стейблкоїни: як працює Tether (USDT) | Arapov.trade');
+    this.titleService.setTitle('Стейблкоїни: резерви USDT, погашення та ціна');
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
@@ -67,7 +67,7 @@ export class HomeUkBlogEighteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке стейблкоїни, як вони тримають прив’язку до долара, чим USDT відрізняється від алгоритмічних монет і які у стейблкоїнів ризики.',
+        'Як перевірити забезпечення USDT, USDC і DAI, умови погашення, ринкову ціну та мережу переказу.',
     });
 
     this.gerRandom();

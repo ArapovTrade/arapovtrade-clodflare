@@ -57,7 +57,7 @@ export class HomeUkBlogTwentyOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Solana: що це і як вона працює | Arapov.trade',
+      'Solana і SOL: робота мережі та аналіз угоди',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -67,7 +67,7 @@ export class HomeUkBlogTwentyOneComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке Solana, як влаштований блокчейн SOL, його екосистема DeFi і NFT, переваги швидкості та ризики для трейдерів та інвесторів.',
+        'Що таке Solana, SOL і Proof of History. Як перевірити підтвердження, комісії, стейкінг, новини й кількість для торгової позиції.',
     });
  
     this.gerRandom();

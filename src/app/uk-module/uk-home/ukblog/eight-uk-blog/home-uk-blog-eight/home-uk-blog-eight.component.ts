@@ -60,7 +60,7 @@ export class HomeUkBlogEightComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Біткоїн: що це і як він працює у 2026 | Arapov.trade',
+      'Торгівля Bitcoin: аналіз BTC і план угоди',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
@@ -71,7 +71,7 @@ export class HomeUkBlogEightComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке біткоїн, як працює блокчейн, майнінг та обмежена емісія, у чому цінність BTC і які ризики у першої криптовалюти.',
+        'Як назвати ринок Bitcoin, перевірити рівні й обсяг BTC та записати план угоди. Одиниці ціни, допустима втрата й умови виконання.',
     });
 
     this.gerRandom();

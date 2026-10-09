@@ -56,7 +56,7 @@ export class HomeUkBlogNineteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Токеноміка: пропозиція, попит і корисність',
+      'Токеноміка: випуск, права, FDV та розблокування',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
@@ -66,7 +66,7 @@ export class HomeUkBlogNineteenComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке токеноміка, як розподіл монет, емісія й розблокування впливають на ціну і чому за нею видно ризик обвалу ще до купівлі токена.',
+        'Як перевірити обіг, емісію, розподіл, вестинг, кліф та анлок. Розрахунок капіталізації й FDV з явною базою, права власника та межі висновків про ціну.',
     });
 
     this.gerRandom();

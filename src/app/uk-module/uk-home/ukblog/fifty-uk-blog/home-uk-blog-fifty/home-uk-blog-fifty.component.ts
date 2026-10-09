@@ -56,12 +56,12 @@ export class HomeUkBlogFiftyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Що таке смуги Боллінджера | Arapov.trade');
+    this.titleService.setTitle('Смуги Боллінджера: розрахунок, стиснення та перевірка сигналів');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Смуги Боллінджера: налаштування, стиснення та розширення, пробої й відскоки від меж. Як індикатор показує волатильність і зони перегріву.',
+        'Як обчислюють смуги Боллінджера: один приклад, стандартне відхилення, стиснення, торкання краю, W-дно, M-вершина, %B та BandWidth.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

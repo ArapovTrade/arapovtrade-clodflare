@@ -55,7 +55,7 @@ export class HomeUkBlogNineComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Халвінг біткоїна: вплив на ціну та пропозицію');
+    this.titleService.setTitle('Халвінг Bitcoin: випуск монет, нагорода майнера та ціна');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 
@@ -63,7 +63,7 @@ export class HomeUkBlogNineComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке халвінг біткоїна, коли він відбувається, як скорочення винагороди впливає на емісію і чому ця подія важлива для майнерів та інвесторів.',
+        'Що скорочує халвінг Bitcoin, як перевірити висоту й дату. Різниця між субсидією та комісіями, навчальний розрахунок і причини відсутності гарантії зростання.',
     });
 
     this.gerRandom();

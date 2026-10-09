@@ -57,13 +57,13 @@ export class HomeUkBlogTwentySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Що можна торгувати: активи для трейдингу | Arapov.trade',
+      'Торгівля золотом, нафтою та фондовими індексами',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Як торгувати золотом, нафтою та фондовими індексами: фундаментальні драйвери, особливості інструментів і підходи до аналізу.',
+        'Що означають XAU/USD, Brent, WTI і фондовий індекс. Відмінності продуктів, розмір контракту, грошовий результат та перевірка ризику.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

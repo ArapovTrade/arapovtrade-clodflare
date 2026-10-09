@@ -56,13 +56,13 @@ export class HomeUkBlogElevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Криптовалюта: що це таке — гайд для початківців',
+      'Криптовалюта для початківців: основи | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Основи криптовалют для початківців: що таке блокчейн, біткоїн і альткоїни, як працює ринок і з чого почати трейдинг крипти безпечно.',
+        'Криптовалюта, блокчейн, монети й токени. Як перевірити біржу, зберігання та умови першої угоди й почати з навчальної практики.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });
