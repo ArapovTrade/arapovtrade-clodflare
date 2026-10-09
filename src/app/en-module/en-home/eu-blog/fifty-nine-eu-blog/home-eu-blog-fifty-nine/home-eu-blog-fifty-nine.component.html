@@ -1,310 +1,851 @@
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="en">
-<header><h1>AI in trading: uses, testing and limitations</h1></header>
-<article>
-<p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><span itemprop="name">AI in trading</span></dfn> means using artificial intelligence models to work with market information, trade records or trading rules. A model may help identify patterns, write code or produce forecasts. A useful explanation, an accurate forecast and a profitable trading method are different outcomes. Each needs its own check.</p>
-<section><h2 id="topic-01">Chatbots, forecasting models and trading bots</h2>
-<p>A chatbot produces text, explanations or code in response to a request. A forecasting model estimates a defined outcome from input data. A trading bot sends orders, instructions to buy or sell, under specified rules. One service can combine these functions, but a chat window alone does not establish access to market prices or permission to trade.</p>
-<p>A bot can follow fixed rules without machine learning. A model can also analyse data without sending an order. First establish what the tool actually does: explains information, estimates an outcome or controls execution. Sending orders requires a separate connection, permissions and controls over the instructions it sends.</p>
-<p>Machine learning fits a model using examples. A language model learns to generate text, so a confident explanation does not establish that its calculation or market claim is correct. NIST's guidance on generative AI identifies the risk of confidently presented false content, including invented reasoning and citations.</p>
-<p>If an answer includes a current price, check the data source and timestamp. The service may lack market access or receive delayed prices. A chart screenshot contains only the selected view; it cannot establish every trade, the full traded quantity or your actual execution prices. <a class="linkrefinto" href="https://arapov.trade/en/freestudying/chart-reading">Chart reading</a> explains how to check the underlying chart information.</p>
-<img src="/assets/img/content/predictmarketprice1.webp" alt="Методы прогнозирования цены в трейдинге" class="pictureImg" loading="lazy">
-</section>
-<section><h2 id="topic-02">Can AI predict the price accurately?</h2>
-<p>AI can forecast a future price, direction or movement range, but it cannot guarantee the outcome. Its performance depends on the task, time horizon, data and testing on new observations. There is no universal number of days after which every model becomes no better than random guessing.</p>
-<p>Define the forecast before evaluating it. Tomorrow's closing price, the direction of the next candle and the chance of a large move are different tasks. Correct direction does not establish the size of the move or a profit after costs. Compare the model with a simple starting rule to see whether it adds useful information.</p>
-<p>Unexpected news and changes in market participants or trading conditions can weaken patterns found in past data. This does not make every model useless. It means performance needs monitoring in the market and conditions where the model is used, rather than transferring an advertised result to any trade.</p>
-<p>A percentage typed into a chat answer is not automatically a measured probability. You need a defined event, a calculation method and evidence that predictions correspond to actual outcomes. Without those checks, treat the statement as an idea to investigate.</p>
-</section>
-<section><h2 id="topic-03">Using AI to analyse your trades</h2>
-<p>A trading journal records completed trades and your actions. AI may help group those records by instrument, time, entry rule or documented departures from the plan. This describes what happened; it does not reveal the next market price.</p>
-<p>Prepare a table with clear fields: entry and exit times with the time zone, instrument, direction, trade size, execution prices, costs and result. Include a rule violation only when your records establish it. A losing trade alone does not tell a model that you felt afraid or broke a rule.</p>
-<p>Ask the tool to identify missing entries, duplicates and unclear units before grouping the records. Check totals against your broker's statement or your own calculation. Mixing currencies, treating open trades as closed or omitting commissions can produce a tidy table with an incorrect result.</p>
-<p>A specific request is easier to check than 'find a profitable strategy': 'Group these closed trades by entry time. Show the number of trades, total result after the listed commissions and rows with missing data. Do not fill in missing values.' Then compare several rows from each group and the overall total with the original table.</p>
-<p>An observed relationship does not establish its cause. Losses during particular hours may reflect a different instrument, larger trades or too few observations. Turn the finding into a condition you can test on later data before changing your trading because the report looks convincing.</p>
-</section>
-<section><h2 id="topic-04">Testing a strategy suggested by AI</h2>
-<p>Convert an AI suggestion into clear trading rules first: what data is available at the decision time, what triggers an entry, when the trade ends and how its size is limited. If the explanation changes after every question, there is no stable method to test yet. <a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-system">A trading system</a> explains how to turn conditions into a written plan and evaluate its results.</p>
-<p>Generated code can help automate a test, but it may calculate an indicator incorrectly, place a signal at the wrong time or assume an unavailable execution price. A successful program run and an attractive chart do not prove correctness. Check individual cases manually: what was known before entry, why an order appeared and how its result was calculated.</p>
-<p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="overfitting">Overfitting</dfn> occurs when a model fits the peculiarities of its training data too closely and performs poorly on new data. In trading, testing many settings and selecting the best historical result can create this problem. David Bailey and his co-authors studied this selection risk in historical strategy tests.</p>
-<p>Data leakage means a test uses information that was not available when the decision would have been made. For example, an entry during a candle cannot use that candle's final high before it is known. Leakage can also enter through preparation when data-processing settings are calculated from the entire history, including the later test period.</p>
-<p>Fit the rules on earlier data and check them on later data without using future results in the earlier decisions. If you change the rules after examining the test, that period becomes part of the selection process; another independent check is needed. Where inputs or forecast outcomes span overlapping periods, a calendar split alone may not prevent information from crossing the boundary.</p>
-<p>Check money gained and lost, not just the percentage of correct calls. In a hypothetical set of ten closed trades measured in US dollars, six gain $10 each and four lose $20 each. The result before costs is 6 × $10 − 4 × $20 = −$20, despite a majority of winning trades. Commissions make it worse. These numbers illustrate arithmetic, not my results or a tested AI model.</p>
-<p>Check execution assumptions too. A chart price used to create a signal may not have been available for an immediate trade. Include the difference between buying and selling prices, commissions and slippage, the difference between expected and actual execution price. Then observe the tool on new data and in a demo environment using virtual funds. Successful simulated execution does not establish the same fills in a real account.</p>
-<img src="/assets/img/content/predictmarketprice2.webp" alt="Стратегии прогнозирования цены" class="pictureImg" loading="lazy">
-</section>
-<section><h2 id="topic-05">Data and account risks</h2>
-<p>Remove account numbers, identity documents, passwords and access keys before uploading records. Check how the service stores and uses your information. Analysing a table does not require permission to withdraw money or send orders. If the tool connects to an account, separately limit its permissions and check how to stop it.</p>
-<p>An automated system needs limits on order size and open trades, checks for duplicate orders and a defined response to a lost connection. Model or data-source updates can change behaviour, so keep versions of the rules and records of sent orders. Investigate unexplained changes without new trades rather than relying on the next answer to repair them.</p>
-<p>Guaranteed profit or trading without losses is a reason to investigate a service, not evidence that its technology works. SEC, FINRA and CFTC educational materials warn about offers using AI claims to promote unrealistic results. Check the company and service terms through independent sources. A demo balance or profit screenshot does not establish a real trading history.</p>
-</section>
-<section><h2 id="topic-06">Connecting AI assistance to a trading method</h2>
-<p>My course builds decisions around observable chart conditions and rules chosen before the trade, rather than an assurance of predicting every price. <a class="linkrefinto" href="https://arapov.trade/en/freestudying/wyckoff-method">The Wyckoff method</a> explains the price-and-volume approach in more detail. AI can help organise observations, but a relationship it finds still needs checking against the actual data.</p>
-<p>In the <a class="linkrefinto" href="https://arapov.trade/en/freestudying/freeeducation#math">course section on expected value</a>, I compare hypothetical trade series with specified loss exits and profit targets. The practical task is to evaluate the series rather than one successful trade. This helps frame the evaluation of an idea; it is neither an AI programming lesson nor evidence of future profitability.</p>
-<p>The optional <a class="linkrefinto" href="https://youtu.be/5PLGouidw-A?t=830">Price forecasting limits</a> chapter discusses choosing a trading task instead of expecting an exact future price. It does not test a specific AI model or rule out forecasts expressed as probabilities. The written checks in this article can be followed without watching the video.</p>
-<p>As with <a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">trading indicators</a>, a model's output needs clear conditions of use. Write down the task, data source and timestamp, what counts as a correct answer and what you will do when it is wrong. If you cannot reproduce and check the result, it is not enough evidence for a trade.</p>
-</section>
-<section><h2 id="topic-07">Frequently asked questions</h2><mat-accordion>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     [expanded]="true"
-                   ><mat-expansion-panel-header><mat-panel-title>How can you use AI in trading?</mat-panel-title></mat-expansion-panel-header><p>Use it to organise information, examine trade records, prepare code and develop ideas you can test. Define the task and check the input data first, then verify calculations and conclusions. A confident answer alone does not establish correctness.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Can an AI model predict the exact price?</mat-panel-title></mat-expansion-panel-header><p>It can forecast a defined outcome for a chosen market and time horizon, but it cannot guarantee the future price. Test the result on new data and compare it with a simple starting rule. One model's performance does not establish how all AI models perform.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>How does journal analysis differ from forecasting?</mat-panel-title></mat-expansion-panel-header><p>A journal describes past trades and actions. A forecast estimates a future market outcome. A pattern found in past records can suggest a test, but it does not become a prediction of the next trade by itself.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Can AI replace a trading system?</mat-panel-title></mat-expansion-panel-header><p>AI can help describe or implement trading rules, but those rules still need testing. Even an automated method needs entry and exit conditions, trade-size limits and controls over order execution. A chat answer alone does not provide a tested system.</p></mat-expansion-panel>
-<mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Can you trade without an exact price forecast?</mat-panel-title></mat-expansion-panel-header><p>You can choose observable trade conditions and an exit if your expectation is wrong without predicting every movement. The method still needs testing. Limiting a possible loss does not by itself create a profitable system.</p></mat-expansion-panel>
-</mat-accordion></section><section><h2 id="topic-08">About the author</h2><p><a class="linkrefinto" href="https://arapov.trade/en"><strong><em>Igor Arapov</em></strong></a>, practising trader since 2013 and author of the ArapovTrade learning library. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X" target="_blank" rel="noopener noreferrer">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
+  <div class="container">
+    <div class="section-i">
+      <div class="section-content">
+        <div class="hero-content">
+          <div class="m-right hero-section"></div>
+          <div class="free-courses_main-container">
+            <main lang="en">
+              <header>
+                <h1>AI in trading: uses, testing and limitations</h1>
+              </header>
+              <article>
+                <p>
+                  <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                    ><span itemprop="name">AI in trading</span></dfn
+                  >
+                  means using artificial intelligence models to work with market
+                  information, trade records or trading rules. A model may help
+                  identify patterns, write code or produce forecasts. A useful
+                  explanation, an accurate forecast and a profitable trading
+                  method are different outcomes. Each needs its own check.
+                </p>
+                <!-- Added English explanatory diagram: ai-trading-outcomes-en.webp -->
+                <img
+                  src="/assets/img/content/ai-trading-outcomes-en.webp"
+                  alt="An explanation, a forecast and a profitable method are different outcomes requiring separate checks."
+                  class="pictureImg"
+                  loading="lazy"
+                  style="
+                    width: 100%;
+                    max-width: 800px;
+                    height: auto;
+                    max-height: none;
+                    display: block;
+                    object-fit: contain;
+                  "
+                />
+                <section>
+                  <h2 id="topic-01">
+                    Chatbots, forecasting models and trading bots
+                  </h2>
+                  <p>
+                    A chatbot produces text, explanations or code in response to
+                    a request. A forecasting model estimates a defined outcome
+                    from input data. A trading bot sends orders, instructions to
+                    buy or sell, under specified rules. One service can combine
+                    these functions, but a chat window alone does not establish
+                    access to market prices or permission to trade.
+                  </p>
+                  <p>
+                    A bot can follow fixed rules without machine learning. A
+                    model can also analyse data without sending an order. First
+                    establish what the tool actually does: explains information,
+                    estimates an outcome or controls execution. Sending orders
+                    requires a separate connection, permissions and controls
+                    over the instructions it sends.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-trading-functions-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-trading-functions-en.webp"
+                    alt="Chatbots generate text or code, forecasting models estimate outcomes, and trading bots send orders with separate connections and permissions."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Machine learning fits a model using examples. A language
+                    model learns to generate text, so a confident explanation
+                    does not establish that its calculation or market claim is
+                    correct. NIST's guidance on generative AI identifies the
+                    risk of confidently presented false content, including
+                    invented reasoning and citations.
+                  </p>
+                  <p>
+                    If an answer includes a current price, check the data source
+                    and timestamp. The service may lack market access or receive
+                    delayed prices. A chart screenshot contains only the
+                    selected view; it cannot establish every trade, the full
+                    traded quantity or your actual execution prices.
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/en/freestudying/chart-reading"
+                      >Chart reading</a
+                    >
+                    explains how to check the underlying chart information.
+                  </p>
+                  
+                </section>
+                <section>
+                  <h2 id="topic-02">Can AI predict the price accurately?</h2>
+                  <p>
+                    AI can forecast a future price, direction or movement range,
+                    but it cannot guarantee the outcome. Its performance depends
+                    on the task, time horizon, data and testing on new
+                    observations. There is no universal number of days after
+                    which every model becomes no better than random guessing.
+                  </p>
+                  <p>
+                    Define the forecast before evaluating it. Tomorrow's closing
+                    price, the direction of the next candle and the chance of a
+                    large move are different tasks. Correct direction does not
+                    establish the size of the move or a profit after costs.
+                    Compare the model with a simple starting rule to see whether
+                    it adds useful information.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-forecast-task-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-forecast-task-en.webp"
+                    alt="Closing price, direction and chance of a large move are different forecast tasks; correct direction does not establish profit after costs."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Unexpected news and changes in market participants or
+                    trading conditions can weaken patterns found in past data.
+                    This does not make every model useless. It means performance
+                    needs monitoring in the market and conditions where the
+                    model is used, rather than transferring an advertised result
+                    to any trade.
+                  </p>
+                  <p>
+                    A percentage typed into a chat answer is not automatically a
+                    measured probability. You need a defined event, a
+                    calculation method and evidence that predictions correspond
+                    to actual outcomes. Without those checks, treat the
+                    statement as an idea to investigate.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-probability-checks-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-probability-checks-en.webp"
+                    alt="A claimed probability requires a defined event, calculation method and evidence comparing predictions with outcomes."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                </section>
+                <section>
+                  <h2 id="topic-03">Using AI to analyse your trades</h2>
+                  <p>
+                    A trading journal records completed trades and your actions.
+                    AI may help group those records by instrument, time, entry
+                    rule or documented departures from the plan. This describes
+                    what happened; it does not reveal the next market price.
+                  </p>
+                  <p>
+                    Prepare a table with clear fields: entry and exit times with
+                    the time zone, instrument, direction, trade size, execution
+                    prices, costs and result. Include a rule violation only when
+                    your records establish it. A losing trade alone does not
+                    tell a model that you felt afraid or broke a rule.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-journal-fields-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-journal-fields-en.webp"
+                    alt="Trade records need times and time zone, instrument, direction, size, execution prices, costs and result; a loss does not establish an emotion or rule violation."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Ask the tool to identify missing entries, duplicates and
+                    unclear units before grouping the records. Check totals
+                    against your broker's statement or your own calculation.
+                    Mixing currencies, treating open trades as closed or
+                    omitting commissions can produce a tidy table with an
+                    incorrect result.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-journal-checks-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-journal-checks-en.webp"
+                    alt="Check missing rows, duplicates and unclear units, then reconcile totals; mixed currencies, open trades and omitted costs can distort results."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    A specific request is easier to check than 'find a
+                    profitable strategy': 'Group these closed trades by entry
+                    time. Show the number of trades, total result after the
+                    listed commissions and rows with missing data. Do not fill
+                    in missing values.' Then compare several rows from each
+                    group and the overall total with the original table.
+                  </p>
+                  <p>
+                    An observed relationship does not establish its cause.
+                    Losses during particular hours may reflect a different
+                    instrument, larger trades or too few observations. Turn the
+                    finding into a condition you can test on later data before
+                    changing your trading because the report looks convincing.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-observation-cause-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-observation-cause-en.webp"
+                    alt="Losses during particular hours may have other explanations and should become a condition to test on later data."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                </section>
+                <section>
+                  <h2 id="topic-04">Testing a strategy suggested by AI</h2>
+                  <p>
+                    Convert an AI suggestion into clear trading rules first:
+                    what data is available at the decision time, what triggers
+                    an entry, when the trade ends and how its size is limited.
+                    If the explanation changes after every question, there is no
+                    stable method to test yet.
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/en/freestudying/trading-system"
+                      >A trading system</a
+                    >
+                    explains how to turn conditions into a written plan and
+                    evaluate its results.
+                  </p>
+                  <p>
+                    Generated code can help automate a test, but it may
+                    calculate an indicator incorrectly, place a signal at the
+                    wrong time or assume an unavailable execution price. A
+                    successful program run and an attractive chart do not prove
+                    correctness. Check individual cases manually: what was known
+                    before entry, why an order appeared and how its result was
+                    calculated.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-rules-code-checks-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-rules-code-checks-en.webp"
+                    alt="A strategy needs data-time, entry, exit and size rules; generated code still requires manual checks of signals and results."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    <dfn itemscope itemtype="https://schema.org/DefinedTerm"
+                      ><meta
+                        itemprop="name"
+                        content="overfitting"
+                      />Overfitting</dfn
+                    >
+                    occurs when a model fits the peculiarities of its training
+                    data too closely and performs poorly on new data. In
+                    trading, testing many settings and selecting the best
+                    historical result can create this problem. David Bailey and
+                    his co-authors studied this selection risk in historical
+                    strategy tests.
+                  </p>
+                  <p>
+                    Data leakage means a test uses information that was not
+                    available when the decision would have been made. For
+                    example, an entry during a candle cannot use that candle's
+                    final high before it is known. Leakage can also enter
+                    through preparation when data-processing settings are
+                    calculated from the entire history, including the later test
+                    period.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-data-leakage-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-data-leakage-en.webp"
+                    alt="An entry during a candle cannot use its unknown final high; preparation can also leak information from a later test period."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Fit the rules on earlier data and check them on later data
+                    without using future results in the earlier decisions. If
+                    you change the rules after examining the test, that period
+                    becomes part of the selection process; another independent
+                    check is needed. Where inputs or forecast outcomes span
+                    overlapping periods, a calendar split alone may not prevent
+                    information from crossing the boundary.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-independent-test-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-independent-test-en.webp"
+                    alt="Fit on earlier data and test on later data; changing rules after reviewing the test requires a new independent check, and overlapping periods can cross the boundary."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Check money gained and lost, not just the percentage of
+                    correct calls. In a hypothetical set of ten closed trades
+                    measured in US dollars, six gain $10 each and four lose $20
+                    each. The result before costs is 6 × $10 − 4 × $20 = −$20,
+                    despite a majority of winning trades. Commissions make it
+                    worse. These numbers illustrate arithmetic, not my results
+                    or a tested AI model.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-winning-trades-math-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-winning-trades-math-en.webp"
+                    alt="Hypothetical ten-trade arithmetic in USD: six gains of10 and four losses of20 produce a20-dollar loss before costs."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    Check execution assumptions too. A chart price used to
+                    create a signal may not have been available for an immediate
+                    trade. Include the difference between buying and selling
+                    prices, commissions and slippage, the difference between
+                    expected and actual execution price. Then observe the tool
+                    on new data and in a demo environment using virtual funds.
+                    Successful simulated execution does not establish the same
+                    fills in a real account.
+                  </p>
+                  <img
+                    src="/assets/img/content/predictmarketprice2-en.webp"
+                    alt="Signal prices may not be executable; include spread, commissions and slippage, and simulated fills do not establish real-account fills."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                </section>
+                <section>
+                  <h2 id="topic-05">Data and account risks</h2>
+                  <p>
+                    Remove account numbers, identity documents, passwords and
+                    access keys before uploading records. Check how the service
+                    stores and uses your information. Analysing a table does not
+                    require permission to withdraw money or send orders. If the
+                    tool connects to an account, separately limit its
+                    permissions and check how to stop it.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-data-permissions-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-data-permissions-en.webp"
+                    alt="Remove sensitive identifiers and credentials before uploading records; separately limit account permissions and verify how to stop a connection."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                  <p>
+                    An automated system needs limits on order size and open
+                    trades, checks for duplicate orders and a defined response
+                    to a lost connection. Model or data-source updates can
+                    change behaviour, so keep versions of the rules and records
+                    of sent orders. Investigate unexplained changes without new
+                    trades rather than relying on the next answer to repair
+                    them.
+                  </p>
+                  <p>
+                    Guaranteed profit or trading without losses is a reason to
+                    investigate a service, not evidence that its technology
+                    works. SEC, FINRA and CFTC educational materials warn about
+                    offers using AI claims to promote unrealistic results. Check
+                    the company and service terms through independent sources. A
+                    demo balance or profit screenshot does not establish a real
+                    trading history.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-automation-controls-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-automation-controls-en.webp"
+                    alt="Automated systems need size and exposure limits, duplicate and connection controls, and versioned order records; screenshots do not establish real trading history."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                </section>
+                <section>
+                  <h2 id="topic-06">
+                    Connecting AI assistance to a trading method
+                  </h2>
+                  <p>
+                    My course builds decisions around observable chart
+                    conditions and rules chosen before the trade, rather than an
+                    assurance of predicting every price.
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/en/freestudying/wyckoff-method"
+                      >The Wyckoff method</a
+                    >
+                    explains the price-and-volume approach in more detail. AI
+                    can help organise observations, but a relationship it finds
+                    still needs checking against the actual data.
+                  </p>
+                  <p>
+                    In the
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/en/freestudying/freeeducation#math"
+                      >course section on expected value</a
+                    >, I compare hypothetical trade series with specified loss
+                    exits and profit targets. The practical task is to evaluate
+                    the series rather than one successful trade. This helps
+                    frame the evaluation of an idea; it is neither an AI
+                    programming lesson nor evidence of future profitability.
+                  </p>
+                  <p>
+                    The optional
+                    <a
+                      class="linkrefinto"
+                      href="https://youtu.be/5PLGouidw-A?t=830"
+                      >Price forecasting limits</a
+                    >
+                    chapter discusses choosing a trading task instead of
+                    expecting an exact future price. It does not test a specific
+                    AI model or rule out forecasts expressed as probabilities.
+                    The written checks in this article can be followed without
+                    watching the video.
+                  </p>
+                  <p>
+                    As with
+                    <a
+                      class="linkrefinto"
+                      href="https://arapov.trade/en/freestudying/trading-indicators"
+                      >trading indicators</a
+                    >, a model's output needs clear conditions of use. Write
+                    down the task, data source and timestamp, what counts as a
+                    correct answer and what you will do when it is wrong. If you
+                    cannot reproduce and check the result, it is not enough
+                    evidence for a trade.
+                  </p>
+                  <!-- Added English explanatory diagram: ai-output-conditions-en.webp -->
+                  <img
+                    src="/assets/img/content/ai-output-conditions-en.webp"
+                    alt="Specify task, data source and timestamp, correctness criteria and response to error, then reproduce and verify the output."
+                    class="pictureImg"
+                    loading="lazy"
+                    style="
+                      width: 100%;
+                      max-width: 800px;
+                      height: auto;
+                      max-height: none;
+                      display: block;
+                      object-fit: contain;
+                    "
+                  />
+                </section>
+                <section>
+                  <h2 id="topic-07">Frequently asked questions</h2>
+                  <mat-accordion>
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      [expanded]="true"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >How can you use AI in trading?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        Use it to organise information, examine trade records,
+                        prepare code and develop ideas you can test. Define the
+                        task and check the input data first, then verify
+                        calculations and conclusions. A confident answer alone
+                        does not establish correctness.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Can an AI model predict the exact
+                          price?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        It can forecast a defined outcome for a chosen market
+                        and time horizon, but it cannot guarantee the future
+                        price. Test the result on new data and compare it with a
+                        simple starting rule. One model's performance does not
+                        establish how all AI models perform.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >How does journal analysis differ from
+                          forecasting?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        A journal describes past trades and actions. A forecast
+                        estimates a future market outcome. A pattern found in
+                        past records can suggest a test, but it does not become
+                        a prediction of the next trade by itself.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Can AI replace a trading system?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        AI can help describe or implement trading rules, but
+                        those rules still need testing. Even an automated method
+                        needs entry and exit conditions, trade-size limits and
+                        controls over order execution. A chat answer alone does
+                        not provide a tested system.
+                      </p></mat-expansion-panel
+                    >
+                    <mat-expansion-panel
+                      class="highlight-box owl_link-box"
+                      (opened)="panelOpenState.set(true)"
+                      (closed)="panelOpenState.set(false)"
+                      ><mat-expansion-panel-header
+                        ><mat-panel-title
+                          >Can you trade without an exact price
+                          forecast?</mat-panel-title
+                        ></mat-expansion-panel-header
+                      >
+                      <p>
+                        You can choose observable trade conditions and an exit
+                        if your expectation is wrong without predicting every
+                        movement. The method still needs testing. Limiting a
+                        possible loss does not by itself create a profitable
+                        system.
+                      </p></mat-expansion-panel
+                    >
+                  </mat-accordion>
+                </section>
+                <section>
+                  <h2 id="topic-08">About the author</h2>
+                  <p>
+                    <a class="linkrefinto" href="https://arapov.trade/en"
+                      ><strong><em>Igor Arapov</em></strong></a
+                    >, practising trader since 2013 and author of the
+                    ArapovTrade learning library.
+                    <a
+                      class="linkrefinto"
+                      href="https://orcid.org/0009-0003-0430-778X"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >ORCID: 0009-0003-0430-778X</a
+                    >.
+                  </p>
+                </section>
+              </article>
 
+              <div
+                class=""
+                [ngClass]="{
+                  'next-page-block': true,
+                }"
+                [ngStyle]="{
+                  background: isDark
+                    ? 'rgba(255, 255, 255, 0.05)'
+                    : 'rgba(255, 255, 255, 0.05)',
+                  border: isDark
+                    ? 'rgba(46, 46, 46, 1)'
+                    : 'rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <div
+                  (click)="goToPreviousPage()"
+                  [ngClass]="{
+                    previous_page: true,
 
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
 
+                  <span class="previous_page_text-block">
+                    PREVIOUS <span class="page_none_block">ARTICLE</span>
+                  </span>
+                </div>
+                <div
+                  (click)="goToNextPage()"
+                  [ngClass]="{
+                    next_page: true,
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{
+                    border: isDark
+                      ? '1px solid rgba(46, 46, 46, 1)'
+                      : '1px solid rgba(0, 130, 204, 0.15)',
+                  }"
+                >
+                  <span class="previous_page_text-block">
+                    NEXT <span class="page_none_block">ARTICLE</span>
+                  </span>
+                  <svg
+                    class="previous_page_svg"
+                    width="6"
+                    height="10"
+                    viewBox="0 0 6 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                      stroke="#BBC2C7"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </main>
+            <div class="free-courses_main-container_side-bar">
+              <div class="main-container_side-bar_groups">
+                <!-- //Groups -->
+                <div class="groups_phone">
+                  <div
+                    [ngClass]="{
+                      'side-bar_groups-wrapper': true,
 
+                      'shadow-box-dark': isDark,
+                      'shadow-box-light': !isDark,
+                    }"
+                    [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                  >
+                    <div
+                      class="side-bar_groups-title"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      Filter by category
+                      <hr
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #FFCD29'
+                            : '1px solid #0082CC',
+                          width: '100%',
+                        }"
+                      />
+                    </div>
 
-                 <span class="previous_page_text-block">
-                   PREVIOUS <span class="page_none_block">ARTICLE</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
+                    <div *ngFor="let group of ukrGroups">
+                      <!-- class="inpFlex" -->
 
+                      <label
+                        [ngStyle]="{
+                          color: checkedGroup.includes(group)
+                            ? isDark
+                              ? '#FFCD29'
+                              : '#0082CC'
+                            : isDark
+                              ? '#ffffff'
+                              : '#0C263A',
+                        }"
+                        [ngClass]="{
+                          'side-bar_groups-item': true,
+                          'side-bar_groups-item_dark': isDark,
+                          'side-bar_groups-item_light': !isDark,
+                        }"
+                        [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                      >
+                        <input
+                          type="checkbox"
+                          [checked]="this.grr.includes(group)"
+                          [value]="group"
+                          (change)="onGroupChange($event)"
+                          [class.checked-class]="checkedGroup.includes(group)"
+                        />
+                        <div class="group-name-with-count">
+                          <span (click)="moveToTheTop()">{{ group }} </span>
+                          <span class="article-count">
+                            {{ articleCounts[group] || 0 }}
+                          </span>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
 
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   NEXT <span class="page_none_block">ARTICLE</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
+                <!-- Random pages -->
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    'random-pages_container': true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Popular
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="articles-list">
+                    <div
+                      *ngFor="let article of randomArticleRus"
+                      class="article-item"
+                    >
+                      <a
+                        [routerLink]="['/en/freestudying', article.linkUkr]"
+                        class="article-link"
+                      >
+                        <img
+                          [src]="article.imgUkr"
+                          [alt]="article.titleEn"
+                          loading="lazy"
+                          class="article-img"
+                        />
+                        <span
+                          class="article-title"
+                          [ngClass]="{
+                            'article-title_dark': isDark,
+                            'article-title_light': !isDark,
+                          }"
+                        >
+                          {{ article.titleEn }}
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Filter by category
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
+                <!-- Our projects  -->
 
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Popular
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/en/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleEn"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleEn }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+                    our_projects_container: true,
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <!-- [ngStyle]="{
         background: isDark
       ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
       : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
@@ -313,74 +854,71 @@
 
 
        }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Our projects are available to everyone
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+                  <div class="banner">
+                    <img
+                      [src]="
+                        isDark
+                          ? '/assets/redesignArapovTrade/img/banner.png'
+                          : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                      "
+                      alt="img"
+                    />
+                  </div>
+                  <div class="mask-our_project"></div>
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Our projects are available to everyone
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
 
+                  <div class="our_projects_block">
+                    <div
+                      class="our_projects_title"
+                      [ngStyle]="{ color: '#ffffff' }"
+                    >
+                      Choose a topic that interests you and start learning
+                    </div>
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Choose a topic that interests you and start learning
-                   </div>
-
-
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                    <div class="our_projects_buttons">
+                      <div
+                        class="our_projects_buttons-item"
+                        *ngFor="let item of projects; let i = index"
+                        (mouseenter)="hoveredIndex = i"
+                        (mouseleave)="hoveredIndex = null"
+                        [ngStyle]="{
+                          border: isDark
+                            ? '1px solid #6E4D00'
+                            : '1px solid #015F95',
+                          background: isDark
+                            ? hoveredIndex === i
+                              ? 'rgba(110, 77, 0, 1)'
+                              : 'rgba(255, 205, 41, 0.20)'
+                            : hoveredIndex === i
+                              ? 'rgba(1, 95, 149, 1)'
+                              : 'rgba(0, 130, 204, 0.20)',
+                        }"
+                      >
+                        <a [href]="item.link" target="_blank">{{
+                          item.title
+                        }}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-

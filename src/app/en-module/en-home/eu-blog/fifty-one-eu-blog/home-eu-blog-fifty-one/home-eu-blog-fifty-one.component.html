@@ -7,43 +7,73 @@
          <div class="free-courses_main-container">
            <main lang="en">
 <header><h1>ATR indicator: what it measures and how to use it</h1></header><article><p><strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Average True Range (ATR)">Average True Range</dfn></strong>, or ATR, measures the size of recent price fluctuations, including gaps between periods. It helps you compare the distance to a planned exit with recent movement. An ATR reading does not tell you to buy or sell, and it does not locate the next reversal.</p>
+<!-- English educational illustration: atr-range-purpose-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-range-purpose-en.webp" alt="ATR measures recent range and helps compare exit distance without predicting trade direction." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <h2 id="topic-01">What does ATR measure?</h2>
 <p>Volatility means how much price varies. ATR measures it through true ranges of bars, the individual periods on a price chart. J. Welles Wilder introduced the indicator in his 1978 book New Concepts in Technical Trading Systems. Its calculation includes distances from the previous closing price as well as the current high and low.</p>
 <p>ATR uses the same units as the quoted price. On a share priced in US dollars, an ATR of 3 represents a calculated range of about 3 dollars. It does not mean 3%, or a 3-dollar loss for your entire position. The money result also depends on how many shares you hold.</p>
 <p>The chart period matters. ATR on an hourly chart averages hourly true ranges; on a daily chart it averages daily ones. ATR(14) means a smoothing length of 14 bars, not necessarily 14 days. Keep that interval visible when using the number in an exit rule.</p>
+<!-- English educational illustration: atr-units-period-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-units-period-en.webp" alt="ATR uses price units and its length counts bars in the selected chart period." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>ATR can increase while price rises or falls. It measures distance rather than direction. Read the highs, lows and direction on the price chart itself. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/chart-reading">chart-reading guide</a> explains those observations without turning a volatility reading into an entry signal.</p>
 <div class="flex"><img src="https://arapov.trade/assets/img/content/atrindicator333.png" alt="ATR on a price chart with different calculation lengths" loading="lazy"></div>
 <h2 id="topic-02">How ATR is calculated</h2>
 <p>Start with True Range, abbreviated TR, for one bar. The difference between its high and low misses a jump from the previous close when that close lies outside the current range. TR compares three distances and keeps the largest.</p>
 <p>TR = max(H − L, |H − Cprev|, |L − Cprev|). H is the current high, L the current low, and Cprev the previous closing price. The vertical lines mean absolute value: take the distance as a positive number regardless of direction. All three inputs must come from the same instrument and chart period.</p>
 <p>When the previous close lies within the current high-low range, the high minus the low is the largest distance. When that close is outside, the distance to one of the new extremes is larger. This captures a gap that the current candle's height alone would miss.</p>
+<!-- English educational illustration: atr-three-distances-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-three-distances-en.webp" alt="True range selects the largest of high-low and the two distances from the previous close." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>In Wilder's method, the first ATR is the average of the first n true ranges. Later values use the previous ATR: new ATR = (previous ATR × (n − 1) + current TR) / n. Here n is the smoothing length. A new large range changes the average gradually; ATR need not equal the latest bar's range.</p>
 <p>TradingView labels its default ATR smoothing RMA, using Wilder's method, and also offers other averages in the settings. Matching only the length does not ensure that two platforms display identical values. Check their smoothing method, price source and available history before changing your calculation to make it fit the screen.</p>
 <h2 id="topic-03">ATR calculation example</h2>
 <p>Consider a hypothetical daily share chart with prices in US dollars. The previous close was 100; the current high is 105, low 102 and close 104. The high-low range is 105 minus 102, or 3 dollars. The gap from the previous close means that this is not the full true range.</p>
 <p>The three distances are 3, 5 and 2 dollars, so TR is 5. Suppose the previous ATR(14), already calculated using Wilder's method, was 3 dollars. The updated ATR is (3 × 13 + 5) / 14 = 3.142857, or about 3.14 dollars. This updates an existing average rather than calculating its initial value.</p>
+<!-- English educational illustration: atr-wilder-example-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-wilder-example-en.webp" alt="The article’s daily share example gives TR5USD and an updated Wilder ATR14 of about3.14USD." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>A single true range of 5 has not made the average equal 5. Keep precision inside the formula and round for display at the end. A shorter history or different initialization can produce a small difference from the platform even when the update formula is correct.</p>
 <h2 id="topic-04">Choosing a length and comparing values</h2>
 <p>Fourteen is a common starting length, not a required setting for every trade. With the same smoothing method, a shorter length responds more quickly to new ranges, while a longer one changes more slowly. Choose and test the setting before judging a trade, rather than selecting whichever line looks best after its outcome is known.</p>
 <p>Compare a high or low ATR with the same instrument's recent values under the same settings. A dollar reading from an expensive share and a much smaller reading from a cheap share do not by themselves establish which is relatively more volatile. Different sessions and chart intervals also change the comparison.</p>
 <p>ATR percent, also called ATRP, expresses the range relative to price: ATR% = ATR / closing price × 100. Using the same example, 3.142857 / 104 × 100 is about 3.02%. This changes the units from dollars to a percentage of the close. Keep the timeframe, length and smoothing method consistent when comparing instruments.</p>
 <p>That 3.02% is not the probability of a move, an expected return, or a limit on the next day's range. It describes recent true ranges relative to the current closing price. Normalizing the value makes the scale easier to compare; it does not create a forecast.</p>
+<!-- English educational illustration: atr-percent-example-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-percent-example-en.webp" alt="ATR percent in the source example is about3.02percent of the closing price and is not a forecast." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <h2 id="topic-05">What rising and falling ATR mean</h2>
 <p>Rising ATR means that new true ranges are increasing the smoothed value. After a quiet stretch, it can help you notice wider fluctuations. Those wider ranges may accompany a continuing trend, a sharp move against it, or broad movement with no lasting direction.</p>
 <p>Falling ATR means that the smoothed range is getting smaller. Price can still keep moving in one direction through smaller bars. A falling line does not establish that buyers have disappeared or that the trend has ended.</p>
 <p>Low ATR does not choose the direction of a future breakout. If price crosses a range boundary, assess what it does next. ATR cannot distinguish a valid breakout from a failed one, and the first increase is not a complete buying condition.</p>
+<!-- English educational illustration: atr-changing-range-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-changing-range-en.webp" alt="Rising and falling ATR describe changing smoothed range rather than price direction." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>In my <a class="linkrefinto" href="https://youtu.be/hch9D_3hVrg?t=3308" target="_blank" rel="noopener noreferrer">video on ATR and exit preparation</a>, I discuss unusually high readings as a reason to pay closer attention to exiting a trend trade or a possible period of sideways movement. I explicitly distinguish this from a reversal indicator. This is a guide in my approach, not a universal rule that price must turn when ATR peaks. The written calculation and limitations here stand on their own; the video is an optional practical addition.</p>
 <p>The high and low of an unfinished bar can still change, so its TR and the current ATR can change too. If your rule compares completed bars, wait for that period to close. Testing the final historical value and acting on a changing live value are different conditions.</p>
 <h2 id="topic-06">Using ATR with a stop-loss</h2>
 <p>A protective stop is an instruction intended to close a position when its trigger condition is met. ATR can help you check whether the planned distance is tight relative to recent fluctuations. First identify the price change that would invalidate the trade, then compare that boundary with the range. A conveniently small loss distance does not make the boundary suitable.</p>
 <p>Some systems set a distance as a multiple of ATR. The multiplier is part of the chosen rule; there is no universally safe number. One ATR is not the maximum possible next move, and a stop several ATR away can still trigger. The calculation also does not cover commissions, the difference between buying and selling prices, or a worse-than-planned execution price.</p>
+<!-- English educational illustration: atr-exit-distance-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-exit-distance-en.webp" alt="Set a trade invalidation boundary before using ATR to assess exit distance." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Before entry, a wider necessary exit distance calls for a smaller position if the money loss budget is unchanged. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/freeeducation#size">course's position-sizing section</a> explains the sequence: choose the allowed loss, the distance to the exit and the instrument's value per price step. ATR informs the scale of the distance; it does not replace these inputs or provide its own permission to risk more.</p>
 <p>Moving an exit farther away while keeping the same quantity increases the planned loss. Rising ATR after entry is not permission to do that. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">risk-management guide</a> explains the money calculation and execution limits. Decide how changing volatility affects the trade before opening it, rather than revising the loss budget while it is losing.</p>
+<!-- English educational illustration: atr-quantity-budget-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-quantity-budget-en.webp" alt="A wider necessary exit before entry requires smaller quantity for the same planned loss budget." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Chandelier Exit is an example of an ATR-based exit line. For a long position, one opened to benefit from a rise, it subtracts a multiple of ATR from the highest price in a selected past period; for a short position, one opened to benefit from a fall, it adds that multiple to the lowest price. The period used for the high and low, ATR length and multiplier are settings to check. A line crossing is evaluated under the exit rule, not treated as proof of a reversal.</p><p>The calculated Chandelier line can rise or fall as the extreme prices and ATR change. A protective order has separate instructions: specify whether it may only tighten, when to update it and what triggers execution. An indicator line moving away from price does not authorize increasing the original loss budget.</p>
+<!-- English educational illustration: atr-chandelier-rules-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-chandelier-rules-en.webp" alt="Chandelier Exit calculates separate long and short lines while protective orders require their own update rules." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <h2 id="topic-07">How to check an ATR rule</h2>
 <p>Open an ordinary price chart and record the instrument, source, timeframe, length and smoothing method. On one completed bar, compare the three TR distances, then check the ATR update. If it differs from the platform, verify settings and history before altering the formula.</p>
 <p>Mark a quiet stretch and the next expansion. Check whether price rose, fell or changed direction during each. This separates the size of fluctuations from their direction and prevents you from treating every ATR increase as a buy signal.</p>
 <p>If ATR is part of an exit rule, write the invalidation condition, the distance rule and the response to higher volatility before entry. Test the same instructions on both successful and unsuccessful cases. The planned money risk remains the constraint; a moving indicator should not quietly rewrite it.</p>
+<!-- English educational illustration: atr-rule-review-en.webp -->
+<img loading="lazy" src="/assets/img/content/atr-rule-review-en.webp" alt="Review ATR settings and completed-bar calculations and define exit responses before entry." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 
 <section><h2 id="topic-08">Frequently asked questions</h2><mat-accordion><mat-expansion-panel
                      class="highlight-box owl_link-box"

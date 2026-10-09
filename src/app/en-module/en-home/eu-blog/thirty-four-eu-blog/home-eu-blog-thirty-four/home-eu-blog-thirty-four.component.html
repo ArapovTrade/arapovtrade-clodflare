@@ -12,14 +12,23 @@
 <article>
 <p>A <strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Trading order">trading order</dfn></strong> is an instruction to buy or sell an asset under specified conditions. You choose the instrument, the direction and the quantity. The order type controls how that instruction reaches the market and which prices it can accept.</p>
 <p>Choosing an order means answering two different questions: what should start the trade, and what price are you willing to accept? A third question remains even after you press Submit: how much of the order actually filled?</p>
-<div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/typesoforders.png" alt="Types of trading orders" class="pictureImg"></div>
+<!-- English educational illustration: typesoforders-en.png -->
+<img loading="lazy" src="/assets/img/content/typesoforders-en.png" alt="Three order questions distinguish activation, acceptable price and actual filled quantity" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
+
 <h2 id="topic-01">How an order becomes a trade</h2>
 <p>The three basic choices are market, limit and stop orders. A market order seeks execution at available prices; a limit order controls the acceptable price; a stop order waits for a trigger before its specified execution instruction becomes active. These choices trade off execution speed, price control and activation conditions, and none guarantees a complete fill under every condition. An order book lists available buy and sell orders by price. The best available buying price is the <strong>bid</strong>; the best available selling price is the <strong>ask</strong>. A market buy trades with sellers, starting at the ask. A market sell trades with buyers, starting at the bid.</p>
 <p>The gap between the bid and ask is the spread. Both quotes can change as participants place, execute or cancel orders. The last-traded price describes a completed trade, not the price promised for your next one. The broader explanation of trading venues and participants is in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/how-exchange-works">how an exchange works</a>.</p>
+<!-- English educational illustration: orders-bid-ask-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-bid-ask-en.webp" alt="Market buys meet sellers at the ask and market sells meet buyers at the bid" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>An order and a position are different things. An order may be waiting, partially filled, cancelled or rejected; a position is the quantity you already hold after execution. Check the order status after submitting it. If the platform reports a rejection, read the reason rather than assuming that a trade took place.</p>
 <h2 id="topic-02">Market orders: trade at available prices</h2>
 <p>A <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Market order">market order</dfn> seeks execution at the best available opposing prices. It suits a task where execution matters more than setting a maximum buying price or minimum selling price. An ordinary market order has no limit price chosen by the trader.</p>
 <p>Consider a simplified order book with 30 shares offered at $100 and another 20 at $101. You submit a market order to buy 50 shares. If those offers remain available and there are no better offers, the purchase costs 30 × $100 + 20 × $101 = $5,020. The average fill price is $5,020 ÷ 50 = <strong>$100.40 per share</strong>, before fees.</p>
+<!-- English educational illustration: orders-market-example-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-market-example-en.webp" alt="The fifty-share market buy costs $5,020 and averages $100.40 per share before fees" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>The displayed ask was $100, but there were not enough shares at that price. The difference between the expected price and the actual fill is called <strong>slippage</strong>. Quotes can also change while your order is being sent. Slippage is separate from the spread and can improve your price as well as worsen it.</p>
 <p>A market order is not a promise that any quantity will fill under any conditions. Trading may be halted, opposing orders may be unavailable, or the venue may apply a protective price range. Depending on its rules, an unfilled balance may be cancelled or left as a limit order. Check what your platform means by Market for the instrument you trade.</p>
 <div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/marketorder.png" alt="How a market order is filled" class="pictureImg"></div>
@@ -28,25 +37,40 @@
 <p>In the same order-book example, a limit order to buy 50 shares at $100 could initially buy only the 30 shares available at that price. The other 20 could remain waiting if the order instructions permit it. At that point you hold 30 shares, not 50.</p>
 <p>A price touching your limit does not guarantee a fill. There may be too little opposing quantity, or other orders may take priority over yours. Many markets use price and submission time to allocate fills, but the matching rules are not identical on every exchange.</p>
 <p>A limit order does not always wait. A buy limit high enough to accept the current ask can execute immediately, provided the available prices stay within the limit. A waiting order makes quantity available to other traders; an order that executes against it uses that quantity. The interaction and queue rules are explained in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/market-microstructure">market microstructure</a>.</p>
+<!-- English educational illustration: orders-limit-quantity-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-limit-quantity-en.webp" alt="A limit controls acceptable price while the source fifty-share example may initially fill only thirty" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <h2 id="topic-04">Stop orders: activate after a price condition</h2>
 <p>A <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Stop order">stop order</dfn> waits for an activation condition. With a standard stop-market order, meeting that condition releases a market order. The stop price determines when the instruction starts; it does not fix the eventual fill price.</p>
 <p>A <strong>buy stop</strong> is normally placed above the current price to buy after a rise. A <strong>sell stop</strong> is normally placed below it to sell after a fall. Either can open or close a position. A sell stop can close an existing purchase; a buy stop can close a short position, a trade opened by selling with the intention of buying back later.</p>
+<!-- English educational illustration: orders-stop-activation-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-stop-activation-en.webp" alt="A stop-market trigger releases a market order without fixing its eventual fill price" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Check which price activates the stop. The trigger may use the last trade, the bid, the ask or a calculated price specified by the venue. Also check where the instruction is held: on the exchange, at the broker or in your trading terminal. A terminal-based function may need the terminal to remain connected.</p>
 <p>Traders may place similar protective orders near visible highs and lows. If many stop-market orders activate together, the resulting buying or selling can accelerate a move when opposing quantity is limited. That mechanism does not establish who caused the move or whether anyone targeted your order. Trading interpretations of these areas are discussed in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">liquidity pools</a>.</p>
 <div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/stoporder.png" alt="How a stop order activates" class="pictureImg"></div>
 <h2 id="topic-05">Stop-market vs stop-limit orders</h2>
 <p>A <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Stop-limit order">stop-limit order</dfn> uses two prices. The stop price activates the instruction; the limit price controls the acceptable execution price. After activation, it behaves as a limit order.</p>
 <p>A separate gap example shows why that distinction matters. You want to sell an existing holding using a stop price of $100 and a sell limit of $99. Once activated, the order permits a sale at $99 or above. If the next available bid is already $97, the order cannot sell there and may remain unfilled.</p>
+<!-- English educational illustration: orders-gap-example-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-gap-example-en.webp" alt="A $100 stop with a $99 sell limit cannot sell at the example next bid of $97" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>A stop-market order instead releases a market sell. It may fill at $97 or across several available prices. It still cannot guarantee an immediate exit during a trading halt, without available buyers or under venue restrictions. The trade-off is between a price restriction and the risk of remaining in the position because of that restriction.</p>
 <p>If leaving the position matters more than refusing a particular price, a stop-limit may not meet your protective objective. If a worse price is unacceptable, the limit preserves that requirement, but you must accept possible non-execution. A button labelled Stop-loss does not tell you which order type sits behind it.</p>
 <div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/stoplimitorder.png" alt="Activation and execution of a stop-limit order" class="pictureImg"></div>
 <h2 id="topic-06">Stop-loss, take-profit and trailing stops</h2>
 <p>A <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Stop-loss">stop-loss</dfn> describes the purpose of an instruction: exit if the price moves against the trade. A take-profit instruction aims to exit at a profit target. The mechanism depends on the platform; a protective exit may use stop-market or stop-limit instructions, while a profit target often uses a limit order.</p>
+<!-- English educational illustration: orders-exit-purpose-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-exit-purpose-en.webp" alt="Stop-loss and take-profit describe exit purposes whose actual mechanisms and quantities require checking" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>The protective quantity must match the position you actually hold. After a partial entry, check the size of the exit order. After a manual exit, cancel unnecessary orders or confirm that the linked system cancelled them. An order left behind can otherwise open an unwanted position. Choosing a protective level and sizing the trade around it are covered in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">risk management</a>.</p>
 <div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/stoploss1.png" alt="A stop-loss instruction" class="pictureImg"></div>
 <p>A <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Trailing stop">trailing stop</dfn> adjusts its trigger as the price moves in the trade's favour, using a specified distance in price units or percent. For a purchase, it moves up as the reference price rises and does not move down when that price falls. For a short position, the direction is reversed. The reference price and update rules depend on the platform.</p>
 <p>A very small trailing distance can close a trade during an ordinary price fluctuation. Trailing does not guarantee a profit, and execution retains the limitations of the underlying order type. Automatic distance-based trailing is different from manually moving a stop behind a new high or low; that decision belongs to <a class="linkrefinto" href="https://arapov.trade/en/freestudying/trade-management">trade management</a>.</p>
-<div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/TrailingStopOrder.png" alt="How a trailing stop follows the price" class="pictureImg"></div>
+<!-- English educational illustration: TrailingStopOrder-en.png -->
+<img loading="lazy" src="/assets/img/content/TrailingStopOrder-en.png" alt="Trailing purchase trigger moves upward with favourable price movement and does not lower after a fall" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
+
 <h2 id="topic-07">Time in force and linked orders</h2>
 <p><strong>Time in force</strong> tells the platform how long an order should remain active. Other instructions determine whether it may fill partially and what happens to any unfilled balance.</p>
 <ul>
@@ -56,19 +80,34 @@
 <li><strong>FOK, fill or kill:</strong> requires an immediate complete fill; otherwise the entire order is cancelled.</li>
 </ul>
 <p>Availability depends on the instrument and trading session. Check the applicable rules before reusing settings from another market, including whether an order participates outside the regular session.</p>
+<!-- English educational illustration: orders-time-in-force-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-time-in-force-en.webp" alt="Day, GTC, IOC and FOK use different duration and remaining-quantity instructions" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p><strong>OCO, one cancels the other,</strong> links two orders so that filling one causes the other to be cancelled. A profit target and a protective exit are a common pair. Check how the platform handles partial fills, where the link is held and how cancellation is coordinated. The setting does not remove slippage or every risk of a technical failure.</p>
+<!-- English educational illustration: orders-oco-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-oco-en.webp" alt="OCO links a profit target and protective exit while requiring partial-fill and cancellation checks" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <h2 id="topic-08">Iceberg orders and algorithmic execution</h2>
 <p>An <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Iceberg order">iceberg order</dfn> displays only part of its total quantity. As the visible portion fills, quantity is replenished from the hidden remainder according to the venue's rules. This allows a participant to trade without showing the whole order at once.</p>
+<!-- English educational illustration: orders-iceberg-quantity-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-iceberg-quantity-en.webp" alt="An iceberg displays only part of total quantity and replenishes from a hidden remainder under venue rules" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Repeated quantity at one price can suggest replenishment, but a normal price chart does not reveal the hidden balance or the owner's identity. Several independent participants can also submit orders at the same price. Large displayed quantity does not promise a reversal.</p>
 <div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/icebergorders1.png" alt="Displayed and hidden quantity in an iceberg order" class="pictureImg"></div>
 <p>An <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Execution algorithm">execution algorithm</dfn> manages orders automatically. It may divide a large trade into smaller pieces over time or adjust submissions to trading activity. The purpose can be to execute a genuine transaction with less market impact; not every algorithm exists to hide intentions or guarantees a better price.</p>
 <p><strong>Spoofing</strong> involves placing misleading orders with no genuine intention to execute them, to influence other participants. Cancelling an order alone does not prove spoofing: genuine instructions may change when circumstances change. Distinguish displayed orders from completed trades, whose data are explained in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">volume analysis</a>.</p>
-<div class="flex"><img loading="lazy" src="https://arapov.trade/assets/img/content/algorithmicorders.webp" alt="Algorithmic order execution" class="pictureImg"></div>
+<!-- English educational illustration: algorithmicorders-en.webp -->
+<img loading="lazy" src="/assets/img/content/algorithmicorders-en.webp" alt="Genuine algorithmic execution differs from spoofing; cancellation alone does not prove spoofing" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
+
 <h2 id="topic-09">How to check an order before and after submission</h2>
 <p>In my <a class="linkrefinto" href="https://arapov.trade/en/freestudying/freeeducation#ordertypes">course section on order types</a>, buy and sell instructions are connected to the price condition chosen for a trade. A limit can wait for an acceptable price, while a stop can activate after a specified level. Learning those commands lets you express a plan; the order type does not prove that the plan will make money.</p>
 <p>The video <a class="linkrefinto" href="https://youtu.be/Y4WZAl34jbc?t=50">Limit and market orders</a> adds a practical explanation of how buying and selling instructions interact. The written explanation above stands on its own.</p>
 <p>On a demo account, submit a market order and a limit order, then compare their status, fill prices and filled quantity. Set a stop and check both its activation condition and the order released after activation. This teaches platform commands, although simulated fills do not reproduce every real-market condition.</p>
 <p>Before a real submission, check the instrument, buy or sell direction, quantity, time in force and exit instructions. Afterwards, confirm that the order was accepted. Following a fill, compare the position size with its protection; after closing the position, check for orders that remain active.</p>
+<!-- English educational illustration: orders-submission-checks-en.webp -->
+<img loading="lazy" src="/assets/img/content/orders-submission-checks-en.webp" alt="Check submission details, acceptance, filled-position protection and orders remaining after closure" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 
 <section><h2 id="topic-10">Frequently asked questions</h2><mat-accordion>
 <mat-expansion-panel
