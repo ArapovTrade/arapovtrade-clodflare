@@ -464,7 +464,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'ichimoku-cloud', //58 1
+        path: 'ichimoku-cloud', //58 1 
         loadChildren: () =>
           import('./fifty-eight-ru-blog/fifty-eight-ru-blog.module').then(
             (m) => m.FiftyEightRuBlogModule,
