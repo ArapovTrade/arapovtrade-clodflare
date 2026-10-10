@@ -811,7 +811,7 @@ const routes: Routes = [
           ),
       },  
       {
-        path: 'trading-faq-getting-started', //62
+        path: 'trading-faq-getting-started', //62 
         loadChildren: () =>
           import('../ru-blog/sixty-two-ru-blog/sixty-two-ru-blog.module').then(
             (m) => m.SixtyTwoRuBlogModule,
