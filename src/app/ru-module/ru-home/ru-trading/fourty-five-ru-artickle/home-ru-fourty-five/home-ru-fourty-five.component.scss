@@ -1055,6 +1055,7 @@ letter-spacing: 0px;
 
 /* Attach this stylesheet to the course component. */
 /* Attach this stylesheet to the course component. */
+/* Attach this stylesheet to the course component. */
 
 .free-courses_main-container main .course-ru-style-001 { line-height:1.65; }
 
@@ -1341,3 +1342,83 @@ letter-spacing: 0px;
 .free-courses_main-container main .course-final-task strong {font-family:inherit;font-style:normal;font-weight:700;color:inherit;}
 .free-courses_main-container main .course-final-task .course-final-task-result {margin:0;padding-top:12px;border-top:1px solid #dbe6ec;}
 .dark-theme-main-cont .free-courses_main-container main .course-final-task {background:#292b12;border-color:#707349;}
+
+/* Live-site dark disclosures: shared by RU, UK and EN. */
+.dark-theme-main-cont .free-courses_main-container main :is(.course-selfcheck,.course-toc,.course-final-task) {
+  background: #292b12 !important;
+  color: #f4f4ed !important;
+  border-color: #707349 !important;
+}
+.dark-theme-main-cont .free-courses_main-container main details > summary,
+.dark-theme-main-cont .free-courses_main-container main details > summary *,
+.dark-theme-main-cont .free-courses_main-container main .course-toc-summary::before {
+  color: #e5cd34 !important;
+  -webkit-text-fill-color: #e5cd34 !important;
+  background-image: none !important;
+}
+.dark-theme-main-cont .free-courses_main-container main details :is(p,li,strong,em),
+.dark-theme-main-cont .free-courses_main-container main .course-final-task :is(p,li,strong) {
+  color: #f4f4ed !important;
+  -webkit-text-fill-color: #f4f4ed !important;
+}
+.dark-theme-main-cont .free-courses_main-container main details a {
+  color: #b5dce9 !important;
+  -webkit-text-fill-color: #b5dce9 !important;
+}
+
+
+/* Theme classes are switched in the course HTML by isDark. */
+.free-courses_main-container main > article.course-theme-dark {
+    :is(.course-selfcheck, .course-toc, .course-final-task) {
+      background: #292b12 !important;
+      color: #f4f4ed !important;
+      border-color: #707349 !important;
+    }
+    details > summary,
+    details > summary *,
+    .course-toc-summary::before {
+      color: #e8da43 !important;
+      -webkit-text-fill-color: #e8da43 !important;
+      background-image: none !important;
+    }
+    details :is(p, li, strong, em),
+    .course-final-task :is(p, li, strong) {
+      color: #f4f4ed !important;
+      -webkit-text-fill-color: #f4f4ed !important;
+    }
+    a {
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+    }
+    .course-toc-count { color: #d3d0b2 !important; }
+    .course-final-task-result { border-color: #707349 !important; }
+}
+
+.free-courses_main-container main > article.course-theme-light {
+    :is(.course-selfcheck, .course-toc) {
+      background: #fbfdff !important;
+      color: #102b45 !important;
+      border-color: #c8e1f2 !important;
+    }
+    .course-final-task {
+      background: #f7fbfd !important;
+      color: #102b45 !important;
+      border-color: #dbe6ec !important;
+    }
+    details > summary {
+      color: #102b45 !important;
+      -webkit-text-fill-color: #102b45 !important;
+    }
+    details :is(p, li, strong, em),
+    .course-final-task :is(p, li, strong) {
+      color: #102b45 !important;
+      -webkit-text-fill-color: #102b45 !important;
+    }
+    details a,
+    .course-selfcheck-answer > summary {
+      color: #006da7 !important;
+      -webkit-text-fill-color: #006da7 !important;
+    }
+    .course-toc-count { color: #617687 !important; }
+    .course-final-task-result { border-color: #dbe6ec !important; }
+}

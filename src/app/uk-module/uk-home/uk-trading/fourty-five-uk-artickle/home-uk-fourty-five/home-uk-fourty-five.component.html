@@ -3,7 +3,7 @@
     <div class="section-i">
       <div class="section-content">
         <div class="hero-content">
-          <img
+           <img
             class="hero-section-new"
             loading="lazy"
             src="/assets/img/content/freeeducationnew.webp"
@@ -12,7 +12,11 @@
           <!-- <div class="m-right hero-section"></div> -->
           <div class="free-courses_main-container">
             <main lang="uk">
-              <article class="course-uk-style-001">
+              <article
+                class="course-uk-style-001"
+                [class.course-theme-dark]="isDark"
+                [class.course-theme-light]="!isDark"
+              >
                 <h1 class="course-uk-style-002">
                   Безкоштовний курс трейдингу для початківців
                 </h1>
@@ -46,12 +50,16 @@
                       <p class="course-uk-style-003"><strong>Вступ</strong></p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#roadmap" (click)="navigateTo('roadmap')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('roadmap')"
                             >Дорожня карта курсу</a
                           >
                         </li>
                         <li>
-                          <a href="#start" (click)="navigateTo('start')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('start')"
                             >З чого почати навчання трейдингу</a
                           >
                         </li>
@@ -64,7 +72,7 @@
                       <ul class="course-uk-style-007">
                         <li>
                           <a
-                            href="#terminal"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('terminal')"
                             fragment="terminal"
                             >Знайомство з графіком і торговим терміналом</a
@@ -72,7 +80,7 @@
                         </li>
                         <li>
                           <a
-                            href="#demoschet"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('demoschet')"
                             fragment="demoschet"
                             >Що таке деморахунок і як його відкрити</a
@@ -87,7 +95,7 @@
                       <ul class="course-uk-style-007">
                         <li>
                           <a
-                            href="#spredLotLongShort"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('spredLotLongShort')"
                             fragment="spredLotLongShort"
                             >Базові поняття трейдингу: спред, лот, лонг і
@@ -96,14 +104,14 @@
                         </li>
                         <li>
                           <a
-                            href="#ordertypes"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('ordertypes')"
                             >Види й типи ордерів на біржі</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#levarage"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('levarage')"
                             fragment="levarage"
                             >Що таке кредитне плече в трейдингу</a
@@ -117,17 +125,23 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#ta" (click)="navigateTo('ta')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('ta')"
                             >Технічний аналіз ринку</a
                           >
                         </li>
                         <li>
-                          <a href="#phases" (click)="navigateTo('phases')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('phases')"
                             >Фази ринку: тренд і флет</a
                           >
                         </li>
                         <li>
-                          <a href="#pcl" (click)="navigateTo('pcl')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('pcl')"
                             >Рівні зміни пріоритету</a
                           >
                         </li>
@@ -139,12 +153,16 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#reversals" (click)="navigateTo('reversals')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('reversals')"
                             >Розворотні моделі в технічному аналізі</a
                           >
                         </li>
                         <li>
-                          <a href="#strength" (click)="navigateTo('strength')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('strength')"
                             >Як визначити силу тренду</a
                           >
                         </li>
@@ -156,7 +174,9 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#volume" (click)="navigateTo('volume')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('volume')"
                             >Об’ємний аналіз ринку</a
                           >
                         </li>
@@ -169,18 +189,22 @@
                       <ul class="course-uk-style-007">
                         <li>
                           <a
-                            href="#working-with-levels"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('working-with-levels')"
                             >Робота з рівнями: приклад дефіциту ліквідності</a
                           >
                         </li>
                         <li>
-                          <a href="#wyckoff" (click)="navigateTo('wyckoff')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('wyckoff')"
                             >Метод Вайкоффа</a
                           >
                         </li>
                         <li>
-                          <a href="#effort" (click)="navigateTo('effort')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('effort')"
                             >Принцип зусилля й результату в методі Вайкоффа</a
                           >
                         </li>
@@ -192,7 +216,9 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#entry" (click)="navigateTo('entry')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('entry')"
                             >Як визначити точку входу в угоду</a
                           >
                         </li>
@@ -205,46 +231,50 @@
                       <ul class="course-uk-style-007">
                         <li>
                           <a
-                            href="#psychology"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('psychology')"
                             >Психологія трейдингу</a
                           >
                         </li>
                         <li>
-                          <a href="#size" (click)="navigateTo('size')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('size')"
                             >Як розрахувати обсяг позиції з урахуванням
                             ризику</a
                           >
                         </li>
                         <li>
-                          <a href="#fear" (click)="navigateTo('fear')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('fear')"
                             >Страх і жадібність у трейдингу</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#cognitivebiases"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('cognitivebiases')"
                             >Когнітивні упередження в трейдингу</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#reducingbias"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('reducingbias')"
                             >Як зменшувати вплив когнітивних упереджень</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#indicatorsInTrading"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('indicatorsInTrading')"
                             >Про індикатори в трейдингу</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#fundamentalAnalysis"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('fundamentalAnalysis')"
                             >Фундаментальний аналіз у трейдингу</a
                           >
@@ -257,7 +287,9 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#system" (click)="navigateTo('system')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('system')"
                             >Торгова система трейдера</a
                           >
                         </li>
@@ -272,13 +304,15 @@
                       <ul class="course-uk-style-007">
                         <li>
                           <a
-                            href="#howToLeave"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('howToLeave')"
                             >Управління позицією. Як виходити з угоди?</a
                           >
                         </li>
                         <li>
-                          <a href="#math" (click)="navigateTo('math')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('math')"
                             >Математичне сподівання в трейдингу: модель
                             прибуткової системи</a
                           >
@@ -291,32 +325,36 @@
                       </p>
                       <ul class="course-uk-style-007">
                         <li>
-                          <a href="#mistakes" (click)="navigateTo('mistakes')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('mistakes')"
                             >Типові помилки трейдерів-початківців</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#chooseTheBroker"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('chooseTheBroker')"
                             >Як вибрати брокера для трейдингу</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#exchange-trade"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('exchange-trade')"
                             >Чим торгувати початківцю на біржі?</a
                           >
                         </li>
                         <li>
-                          <a href="#demo" (click)="navigateTo('demo')"
+                          <a
+                            [ngStyle]="{ cursor: 'pointer' }"
+                            (click)="navigateTo('demo')"
                             >Як почати торгувати на деморахунку</a
                           >
                         </li>
                         <li>
                           <a
-                            href="#tradingJournal"
+                            [ngStyle]="{ cursor: 'pointer' }"
                             (click)="navigateTo('tradingJournal')"
                             >Торговий журнал трейдера</a
                           >

@@ -3,18 +3,19 @@
     <div class="section-i">
       <div class="section-content">
         <div class="hero-content">
-            <img
+          <!-- <div class="m-right hero-section"></div> -->
+             <img
             class="hero-section-new"
             loading="lazy"
             src="/assets/img/content/freeeducationnew.webp"
             alt="Free trading course for beginners by Igor Arapov"
           />
-          <!-- <div class="m-right hero-section"></div> -->
-          
           <div class="free-courses_main-container">
             <main lang="en">
               
-                 <article class="course-en-style-001">
+                 <article class="course-en-style-001"
+                  [class.course-theme-dark]="isDark"
+                  [class.course-theme-light]="!isDark">
                 <h1 class="course-ru-style-002">Free trading course for beginners</h1>
 
 
@@ -32,137 +33,169 @@
                 <div class="course-toc-group"><p class="course-ru-style-003">Introduction</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#roadmap" (click)="navigateTo('roadmap')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('roadmap')"
                       >Course roadmap</a></li>
                   <li><a
-                      href="#start" (click)="navigateTo('start')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('start')"
                       >How to start learning to trade</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">The platform and demo account</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#terminal" (click)="navigateTo('terminal')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('terminal')"
                       fragment="terminal"
                       >Introduction to charts and the trading platform</a></li>
                   <li><a
-                      href="#demoschet" (click)="navigateTo('demoschet')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('demoschet')"
                       fragment="demoschet"
                       >What is a demo account and how do you open one?</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Trading basics</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#spredLotLongShort" (click)="navigateTo('spredLotLongShort')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('spredLotLongShort')"
                       fragment="spredLotLongShort"
                       >Trading basics: spread, lot, long and short</a></li>
                   <li><a
-                      href="#ordertypes" (click)="navigateTo('ordertypes')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('ordertypes')"
                       >Types of exchange orders</a></li>
                   <li><a
-                      href="#levarage" (click)="navigateTo('levarage')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('levarage')"
                       fragment="levarage"
                       >What is leverage in trading?</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Technical analysis</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#ta" (click)="navigateTo('ta')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('ta')"
                       >Technical analysis of the market</a></li>
                   <li><a
-                      href="#phases" (click)="navigateTo('phases')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('phases')"
                       >Market phases: trends and trading ranges</a></li>
                   <li><a
-                      href="#pcl" (click)="navigateTo('pcl')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('pcl')"
                       >Priority change levels</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Reversal patterns and trend strength</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#reversals" (click)="navigateTo('reversals')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('reversals')"
                       >Reversal patterns in technical analysis</a></li>
                   <li><a
-                      href="#strength" (click)="navigateTo('strength')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('strength')"
                       >How to assess trend strength</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Volume analysis</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#volume" (click)="navigateTo('volume')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('volume')"
                       >Market volume analysis</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">The Wyckoff method</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#working-with-levels" (click)="navigateTo('working-with-levels')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('working-with-levels')"
                       >Working with levels: a liquidity shortage example</a></li>
                   <li><a
-                      href="#wyckoff" (click)="navigateTo('wyckoff')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('wyckoff')"
                       >The Wyckoff method</a></li>
                   <li><a
-                      href="#effort" (click)="navigateTo('effort')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('effort')"
                       >Effort versus result in the Wyckoff method</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">The entry point</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#entry" (click)="navigateTo('entry')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('entry')"
                       >How to identify a trade entry</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Psychology and risk management</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#psychology" (click)="navigateTo('psychology')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('psychology')"
                       >Trading psychology</a></li>
                   <li><a
-                      href="#size" (click)="navigateTo('size')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('size')"
                       >How to size a position for your risk</a></li>
                   <li><a
-                      href="#fear" (click)="navigateTo('fear')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('fear')"
                       >Fear and greed in trading</a></li>
                   <li><a
-                      href="#cognitivebiases" (click)="navigateTo('cognitivebiases')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('cognitivebiases')"
                       >Cognitive biases in trading</a></li>
                   <li><a
-                      href="#reducingbias" (click)="navigateTo('reducingbias')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('reducingbias')"
                       >How to reduce the influence of cognitive biases</a></li>
                   <li><a
-                      href="#indicatorsInTrading" (click)="navigateTo('indicatorsInTrading')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('indicatorsInTrading')"
                       >Indicators in trading</a></li>
                   <li><a
-                      href="#fundamentalAnalysis" (click)="navigateTo('fundamentalAnalysis')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('fundamentalAnalysis')"
                       >Fundamental analysis in trading</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">The trading system</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#system" (click)="navigateTo('system')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('system')"
                       >A trader’s trading system</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Position management and expectancy</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#howToLeave" (click)="navigateTo('howToLeave')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('howToLeave')"
                       >Position management: how do you exit a trade?</a></li>
                   <li><a
-                      href="#math" (click)="navigateTo('math')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('math')"
                       >Trading expectancy: a profitable-system model</a></li>
                 </ul></div>
                 <div class="course-toc-group"><p class="course-ru-style-003">Preparing to practice</p>
                 <ul class="course-ru-style-007">
                   <li><a
-                      href="#mistakes" (click)="navigateTo('mistakes')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('mistakes')"
                       >Common mistakes made by beginner traders</a></li>
                   <li><a
-                      href="#chooseTheBroker" (click)="navigateTo('chooseTheBroker')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('chooseTheBroker')"
                       >How to choose a broker</a></li>
                   <li><a
-                      href="#exchange-trade" (click)="navigateTo('exchange-trade')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('exchange-trade')"
                       >What can a beginner trade?</a></li>
                   <li><a
-                      href="#demo" (click)="navigateTo('demo')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('demo')"
                       >How to begin demo trading</a></li>
                   <li><a
-                      href="#tradingJournal" (click)="navigateTo('tradingJournal')"
+                      [ngStyle]="{ cursor: 'pointer' }"
+                      (click)="navigateTo('tradingJournal')"
                       >The trading journal</a></li>
                 </ul></div></nav>
 </details>
