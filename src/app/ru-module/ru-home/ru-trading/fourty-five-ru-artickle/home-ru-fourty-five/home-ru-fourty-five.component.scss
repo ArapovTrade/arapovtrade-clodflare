@@ -1054,6 +1054,7 @@ letter-spacing: 0px;
 }
 
 /* Attach this stylesheet to the course component. */
+/* Attach this stylesheet to the course component. */
 
 .free-courses_main-container main .course-ru-style-001 { line-height:1.65; }
 
@@ -1150,3 +1151,193 @@ letter-spacing: 0px;
 .free-courses_main-container main .course-en-style-016 { display:block;width:100%;max-width:none;height:auto;max-height:none;aspect-ratio:auto;overflow:visible; }
 
 .free-courses_main-container main .course-en-style-017 { width:100%;max-width:none;height:auto;max-height:none;display:block;object-fit:contain; }
+
+/* Consistent media layout, scoped to the course article. */
+.free-courses_main-container main article > .flex {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: auto;
+  overflow: visible;
+  margin: 28px 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+.free-courses_main-container main article > .flex > img.pictureImg {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  margin: 0;
+}
+.free-courses_main-container main article > picture {
+  display: block;
+  width: 100%;
+  margin: 28px 0;
+  padding: 0;
+}
+.free-courses_main-container main article > picture > img,
+.free-courses_main-container main article > .flex > picture > img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0;
+}
+.free-courses_main-container main article > img.course-diagram {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 28px 0;
+}
+
+/* Compact native course contents. */
+.free-courses_main-container main .course-toc {margin:32px 0;border:1px solid #dbe6ec;border-radius:8px;background:#fff;}
+.free-courses_main-container main .course-toc-summary {display:flex;align-items:center;gap:12px;padding:18px 20px;cursor:pointer;list-style:none;}
+.free-courses_main-container main .course-toc-summary::-webkit-details-marker {display:none;}
+.free-courses_main-container main .course-toc-summary::before {content:"+";font-family:Lato,sans-serif;font-size:24px;font-weight:400;color:#2375a0;}
+.free-courses_main-container main .course-toc[open] > .course-toc-summary::before {content:"−";}
+.free-courses_main-container main .course-toc-summary h2 {margin:0;line-height:1.25;font-size:1.3rem;}
+.free-courses_main-container main .course-toc-count {margin-left:auto;white-space:nowrap;font-family:Lato,sans-serif;font-size:.85rem;color:#617687;}
+.free-courses_main-container main .course-toc-summary:focus-visible {outline:2px solid #2375a0;outline-offset:3px;}
+.free-courses_main-container main .course-toc-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 28px;padding:6px 20px 24px;}
+.free-courses_main-container main .course-toc-group p {margin:0 0 8px;}
+.free-courses_main-container main .course-toc-group p strong {font-family:Lato,sans-serif;font-style:normal;font-weight:800;color:#294b60;}
+.free-courses_main-container main .course-toc-group ul {margin:0;padding-left:18px;}
+.free-courses_main-container main .course-toc-group li {margin-bottom:6px;}
+.free-courses_main-container main .course-toc-group a {cursor:pointer;line-height:1.5;}
+@media (max-width:640px) {
+.free-courses_main-container main .course-toc-grid {grid-template-columns:1fr;gap:20px;padding:4px 16px 20px;}
+.free-courses_main-container main .course-toc-summary {padding:16px;gap:10px;}
+.free-courses_main-container main .course-toc-summary h2 {font-size:1.15rem;}
+.free-courses_main-container main .course-toc-count {font-size:.75rem;}
+}
+
+/* RU questions and answers */
+.course-selfcheck { margin: 28px 0 40px; border: 1px solid #c8e1f2; border-radius: 10px; background: #fbfdff; color: #102b45; }
+.course-selfcheck > summary { padding: 16px 20px; cursor: pointer; font-size: 1.05em; font-weight: 500; }
+.course-selfcheck-content { padding: 0 20px 20px; }
+.course-selfcheck-question { margin: 18px 0 0; }
+.course-selfcheck-question > p { margin: 0 0 8px; }
+.course-selfcheck-answer > summary { cursor: pointer; color: #006da7; font-weight: 400; }
+.course-selfcheck-answer > p { margin: 10px 0 18px; line-height: 1.65; }
+/* Keep self-check spacing independent of the page's generic div reset. */
+.course-selfcheck > .course-selfcheck-content { padding: 0 20px 20px !important; }
+.course-selfcheck .course-selfcheck-question { margin: 18px 0 0 !important; }
+
+/* Reading rhythm for the RU course only; site styles remain unchanged. */
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) {
+  --course-paragraph-gap: 12px;
+  --course-media-gap: 20px;
+  line-height: 1.5;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > p {
+  /* Component attribute selectors otherwise reset the gap to 16px. */
+  margin: 0 0 var(--course-paragraph-gap) !important;
+  line-height: 1.5;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h1 {
+  margin: 0 0 24px !important;
+  line-height: 1.2;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h2 {
+  margin: 36px 0 14px !important;
+  line-height: 1.25;
+  scroll-margin-top: 100px;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h3 {
+  margin: 20px 0 10px !important;
+  line-height: 1.3;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h4 {
+  margin: 20px 0 10px !important;
+  line-height: 1.35;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(ul, ol) {
+  margin: 6px 0 16px !important;
+  padding-left: 1.4em;
+  line-height: 1.5;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(ul, ol) > li {
+  margin: 0 0 6px;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(ul, ol) > li:last-child {
+  margin-bottom: 0;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(picture, .flex, img.course-diagram) {
+  margin: var(--course-media-gap) 0;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  overflow: visible;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(picture, .flex) img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: none;
+}
+.free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > .course-selfcheck {
+  margin: 20px 0 28px;
+}
+@media (max-width: 640px) {
+  .free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) {
+    --course-paragraph-gap: 12px;
+    --course-media-gap: 18px;
+  }
+  .free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h2 {
+    margin-top: 32px !important;
+    margin-bottom: 12px !important;
+  }
+  .free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > h3 {
+    margin-top: 24px !important;
+  }
+  .free-courses_main-container main article:is(.course-ru-style-001, .course-uk-style-001, .course-en-style-001) > :is(ul, ol) {
+    margin-bottom: 16px !important;
+  }
+}
+
+/* Matching icons for position-size input values */
+.free-courses_main-container main img.course-input-icon {display:inline-block;width:20px;height:20px;max-width:none;margin:0 9px 0 0;vertical-align:-3px;}
+
+/* Course readability with the site's existing dark-theme wrapper. */
+.dark-theme-main-cont .free-courses_main-container main {color:#edf2f5;}
+.dark-theme-main-cont .free-courses_main-container main .course-toc,
+.dark-theme-main-cont .free-courses_main-container main .course-selfcheck {background:#242a30;color:#edf2f5;border-color:#536575;}
+.dark-theme-main-cont .free-courses_main-container main p,
+.dark-theme-main-cont .free-courses_main-container main li,
+.dark-theme-main-cont .free-courses_main-container main summary {color:#edf2f5;}
+.dark-theme-main-cont .free-courses_main-container main .course-toc-group p strong {color:#edf2f5;}
+.dark-theme-main-cont .free-courses_main-container main .course-toc-count {color:#bccbd6;}
+.dark-theme-main-cont .free-courses_main-container main a,
+.dark-theme-main-cont .free-courses_main-container main .course-selfcheck-answer > summary {color:#8dd5ff!important;}
+.dark-theme-main-cont .free-courses_main-container main .course-toc-summary::before {color:#8dd5ff;}
+.dark-theme-main-cont .free-courses_main-container main .course-ru-style-010,
+.dark-theme-main-cont .free-courses_main-container main .course-uk-style-010,
+.dark-theme-main-cont .free-courses_main-container main .course-en-style-010 {color:#edf2f5;}
+
+/* Video destinations and disclosure contrast in the live site's dark theme. */
+.free-courses_main-container main .course-youtube-icon {display:inline-block;width:21px;height:15px;margin-right:7px;vertical-align:-2px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 20'%3E%3Crect width='28' height='20' rx='5' fill='%23ff0033'/%3E%3Cpath d='M11 5.5v9l8-4.5z' fill='white'/%3E%3C/svg%3E");}
+.dark-theme-main-cont .free-courses_main-container main details > summary,
+.dark-theme-main-cont .free-courses_main-container main details > summary * {color:#f4f4ed!important;-webkit-text-fill-color:#f4f4ed;}
+.dark-theme-main-cont .free-courses_main-container main details p,
+.dark-theme-main-cont .free-courses_main-container main details li {color:#f4f4ed!important;}
+
+/* Final assignment, shared by the three course languages. */
+.free-courses_main-container main .course-final-task {margin:28px 0;padding:20px 24px;border:1px solid #dbe6ec;border-radius:10px;background:#f7fbfd;}
+.free-courses_main-container main .course-final-task h3 {margin:0 0 12px;}
+.free-courses_main-container main .course-final-task p {margin:0 0 12px;}
+.free-courses_main-container main .course-final-task ol {margin:0 0 14px;padding-left:24px;}
+.free-courses_main-container main .course-final-task li {margin:0 0 8px;}
+.free-courses_main-container main .course-final-task strong {font-family:inherit;font-style:normal;font-weight:700;color:inherit;}
+.free-courses_main-container main .course-final-task .course-final-task-result {margin:0;padding-top:12px;border-top:1px solid #dbe6ec;}
+.dark-theme-main-cont .free-courses_main-container main .course-final-task {background:#292b12;border-color:#707349;}
