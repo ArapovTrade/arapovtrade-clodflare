@@ -57,12 +57,12 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Про ARAPOV.TRADE — Освітня платформа з трейдингу',
+      'Про Arapov.Trade: бібліотека, книги та відео з трейдингу',
     );
     this.meta.updateTag({
       name: 'description',
       content:
-        'Освітня платформа Ігоря Арапова: 51+ стаття, 9 книг з ISBN, 78+ відеоуроків на 3 мовах. Безкоштовне навчання трейдингу: Smart Money, метод Вайкоффа, об`ємний аналіз.',
+        'Освітні матеріали Ігоря Арапова: як вибрати курс, статті, книги й відео та перевірити бібліографічні відомості про платформу.',
     });
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
