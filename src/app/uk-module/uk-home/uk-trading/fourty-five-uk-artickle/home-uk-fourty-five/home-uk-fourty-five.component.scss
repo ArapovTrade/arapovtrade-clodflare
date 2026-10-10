@@ -1422,3 +1422,20 @@ letter-spacing: 0px;
     .course-toc-count { color: #617687 !important; }
     .course-final-task-result { border-color: #dbe6ec !important; }
 }
+
+
+/* Gold reading accents in the dark course only. */
+.free-courses_main-container main > article.course-theme-dark {
+  :is(strong, dfn),
+  details :is(strong, dfn),
+  .course-final-task strong,
+  .course-toc-group p strong {
+    color: #e8da43 !important;
+    -webkit-text-fill-color: #e8da43 !important;
+    background-image: none !important;
+  }
+  a, a :is(strong, dfn, em, i) {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
