@@ -310,7 +310,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'copy-trading', //36 1
+        path: 'copy-trading', //36 1 
         loadChildren: () =>
           import('./thirty-six-ru-blog/thirty-six-ru-blog.module').then(
             (m) => m.ThirtySixRuBlogModule,
