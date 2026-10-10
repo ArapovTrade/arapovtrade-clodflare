@@ -56,13 +56,13 @@ export class HomeUkBlogFourComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Smart Money Concepts (SMC): повний гайд з трейдингу');
+    this.titleService.setTitle('Smart Money у трейдингу: як перевіряти сценарій SMC');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке Smart Money Concept: структура ринку, ліквідність, Order Blocks і FVG. Як торгують великі гравці і як читати їхні сліди.',
+        'Ліквідність, ордер-блоки, FVG і структура ціни: як читати позначки SMC, зіставляти обсяг із реакцією та визначати умову відмови від сценарію.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

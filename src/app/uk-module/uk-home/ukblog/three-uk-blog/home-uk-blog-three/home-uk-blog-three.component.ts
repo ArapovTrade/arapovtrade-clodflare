@@ -57,7 +57,7 @@ export class HomeUkBlogThreeComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Order Block: що це і як знайти інституційні зони',
+      'Ордер-блок: розмітка та перевірка зони | Arapov.trade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeUkBlogThreeComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке ордер-блок, як визначити зону, де набирав позицію великий гравець, які бувають види Order Block і як їх торгувати.',
+        'Що показує ордер-блок, як позначити межі й перевірити повернення ціни, підтвердження та умови відмови від сценарію.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

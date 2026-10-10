@@ -57,13 +57,13 @@ export class HomeUkBlogTwentyFourComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Метод Вайкоффа: накопичення та розподіл | Arapov.trade',
+      'Метод Вайкоффа: накопичення, розподіл і фази A–E',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Метод Вайкоффа: фази накопичення та розподілу, дії великих гравців і як об’ємний аналіз виявляє ключові рівні ринку.',
+        'Як перевіряти фази й події Вайкоффа: AR, спринг, аптраст, SOS і LPS. Послідовність ціни та обсягу, умови відмови від сценарію й навчальний приклад.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-06-25' });

@@ -56,12 +56,12 @@ export class HomeUkBlogTwentyEightComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Фундаментальний аналіз: як аналізувати ринки');
+    this.titleService.setTitle('Фундаментальний аналіз ринку | Arapov.trade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Основи фундаментального аналізу: економічні показники, ставки центробанків, новини і як вони впливають на ринок та валютні курси.',
+        'Як читати звітність компанії, економічні дані й процентні ставки. Роль очікувань та економічного календаря у фундаментальному аналізі.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

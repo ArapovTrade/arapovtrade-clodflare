@@ -57,13 +57,13 @@ export class HomeUkBlogOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Fair Value Gap (FVG): що це і як торгувати',
+      'Імбаланс і FVG: побудова та перевірка зони | Arapov.trade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке імбаланс і FVG (Fair Value Gap), як знаходити зони неефективності на графіку і чому ціна часто повертається їх закривати.',
+        'Як відрізнити імбаланс від FVG, визначити межі за трьома свічками й перевірити повернення, заповнення та умови відмови від сценарію.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });

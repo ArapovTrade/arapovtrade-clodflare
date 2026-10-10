@@ -16,7 +16,7 @@ const routes: Routes = [
     children: [
       { path: '', component: UkBlogHomepageComponent },
       {
-        path: 'freeeducation', //45 1  
+        path: 'freeeducation', //45 1   
         loadChildren: () =>
           import('../uk-trading/fourty-five-uk-artickle/fourty-five-uk-artickle.module').then(
             (m) => m.FourtyFiveUkArtickleModule,

@@ -59,13 +59,13 @@ export class HomeUkBlogSixtyFourComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгові стратегії – практичні приклади для початківців',
+      'Торгова стратегія: практичні графіки та звіт | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Торгова система трейдера — покрокова інструкція з реальними прикладами угод. Як знаходити точки входу, виставляти стоп-лос та фіксувати прибуток.',
+        'П’ять розборів Nasdaq, Bitcoin і ф’ючерса євро: умови входу, захист і пропуск угоди. Вінрейт, Profit Factor та просадка у звіті.',
     });
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
 

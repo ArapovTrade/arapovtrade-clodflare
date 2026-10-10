@@ -6,320 +6,12 @@
          <div class="m-right hero-section"></div>
          <div class="free-courses_main-container">
            <main lang="uk">
-             <header>
-               <h1>Графіки та технічний аналіз: питання та відповіді</h1>
-             </header>
-             <article class="faq-reading">
-<!-- Editorial rule: use natural Ukrainian beginner language in topic labels,
-     questions and answers. Avoid repeating section titles. Keep content evergreen;
-     dates belong only in explanations of specific historical events. -->
-<p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-<p>Розберіться, що показує графік і як читати свічки, тренди та рівні. Деталі можна вивчити далі за посиланнями.</p>
-<nav class="faq-reading-nav" aria-label="Зміст">
-<h2>Зміст</h2>
-<ul>
-<li><a class="linkrefinto" href="#topic-chart-reading" (click)="$event.preventDefault(); scrollToFragment('topic-chart-reading')"><span aria-hidden="true">→ </span>Як читати графік</a></li>
-<li><a class="linkrefinto" href="#topic-breakout-strategy" (click)="$event.preventDefault(); scrollToFragment('topic-breakout-strategy')"><span aria-hidden="true">→ </span>Пробій і ретест</a></li>
-<li><a class="linkrefinto" href="#topic-candlestick-patterns" (click)="$event.preventDefault(); scrollToFragment('topic-candlestick-patterns')"><span aria-hidden="true">→ </span>Свічкові патерни</a></li>
-<li><a class="linkrefinto" href="#topic-chart-patterns" (click)="$event.preventDefault(); scrollToFragment('topic-chart-patterns')"><span aria-hidden="true">→ </span>Графічні фігури</a></li>
-<li><a class="linkrefinto" href="#topic-elliott-waves" (click)="$event.preventDefault(); scrollToFragment('topic-elliott-waves')"><span aria-hidden="true">→ </span>Хвилі Елліотта</a></li>
-<li><a class="linkrefinto" href="#topic-fibonacci-levels" (click)="$event.preventDefault(); scrollToFragment('topic-fibonacci-levels')"><span aria-hidden="true">→ </span>Рівні Фібоначчі</a></li>
-</ul>
-</nav>
-<section class="faq-reading-topic" id="topic-chart-reading" aria-labelledby="heading-chart-reading">
-             <h2 id="heading-chart-reading">1. Як читати графік</h2>
-             <div class="faq-item" id="question-uk-chart-reading-01">
-<p class="faq-topic-label"><em>Технічний аналіз</em></p>
-<h3>Що таке технічний аналіз?</h3>
-<p>Це вивчення графіка ціни й обсягів торгівлі. У бібліотеці рівні допомагають зрозуміти ситуацію, а фігури та індикатори її доповнюють.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-02">
-<p class="faq-topic-label"><em>Види графіків</em></p>
-<h3>Чим відрізняються лінія, бари та свічки?</h3>
-<p>Лінія зазвичай з'єднує ціни закриття. Бари та свічки також показують відкриття, максимум і мінімум за період.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-03">
-<p class="faq-topic-label"><em>Бар і свічка</em></p>
-<h3>Бар і японська свічка показують різні дані?</h3>
-<p>Ні. Вони показують ті самі чотири ціни періоду, але зображають їх по-різному. Свічка має тіло й тіні, бар — лінію з позначками.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-04">
-<p class="faq-topic-label"><em>Таймфрейм</em></p>
-<h3>Що таке таймфрейм?</h3>
-<p>Це час, який охоплює одна свічка або бар. На годинному графіку кожна свічка показує рух за годину.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-05">
-<p class="faq-topic-label"><em>Різні періоди графіка</em></p>
-<h3>Навіщо дивитися кілька таймфреймів?</h3>
-<p>Більший період допомагає побачити загальний напрямок і зони. На меншому уточнюють умови входу, не втрачаючи загальної картини.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-06">
-<p class="faq-topic-label"><em>Тренд і флет</em></p>
-<h3>Що таке тренд і флет?</h3>
-<p>Тренд — переважний рух угору або вниз. Флет — коливання в діапазоні. У бібліотеці ці стани також пов'язують із балансом і дисбалансом ринку.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-07">
-<p class="faq-topic-label"><em>Підтримка й опір</em></p>
-<h3>Чому рівень — це зона, а не точна ціна?</h3>
-<p>Реакція може виникнути поряд із минулою позначкою. Тому Арапов спостерігає область, а не очікує точного розвороту на одній лінії.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-08">
-<p class="faq-topic-label"><em>Торгівля від рівнів</em></p>
-<h3>Як торгувати від рівня до рівня?</h3>
-<p>Вхід шукають біля значимої зони, ціль — біля наступної. Заздалегідь визначають вихід зі збитком і перевіряють реакцію ціни та обсягу.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-09">
-<p class="faq-topic-label"><em>Ціновий канал</em></p>
-<h3>Що таке канал на графіку?</h3>
-<p>Це область між межами руху ціни. Канал може йти вгору, вниз або горизонтально; саме торкання межі ще не означає готової угоди.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-10">
-<p class="faq-topic-label"><em>Імпульс і відкат</em></p>
-<h3>Чим імпульс відрізняється від відкату?</h3>
-<p>Імпульс просуває ціну в основному напрямку, відкат повертає частину руху. Порядок вершин і мінімумів допомагає оцінити зміну ситуації.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-11">
-<p class="faq-topic-label"><em>Індикатори та фігури</em></p>
-<h3>Чи достатньо фігури або індикатора для угоди?</h3>
-<p>У підході Арапова ні. Він спочатку оцінює рівні, обсяги й ризик, а не входить лише через знайомий малюнок.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-reading-12">
-<p class="faq-topic-label"><em>Ціна та обсяг</em></p>
-<h3>Як перейти від графіка ціни до аналізу обсягів?</h3>
-<p>Порівнюйте активність торгівлі з тим, наскільки просунулася ціна. Арапов дивиться на їхній зв'язок біля важливих зон.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-reading">Докладний розбір</a></p>
-</div>
-             </section>
-             <section class="faq-reading-topic" id="topic-breakout-strategy" aria-labelledby="heading-breakout-strategy">
-             <h2 id="heading-breakout-strategy">2. Пробій і ретест</h2>
-             <div class="faq-item" id="question-uk-breakout-strategy-01">
-<p class="faq-topic-label"><em>Пробій рівня</em></p>
-<h3>Що таке пробій рівня?</h3>
-<p>Це вихід ціни за підтримку або опір. Потрібно перевірити, чи залишиться вона за межею, чи швидко повернеться.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-breakout-strategy-02">
-<p class="faq-topic-label"><em>Хибний пробій</em></p>
-<h3>Як відрізнити справжній пробій від хибного?</h3>
-<p>При хибному ціна виходить за рівень і повертається. Арапов перевіряє обсяг, утримання за межею та подальшу реакцію.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-breakout-strategy-03">
-<p class="faq-topic-label"><em>Стопи за рівнем</em></p>
-<h3>Чому ціна пробиває рівень і повертається?</h3>
-<p>За ним можуть стояти стопи й заявки на пробій. Їхнє спрацювання створює угоди, але після цього рух може закінчитися.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-breakout-strategy-04">
-<p class="faq-topic-label"><em>Ретест</em></p>
-<h3>Чим вхід на ретесті відрізняється від входу на пробої?</h3>
-<p>На пробої входять під час виходу за рівень. На ретесті чекають повернення до нього та перевіряють реакцію, щоб уточнити умови й ризик.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-breakout-strategy-05">
-<p class="faq-topic-label"><em>Стоп на пробої</em></p>
-<h3>Де ставити стоп і ціль при пробої?</h3>
-<p>Стоп пов'язують із місцем, де ідея перестає працювати, наприклад крайнім значенням відкату. Ціль — із наступною значимою зоною.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/breakout-strategy">Докладний розбір</a></p>
-</div>
-             </section>
-             <section class="faq-reading-topic" id="topic-candlestick-patterns" aria-labelledby="heading-candlestick-patterns">
-             <h2 id="heading-candlestick-patterns">3. Свічкові патерни</h2>
-             <div class="faq-item" id="question-uk-candlestick-patterns-01">
-<p class="faq-topic-label"><em>Японська свічка</em></p>
-<h3>Що показує японська свічка?</h3>
-<p>Ціни відкриття, закриття, максимум і мінімум. Тіло показує різницю між відкриттям і закриттям, тіні — крайні ціни.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-02">
-<p class="faq-topic-label"><em>Бичача й ведмежа свічка</em></p>
-<h3>Чим бичача свічка відрізняється від ведмежої?</h3>
-<p>Бичача закрилася вище відкриття, ведмежа — нижче. Колір залежить від налаштувань, тому важливі саме ціни.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-03">
-<p class="faq-topic-label"><em>Пін-бар</em></p>
-<h3>Що таке пін-бар?</h3>
-<p>Свічка з невеликим тілом і довгою тінню. Вона показує повернення після руху в один бік; Арапов оцінює її біля значимого рівня.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-04">
-<p class="faq-topic-label"><em>Свічкове поглинання</em></p>
-<h3>Що таке поглинання на графіку?</h3>
-<p>Це дві свічки, де тіло другої перекриває тіло першої у протилежному напрямку. Значення залежить від місця появи й реакції ринку.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-05">
-<p class="faq-topic-label"><em>Молот, доджі та зірка</em></p>
-<h3>Чим відрізняються молот, доджі та вечірня зірка?</h3>
-<p>Молот має довгу нижню тінь, доджі закривається близько до відкриття. Вечірня зірка — модель із трьох свічок після зростання.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-candlestick-patterns-06">
-<p class="faq-topic-label"><em>Свічкові сигнали</em></p>
-<h3>Чи можна входити лише за свічковим патерном?</h3>
-<p>Арапов не вважає форму достатньою. Потрібні місце на графіку, рівень і реакція обсягу; однакова свічка виникає в різних умовах.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-n020">
-<p class="faq-topic-label"><em>Харамі</em></p>
-<h3>Що таке харамі?</h3>
-<p>Це модель, у якій тіло меншої свічки міститься в тілі попередньої більшої. Вона може означати паузу, але не підтверджує розворот сама.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-f018">
-<p class="faq-topic-label"><em>Повішений і молот</em></p>
-<h3>Чим повішений відрізняється від молота?</h3>
-<p>Вони схожі за формою: коротке тіло й довга нижня тінь. Молот розглядають після падіння, повішеного — після зростання.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/candlestick-patterns">Докладний розбір</a></p>
-</div>
-             </section>
-             <section class="faq-reading-topic" id="topic-chart-patterns" aria-labelledby="heading-chart-patterns">
-             <h2 id="heading-chart-patterns">4. Графічні фігури</h2>
-             <div class="faq-item" id="question-uk-chart-patterns-01">
-<p class="faq-topic-label"><em>Патерни на графіку</em></p>
-<h3>Що таке ціновий патерн?</h3>
-<p>Це повторюваний малюнок руху, наприклад трикутник чи подвійна вершина. Впізнати форму ще не означає отримати перевагу в угоді.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-02">
-<p class="faq-topic-label"><em>Розворот і продовження</em></p>
-<h3>Чим фігура розвороту відрізняється від фігури продовження?</h3>
-<p>Перша описує можливу зміну напрямку, друга — паузу перед продовженням. Жодна не змушує ринок рухатися за схемою.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-03">
-<p class="faq-topic-label"><em>Голова та плечі</em></p>
-<h3>Як підтвердити фігуру «голова та плечі»?</h3>
-<p>Зазвичай чекають пробою лінії між западинами — лінії шиї. Арапов також перевіряє обсяг і можливе повернення ціни.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-04">
-<p class="faq-topic-label"><em>Подвійна вершина й дно</em></p>
-<h3>Чи гарантує подвійна вершина розворот?</h3>
-<p>Ні. Потрібне подальше порушення значимого рівня й перевірка реакції. Схожий малюнок може залишитися звичайним діапазоном.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-05">
-<p class="faq-topic-label"><em>Трикутник</em></p>
-<h3>Які бувають трикутники на графіку?</h3>
-<p>Висхідні, низхідні та симетричні. Межі зближуються, але назва сама по собі не визначає напрямок наступного руху.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-06">
-<p class="faq-topic-label"><em>Прапор і вимпел</em></p>
-<h3>Чим прапор відрізняється від вимпела?</h3>
-<p>Обидва описують паузу після імпульсу. У прапора межі приблизно паралельні, у вимпела — сходяться.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-07">
-<p class="faq-topic-label"><em>Чашка з ручкою</em></p>
-<h3>Що таке «чашка з ручкою»?</h3>
-<p>Ціна утворює округле відновлення, потім меншу паузу — ручку. Арапов перевіряє реакцію біля її меж і можливий хибний вихід.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-08">
-<p class="faq-topic-label"><em>Патерн 1-2-3</em></p>
-<h3>Що таке патерн 1-2-3?</h3>
-<p>Це три опорні точки можливої зміни руху. У бібліотеці розглядають різні способи входу й те, як вони змінюють ризик.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-chart-patterns-09">
-<p class="faq-topic-label"><em>Перевірка входу</em></p>
-<h3>Чому фігури на графіку недостатньо для входу?</h3>
-<p>Один малюнок допускає різні результати. Арапов також дивиться на рівень, ціну, обсяг і заздалегідь визначений стоп.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-n017">
-<p class="faq-topic-label"><em>Клин</em></p>
-<h3>Що таке висхідний і низхідний клин?</h3>
-<p>Це фігури зі збіжними межами, нахиленими в один бік. Для рішення важливо, куди ціна вийде та як поводитиметься далі.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/chart-patterns">Докладний розбір</a></p>
-</div>
-             </section>
-             <section class="faq-reading-topic" id="topic-elliott-waves" aria-labelledby="heading-elliott-waves">
-             <h2 id="heading-elliott-waves">5. Хвилі Елліотта</h2>
-             <div class="faq-item" id="question-uk-elliott-waves-01">
-<p class="faq-topic-label"><em>П'ять хвиль і корекція</em></p>
-<h3>Що таке хвилі Елліотта?</h3>
-<p>Це спосіб описувати повторювані хвильові рухи. Базова схема має п'ять хвиль основного руху й три хвилі корекції.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-elliott-waves-02">
-<p class="faq-topic-label"><em>Імпульсні та корекційні хвилі</em></p>
-<h3>Чим імпульсні хвилі відрізняються від корекційних?</h3>
-<p>Перші розвивають основний рух, другі повертають частину пройденого. Розмітка описує можливу структуру, а не точний майбутній шлях ціни.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-elliott-waves-03">
-<p class="faq-topic-label"><em>Помилки хвильової розмітки</em></p>
-<h3>Чому хвилі Елліотта можна розмітити по-різному?</h3>
-<p>Один графік допускає кілька пояснень. Через цю суб'єктивність Арапов більше спирається на рівні, обсяг і фази ринку.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/elliott-waves">Докладний розбір</a></p>
-</div>
-             </section>
-             <section class="faq-reading-topic" id="topic-fibonacci-levels" aria-labelledby="heading-fibonacci-levels">
-             <h2 id="heading-fibonacci-levels">6. Рівні Фібоначчі</h2>
-             <div class="faq-item" id="question-uk-fibonacci-levels-01">
-<p class="faq-topic-label"><em>Корекція Фібоначчі</em></p>
-<h3>Що показують рівні Фібоначчі?</h3>
-<p>Частку відкату від вибраного руху. Вони дають місця для спостереження, але не є обов'язковими точками розвороту.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-02">
-<p class="faq-topic-label"><em>Сітка Фібоначчі</em></p>
-<h3>Як побудувати сітку Фібоначчі?</h3>
-<p>Виберіть зрозумілий рух і позначте його початок та кінець. Якщо змінити ці точки, рівні також зміняться.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-03">
-<p class="faq-topic-label"><em>Рівні 38,2 і 61,8</em></p>
-<h3>Що означають 38,2%, 50% і 61,8%?</h3>
-<p>Це поширені частки відкату. Позначка 50% означає повернення половини руху, хоча не є відношенням чисел послідовності Фібоначчі.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-fibonacci-levels-04">
-<p class="faq-topic-label"><em>Фібоначчі та обсяги</em></p>
-<h3>Як використовувати Фібоначчі разом з обсягами?</h3>
-<p>Шукайте збіг рівня з важливою зоною й перевіряйте реакцію ціни та обсягу. Одна лінія не замінює умови угоди та розрахунок ризику.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-</div>
-             <div class="faq-item" id="question-uk-f033">
-<p class="faq-topic-label"><em>Розширення Фібоначчі</em></p>
-<h3>Чим розширення відрізняється від корекції Фібоначчі?</h3>
-<p>Корекція показує орієнтири всередині минулого руху. Розширення — за його межами, наприклад для можливих цілей; досягнення не гарантоване.</p>
-<p class="faq-source"><a class="linkrefinto" href="https://arapov.trade/uk/freestudying/fibonacci-levels">Докладний розбір</a></p>
-</div>
-             
-             </section>
-             <nav aria-label="Інші теми бібліотеки"><h2>Інші теми бібліотеки</h2><ul>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-getting-started">Початок торгівлі та торгова система</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-risk-psychology">Ризик і психологія трейдингу</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-indicators">Індикатори та волатильність</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-financial-markets">Як влаштовані фінансові ринки</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-volume-wyckoff-smc">Обʼємний аналіз, Вайкофф і Smart Money</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-crypto-mechanics">Криптовалюти: устрій і безпека</a></li>
-             <li><a class="linkrefinto" href="/uk/freestudying/trading-faq-bitcoin-altcoins">Bitcoin, альткоїни та ринкові цикли</a></li>
-             </ul>
-             <p><a class="linkrefinto" href="/uk/freestudying/trading-faq">Усі теми: питання та відповіді з трейдингу</a></p>
-             </nav>
-<section class="faq-reading-about">
-<h2>Про матеріали бібліотеки</h2>
-<p>Розділ укладено на основі матеріалів бібліотеки ArapovTrade та навчальних відео Ігоря Арапова. Тут можна знайти визначення, порівняння інструментів, пояснення ринкової механіки та розбори авторського підходу до трейдингу.</p>
-<p>Автор бібліотеки — <a class="linkrefinto" href="https://arapov.trade/uk"><strong>Ігор Арапов</strong></a>, практикуючий трейдер з 2013 року. Докладні матеріали розкривають контекст кожного питання; короткі відповіді слугують відправною точкою для вивчення теми.</p>
-</section>
-</article>
+<header><h1>Графіки й технічний аналіз: запитання та відповіді</h1></header>
+<article class="faq-reading"><p><a href="/uk/freestudying/trading-faq" class="linkrefinto">Усі теми: запитання та відповіді з трейдингу</a></p><p>З’ясуйте, що показує графік і як читати свічки, напрямок та цінові області. Коротка відповідь пояснює основне; докладний розбір розкриває умови й приклади.</p><nav aria-label="Зміст сторінки" class="faq-reading-nav"><h2>Зміст</h2><ul><li><a href="#topic-chart-reading" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-chart-reading')"><span aria-hidden="true">→ </span>Як читати графік</a></li><li><a href="#topic-breakout-strategy" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-breakout-strategy')"><span aria-hidden="true">→ </span>Пробій і ретест</a></li><li><a href="#topic-candlestick-patterns" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-candlestick-patterns')"><span aria-hidden="true">→ </span>Свічкові патерни</a></li><li><a href="#topic-chart-patterns" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-chart-patterns')"><span aria-hidden="true">→ </span>Графічні фігури</a></li><li><a href="#topic-elliott-waves" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-elliott-waves')"><span aria-hidden="true">→ </span>Хвилі Елліотта</a></li><li><a href="#topic-fibonacci-levels" class="linkrefinto" (click)="$event.preventDefault(); scrollToFragment('topic-fibonacci-levels')"><span aria-hidden="true">→ </span>Рівні Фібоначчі</a></li></ul></nav><section id="topic-chart-reading" aria-labelledby="heading-chart-reading" class="faq-reading-topic"><h2 id="heading-chart-reading">1. Як читати графік</h2><div id="question-p009-s01" class="faq-item"><p class="faq-topic-label"><em>Технічний аналіз</em></p><h3 id="question-uk-chart-reading-01">Що таке технічний аналіз?</h3><p>Технічний аналіз вивчає ціну й доступні дані торгівлі, зокрема обсяг, кількість проторгованих одиниць, для оцінки напрямку, меж та умов угоди. Ідею перевіряють за реакцією, не вважаючи прогноз гарантованим.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-01" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s02" class="faq-item"><p class="faq-topic-label"><em>Види графіків</em></p><h3 id="question-uk-chart-reading-02">Чим відрізняються лінія, бари та свічки?</h3><p>Лінія зазвичай з’єднує закриття. Стандартні бари з чотирма цінами та звичайні свічки також показують відкриття, максимум і мінімум; у лінії потрібно перевірити вибраний тип ціни.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-02" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s03" class="faq-item"><p class="faq-topic-label"><em>Бар і свічка</em></p><h3 id="question-uk-chart-reading-03">Бар і японська свічка показують різні дані?</h3><p>Стандартний бар і звичайна японська свічка показують ті самі відкриття, максимум, мінімум і закриття. Різниться зображення: риски або тіло й тіні; бари HLC без відкриття є іншим варіантом.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-02" class="linkrefinto">Докладний розбір</a></p></div>
+<div class="flex" style="margin:24px 0"><img src="/assets/img/content/faq-bar-candle-equivalence-uk.webp" alt="Стандартний бар; Звичайна свічка; Відкриття; Закриття; Максимум; Мінімум" class="pictureImg" loading="lazy" style="width:100%;height:auto;max-height:none;display:block;object-fit:contain" /></div><div id="question-p009-s04" class="faq-item"><p class="faq-topic-label"><em>Таймфрейм</em></p><h3 id="question-uk-chart-reading-04">Що таке таймфрейм?</h3><p>Це часовий інтервал однієї свічки чи бара. H1 охоплює годину, D1 охоплює торговий день; денні межі залежать від розкладу торгів і налаштувань.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-03" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s05" class="faq-item"><p class="faq-topic-label"><em>Різні періоди графіка</em></p><h3 id="question-uk-chart-reading-05">Навіщо дивитися кілька таймфреймів?</h3><p>Більший період показує загальний рух і межі, менший його деталі. Місцеве зниження може бути відкатом у ширшому зростанні; старший графік не керує молодшим.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-03" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s06" class="faq-item"><p class="faq-topic-label"><em>Тренд і флет</em></p><h3 id="question-uk-chart-reading-06">Що таке тренд і флет?</h3><p>Тренд описує стійке просування через вищі або нижчі вершини й мінімуми. Флет є коливаннями в діапазоні. Автор називає спрямовану хвилю дисбалансом, коливання без стійкого просування балансом. Це опис руху, а не доказ власників заявок.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-04" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s07" class="faq-item"><p class="faq-topic-label"><em>Підтримка й опір</em></p><h3 id="question-uk-chart-reading-07">Чому рівень — це зона, а не точна ціна?</h3><p>Попередні реакції можуть бути біля близьких, але різних цін. Область спостерігають за реакцією й відходом від неї, фіксуючи межі до наступного підходу; торкання не гарантує розвороту.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-05" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s08" class="faq-item"><p class="faq-topic-label"><em>Торгівля від рівнів</em></p><h3 id="question-uk-chart-reading-08">Як торгувати від рівня до рівня?</h3><p>Вхід розглядають біля однієї області, можливу ціль біля наступної. До угоди визначають очікувану реакцію, умову помилки й вихід зі збитком; сама лінія не дає входу й не гарантує цілі.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-05" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s09" class="faq-item"><p class="faq-topic-label"><em>Ціновий канал</em></p><h3 id="question-uk-chart-reading-09">Що таке канал на графіку?</h3><p>Це область між приблизно паралельними межами. Висхідний будують за вищими мінімумами, низхідний за нижчими максимумами; реакцію біля меж перевіряють, а вихід не означає автоматичного розвороту.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-06" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s10" class="faq-item"><p class="faq-topic-label"><em>Імпульс і відкат</em></p><h3 id="question-uk-chart-reading-10">Чим імпульс відрізняється від відкату?</h3><p>Імпульс просуває ціну в основному напрямку розглянутої хвилі. Відкат тимчасово йде проти нього; окремий колір свічки не визначає її місце в русі.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-04" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p009-s11" class="faq-item"><p class="faq-topic-label"><em>Індикатори та фігури</em></p><h3 id="question-uk-chart-reading-11">Чи достатньо фігури або індикатора для угоди?</h3><p>Ні. В авторському підході форма чи розрахункова лінія не замінює перевірки рівня й подальшої реакції. Правило угоди має включати умову помилки та вихід, а не лише знайомий малюнок.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-07" class="linkrefinto">Докладний розбір</a></p></div><div id="question-uk-chart-reading-12-card" class="faq-item"><p class="faq-topic-label"><em>Ціна та обсяг</em></p><h3 id="question-uk-chart-reading-12">Як перейти від графіка ціни до аналізу обсягів?</h3><p>Зіставляйте проторговану кількість із просуванням ціни й реакцією біля меж. Використовуйте одне джерело та масштаб; великий обсяг не доводить власника чи майбутнього напрямку.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-reading#topic-07" class="linkrefinto">Докладний розбір</a></p></div></section><section id="topic-breakout-strategy" aria-labelledby="heading-breakout-strategy" class="faq-reading-topic"><h2 id="heading-breakout-strategy">2. Пробій і ретест</h2><div id="question-p013-s01" class="faq-item"><p class="faq-topic-label"><em>Пробій рівня</em></p><h3 id="question-uk-breakout-strategy-01">Що таке пробій рівня?</h3><p>Це вихід ціни за заздалегідь позначену підтримку, область зупинок падіння, або опір, область зупинок зростання. Короткий прохід крайніх цін і закриття за областю є різними критеріями; обраний критерій фіксують до результату.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/breakout-strategy" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p013-s02" class="faq-item"><p class="faq-topic-label"><em>Хибний пробій</em></p><h3 id="question-uk-breakout-strategy-02">Як відрізнити справжній пробій від хибного?</h3><p>Після хибного виходу ціна повертається всередину. Для продовження перевіряють утримання з нового боку та відновлення руху. Обсяг порівнюють із цією реакцією: високий стовпчик сам по собі нічого не гарантує.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/breakout-strategy" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p013-s03" class="faq-item"><p class="faq-topic-label"><em>Стопи за рівнем</em></p><h3 id="question-uk-breakout-strategy-03">Чому ціна пробиває рівень і повертається?</h3><p>За межею можуть активуватися захисні заявки й заявки на вхід. Доданий потік зустрічає протилежні заявки, а наступні рішення можуть змінити напрямок. Це можливий механізм, а не доказ навмисного збору стопів конкретним учасником.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/breakout-strategy" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p013-s04" class="faq-item"><p class="faq-topic-label"><em>Ретест</em></p><h3 id="question-uk-breakout-strategy-04">Чим вхід на ретесті відрізняється від входу на пробої?</h3><p>Під час виходу приймають ризик швидкого повернення. На ретесті чекають повторного підходу та наступної реакції. У курсі Арапов перевіряє відкат і відновлення руху; за відсутності повернення цей варіант входу не виникає. Цю послідовність розкриває <a href="https://arapov.trade/uk/freestudying/freeeducation#entry" class="linkrefinto">курсовий розбір входу після відкату</a>.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/breakout-strategy" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p013-s05" class="faq-item"><p class="faq-topic-label"><em>Стоп на пробої</em></p><h3 id="question-uk-breakout-strategy-05">Де ставити стоп і ціль при пробої?</h3><p>Стоп, захисну заявку на вихід, пов’язують із рухом, що скасує ідею, з урахуванням входу й меж реакції; мету з наступною значущою областю. Фактичне виконання стопа може відрізнятися від активації, а співвідношення відстаней не визначає ймовірності успіху.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/breakout-strategy" class="linkrefinto">Докладний розбір</a></p></div></section><section id="topic-candlestick-patterns" aria-labelledby="heading-candlestick-patterns" class="faq-reading-topic"><h2 id="heading-candlestick-patterns">3. Свічкові патерни</h2><div id="question-p014-s01" class="faq-item"><p class="faq-topic-label"><em>Японська свічка</em></p><h3 id="question-uk-candlestick-patterns-01">Що показує японська свічка?</h3><p>Ціни відкриття, закриття, максимум і мінімум. Тіло показує різницю між відкриттям і закриттям, тіні — крайні ціни.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p014-s02" class="faq-item"><p class="faq-topic-label"><em>Бичача й ведмежа свічка</em></p><h3 id="question-uk-candlestick-patterns-02">Чим бичача свічка відрізняється від ведмежої?</h3><p>Бичача закрилася вище відкриття, ведмежа — нижче. Колір залежить від налаштувань, тому важливі саме ціни.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p014-s03" class="faq-item"><p class="faq-topic-label"><em>Пін-бар</em></p><h3 id="question-uk-candlestick-patterns-03">Що таке пін-бар?</h3><p>Свічка з невеликим тілом і довгою тінню. Вона показує повернення після руху в один бік; Арапов оцінює її біля значимого рівня.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p014-s04" class="faq-item"><p class="faq-topic-label"><em>Свічкове поглинання</em></p><h3 id="question-uk-candlestick-patterns-04">Що таке поглинання на графіку?</h3><p>Це дві свічки, де тіло другої перекриває тіло першої у протилежному напрямку. Значення залежить від місця появи й реакції ринку.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p014-s05" class="faq-item"><p class="faq-topic-label"><em>Молот, доджі та зірка</em></p><h3 id="question-uk-candlestick-patterns-05">Чим відрізняються молот, доджі та вечірня зірка?</h3><p>Молот має довгу нижню тінь, доджі закривається близько до відкриття. Вечірня зірка — модель із трьох свічок після зростання.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p014-s06" class="faq-item"><p class="faq-topic-label"><em>Свічкові сигнали</em></p><h3 id="question-uk-candlestick-patterns-06">Чи можна входити лише за свічковим патерном?</h3><p>Арапов не вважає форму достатньою. Потрібні місце на графіку, рівень і реакція обсягу; однакова свічка виникає в різних умовах.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-n020" class="faq-item"><p class="faq-topic-label"><em>Харамі</em></p><h3 id="question-uk-n020">Що таке харамі?</h3><p>Це модель, у якій тіло меншої свічки міститься в тілі попередньої більшої. Вона може означати паузу, але не підтверджує розворот сама.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div>
+<div class="flex" style="margin:24px 0"><img src="/assets/img/content/faq-candle-body-relations-uk.webp" alt="Поглинання: друге тіло перекриває перше; Харамі: друге тіло всередині першого; Форма сама не підтверджує розворот" class="pictureImg" loading="lazy" style="width:100%;height:auto;max-height:none;display:block;object-fit:contain" /></div><div id="question-f018" class="faq-item"><p class="faq-topic-label"><em>Повішений і молот</em></p><h3 id="question-uk-f018">Чим повішений відрізняється від молота?</h3><p>Вони схожі за формою: коротке тіло й довга нижня тінь. Молот розглядають після падіння, повішеного — після зростання.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/candlestick-patterns" class="linkrefinto">Докладний розбір</a></p></div></section><section id="topic-chart-patterns" aria-labelledby="heading-chart-patterns" class="faq-reading-topic"><h2 id="heading-chart-patterns">4. Графічні фігури</h2><div id="question-p010-s01" class="faq-item"><p class="faq-topic-label"><em>Патерни на графіку</em></p><h3 id="question-uk-chart-patterns-01">Що таке ціновий патерн?</h3><p>Це повторюване поєднання рухів і зупинок ціни, як-от трикутник чи подвійна вершина. Форма задає опорні точки для спостереження, але не доводить переваги в угоді.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s02" class="faq-item"><p class="faq-topic-label"><em>Розворот і продовження</em></p><h3 id="question-uk-chart-patterns-02">Чим фігура розвороту відрізняється від фігури продовження?</h3><p>Фігура розвороту описує можливу зміну попереднього напрямку, продовження паузу перед його відновленням. Потрібні попередній рух і перевірка фактичного виходу; назва не гарантує результату.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s03" class="faq-item"><p class="faq-topic-label"><em>Голова та плечі</em></p><h3 id="question-uk-chart-patterns-03">Як підтвердити фігуру «голова та плечі»?</h3><p>Після зростання перевіряють вихід униз за лінію через дві впадини між вершинами. До цього модель незавершена. Наступне повернення й обсяг порівнюють із реакцією, а не вважають гарантією нового тренду.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s04" class="faq-item"><p class="faq-topic-label"><em>Подвійна вершина й дно</em></p><h3 id="question-uk-chart-patterns-04">Чи гарантує подвійна вершина розворот?</h3><p>Ні. Два близькі максимуми можуть залишитися діапазоном. Для завершення моделі перевіряють вихід нижче проміжної впадини й наступну реакцію; повернення може спростувати сценарій.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s05" class="faq-item"><p class="faq-topic-label"><em>Трикутник</em></p><h3 id="question-uk-chart-patterns-05">Які бувають трикутники на графіку?</h3><p>Висхідні, низхідні та симетричні. У перших двох одна межа приблизно горизонтальна, у симетричного верхня йде вниз, нижня вгору. Реальний вихід може суперечити очікуванню за назвою.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div>
+<div class="flex" style="margin:24px 0"><img src="/assets/img/content/faq-triangle-boundaries-uk.webp" alt="Висхідний; Низхідний; Симетричний; Назва не визначає напрямку виходу" class="pictureImg" loading="lazy" style="width:100%;height:auto;max-height:none;display:block;object-fit:contain" /></div><div id="question-p010-s06" class="faq-item"><p class="faq-topic-label"><em>Прапор і вимпел</em></p><h3 id="question-uk-chart-patterns-06">Чим прапор відрізняється від вимпела?</h3><p>Обидва описують коротку паузу після різкого імпульсу. У прапора межі приблизно паралельні, у вимпела сходяться. Без першого ривка немає необхідної ознаки цих моделей.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s07" class="faq-item"><p class="faq-topic-label"><em>Чашка з ручкою</em></p><h3 id="question-uk-chart-patterns-07">Що таке «чашка з ручкою»?</h3><p>Це округле зниження та відновлення до верхньої області з меншим відкатом праворуч, ручкою. У своєму розборі Арапов чекає закріплення вище й перевіряє обсяг; хибний вихід можливий, але не обов’язковий.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s08" class="faq-item"><p class="faq-topic-label"><em>Патерн 1-2-3</em></p><h3 id="question-uk-chart-patterns-08">Що таке патерн 1-2-3?</h3><p>У бичачому варіанті це мінімум 1, максимум відскоку 2 та вищий мінімум 3. Вихід за точку 2 завершує геометрію; ранній вхід біля точки 3 ще не має цього підтвердження. Для падіння порядок дзеркальний.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p010-s09" class="faq-item"><p class="faq-topic-label"><em>Перевірка входу</em></p><h3 id="question-uk-chart-patterns-09">Чому фігури на графіку недостатньо для входу?</h3><p>Форма не задає повної угоди й допускає невдалий вихід. У курсі Арапов перевіряє прохід рівня зміни пріоритету, утримання нової області та зміну структури; до входу потрібні умова скасування й допустима втрата.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div><div id="question-n017" class="faq-item"><p class="faq-topic-label"><em>Клин</em></p><h3 id="question-uk-n017">Що таке висхідний і низхідний клин?</h3><p>У висхідного клина обидві збіжні межі йдуть угору, у низхідного вниз. Класичний сценарій спрямований проти нахилу, але рішення потребує фактичного проходу відповідної межі й перевірки реакції.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/chart-patterns" class="linkrefinto">Докладний розбір</a></p></div></section><section id="topic-elliott-waves" aria-labelledby="heading-elliott-waves" class="faq-reading-topic"><h2 id="heading-elliott-waves">5. Хвилі Елліотта</h2><div id="question-p020-s01" class="faq-item"><p class="faq-topic-label"><em>П&#x27;ять хвиль і корекція</em></p><h3 id="question-uk-elliott-waves-01">Що таке хвилі Елліотта?</h3><p>Це спосіб описувати рух ціни через вкладені хвилі. Базова схема має п’ять хвиль напрямленого руху й корекцію A, B, C; корекції бувають складнішими. Розмітка є припущенням, а не точним майбутнім шляхом ціни.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/elliott-waves" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p020-s02" class="faq-item"><p class="faq-topic-label"><em>Імпульсні та корекційні хвилі</em></p><h3 id="question-uk-elliott-waves-02">Чим імпульсні хвилі відрізняються від корекційних?</h3><p>Звичайний імпульс просуває ціну через п’ять частин із двома внутрішніми поверненнями. Корекція протистоїть руху більшого масштабу; окрема її частина теж може мати імпульсну будову. Потрібно визначити масштаб і роль ділянки.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/elliott-waves" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p020-s03" class="faq-item"><p class="faq-topic-label"><em>Помилки хвильової розмітки</em></p><h3 id="question-uk-elliott-waves-03">Чому хвилі Елліотта можна розмітити по-різному?</h3><p>Різні початкові точки, ступені й межі незавершеної корекції дають різні варіанти. Кожен перевіряють за правилами й наперед записаним скасуванням. Арапов через цю суб’єктивність не торгує за Елліоттом і віддає перевагу рівням, обсягу та фазам.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/elliott-waves" class="linkrefinto">Докладний розбір</a></p></div></section><section id="topic-fibonacci-levels" aria-labelledby="heading-fibonacci-levels" class="faq-reading-topic"><h2 id="heading-fibonacci-levels">6. Рівні Фібоначчі</h2><div id="question-p025-s01" class="faq-item"><p class="faq-topic-label"><em>Корекція Фібоначчі</em></p><h3 id="question-uk-fibonacci-levels-01">Що показують рівні Фібоначчі?</h3><p>Рівні позначають частки повернення від одного вибраного руху ціни. Це частка його довжини, а не відсоткова зміна вартості активу або ймовірність розвороту.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p025-s02" class="faq-item"><p class="faq-topic-label"><em>Сітка Фібоначчі</em></p><h3 id="question-uk-fibonacci-levels-02">Як побудувати сітку Фібоначчі?</h3><p>Виберіть початок і кінець однієї хвилі, звірте крайні ціни, напрямок відліку та лінійний чи логарифмічний розрахунок. Збережіть початкові точки до наступних барів, щоб не підганяти сітку під результат.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p025-s03" class="faq-item"><p class="faq-topic-label"><em>Рівні 38,2 і 61,8</em></p><h3 id="question-uk-fibonacci-levels-03">Що означають 38,2%, 50% і 61,8%?</h3><p>38,2% і 61,8% походять із відношень чисел Фібоначчі; 50% є серединою руху. Вони позначають різну глибину повернення, але не визначають єдиного найкращого входу.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels" class="linkrefinto">Докладний розбір</a></p></div>
+<div class="flex" style="margin:24px 0"><img src="/assets/img/content/faq-fibonacci-return-fractions-uk.webp" alt="Лінійний відлік; Початок; Кінець; 50%: середина; Інші глибини: 38,2% • 61,8%; Не ймовірність розвороту" class="pictureImg" loading="lazy" style="width:100%;height:auto;max-height:none;display:block;object-fit:contain" /></div><div id="question-p025-s04" class="faq-item"><p class="faq-topic-label"><em>Ціна біля рівня Фібоначчі</em></p><h3>Чому ціна не розвертається на рівні Фібоначчі?</h3><p>Позначка показує частку вибраного руху й не керує ціною. Ринок може пройти її без помітної зупинки; потрібні фактична реакція та заздалегідь визначені умови перевірки.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels#topic-04" class="linkrefinto">Докладний розбір</a></p></div><div id="question-p025-s05" class="faq-item"></div><div id="question-p025-s06" class="faq-item"><p class="faq-topic-label"><em>Фібоначчі та обсяги</em></p><h3 id="question-uk-fibonacci-levels-04">Як використовувати Фібоначчі разом з обсягами?</h3><p>Позначку зіставляють із ціновою областю та наступною реакцією: зупинкою, поверненням і новим рухом. Обсяг означає кількість проторгованих одиниць; його збільшення без потрібної реакції не доводить розвороту.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels" class="linkrefinto">Докладний розбір</a></p></div><div id="question-f033" class="faq-item"><p class="faq-topic-label"><em>Розширення Фібоначчі</em></p><h3 id="question-uk-f033">Чим розширення відрізняється від корекції Фібоначчі?</h3><p>Корекція вимірює повернення від вибраного руху, а розширення та проєкції дають орієнтири продовження. У триточковій проєкції A позначає початок вибраного руху, B його кінець, C завершення наступного повернення. Довжину A–B відкладають від C, тому позначка не обов’язково виходить за попередній діапазон.</p><p class="faq-source"><a href="https://arapov.trade/uk/freestudying/fibonacci-levels" class="linkrefinto">Докладний розбір</a></p></div></section><nav aria-label="Інші теми запитань і відповідей" class="faq-reading-nav"><h2>Інші теми бібліотеки</h2><ul><li><a href="/uk/freestudying/trading-faq-getting-started" class="linkrefinto">Початок торгівлі й торгова система</a></li><li><a href="/uk/freestudying/trading-faq-risk-psychology" class="linkrefinto">Ризик і психологія трейдингу</a></li><li><a href="/uk/freestudying/trading-faq-indicators" class="linkrefinto">Індикатори й волатильність</a></li><li><a href="/uk/freestudying/trading-faq-financial-markets" class="linkrefinto">Як влаштовані фінансові ринки</a></li><li><a href="/uk/freestudying/trading-faq-volume-wyckoff-smc" class="linkrefinto">Об’ємний аналіз, Вайкофф і Smart Money</a></li><li><a href="/uk/freestudying/trading-faq-crypto-mechanics" class="linkrefinto">Криптовалюти: устрій і безпека</a></li><li><a href="/uk/freestudying/trading-faq-bitcoin-altcoins" class="linkrefinto">Bitcoin, альткоїни й ринкові цикли</a></li></ul><p><a href="/uk/freestudying/trading-faq" class="linkrefinto">Повернутися до загальної карти запитань і відповідей</a></p></nav><section class="faq-reading-about"><h2>Про матеріали бібліотеки</h2><p>Розділ укладено за матеріалами бібліотеки ArapovTrade. Тут зібрано визначення, порівняння й пояснення підходу Ігоря Арапова; умови кожного питання розкриває відповідний докладний матеріал.</p><p>Автор бібліотеки <a href="https://arapov.trade/uk" class="linkrefinto"><strong>Ігор Арапов</strong></a>, практикуючий трейдер з 2013 року. Короткі відповіді допомагають зорієнтуватися; докладні матеріали пояснюють механізм і межі застосування.</p></section></article>
 
 
              <div
@@ -572,7 +264,7 @@
                    class="side-bar_groups-title"
                    [ngStyle]="{ color: '#ffffff' }"
                  >
-                   Наші проєкти доступні кожному охочому
+                   Наші проєкти доступні всім охочим
                    <hr
                      [ngStyle]="{
                        border: isDark
@@ -589,7 +281,8 @@
                      class="our_projects_title"
                      [ngStyle]="{ color: '#ffffff' }"
                    >
-                     Оберіть тему, яка вас цікавить, і почніть навчання
+                     Вибирайте тему, яка вас цікавить, і починайте
+                     навчання
                    </div>
 
 
@@ -627,6 +320,8 @@
    </div>
  </div>
 </section>
+
+
 
 
 

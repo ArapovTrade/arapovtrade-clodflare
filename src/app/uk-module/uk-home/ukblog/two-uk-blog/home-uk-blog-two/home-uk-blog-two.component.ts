@@ -57,7 +57,7 @@ export class HomeUkBlogTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Зони ліквідності в трейдингу: де полюють на стопи',
+      'Пули ліквідності у трейдингу: можливі зони стопів',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -65,7 +65,7 @@ export class HomeUkBlogTwoComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Що таке пули ліквідності, як Smart Money знаходять ліквідність за рівнями і використовують приховані зони для маніпуляції ціною.',
+        'Як позначити можливі скупчення заявок біля рівня та перевірити реакцію після виходу. Зона на графіку є гіпотезою, а не повною картою стопів.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
