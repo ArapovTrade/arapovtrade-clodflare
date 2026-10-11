@@ -65,7 +65,7 @@ export class HomeEnBlogOnehundredSixComponent implements OnInit {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Explore Igor Arapov’s free trading library, practical course, books and Russian-language videos. Find author information, publication identifiers and public records.',
+        'Explore Igor Arapov’s free trading library, practical course, books and videos. Find author information, publication identifiers and public records.',
     });
 
     this.gerRandom();

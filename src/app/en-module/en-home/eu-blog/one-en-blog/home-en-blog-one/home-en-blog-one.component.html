@@ -24,13 +24,17 @@
 <p>A bullish FVG exists when the third candle's low is above the first candle's high. The first high is the lower boundary and the third low is the upper boundary. If those prices are equal, there is no positive-width area between them.</p>
 <p>A bearish FVG exists when the third candle's high is below the first candle's low. The third high is the lower boundary and the first low is the upper boundary. Check those prices directly; one candle's colour does not establish the pattern.</p>
 <p>Consider a hypothetical example with prices expressed in arbitrary price points. The first candle's high is 100 and the third candle's low is 103. The bullish area has a width of 103 minus 100, or 3 points. A later decline to 102 enters the area but has not crossed it to the lower boundary at 100. This calculation establishes geometry, not a trade's profitability.</p>
+<!-- Added English explanatory diagram: fvg-three-point-example-en.webp -->
+<img src="/assets/img/content/fvg-three-point-example-en.webp" alt="Hypothetical price-point area between100and103 has width3; later102 enters without reaching100" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain">
 <p>Confirm the pattern after the third candle closes. While it is forming, its high or low can change and remove the apparent non-overlap. An indicator's temporary rectangle is not necessarily a completed FVG.</p>
 <p>Use ordinary candles for the selected instrument and data source. Heikin Ashi candles use calculated prices, so their boundaries are not automatically prices available for execution. Changing the candle period, included trading hours or quote feed can also change the shape. Save these settings with the marking so the test uses the same data.</p>
-<img class="pictureImg" src="/assets/img/content/imbalanceintrading2.webp" alt="Marking an FVG from three completed candles" loading="lazy" />
+<img class="pictureImg" src="/assets/img/content/imbalanceintrading2.webp" alt="Bullish and bearish FVG boundaries compare first and third completed candle full ranges including shadows" loading="lazy" />
 </section>
 <section><h2 id="topic-03">Returns and FVG fills</h2>
 <p>A return means that later price movement reaches the marked area. Touching the nearest boundary, entering part of the area and reaching its far boundary are different events. Decide which you call a fill before testing. Otherwise, the same chart can be counted differently after the outcome is known.</p>
 <p>Some methods use the midpoint as a place to watch. That is a chosen condition, not a price at which the market must reverse. Even a full crossing of a bullish FVG does not establish a successful next purchase: price can continue below the lower boundary.</p>
+<!-- Added English explanatory diagram: fvg-fill-definitions-en.webp -->
+<img src="/assets/img/content/fvg-fill-definitions-en.webp" alt="Define touch, partial entry and reaching the far boundary as different recorded events before testing" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain">
 <p>The area can remain unvisited while new orders or news support further movement. A rectangle does not prove that institutional orders are waiting inside it. Even an order that once existed could be changed or cancelled. Neither the name nor the old price pattern guarantees later trading interest.</p>
 <p>If price crosses the area and later reacts to it from the opposite side, some methods mark an inverse FVG, or IFVG. This describes a possible change of role. Define the test beforehand, such as a close beyond the far boundary followed by a reaction from the other side. Crossing alone does not establish future support or resistance.</p>
 <p>An ordinary price gap between two neighbouring candles is a different construction. The three-candle FVG compares the first and third, while the middle candle may have traded through the area. Do not import the explanation that no transactions occurred merely because both constructions use the word gap.</p>
@@ -41,6 +45,8 @@
 <p>An order block is marked from the selected candle near the move's starting area; an FVG comes from the non-overlap in the three-candle sequence. They can sit nearby or overlap while describing the same move. Counting them as two independent confirmations can exaggerate the evidence. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-block">order-block guide</a> explains how to test the starting area.</p>
 <p>On a return, check whether movement against the intended trade stops and movement in the intended direction resumes. A lower-volume pullback, a temporary move against the earlier advance or decline, is not an entry without that reaction. If price keeps crossing the area, reassess the expected bounce instead of moving its boundaries after the fact.</p>
 <p>A limit order inside the area specifies a price restriction but does not guarantee a trade. A market order after confirmation can fill at a different price. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-types">order-types guide</a> explains these execution choices. Record reaching the chart area separately from actually receiving a fill.</p>
+<!-- Added English explanatory diagram: fvg-area-reaction-fill-en.webp -->
+<img src="/assets/img/content/fvg-area-reaction-fill-en.webp" alt="Reaching the area and observing a required reaction are chart conditions; order execution is separate and not guaranteed" class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain">
 <p>Choose the cancellation condition from the movement that would contradict the scenario, not just the convenient width of the rectangle. An FVG's far boundary is not a universal stop location. A protective stop is an instruction intended to close a position when its trigger condition is met; its execution price is not guaranteed. If the required distance creates excessive planned loss, reduce the quantity or skip the trade. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/risk-management">risk-management guide</a> explains sizing.</p>
 </section>
 <section><h2 id="topic-05">How this relates to my trading system</h2>
@@ -389,3 +395,5 @@
    </div>
  </div>
 </section>
+
+

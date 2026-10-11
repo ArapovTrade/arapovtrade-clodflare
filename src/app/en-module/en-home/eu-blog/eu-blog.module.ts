@@ -21,7 +21,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'about', //106 1 
+        path: 'about', //106 1  
         loadChildren: () =>
           import('../eu-blog/onehundred-six-en-blog/onehundred-six-en-blog.module').then(
             (m) => m.OnehundredSixEnBlogModule,

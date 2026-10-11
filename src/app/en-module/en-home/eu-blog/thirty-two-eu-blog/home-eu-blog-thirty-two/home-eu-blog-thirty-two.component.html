@@ -16,7 +16,7 @@
 <p>The exchange operates a trading venue. A broker serves the account holder and accepts instructions to buy or sell. The exchange sets rules for its markets and eligible participants; the broker provides the service through which a retail customer sends an order.</p>
 <p>Your trading platform displays information and sends commands. Its appearance does not establish where those commands execute. A broker can send an order to different venues, or act as a dealer and take the other side itself. Read the account's execution terms to identify the arrangement. The guide to <a class="linkrefinto" href="https://arapov.trade/en/freestudying/platforms-broker">trading platforms and brokers</a> explains what to check when selecting that service.</p>
 <p>In an <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Over-the-counter market" />over-the-counter market</dfn>, or OTC market, trading takes place through dealers and other arrangements rather than one shared exchange for the entire market. Off-exchange does not automatically mean unregulated or fraudulent. Even an exchange-listed share can trade away from its listing exchange.</p>
-<div class="flex"><img class="pictureImg" src="/assets/img/content/otcvsexchange.webp" alt="Exchange and OTC market comparison" loading="lazy" /></div>
+<div class="flex"><img loading="lazy" src="/assets/img/content/otcvsexchange.webp" alt="Venue and account service" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;"></div>
 </section>
 <section><h2 id="topic-02">Who takes part in exchange trading?</h2>
 <p>Participants include individuals, banks, funds and companies. They may want to own an investment, make a short-term trade or reduce the risk of a changing price. An order's size does not reveal that purpose. A large sale could close an existing investment or create a new position.</p>
@@ -34,11 +34,17 @@
 <p>An order is an instruction with conditions. You specify the instrument, whether to buy or sell, the quantity and the order type. The broker checks the instruction against the account's permissions and requirements before it can proceed to execution.</p>
 <p>In continuous electronic exchange trading, the trading system matches compatible buying and selling instructions. The prices matter, but so do the venue's rules for allocating available quantity. Not every venue uses the same queue priority.</p>
 <p>Submission, acceptance and execution are different events. An accepted order might wait, execute only in part or later be cancelled. A rejected instruction has not created the requested trade. Check the execution status and quantity actually bought or sold before treating the position as open. Repeating an order merely because you have not noticed its confirmation can create an unintended additional position.</p>
+<!-- English educational illustration: exchange-order-states-en.webp -->
+<img loading="lazy" src="/assets/img/content/exchange-order-states-en.webp" alt="Acceptance is not execution" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 </section>
 <section><h2 id="topic-05">What do quotes, the order book and the trade tape show?</h2>
 <p><strong>Bid</strong> is the highest available buying quote in the displayed data; <strong>Ask</strong> is the lowest selling quote. The difference is the spread. <strong>Last</strong> is the price of the most recent completed trade. That trade is in the past, so its price may no longer be available for your next order.</p>
 <p>The order book displays buying and selling instructions, commonly grouped by price. Your subscription and platform determine how much depth you see. This is not a complete list of everyone’s intentions: some quantity is hidden, instructions can be withdrawn, and many stop orders do not appear as ordinary waiting orders.</p>
 <p>The trade tape records completed trades, with their prices and quantities. The book shows what is currently offered; the tape shows what has executed. Creating or cancelling a waiting order can change a quote without producing a new trade.</p>
+<!-- English educational illustration: exchange-quotes-records-en.webp -->
+<img loading="lazy" src="/assets/img/content/exchange-quotes-records-en.webp" alt="Quotes, instructions and completed trades" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Check which price your chart uses. One feed may plot Last, while another shows Bid, Ask or a calculated value. They can describe the same instrument differently. The fuller guide to <a class="linkrefinto" href="https://arapov.trade/en/freestudying/market-microstructure">market microstructure</a> explains how quotes, displayed quantity and execution interact.</p>
 </section>
 <section><h2 id="topic-06">Why can trades take place at different prices?</h2>
@@ -50,15 +56,18 @@
 <section><h2 id="topic-07">What happens after execution?</h2>
 <p><strong>Clearing</strong> establishes the obligations created by completed trades. In a system with a central counterparty, that organisation becomes the buyer to the seller and seller to the buyer for its clearing participants. It uses rules, limits and collateral, funds or eligible assets pledged against obligations, to manage the risk of a participant failing to perform.</p>
 <p><strong>Settlement</strong> fulfils the obligations by transferring money, securities or contractually specified payments. Its timing and procedure depend on the product and market. Seeing an executed trade in the terminal does not mean that every later transfer is already complete.</p>
+<!-- English educational illustration: exchange-settlement-en.webp -->
+<img loading="lazy" src="/assets/img/content/exchange-settlement-en.webp" alt="After execution" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Central clearing reduces certain risks between counterparties. It does not remove a loss caused by the market moving against your position, or eliminate every operational risk. Nor does clearing certify that every volume display is accurate or impossible to manipulate. A data figure still needs an identified source and method.</p>
 </section>
 <section><h2 id="topic-08">Which market does your data actually cover?</h2>
 <p>Exchange trading volume records completed trades in the selected instrument within the stated data source. It is normally measured in shares, contracts or other units traded, rather than the number of separate transactions. Volume in a currency future is not the total quantity of that currency traded worldwide.</p>
 <p>The same asset can trade at more than one venue. One exchange's order book is not the whole market's book, and its trade feed need not include trades elsewhere. If a provider combines feeds, check which sources it includes.</p>
 <p>Spot Forex, the market for exchanging currencies, mainly operates through banks, dealers and electronic systems outside a single central exchange. There is no one publicly available book of all currency transactions. A platform's tick volume may count updates in its quotation stream, rather than the total currency quantity traded. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/forex-guide">guide to Forex</a> explains those arrangements.</p>
- 
+<div class="flex"><img loading="lazy" src="/assets/img/content/currencyfloating1.webp" alt="Identify what the data counts" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;"></div>
 <p>Identifying the source comes before interpreting volume. Completed trading activity does not label its owners as a particular bank or fund. The guide to <a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">volume analysis</a> explains how to relate that activity to price, once the data's scope is understood.</p>
-<div class="flex"><img class="pictureImg" src="/assets/img/content/currencyfloating2.webp" alt="Central banks and currency markets" loading="lazy" /></div>
+<div class="flex"></div>
 </section>
 <section><h2 id="topic-09">Why do trading hours matter?</h2>
 <p>Each venue and product has its own schedule, including breaks and sometimes separate auctions. In an auction, instructions can accumulate before matching at a common price under the auction's rules. That differs from matching successive instructions during continuous trading. A platform remaining online does not mean every product is open for execution.</p>

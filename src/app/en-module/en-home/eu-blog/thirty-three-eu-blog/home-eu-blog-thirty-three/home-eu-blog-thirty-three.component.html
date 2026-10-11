@@ -18,7 +18,7 @@
 <p>The <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Bid-ask spread"><strong>spread</strong></dfn> is the difference between the best ask and bid. Buying at the ask and immediately selling at the bid with unchanged quotes loses that difference before fees. In <a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-styles">short-term trading</a>, it can consume a substantial part of a small price target.</p>
 <p>The spread changes when orders change. Participants may withdraw quotes before news or offer more competitive prices when trading activity returns. A waiting limit order can avoid accepting the current ask or bid, but the trade may never happen. Compare the actual execution conditions rather than assuming that a low advertised spread means low total costs.</p>
 <img class="pictureImg" src="/assets/img/content/pricingandliquidity1.png" alt="How orders and liquidity affect available prices" loading="lazy" />
-<img class="pictureImg" src="/assets/img/content/spread1.jpg" alt="Bid and ask prices in a trading terminal" loading="lazy" />
+<img loading="lazy" src="/assets/img/content/spread1.jpg" alt="The unchanged-quote round trip" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
 </section><section><h2 id="topic-02">What an order book shows</h2>
 <p>The <dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Order book"><strong>order book</strong></dfn> lists visible buy and sell orders by price. Each row usually shows the combined quantity offered at that level, measured in shares, contracts or other units. This is quantity waiting to trade, not completed trading volume.</p>
 <p>A row showing 500 contracts might combine several orders. It does not mean 500 traders, and it does not identify a particular bank or fund. Even a feed showing individual orders may conceal who owns them. Size alone cannot establish the participant's identity or reason for trading.</p>
@@ -28,6 +28,9 @@
 </section><section><h2 id="topic-03">How orders match and prices move</h2>
 <p>A market order seeks a trade against available orders without setting a fixed execution price. A limit order specifies the highest buying price or lowest selling price you will accept. A limit can wait in the book, but it can also trade immediately if existing prices satisfy that limit. Activation, price protection and order duration are covered fully in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/order-types">trading order types</a>.</p>
 <p>A <strong>maker</strong> adds waiting quantity to the book. A <strong>taker</strong> trades against quantity already available. These describe execution roles, not two permanent kinds of trader. An immediately executable limit order can be a taker. Fee schedules may distinguish the roles, so do not assume that every limit order receives the maker rate.</p>
+<!-- English educational illustration: micro-maker-taker-en.webp -->
+<img loading="lazy" src="/assets/img/content/micro-maker-taker-en.webp" alt="Maker and taker are execution roles" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Several orders can wait at the same price. With price-time priority, the better price comes first and earlier orders have priority within that price. Other products allocate trades partly by order size or use a combination of rules. A price appearing on the chart therefore does not establish that your place in the queue was reached.</p>
 <p>Every completed trade has a buyer and a seller. Prices do not rise because a trade has more buyers than sellers. Later trades can occur at higher prices when buyers accept higher offers after the quantity at lower prices has traded or been withdrawn. Selling against bids can move execution down through the buying side in the same way.</p>
 <p>Quotes can change without a trade. Removing the best sell order can raise the ask; adding a sell order inside the spread can lower it. That changes an available offer, not necessarily the last-traded price. Separate quote updates from executions when explaining a movement.</p>
@@ -36,12 +39,18 @@
 <p><strong>Slippage</strong> is a difference between the execution price and the price you expected. It can arise when an order uses several price levels or when quotes change while the instruction travels from your terminal. A limit controls the acceptable price, but may leave some or all of the order unexecuted. Trading halts and venue protections can also prevent execution.</p>
 <p>Consider a simplified futures book with prices in illustrative points, before fees. Sellers offer 20 contracts at 100 and 30 at 101. A market buy for 50 contracts takes both rows if those offers remain available and the venue permits the execution. Its average price is (20 × 100 + 30 × 101) ÷ 50 = 100.60 points. The visible ask of 100 covered only the first 20 contracts.</p>
 <p>A buy limit of 100 in the same book can trade only the 20 contracts available at that acceptable price. The remaining quantity may wait or be cancelled according to the instruction's conditions. Price control and immediate completion are separate choices; neither tells you where the market will move next.</p>
+<!-- English educational illustration: micro-worked-fills-en.webp -->
+<img loading="lazy" src="/assets/img/content/micro-worked-fills-en.webp" alt="One book, different price controls" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Low liquidity can accompany sharp price changes, but liquidity is not the same as volatility, the size of price fluctuations. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/atr-indicator">ATR indicator</a> illustrated below measures price ranges, not the number of contracts available to buy or sell. Its reading cannot reconstruct the order book.</p>
-<img class="pictureImg" src="/assets/img/content/volatility1.webp" alt="Price fluctuations measured by ATR" loading="lazy" />
+<img loading="lazy" src="/assets/img/content/volatility1.webp" alt="Price ranges do not reveal available quantity" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
 </section><section><h2 id="topic-05">Completed trades and hidden orders</h2>
 <p>The <strong>trade tape</strong> records completed trades with their time, price and quantity. The book shows offers; the tape shows executions. A trade of 100 contracts contributes volume of 100, not 200: its buying and selling sides are not counted twice. <a class="linkrefinto" href="https://arapov.trade/en/freestudying/volume-analysis">Volume analysis</a> explains how completed quantity relates to price movement on the chart.</p>
 <p>A trade described as buying at the ask usually means that the initiating order accepted a seller's offer. It still has a seller. Check how your platform assigns that label: the exchange may supply the active side, or software may estimate it from prices and quotes. A colour on the tape is not a statement of the trader's intention.</p>
 <p>An iceberg order displays only part of its quantity. Another portion may appear after the displayed part trades, allowing more quantity to execute at a price than a screenshot showed. Repeated replenishment can suggest hidden interest, but new independent orders can produce a similar pattern.</p>
+<!-- English educational illustration: micro-iceberg-en.webp -->
+<img loading="lazy" src="/assets/img/content/micro-iceberg-en.webp" alt="Replenishment is evidence to check" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;">
+
 <p>Stops generally do not appear as ordinary executable limits before activation; the broker and venue determine how they are held and triggered. A concentration of stops beyond a high is an inference about behaviour, not a list read directly from the book. The interpretation of those areas is developed separately in <a class="linkrefinto" href="https://arapov.trade/en/freestudying/liquidity-pools">liquidity pools in trading</a>.</p>
 <p>Spoofing involves orders entered with an intention to cancel them before execution to mislead other participants. One cancelled row does not establish that intention. An iceberg used to execute a genuine trade is not spoofing merely because part of its quantity is hidden.</p>
 </section><section><h2 id="topic-06">What a market maker does</h2>
@@ -391,7 +400,7 @@
          </div>
        </div>
      </div>
-   </div>
+   </div> 
  </div>
 </section>
 
