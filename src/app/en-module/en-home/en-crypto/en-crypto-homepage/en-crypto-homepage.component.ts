@@ -56,7 +56,7 @@ export class EnCryptoHomepageComponent
     this.meta.updateTag({
       name: 'description',
       content:
-        'Arapov.Trade offers free trading and financial markets education: courses, articles, market analysis, risk management, psychology and crypto.',
+        'Explore free trading courses, articles, videos and books on market analysis, risk management and psychology. Choose a learning path for your level.',
     });
 
     this.meta.updateTag({
@@ -64,23 +64,128 @@ export class EnCryptoHomepageComponent
       content:
         'Trading, Trading education , Technical analysis, Financial exchange, Trading system, Igor Arapov',
     });
-    this.meta.updateTag({
+    
+    this.meta.updateTag({ name: 'datePublished', content: '2025-06-07' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-12' });
+ 
+
+
+   
+// Open Graph + Twitter Card — English homepage
+
+const ogImage =
+  'https://arapov.trade/assets/redesignArapovTrade/img/arapovtrade-banner-en.jpg';
+
+const ogTitle =
+  'Free Trading Education and Financial Markets | Arapov.Trade';
+
+const ogDescription =
+  'Explore free trading courses, articles, videos and books on market analysis, risk management and psychology. Choose a learning path for your level.';
+
+const ogImageAlt =
+  'Arapov.Trade — Free trading education platform';
+
+const pageUrl = 'https://arapov.trade/en/main';
+
+// Open Graph
+this.meta.updateTag({
+  property: 'og:site_name',
+  content: 'Arapov.Trade',
+});
+
+this.meta.updateTag({
+  property: 'og:type',
+  content: 'website',
+});
+
+this.meta.updateTag({
+  property: 'og:locale',
+  content: 'en_US',
+});
+
+this.meta.updateTag({
+  property: 'og:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
   property: 'og:title',
-  content: 'Arapov.Trade — Free Trading Education Platform',
+  content: ogTitle,
 });
 
 this.meta.updateTag({
   property: 'og:description',
-  content:
-    'A free financial markets education ecosystem with a step-by-step trading course, articles, videos and books on market analysis and risk management.',
+  content: ogDescription,
 });
-    this.meta.updateTag({ name: 'datePublished', content: '2025-06-07' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-05-29' });
 
-    this.meta.updateTag({
-      property: 'og:image',
-      content: 'https://arapov.trade/assets/img/photo_mainpage.jpg',
-    });
+this.meta.updateTag({
+  property: 'og:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:secure_url',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:type',
+  content: 'image/jpeg',
+});
+
+this.meta.updateTag({
+  property: 'og:image:width',
+  content: '1200',
+});
+
+this.meta.updateTag({
+  property: 'og:image:height',
+  content: '630',
+});
+
+this.meta.updateTag({
+  property: 'og:image:alt',
+  content: ogImageAlt,
+});
+
+// Twitter Card
+this.meta.updateTag({
+  name: 'twitter:card',
+  content: 'summary_large_image',
+});
+
+this.meta.updateTag({
+  name: 'twitter:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  name: 'twitter:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  name: 'twitter:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image:alt',
+  content: ogImageAlt,
+});
+
+
+
+
+
+
+
+
     this.addWebSiteSchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {

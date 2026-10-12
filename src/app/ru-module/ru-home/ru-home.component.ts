@@ -83,22 +83,144 @@ export class RuHomeComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
 
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-24' });
-    this.meta.updateTag({
-      name: 'citation_keywords',
-      content:
-        'когнитивные искажения, поведенческие финансы, трейдинг, УДК 336.76:159.9',
-    });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-12' });
+     
     this.meta.updateTag({
       name: 'description',
       content:
-        'Игорь Арапов — специалист финансовых рынков и трейдер с 2013 года. Профессиональная подготовка по регулированию рынков капитала, исследования, книги и академическая деятельность.',
+        'Биография Игоря Арапова: опыт торговли с 2013 года, профессиональная подготовка, книги и исследования психологии инвестиционных решений.',
     });
     this.meta.updateTag({
       name: 'keywords',
       content:
         'обучение трейдингу, курсы трейдинга, трейдинг онлайн, трейдинг с нуля, криптовалюты, валютные пары',
     });
+
+
+    // Open Graph + Twitter Card — Russian author page
+
+const ogImage =
+  'https://arapov.trade/assets/redesignArapovTrade/img/igor-arapov-author-ru.jpg';
+
+const ogTitle = 'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade';
+
+const ogDescription =
+  'Биография Игоря Арапова: опыт торговли с 2013 года, профессиональная подготовка, книги и исследования психологии инвестиционных решений.';
+
+const ogImageAlt = 'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade';
+
+const pageUrl = 'https://arapov.trade/ru';
+
+// Open Graph
+this.meta.updateTag({
+  property: 'og:site_name',
+  content: 'Arapov.Trade',
+});
+
+this.meta.updateTag({
+  property: 'og:type',
+  content: 'profile',
+});
+
+this.meta.updateTag({
+  property: 'og:locale',
+  content: 'ru_RU',
+});
+
+this.meta.updateTag({
+  property: 'og:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  property: 'og:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  property: 'og:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  property: 'og:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:secure_url',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:type',
+  content: 'image/png',
+});
+
+this.meta.updateTag({
+  property: 'og:image:width',
+  content: '1200',
+});
+
+this.meta.updateTag({
+  property: 'og:image:height',
+  content: '630',
+});
+
+this.meta.updateTag({
+  property: 'og:image:alt',
+  content: ogImageAlt,
+});
+
+// Open Graph Profile fields
+this.meta.updateTag({
+  property: 'profile:first_name',
+  content: 'Игорь',
+});
+
+this.meta.updateTag({
+  property: 'profile:last_name',
+  content: 'Арапов',
+});
+
+// Twitter Card
+this.meta.updateTag({
+  name: 'twitter:card',
+  content: 'summary_large_image',
+});
+
+this.meta.updateTag({
+  name: 'twitter:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  name: 'twitter:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  name: 'twitter:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image:alt',
+  content: ogImageAlt,
+});
+
+
+
+
+
+
+
+
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();

@@ -133,6 +133,118 @@ export class RuBlogHomepageComponent implements OnInit {
         'Бесплатное обучение трейдингу с нуля: пошаговый курс, 60 статей, технический и объёмный анализ, риск-менеджмент, криптовалюты и торговые стратегии.',
     });
 
+
+
+    // Open Graph + Twitter Card — Russian free studying (library) page
+
+const ogImage =
+  'https://arapov.trade/assets/redesignArapovTrade/img/trading-education-library-ru.jpg';
+
+const ogTitle = 'Бесплатное обучение трейдингу — библиотека Arapov.Trade';
+
+const ogDescription =
+  'Статьи по трейдингу: основы рынка, технический и объёмный анализ, психология, риск-менеджмент и криптовалюты. Тематический поиск и маршрут обучения.';
+
+const ogImageAlt = 'Arapov.Trade — Библиотека по трейдингу';
+
+const pageUrl = 'https://arapov.trade/ru/freestudying';
+
+// Open Graph
+this.meta.updateTag({
+  property: 'og:site_name',
+  content: 'Arapov.Trade',
+});
+
+this.meta.updateTag({
+  property: 'og:type',
+  content: 'website',
+});
+
+this.meta.updateTag({
+  property: 'og:locale',
+  content: 'ru_RU',
+});
+
+this.meta.updateTag({
+  property: 'og:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  property: 'og:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  property: 'og:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  property: 'og:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:secure_url',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:type',
+  content: 'image/jpeg',
+});
+
+this.meta.updateTag({
+  property: 'og:image:width',
+  content: '1200',
+});
+
+this.meta.updateTag({
+  property: 'og:image:height',
+  content: '630',
+});
+
+this.meta.updateTag({
+  property: 'og:image:alt',
+  content: ogImageAlt,
+});
+
+// Twitter Card
+this.meta.updateTag({
+  name: 'twitter:card',
+  content: 'summary_large_image',
+});
+
+this.meta.updateTag({
+  name: 'twitter:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  name: 'twitter:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  name: 'twitter:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image:alt',
+  content: ogImageAlt,
+});
+
+
+
+
+
     this.filteredArticles = this.artickleServ.russianssArticles();
     this.rusGroups = this.artickleServ.getRussianGroups();
     this.grr = this.artickleServ.selectedGroups;

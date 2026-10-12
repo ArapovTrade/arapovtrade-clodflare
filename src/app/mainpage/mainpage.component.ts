@@ -56,7 +56,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({
       name: 'description',
       content:
-        'Arapov.Trade — безкоштовне навчання трейдингу та фінансовим ринкам: курси, статті, аналіз ринку, ризик-менеджмент, психологія та криптовалюти.',
+        'Безкоштовна освітня екосистема про фінансові ринки: покроковий курс, статті, відео та книги з трейдингу, аналізу ринку й управління ризиками.',
     });
 
     this.meta.updateTag({
@@ -66,58 +66,127 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2025-06-07' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-05-29' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-12' });
+
+ 
 
 
-    this.meta.updateTag({
+   
+// Open Graph + Twitter Card — Ukrainian homepage
+
+const ogImage =
+  'https://arapov.trade/assets/redesignArapovTrade/img/arapovtrade-banner-uk.jpg';
+
+const ogTitle =
+  'Arapov.Trade — безкоштовна платформа з трейдингу';
+
+const ogDescription =
+  'Безкоштовна освітня екосистема про фінансові ринки: покроковий курс, статті, відео та книги з трейдингу, аналізу ринку й управління ризиками.';
+
+const ogImageAlt =
+  'Arapov.Trade — Безкоштовна платформа для вивчення трейдингу';
+
+const pageUrl = 'https://arapov.trade';
+
+// Open Graph
+this.meta.updateTag({
+  property: 'og:site_name',
+  content: 'Arapov.Trade',
+});
+
+this.meta.updateTag({
+  property: 'og:type',
+  content: 'website',
+});
+
+this.meta.updateTag({
+  property: 'og:locale',
+  content: 'uk_UA',
+});
+
+this.meta.updateTag({
+  property: 'og:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
   property: 'og:title',
-  content: 'Arapov.Trade — безкоштовна платформа з трейдингу',
+  content: ogTitle,
 });
 
 this.meta.updateTag({
   property: 'og:description',
-  content:
-    'Безкоштовна освітня екосистема про фінансові ринки: покроковий курс, статті, відео та книги з трейдингу, аналізу ринку й управління ризиками.',
+  content: ogDescription,
 });
-    this.meta.updateTag({ property: 'og:image:width', content: '1200' });
-    this.meta.updateTag({ property: 'og:image:height', content: '600' });
-    this.meta.updateTag({
-      property: 'og:image',
-      content: `https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png`,
-    });
-    this.meta.updateTag({
-      property: 'og:url',
-      content: 'https://arapov.trade',
-    });
 
-    // Оновлюємо Twitter Card теги
-    this.meta.updateTag({
-      name: 'twitter:card',
-      content: `summary_large_image`,
-    }); // Тип картки
-    this.meta.updateTag({
-      name: 'twitter:title',
-      content:
-        'Навчання трейдерів торгівлі на біржі | Курс трейдингу від Ігоря Арапова',
-    });
-    this.meta.updateTag({
-      name: 'twitter:description',
-      content:
-        'Безкоштовний курс з трейдингу Ігоря Арапова: 51 + статей і 78+ відео. Вивчайте теханаліз, ризик-менеджмент і торгові стратегії онлайн',
-    });
-    this.meta.updateTag({
-      name: 'twitter:image',
-      content: `https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png`,
-    });
-    this.meta.updateTag({
-      name: 'twitter:url',
-      content: 'https://arapov.trade',
-    });
-    this.meta.updateTag({ name: 'language', content: 'uk' });
-    this.meta.updateTag({ property: 'og:type', content: 'website' }); // или 'article'
+this.meta.updateTag({
+  property: 'og:image',
+  content: ogImage,
+});
 
-    this.meta.updateTag({ property: 'og:locale', content: 'uk_UA' }); // ru_RU, uk_UA, en_US
-    this.meta.updateTag({ property: 'og:site_name', content: 'Arapov Trade' });
+this.meta.updateTag({
+  property: 'og:image:secure_url',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:type',
+  content: 'image/jpeg',
+});
+
+this.meta.updateTag({
+  property: 'og:image:width',
+  content: '1200',
+});
+
+this.meta.updateTag({
+  property: 'og:image:height',
+  content: '630',
+});
+
+this.meta.updateTag({
+  property: 'og:image:alt',
+  content: ogImageAlt,
+});
+
+// Twitter Card
+this.meta.updateTag({
+  name: 'twitter:card',
+  content: 'summary_large_image',
+});
+
+this.meta.updateTag({
+  name: 'twitter:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  name: 'twitter:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  name: 'twitter:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image:alt',
+  content: ogImageAlt,
+});
+
+
+
+
+
+
+
+
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;

@@ -85,7 +85,7 @@ export class RuStudyingHomeComponent
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
 
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-17' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-12' });
     this.meta.updateTag({
       name: 'description',
       content:
@@ -96,6 +96,116 @@ export class RuStudyingHomeComponent
       content:
         'курсы трейдингу, обучение трейдингу онлайн, трейдинг с нуля, дистанционное обучение, инвестиции, торговые стратегии',
     });
+
+
+    // Open Graph + Twitter Card — Russian studying page
+
+const ogImage =
+  'https://arapov.trade/assets/redesignArapovTrade/img/trading-mentor-support-ru.jpg';
+
+const ogTitle = 'Обучение трейдингу с наставником — Игорь Арапов';
+
+const ogDescription =
+  'Обучение трейдингу онлайн с наставником: торговая система, технический и объёмный анализ, метод Вайкоффа, риск-менеджмент и практика.';
+
+const ogImageAlt = 'Arapov.Trade — Профессиональные курсы';
+
+const pageUrl = 'https://arapov.trade/ru/studying';
+
+// Open Graph
+this.meta.updateTag({
+  property: 'og:site_name',
+  content: 'Arapov.Trade',
+});
+
+this.meta.updateTag({
+  property: 'og:type',
+  content: 'website',
+});
+
+this.meta.updateTag({
+  property: 'og:locale',
+  content: 'ru_RU',
+});
+
+this.meta.updateTag({
+  property: 'og:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  property: 'og:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  property: 'og:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  property: 'og:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:secure_url',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  property: 'og:image:type',
+  content: 'image/jpeg',
+});
+
+this.meta.updateTag({
+  property: 'og:image:width',
+  content: '1200',
+});
+
+this.meta.updateTag({
+  property: 'og:image:height',
+  content: '630',
+});
+
+this.meta.updateTag({
+  property: 'og:image:alt',
+  content: ogImageAlt,
+});
+
+// Twitter Card
+this.meta.updateTag({
+  name: 'twitter:card',
+  content: 'summary_large_image',
+});
+
+this.meta.updateTag({
+  name: 'twitter:url',
+  content: pageUrl,
+});
+
+this.meta.updateTag({
+  name: 'twitter:title',
+  content: ogTitle,
+});
+
+this.meta.updateTag({
+  name: 'twitter:description',
+  content: ogDescription,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image',
+  content: ogImage,
+});
+
+this.meta.updateTag({
+  name: 'twitter:image:alt',
+  content: ogImageAlt,
+});
+
+
+
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
       this.cdr.detectChanges();
