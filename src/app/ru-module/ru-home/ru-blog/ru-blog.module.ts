@@ -254,7 +254,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'fundamental-analysis', //28 1
+        path: 'fundamental-analysis', //28 1 
         loadChildren: () =>
           import('./twenty-eight-ru-blog/twenty-eight-ru-blog.module').then(
             (m) => m.TwentyEightRuBlogModule,

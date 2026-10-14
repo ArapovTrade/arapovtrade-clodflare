@@ -429,7 +429,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'chart-reading', //53 3
+        path: 'chart-reading', //53 3 
         loadChildren: () =>
           import('./fifty-three-uk-blog/fifty-three-uk-blog.module').then(
             (m) => m.FiftyThreeUkBlogModule,
