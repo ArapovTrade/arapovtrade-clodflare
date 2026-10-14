@@ -247,7 +247,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'assets-trading', //27 1
+        path: 'assets-trading', //27 1 
         loadChildren: () =>
           import('./twenty-seven-uk-blog/twenty-seven-uk-blog.module').then(
             (m) => m.TwentySevenUkBlogModule,

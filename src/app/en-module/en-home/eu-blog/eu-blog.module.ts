@@ -71,7 +71,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'xrp-ripple', //5
+        path: 'xrp-ripple', //5 
         loadChildren: () =>
           import('./five-en-blog/five-en-blog.module').then(
             (m) => m.FiveEnBlogModule,

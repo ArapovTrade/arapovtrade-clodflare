@@ -317,7 +317,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'platforms-broker', //37 1
+        path: 'platforms-broker', //37 1 
         loadChildren: () =>
           import('./thirty-seven-ru-blog/thirty-seven-ru-blog.module').then(
             (m) => m.ThirtySevenRuBlogModule,
