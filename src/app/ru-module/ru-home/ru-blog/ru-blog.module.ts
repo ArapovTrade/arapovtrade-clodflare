@@ -449,7 +449,7 @@ const routes: Routes = [
             (m) => m.FiftyFiveRuBlogModule,
           ),
       },
-      {
+      { 
         path: 'breakout-strategy', //56 1
         loadChildren: () =>
           import('./fifty-six-ru-blog/fifty-six-ru-blog.module').then(
