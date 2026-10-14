@@ -413,7 +413,7 @@ const routes: Routes = [
           import('./fifty-ru-blog/fifty-ru-blog.module').then(
             (m) => m.FiftyRuBlogModule,
           ),
-      },
+      }, 
       {
         path: 'atr-indicator', //51 1
         loadChildren: () =>

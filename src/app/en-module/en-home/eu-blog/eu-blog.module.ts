@@ -64,7 +64,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'smart-money-guide', //4
+        path: 'smart-money-guide', //4 
         loadChildren: () =>
           import('./four-en-blog/four-en-blog.module').then(
             (m) => m.FourEnBlogModule,

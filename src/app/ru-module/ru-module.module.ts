@@ -14,7 +14,7 @@ const routes: Routes = [
 
     component: RuHomeComponent,
   },
-
+ 
   {
     path: 'disclaimer',
     component: DisclaimerComponent,
