@@ -225,7 +225,7 @@ const routes: Routes = [
             (m) => m.TwentyThreeUkBlogModule,
           ),
       },
-      {
+      { 
         path: 'wyckoff-method', //24 1
         loadChildren: () =>
           import('./twenty-four-uk-blog/twenty-four-uk-blog.module').then(
