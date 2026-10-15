@@ -428,7 +428,7 @@ const routes: Routes = [
             (m) => m.FiftyTwoRuBlogModule,
           ),
       },
-      {
+      { 
         path: 'chart-reading', //53 1
         loadChildren: () =>
           import('./fifty-three-ru-blog/fifty-three-ru-blog.module').then(

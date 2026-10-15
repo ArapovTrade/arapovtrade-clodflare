@@ -15,7 +15,7 @@
 <p>J. Welles Wilder introduced RSI in his 1978 book New Concepts in Technical Trading Systems. It is an oscillator, an indicator with a bounded numerical scale. The usual setting uses closing prices and a length of 14 bars. Each bar represents a period on the chart, such as a minute, an hour or a day, so 14 periods do not always mean two weeks.</p>
 <p>RSI measures the size of changes, not just how many bars rose. Several small increases and one large fall can produce a different picture from counting rising and falling bars. A reading of 60 does not mean that 60% of participants are buying or that a trade has a 60% chance of profit. The calculation contains no information about their money or intentions.</p>
 <p>The name relative strength refers here to gains versus losses in one instrument's price. Comparing a share with a market index requires a different calculation. The <a class="linkrefinto" href="https://arapov.trade/en/freestudying/trading-indicators">trading-indicators guide</a> explains how RSI fits alongside other ways of processing chart data.</p>
-<img src="https://arapov.trade/assets/img/content/rsiindex4.png" alt="Индикатор RSI на графике" loading="lazy">
+<img src="https://arapov.trade/assets/img/content/rsiindex4.png" alt="Schematic rising price chart with RSI(14) staying above 70, showing that an overbought reading alone does not time a reversal." loading="lazy">
 <h2 id="topic-02" style="margin:36px 0 16px">How RSI is calculated</h2>
 <p>For each bar, subtract the previous closing price from the new close. Record an increase as a gain and a decrease as a positive-sized loss. On a rising bar the loss is zero; on a falling bar the gain is zero. If the close is unchanged, both are zero. Average each complete series separately, keeping these zeros in the calculation.</p>
 <!-- Added English explanatory diagram: rsi-change-series-en.webp -->
@@ -47,7 +47,7 @@
 <p>A length of 14 is a common starting point, not the best setting for every trade. Shorter lengths generally respond faster and reach extremes more often; longer lengths smooth changes more. Faster response does not itself mean a more accurate signal. Test the length together with a specific rule rather than changing it after each loss.</p>
 <p>The timeframe is the duration of one bar. A 14-period RSI on an hourly chart processes hourly closes; on a daily chart it processes daily closes. High and moderate readings on different charts can both be correct because they use different data sequences. How to combine charts is a rule of the chosen trading system, not an automatic property of RSI.</p>
 <!-- Added English explanatory diagram: rsi-length-timeframe-en.webp -->
-<img src="/assets/img/content/rsi-length-timeframe-en.webp" alt="Length and timeframe are different. Two rows: Shorter length: faster response / Longer length: more smoothing; second Hourly chart: hourly closes / Daily chart: daily closes. Footer 14 is a common start; faster does not mean more accurate. Matte documents and clocks, no false data." class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">
+<img src="/assets/img/content/rsi-length-timeframe-en.webp" alt="RSI(14) uses 15 closing prices to calculate 14 changes; the same period covers 14 bars on either an hourly or a daily chart, with different elapsed time." class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">
 <p>In TradingView, add ordinary RSI and check its length and price source; close is the default. Stochastic RSI is a different indicator that compares RSI with its own recent range. Its zones cannot simply be transferred to ordinary RSI. An additional smoothing line in the settings also does not replace Wilder's original calculation.</p>
 <p>To compare platforms, match the instrument, price feed, timeframe, input price and length. Initial averaging and available history matter too. The unfinished bar's latest price keeps changing, so its RSI can change. If the rule requires a completed bar, check the final reading rather than a temporary crossing that later disappears.</p>
 <!-- Added English explanatory diagram: rsi-platform-checks-en.webp -->
@@ -412,5 +412,3 @@
    </div>
  </div>
 </section>
-
-

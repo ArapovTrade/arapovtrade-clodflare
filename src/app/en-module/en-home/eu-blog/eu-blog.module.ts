@@ -448,7 +448,7 @@ const routes: Routes = [
             (m) => m.FiftyEightEuBlogModule,
           ),
       },
-      {
+      { 
         path: 'ai-in-trading', //59
         loadChildren: () =>
           import('./fifty-nine-eu-blog/fifty-nine-eu-blog.module').then(
