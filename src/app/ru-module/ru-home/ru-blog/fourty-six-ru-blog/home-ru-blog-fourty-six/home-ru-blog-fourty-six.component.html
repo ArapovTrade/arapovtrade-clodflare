@@ -1,24 +1,32 @@
+
+
+
+
+
+
 <section class="" id="hero">
- <div class="container">
-   <div class="section-i">
-     <div class="section-content">
-       <div class="hero-content">
-         <div class="m-right hero-section"></div>
-         <div class="free-courses_main-container">
-           <main lang="ru">
+<div class="container">
+  <div class="section-i">
+    <div class="section-content">
+      <div class="hero-content">
+        <div class="m-right hero-section"></div>
+        <div class="free-courses_main-container">
+          <main lang="ru">
 <header><h1>Скользящая средняя: что показывает, чем отличаются SMA и EMA</h1></header>
 <article class="ru-remaining-reading-4"><style class="ru-remaining-spacing">article.ru-remaining-reading-4 h2{margin:36px 0 16px}article.ru-remaining-reading-4 img{display:block;width:100%;max-width:800px;height:auto;margin:32px auto}article.ru-remaining-reading-4 .ru-remaining-figure{margin:0}article.ru-remaining-reading-4 .ru-remaining-figure img{width:min(100%,800px)!important;max-width:100%!important;height:auto!important}article.ru-remaining-reading-4 img[src*="/movingavarage.png"],article.ru-remaining-reading-4 img[src*="/movingavarage2.png"]{max-width:100%!important;height:auto!important}</style>
 <section><p><strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Скользящая средняя">Скользящая средняя</dfn>, или MA, показывает сглаженную цену за выбранный период.</strong> На графике она выглядит как линия: отдельные скачки становятся менее заметными, а общее направление легче сравнить с текущей ценой. Линия рассчитывается по уже поступившим данным и не предсказывает следующий поворот.</p>
-<p>SMA и EMA решают эту задачу разными способами. У SMA цены внутри расчётного окна имеют одинаковый вес. У EMA свежая цена влияет сильнее, но в расчёте сохраняется след более старых значений. Ни один способ сам по себе не делает покупку или продажу прибыльной.</p><div class="flex"><img src="/assets/img/content/movingavarage.png" alt="Пример скользящих средних на графике" class="pictureImg" loading="lazy"></div></section>
+<p>SMA и EMA решают эту задачу разными способами. У SMA цены внутри расчётного окна имеют одинаковый вес. У EMA свежая цена влияет сильнее, но в расчёте сохраняется след более старых значений. Ни один способ сам по себе не делает покупку или продажу прибыльной.</p><div class="flex"><img src="/assets/img/content/movingavarage.png" alt="Числовой пример расчёта SMA и EMA за три периода" class="pictureImg" loading="lazy"></div></section>
 <section><h2 id="topic-01">Как рассчитывается скользящая средняя</h2><p><strong>SMA, простая скользящая средняя, складывает цены выбранного числа баров и делит сумму на их количество.</strong> Если в настройках выбрана цена закрытия, в расчёт входят закрытия. С появлением нового бара окно сдвигается: новое значение добавляется, самое старое исключается.</p>
 <p>Период означает число баров, а не обязательно число дней. На дневном графике SMA с периодом 200 усредняет 200 дневных закрытий, на часовом графике тот же период относится к 200 часовым барам. Поэтому название «200-дневная средняя» подходит именно дневному графику.</p>
 <div class="flex ru-remaining-figure"><img src="/assets/img/content/ma-bars-period-ru.webp" alt="Период 200 означает 200 выбранных баров: часовых на часовом графике и дневных на дневном, а не всегда 200 дней." class="pictureImg" loading="lazy" decoding="async" width="1312" height="597"></div>
+
 
 <p><strong>EMA, экспоненциальная скользящая средняя, соединяет новую цену с предыдущим значением самой EMA.</strong> Формула: EMA = новая цена × α + предыдущая EMA × (1 − α). Для распространённого расчёта коэффициент α = 2 / (n + 1), где n обозначает заданный период.</p>
 <p>Первое значение EMA программа должна получить отдельно. Один распространённый вариант использует SMA как стартовую величину, после чего расчёт продолжается последовательно. Доступная история и способ начального расчёта могут немного менять значения EMA на разных платформах: она не является средним только последних n цен.</p>
 <h3>Пример расчёта SMA и EMA</h3><p>Возьмём учебный пример с ценой акции в долларах. Три последовательных закрытия равны 100, 102 и 104. При периоде 3 начальная SMA составляет (100 + 102 + 104) / 3 = 102 доллара. Для сравнения примем это же число за начальную EMA.</p>
 <p>Следующее закрытие равно 108. Новая SMA составляет (102 + 104 + 108) / 3, примерно 104,67 доллара. Первое закрытие, 100 долларов, больше не входит в её окно. Для EMA коэффициент α равен 2 / (3 + 1) = 0,5, поэтому новое значение равно 108 × 0,5 + 102 × 0,5 = 105 долларов.</p>
 <div class="flex ru-remaining-figure"><img src="/assets/img/content/ma-calculation-ru.webp" alt="Смена трёхбарного окна: исходная SMA 102 доллара, после закрытия 108 новая SMA 104,67; при исходной EMA 102 и коэффициенте 0,5 новая EMA равна 105." class="pictureImg" loading="lazy" decoding="async" width="1312" height="597"></div>
+
 
 <p>В этом примере EMA сильнее приблизилась к новой цене. При одинаковом периоде она обычно быстрее реагирует на недавние изменения, однако это не обещает более удачный вход. Более чувствительная линия может чаще менять направление при коротких колебаниях.</p></section>
 <section><h2 id="topic-02">Как выбрать период и настройки MA</h2><p>Сначала определите задачу линии. Для общего направления нужна одна чувствительность, для наблюдения за коротким откатом другая. Короткий период быстрее подстраивается под новые цены; длинный сильнее сглаживает движение и дольше сохраняет влияние прежних данных.</p>
@@ -38,342 +46,384 @@
 <p><strong>Лента средних состоит из нескольких MA с разными периодами.</strong> Она позволяет сравнить короткое и более длительное сглаженное движение на одном графике. Расстояние и порядок линий описывают текущее состояние расчётов, но несколько линий по одной цене не являются несколькими независимыми подтверждениями.</p>
 <div class="flex ru-remaining-figure"><img src="/assets/img/content/ma-shared-inputs-ru.webp" alt="Один ряд цен закрытия используется в трёх средних с разными периодами; совпадение их показаний не означает три независимых подтверждения." class="pictureImg" loading="lazy" decoding="async" width="1312" height="596"></div>
 
+
 <p>Добавляйте линию только тогда, когда можете назвать её задачу. Если несколько средних приводят к одинаковому решению, часть из них можно убрать. Это помогает увидеть цену и условия сделки, вместо того чтобы принимать сложность изображения за точность анализа.</p></section>
 <section><h2 id="topic-05">Как применять среднюю в обучении</h2><p>В моём подходе сначала нужно понимать структуру движения, уровни и связь цены с объёмом. После этого можно проверить, помогает ли индикатор выполнить конкретную задачу или отвлекает от неё. Такой порядок разбирается в <a class="linkrefinto" href="https://arapov.trade/ru/freestudying/freeeducation#indicatorsInTrading">разделе практического курса об индикаторах</a>; скользящая средняя не заменяет основу анализа.</p>
 <p>Например, прежде чем использовать пересечение как дополнительное условие, опишите, что произошло с ценой возле выбранного уровня. MA показывает переработанную цену, а <a class="linkrefinto" href="https://arapov.trade/ru/freestudying/volume-analysis">торговый объём</a> добавляет сведения об активности. Это разные данные, но и объём сам по себе не доказывает, кто покупал или продавал.</p>
 <p>Причину запаздывания я объясняю в видео <a class="linkrefinto" href="https://youtu.be/hch9D_3hVrg?t=3208">«Запаздывание индикаторов»</a>. Глава посвящена общему ограничению индикаторов, рассчитанных по прошлым ценам; это не отдельная торговая система на SMA или EMA.</p>
 <p>Для самостоятельной проверки выберите одну функцию MA, зафиксируйте период и источник цены, затем последовательно открывайте новые бары без просмотра будущего. Отмечайте не только удобные примеры, но и поздние пересечения, возвраты и пропущенные движения. Если применение линии нельзя объяснить простым правилом, сначала уточните правило, а не добавляйте ещё одну среднюю.</p></section><section><h2 id="topic-06">Часто задаваемые вопросы</h2><mat-accordion><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     [expanded]="true"
-                   ><mat-expansion-panel-header><mat-panel-title>Чем SMA отличается от EMA?</mat-panel-title></mat-expansion-panel-header><p>SMA даёт одинаковый вес ценам внутри выбранного окна. EMA придаёт больший вес свежей цене и сохраняет влияние более старых расчётов. При одинаковом периоде EMA обычно чувствительнее к недавним изменениям.</p></mat-expansion-panel><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Почему средняя запаздывает?</mat-panel-title></mat-expansion-panel-header><p>Она рассчитывается по уже поступившим ценам. Поворот линии или пересечение появляются после изменения данных, а не до будущего движения. Более короткий период повышает чувствительность, но не превращает MA в прогноз.</p></mat-expansion-panel><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Может ли MA служить поддержкой?</mat-panel-title></mat-expansion-panel-header><p>В тренде цена иногда реагирует возле её линии. Это наблюдаемая область реакции, а не видимый объём заявок. В авторском подходе сначала оценивают уровни, цену и объём, затем пользу дополнительного условия MA.</p></mat-expansion-panel><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Зачем нужна лента средних?</mat-panel-title></mat-expansion-panel-header><p>Она сравнивает сглаженную цену за разные периоды. Порядок и расстояние линий помогают описать движение, но все линии используют один источник, цену. Количество линий не означает количество независимых подтверждений.</p></mat-expansion-panel><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Зачем нужна 200-дневная средняя?</mat-panel-title></mat-expansion-panel-header><p>Она даёт ориентир длительного движения на дневном графике. Положение цены относительно линии может быть условием фильтра, но не выбирает точку входа само по себе и не гарантирует продолжение тренда.</p></mat-expansion-panel><mat-expansion-panel
-                     class="highlight-box owl_link-box"
-                     (opened)="panelOpenState.set(true)"
-                     (closed)="panelOpenState.set(false)"
-                   ><mat-expansion-panel-header><mat-panel-title>Что такое золотой крест и крест смерти?</mat-panel-title></mat-expansion-panel-header><p>Золотой крест означает пересечение короткой средней над длинной снизу вверх. Крест смерти означает обратное пересечение. Распространённый дневной вариант использует периоды 50 и 200; оба сигнала рассчитаны по уже произошедшему движению.</p></mat-expansion-panel></mat-accordion></section><section><h2 id="topic-07">Об авторе</h2><p><a class="linkrefinto" href="https://arapov.trade/ru"><strong><em>Игорь Арапов</em></strong></a>, практикующий трейдер с 2013 года, автор библиотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
-
-
-             <div
-               class=""
-               [ngClass]="{
-                 'next-page-block': true,
-               }"
-               [ngStyle]="{
-                 background: isDark
-                   ? 'rgba(255, 255, 255, 0.05)'
-                   : 'rgba(255, 255, 255, 0.05)',
-                 border: isDark
-                   ? 'rgba(46, 46, 46, 1)'
-                   : 'rgba(0, 130, 204, 0.15)',
-               }"
-             >
-               <div
-                 (click)="goToPreviousPage()"
-                 [ngClass]="{
-                   previous_page: true,
-
-
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M4.75 0.75L0.75 4.75L4.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-
-
-                 <span class="previous_page_text-block">
-                   ПРЕДЫДУЩАЯ <span class="page_none_block">СТАТЬЯ</span>
-                 </span>
-               </div>
-               <div
-                 (click)="goToNextPage()"
-                 [ngClass]="{
-                   next_page: true,
-
-
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{
-                   border: isDark
-                     ? '1px solid rgba(46, 46, 46, 1)'
-                     : '1px solid rgba(0, 130, 204, 0.15)',
-                 }"
-               >
-                 <span class="previous_page_text-block">
-                   СЛЕДУЮЩАЯ <span class="page_none_block">СТАТЬЯ</span>
-                 </span>
-                 <svg
-                   class="previous_page_svg"
-                   width="6"
-                   height="10"
-                   viewBox="0 0 6 10"
-                   fill="none"
-                   xmlns="http://www.w3.org/2000/svg"
-                 >
-                   <path
-                     d="M0.75 0.75L4.75 4.75L0.75 8.75"
-                     stroke="#BBC2C7"
-                     stroke-width="1.5"
-                     stroke-linecap="round"
-                     stroke-linejoin="round"
-                   />
-                 </svg>
-               </div>
-             </div>
-           </main>
-           <div class="free-courses_main-container_side-bar">
-             <div class="main-container_side-bar_groups">
-               <!-- //Groups -->
-               <div class="groups_phone">
-                 <div
-                   [ngClass]="{
-                     'side-bar_groups-wrapper': true,
-
-
-                     'shadow-box-dark': isDark,
-                     'shadow-box-light': !isDark,
-                   }"
-                   [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-                 >
-                   <div
-                     class="side-bar_groups-title"
-                     [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                   >
-                     Фильтр по категориям
-                     <hr
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #FFCD29'
-                           : '1px solid #0082CC',
-                         width: '100%',
-                       }"
-                     />
-                   </div>
-
-
-                   <div *ngFor="let group of ukrGroups">
-                     <!-- class="inpFlex" -->
-
-
-                     <label
-                       [ngStyle]="{
-                         color: checkedGroup.includes(group)
-                           ? isDark
-                             ? '#FFCD29'
-                             : '#0082CC'
-                           : isDark
-                             ? '#ffffff'
-                             : '#0C263A',
-                       }"
-                       [ngClass]="{
-                         'side-bar_groups-item': true,
-                         'side-bar_groups-item_dark': isDark,
-                         'side-bar_groups-item_light': !isDark,
-                       }"
-                       [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                     >
-                       <input
-                         type="checkbox"
-                         [checked]="this.grr.includes(group)"
-                         [value]="group"
-                         (change)="onGroupChange($event)"
-                         [class.checked-class]="checkedGroup.includes(group)"
-                       />
-                       <div class="group-name-with-count">
-                         <span (click)="moveToTheTop()">{{ group }} </span>
-                         <span class="article-count">
-                           {{ articleCounts[group] || 0 }}
-                         </span>
-                       </div>
-                     </label>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Random pages -->
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   'random-pages_container': true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
-                 >
-                   Популярное
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
-
-
-                 <div class="articles-list">
-                   <div
-                     *ngFor="let article of randomArticleRus"
-                     class="article-item"
-                   >
-                     <a
-                       [routerLink]="['/ru/freestudying', article.linkUkr]"
-                       class="article-link"
-                     >
-                       <img
-                         [src]="article.imgUkr"
-                         [alt]="article.titleRus"
-                         loading="lazy"
-                         class="article-img"
-                       />
-                       <span
-                         class="article-title"
-                         [ngClass]="{
-                           'article-title_dark': isDark,
-                           'article-title_light': !isDark,
-                         }"
-                       >
-                         {{ article.titleRus }}
-                       </span>
-                     </a>
-                   </div>
-                 </div>
-               </div>
-
-
-               <!-- Our projects  -->
-
-
-               <div
-                 [ngClass]="{
-                   'side-bar_groups-wrapper': true,
-                   our_projects_container: true,
-                   'shadow-box-dark': isDark,
-                   'shadow-box-light': !isDark,
-                 }"
-                 [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
-               >
-                 <!-- [ngStyle]="{
-        background: isDark
-      ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
-      : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
+                    class="highlight-box owl_link-box"
+                    [expanded]="true"
+                  ><mat-expansion-panel-header><mat-panel-title>Чем SMA отличается от EMA?</mat-panel-title></mat-expansion-panel-header><p>SMA даёт одинаковый вес ценам внутри выбранного окна. EMA придаёт больший вес свежей цене и сохраняет влияние более старых расчётов. При одинаковом периоде EMA обычно чувствительнее к недавним изменениям.</p></mat-expansion-panel><mat-expansion-panel
+                    class="highlight-box owl_link-box"
+                    (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)"
+                  ><mat-expansion-panel-header><mat-panel-title>Почему средняя запаздывает?</mat-panel-title></mat-expansion-panel-header><p>Она рассчитывается по уже поступившим ценам. Поворот линии или пересечение появляются после изменения данных, а не до будущего движения. Более короткий период повышает чувствительность, но не превращает MA в прогноз.</p></mat-expansion-panel><mat-expansion-panel
+                    class="highlight-box owl_link-box"
+                    (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)"
+                  ><mat-expansion-panel-header><mat-panel-title>Может ли MA служить поддержкой?</mat-panel-title></mat-expansion-panel-header><p>В тренде цена иногда реагирует возле её линии. Это наблюдаемая область реакции, а не видимый объём заявок. В авторском подходе сначала оценивают уровни, цену и объём, затем пользу дополнительного условия MA.</p></mat-expansion-panel><mat-expansion-panel
+                    class="highlight-box owl_link-box"
+                    (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)"
+                  ><mat-expansion-panel-header><mat-panel-title>Зачем нужна лента средних?</mat-panel-title></mat-expansion-panel-header><p>Она сравнивает сглаженную цену за разные периоды. Порядок и расстояние линий помогают описать движение, но все линии используют один источник, цену. Количество линий не означает количество независимых подтверждений.</p></mat-expansion-panel><mat-expansion-panel
+                    class="highlight-box owl_link-box"
+                    (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)"
+                  ><mat-expansion-panel-header><mat-panel-title>Зачем нужна 200-дневная средняя?</mat-panel-title></mat-expansion-panel-header><p>Она даёт ориентир длительного движения на дневном графике. Положение цены относительно линии может быть условием фильтра, но не выбирает точку входа само по себе и не гарантирует продолжение тренда.</p></mat-expansion-panel><mat-expansion-panel
+                    class="highlight-box owl_link-box"
+                    (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)"
+                  ><mat-expansion-panel-header><mat-panel-title>Что такое золотой крест и крест смерти?</mat-panel-title></mat-expansion-panel-header><p>Золотой крест означает пересечение короткой средней над длинной снизу вверх. Крест смерти означает обратное пересечение. Распространённый дневной вариант использует периоды 50 и 200; оба сигнала рассчитаны по уже произошедшему движению.</p></mat-expansion-panel></mat-accordion></section><section><h2 id="topic-07">Об авторе</h2><p><a class="linkrefinto" href="https://arapov.trade/ru"><strong><em>Игорь Арапов</em></strong></a>, практикующий трейдер с 2013 года, автор библиотеки ArapovTrade. <a class="linkrefinto" href="https://orcid.org/0009-0003-0430-778X">ORCID: 0009-0003-0430-778X</a>.</p></section></article>
 
 
 
 
-       }" -->
-                 <div class="banner">
-                   <img
-                     [src]="
-                       isDark
-                         ? '/assets/redesignArapovTrade/img/banner.png'
-                         : '/assets/redesignArapovTrade/img/banner-light.jpg'
-                     "
-                     alt="img"
-                   />
-                 </div>
-                 <div class="mask-our_project"></div>
-                 <div
-                   class="side-bar_groups-title"
-                   [ngStyle]="{ color: '#ffffff' }"
-                 >
-                   Наши проекты доступны каждому желающему
-                   <hr
-                     [ngStyle]="{
-                       border: isDark
-                         ? '1px solid #FFCD29'
-                         : '1px solid #0082CC',
-                       width: '100%',
-                     }"
-                   />
-                 </div>
+            <div
+              class=""
+              [ngClass]="{
+                'next-page-block': true,
+              }"
+              [ngStyle]="{
+                background: isDark
+                  ? 'rgba(255, 255, 255, 0.05)'
+                  : 'rgba(255, 255, 255, 0.05)',
+                border: isDark
+                  ? 'rgba(46, 46, 46, 1)'
+                  : 'rgba(0, 130, 204, 0.15)',
+              }"
+            >
+              <div
+                (click)="goToPreviousPage()"
+                [ngClass]="{
+                  previous_page: true,
 
 
-                 <div class="our_projects_block">
-                   <div
-                     class="our_projects_title"
-                     [ngStyle]="{ color: '#ffffff' }"
-                   >
-                     Выбирайте интересующую Вас тему и начинайте увлекательно
-                     обучение
-                   </div>
 
 
-                   <div class="our_projects_buttons">
-                     <div
-                       class="our_projects_buttons-item"
-                       *ngFor="let item of projects; let i = index"
-                       (mouseenter)="hoveredIndex = i"
-                       (mouseleave)="hoveredIndex = null"
-                       [ngStyle]="{
-                         border: isDark
-                           ? '1px solid #6E4D00'
-                           : '1px solid #015F95',
-                         background: isDark
-                           ? hoveredIndex === i
-                             ? 'rgba(110, 77, 0, 1)'
-                             : 'rgba(255, 205, 41, 0.20)'
-                           : hoveredIndex === i
-                             ? 'rgba(1, 95, 149, 1)'
-                             : 'rgba(0, 130, 204, 0.20)',
-                       }"
-                     >
-                       <a [href]="item.link" target="_blank">{{
-                         item.title
-                       }}</a>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+                  'shadow-box-dark': isDark,
+                  'shadow-box-light': !isDark,
+                }"
+                [ngStyle]="{
+                  border: isDark
+                    ? '1px solid rgba(46, 46, 46, 1)'
+                    : '1px solid rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <svg
+                  class="previous_page_svg"
+                  width="6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.75 0.75L0.75 4.75L4.75 8.75"
+                    stroke="#BBC2C7"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+
+
+
+
+                <span class="previous_page_text-block">
+                  ПРЕДЫДУЩАЯ <span class="page_none_block">СТАТЬЯ</span>
+                </span>
+              </div>
+              <div
+                (click)="goToNextPage()"
+                [ngClass]="{
+                  next_page: true,
+
+
+
+
+                  'shadow-box-dark': isDark,
+                  'shadow-box-light': !isDark,
+                }"
+                [ngStyle]="{
+                  border: isDark
+                    ? '1px solid rgba(46, 46, 46, 1)'
+                    : '1px solid rgba(0, 130, 204, 0.15)',
+                }"
+              >
+                <span class="previous_page_text-block">
+                  СЛЕДУЮЩАЯ <span class="page_none_block">СТАТЬЯ</span>
+                </span>
+                <svg
+                  class="previous_page_svg"
+                  width="6"
+                  height="10"
+                  viewBox="0 0 6 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.75 0.75L4.75 4.75L0.75 8.75"
+                    stroke="#BBC2C7"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </main>
+          <div class="free-courses_main-container_side-bar">
+            <div class="main-container_side-bar_groups">
+              <!-- //Groups -->
+              <div class="groups_phone">
+                <div
+                  [ngClass]="{
+                    'side-bar_groups-wrapper': true,
+
+
+
+
+                    'shadow-box-dark': isDark,
+                    'shadow-box-light': !isDark,
+                  }"
+                  [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+                >
+                  <div
+                    class="side-bar_groups-title"
+                    [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                  >
+                    Фильтр по категориям
+                    <hr
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #FFCD29'
+                          : '1px solid #0082CC',
+                        width: '100%',
+                      }"
+                    />
+                  </div>
+
+
+
+
+                  <div *ngFor="let group of ukrGroups">
+                    <!-- class="inpFlex" -->
+
+
+
+
+                    <label
+                      [ngStyle]="{
+                        color: checkedGroup.includes(group)
+                          ? isDark
+                            ? '#FFCD29'
+                            : '#0082CC'
+                          : isDark
+                            ? '#ffffff'
+                            : '#0C263A',
+                      }"
+                      [ngClass]="{
+                        'side-bar_groups-item': true,
+                        'side-bar_groups-item_dark': isDark,
+                        'side-bar_groups-item_light': !isDark,
+                      }"
+                      [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                    >
+                      <input
+                        type="checkbox"
+                        [checked]="this.grr.includes(group)"
+                        [value]="group"
+                        (change)="onGroupChange($event)"
+                        [class.checked-class]="checkedGroup.includes(group)"
+                      />
+                      <div class="group-name-with-count">
+                        <span (click)="moveToTheTop()">{{ group }} </span>
+                        <span class="article-count">
+                          {{ articleCounts[group] || 0 }}
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <!-- Random pages -->
+              <div
+                [ngClass]="{
+                  'side-bar_groups-wrapper': true,
+                  'random-pages_container': true,
+                  'shadow-box-dark': isDark,
+                  'shadow-box-light': !isDark,
+                }"
+                [ngStyle]="{ background: !isDark ? '#ffffff' : '#000000' }"
+              >
+                <div
+                  class="side-bar_groups-title"
+                  [ngStyle]="{ color: isDark ? '#ffffff' : '#0C263A' }"
+                >
+                  Популярное
+                  <hr
+                    [ngStyle]="{
+                      border: isDark
+                        ? '1px solid #FFCD29'
+                        : '1px solid #0082CC',
+                      width: '100%',
+                    }"
+                  />
+                </div>
+
+
+
+
+                <div class="articles-list">
+                  <div
+                    *ngFor="let article of randomArticleRus"
+                    class="article-item"
+                  >
+                    <a
+                      [routerLink]="['/ru/freestudying', article.linkUkr]"
+                      class="article-link"
+                    >
+                      <img
+                        [src]="article.imgUkr"
+                        [alt]="article.titleRus"
+                        loading="lazy"
+                        class="article-img"
+                      />
+                      <span
+                        class="article-title"
+                        [ngClass]="{
+                          'article-title_dark': isDark,
+                          'article-title_light': !isDark,
+                        }"
+                      >
+                        {{ article.titleRus }}
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <!-- Our projects  -->
+
+
+
+
+              <div
+                [ngClass]="{
+                  'side-bar_groups-wrapper': true,
+                  our_projects_container: true,
+                  'shadow-box-dark': isDark,
+                  'shadow-box-light': !isDark,
+                }"
+                [ngStyle]="{ color: !isDark ? '#ffffff' : '#000000' }"
+              >
+                <!-- [ngStyle]="{
+       background: isDark
+     ? 'url(/assets/redesignArapovTrade/img/banner.png) no-repeat'
+     : 'url(/assets/redesignArapovTrade/img/banner-light.png) no-repeat'
+
+
+
+
+
+
+
+
+      }" -->
+                <div class="banner">
+                  <img
+                    [src]="
+                      isDark
+                        ? '/assets/redesignArapovTrade/img/banner.png'
+                        : '/assets/redesignArapovTrade/img/banner-light.jpg'
+                    "
+                    alt="img"
+                  />
+                </div>
+                <div class="mask-our_project"></div>
+                <div
+                  class="side-bar_groups-title"
+                  [ngStyle]="{ color: '#ffffff' }"
+                >
+                  Наши проекты доступны каждому желающему
+                  <hr
+                    [ngStyle]="{
+                      border: isDark
+                        ? '1px solid #FFCD29'
+                        : '1px solid #0082CC',
+                      width: '100%',
+                    }"
+                  />
+                </div>
+
+
+
+
+                <div class="our_projects_block">
+                  <div
+                    class="our_projects_title"
+                    [ngStyle]="{ color: '#ffffff' }"
+                  >
+                    Выбирайте интересующую Вас тему и начинайте увлекательно
+                    обучение
+                  </div>
+
+
+
+
+                  <div class="our_projects_buttons">
+                    <div
+                      class="our_projects_buttons-item"
+                      *ngFor="let item of projects; let i = index"
+                      (mouseenter)="hoveredIndex = i"
+                      (mouseleave)="hoveredIndex = null"
+                      [ngStyle]="{
+                        border: isDark
+                          ? '1px solid #6E4D00'
+                          : '1px solid #015F95',
+                        background: isDark
+                          ? hoveredIndex === i
+                            ? 'rgba(110, 77, 0, 1)'
+                            : 'rgba(255, 205, 41, 0.20)'
+                          : hoveredIndex === i
+                            ? 'rgba(1, 95, 149, 1)'
+                            : 'rgba(0, 130, 204, 0.20)',
+                      }"
+                    >
+                      <a [href]="item.link" target="_blank">{{
+                        item.title
+                      }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

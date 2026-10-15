@@ -196,7 +196,7 @@ const routes: Routes = [
             (m) => m.TwentyTwoEnBlogModule,
           ),
       },
-      {
+      { 
         path: 'volume-analysis', //23 1
         loadChildren: () =>
           import('./twenty-three-en-blog/twenty-three-en-blog.module').then(

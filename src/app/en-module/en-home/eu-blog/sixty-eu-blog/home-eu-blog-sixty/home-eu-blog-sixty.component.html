@@ -24,7 +24,7 @@
 <p>The term “leading indicator” also needs care. A particular reading may occur before a price reversal in some cases. The calculation still uses available data; it does not know the future orders of buyers and sellers. A change in the reading is not proof that price must change direction.</p>
 
 
-<img src="/assets/img/content/MACDindicatorpng.png" alt="Price and trading indicators displayed together" class="pictureImg" loading="lazy">
+<img src="/assets/img/content/MACDindicatorpng.png" alt="MACD equals fast EMA minus slow EMA; the histogram is positive, zero or negative when MACD is above, equal to or below its signal line" class="pictureImg" loading="lazy">
 <h2 id="topic-02" style="margin:36px 0 16px">Types of Trading Indicators</h2>
 <p>Trend indicators help describe the direction of movement. A moving average smooths selected prices. In its common form, MACD (Moving Average Convergence Divergence) compares two exponential moving averages, which give more weight to recent data. A signal line smooths MACD itself, and the histogram shows the difference between MACD and that signal line.</p>
 <p> A rising histogram does not necessarily mean rising price: it can be moving towards zero from below. Check the platform’s averaging settings, because implementations can differ.</p>
@@ -87,7 +87,7 @@
 <!-- English educational illustration: trading-indicators-practice-record-en.webp -->
 
 
-<img src="/assets/img/content/divergency2.jpg" alt="Selecting indicators for a defined purpose" class="pictureImg" loading="lazy">
+<img src="/assets/img/content/divergency2.jpg" alt="Four price and oscillator comparisons: regular bearish, regular bullish, hidden bullish and hidden bearish divergence" class="pictureImg" loading="lazy">
 <section><h2 id="topic-06" style="margin:36px 0 16px">Frequently asked questions</h2><mat-accordion>
 <mat-expansion-panel class="highlight-box owl_link-box" [expanded]="true"><mat-expansion-panel-header><mat-panel-title>Why do trading indicators lag?</mat-panel-title></mat-expansion-panel-header><p>They calculate from available market observations. Smoothing reduces individual fluctuations but delays the response. That is a property of processing the data, not a promise of accurate prediction. Readings using an unfinished bar can still change before it closes.</p></mat-expansion-panel>
 <mat-expansion-panel class="highlight-box owl_link-box" (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)"><mat-expansion-panel-header><mat-panel-title>Is a line crossover enough to enter a trade?</mat-panel-title></mat-expansion-panel-header><p>A crossover describes an indicator condition, not a complete trade plan. In Arapov’s approach, the decision also considers price, its response at a level, volume and the loss permitted before entry. The indicator alone does not specify all those conditions.</p></mat-expansion-panel>

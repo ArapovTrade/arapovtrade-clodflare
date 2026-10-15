@@ -55,7 +55,7 @@ export class HomeEnBlogFourtyFiveComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Relative Strength Indexs: SMA, EMA and how to read them',
+      'Relative Strength Index (RSI): calculation and how to read it',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
