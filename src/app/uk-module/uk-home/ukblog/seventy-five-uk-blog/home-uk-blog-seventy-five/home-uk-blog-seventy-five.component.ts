@@ -57,7 +57,7 @@ export class HomeUkBlogSeventyFiveComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Трейдинг: азартна гра чи серйозний бізнес? | Arapov.trade',
+      'Трейдинг: азартна гра чи серйозний бізнес? | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -82,11 +82,11 @@ export class HomeUkBlogSeventyFiveComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -282,16 +282,16 @@ export class HomeUkBlogSeventyFiveComponent {
           description:
             'Аналіз двох підходів до торгівлі на фінансових ринках. Як перетворити трейдинг на стабільне джерело доходу та уникнути пасток ігрового мислення.',
           image:
-            'https://arapov.trade/assets/img/content/gamblingorbusiness.webp',
+            'https://arapovtrade.com/assets/img/content/gamblingorbusiness.webp',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2025-04-15T00:00:00Z',
@@ -310,7 +310,7 @@ export class HomeUkBlogSeventyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -321,9 +321,9 @@ export class HomeUkBlogSeventyFiveComponent {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -335,7 +335,7 @@ export class HomeUkBlogSeventyFiveComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };

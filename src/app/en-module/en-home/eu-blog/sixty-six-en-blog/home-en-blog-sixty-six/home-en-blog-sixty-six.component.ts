@@ -97,11 +97,11 @@ export class HomeEnBlogSixtySixComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -275,29 +275,29 @@ export class HomeEnBlogSixtySixComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/en/freestudying/peakvolumelevels#article',
+            'https://arapovtrade.com/en/freestudying/peakvolumelevels#article',
           headline:
             'Volume Analysis in Trading: Finding High Volume Levels & Entry Points',
           description:
             'Master volume analysis in trading: learn to identify high volume levels, use Volume Profile and POC for precise entries.',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/peakvolumelevels1.png',
+            url: 'https://arapovtrade.com/assets/img/content/peakvolumelevels1.png',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           datePublished: '2024-01-15T10:00:00+00:00',
           dateModified: '2026-06-04T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/peakvolumelevels',
+            '@id': 'https://arapovtrade.com/en/freestudying/peakvolumelevels',
           },
           articleSection: 'Trading Education',
           keywords: [
@@ -324,7 +324,7 @@ export class HomeEnBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -336,9 +336,9 @@ export class HomeEnBlogSixtySixComponent {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -353,7 +353,7 @@ export class HomeEnBlogSixtySixComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -369,7 +369,7 @@ export class HomeEnBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/peakvolumelevels#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/peakvolumelevels#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -424,7 +424,7 @@ export class HomeEnBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/peakvolumelevels#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/peakvolumelevels#howto',
       name: 'How to Use Volume Analysis for Trade Entries',
       description:
         'Step-by-step guide to analyzing market volume for identifying optimal entry points',
@@ -436,7 +436,7 @@ export class HomeEnBlogSixtySixComponent {
           name: 'Configure Volume Profile',
           text: 'Open your chart and add the Volume Profile indicator. Select the profile type: session for intraday, fixed range for analyzing specific price areas.',
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels1.png',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels1.png',
         },
         {
           '@type': 'HowToStep',
@@ -444,7 +444,7 @@ export class HomeEnBlogSixtySixComponent {
           name: 'Identify POC and Value Area',
           text: 'Locate the Point of Control (highest volume level) and Value Area boundaries — the zone containing 70% of all traded volume.',
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels2.webp',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels2.webp',
         },
         {
           '@type': 'HowToStep',
@@ -464,7 +464,7 @@ export class HomeEnBlogSixtySixComponent {
           name: 'Execute with Clear Plan',
           text: 'Enter trades with defined stop-loss beyond the nearest volume level and take-profit at the next significant level.',
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels3.png',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels3.png',
         },
       ],
     };
@@ -479,7 +479,7 @@ export class HomeEnBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/peakvolumelevels#glossary',
+      '@id': 'https://arapovtrade.com/en/freestudying/peakvolumelevels#glossary',
       name: 'Volume Analysis Glossary',
       description: 'Essential volume analysis terms for traders',
       inLanguage: 'en',

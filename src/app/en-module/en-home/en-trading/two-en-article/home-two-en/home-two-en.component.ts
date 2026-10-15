@@ -55,7 +55,7 @@ export class HomeTwoEnComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Financial Market Terms Glossary: Complete Guide for Traders | Arapov.trade',
+      'Financial Market Terms Glossary: Complete Guide for Traders | ArapovTrade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
@@ -73,11 +73,11 @@ export class HomeTwoEnComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -253,24 +253,24 @@ export class HomeTwoEnComponent implements OnInit {
             'Financial Market Terms Glossary: Complete Guide for Traders',
           description:
             'Comprehensive financial market terminology guide for beginners. Stock and forex market basics, technical and fundamental analysis, trading strategies explained.',
-          image: 'https://arapov.trade/assets/img/content/osnovirinka1.webp',
+          image: 'https://arapovtrade.com/assets/img/content/osnovirinka1.webp',
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/marketbasics',
+            '@id': 'https://arapovtrade.com/en/freestudying/marketbasics',
           },
           articleSection: 'Trading Education',
           wordCount: 1540,
@@ -289,7 +289,7 @@ export class HomeTwoEnComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -301,9 +301,9 @@ export class HomeTwoEnComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -318,7 +318,7 @@ export class HomeTwoEnComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

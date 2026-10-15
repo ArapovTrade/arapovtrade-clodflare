@@ -60,7 +60,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Чому на обвалі біткоїна вибиває стопи | Arapov.trade',
+      'Чому на обвалі біткоїна вибиває стопи | ArapovTrade',
     );
     this.meta.updateTag({
       name: 'description',
@@ -82,11 +82,11 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -276,32 +276,32 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/bitcoin-crash-stops',
+          '@id': 'https://arapovtrade.com/uk/freestudying/bitcoin-crash-stops',
           headline: 'Чому на обвалі біткоїна вибиває стопи',
           description:
             'Каскадні ліквідації, маржин-кол і зняття ліквідності на обвалі біткоїна: чому вибиває стопи і зливаються депозити, кого вилітає першим і як захистити рахунок.',
           image:
-            'https://arapov.trade/assets/img/content/bitcoin-crash-stops.png',
+            'https://arapovtrade.com/assets/img/content/bitcoin-crash-stops.png',
           datePublished: '2026-06-11T00:00:00Z',
           dateModified: '2026-06-11T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/uk/freestudying/bitcoin-crash-stops.png',
+              'https://arapovtrade.com/uk/freestudying/bitcoin-crash-stops.png',
           },
           articleSection: 'Навчання трейдингу',
         },
@@ -318,7 +318,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -329,9 +329,9 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -346,7 +346,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -362,7 +362,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/spread#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/spread#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -417,7 +417,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/spread#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/spread#howto',
       name: 'Як знизити торгові витрати на спреді',
       description:
         'Покрокове керівництво з мінімізації впливу спреду на результати торгівлі',
@@ -465,7 +465,7 @@ export class HomeUkBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/spread#glossary',
+      '@id': 'https://arapovtrade.com/uk/freestudying/spread#glossary',
       name: 'Глосарій термінів зі спреду',
       hasDefinedTerm: [
         {

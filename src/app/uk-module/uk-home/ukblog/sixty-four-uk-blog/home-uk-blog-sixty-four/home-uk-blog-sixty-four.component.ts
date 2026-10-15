@@ -102,11 +102,11 @@ export class HomeUkBlogSixtyFourComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -301,28 +301,28 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Дізнайтесь практичні рекомендації з трейдингу: торгова система, точки входу, мані-менеджмент і ризики від ArapovTrade.',
           author: { '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk', },
+            url: 'https://arapovtrade.com/uk', },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/practic',
+            '@id': 'https://arapovtrade.com/uk/freestudying/practic',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/prakticuk.jpg',
+            url: 'https://arapovtrade.com/assets/img/content/prakticuk.jpg',
             width: 1200,
             height: 630,
           },
@@ -343,7 +343,7 @@ export class HomeUkBlogSixtyFourComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -354,9 +354,9 @@ export class HomeUkBlogSixtyFourComponent {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -371,7 +371,7 @@ export class HomeUkBlogSixtyFourComponent {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -490,7 +490,7 @@ export class HomeUkBlogSixtyFourComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/practic#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/practic#terms',
       inLanguage: 'uk',
       name: 'Терміни торгової стратегії',
       hasDefinedTerm: [
@@ -500,7 +500,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Заздалегідь розроблений набір чітких правил входу, виходу й контролю ризику, що замінює імпровізацію та емоції логікою і статистикою.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -508,7 +508,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Спроба вивести ціну за рівень підтримки або опору без продовження руху, часто на підвищеному обсязі.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -516,7 +516,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Патерн Price Action, що вказує на переважання продавців; сигнал входу на продаж при пробої мінімуму бару хибного пробою.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -524,7 +524,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Умова, за якої на кожен долар ризику закладається мінімум 3 долари потенційного прибутку.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -532,7 +532,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Частка прибуткових угод у торговій системі; при роботі з рівнями зазвичай близько 60-65%.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -540,7 +540,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Відношення сумарного прибутку до сумарного збитку; мінімально достатнім вважається 1.8-2 з урахуванням комісій.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -548,7 +548,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Максимальна просадка депозиту за період; стоп-лосс обмежує її глибину, але не скасовує.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -556,7 +556,7 @@ export class HomeUkBlogSixtyFourComponent {
           description:
             'Управління капіталом: який відсоток депозиту використовувати в угоді і як переносити ризик з угоди в угоду.',
           inDefinedTermSet:
-            'https://arapov.trade/uk/freestudying/practic#terms',
+            'https://arapovtrade.com/uk/freestudying/practic#terms',
         },
       ],
     };

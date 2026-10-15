@@ -57,7 +57,7 @@ export class HomeRuThirtyEightComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Управление капиталом в трейдинге | Arapov.trade',
+      'Управление капиталом в трейдинге | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
@@ -80,14 +80,14 @@ export class HomeRuThirtyEightComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-   { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+   { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
     
   ];
@@ -283,25 +283,25 @@ export class HomeRuThirtyEightComponent implements OnInit {
           description:
             'Полное руководство по управлению капиталом в трейдинге. Риск-менеджмент, мани-менеджмент, стратегии защиты депозита и приумножения прибыли для начинающих трейдеров.',
           image:
-            'https://arapov.trade/assets/img/content/capitalmanagement1.jpg',
+            'https://arapovtrade.com/assets/img/content/capitalmanagement1.jpg',
           datePublished: '2025-04-15T00:00:00Z',
          dateModified: '2026-04-15T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/capitalmanagement',
+            '@id': 'https://arapovtrade.com/ru/freestudying/capitalmanagement',
           },
           articleSection: 'Обучение трейдингу',
           wordCount: 1650,
@@ -320,7 +320,7 @@ export class HomeRuThirtyEightComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -331,9 +331,9 @@ export class HomeRuThirtyEightComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -345,7 +345,7 @@ export class HomeRuThirtyEightComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapov.trade'],
+      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель ArapovTrade'],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
     };

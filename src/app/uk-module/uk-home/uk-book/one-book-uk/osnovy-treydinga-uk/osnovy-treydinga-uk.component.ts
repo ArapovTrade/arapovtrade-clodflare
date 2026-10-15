@@ -142,10 +142,10 @@ export class OsnovyTreydingaUkComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      '@id': 'https://arapov.trade/uk/books/osnovy-treydinga#book',
+      '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga#book',
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://arapov.trade/uk/books/osnovy-treydinga',
+        '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga',
       },
       name: 'Теорія трейдингу. Основи ринку • Технічний аналіз • Обʼємний аналіз',
       alternateName: [
@@ -168,7 +168,7 @@ export class OsnovyTreydingaUkComponent
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       copyrightYear: 2025,
-      copyrightHolder: { '@id': 'https://arapov.trade/#person' },
+      copyrightHolder: { '@id': 'https://arapovtrade.com/#person' },
       genre: ['Business', 'Finance', 'Trading', 'Education', 'Investment'],
       about: [
         {
@@ -195,27 +195,27 @@ export class OsnovyTreydingaUkComponent
         'трейдинг, форекс, технічний аналіз, обʼємний аналіз, біржа, інвестиції, smart money, навчання трейдингу',
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/uk',
+        url: 'https://arapovtrade.com/uk',
       },
-      publisher: { '@id': 'https://arapov.trade/#organization' },
+      publisher: { '@id': 'https://arapovtrade.com/#organization' },
       image: {
         '@type': 'ImageObject',
-        url: 'https://arapov.trade/assets/redesignArapovTrade/img/cover_osnovy_treidynhu_ua.jpg',
+        url: 'https://arapovtrade.com/assets/redesignArapovTrade/img/cover_osnovy_treidynhu_ua.jpg',
         width: 600,
         height: 900,
         caption: '«Основи трейдингу» — Ігор Арапов',
       },
-      url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+      url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+        url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
         priceValidUntil: '2026-12-31',
-        seller: { '@id': 'https://arapov.trade/#organization' },
+        seller: { '@id': 'https://arapovtrade.com/#organization' },
       },
       workExample: {
         '@type': 'Book',
@@ -244,7 +244,7 @@ export class OsnovyTreydingaUkComponent
           '@type': 'ReadAction',
           target: {
             '@type': 'EntryPoint',
-            url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+            url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
             actionPlatform: [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform',
@@ -265,24 +265,24 @@ export class OsnovyTreydingaUkComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      '@id': 'https://arapov.trade/uk/books/osnovy-treydinga',
-      url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+      '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga',
+      url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
       name: 'Теорія трейдингу. Основи ринку • Технічний аналіз • Обʼємний аналіз',
       description:
         'Скачати безкоштовно книгу з трейдингу. ISBN 979-8-90243-730-7',
       inLanguage: 'uk',
-      isPartOf: { '@id': 'https://arapov.trade/#website' },
-      about: { '@id': 'https://arapov.trade/uk/books/osnovy-treydinga#book' },
+      isPartOf: { '@id': 'https://arapovtrade.com/#website' },
+      about: { '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga#book' },
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/uk',
+        url: 'https://arapovtrade.com/uk',
       },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {
-        '@id': 'https://arapov.trade/uk/books/osnovy-treydinga#book',
+        '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga#book',
       },
       // breadcrumb: {
       //   '@type': 'BreadcrumbList',
@@ -291,25 +291,25 @@ export class OsnovyTreydingaUkComponent
       //       '@type': 'ListItem',
       //       position: 1,
       //       name: 'Головна',
-      //       item: 'https://arapov.trade',
+      //       item: 'https://arapovtrade.com',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 2,
       //       name: 'Про автора',
-      //       item: 'https://arapov.trade/uk',
+      //       item: 'https://arapovtrade.com/uk',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 3,
       //       name: 'Мої книги',
-      //       item: 'https://arapov.trade/uk/books',
+      //       item: 'https://arapovtrade.com/uk/books',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 4,
       //       name: 'Книга',
-      //       item: 'https://arapov.trade/uk/books/osnovy-treydinga',
+      //       item: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
       //     },
       //   ],
       // },
@@ -327,7 +327,7 @@ export class OsnovyTreydingaUkComponent
           name: 'Книжка справді безкоштовна?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Так, книга «Основи трейдингу» доступна для завантаження абсолютно безкоштовно у форматі EPUB. Автор надає її як частину безкоштовної освітньої програми на платформі arapov.trade.',
+            text: 'Так, книга «Основи трейдингу» доступна для завантаження абсолютно безкоштовно у форматі EPUB. Автор надає її як частину безкоштовної освітньої програми на платформі arapovtrade.com.',
           },
         },
         {
@@ -351,7 +351,7 @@ export class OsnovyTreydingaUkComponent
           name: 'Хто автор книги?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Автор книги – Ігор Арапов, практикуючий трейдер з 2013 року. Творець освітньої платформи arapov.trade із 51+ статтями та YouTube каналу @ArapovTrade із 78+ відеоуроками з трейдингу.',
+            text: 'Автор книги – Ігор Арапов, практикуючий трейдер з 2013 року. Творець освітньої платформи arapovtrade.com із 51+ статтями та YouTube каналу @ArapovTrade із 78+ відеоуроками з трейдингу.',
           },
         },
         {

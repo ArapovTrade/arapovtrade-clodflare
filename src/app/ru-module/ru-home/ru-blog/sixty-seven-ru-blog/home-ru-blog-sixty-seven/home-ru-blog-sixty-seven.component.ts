@@ -103,14 +103,14 @@ export class HomeRuBlogSixtySevenComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -301,28 +301,28 @@ export class HomeRuBlogSixtySevenComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/ru/freestudying/trendvolumeanalysis#article',
+            'https://arapovtrade.com/ru/freestudying/trendvolumeanalysis#article',
           headline: 'Объёмный анализ трендов: практическое руководство',
           description:
             'Узнайте, как использовать объёмы для анализа рыночных трендов. Фазы тренда, индикаторы объёма, выявление ложных пробоев и стратегии Smart Money.',
           image:
-            'https://arapov.trade/assets/img/content/trendvolumeanalysis2.jpg',
+            'https://arapovtrade.com/assets/img/content/trendvolumeanalysis2.jpg',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage:
-            'https://arapov.trade/ru/freestudying/trendvolumeanalysis',
+            'https://arapovtrade.com/ru/freestudying/trendvolumeanalysis',
         },
       ],
     };
@@ -337,7 +337,7 @@ export class HomeRuBlogSixtySevenComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -348,9 +348,9 @@ export class HomeRuBlogSixtySevenComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -365,7 +365,7 @@ export class HomeRuBlogSixtySevenComponent {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',

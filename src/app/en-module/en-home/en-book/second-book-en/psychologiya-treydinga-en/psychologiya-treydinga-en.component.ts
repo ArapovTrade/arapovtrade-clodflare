@@ -141,10 +141,10 @@ export class PsychologiyaTreydingaEnComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book',
+      '@id': 'https://arapovtrade.com/en/books/psihologiya-treydinga#book',
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://arapov.trade/en/books/psihologiya-treydinga',
+        '@id': 'https://arapovtrade.com/en/books/psihologiya-treydinga',
       },
       name: 'Trading psychology. How to Master Your Emotions and Think Like a Professional',
       alternateName: [
@@ -163,7 +163,7 @@ export class PsychologiyaTreydingaEnComponent
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       copyrightYear: 2025,
-      copyrightHolder: { '@id': 'https://arapov.trade/#person' },
+      copyrightHolder: { '@id': 'https://arapovtrade.com/#person' },
       genre: ['Business', 'Finance', 'Trading', 'Education', 'Investment'],
       about: [
         {
@@ -190,27 +190,27 @@ export class PsychologiyaTreydingaEnComponent
         'trading, forex, technical analysis, volume analysis, exchange, investments, smart money, trading education',
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/en',
+        url: 'https://arapovtrade.com/en',
       },
-      publisher: { '@id': 'https://arapov.trade/#organization' },
+      publisher: { '@id': 'https://arapovtrade.com/#organization' },
       image: {
         '@type': 'ImageObject',
-        url: 'https://arapov.trade/assets/redesignArapovTrade/img/cover_psychology.jpg',
+        url: 'https://arapovtrade.com/assets/redesignArapovTrade/img/cover_psychology.jpg',
         width: 600,
         height: 900,
         caption: 'Cover of the book "Trading Psychology" — Igor Arapov',
       },
-      url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+      url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+        url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
         priceValidUntil: '2026-12-31',
-        seller: { '@id': 'https://arapov.trade/#organization' },
+        seller: { '@id': 'https://arapovtrade.com/#organization' },
       },
       workExample: {
         '@type': 'Book',
@@ -239,7 +239,7 @@ export class PsychologiyaTreydingaEnComponent
           '@type': 'ReadAction',
           target: {
             '@type': 'EntryPoint',
-            url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+            url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
             actionPlatform: [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform',
@@ -260,25 +260,25 @@ export class PsychologiyaTreydingaEnComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      '@id': 'https://arapov.trade/en/books/psihologiya-treydinga',
-      url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+      '@id': 'https://arapovtrade.com/en/books/psihologiya-treydinga',
+      url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
       name: 'Trading psychology. How to Master Your Emotions and Think Like a Professional',
       description: 'Download the free book on trading. ISBN 979-8-90243-138-1',
       inLanguage: 'en',
-      isPartOf: { '@id': 'https://arapov.trade/#website' },
+      isPartOf: { '@id': 'https://arapovtrade.com/#website' },
       about: {
-        '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book',
+        '@id': 'https://arapovtrade.com/en/books/psihologiya-treydinga#book',
       },
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/en',
+        url: 'https://arapovtrade.com/en',
       },
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       mainEntity: {
-        '@id': 'https://arapov.trade/en/books/psihologiya-treydinga#book',
+        '@id': 'https://arapovtrade.com/en/books/psihologiya-treydinga#book',
       },
       // breadcrumb: {
       //   '@type': 'BreadcrumbList',
@@ -287,25 +287,25 @@ export class PsychologiyaTreydingaEnComponent
       //       '@type': 'ListItem',
       //       position: 1,
       //       name: 'Main',
-      //       item: 'https://arapov.trade',
+      //       item: 'https://arapovtrade.com',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 2,
       //       name: 'About the author',
-      //       item: 'https://arapov.trade/en',
+      //       item: 'https://arapovtrade.com/en',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 3,
       //       name: 'My books',
-      //       item: 'https://arapov.trade/en/books',
+      //       item: 'https://arapovtrade.com/en/books',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 4,
       //       name: 'Book',
-      //       item: 'https://arapov.trade/en/books/psihologiya-treydinga',
+      //       item: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
       //     },
       //   ],
       // },
@@ -323,7 +323,7 @@ export class PsychologiyaTreydingaEnComponent
           name: 'Is the book really free?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, the book "Trading Psychology" is available for download absolutely free of charge in EPUB format. The author provides it as part of a free educational program on the arapov.trade platform.',
+            text: 'Yes, the book "Trading Psychology" is available for download absolutely free of charge in EPUB format. The author provides it as part of a free educational program on the arapovtrade.com platform.',
           },
         },
         {
@@ -347,7 +347,7 @@ export class PsychologiyaTreydingaEnComponent
           name: 'Who is the author of the book?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapov.trade with 51+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
+            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapovtrade.com with 51+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
           },
         },
         {

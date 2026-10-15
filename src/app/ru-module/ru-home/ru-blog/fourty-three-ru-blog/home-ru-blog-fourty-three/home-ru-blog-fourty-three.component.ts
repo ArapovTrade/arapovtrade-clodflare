@@ -79,14 +79,14 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -282,29 +282,29 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
             'Что такое торговая система, из чего она состоит, как её собрать, протестировать и оптимизировать, не подгоняя под историю.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/trading-system',
+            '@id': 'https://arapovtrade.com/ru/freestudying/trading-system',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/tradingsystem.webp',
+            url: 'https://arapovtrade.com/assets/img/content/tradingsystem.webp',
             width: 1200,
             height: 630,
           },
@@ -326,7 +326,7 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -337,9 +337,9 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -432,7 +432,7 @@ export class HomeRuBlogFourtyThreeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/trading-system#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/trading-system#howto',
       name: 'Как собрать и проверить торговую систему',
       description:
         'Пошаговый разбор: от понимания, зачем нужна система, до её состава, плана, бэктеста, проверки вперёд и дневника трейдера',

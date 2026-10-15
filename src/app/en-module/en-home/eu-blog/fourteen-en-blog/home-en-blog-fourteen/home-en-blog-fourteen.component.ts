@@ -55,7 +55,7 @@ export class HomeEnBlogFourteenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Crypto Scams: Red Flags to Watch For | Arapov.trade',
+      'Crypto Scams: Red Flags to Watch For | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -74,11 +74,11 @@ export class HomeEnBlogFourteenComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -256,29 +256,29 @@ export class HomeEnBlogFourteenComponent implements OnInit {
             'The main crypto risks and popular scam schemes: fake ICOs, pyramids, phishing and wallet drainers. How to spot fraud and protect your funds.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/crypto-risks-scams',
+            '@id': 'https://arapovtrade.com/en/freestudying/crypto-risks-scams',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/cryptoscam.webp',
+            url: 'https://arapovtrade.com/assets/img/content/cryptoscam.webp',
             width: 1200,
             height: 630,
           },
@@ -300,7 +300,7 @@ export class HomeEnBlogFourteenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -311,9 +311,9 @@ export class HomeEnBlogFourteenComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -328,7 +328,7 @@ export class HomeEnBlogFourteenComponent implements OnInit {
       jobTitle: [
         'Independent researcher',
         'Trader',
-        'Author and founder of arapov.trade',
+        'Author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practising trader, author of trading books and scientific publications. Specialises in trading psychology and cognitive biases in financial markets.',
@@ -398,7 +398,7 @@ export class HomeEnBlogFourteenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/crypto-risks-scams#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/crypto-risks-scams#howto',
       name: 'How to understand crypto risks and not lose the account',
       description:
         'A step-by-step breakdown of crypto risks and fraud schemes and their practical use',

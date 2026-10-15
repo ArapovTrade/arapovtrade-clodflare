@@ -78,11 +78,11 @@ export class HomeEnBlogOnehundredNineComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -273,28 +273,28 @@ export class HomeEnBlogOnehundredNineComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          url: 'https://arapov.trade/en/freestudying/curriculum',
+          url: 'https://arapovtrade.com/en/freestudying/curriculum',
 
           headline:
-            '151 Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapov.trade',
+            '151 Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapovtrade.com',
           description:
-            'A full map of every article published on arapov.trade — organized by category, with descriptions, difficulty levels, and structured learning paths.',
+            'A full map of every article published on arapovtrade.com — organized by category, with descriptions, difficulty levels, and structured learning paths.',
           inLanguage: 'en',
           datePublished: '2026-02-22T00:00:00Z',
           dateModified: '2026-02-22T00:00:00Z',
-          image: ['https://arapov.trade/assets/img/content/curriculum.png'],
+          image: ['https://arapovtrade.com/assets/img/content/curriculum.png'],
 
           mainEntity: {
             '@type': 'EducationalOrganization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/curriculum',
+            '@id': 'https://arapovtrade.com/en/freestudying/curriculum',
           },
         },
       ],
@@ -310,7 +310,7 @@ export class HomeEnBlogOnehundredNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
        name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -321,9 +321,9 @@ export class HomeEnBlogOnehundredNineComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
     'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -335,7 +335,7 @@ export class HomeEnBlogOnehundredNineComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
   ],
-  jobTitle: ['Independent researcher,', 'trader', 'author and founder of arapov.trade'],
+  jobTitle: ['Independent researcher,', 'trader', 'author and founder of arapovtrade.com'],
   description:
     'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
     };

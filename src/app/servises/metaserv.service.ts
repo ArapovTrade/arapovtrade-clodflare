@@ -24,14 +24,14 @@ export class MetaservService {
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      '@id': 'https://arapov.trade/#organization', // ← связка с publisher статей
+      '@id': 'https://arapovtrade.com/#organization', // ← связка с publisher статей
       name: 'ArapovTrade', // ← единое имя (было 'Arapov Trade')
-      alternateName: ['arapov.trade', 'Arapov.Trade', 'Arapov Trade'],
+      alternateName: ['arapov.trade',  'Arapov.Trade', 'Arapov Trade'],
 
       legalName: 'ФОП Арапов І.В.',
       taxID: '3314507171',
       foundingDate: '2020-07',
-      url: 'https://arapov.trade',
+      url: 'https://arapovtrade.com',
       sameAs: [
         'https://www.wikidata.org/wiki/Q140744162',
         'https://www.linkedin.com/company/arapovtrade',
@@ -41,9 +41,9 @@ export class MetaservService {
       // ← мост к платформе в Wikidata
       logo: {
         '@type': 'ImageObject',
-        '@id': 'https://arapov.trade/#logo',
-        url: 'https://arapov.trade/favicon.ico',
-        contentUrl: 'https://arapov.trade/favicon.ico',
+        '@id': 'https://arapovtrade.com/#logo',
+        url: 'https://arapovtrade.com/favicon.ico',
+        contentUrl: 'https://arapovtrade.com/favicon.ico',
         width: 200,
         height: 200,
         caption: 'ArapovTrade',
@@ -54,7 +54,7 @@ export class MetaservService {
 
       image: {
         '@type': 'ImageObject',
-        url: 'https://arapov.trade/assets/img/photo_mainpage.jpg',
+        url: 'https://arapovtrade.com/assets/img/photo_mainpage.jpg',
       },
 
       email: 'arapov.trade@gmail.com',
@@ -67,7 +67,7 @@ export class MetaservService {
         postalCode: '49130',
         addressCountry: 'UA',
       },
-      founder: { '@id': 'https://arapov.trade/#person' }, // ← привязка к каноническому Person
+      founder: { '@id': 'https://arapovtrade.com/#person' }, // ← привязка к каноническому Person
       numberOfEmployees: {
         '@type': 'QuantitativeValue',
         minValue: 1,

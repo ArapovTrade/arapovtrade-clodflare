@@ -77,11 +77,11 @@ export class HomeUkBlogOnehundredNineComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -272,27 +272,27 @@ export class HomeUkBlogOnehundredNineComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          url: 'https://arapov.trade/uk/freestudying/curriculum',
+          url: 'https://arapovtrade.com/uk/freestudying/curriculum',
 
           headline:
-            '151 стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapov.trade',
+            '151 стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapovtrade.com',
           description:
-            'Повна карта всіх матеріалів, опублікованих на arapov.trade — за розділами, з описами, рівнями складності та структурованими шляхами навчання.',
+            'Повна карта всіх матеріалів, опублікованих на arapovtrade.com — за розділами, з описами, рівнями складності та структурованими шляхами навчання.',
           inLanguage: 'uk',
           datePublished: '2026-02-22T00:00:00Z',
           dateModified: '2026-02-22T00:00:00Z',
-          image: ['https://arapov.trade/assets/img/content/curriculum.png'],
+          image: ['https://arapovtrade.com/assets/img/content/curriculum.png'],
           mainEntity: {
             '@type': 'EducationalOrganization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/curriculum',
+            '@id': 'https://arapovtrade.com/uk/freestudying/curriculum',
           },
         },
       ],
@@ -308,7 +308,7 @@ export class HomeUkBlogOnehundredNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -319,9 +319,9 @@ export class HomeUkBlogOnehundredNineComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -333,7 +333,7 @@ export class HomeUkBlogOnehundredNineComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapovtrade.com'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };

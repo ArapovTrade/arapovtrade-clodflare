@@ -57,7 +57,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.meta.updateTag({ name: 'datePublished', content: '2026-06-25' });
     this.meta.updateTag({
       property: 'og:image',
-      content: 'https://arapov.trade/assets/img/photo_mainpage.jpg',
+      content: 'https://arapovtrade.com/assets/img/photo_mainpage.jpg',
     });
     this.addWebSiteSchema();
     // this.addPersonSchema();
@@ -141,7 +141,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
         const json = JSON.parse(script.textContent || '{}');
         return (
           json['@type'] === 'Person' &&
-          json['@id'] === 'https://arapov.trade/#person'
+          json['@id'] === 'https://arapovtrade.com/#person'
         );
       } catch {
         return false;
@@ -157,10 +157,10 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
     script.text = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: 'Игорь Арапов',
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       jobTitle: 'Независимый трейдер и исследователь',
       sameAs: [
         'https://orcid.org/0009-0003-0430-778X',
@@ -178,7 +178,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
     ).some((script) => {
       try {
         const json = JSON.parse(script.textContent || '{}');
-        return json['@type'] === 'WebSite' && json['name'] === 'Arapov.Trade';
+        return json['@type'] === 'WebSite' && json['name'] === 'ArapovTrade';
       } catch {
         return false;
       }
@@ -193,27 +193,27 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
     script.text = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      '@id': 'https://arapov.trade/#website',
-      url: 'https://arapov.trade/ru/main',
-      name: 'Arapov.Trade',
+      '@id': 'https://arapovtrade.com/#website',
+      url: 'https://arapovtrade.com/ru/main',
+      name: 'ArapovTrade',
       alternateName: 'Обучение трейдингу',
       description:
         'Бесплатное обучение трейдингу от Игоря Арапова. 51+ статей, 78+ видеоуроков.',
       inLanguage: 'ru-RU',
       publisher: {
         '@type': 'Organization',
-        '@id': 'https://arapov.trade/#organization',
-        name: 'Arapov.Trade',
-        url: 'https://arapov.trade',
+        '@id': 'https://arapovtrade.com/#organization',
+        name: 'ArapovTrade',
+        url: 'https://arapovtrade.com',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://arapov.trade/favicon.ico',
+          url: 'https://arapovtrade.com/favicon.ico',
         },
         founder: {
           '@type': 'Person',
-          '@id': 'https://arapov.trade/#person',
+          '@id': 'https://arapovtrade.com/#person',
           name: 'Igor Arapov',
-          url: 'https://arapov.trade/ru',
+          url: 'https://arapovtrade.com/ru',
         },
       },
     });
@@ -266,7 +266,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
           position: 1,
           item: {
             '@type': 'Book',
-            '@id': 'https://arapov.trade/ru/books/osnovy-treydinga#book',
+            '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga#book',
             name: 'Теория трейдинга. Основы рынка • Технический анализ • Объёмный анализ',
             isbn: '979-8-90243-075-9',
             inLanguage: 'ru',
@@ -274,15 +274,15 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             datePublished: '2025-06-07',
             author: {
               '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+              '@id': 'https://arapovtrade.com/#person',
               name: 'Igor Arapov',
-              url: 'https://arapov.trade/ru',
+              url: 'https://arapovtrade.com/ru',
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://arapov.trade/#organization',
+              '@id': 'https://arapovtrade.com/#organization',
             },
-            url: 'https://arapov.trade/ru/books/osnovy-treydinga',
+            url: 'https://arapovtrade.com/ru/books/osnovy-treydinga',
           },
         },
         {
@@ -290,7 +290,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
           position: 2,
           item: {
             '@type': 'Book',
-            '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book',
+            '@id': 'https://arapovtrade.com/ru/books/psihologiya-treydinga#book',
             name: 'Психология трейдинга: Как управлять эмоциями и мыслить как профессионал',
             isbn: '979-8-90243-081-0',
             inLanguage: 'ru',
@@ -298,15 +298,15 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             datePublished: '2025-06-07',
             author: {
               '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+              '@id': 'https://arapovtrade.com/#person',
               name: 'Igor Arapov',
-              url: 'https://arapov.trade/ru',
+              url: 'https://arapovtrade.com/ru',
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://arapov.trade/#organization',
+              '@id': 'https://arapovtrade.com/#organization',
             },
-            url: 'https://arapov.trade/ru/books/psihologiya-treydinga',
+            url: 'https://arapovtrade.com/ru/books/psihologiya-treydinga',
           },
         },
         {
@@ -315,7 +315,7 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
           item: {
             '@type': 'Book',
             '@id':
-              'https://arapov.trade/ru/books/osnovy-treydinga-tom-two#book',
+              'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two#book',
             name: 'Методы анализа. Технический анализ • Объёмный анализ • Практика',
             isbn: '979-8-90243-078-0',
             inLanguage: 'ru',
@@ -323,15 +323,15 @@ export class RuBookPageComponent implements OnInit, AfterViewInit, OnDestroy {
             datePublished: '2025-06-07',
             author: {
               '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+              '@id': 'https://arapovtrade.com/#person',
               name: 'Igor Arapov',
-              url: 'https://arapov.trade/ru',
+              url: 'https://arapovtrade.com/ru',
             },
             publisher: {
               '@type': 'Organization',
-              '@id': 'https://arapov.trade/#organization',
+              '@id': 'https://arapovtrade.com/#organization',
             },
-            url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+            url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
           },
         },
       ],

@@ -56,7 +56,7 @@ export class HomeUkBlogThirtyComponent implements OnInit {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Спот, ф`ючерси та деривативи: у чому різниця | Arapov.trade');
+    this.titleService.setTitle('Спот, ф`ючерси та деривативи: у чому різниця | ArapovTrade');
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
 
@@ -79,11 +79,11 @@ export class HomeUkBlogThirtyComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -279,18 +279,18 @@ export class HomeUkBlogThirtyComponent implements OnInit {
             'Що таке деривативи, чим ф’ючерси та опціони відрізняються від споту, як працює плече і який інструмент обрати новачку.',
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk',
+            url: 'https://arapovtrade.com/uk',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
@@ -298,11 +298,11 @@ export class HomeUkBlogThirtyComponent implements OnInit {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/uk/freestudying/derivatives-futures-spot',
+              'https://arapovtrade.com/uk/freestudying/derivatives-futures-spot',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/derivatives-futures-spot.jpeg',
+            url: 'https://arapovtrade.com/assets/img/content/derivatives-futures-spot.jpeg',
             width: 1200,
             height: 630,
           },
@@ -324,7 +324,7 @@ export class HomeUkBlogThirtyComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -335,9 +335,9 @@ export class HomeUkBlogThirtyComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -352,7 +352,7 @@ export class HomeUkBlogThirtyComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -423,7 +423,7 @@ export class HomeUkBlogThirtyComponent implements OnInit {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/uk/freestudying/derivatives-futures-spot#howto',
+        'https://arapovtrade.com/uk/freestudying/derivatives-futures-spot#howto',
       name: "Як розібратися в деривативах, ф'ючерсах і споті",
       description:
         "Покроковий розбір похідних інструментів, ф'ючерса та споту і їхнє практичне застосування в торгівлі",

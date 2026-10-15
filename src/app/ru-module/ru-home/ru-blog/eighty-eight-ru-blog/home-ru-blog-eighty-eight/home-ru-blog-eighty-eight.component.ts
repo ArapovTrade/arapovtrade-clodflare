@@ -50,7 +50,7 @@ export class HomeRuBlogEightyEightComponent implements OnInit {
     this.setGlossarySchema();
 
     this.titleService.setTitle(
-      'TradingView: полное руководство по платформе | Arapov.trade',
+      'TradingView: полное руководство по платформе | ArapovTrade',
     );
     this.meta.updateTag({
       name: 'description',
@@ -83,14 +83,14 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
   hoveredIndex: number | null = null;
 
   projects = [
-     { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+     { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
     
   ];
@@ -283,24 +283,24 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/ru/freestudying/tradingview-platform#article',
+            'https://arapovtrade.com/ru/freestudying/tradingview-platform#article',
           headline:
             'TradingView: полное руководство по платформе для трейдеров',
           description:
             'Подробное руководство по использованию TradingView: графики, индикаторы, Pine Script, социальные функции и интеграция с брокерами.',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/tradingview_1.png',
+            url: 'https://arapovtrade.com/assets/img/content/tradingview_1.png',
             width: 1200,
             height: 630,
           },
-          author: { '@id': 'https://arapov.trade/ru#person' },
-          publisher: { '@id': 'https://arapov.trade/#organization' },
+          author: { '@id': 'https://arapovtrade.com/ru#person' },
+          publisher: { '@id': 'https://arapovtrade.com/#organization' },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/tradingview-platform',
+            '@id': 'https://arapovtrade.com/ru/freestudying/tradingview-platform',
           },
           articleSection: 'Трейдинг',
           keywords: [
@@ -326,7 +326,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
        name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -337,9 +337,9 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -351,7 +351,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapov.trade'],
+      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapovtrade.com'],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
     };
@@ -366,7 +366,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/tradingview-platform#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/tradingview-platform#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -421,7 +421,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/tradingview-platform#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/tradingview-platform#howto',
       name: 'Как начать работу с TradingView',
       description:
         'Пошаговое руководство по началу работы на платформе TradingView',
@@ -469,7 +469,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/tradingview-platform#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/tradingview-platform#terms',
       name: 'Термины TradingView',
       hasDefinedTerm: [
         {

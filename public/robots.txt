@@ -5,6 +5,6 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://arapov.trade/sitemap.xml
+Sitemap: https://arapovtrade.com/sitemap.xml
 
   

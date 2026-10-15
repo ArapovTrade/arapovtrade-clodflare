@@ -82,11 +82,11 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -277,31 +277,31 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/en/freestudying/bitcoin-domination#article',
+            'https://arapovtrade.com/en/freestudying/bitcoin-domination#article',
           headline:
             'Bitcoin Dominance (BTC.D): What It Is and How to Use It in Trading',
           description:
             'Bitcoin dominance (BTC.D) explained: what it is, how to calculate it, historical trends, and impact on altcoins. Complete guide for crypto traders.',
           image:
-            'https://arapov.trade/assets/img/content/bitcoin_dominance_1.png',
+            'https://arapovtrade.com/assets/img/content/bitcoin_dominance_1.png',
           datePublished: '2026-03-25T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/bitcoin-domination',
+            '@id': 'https://arapovtrade.com/en/freestudying/bitcoin-domination',
           },
           articleSection: 'Cryptocurrency',
           keywords: [
@@ -325,7 +325,7 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -337,9 +337,9 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -370,7 +370,7 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/bitcoin-domination#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/bitcoin-domination#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -425,7 +425,7 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/bitcoin-domination#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/bitcoin-domination#howto',
       name: 'How to Use Bitcoin Dominance in Trading',
       description: 'Practical guide to analyzing BTC.D for trading decisions',
       totalTime: 'PT15M',
@@ -473,7 +473,7 @@ export class HomeEnBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/bitcoin-domination#terms',
+      '@id': 'https://arapovtrade.com/en/freestudying/bitcoin-domination#terms',
       name: 'Cryptocurrency Market Terms',
       hasDefinedTerm: [
         {

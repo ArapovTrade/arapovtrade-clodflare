@@ -78,7 +78,7 @@ export class RuHomeComponent implements OnInit, AfterViewInit, OnDestroy {
       userMessage: new FormControl('', Validators.required),
     });
     this.titleService.setTitle(
-      'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade',
+      'Игорь Арапов — специалист по финансовым рынкам | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
@@ -100,21 +100,21 @@ export class RuHomeComponent implements OnInit, AfterViewInit, OnDestroy {
     // Open Graph + Twitter Card — Russian author page
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/igor-arapov-author-ru.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/igor-arapov-author-ru.jpg';
 
-const ogTitle = 'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade';
+const ogTitle = 'Игорь Арапов — специалист по финансовым рынкам | ArapovTrade';
 
 const ogDescription =
   'Биография Игоря Арапова: опыт торговли с 2013 года, профессиональная подготовка, книги и исследования психологии инвестиционных решений.';
 
-const ogImageAlt = 'Игорь Арапов — специалист по финансовым рынкам | Arapov.Trade';
+const ogImageAlt = 'Игорь Арапов — специалист по финансовым рынкам | ArapovTrade';
 
-const pageUrl = 'https://arapov.trade/ru';
+const pageUrl = 'https://arapovtrade.com/ru';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -377,18 +377,18 @@ this.meta.updateTag({
 //       }
 //     });
 
-//   const PERSON_ID = 'https://arapov.trade/#person';
-//   const COAUTHOR_ID = 'https://arapov.trade/#inna-sytnyk';
-//   const ORG_ID = 'https://arapov.trade/#organization';
-//   const WEBSITE_ID = 'https://arapov.trade/#website';
-//   const NUFT_ID = 'https://arapov.trade/#nuft';
+//   const PERSON_ID = 'https://arapovtrade.com/#person';
+//   const COAUTHOR_ID = 'https://arapovtrade.com/#inna-sytnyk';
+//   const ORG_ID = 'https://arapovtrade.com/#organization';
+//   const WEBSITE_ID = 'https://arapovtrade.com/#website';
+//   const NUFT_ID = 'https://arapovtrade.com/#nuft';
 
-//   const PAGE_URL = `https://arapov.trade/${lang}`;
+//   const PAGE_URL = `https://arapovtrade.com/${lang}`;
 
 //   const HOME_URL =
 //     lang === 'uk'
-//       ? 'https://arapov.trade'
-//       : `https://arapov.trade/${lang}/main`;
+//       ? 'https://arapovtrade.com'
+//       : `https://arapovtrade.com/${lang}/main`;
 
 //   // Локализация оставлена только там, где текст реально меняется по языку
 //   // страницы. Канонические поля Person (name, sameAs, alternateName)
@@ -399,7 +399,7 @@ this.meta.updateTag({
 //       inLanguage: 'uk-UA',
 //       pageName: 'Про автора — Ігор Арапов',
 //       jobTitle:
-//         'Незалежний дослідник, трейдер, автор і засновник arapov.trade',
+//         'Незалежний дослідник, трейдер, автор і засновник ArapovTrade',
 //       description:
 //         'Незалежний дослідник у сфері поведінкових фінансів та психології трейдингу, ' +
 //         'трейдер на фінансових ринках і автор публікацій з трейдингу та поведінкових фінансів.',
@@ -414,7 +414,7 @@ this.meta.updateTag({
 //       inLanguage: 'ru-RU',
 //       pageName: 'Об авторе — Игорь Арапов',
 //       jobTitle:
-//         'Независимый исследователь, трейдер, автор и основатель arapov.trade',
+//         'Независимый исследователь, трейдер, автор и основатель ArapovTrade',
 //       description:
 //         'Независимый исследователь в области поведенческих финансов и психологии трейдинга, ' +
 //         'трейдер на финансовых рынках и автор публикаций по трейдингу и поведенческим финансам.',
@@ -429,7 +429,7 @@ this.meta.updateTag({
 //       inLanguage: 'en',
 //       pageName: 'About the author — Igor Arapov',
 //       jobTitle:
-//         'Independent researcher, trader, author and founder of arapov.trade',
+//         'Independent researcher, trader, author and founder of ArapovTrade',
 //       description:
 //         'Independent researcher in behavioral finance and trading psychology, ' +
 //         'trader in financial markets, and author of trading and behavioral finance publications.',
@@ -536,7 +536,7 @@ this.meta.updateTag({
 //         '@type': 'WebSite',
 //         '@id': WEBSITE_ID,
 //         url: HOME_URL,
-//         name: 'arapov.trade',
+//         name: 'ArapovTrade',
 //         publisher: { '@id': ORG_ID },
 //         inLanguage: ['uk', 'ru', 'en'],
 //       },
@@ -564,7 +564,7 @@ this.meta.updateTag({
 //         url: PAGE_URL,
 //         mainEntityOfPage: PAGE_URL,
 //         image:
-//           'https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
+//           'https://arapovtrade.com/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
 
 //         nationality: { '@type': 'Country', name: 'Ukraine' },
 //         alumniOf: {
@@ -618,7 +618,7 @@ this.meta.updateTag({
 
 //       {
 //         '@type': 'ScholarlyArticle',
-//         '@id': 'https://arapov.trade/#article-investplan',
+//         '@id': 'https://arapovtrade.com/#article-investplan',
 //         name: 'Психологія інвестиційних рішень: когнітивні упередження роздрібних трейдерів на фінансових ринках',
 //         headline:
 //           'Psychology of Investment Decisions: Cognitive Biases of Retail Traders in Financial Markets',
@@ -636,12 +636,12 @@ this.meta.updateTag({
 //           issn: '2306-6814',
 //         },
 //         image:
-//           'https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
+//           'https://arapovtrade.com/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
 //       },
 
 //       {
 //         '@type': 'ScholarlyArticle',
-//         '@id': 'https://arapov.trade/#article-ssrn',
+//         '@id': 'https://arapovtrade.com/#article-ssrn',
 //         name: "From Tilt to System: A Practitioner's Framework for Managing Cognitive Biases in Retail Trading",
 //         headline:
 //           "From Tilt to System: A Practitioner's Framework for Managing Cognitive Biases in Retail Trading",
@@ -659,12 +659,12 @@ this.meta.updateTag({
 //           name: 'Social Science Research Network (SSRN)',
 //         },
 //         image:
-//           'https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
+//           'https://arapovtrade.com/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
 //       },
 
 //       {
 //         '@type': 'Book',
-//         '@id': 'https://arapov.trade/#wikibook',
+//         '@id': 'https://arapovtrade.com/#wikibook',
 //         name: 'Основи трейдингу',
 //         alternateName: ['Основы трейдинга', 'Fundamentals of Trading'],
 //         bookFormat: 'https://schema.org/EBook',
@@ -691,7 +691,7 @@ this.meta.updateTag({
 
 //       {
 //         '@type': 'Event',
-//         '@id': 'https://arapov.trade/#lecture-nuft-2026',
+//         '@id': 'https://arapovtrade.com/#lecture-nuft-2026',
 //         name: L.eventName,
 //         description: L.eventDesc,
 //         startDate: '2026-03-19T14:00:00+02:00',
@@ -742,15 +742,15 @@ this.meta.updateTag({
   // Organization, WebSite, BreadcrumbList и другие глобальные schema не трогаем.
   this.document.getElementById(SCRIPT_ID)?.remove();
 
-  const PERSON_ID = 'https://arapov.trade/#person';
-  const ORG_ID = 'https://arapov.trade/#organization';
-  const WEBSITE_ID = 'https://arapov.trade/#website';
+  const PERSON_ID = 'https://arapovtrade.com/#person';
+  const ORG_ID = 'https://arapovtrade.com/#organization';
+  const WEBSITE_ID = 'https://arapovtrade.com/#website';
 
   // Один канонический URL самой Person entity.
-  const PERSON_URL = 'https://arapov.trade/uk';
+  const PERSON_URL = 'https://arapovtrade.com/uk';
 
   // Локализованная ProfilePage.
-  const PAGE_URL = `https://arapov.trade/${lang}`;
+  const PAGE_URL = `https://arapovtrade.com/${lang}`;
   const PAGE_ID = `${PAGE_URL}#profilepage`;
 
   const L = {
@@ -846,7 +846,7 @@ this.meta.updateTag({
         image: {
           '@type': 'ImageObject',
           url:
-            'https://arapov.trade/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
+            'https://arapovtrade.com/assets/redesignArapovTrade/img/author-page_main-block_img-light.png',
         },
 
         nationality: {

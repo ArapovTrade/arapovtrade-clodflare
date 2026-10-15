@@ -54,7 +54,7 @@ export class HomeEnFourtyTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Timeframes in Trading: Complete Guide to Choosing the Right Chart Interval | Arapov.trade',
+      'Timeframes in Trading: Complete Guide to Choosing the Right Chart Interval | ArapovTrade',
     );
     this.meta.updateTag({ name: 'datePublished', content: '2025-02-06' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
@@ -73,11 +73,11 @@ export class HomeEnFourtyTwoComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-   { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+   { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
      
   ];
@@ -255,24 +255,24 @@ export class HomeEnFourtyTwoComponent implements OnInit {
             'Timeframes in Trading: Complete Guide to Choosing the Right Chart Interval',
           description:
             'How to choose the right timeframe for trading. Learn about timeframe types, multi-timeframe analysis, and which interval suits your trading style.',
-          image: 'https://arapov.trade/assets/img/content/timeframes1.webp',
+          image: 'https://arapovtrade.com/assets/img/content/timeframes1.webp',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/timeframes',
+            '@id': 'https://arapovtrade.com/en/freestudying/timeframes',
           },
         },
       ],
@@ -288,7 +288,7 @@ export class HomeEnFourtyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
        name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -299,9 +299,9 @@ export class HomeEnFourtyTwoComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
     'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -313,7 +313,7 @@ export class HomeEnFourtyTwoComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
   ],
-  jobTitle: ['Independent researcher,', 'trader', 'author and founder of arapov.trade'],
+  jobTitle: ['Independent researcher,', 'trader', 'author and founder of ArapovTrade'],
   description:
     'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
     };

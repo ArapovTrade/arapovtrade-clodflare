@@ -79,11 +79,11 @@ export class HomeUkBlogEightySixComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -277,26 +277,26 @@ export class HomeUkBlogEightySixComponent {
           description:
             'Детальний посібник з патерну 123. Формування моделі, точки входу та виходу, встановлення стоп-лосса та тейк-профіту, типові помилки трейдерів.',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2025-04-11T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/pattern-1-2-3',
+            '@id': 'https://arapovtrade.com/uk/freestudying/pattern-1-2-3',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/pattern-1-2-3.png',
+            url: 'https://arapovtrade.com/assets/img/content/pattern-1-2-3.png',
             width: 1200,
             height: 630,
           },
@@ -317,7 +317,7 @@ export class HomeUkBlogEightySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -328,9 +328,9 @@ export class HomeUkBlogEightySixComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -345,7 +345,7 @@ export class HomeUkBlogEightySixComponent {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',

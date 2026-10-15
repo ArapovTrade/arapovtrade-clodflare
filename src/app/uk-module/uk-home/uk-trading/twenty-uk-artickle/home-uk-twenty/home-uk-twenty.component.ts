@@ -84,11 +84,11 @@ export class HomeUkTwentyComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -284,17 +284,17 @@ export class HomeUkTwentyComponent implements OnInit {
           description:
             'Опануйте Market Profile — метод аналізу ринку Пітера Стейдлмаєра. POC, Value Area, зони ліквідності та практичні стратегії.',
           image:
-            'https://arapov.trade/assets/img/content/steidlmayeranalysis2.png',
+            'https://arapovtrade.com/assets/img/content/steidlmayeranalysis2.png',
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
 
-          author: { '@id': 'https://arapov.trade/uk#person' },
+          author: { '@id': 'https://arapovtrade.com/uk#person' },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
         },
@@ -311,7 +311,7 @@ export class HomeUkTwentyComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -322,9 +322,9 @@ export class HomeUkTwentyComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -339,7 +339,7 @@ export class HomeUkTwentyComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',

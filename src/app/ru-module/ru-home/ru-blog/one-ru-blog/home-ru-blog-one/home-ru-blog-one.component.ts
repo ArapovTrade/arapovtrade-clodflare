@@ -57,7 +57,7 @@ export class HomeRuBlogOneComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Имбаланс и FVG (Fair Value Gap) | Arapov.trade',
+      'Имбаланс и FVG (Fair Value Gap) | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -79,14 +79,14 @@ export class HomeRuBlogOneComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -282,29 +282,29 @@ export class HomeRuBlogOneComponent implements OnInit {
             'Что такое имбаланс и FVG (Fair Value Gap), как находить зоны неэффективности на графике и почему цена часто возвращается их закрывать.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/imbalance-fvg',
+            '@id': 'https://arapovtrade.com/ru/freestudying/imbalance-fvg',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/imbalanceandfvg.png',
+            url: 'https://arapovtrade.com/assets/img/content/imbalanceandfvg.png',
             width: 1200,
             height: 630,
           },
@@ -326,7 +326,7 @@ export class HomeRuBlogOneComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -337,9 +337,9 @@ export class HomeRuBlogOneComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeRuBlogOneComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -432,7 +432,7 @@ export class HomeRuBlogOneComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/imbalance-fvg#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/imbalance-fvg#howto',
       name: 'Как находить и торговать имбаланс и FVG',
       description:
         'Пошаговый разбор зоны дисбаланса: от поиска по трём свечам до входа на возврате цены',

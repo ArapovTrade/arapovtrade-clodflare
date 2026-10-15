@@ -50,7 +50,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
     this.setGlossarySchema();
 
     this.titleService.setTitle(
-      'Почему на обвале биткоина выбивает стопы | Arapov.trade',
+      'Почему на обвале биткоина выбивает стопы | ArapovTrade',
     );
     this.meta.updateTag({
       name: 'description',
@@ -83,14 +83,14 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -279,30 +279,30 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/ru/freestudying/bitcoin-crash-stops#article',
+          '@id': 'https://arapovtrade.com/ru/freestudying/bitcoin-crash-stops#article',
           headline:
-            'Почему на обвале биткоина выбивает стопы | Arapov.trade',
+            'Почему на обвале биткоина выбивает стопы | ArapovTrade',
           description:
             'Каскадные ликвидации, маржин-колл и снятие ликвидности на обвале биткоина: почему выбивает стопы и сливаются депозиты, кого вылетает первым и как защитить счёт.',
-          image: 'https://arapov.trade/assets/img/content/bitcoin-crash-stops.png',
+          image: 'https://arapovtrade.com/assets/img/content/bitcoin-crash-stops.png',
           datePublished: '2026-06-11T00:00:00Z',
           dateModified: '2026-06-11T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/bitcoin-crash-stops',
+            '@id': 'https://arapovtrade.com/ru/freestudying/bitcoin-crash-stops',
           },
           articleSection: 'Обучение трейдингу',
           keywords: [
@@ -326,7 +326,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -337,9 +337,9 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -370,7 +370,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/binarnyeopciony#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -425,7 +425,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/binarnyeopciony#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#howto',
       name: 'Как начать торговать бинарными опционами',
       description:
         'Пошаговое руководство для начинающих трейдеров бинарных опционов',
@@ -441,35 +441,35 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
           position: 1,
           name: 'Изучите основы и риски',
           text: 'Прежде чем вкладывать деньги, разберитесь в механике бинарных опционов, их рисках и особенностях. Поймите, что это высокорискованный инструмент с негативным математическим ожиданием.',
-          url: 'https://arapov.trade/ru/freestudying/binarnyeopciony#basics',
+          url: 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#basics',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Выберите надёжного брокера',
           text: 'Проверьте наличие лицензии, репутацию брокера, отзывы реальных трейдеров. Избегайте компаний с агрессивной рекламой и обещаниями гарантированного заработка.',
-          url: 'https://arapov.trade/ru/freestudying/binarnyeopciony#broker',
+          url: 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#broker',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Потренируйтесь на демо-счёте',
           text: 'Большинство брокеров предлагают демо-счёт с виртуальными деньгами. Используйте его для отработки стратегии и понимания интерфейса платформы.',
-          url: 'https://arapov.trade/ru/freestudying/binarnyeopciony#demo',
+          url: 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#demo',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Разработайте торговую стратегию',
           text: 'Определите правила входа в сделку, выбор времени экспирации, размер ставки. Никогда не торгуйте наугад — это превращает трейдинг в азартную игру.',
-          url: 'https://arapov.trade/ru/freestudying/binarnyeopciony#strategy',
+          url: 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#strategy',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Начните с минимальных сумм',
           text: 'При переходе на реальный счёт начинайте с минимальных ставок. Не рискуйте более 1-2% депозита на одну сделку. Контролируйте эмоции и строго следуйте плану.',
-          url: 'https://arapov.trade/ru/freestudying/binarnyeopciony#start',
+          url: 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#start',
         },
       ],
     };
@@ -484,7 +484,7 @@ export class HomeRuBlogOnehundredElevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/binarnyeopciony#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/binarnyeopciony#terms',
       name: 'Термины бинарных опционов',
       hasDefinedTerm: [
         {

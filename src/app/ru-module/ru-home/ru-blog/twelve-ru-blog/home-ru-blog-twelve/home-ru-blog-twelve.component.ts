@@ -40,7 +40,7 @@ export class HomeRuBlogTwelveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Бессрочные фьючерсы и маржинальная торговля | Arapov.trade',
+      'Бессрочные фьючерсы и маржинальная торговля | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
@@ -62,14 +62,14 @@ export class HomeRuBlogTwelveComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 

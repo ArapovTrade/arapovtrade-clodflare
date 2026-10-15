@@ -76,14 +76,14 @@ export class HomeRuBlogThirtyComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -279,18 +279,18 @@ export class HomeRuBlogThirtyComponent implements OnInit {
             'Что такое деривативы, чем фьючерсы и опционы отличаются от спота, как работает плечо и какой инструмент выбрать новичку.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
@@ -298,11 +298,11 @@ export class HomeRuBlogThirtyComponent implements OnInit {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/ru/freestudying/derivatives-futures-spot',
+              'https://arapovtrade.com/ru/freestudying/derivatives-futures-spot',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/derivatives-futures-spot.jpeg',
+            url: 'https://arapovtrade.com/assets/img/content/derivatives-futures-spot.jpeg',
             width: 1200,
             height: 630,
           },
@@ -324,7 +324,7 @@ export class HomeRuBlogThirtyComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -335,9 +335,9 @@ export class HomeRuBlogThirtyComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -352,7 +352,7 @@ export class HomeRuBlogThirtyComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -423,7 +423,7 @@ export class HomeRuBlogThirtyComponent implements OnInit {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/ru/freestudying/derivatives-futures-spot#howto',
+        'https://arapovtrade.com/ru/freestudying/derivatives-futures-spot#howto',
       name: 'Как разобраться в деривативах, фьючерсах и споте',
       description:
         'Пошаговый разбор производных инструментов, фьючерса и спота и их практическое применение в торговле',

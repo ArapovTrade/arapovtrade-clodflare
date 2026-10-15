@@ -81,11 +81,11 @@ export class HomeUkTwentySixComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -278,26 +278,26 @@ export class HomeUkTwentySixComponent implements OnInit {
           '@type': 'Article',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/technicalanalysis',
+            '@id': 'https://arapovtrade.com/uk/freestudying/technicalanalysis',
           },
           headline: 'Технічний аналіз ринку: методи та принципи прогнозування',
           description:
             'Повний посібник з технічного аналізу фінансових ринків. Вивчіть індикатори, патерни, рівні підтримки та опору для успішної торгівлі.',
           image:
-            'https://arapov.trade/assets/img/content/technicalanalysis.webp',
+            'https://arapovtrade.com/assets/img/content/technicalanalysis.webp',
           datePublished: '2025-06-11T00:00:00+03:00',
           dateModified: '2026-04-15T00:00:00Z',
           inLanguage: 'uk',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           video: {
@@ -403,7 +403,7 @@ export class HomeUkTwentySixComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -414,9 +414,9 @@ export class HomeUkTwentySixComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -431,7 +431,7 @@ export class HomeUkTwentySixComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',

@@ -50,7 +50,7 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
     this.removeExistingWebPageSchema();
 
     this.titleService.setTitle(
-      'Безкоштовне навчання трейдингу та фінансовим ринкам | Arapov.Trade'
+      'Безкоштовне навчання трейдингу та фінансовим ринкам | ArapovTrade'
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -75,23 +75,23 @@ export class MainpageComponent implements OnInit, AfterViewInit, OnDestroy {
 // Open Graph + Twitter Card — Ukrainian homepage
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/arapovtrade-banner-uk.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/arapovtrade-banner-uk.jpg';
 
 const ogTitle =
-  'Arapov.Trade — безкоштовна платформа з трейдингу';
+  'ArapovTrade — безкоштовна платформа з трейдингу';
 
 const ogDescription =
   'Безкоштовна освітня екосистема про фінансові ринки: покроковий курс, статті, відео та книги з трейдингу, аналізу ринку й управління ризиками.';
 
 const ogImageAlt =
-  'Arapov.Trade — Безкоштовна платформа для вивчення трейдингу';
+  'ArapovTrade — Безкоштовна платформа для вивчення трейдингу';
 
-const pageUrl = 'https://arapov.trade';
+const pageUrl = 'https://arapovtrade.com';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -317,7 +317,7 @@ this.meta.updateTag({
   ).some((script) => {
     try {
       const json = JSON.parse(script.textContent || '{}');
-      return json['@type'] === 'WebSite' && json['name'] === 'Arapov.Trade';
+      return json['@type'] === 'WebSite' && json['name'] === 'ArapovTrade';
     } catch {
       return false;
     }
@@ -332,15 +332,15 @@ this.meta.updateTag({
   script.text = JSON.stringify({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://arapov.trade/#website',
-    url: 'https://arapov.trade/uk',
-    name: 'Arapov.Trade',
+    '@id': 'https://arapovtrade.com/#website',
+    url: 'https://arapovtrade.com/uk',
+    name: 'ArapovTrade',
     alternateName: 'Навчання трейдингу',
     description:
       'Безкоштовне навчання трейдингу від Ігоря Арапова. 51+ статей, 78+ відеоуроків.',
     inLanguage: 'uk-UA',
     publisher: {
-      '@id': 'https://arapov.trade/#organization'
+      '@id': 'https://arapovtrade.com/#organization'
 
     },
   });

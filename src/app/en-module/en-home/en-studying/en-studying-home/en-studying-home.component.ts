@@ -91,21 +91,21 @@ export class EnStudyingHomeComponent
     // Open Graph + Twitter Card — English studying page
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/trading-mentor-support-en.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/trading-mentor-support-en.jpg';
 
-const ogTitle = 'Trading Education with Mentor Support | Arapov.Trade';
+const ogTitle = 'Trading Education with Mentor Support | ArapovTrade';
 
 const ogDescription =
   'Learn trading online with a mentor: trading system, technical and volume analysis, the Wyckoff method, risk management and practical training.';
 
-const ogImageAlt = 'Arapov.Trade — Professional trading courses';
+const ogImageAlt = 'ArapovTrade — Professional trading courses';
 
-const pageUrl = 'https://arapov.trade/en/studying';
+const pageUrl = 'https://arapovtrade.com/en/studying';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -331,26 +331,26 @@ this.meta.updateTag({
       '@graph': [
         {
           '@type': 'Course',
-          '@id': 'https://arapov.trade/en/studying#course',
+          '@id': 'https://arapovtrade.com/en/studying#course',
           name: 'Professional Trading Course',
           description:
             'Individual trading education from scratch under the guidance of an experienced trader. Wyckoff Method, Volume Analysis, practice on live accounts.',
-          url: 'https://arapov.trade/en/studying',
+          url: 'https://arapovtrade.com/en/studying',
           inLanguage: 'en',
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           provider: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           educationalLevel: 'Beginner to Advanced',
@@ -373,9 +373,9 @@ this.meta.updateTag({
             courseWorkload: 'P4W',
             instructor: {
               '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+              '@id': 'https://arapovtrade.com/#person',
               name: 'Igor Arapov',
-              url: 'https://arapov.trade/en',
+              url: 'https://arapovtrade.com/en',
             },
           },
         },

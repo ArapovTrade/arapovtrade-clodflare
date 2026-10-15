@@ -229,13 +229,13 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
           }
         } else if (segments[0] == '') {
           title =
-            'Arapov.Trade — безкоштовна платформа з трейдингу';
+            'ArapovTrade — безкоштовна платформа з трейдингу';
         } else if (segments[1] === 'main' && segments[0] === 'ru') {
           title =
-            'Arapov.Trade — бесплатная платформа по трейдингу';
+            'ArapovTrade — бесплатная платформа по трейдингу';
         } else if (segments[1] === 'main' && segments[0] === 'en') {
           title =
-            'Arapov.Trade — Free Trading Education Platform';
+            'ArapovTrade — Free Trading Education Platform';
         } else if (segments[1] === 'studying' && segments[0] === 'ru') {
           title = 'Обучение трейдингу с наставником | Игорь Арапов';
         } else if (segments[1] === 'studying' && segments[0] === 'uk') {
@@ -322,10 +322,10 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         ) {
           title =
             segments[0] === 'ru'
-              ? '51+ статья, 3 языка, 453 URL: Полная бесплатная учебная программа по трейдингу на arapov.trade'
+              ? '51+ статья, 3 языка, 453 URL: Полная бесплатная учебная программа по трейдингу на arapovtrade.com'
               : segments[0] === 'uk'
-                ? '51+ стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapov.trade'
-                : '51+ Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapov.trade';
+                ? '51+ стаття, 3 мови, 453 URL: Повна безкоштовна навчальна програма з трейдингу на arapovtrade.com'
+                : '51+ Articles, 3 Languages, 453 URLs: The Complete Free Trading Curriculum at arapovtrade.com';
         } else if (
           segments[1] === 'freestudying' &&
           segments[2] === 'fullvideocourse'
@@ -349,17 +349,17 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         } else if (segments[1] === 'freestudying' && segments[2] === 'about') {
           title =
             segments[0] === 'ru'
-              ? 'Про ARAPOV.TRADE — Образовательная платформа по трейдингу'
+              ? 'Про ArapovTrade — Образовательная платформа по трейдингу'
               : segments[0] === 'uk'
-                ? 'Про ARAPOV.TRADE — Освітня платформа з трейдингу'
-                : 'About ARAPOV.TRADE — Trading Education Platform';
+                ? 'Про ArapovTrade — Освітня платформа з трейдингу'
+                : 'About ArapovTrade — Trading Education Platform';
         } else if (segments[1] === 'freestudying') {
           title =
             segments[0] === 'ru'
-              ? 'Бесплатное обучение трейдингу с нуля | Arapov.Trade'
+              ? 'Бесплатное обучение трейдингу с нуля | ArapovTrade'
               : segments[0] === 'en'
-                ? 'Free Trading Course for Beginners | Arapov.Trade'
-                : 'Безкоштовне навчання трейдингу з нуля | Arapov.Trade';
+                ? 'Free Trading Course for Beginners | ArapovTrade'
+                : 'Безкоштовне навчання трейдингу з нуля | ArapovTrade';
         } else if (segments[0] === 'uk') {
           title = 'Ігор Арапов — фахівець у галузі фінансових ринків';
         } else if (segments[0] === 'en') {
@@ -502,10 +502,10 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         ) {
           description =
             segments[0] === 'ru'
-              ? 'Полная карта всех материалов, опубликованных на arapov.trade — по разделам, с описаниями, уровнями сложности и структурированными путями обучения. Метод Вайкоффа, Smart Money, криптовалюты, психология трейдинга. Всё бесплатно.'
+              ? 'Полная карта всех материалов, опубликованных на arapovtrade.com — по разделам, с описаниями, уровнями сложности и структурированными путями обучения. Метод Вайкоффа, Smart Money, криптовалюты, психология трейдинга. Всё бесплатно.'
               : segments[0] === 'uk'
-                ? 'Повна карта всіх матеріалів, опублікованих на arapov.trade — за розділами, з описами, рівнями складності та структурованими шляхами навчання. Метод Вайкоффа, Smart Money, криптовалюти, психологія трейдингу. Все безкоштовно.'
-                : 'A full map of every article published on arapov.trade — organized by category, with descriptions, difficulty levels, and structured learning paths. Wyckoff Method, Smart Money, cryptocurrency, trading psychology. All free.';
+                ? 'Повна карта всіх матеріалів, опублікованих на arapovtrade.com — за розділами, з описами, рівнями складності та структурованими шляхами навчання. Метод Вайкоффа, Smart Money, криптовалюти, психологія трейдингу. Все безкоштовно.'
+                : 'A full map of every article published on arapovtrade.com — organized by category, with descriptions, difficulty levels, and structured learning paths. Wyckoff Method, Smart Money, cryptocurrency, trading psychology. All free.';
         } else if (segments[1] === 'freestudying' && segments[2] === 'about') {
           description =
             segments[0] === 'ru'
@@ -534,7 +534,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         const image =
           article?.imgUkr ||
           '/assets/redesignArapovTrade/img/author-page_main-block_img-light.png';
-        const url = `https://arapov.trade${this.router.url}`;
+        const url = `https://arapovtrade.com${this.router.url}`;
 
         this.titleService.setTitle(title);
         this.removeMetaDescriptionIfExists();
@@ -549,7 +549,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         this.meta.updateTag({ property: 'og:image:height', content: '600' });
         this.meta.updateTag({
           property: 'og:image',
-          content: `https://arapov.trade${image}`,
+          content: `https://arapovtrade.com${image}`,
         });
         this.meta.updateTag({ property: 'og:url', content: url });
         //Обновляет Persona schema
@@ -566,7 +566,7 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
         });
         this.meta.updateTag({
           name: 'twitter:image',
-          content: `https://arapov.trade${image}`,
+          content: `https://arapovtrade.com${image}`,
         });
         this.meta.updateTag({ name: 'twitter:url', content: url });
         this.meta.updateTag({ name: 'language', content: langCode });
@@ -618,11 +618,11 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
 
     
     if (path === '/' || path === '') {
-      this.renderer.setAttribute(canonicalLink, 'href', 'https://arapov.trade');
+      this.renderer.setAttribute(canonicalLink, 'href', 'https://arapovtrade.com');
     } else {
       // Убираем лишний слэш в конце, если есть
       if (path.endsWith('/')) path = path.slice(0, -1);
-      const url = `https://arapov.trade${path}`;
+      const url = `https://arapovtrade.com${path}`;
       this.renderer.setAttribute(canonicalLink, 'href', url);
     }
 
@@ -639,32 +639,32 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
 
    this.breadcrumbs = []; // Определяем хлебные крошки в зависимости от маршрута
    if (urlPath === '' || urlPath === '/') {
-     this.breadcrumbs.push({ name: 'Головна', url: 'https://arapov.trade' });
+     this.breadcrumbs.push({ name: 'Головна', url: 'https://arapovtrade.com' });
    } else if (urlPath === 'ru/main') {
      this.breadcrumbs.push({
        name: 'Главная',
-       url: 'https://arapov.trade/ru/main',
+       url: 'https://arapovtrade.com/ru/main',
      });
    } else if (urlPath === 'en/main') {
      this.breadcrumbs.push({
        name: 'Main Page',
-       url: 'https://arapov.trade/en/main',
+       url: 'https://arapovtrade.com/en/main',
      });
    } else if (urlPath === 'ru' || urlPath === 'uk' || urlPath === 'en') {
      if (urlPath === 'ru') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
        );
      } else if (urlPath === 'uk') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
        );
      } else if (urlPath === 'en') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
        );
      }
    } else if (
@@ -674,29 +674,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/studying') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Обучение трейдингу',
-           url: 'https://arapov.trade/ru/studying',
+           url: 'https://arapovtrade.com/ru/studying',
          },
        );
      } else if (urlPath === 'uk/studying') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Навчання трейдингу',
-           url: 'https://arapov.trade/uk/studying',
+           url: 'https://arapovtrade.com/uk/studying',
          },
        );
      } else if (urlPath === 'en/studying') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'Trading training',
-           url: 'https://arapov.trade/en/studying',
+           url: 'https://arapovtrade.com/en/studying',
          },
        );
      }
@@ -707,29 +707,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/books') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Все книги',
-           url: 'https://arapov.trade/ru/books',
+           url: 'https://arapovtrade.com/ru/books',
          },
        );
      } else if (urlPath === 'uk/books') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Всі книги',
-           url: 'https://arapov.trade/uk/books',
+           url: 'https://arapovtrade.com/uk/books',
          },
        );
      } else if (urlPath === 'en/books') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'All books',
-           url: 'https://arapov.trade/en/books',
+           url: 'https://arapovtrade.com/en/books',
          },
        );
      }
@@ -740,41 +740,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/books/osnovy-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Все книги',
-           url: 'https://arapov.trade/ru/books',
+           url: 'https://arapovtrade.com/ru/books',
          },
          {
            name: 'Основы трейдинга',
-           url: 'https://arapov.trade/ru/books/osnovy-treydinga',
+           url: 'https://arapovtrade.com/ru/books/osnovy-treydinga',
          },
        );
      } else if (urlPath === 'uk/books/osnovy-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Всі книги',
-           url: 'https://arapov.trade/uk/books',
+           url: 'https://arapovtrade.com/uk/books',
          },
          {
            name: 'Основи трейдингу',
-           url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+           url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
          },
        );
      } else if (urlPath === 'en/books/osnovy-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'All books',
-           url: 'https://arapov.trade/en/books',
+           url: 'https://arapovtrade.com/en/books',
          },
          {
            name: 'Trading Basics',
-           url: 'https://arapov.trade/en/books/osnovy-treydinga',
+           url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
          },
        );
      }
@@ -785,41 +785,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/books/psihologiya-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Все книги',
-           url: 'https://arapov.trade/ru/books',
+           url: 'https://arapovtrade.com/ru/books',
          },
          {
            name: 'Психология трейдинга',
-           url: 'https://arapov.trade/ru/books/psihologiya-treydinga',
+           url: 'https://arapovtrade.com/ru/books/psihologiya-treydinga',
          },
        );
      } else if (urlPath === 'uk/books/psihologiya-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Всі книги',
-           url: 'https://arapov.trade/uk/books',
+           url: 'https://arapovtrade.com/uk/books',
          },
          {
            name: 'Психологія трейдингу',
-           url: 'https://arapov.trade/uk/books/psihologiya-treydinga',
+           url: 'https://arapovtrade.com/uk/books/psihologiya-treydinga',
          },
        );
      } else if (urlPath === 'en/books/psihologiya-treydinga') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'All books',
-           url: 'https://arapov.trade/en/books',
+           url: 'https://arapovtrade.com/en/books',
          },
          {
            name: 'Trading Psychology',
-           url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+           url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
          },
        );
      }
@@ -830,41 +830,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/books/osnovy-treydinga-tom-two') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Все книги',
-           url: 'https://arapov.trade/ru/books',
+           url: 'https://arapovtrade.com/ru/books',
          },
          {
            name: 'Основы трейдинга. Практика',
-           url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+           url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
          },
        );
      } else if (urlPath === 'uk/books/osnovy-treydinga-tom-two') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Всі книги',
-           url: 'https://arapov.trade/uk/books',
+           url: 'https://arapovtrade.com/uk/books',
          },
          {
            name: 'Основи трейдингу. Практика',
-           url: 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two',
+           url: 'https://arapovtrade.com/uk/books/osnovy-treydinga-tom-two',
          },
        );
      } else if (urlPath === 'en/books/osnovy-treydinga-tom-two') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'All books',
-           url: 'https://arapov.trade/en/books',
+           url: 'https://arapovtrade.com/en/books',
          },
          {
            name: 'Trading Basics. Practice',
-           url: 'https://arapov.trade/en/books/osnovy-treydinga-tom-two',
+           url: 'https://arapovtrade.com/en/books/osnovy-treydinga-tom-two',
          },
        );
      }
@@ -875,29 +875,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
        );
      } else if (urlPath === 'uk/freestudying') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
        );
      } else if (urlPath === 'en/freestudying') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
        );
      }
@@ -908,42 +908,42 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/freeeducation') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Бесплатные курсы по трейдингу',
-           url: 'https://arapov.trade/ru/freestudying/freeeducation',
+           url: 'https://arapovtrade.com/ru/freestudying/freeeducation',
          },
        );
      } else if (urlPath === 'uk/freestudying/freeeducation') {
        
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Безкоштовні курси з трейдингу',
-           url: 'https://arapov.trade/uk/freestudying/freeeducation',
+           url: 'https://arapovtrade.com/uk/freestudying/freeeducation',
          },
        );
      } else if (urlPath === 'en/freestudying/freeeducation') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'Free Trading Courses',
-           url: 'https://arapov.trade/en/freestudying/freeeducation',
+           url: 'https://arapovtrade.com/en/freestudying/freeeducation',
          },
        );
      }
@@ -954,41 +954,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/practic') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Торговая система трейдера',
-           url: 'https://arapov.trade/ru/freestudying/practic',
+           url: 'https://arapovtrade.com/ru/freestudying/practic',
          },
        );
      } else if (urlPath === 'uk/freestudying/practic') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Торгова система трейдера',
-           url: 'https://arapov.trade/uk/freestudying/practic',
+           url: 'https://arapovtrade.com/uk/freestudying/practic',
          },
        );
      } else if (urlPath === 'en/freestudying/practic') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'Trader`s trading system',
-           url: 'https://arapov.trade/en/freestudying/practic',
+           url: 'https://arapovtrade.com/en/freestudying/practic',
          },
        );
      }
@@ -999,41 +999,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/tradingview-record') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Трек-рекорд на TradingView',
-           url: 'https://arapov.trade/ru/freestudying/tradingview-record',
+           url: 'https://arapovtrade.com/ru/freestudying/tradingview-record',
          },
        );
      } else if (urlPath === 'uk/freestudying/tradingview-record') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Трек-рекорд на TradingView',
-           url: 'https://arapov.trade/uk/freestudying/tradingview-record',
+           url: 'https://arapovtrade.com/uk/freestudying/tradingview-record',
          },
        );
      } else if (urlPath === 'en/freestudying/tradingview-record') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'TradingView Track Record',
-           url: 'https://arapov.trade/en/freestudying/tradingview-record',
+           url: 'https://arapovtrade.com/en/freestudying/tradingview-record',
          },
        );
      }
@@ -1044,41 +1044,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/curriculum') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Учебная программа',
-           url: 'https://arapov.trade/ru/freestudying/curriculum',
+           url: 'https://arapovtrade.com/ru/freestudying/curriculum',
          },
        );
      } else if (urlPath === 'uk/freestudying/curriculum') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Навчальна програма',
-           url: 'https://arapov.trade/uk/freestudying/curriculum',
+           url: 'https://arapovtrade.com/uk/freestudying/curriculum',
          },
        );
      } else if (urlPath === 'en/freestudying/curriculum') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'Curriculum',
-           url: 'https://arapov.trade/en/freestudying/curriculum',
+           url: 'https://arapovtrade.com/en/freestudying/curriculum',
          },
        );
      }
@@ -1089,41 +1089,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/fullvideocourse') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Полный видеокурс',
-           url: 'https://arapov.trade/ru/freestudying/fullvideocourse',
+           url: 'https://arapovtrade.com/ru/freestudying/fullvideocourse',
          },
        );
      } else if (urlPath === 'uk/freestudying/fullvideocourse') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Повний відеокурс',
-           url: 'https://arapov.trade/uk/freestudying/fullvideocourse',
+           url: 'https://arapovtrade.com/uk/freestudying/fullvideocourse',
          },
        );
      } else if (urlPath === 'en/freestudying/fullvideocourse') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'Full Video Course',
-           url: 'https://arapov.trade/en/freestudying/fullvideocourse',
+           url: 'https://arapovtrade.com/en/freestudying/fullvideocourse',
          },
        );
      }
@@ -1134,41 +1134,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/youtube') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'YouTube-канал',
-           url: 'https://arapov.trade/ru/freestudying/youtube',
+           url: 'https://arapovtrade.com/ru/freestudying/youtube',
          },
        );
      } else if (urlPath === 'uk/freestudying/youtube') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'YouTube-канал',
-           url: 'https://arapov.trade/uk/freestudying/youtube',
+           url: 'https://arapovtrade.com/uk/freestudying/youtube',
          },
        );
      } else if (urlPath === 'en/freestudying/youtube') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'YouTube Channel',
-           url: 'https://arapov.trade/en/freestudying/youtube',
+           url: 'https://arapovtrade.com/en/freestudying/youtube',
          },
        );
      }
@@ -1179,41 +1179,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/freestudying/about') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'О платформе',
-           url: 'https://arapov.trade/ru/freestudying/about',
+           url: 'https://arapovtrade.com/ru/freestudying/about',
          },
        );
      } else if (urlPath === 'uk/freestudying/about') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Про платформу',
-           url: 'https://arapov.trade/uk/freestudying/about',
+           url: 'https://arapovtrade.com/uk/freestudying/about',
          },
        );
      } else if (urlPath === 'en/freestudying/about') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'About the Platform',
-           url: 'https://arapov.trade/en/freestudying/about',
+           url: 'https://arapovtrade.com/en/freestudying/about',
          },
        );
      }
@@ -1225,31 +1225,31 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/privacy-policy') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Политика конфиденциальности',
-           url: 'https://arapov.trade/ru/privacy-policy',
+           url: 'https://arapovtrade.com/ru/privacy-policy',
          },
         
        );
      } else if (urlPath === 'uk/privacy-policy') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Політика конфіденційності',
-           url: 'https://arapov.trade/uk/privacy-policy',
+           url: 'https://arapovtrade.com/uk/privacy-policy',
          },
          
        );
      } else if (urlPath === 'en/privacy-policy') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Privacy Policy',
-           url: 'https://arapov.trade/en/privacy-policy',
+           url: 'https://arapovtrade.com/en/privacy-policy',
          },
          
        );
@@ -1263,29 +1263,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
    ) {
      if (urlPath === 'ru/disclaimer') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Отказ от ответственности',
-           url: 'https://arapov.trade/ru/disclaimer',
+           url: 'https://arapovtrade.com/ru/disclaimer',
          },
        );
      } else if (urlPath === 'uk/disclaimer') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Відмова від відповідальності',
-           url: 'https://arapov.trade/uk/disclaimer',
+           url: 'https://arapovtrade.com/uk/disclaimer',
          },
        );
      } else if (urlPath === 'en/disclaimer') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Course author', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Course author', url: 'https://arapovtrade.com/en' },
          {
            name: 'Disclaimer',
-           url: 'https://arapov.trade/en/disclaimer',
+           url: 'https://arapovtrade.com/en/disclaimer',
          },
        );
      }
@@ -1295,41 +1295,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
 
      if (urlArr[0] === 'ru') {
        this.breadcrumbs.push(
-         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
          {
            name: 'Бесплатное обучение трейдингу',
-           url: 'https://arapov.trade/ru/freestudying',
+           url: 'https://arapovtrade.com/ru/freestudying',
          },
          {
            name: 'Теория по трейдингу',
-           url: `https://arapov.trade/ru/freestudying/${urlArr[2]}`,
+           url: `https://arapovtrade.com/ru/freestudying/${urlArr[2]}`,
          },
        );
      } else if (urlArr[0] === 'uk') {
        this.breadcrumbs.push(
-         { name: 'Головна', url: 'https://arapov.trade' },
-         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+         { name: 'Головна', url: 'https://arapovtrade.com' },
+         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
          {
            name: 'Безкоштовне навчання трейдингу',
-           url: 'https://arapov.trade/uk/freestudying',
+           url: 'https://arapovtrade.com/uk/freestudying',
          },
          {
            name: 'Теорія з трейдингу',
-           url: `https://arapov.trade/uk/freestudying/${urlArr[2]}`,
+           url: `https://arapovtrade.com/uk/freestudying/${urlArr[2]}`,
          },
        );
      } else if (urlArr[0] === 'en') {
        this.breadcrumbs.push(
-         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
          {
            name: 'Free trading education',
-           url: 'https://arapov.trade/en/freestudying',
+           url: 'https://arapovtrade.com/en/freestudying',
          },
          {
            name: 'Trading Theory',
-           url: `https://arapov.trade/en/freestudying/${urlArr[2]}`,
+           url: `https://arapovtrade.com/en/freestudying/${urlArr[2]}`,
          },
        );
      }
@@ -1356,32 +1356,32 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
 
   //   this.breadcrumbs = []; // Определяем хлебные крошки в зависимости от маршрута
   //   if (urlPath === '' || urlPath === '/') {
-  //     this.breadcrumbs.push({ name: 'Головна', url: 'https://arapov.trade' });
+  //     this.breadcrumbs.push({ name: 'Головна', url: 'https://arapovtrade.com' });
   //   } else if (urlPath === 'ru/main') {
   //     this.breadcrumbs.push({
   //       name: 'Главная',
-  //       url: 'https://arapov.trade/ru/main',
+  //       url: 'https://arapovtrade.com/ru/main',
   //     });
   //   } else if (urlPath === 'en/main') {
   //     this.breadcrumbs.push({
   //       name: 'Main Page',
-  //       url: 'https://arapov.trade/en/main',
+  //       url: 'https://arapovtrade.com/en/main',
   //     });
   //   } else if (urlPath === 'ru' || urlPath === 'uk' || urlPath === 'en') {
   //     if (urlPath === 'ru') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //       );
   //     } else if (urlPath === 'uk') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //       );
   //     } else if (urlPath === 'en') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //       );
   //     }
   //   } else if (
@@ -1391,29 +1391,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/studying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Обучение трейдингу',
-  //           url: 'https://arapov.trade/ru/studying',
+  //           url: 'https://arapovtrade.com/ru/studying',
   //         },
   //       );
   //     } else if (urlPath === 'uk/studying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Навчання трейдингу',
-  //           url: 'https://arapov.trade/uk/studying',
+  //           url: 'https://arapovtrade.com/uk/studying',
   //         },
   //       );
   //     } else if (urlPath === 'en/studying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Trading training',
-  //           url: 'https://arapov.trade/en/studying',
+  //           url: 'https://arapovtrade.com/en/studying',
   //         },
   //       );
   //     }
@@ -1424,29 +1424,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/books') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Все книги',
-  //           url: 'https://arapov.trade/ru/books',
+  //           url: 'https://arapovtrade.com/ru/books',
   //         },
   //       );
   //     } else if (urlPath === 'uk/books') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Всі книги',
-  //           url: 'https://arapov.trade/uk/books',
+  //           url: 'https://arapovtrade.com/uk/books',
   //         },
   //       );
   //     } else if (urlPath === 'en/books') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'All books',
-  //           url: 'https://arapov.trade/en/books',
+  //           url: 'https://arapovtrade.com/en/books',
   //         },
   //       );
   //     }
@@ -1457,41 +1457,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/books/osnovy-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Все книги',
-  //           url: 'https://arapov.trade/ru/books',
+  //           url: 'https://arapovtrade.com/ru/books',
   //         },
   //         {
   //           name: 'Основы трейдинга',
-  //           url: 'https://arapov.trade/ru/books/osnovy-treydinga',
+  //           url: 'https://arapovtrade.com/ru/books/osnovy-treydinga',
   //         },
   //       );
   //     } else if (urlPath === 'uk/books/osnovy-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Всі книги',
-  //           url: 'https://arapov.trade/uk/books',
+  //           url: 'https://arapovtrade.com/uk/books',
   //         },
   //         {
   //           name: 'Основи трейдингу',
-  //           url: 'https://arapov.trade/uk/books/osnovy-treydinga',
+  //           url: 'https://arapovtrade.com/uk/books/osnovy-treydinga',
   //         },
   //       );
   //     } else if (urlPath === 'en/books/osnovy-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'All books',
-  //           url: 'https://arapov.trade/en/books',
+  //           url: 'https://arapovtrade.com/en/books',
   //         },
   //         {
   //           name: 'Trading Basics',
-  //           url: 'https://arapov.trade/en/books/osnovy-treydinga',
+  //           url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
   //         },
   //       );
   //     }
@@ -1502,41 +1502,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/books/psihologiya-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Все книги',
-  //           url: 'https://arapov.trade/ru/books',
+  //           url: 'https://arapovtrade.com/ru/books',
   //         },
   //         {
   //           name: 'Психология трейдинга',
-  //           url: 'https://arapov.trade/ru/books/psihologiya-treydinga',
+  //           url: 'https://arapovtrade.com/ru/books/psihologiya-treydinga',
   //         },
   //       );
   //     } else if (urlPath === 'uk/books/psihologiya-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Всі книги',
-  //           url: 'https://arapov.trade/uk/books',
+  //           url: 'https://arapovtrade.com/uk/books',
   //         },
   //         {
   //           name: 'Психологія трейдингу',
-  //           url: 'https://arapov.trade/uk/books/psihologiya-treydinga',
+  //           url: 'https://arapovtrade.com/uk/books/psihologiya-treydinga',
   //         },
   //       );
   //     } else if (urlPath === 'en/books/psihologiya-treydinga') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'All books',
-  //           url: 'https://arapov.trade/en/books',
+  //           url: 'https://arapovtrade.com/en/books',
   //         },
   //         {
   //           name: 'Trading Psychology',
-  //           url: 'https://arapov.trade/en/books/psihologiya-treydinga',
+  //           url: 'https://arapovtrade.com/en/books/psihologiya-treydinga',
   //         },
   //       );
   //     }
@@ -1547,41 +1547,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/books/osnovy-treydinga-tom-two') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Все книги',
-  //           url: 'https://arapov.trade/ru/books',
+  //           url: 'https://arapovtrade.com/ru/books',
   //         },
   //         {
   //           name: 'Основы трейдинга. Практика',
-  //           url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+  //           url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
   //         },
   //       );
   //     } else if (urlPath === 'uk/books/osnovy-treydinga-tom-two') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Всі книги',
-  //           url: 'https://arapov.trade/uk/books',
+  //           url: 'https://arapovtrade.com/uk/books',
   //         },
   //         {
   //           name: 'Основи трейдингу. Практика',
-  //           url: 'https://arapov.trade/uk/books/osnovy-treydinga-tom-two',
+  //           url: 'https://arapovtrade.com/uk/books/osnovy-treydinga-tom-two',
   //         },
   //       );
   //     } else if (urlPath === 'en/books/osnovy-treydinga-tom-two') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'All books',
-  //           url: 'https://arapov.trade/en/books',
+  //           url: 'https://arapovtrade.com/en/books',
   //         },
   //         {
   //           name: 'Trading Basics. Practice',
-  //           url: 'https://arapov.trade/en/books/osnovy-treydinga-tom-two',
+  //           url: 'https://arapovtrade.com/en/books/osnovy-treydinga-tom-two',
   //         },
   //       );
   //     }
@@ -1592,29 +1592,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/freestudying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Бесплатное обучение трейдингу',
-  //           url: 'https://arapov.trade/ru/freestudying',
+  //           url: 'https://arapovtrade.com/ru/freestudying',
   //         },
   //       );
   //     } else if (urlPath === 'uk/freestudying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Безкоштовне навчання трейдингу',
-  //           url: 'https://arapov.trade/uk/freestudying',
+  //           url: 'https://arapovtrade.com/uk/freestudying',
   //         },
   //       );
   //     } else if (urlPath === 'en/freestudying') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Free trading education',
-  //           url: 'https://arapov.trade/en/freestudying',
+  //           url: 'https://arapovtrade.com/en/freestudying',
   //         },
   //       );
   //     }
@@ -1625,42 +1625,42 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/freestudying/freeeducation') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Бесплатное обучение трейдингу',
-  //           url: 'https://arapov.trade/ru/freestudying',
+  //           url: 'https://arapovtrade.com/ru/freestudying',
   //         },
   //         {
   //           name: 'Бесплатные курсы по трейдингу',
-  //           url: 'https://arapov.trade/ru/freestudying/freeeducation',
+  //           url: 'https://arapovtrade.com/ru/freestudying/freeeducation',
   //         },
   //       );
   //     } else if (urlPath === 'uk/freestudying/freeeducation') {
          
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Безкоштовне навчання трейдингу',
-  //           url: 'https://arapov.trade/uk/freestudying',
+  //           url: 'https://arapovtrade.com/uk/freestudying',
   //         },
   //         {
   //           name: 'Безкоштовні курси з трейдингу',
-  //           url: 'https://arapov.trade/uk/freestudying/freeeducation',
+  //           url: 'https://arapovtrade.com/uk/freestudying/freeeducation',
   //         },
   //       );
   //     } else if (urlPath === 'en/freestudying/freeeducation') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Free trading education',
-  //           url: 'https://arapov.trade/en/freestudying',
+  //           url: 'https://arapovtrade.com/en/freestudying',
   //         },
   //         {
   //           name: 'Free Trading Courses',
-  //           url: 'https://arapov.trade/en/freestudying/freeeducation',
+  //           url: 'https://arapovtrade.com/en/freestudying/freeeducation',
   //         },
   //       );
   //     }
@@ -1671,41 +1671,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/freestudying/practic') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Бесплатное обучение трейдингу',
-  //           url: 'https://arapov.trade/ru/freestudying',
+  //           url: 'https://arapovtrade.com/ru/freestudying',
   //         },
   //         {
   //           name: 'Торговая система трейдера',
-  //           url: 'https://arapov.trade/ru/freestudying/practic',
+  //           url: 'https://arapovtrade.com/ru/freestudying/practic',
   //         },
   //       );
   //     } else if (urlPath === 'uk/freestudying/practic') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Безкоштовне навчання трейдингу',
-  //           url: 'https://arapov.trade/uk/freestudying',
+  //           url: 'https://arapovtrade.com/uk/freestudying',
   //         },
   //         {
   //           name: 'Торгова система трейдера',
-  //           url: 'https://arapov.trade/uk/freestudying/practic',
+  //           url: 'https://arapovtrade.com/uk/freestudying/practic',
   //         },
   //       );
   //     } else if (urlPath === 'en/freestudying/practic') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Free trading education',
-  //           url: 'https://arapov.trade/en/freestudying',
+  //           url: 'https://arapovtrade.com/en/freestudying',
   //         },
   //         {
   //           name: 'Trader`s trading system',
-  //           url: 'https://arapov.trade/en/freestudying/practic',
+  //           url: 'https://arapovtrade.com/en/freestudying/practic',
   //         },
   //       );
   //     }
@@ -1717,31 +1717,31 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/privacy-policy') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Политика конфиденциальности',
-  //           url: 'https://arapov.trade/ru/privacy-policy',
+  //           url: 'https://arapovtrade.com/ru/privacy-policy',
   //         },
           
   //       );
   //     } else if (urlPath === 'uk/privacy-policy') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Політика конфіденційності',
-  //           url: 'https://arapov.trade/uk/privacy-policy',
+  //           url: 'https://arapovtrade.com/uk/privacy-policy',
   //         },
            
   //       );
   //     } else if (urlPath === 'en/privacy-policy') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Privacy Policy',
-  //           url: 'https://arapov.trade/en/privacy-policy',
+  //           url: 'https://arapovtrade.com/en/privacy-policy',
   //         },
            
   //       );
@@ -1755,29 +1755,29 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
   //   ) {
   //     if (urlPath === 'ru/disclaimer') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Отказ от ответственности',
-  //           url: 'https://arapov.trade/ru/disclaimer',
+  //           url: 'https://arapovtrade.com/ru/disclaimer',
   //         },
   //       );
   //     } else if (urlPath === 'uk/disclaimer') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Відмова від відповідальності',
-  //           url: 'https://arapov.trade/uk/disclaimer',
+  //           url: 'https://arapovtrade.com/uk/disclaimer',
   //         },
   //       );
   //     } else if (urlPath === 'en/disclaimer') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Course author', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Course author', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Disclaimer',
-  //           url: 'https://arapov.trade/en/disclaimer',
+  //           url: 'https://arapovtrade.com/en/disclaimer',
   //         },
   //       );
   //     }
@@ -1786,41 +1786,41 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
 
   //     if (urlArr[0] === 'ru') {
   //       this.breadcrumbs.push(
-  //         { name: 'Главная', url: 'https://arapov.trade/ru/main' },
-  //         { name: 'Автор курса', url: 'https://arapov.trade/ru' },
+  //         { name: 'Главная', url: 'https://arapovtrade.com/ru/main' },
+  //         { name: 'Автор курса', url: 'https://arapovtrade.com/ru' },
   //         {
   //           name: 'Бесплатное обучение трейдингу',
-  //           url: 'https://arapov.trade/ru/freestudying',
+  //           url: 'https://arapovtrade.com/ru/freestudying',
   //         },
   //         {
   //           name: 'Теория по трейдингу',
-  //           url: `https://arapov.trade/ru/freestudying/${urlArr[2]}`,
+  //           url: `https://arapovtrade.com/ru/freestudying/${urlArr[2]}`,
   //         },
   //       );
   //     } else if (urlArr[0] === 'uk') {
   //       this.breadcrumbs.push(
-  //         { name: 'Головна', url: 'https://arapov.trade' },
-  //         { name: 'Автор курсу', url: 'https://arapov.trade/uk' },
+  //         { name: 'Головна', url: 'https://arapovtrade.com' },
+  //         { name: 'Автор курсу', url: 'https://arapovtrade.com/uk' },
   //         {
   //           name: 'Безкоштовне навчання трейдингу',
-  //           url: 'https://arapov.trade/uk/freestudying',
+  //           url: 'https://arapovtrade.com/uk/freestudying',
   //         },
   //         {
   //           name: 'Теорія з трейдингу',
-  //           url: `https://arapov.trade/uk/freestudying/${urlArr[2]}`,
+  //           url: `https://arapovtrade.com/uk/freestudying/${urlArr[2]}`,
   //         },
   //       );
   //     } else if (urlArr[0] === 'en') {
   //       this.breadcrumbs.push(
-  //         { name: 'Main Page', url: 'https://arapov.trade/en/main' },
-  //         { name: 'Author of the Course', url: 'https://arapov.trade/en' },
+  //         { name: 'Main Page', url: 'https://arapovtrade.com/en/main' },
+  //         { name: 'Author of the Course', url: 'https://arapovtrade.com/en' },
   //         {
   //           name: 'Free trading education',
-  //           url: 'https://arapov.trade/en/freestudying',
+  //           url: 'https://arapovtrade.com/en/freestudying',
   //         },
   //         {
   //           name: 'Trading Theory',
-  //           url: `https://arapov.trade/en/freestudying/${urlArr[2]}`,
+  //           url: `https://arapovtrade.com/en/freestudying/${urlArr[2]}`,
   //         },
   //       );
   //     }
@@ -1980,11 +1980,11 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
       let href = '';
 
       if (basePath === 'main') {
-        if (lang === 'uk') href = 'https://arapov.trade';
-        else if (lang === 'ru') href = 'https://arapov.trade/ru/main';
-        else href = 'https://arapov.trade/en/main';
+        if (lang === 'uk') href = 'https://arapovtrade.com';
+        else if (lang === 'ru') href = 'https://arapovtrade.com/ru/main';
+        else href = 'https://arapovtrade.com/en/main';
       } else {
-        href = `https://arapov.trade/${lang}/${basePath}`;
+        href = `https://arapovtrade.com/${lang}/${basePath}`;
       }
 
       href = normalize(href);
@@ -2008,13 +2008,13 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
     //   this.router.url === '/en'
     // ) {
        
-    //   xDefaultHref = 'https://arapov.trade/ru';
+    //   xDefaultHref = 'https://arapovtrade.com/ru';
     // } else {
     //   // Обычное поведение
     //   xDefaultHref =
     //     basePath === 'main'
-    //       ? 'https://arapov.trade/ru/main'
-    //       : `https://arapov.trade/ru/${basePath}`;
+    //       ? 'https://arapovtrade.com/ru/main'
+    //       : `https://arapovtrade.com/ru/${basePath}`;
     // }
     
 
@@ -2028,9 +2028,9 @@ export class AppComponent implements OnInit, AfterViewChecked, OnDestroy {
     let xDefaultHref = '';
 
 if (basePath === 'main') {
-  xDefaultHref = 'https://arapov.trade';
+  xDefaultHref = 'https://arapovtrade.com';
 } else {
-  xDefaultHref = `https://arapov.trade/uk/${basePath}`;
+  xDefaultHref = `https://arapovtrade.com/uk/${basePath}`;
 }
 
 xDefaultHref = normalize(xDefaultHref);

@@ -77,14 +77,14 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -275,7 +275,7 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          url: 'https://arapov.trade/ru/freestudying/tradingview-record',
+          url: 'https://arapovtrade.com/ru/freestudying/tradingview-record',
           headline:
             "242 идеи, 5 лет публичного анализа и несколько Editor's Pick: полный трек-рекорд Игоря Арапова на TradingView",
           description:
@@ -284,17 +284,17 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
           datePublished: '2026-02-21T00:00:00Z',
           dateModified: '2026-02-21T00:00:00Z',
           image: [
-            'https://arapov.trade/assets/img/content/tradingview-record.png',
+            'https://arapovtrade.com/assets/img/content/tradingview-record.png',
           ],
           mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': 'https://arapov.trade/ru/freestudying/tradingview-record',
+          '@id': 'https://arapovtrade.com/ru/freestudying/tradingview-record',
         },
         author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           about: [
             { '@type': 'Thing', name: 'Трейдинг' },
@@ -309,8 +309,8 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
             name: 'TradingView',
             url: 'https://ru.tradingview.com/u/Igor_Arapov/',
           },
-          { '@id': 'https://arapov.trade/ru/books/osnovy-treydinga#book' },
-          { '@id': 'https://arapov.trade/ru/books/psihologiya-treydinga#book' },
+          { '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga#book' },
+          { '@id': 'https://arapovtrade.com/ru/books/psihologiya-treydinga#book' },
         ],
         },
       ],
@@ -326,7 +326,7 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -337,9 +337,9 @@ export class HomeRuBlogOnehundredSevenComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',

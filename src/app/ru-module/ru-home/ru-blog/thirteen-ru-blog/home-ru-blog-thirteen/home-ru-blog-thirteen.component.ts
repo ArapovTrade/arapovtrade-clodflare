@@ -57,7 +57,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Бессрочные фьючерсы и маржинальная торговля | Arapov.trade',
+      'Бессрочные фьючерсы и маржинальная торговля | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -78,14 +78,14 @@ export class HomeRuBlogThirteenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -281,18 +281,18 @@ export class HomeRuBlogThirteenComponent implements OnInit {
             'Что такое бессрочные фьючерсы, кредитное плечо и маржинальная торговля в крипте, при чём тут фандинг и почему большое плечо ведёт к ликвидации.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
@@ -300,11 +300,11 @@ export class HomeRuBlogThirteenComponent implements OnInit {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/ru/freestudying/crypto-perpetuals-margin',
+              'https://arapovtrade.com/ru/freestudying/crypto-perpetuals-margin',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/crypto-perpetuals-margin.png',
+            url: 'https://arapovtrade.com/assets/img/content/crypto-perpetuals-margin.png',
             width: 1200,
             height: 630,
           },
@@ -326,7 +326,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -337,9 +337,9 @@ export class HomeRuBlogThirteenComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -425,7 +425,7 @@ export class HomeRuBlogThirteenComponent implements OnInit {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/ru/freestudying/crypto-perpetuals-margin#howto',
+        'https://arapovtrade.com/ru/freestudying/crypto-perpetuals-margin#howto',
       name: 'Как разобраться в бессрочных фьючерсах и марже',
       description:
         'Пошаговый разбор перпетуалов, фандинга, плеча и ликвидации и их применение в торговле',

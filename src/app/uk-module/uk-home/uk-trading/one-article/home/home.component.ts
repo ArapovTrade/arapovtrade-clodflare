@@ -82,11 +82,11 @@ export class HomeComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -278,26 +278,26 @@ export class HomeComponent implements OnInit {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/uk/freestudying/adviceforbeginners#article',
+            'https://arapovtrade.com/uk/freestudying/adviceforbeginners#article',
           headline:
             '10 порад початківцям трейдерам: як уникнути типових помилок',
           description:
             'Практичні поради для початківців трейдерів від професіонала з 11-річним досвідом.',
           image: [
-            'https://arapov.trade/assets/img/content/traderStarterw.webp',
+            'https://arapovtrade.com/assets/img/content/traderStarterw.webp',
           ],
           datePublished: '2025-01-10T12:00:00+02:00',
          dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/adviceforbeginners',
+            '@id': 'https://arapovtrade.com/uk/freestudying/adviceforbeginners',
           },
           articleSection: 'Трейдинг для початківців',
           inLanguage: 'uk',
@@ -315,7 +315,7 @@ export class HomeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -326,9 +326,9 @@ export class HomeComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -343,7 +343,7 @@ export class HomeComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -359,7 +359,7 @@ export class HomeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/adviceforbeginners#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/adviceforbeginners#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -414,7 +414,7 @@ export class HomeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/adviceforbeginners#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/adviceforbeginners#howto',
       name: 'Як почати торгувати на фінансових ринках',
       description: 'Покроковий план для початківців трейдерів',
       step: [
@@ -461,7 +461,7 @@ export class HomeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/adviceforbeginners#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/adviceforbeginners#terms',
       name: 'Глосарій трейдера',
       hasDefinedTerm: [
         {

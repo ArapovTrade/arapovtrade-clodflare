@@ -43,7 +43,7 @@ export class RuCryptoHomepageComponent
     this.removeExistingWebPageSchema();
 
     this.titleService.setTitle(
-      'Бесплатное обучение трейдингу и финансовым рынкам | Arapov.Trade',
+      'Бесплатное обучение трейдингу и финансовым рынкам | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -65,7 +65,7 @@ export class RuCryptoHomepageComponent
     // Open Graph
     this.meta.updateTag({
       property: 'og:site_name',
-      content: 'Arapov.Trade',
+      content: 'ArapovTrade',
     });
 
     this.meta.updateTag({
@@ -80,12 +80,12 @@ export class RuCryptoHomepageComponent
 
     this.meta.updateTag({
       property: 'og:url',
-      content: 'https://arapov.trade/ru/main',
+      content: 'https://arapovtrade.com/ru/main',
     });
 
     this.meta.updateTag({
       property: 'og:title',
-      content: 'Arapov.Trade — бесплатное обучение трейдингу',
+      content: 'ArapovTrade — бесплатное обучение трейдингу',
     });
 
     this.meta.updateTag({
@@ -95,7 +95,7 @@ export class RuCryptoHomepageComponent
     });
 
     const ogImage =
-      'https://arapov.trade/assets/redesignArapovTrade/img/arapovtrade-banner-ru.jpg';
+      'https://arapovtrade.com/assets/redesignArapovTrade/img/arapovtrade-banner-ru.jpg';
 
     this.meta.updateTag({
       property: 'og:image',
@@ -124,7 +124,7 @@ export class RuCryptoHomepageComponent
 
     this.meta.updateTag({
       property: 'og:image:alt',
-      content: 'Arapov.Trade — Бесплатная платформа для изучения трейдинга',
+      content: 'ArapovTrade — Бесплатная платформа для изучения трейдинга',
     });
 
     // Twitter Card
@@ -135,12 +135,12 @@ export class RuCryptoHomepageComponent
 
     this.meta.updateTag({
       name: 'twitter:url',
-      content: 'https://arapov.trade/ru/main',
+      content: 'https://arapovtrade.com/ru/main',
     });
 
     this.meta.updateTag({
       name: 'twitter:title',
-      content: 'Arapov.Trade — бесплатное обучение трейдингу',
+      content: 'ArapovTrade — бесплатное обучение трейдингу',
     });
 
     this.meta.updateTag({
@@ -156,7 +156,7 @@ export class RuCryptoHomepageComponent
 
     this.meta.updateTag({
       name: 'twitter:image:alt',
-      content: 'Arapov.Trade — Бесплатная платформа для изучения трейдинга',
+      content: 'ArapovTrade — Бесплатная платформа для изучения трейдинга',
     });
 
 
@@ -274,7 +274,7 @@ export class RuCryptoHomepageComponent
     ).some((script) => {
       try {
         const json = JSON.parse(script.textContent || '{}');
-        return json['@type'] === 'WebSite' && json['name'] === 'Arapov.Trade';
+        return json['@type'] === 'WebSite' && json['name'] === 'ArapovTrade';
       } catch {
         return false;
       }
@@ -287,22 +287,22 @@ export class RuCryptoHomepageComponent
     script.text = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      '@id': 'https://arapov.trade/#website',
-      url: 'https://arapov.trade/ru',
-      name: 'Arapov.Trade',
+      '@id': 'https://arapovtrade.com/#website',
+      url: 'https://arapovtrade.com/ru',
+      name: 'ArapovTrade',
       alternateName: 'Обучение трейдингу',
       description:
         'Бесплатное обучение трейдингу от Игоря Арапова. 51+ статей, 78+ видеоуроков.',
       inLanguage: 'ru-RU',
       publisher: {
-        '@id': 'https://arapov.trade/#organization',
+        '@id': 'https://arapovtrade.com/#organization',
       },
       potentialAction: {
         '@type': 'SearchAction',
         target: {
           '@type': 'EntryPoint',
           urlTemplate:
-            'https://arapov.trade/ru/freestudying?search={search_term_string}',
+            'https://arapovtrade.com/ru/freestudying?search={search_term_string}',
         },
         'query-input': 'required name=search_term_string',
       },

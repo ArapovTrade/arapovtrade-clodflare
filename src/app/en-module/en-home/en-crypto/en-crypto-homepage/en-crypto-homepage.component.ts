@@ -51,7 +51,7 @@ export class EnCryptoHomepageComponent
   ngOnInit() {
     this.removeExistingWebPageSchema();
 
-    this.titleService.setTitle('Free Trading & Financial Markets Education | Arapov.Trade');
+    this.titleService.setTitle('Free Trading & Financial Markets Education | ArapovTrade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
@@ -74,23 +74,23 @@ export class EnCryptoHomepageComponent
 // Open Graph + Twitter Card — English homepage
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/arapovtrade-banner-en.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/arapovtrade-banner-en.jpg';
 
 const ogTitle =
-  'Free Trading Education and Financial Markets | Arapov.Trade';
+  'Free Trading Education and Financial Markets | ArapovTrade';
 
 const ogDescription =
   'Explore free trading courses, articles, videos and books on market analysis, risk management and psychology. Choose a learning path for your level.';
 
 const ogImageAlt =
-  'Arapov.Trade — Free trading education platform';
+  'ArapovTrade — Free trading education platform';
 
-const pageUrl = 'https://arapov.trade/en/main';
+const pageUrl = 'https://arapovtrade.com/en/main';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -313,7 +313,7 @@ this.meta.updateTag({
     ).some((script) => {
       try {
         const json = JSON.parse(script.textContent || '{}');
-        return json['@type'] === 'WebSite' && json['name'] === 'Arapov.Trade';
+        return json['@type'] === 'WebSite' && json['name'] === 'ArapovTrade';
       } catch {
         return false;
       }
@@ -328,15 +328,15 @@ this.meta.updateTag({
     script.text = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      '@id': 'https://arapov.trade/#website',
-      url: 'https://arapov.trade/en',
-      name: 'Arapov.Trade',
+      '@id': 'https://arapovtrade.com/#website',
+      url: 'https://arapovtrade.com/en',
+      name: 'ArapovTrade',
       alternateName: 'Trading Education',
       description:
         'Free trading education by Igor Arapov. 51+ articles, 78+ video lessons.',
       inLanguage: 'en-US',
       publisher: {
-       '@id': 'https://arapov.trade/#organization'
+       '@id': 'https://arapovtrade.com/#organization'
       },
     });
 

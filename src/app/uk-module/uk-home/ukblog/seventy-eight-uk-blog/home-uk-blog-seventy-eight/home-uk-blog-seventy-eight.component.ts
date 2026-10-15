@@ -56,7 +56,7 @@ export class HomeUkBlogSeventyEightComponent {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('Що таке FOMO у трейдингу? | Arapov.trade');
+    this.titleService.setTitle('Що таке FOMO у трейдингу? | ArapovTrade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
@@ -81,11 +81,11 @@ export class HomeUkBlogSeventyEightComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -280,17 +280,17 @@ export class HomeUkBlogSeventyEightComponent {
           headline: 'FOMO у трейдингу: як подолати страх втраченої вигоди',
           description:
             'FOMO у трейдингу: що таке страх втраченої вигоди та методи його подолання.',
-          image: 'https://arapov.trade/assets/img/content/fomo.webp',
+          image: 'https://arapovtrade.com/assets/img/content/fomo.webp',
           datePublished: '2025-09-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
-          author: { '@id': 'https://arapov.trade/uk#person' },
+          author: { '@id': 'https://arapovtrade.com/uk#person' },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
 
@@ -310,7 +310,7 @@ export class HomeUkBlogSeventyEightComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -321,9 +321,9 @@ export class HomeUkBlogSeventyEightComponent {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -335,7 +335,7 @@ export class HomeUkBlogSeventyEightComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };

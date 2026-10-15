@@ -72,11 +72,11 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -254,29 +254,29 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
             'Chart patterns in technical analysis: triangles, flags, head and shoulders, double top. How to spot them and trade the breakouts.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/chart-patterns',
+            '@id': 'https://arapovtrade.com/en/freestudying/chart-patterns',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/keypraicepattern.webp',
+            url: 'https://arapovtrade.com/assets/img/content/keypraicepattern.webp',
             width: 1200,
             height: 630,
           },
@@ -298,7 +298,7 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -309,9 +309,9 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -326,7 +326,7 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
       jobTitle: [
         'Independent researcher',
         'Trader',
-        'Author and founder of arapov.trade',
+        'Author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practising trader, author of trading books and scientific publications. Specialises in trading psychology and cognitive biases in financial markets.',
@@ -396,7 +396,7 @@ export class HomeEuBlogFiftyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/chart-patterns#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/chart-patterns#howto',
       name: 'How to read chart patterns without trading them blind',
       description:
         'A step-by-step approach to price patterns and using them properly through level and volume',

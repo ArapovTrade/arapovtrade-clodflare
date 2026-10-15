@@ -105,11 +105,11 @@ export class HomeUkBlogSixtyThreeComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -300,33 +300,33 @@ export class HomeUkBlogSixtyThreeComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/uk/freestudying/smartmoneycontrol#article',
+            'https://arapovtrade.com/uk/freestudying/smartmoneycontrol#article',
           headline: 'Smart Money: як великі гравці маніпулюють ринком',
           description:
             'Повний посібник з методів маніпуляції ринком великими інституційними гравцями. Дізнайтеся механізми створення хибних пробоїв, вибивання стопів та формування трендів.',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/smartmoneycontrol1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/smartmoneycontrol1.webp',
             width: 1200,
             height: 630,
           },
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/smartmoneycontrol',
+            '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneycontrol',
           },
           articleSection: 'Трейдинг',
           keywords: [
@@ -352,7 +352,7 @@ export class HomeUkBlogSixtyThreeComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -363,9 +363,9 @@ export class HomeUkBlogSixtyThreeComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -377,7 +377,7 @@ export class HomeUkBlogSixtyThreeComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -391,7 +391,7 @@ export class HomeUkBlogSixtyThreeComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneycontrol#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneycontrol#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -446,7 +446,7 @@ export class HomeUkBlogSixtyThreeComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneycontrol#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneycontrol#howto',
       name: 'Як торгувати разом зі Smart Money',
       description:
         'Покрокове керівництво з визначення дій інституційних гравців та торгівлі на їхньому боці',
@@ -494,7 +494,7 @@ export class HomeUkBlogSixtyThreeComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneycontrol#glossary',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneycontrol#glossary',
       name: 'Глосарій термінів Smart Money',
       description: 'Ключові терміни концепції Smart Money у трейдингу',
       hasDefinedTerm: [

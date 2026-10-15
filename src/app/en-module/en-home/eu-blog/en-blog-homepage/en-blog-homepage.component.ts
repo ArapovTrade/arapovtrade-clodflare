@@ -127,21 +127,21 @@ export class EnBlogHomepageComponent implements OnInit {
     // Open Graph + Twitter Card — English free studying (library) page
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/trading-education-library-en.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/trading-education-library-en.jpg';
 
-const ogTitle = 'Free Trading Education Library | Arapov.Trade';
+const ogTitle = 'Free Trading Education Library | ArapovTrade';
 
 const ogDescription =
   'Browse free articles on market mechanics, chart and volume analysis, risk, trading psychology and cryptocurrencies. Find topics or follow the beginner course.';
 
-const ogImageAlt = 'Arapov.Trade — Trading library';
+const ogImageAlt = 'ArapovTrade — Trading library';
 
-const pageUrl = 'https://arapov.trade/en/freestudying';
+const pageUrl = 'https://arapovtrade.com/en/freestudying';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -261,11 +261,11 @@ this.meta.updateTag({
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -455,27 +455,27 @@ this.meta.updateTag({
       '@graph': [
         {
           '@type': 'CollectionPage',
-          '@id': 'https://arapov.trade/en/freestudying#collection',
+          '@id': 'https://arapovtrade.com/en/freestudying#collection',
           name: 'Free Trading Education',
           description:
             'Over 50+ free trading articles: Smart Money Concepts, Wyckoff Method, Technical Analysis, Crypto Trading. Complete course for beginners.',
-          url: 'https://arapov.trade/en/freestudying',
+          url: 'https://arapovtrade.com/en/freestudying',
           inLanguage: 'en',
-          isPartOf: { '@id': 'https://arapov.trade/#website' },
+          isPartOf: { '@id': 'https://arapovtrade.com/#website' },
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           about: [
@@ -492,31 +492,31 @@ this.meta.updateTag({
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Smart Money Concepts',
-                url: 'https://arapov.trade/en/freestudying/smart-money-guide',
+                url: 'https://arapovtrade.com/en/freestudying/smart-money-guide',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Wyckoff Method',
-                url: 'https://arapov.trade/en/freestudying/wyckoff-method',
+                url: 'https://arapovtrade.com/en/freestudying/wyckoff-method',
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: 'Technical Analysis',
-                url: 'https://arapov.trade/en/freestudying/chart-reading',
+                url: 'https://arapovtrade.com/en/freestudying/chart-reading',
               },
               {
                 '@type': 'ListItem',
                 position: 4,
                 name: 'Trading Indicators',
-                url: 'https://arapov.trade/en/freestudying/trading-indicators',
+                url: 'https://arapovtrade.com/en/freestudying/trading-indicators',
               },
               {
                 '@type': 'ListItem',
                 position: 5,
                 name: 'Cryptocurrency Trading',
-                url: 'https://arapov.trade/en/freestudying/crypto-basics',
+                url: 'https://arapovtrade.com/en/freestudying/crypto-basics',
               },
             ],
           },

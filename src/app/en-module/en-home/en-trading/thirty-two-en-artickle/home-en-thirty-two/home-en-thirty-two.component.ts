@@ -56,7 +56,7 @@ export class HomeEnThirtyTwoComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Stop Order in Trading: Essential Guide to Capital Protection | Arapov.trade',
+      'Stop Order in Trading: Essential Guide to Capital Protection | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -80,11 +80,11 @@ export class HomeEnThirtyTwoComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -260,23 +260,23 @@ export class HomeEnThirtyTwoComponent implements OnInit {
             'Stop Order in Trading: Essential Guide to Capital Protection',
           description:
             'Complete breakdown of stop orders: types, placement strategies, common mistakes and professional risk management techniques across different markets',
-          image: 'https://arapov.trade/assets/img/content/stoporder.png',
+          image: 'https://arapovtrade.com/assets/img/content/stoporder.png',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/stoporder',
+            '@id': 'https://arapovtrade.com/en/freestudying/stoporder',
           },
           articleSection: 'Trading Education',
           wordCount: '1700',
@@ -294,7 +294,7 @@ export class HomeEnThirtyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -305,9 +305,9 @@ export class HomeEnThirtyTwoComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -322,7 +322,7 @@ export class HomeEnThirtyTwoComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

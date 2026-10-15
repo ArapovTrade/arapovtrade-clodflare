@@ -73,11 +73,11 @@ export class HomeEnTwentyEightComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -255,22 +255,22 @@ export class HomeEnTwentyEightComponent implements OnInit {
           description:
             'Comprehensive guide to price patterns in technical analysis. Learn reversal and continuation patterns for profitable trading strategies.',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
           },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/keypricepattern',
+            '@id': 'https://arapovtrade.com/en/freestudying/keypricepattern',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/keypraicepattern.webp',
+            url: 'https://arapovtrade.com/assets/img/content/keypraicepattern.webp',
           },
         },
       ],
@@ -286,7 +286,7 @@ export class HomeEnTwentyEightComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -297,9 +297,9 @@ export class HomeEnTwentyEightComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -314,7 +314,7 @@ export class HomeEnTwentyEightComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

@@ -80,14 +80,14 @@ export class HomeRuBlogNintyThreeComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -281,19 +281,19 @@ export class HomeRuBlogNintyThreeComponent implements OnInit {
             'ATR индикатор: полное руководство по измерению волатильности',
           description:
             'Узнайте, как использовать индикатор ATR для оценки волатильности, расчёта стоп-лоссов и построения торговых стратегий.',
-          image: 'https://arapov.trade/assets/img/content/atrstrategies.jpg',
+          image: 'https://arapovtrade.com/assets/img/content/atrstrategies.jpg',
 
           datePublished: '2026-03-25T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
-          author: { '@id': 'https://arapov.trade/ru#person' },
+          author: { '@id': 'https://arapovtrade.com/ru#person' },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           wordCount: 1450,
@@ -312,7 +312,7 @@ export class HomeRuBlogNintyThreeComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -323,9 +323,9 @@ export class HomeRuBlogNintyThreeComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -340,7 +340,7 @@ export class HomeRuBlogNintyThreeComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',

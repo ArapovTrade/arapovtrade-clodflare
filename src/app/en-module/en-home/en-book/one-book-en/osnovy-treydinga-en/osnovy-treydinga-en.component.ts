@@ -142,10 +142,10 @@ export class OsnovyTreydingaEnComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book',
+      '@id': 'https://arapovtrade.com/en/books/osnovy-treydinga#book',
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://arapov.trade/en/books/osnovy-treydinga',
+        '@id': 'https://arapovtrade.com/en/books/osnovy-treydinga',
       },
       name: 'Trading fundamentals. Market Basics • Technical Analysis • Volume Analysis',
       alternateName: [
@@ -164,7 +164,7 @@ export class OsnovyTreydingaEnComponent
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       copyrightYear: 2025,
-      copyrightHolder: { '@id': 'https://arapov.trade/#person' },
+      copyrightHolder: { '@id': 'https://arapovtrade.com/#person' },
       genre: ['Business', 'Finance', 'Trading', 'Education', 'Investment'],
       about: [
         {
@@ -191,27 +191,27 @@ export class OsnovyTreydingaEnComponent
         'trading, forex, technical analysis, volume analysis, exchange, investments, smart money, trading education',
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/en',
+        url: 'https://arapovtrade.com/en',
       },
-      publisher: { '@id': 'https://arapov.trade/#organization' },
+      publisher: { '@id': 'https://arapovtrade.com/#organization' },
       image: {
         '@type': 'ImageObject',
-        url: 'https://arapov.trade/assets/redesignArapovTrade/img/cover_en.jpg',
+        url: 'https://arapovtrade.com/assets/redesignArapovTrade/img/cover_en.jpg',
         width: 600,
         height: 900,
         caption: '"Trading Fundamentals" — Igor Arapov',
       },
-      url: 'https://arapov.trade/en/books/osnovy-treydinga',
+      url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        url: 'https://arapov.trade/en/books/osnovy-treydinga',
+        url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
         priceValidUntil: '2026-12-31T00:00:00Z',
-        seller: { '@id': 'https://arapov.trade/#organization' },
+        seller: { '@id': 'https://arapovtrade.com/#organization' },
       },
       workExample: {
         '@type': 'Book',
@@ -240,7 +240,7 @@ export class OsnovyTreydingaEnComponent
           '@type': 'ReadAction',
           target: {
             '@type': 'EntryPoint',
-            url: 'https://arapov.trade/en/books/osnovy-treydinga',
+            url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
             actionPlatform: [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform',
@@ -262,23 +262,23 @@ export class OsnovyTreydingaEnComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      '@id': 'https://arapov.trade/en/books/osnovy-treydinga',
-      url: 'https://arapov.trade/en/books/osnovy-treydinga',
+      '@id': 'https://arapovtrade.com/en/books/osnovy-treydinga',
+      url: 'https://arapovtrade.com/en/books/osnovy-treydinga',
       name: 'Trading fundamentals. Market Basics • Technical Analysis • Volume Analysis',
       description: 'Download the free book on trading. ISBN 979-8-90243-734-5',
       inLanguage: 'en',
-      isPartOf: { '@id': 'https://arapov.trade/#website' },
-      about: { '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book' },
+      isPartOf: { '@id': 'https://arapovtrade.com/#website' },
+      about: { '@id': 'https://arapovtrade.com/en/books/osnovy-treydinga#book' },
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/en',
+        url: 'https://arapovtrade.com/en',
       },
       datePublished: '2025-12-29T00:00:00Z',
       dateModified: '2025-12-29T00:00:00Z',
       mainEntity: {
-        '@id': 'https://arapov.trade/en/books/osnovy-treydinga#book',
+        '@id': 'https://arapovtrade.com/en/books/osnovy-treydinga#book',
       },
       // breadcrumb: {
       //   '@type': 'BreadcrumbList',
@@ -287,25 +287,25 @@ export class OsnovyTreydingaEnComponent
       //       '@type': 'ListItem',
       //       position: 1,
       //       name: 'Main',
-      //       item: 'https://arapov.trade',
+      //       item: 'https://arapovtrade.com',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 2,
       //       name: 'About the author',
-      //       item: 'https://arapov.trade/en',
+      //       item: 'https://arapovtrade.com/en',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 3,
       //       name: 'My books',
-      //       item: 'https://arapov.trade/en/books',
+      //       item: 'https://arapovtrade.com/en/books',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 4,
       //       name: 'Book',
-      //       item: 'https://arapov.trade/en/books/osnovy-treydinga',
+      //       item: 'https://arapovtrade.com/en/books/osnovy-treydinga',
       //     },
       //   ],
       // },
@@ -323,7 +323,7 @@ export class OsnovyTreydingaEnComponent
           name: 'Is the book really free?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Yes, the book "Trading Fundamentals" is available for download absolutely free of charge in EPUB format. The author provides it as part of a free educational program on the arapov.trade platform.',
+            text: 'Yes, the book "Trading Fundamentals" is available for download absolutely free of charge in EPUB format. The author provides it as part of a free educational program on the arapovtrade.com platform.',
           },
         },
         {
@@ -347,7 +347,7 @@ export class OsnovyTreydingaEnComponent
           name: 'Who is the author of the book?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapov.trade with 51+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
+            text: 'The author of the book is Igor Arapov, a practicing trader since 2013. Creator of the educational platform arapovtrade.com with 51+ articles and a YouTube channel @ArapovTrade with 78+ video tutorials on trading.',
           },
         },
         {

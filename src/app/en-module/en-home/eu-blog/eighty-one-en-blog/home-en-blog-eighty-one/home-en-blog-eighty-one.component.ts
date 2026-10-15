@@ -78,11 +78,11 @@ export class HomeEnBlogEightyOneComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -254,23 +254,23 @@ export class HomeEnBlogEightyOneComponent {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/en/freestudying/trianglefigure#article',
+          '@id': 'https://arapovtrade.com/en/freestudying/trianglefigure#article',
           headline:
             'Triangle Pattern in Trading: Complete Guide to Trading Strategies',
           description:
             'Comprehensive guide to triangle patterns in technical analysis. Ascending, descending, and symmetrical triangles: identification, trading strategies, and risk management.',
-          image: 'https://arapov.trade/assets/img/content/triangle1.jpg',
+          image: 'https://arapovtrade.com/assets/img/content/triangle1.jpg',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/trianglefigure',
+            '@id': 'https://arapovtrade.com/en/freestudying/trianglefigure',
           },
           articleSection: 'Technical Analysis',
           keywords: [
@@ -297,7 +297,7 @@ export class HomeEnBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -308,9 +308,9 @@ export class HomeEnBlogEightyOneComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -325,7 +325,7 @@ export class HomeEnBlogEightyOneComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -341,7 +341,7 @@ export class HomeEnBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/trianglefigure#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/trianglefigure#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -396,7 +396,7 @@ export class HomeEnBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/trianglefigure#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/trianglefigure#howto',
       name: 'How to Trade the Triangle Pattern',
       description:
         'Step-by-step guide to trading triangle patterns in technical analysis',
@@ -444,7 +444,7 @@ export class HomeEnBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/trianglefigure#terms',
+      '@id': 'https://arapovtrade.com/en/freestudying/trianglefigure#terms',
       name: 'Triangle Pattern Glossary',
       hasDefinedTerm: [
         {

@@ -75,11 +75,11 @@ export class HomeEnBlogFiveComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -257,29 +257,29 @@ export class HomeEnBlogFiveComponent implements OnInit {
             'What XRP and the Ripple network are, how cross-border payments work, the impact of the SEC case and the risks for traders.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/xrp-ripple',
+            '@id': 'https://arapovtrade.com/en/freestudying/xrp-ripple',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/XRP2.jpg',
+            url: 'https://arapovtrade.com/assets/img/content/XRP2.jpg',
             width: 1200,
             height: 630,
           },
@@ -300,7 +300,7 @@ export class HomeEnBlogFiveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -311,9 +311,9 @@ export class HomeEnBlogFiveComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -328,7 +328,7 @@ export class HomeEnBlogFiveComponent implements OnInit {
       jobTitle: [
         'Independent researcher',
         'Trader',
-        'Author and founder of arapov.trade',
+        'Author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practising trader, author of trading books and scientific publications. Specialises in trading psychology and cognitive biases in financial markets.',
@@ -390,7 +390,7 @@ export class HomeEnBlogFiveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/xrp-ripple#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/xrp-ripple#howto',
       name: 'How to understand and apply: XRP (Ripple) in trading and what makes its analysis different',
       description:
         'A step-by-step read of the topic and its practical use in trading',

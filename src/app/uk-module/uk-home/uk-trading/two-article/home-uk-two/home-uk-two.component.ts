@@ -57,7 +57,7 @@ export class HomeUkTwoComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Словник термінів фінансового ринку: повний довідник для трейдерів | Arapov.trade',
+      'Словник термінів фінансового ринку: повний довідник для трейдерів | ArapovTrade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -80,11 +80,11 @@ export class HomeUkTwoComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -278,24 +278,24 @@ export class HomeUkTwoComponent implements OnInit {
             'Словник термінів фінансового ринку: повний довідник для трейдерів',
           description:
             'Детальний словник термінів фінансового ринку для початківців. Основи фондового та валютного ринку, технічний та фундаментальний аналіз, торгові стратегії.',
-          image: 'https://arapov.trade/assets/img/content/osnovirinka1.webp',
+          image: 'https://arapovtrade.com/assets/img/content/osnovirinka1.webp',
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/marketbasics',
+            '@id': 'https://arapovtrade.com/uk/freestudying/marketbasics',
           },
           articleSection: 'Навчання трейдингу',
           wordCount: 1520,
@@ -314,7 +314,7 @@ export class HomeUkTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -325,9 +325,9 @@ export class HomeUkTwoComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -342,7 +342,7 @@ export class HomeUkTwoComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',

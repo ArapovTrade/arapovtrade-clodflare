@@ -84,14 +84,14 @@ export class HomeRuTwelveComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
      
   ];
@@ -283,7 +283,7 @@ export class HomeRuTwelveComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/ru/freestudying/halving#article',
+          '@id': 'https://arapovtrade.com/ru/freestudying/halving#article',
           headline:
             'Халвинг биткоина — механизм сокращения эмиссии и влияние на рынок',
           description:
@@ -291,23 +291,23 @@ export class HomeRuTwelveComponent implements OnInit {
           datePublished: '2025-04-15T00:00:00Z',
         dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'Arapov Trade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/halving',
+            '@id': 'https://arapovtrade.com/ru/freestudying/halving',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/halving1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/halving1.webp',
           },
           articleSection: 'Криптовалюты',
           keywords: [
@@ -332,7 +332,7 @@ export class HomeRuTwelveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -343,9 +343,9 @@ export class HomeRuTwelveComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -357,7 +357,7 @@ export class HomeRuTwelveComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapov.trade'],
+      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель ArapovTrade'],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
     };
@@ -372,7 +372,7 @@ export class HomeRuTwelveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/halving#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/halving#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -427,7 +427,7 @@ export class HomeRuTwelveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/halving#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/halving#howto',
       name: 'Как подготовиться к халвингу биткоина',
       description:
         'Пошаговое руководство по подготовке инвестиционной стратегии к событию халвинга.',
@@ -475,7 +475,7 @@ export class HomeRuTwelveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/halving#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/halving#terms',
       name: 'Глоссарий терминов халвинга',
       hasDefinedTerm: [
         {

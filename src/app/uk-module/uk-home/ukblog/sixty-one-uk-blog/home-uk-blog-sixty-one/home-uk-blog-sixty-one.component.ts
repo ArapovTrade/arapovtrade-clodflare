@@ -105,11 +105,11 @@ export class HomeUkBlogSixtyOneComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -303,27 +303,27 @@ export class HomeUkBlogSixtyOneComponent {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/uk/freestudying/smartmoneyconceptsguide',
+              'https://arapovtrade.com/uk/freestudying/smartmoneyconceptsguide',
           },
           headline:
             'Smart Money Concepts: повний гайд по стратегії розумних грошей',
           description:
             "Детальний розбір концепції Smart Money. Як великі гравці маніпулюють ціною, захоплення ліквідності, об'ємний аналіз.",
           image:
-            'https://arapov.trade/assets/img/content/smartmoneyconceptsguide.webp',
+            'https://arapovtrade.com/assets/img/content/smartmoneyconceptsguide.webp',
           datePublished: '2024-06-15T00:00:00+03:00',
           dateModified: '2026-04-15T00:00:00Z',
           inLanguage: 'uk',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           video: {
@@ -416,7 +416,7 @@ export class HomeUkBlogSixtyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -427,9 +427,9 @@ export class HomeUkBlogSixtyOneComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -444,7 +444,7 @@ export class HomeUkBlogSixtyOneComponent {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -460,7 +460,7 @@ export class HomeUkBlogSixtyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneyconceptsguide#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneyconceptsguide#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -516,7 +516,7 @@ export class HomeUkBlogSixtyOneComponent {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/uk/freestudying/smartmoneyconceptsguide#howto',
+        'https://arapovtrade.com/uk/freestudying/smartmoneyconceptsguide#howto',
       name: 'Як торгувати за Smart Money Concepts',
       description:
         'Покроковий посібник із застосування SMC у торгівлі на фінансових ринках',
@@ -565,7 +565,7 @@ export class HomeUkBlogSixtyOneComponent {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
       '@id':
-        'https://arapov.trade/uk/freestudying/smartmoneyconceptsguide#glossary',
+        'https://arapovtrade.com/uk/freestudying/smartmoneyconceptsguide#glossary',
       name: 'Глосарій термінів Smart Money Concepts',
       hasDefinedTerm: [
         {

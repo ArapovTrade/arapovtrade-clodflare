@@ -104,11 +104,11 @@ export class HomeUkBlogSixtySixComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -299,28 +299,28 @@ export class HomeUkBlogSixtySixComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/uk/freestudying/peakvolumelevels#article',
+            'https://arapovtrade.com/uk/freestudying/peakvolumelevels#article',
           headline: "Об'ємний Аналіз у Трейдингу: Рівні Об'єму та Точки Входу",
           description:
             "Об'ємний аналіз у трейдингу: як знаходити рівні максимального об'єму, використовувати Volume Profile та POC для точних входів.",
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/peakvolumelevels1.png',
+            url: 'https://arapovtrade.com/assets/img/content/peakvolumelevels1.png',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           datePublished: '2024-01-15T10:00:00+00:00',
           dateModified: '2026-06-04T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/peakvolumelevels',
+            '@id': 'https://arapovtrade.com/uk/freestudying/peakvolumelevels',
           },
           articleSection: 'Навчання трейдингу',
           keywords: [
@@ -347,7 +347,7 @@ export class HomeUkBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -358,9 +358,9 @@ export class HomeUkBlogSixtySixComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -372,7 +372,7 @@ export class HomeUkBlogSixtySixComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -387,7 +387,7 @@ export class HomeUkBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/peakvolumelevels#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/peakvolumelevels#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -442,7 +442,7 @@ export class HomeUkBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/peakvolumelevels#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/peakvolumelevels#howto',
       name: "Як використовувати об'ємний аналіз для пошуку точок входу",
       description:
         "Покрокова інструкція з аналізу ринкових об'ємів для визначення оптимальних точок входу в угоду",
@@ -454,7 +454,7 @@ export class HomeUkBlogSixtySixComponent {
           name: 'Налаштуйте Volume Profile',
           text: 'Відкрийте графік та додайте індикатор Volume Profile. Оберіть тип профілю: сесійний для інтрадею, фіксований для аналізу конкретного діапазону.',
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels1.png',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels1.png',
         },
         {
           '@type': 'HowToStep',
@@ -462,7 +462,7 @@ export class HomeUkBlogSixtySixComponent {
           name: 'Знайдіть POC та Value Area',
           text: "Визначте рівень максимального об'єму (POC) та межі Value Area — зони, де пройшло 70% усіх торгів.",
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels2.webp',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels2.webp',
         },
         {
           '@type': 'HowToStep',
@@ -482,7 +482,7 @@ export class HomeUkBlogSixtySixComponent {
           name: 'Відкрийте позицію з чітким планом',
           text: "Входьте в угоду з визначеним стоп-лоссом за найближчим об'ємним рівнем та тейк-профітом на наступному значущому рівні.",
           image:
-            'https://arapov.trade/assets/img/content/peakvolumelevels3.png',
+            'https://arapovtrade.com/assets/img/content/peakvolumelevels3.png',
         },
       ],
     };
@@ -497,7 +497,7 @@ export class HomeUkBlogSixtySixComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/peakvolumelevels#glossary',
+      '@id': 'https://arapovtrade.com/uk/freestudying/peakvolumelevels#glossary',
       name: "Глосарій об'ємного аналізу",
       description: "Основні терміни об'ємного аналізу для трейдерів",
       inLanguage: 'uk',

@@ -98,11 +98,11 @@ export class HomeEnBlogSixtyFiveComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -275,27 +275,27 @@ export class HomeEnBlogSixtyFiveComponent {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/en/freestudying/stockorderbook#article',
+          '@id': 'https://arapovtrade.com/en/freestudying/stockorderbook#article',
           headline:
             'Order Book & Time and Sales: Complete Guide to Reading Market Depth',
           description:
             'Master Order Book and Time & Sales analysis to identify institutional activity and find high-probability trade entries.',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/stockorderbook1.png',
+            url: 'https://arapovtrade.com/assets/img/content/stockorderbook1.png',
             width: 1200,
             height: 630,
           },
-          author: { '@id': 'https://arapov.trade/en#person' },
+          author: { '@id': 'https://arapovtrade.com/en#person' },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/stockorderbook',
+            '@id': 'https://arapovtrade.com/en/freestudying/stockorderbook',
           },
           articleSection: 'Trading Education',
           inLanguage: 'en',
@@ -313,7 +313,7 @@ export class HomeEnBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -324,9 +324,9 @@ export class HomeEnBlogSixtyFiveComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -341,7 +341,7 @@ export class HomeEnBlogSixtyFiveComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -357,7 +357,7 @@ export class HomeEnBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/stockorderbook#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/stockorderbook#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -412,7 +412,7 @@ export class HomeEnBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/stockorderbook#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/stockorderbook#howto',
       name: 'How to Analyze Order Book and Time & Sales',
       description:
         'Step-by-step guide to reading market depth for finding trade entries',
@@ -461,7 +461,7 @@ export class HomeEnBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/stockorderbook#glossary',
+      '@id': 'https://arapovtrade.com/en/freestudying/stockorderbook#glossary',
       name: 'Order Book Trading Glossary',
       inLanguage: 'en',
       hasDefinedTerm: [

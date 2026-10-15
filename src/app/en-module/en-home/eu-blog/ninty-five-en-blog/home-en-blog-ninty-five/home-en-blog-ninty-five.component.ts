@@ -81,11 +81,11 @@ export class HomeEnBlogNintyFiveComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -279,23 +279,23 @@ export class HomeEnBlogNintyFiveComponent implements OnInit {
           headline: 'Gold Trading XAUUSD: Complete Market Analysis Guide',
           description:
             'Comprehensive guide to trading gold XAUUSD covering fundamental factors, technical strategies and risk management',
-          image: 'https://arapov.trade/assets/img/content/goldtrading1.jpg',
+          image: 'https://arapovtrade.com/assets/img/content/goldtrading1.jpg',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'Pair Trade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2025-06-04T00:00:00+02:00',
           dateModified: '2026-06-04T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/goldtrading',
+            '@id': 'https://arapovtrade.com/en/freestudying/goldtrading',
           },
           inLanguage: 'en',
         },
@@ -312,7 +312,7 @@ export class HomeEnBlogNintyFiveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -323,9 +323,9 @@ export class HomeEnBlogNintyFiveComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -340,7 +340,7 @@ export class HomeEnBlogNintyFiveComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

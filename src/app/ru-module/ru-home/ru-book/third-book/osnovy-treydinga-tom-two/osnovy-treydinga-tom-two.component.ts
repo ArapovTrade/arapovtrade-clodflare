@@ -144,10 +144,10 @@ export class OsnovyTreydingaTomTwoComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'Book',
-      '@id': 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two#book',
+      '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two#book',
       mainEntityOfPage: {
         '@type': 'WebPage',
-        '@id': 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+        '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
       },
       name: 'Методы анализа. Технический анализ • Объёмный анализ • Практика',
       alternateName: [
@@ -166,7 +166,7 @@ export class OsnovyTreydingaTomTwoComponent
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       copyrightYear: 2025,
-      copyrightHolder: { '@id': 'https://arapov.trade/#person' },
+      copyrightHolder: { '@id': 'https://arapovtrade.com/#person' },
       genre: ['Business', 'Finance', 'Trading', 'Education', 'Investment'],
       about: [
         {
@@ -193,27 +193,27 @@ export class OsnovyTreydingaTomTwoComponent
         'трейдинг, форекс, технический анализ, объёмный анализ, биржа, инвестиции, smart money, обучение трейдингу',
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/ru',
+        url: 'https://arapovtrade.com/ru',
       },
-      publisher: { '@id': 'https://arapov.trade/#organization' },
+      publisher: { '@id': 'https://arapovtrade.com/#organization' },
       image: {
         '@type': 'ImageObject',
-        url: 'https://arapov.trade/assets/redesignArapovTrade/img/cover_tom2.jpg',
+        url: 'https://arapovtrade.com/assets/redesignArapovTrade/img/cover_tom2.jpg',
         width: 600,
         height: 900,
         caption: '«Методы анализа. Практика» — Игорь Арапов',
       },
-      url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+      url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'USD',
         availability: 'https://schema.org/InStock',
-        url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+        url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
         priceValidUntil: '2026-12-31',
-        seller: { '@id': 'https://arapov.trade/#organization' },
+        seller: { '@id': 'https://arapovtrade.com/#organization' },
       },
       workExample: {
         '@type': 'Book',
@@ -224,7 +224,7 @@ export class OsnovyTreydingaTomTwoComponent
           '@type': 'ReadAction',
           target: {
             '@type': 'EntryPoint',
-            url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+            url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
             actionPlatform: [
               'http://schema.org/DesktopWebPlatform',
               'http://schema.org/MobileWebPlatform',
@@ -245,26 +245,26 @@ export class OsnovyTreydingaTomTwoComponent
     return {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      '@id': 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
-      url: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+      '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
+      url: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
       name: 'Методы анализа. Технический анализ • Объёмный анализ • Практика',
       description:
         'Скачать бесплатно книгу по трейдингу. ISBN 979-8-90243-078-0',
       inLanguage: 'ru',
-      isPartOf: { '@id': 'https://arapov.trade/#website' },
+      isPartOf: { '@id': 'https://arapovtrade.com/#website' },
       about: {
-        '@id': 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two#book',
+        '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two#book',
       },
       author: {
         '@type': 'Person',
-        '@id': 'https://arapov.trade/#person',
+        '@id': 'https://arapovtrade.com/#person',
         name: 'Igor Arapov',
-        url: 'https://arapov.trade/ru',
+        url: 'https://arapovtrade.com/ru',
       },
       datePublished: '2025-12-18T00:00:00Z',
       dateModified: '2025-12-19T00:00:00Z',
       mainEntity: {
-        '@id': 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two#book',
+        '@id': 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two#book',
       },
       // breadcrumb: {
       //   '@type': 'BreadcrumbList',
@@ -273,25 +273,25 @@ export class OsnovyTreydingaTomTwoComponent
       //       '@type': 'ListItem',
       //       position: 1,
       //       name: 'Главная',
-      //       item: 'https://arapov.trade',
+      //       item: 'https://arapovtrade.com',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 2,
       //       name: 'Про автора',
-      //       item: 'https://arapov.trade/ru',
+      //       item: 'https://arapovtrade.com/ru',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 3,
       //       name: 'Мои книги',
-      //       item: 'https://arapov.trade/ru/books',
+      //       item: 'https://arapovtrade.com/ru/books',
       //     },
       //     {
       //       '@type': 'ListItem',
       //       position: 4,
       //       name: 'Книга',
-      //       item: 'https://arapov.trade/ru/books/osnovy-treydinga-tom-two',
+      //       item: 'https://arapovtrade.com/ru/books/osnovy-treydinga-tom-two',
       //     },
       //   ],
       // },
@@ -309,7 +309,7 @@ export class OsnovyTreydingaTomTwoComponent
           name: 'Книга действительно бесплатная?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Да, книга «Методы анализа. Практика» доступна для скачивания абсолютно бесплатно в формате EPUB. Автор предоставляет её как часть бесплатной образовательной программы на платформе arapov.trade.',
+            text: 'Да, книга «Методы анализа. Практика» доступна для скачивания абсолютно бесплатно в формате EPUB. Автор предоставляет её как часть бесплатной образовательной программы на платформе arapovtrade.com.',
           },
         },
         {
@@ -333,7 +333,7 @@ export class OsnovyTreydingaTomTwoComponent
           name: 'Кто автор книги?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'Автор книги — Игорь Арапов, практикующий трейдер с 2013 года. Создатель образовательной платформы arapov.trade с 51+ статьями и YouTube канала @ArapovTrade с 78+ видеоуроками по трейдингу.',
+            text: 'Автор книги — Игорь Арапов, практикующий трейдер с 2013 года. Создатель образовательной платформы arapovtrade.com с 51+ статьями и YouTube канала @ArapovTrade с 78+ видеоуроками по трейдингу.',
           },
         },
         {

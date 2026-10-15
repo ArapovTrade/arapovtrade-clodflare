@@ -57,7 +57,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Айсберг ордери в трейдингу: приховані заявки великих гравців | Arapov.trade',
+      'Айсберг ордери в трейдингу: приховані заявки великих гравців | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -83,11 +83,11 @@ export class HomeUkFourtyFourComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -277,26 +277,26 @@ export class HomeUkFourtyFourComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/icebergorders#article',
+          '@id': 'https://arapovtrade.com/uk/freestudying/icebergorders#article',
           headline:
             'Айсберг ордери в трейдингу: приховані заявки великих гравців',
           description:
             'Дізнайтеся, що таке айсберг ордери (Iceberg Orders), як банки та хедж-фонди використовують приховані заявки для маскування великих позицій та як їх виявити.',
-          image: 'https://arapov.trade/assets/img/content/icebergorders1.png',
+          image: 'https://arapovtrade.com/assets/img/content/icebergorders1.png',
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/icebergorders',
+            '@id': 'https://arapovtrade.com/uk/freestudying/icebergorders',
           },
           articleSection: 'Навчання трейдингу',
           keywords:
@@ -315,7 +315,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -326,9 +326,9 @@ export class HomeUkFourtyFourComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -343,7 +343,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -359,7 +359,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/icebergorders#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/icebergorders#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -414,7 +414,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/icebergorders#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/icebergorders#howto',
       name: 'Як виявити та використовувати айсберг ордери в торгівлі',
       description:
         'Покрокове керівництво з виявлення прихованих інституційних заявок',
@@ -462,7 +462,7 @@ export class HomeUkFourtyFourComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/icebergorders#glossary',
+      '@id': 'https://arapovtrade.com/uk/freestudying/icebergorders#glossary',
       name: 'Глосарій термінів з прихованих ордерів',
       hasDefinedTerm: [
         {

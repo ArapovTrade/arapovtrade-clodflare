@@ -78,11 +78,11 @@ export class HomeEnTwentyComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -259,16 +259,16 @@ export class HomeEnTwentyComponent implements OnInit {
           description:
             "Master Market Profile — Peter Steidlmayer's market analysis method. POC, Value Area, liquidity zones, and practical trading strategies.",
           image:
-            'https://arapov.trade/assets/img/content/steidlmayeranalysis2.png',
+            'https://arapovtrade.com/assets/img/content/steidlmayeranalysis2.png',
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
-          author: { '@id': 'https://arapov.trade/en#person' },
+          author: { '@id': 'https://arapovtrade.com/en#person' },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
         },
@@ -285,7 +285,7 @@ export class HomeEnTwentyComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -297,9 +297,9 @@ export class HomeEnTwentyComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -314,7 +314,7 @@ export class HomeEnTwentyComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

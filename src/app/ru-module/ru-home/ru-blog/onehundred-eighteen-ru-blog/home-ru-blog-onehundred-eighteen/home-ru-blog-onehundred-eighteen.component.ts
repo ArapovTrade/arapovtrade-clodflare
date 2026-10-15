@@ -79,14 +79,14 @@ export class HomeRuBlogOnehundredEighteenComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -281,15 +281,15 @@ export class HomeRuBlogOnehundredEighteenComponent {
           description:
             'Что такое брейкер-блок и митигейшн-блок, чем они отличаются от ордер-блока и как смарт-мани используют возврат цены к этим зонам.',
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-16T00:00:00Z',
@@ -297,11 +297,11 @@ export class HomeRuBlogOnehundredEighteenComponent {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/ru/freestudying/breaker-mitigation-blocks',
+              'https://arapovtrade.com/ru/freestudying/breaker-mitigation-blocks',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/breaker-mitigation-blocks.jpeg',
+            url: 'https://arapovtrade.com/assets/img/content/breaker-mitigation-blocks.jpeg',
             width: 1200,
             height: 630,
           },
@@ -323,7 +323,7 @@ export class HomeRuBlogOnehundredEighteenComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -334,9 +334,9 @@ export class HomeRuBlogOnehundredEighteenComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -351,7 +351,7 @@ export class HomeRuBlogOnehundredEighteenComponent {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -414,7 +414,7 @@ export class HomeRuBlogOnehundredEighteenComponent {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/ru/freestudying/breaker-mitigation-blocks#howto',
+        'https://arapovtrade.com/ru/freestudying/breaker-mitigation-blocks#howto',
       name: 'Как разобраться и применять: брейкер- и митигейшн-блок',
       description:
         'Пошаговый разбор темы и её практическое применение в торговле',

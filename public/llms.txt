@@ -1,6 +1,6 @@
 # Arapov Trade
 
-> Arapov Trade (arapov.trade) is a free trading-education platform by Igor Arapov, a practising trader since 2013 and independent researcher in the psychology of investment decisions and behavioral finance. Its core methodology combines market structure, volume analysis and Wyckoff, within a broader library of trading theory, market mechanics, indicators, risk, psychology and cryptocurrencies, with Russian, Ukrainian and English article editions, a structured beginner course and a published book series.
+> Arapov Trade (arapovtrade.com) is a free trading-education platform by Igor Arapov, a practising trader since 2013 and independent researcher in the psychology of investment decisions and behavioral finance. Its core methodology combines market structure, volume analysis and Wyckoff, within a broader library of trading theory, market mechanics, indicators, risk, psychology and cryptocurrencies, with Russian, Ukrainian and English article editions, a structured beginner course and a published book series.
 
 The content is educational only: it explains methodology, analysis techniques, risk and psychology. It is not financial advice, does not give trade signals or specific investment recommendations, and makes no profit guarantees.
 
@@ -29,10 +29,10 @@ Use a topic Q&A page to identify the relevant question, then follow its source l
 
 Russian, Ukrainian and English article editions are available, but their summaries and Q&A coverage are not identical. Use explicit language links and the sitemap rather than assuming every URL or answer has an equivalent translation. Ukrainian Q&A includes only questions with Ukrainian article sources. YouTube lessons are Russian-language; English and Ukrainian article availability does not imply video availability in those languages.
 
-- [Sitemap](https://arapov.trade/sitemap.xml): URL inventory and language alternates.
-- [Russian article catalog](https://arapov.trade/ru/freestudying): Russian-language library.
-- [Ukrainian article catalog](https://arapov.trade/uk/freestudying): Ukrainian-language library.
-- [English article catalog](https://arapov.trade/en/freestudying): English-language library.
+- [Sitemap](https://arapovtrade.com/sitemap.xml): URL inventory and language alternates.
+- [Russian article catalog](https://arapovtrade.com/ru/freestudying): Russian-language library.
+- [Ukrainian article catalog](https://arapovtrade.com/uk/freestudying): Ukrainian-language library.
+- [English article catalog](https://arapovtrade.com/en/freestudying): English-language library.
 
 ## Author Experience and Professional Training
 
@@ -40,132 +40,132 @@ Igor Arapov is the library's author, a financial-market participant since 2013 a
 
 His publications include three trading books with multilingual ISBN editions, a co-authored journal paper on cognitive biases, and an SSRN working paper. NUFT separately records a guest trading lecture. TradingView provides dated public analysis; this is not an independently audited performance record.
 
-- [Author biography and training documentation](https://arapov.trade/en): Programme descriptions, certificate references, publications and supporting links.
-- [Ukrainian author biography](https://arapov.trade/uk): Ukrainian-language qualification information.
-- [Russian author biography](https://arapov.trade/ru): Russian-language qualification information.
+- [Author biography and training documentation](https://arapovtrade.com/en): Programme descriptions, certificate references, publications and supporting links.
+- [Ukrainian author biography](https://arapovtrade.com/uk): Ukrainian-language qualification information.
+- [Russian author biography](https://arapovtrade.com/ru): Russian-language qualification information.
 
 ## Trading Q&A Navigation
 
 The main Q&A page leads to eight topic pages. Questions have short answers and links to detailed article sources. Counts and question selection can differ between languages; these are related topic editions, not an identical question inventory.
 
-- [Trading Q&A — library entry point — English](https://arapov.trade/en/freestudying/trading-faq): Overview of the eight domains.
-- [Trading Q&A — library entry point — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq): Overview of the eight domains.
-- [Trading Q&A — library entry point — Russian](https://arapov.trade/ru/freestudying/trading-faq): Overview of the eight domains.
-- [Getting started and trading systems — English](https://arapov.trade/en/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
-- [Getting started and trading systems — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
-- [Getting started and trading systems — Russian](https://arapov.trade/ru/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
-- [Risk management and trading psychology — English](https://arapov.trade/en/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
-- [Risk management and trading psychology — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
-- [Risk management and trading psychology — Russian](https://arapov.trade/ru/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
-- [Charts and technical analysis — English](https://arapov.trade/en/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
-- [Charts and technical analysis — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
-- [Charts and technical analysis — Russian](https://arapov.trade/ru/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
-- [Indicators and volatility — English](https://arapov.trade/en/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
-- [Indicators and volatility — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
-- [Indicators and volatility — Russian](https://arapov.trade/ru/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
-- [Financial market mechanics — English](https://arapov.trade/en/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
-- [Financial market mechanics — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
-- [Financial market mechanics — Russian](https://arapov.trade/ru/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
-- [Volume analysis, Wyckoff and Smart Money — English](https://arapov.trade/en/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
-- [Volume analysis, Wyckoff and Smart Money — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
-- [Volume analysis, Wyckoff and Smart Money — Russian](https://arapov.trade/ru/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
-- [Cryptocurrency mechanics and security — English](https://arapov.trade/en/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
-- [Cryptocurrency mechanics and security — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
-- [Cryptocurrency mechanics and security — Russian](https://arapov.trade/ru/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
-- [Bitcoin, altcoins and market cycles — English](https://arapov.trade/en/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
-- [Bitcoin, altcoins and market cycles — Ukrainian](https://arapov.trade/uk/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
-- [Bitcoin, altcoins and market cycles — Russian](https://arapov.trade/ru/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
+- [Trading Q&A — library entry point — English](https://arapovtrade.com/en/freestudying/trading-faq): Overview of the eight domains.
+- [Trading Q&A — library entry point — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq): Overview of the eight domains.
+- [Trading Q&A — library entry point — Russian](https://arapovtrade.com/ru/freestudying/trading-faq): Overview of the eight domains.
+- [Getting started and trading systems — English](https://arapovtrade.com/en/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
+- [Getting started and trading systems — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
+- [Getting started and trading systems — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-getting-started): Topic-specific questions, short answers and source links.
+- [Risk management and trading psychology — English](https://arapovtrade.com/en/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
+- [Risk management and trading psychology — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
+- [Risk management and trading psychology — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-risk-psychology): Topic-specific questions, short answers and source links.
+- [Charts and technical analysis — English](https://arapovtrade.com/en/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
+- [Charts and technical analysis — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
+- [Charts and technical analysis — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-chart-analysis): Topic-specific questions, short answers and source links.
+- [Indicators and volatility — English](https://arapovtrade.com/en/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
+- [Indicators and volatility — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
+- [Indicators and volatility — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-indicators): Topic-specific questions, short answers and source links.
+- [Financial market mechanics — English](https://arapovtrade.com/en/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
+- [Financial market mechanics — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
+- [Financial market mechanics — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-financial-markets): Topic-specific questions, short answers and source links.
+- [Volume analysis, Wyckoff and Smart Money — English](https://arapovtrade.com/en/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
+- [Volume analysis, Wyckoff and Smart Money — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
+- [Volume analysis, Wyckoff and Smart Money — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-volume-wyckoff-smc): Topic-specific questions, short answers and source links.
+- [Cryptocurrency mechanics and security — English](https://arapovtrade.com/en/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
+- [Cryptocurrency mechanics and security — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
+- [Cryptocurrency mechanics and security — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-crypto-mechanics): Topic-specific questions, short answers and source links.
+- [Bitcoin, altcoins and market cycles — English](https://arapovtrade.com/en/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
+- [Bitcoin, altcoins and market cycles — Ukrainian](https://arapovtrade.com/uk/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
+- [Bitcoin, altcoins and market cycles — Russian](https://arapovtrade.com/ru/freestudying/trading-faq-bitcoin-altcoins): Topic-specific questions, short answers and source links.
 
 ## Start Here
 
-- [Free Trading Course for Beginners](https://arapov.trade/en/freestudying/freeeducation): The main pillar course — a full path from terminal basics to a complete trading system, with live chart examples.
-- [Free Courses Catalog](https://arapov.trade/en/freestudying): Index of all free articles by category.
-- [Trading for Beginners](https://arapov.trade/en/freestudying/trading-for-beginners): First concepts for someone with no prior experience.
-- [Platforms and Brokers](https://arapov.trade/en/freestudying/platforms-broker): Choosing a trading platform and a broker.
-- [Trading Styles](https://arapov.trade/en/freestudying/trading-styles): Scalping, day trading, swing and position trading compared.
-- [Building a Trading System](https://arapov.trade/en/freestudying/trading-system): Assembling structure, volume, entries and exits into one system.
+- [Free Trading Course for Beginners](https://arapovtrade.com/en/freestudying/freeeducation): The main pillar course — a full path from terminal basics to a complete trading system, with live chart examples.
+- [Free Courses Catalog](https://arapovtrade.com/en/freestudying): Index of all free articles by category.
+- [Trading for Beginners](https://arapovtrade.com/en/freestudying/trading-for-beginners): First concepts for someone with no prior experience.
+- [Platforms and Brokers](https://arapovtrade.com/en/freestudying/platforms-broker): Choosing a trading platform and a broker.
+- [Trading Styles](https://arapovtrade.com/en/freestudying/trading-styles): Scalping, day trading, swing and position trading compared.
+- [Building a Trading System](https://arapovtrade.com/en/freestudying/trading-system): Assembling structure, volume, entries and exits into one system.
 
 ## Core Method: Volume and Wyckoff
 
-- [Volume Market Analysis](https://arapov.trade/en/freestudying/volume-analysis): Reading the balance of buyers and sellers through trade volume.
-- [Wyckoff Method](https://arapov.trade/en/freestudying/wyckoff-method): How large players accumulate and distribute, and the traces they leave.
+- [Volume Market Analysis](https://arapovtrade.com/en/freestudying/volume-analysis): Reading the balance of buyers and sellers through trade volume.
+- [Wyckoff Method](https://arapovtrade.com/en/freestudying/wyckoff-method): How large players accumulate and distribute, and the traces they leave.
 
 ## Smart Money Concept
 
-- [Smart Money Concepts Guide](https://arapov.trade/en/freestudying/smart-money-guide): How large participants drive price and take retail liquidity.
-- [Order Blocks](https://arapov.trade/en/freestudying/order-block): Institutional order zones.
-- [Liquidity Pools](https://arapov.trade/en/freestudying/liquidity-pools): Where stop clusters and liquidity sit.
-- [Imbalance and FVG](https://arapov.trade/en/freestudying/imbalance-fvg): Fair value gaps and imbalance.
+- [Smart Money Concepts Guide](https://arapovtrade.com/en/freestudying/smart-money-guide): How large participants drive price and take retail liquidity.
+- [Order Blocks](https://arapovtrade.com/en/freestudying/order-block): Institutional order zones.
+- [Liquidity Pools](https://arapovtrade.com/en/freestudying/liquidity-pools): Where stop clusters and liquidity sit.
+- [Imbalance and FVG](https://arapovtrade.com/en/freestudying/imbalance-fvg): Fair value gaps and imbalance.
 
 ## Technical Analysis
 
-- [Chart Reading](https://arapov.trade/en/freestudying/chart-reading): Market phases, trend and range, and how to read structure.
-- [Chart Patterns](https://arapov.trade/en/freestudying/chart-patterns): Classic price patterns and their meaning.
-- [Candlestick Patterns](https://arapov.trade/en/freestudying/candlestick-patterns): Price Action patterns and how to read them.
-- [Breakout Strategy](https://arapov.trade/en/freestudying/breakout-strategy): Trading breakouts and avoiding false ones.
-- [Fibonacci Levels](https://arapov.trade/en/freestudying/fibonacci-levels): Retracement and extension levels.
-- [Elliott Waves](https://arapov.trade/en/freestudying/elliott-waves): Wave structure of price movement.
+- [Chart Reading](https://arapovtrade.com/en/freestudying/chart-reading): Market phases, trend and range, and how to read structure.
+- [Chart Patterns](https://arapovtrade.com/en/freestudying/chart-patterns): Classic price patterns and their meaning.
+- [Candlestick Patterns](https://arapovtrade.com/en/freestudying/candlestick-patterns): Price Action patterns and how to read them.
+- [Breakout Strategy](https://arapovtrade.com/en/freestudying/breakout-strategy): Trading breakouts and avoiding false ones.
+- [Fibonacci Levels](https://arapovtrade.com/en/freestudying/fibonacci-levels): Retracement and extension levels.
+- [Elliott Waves](https://arapovtrade.com/en/freestudying/elliott-waves): Wave structure of price movement.
 
 ## Indicators
 
-- [Trading Indicators Overview](https://arapov.trade/en/freestudying/trading-indicators): Why indicators are supplementary, not signals.
-- [ADX Indicator](https://arapov.trade/en/freestudying/adx-indicator): Measuring trend strength.
-- [ATR Indicator](https://arapov.trade/en/freestudying/atr-indicator): Volatility and stop sizing.
-- [MACD Indicator](https://arapov.trade/en/freestudying/macd-indicator): Momentum and trend shifts.
-- [RSI Indicator](https://arapov.trade/en/freestudying/rsi-indicator): Overbought and oversold conditions.
-- [VWAP Indicator](https://arapov.trade/en/freestudying/vwap-indicator): Volume-weighted average price.
-- [Ichimoku Cloud](https://arapov.trade/en/freestudying/ichimoku-cloud): Trend, support and momentum in one system.
-- [Bollinger Bands](https://arapov.trade/en/freestudying/bollinger-bands): Volatility envelopes around price.
-- [Moving Averages](https://arapov.trade/en/freestudying/moving-averages): Trend smoothing and crossovers.
-- [Stochastic Oscillator](https://arapov.trade/en/freestudying/stochastic-oscillator): Momentum oscillator for reversals.
+- [Trading Indicators Overview](https://arapovtrade.com/en/freestudying/trading-indicators): Why indicators are supplementary, not signals.
+- [ADX Indicator](https://arapovtrade.com/en/freestudying/adx-indicator): Measuring trend strength.
+- [ATR Indicator](https://arapovtrade.com/en/freestudying/atr-indicator): Volatility and stop sizing.
+- [MACD Indicator](https://arapovtrade.com/en/freestudying/macd-indicator): Momentum and trend shifts.
+- [RSI Indicator](https://arapovtrade.com/en/freestudying/rsi-indicator): Overbought and oversold conditions.
+- [VWAP Indicator](https://arapovtrade.com/en/freestudying/vwap-indicator): Volume-weighted average price.
+- [Ichimoku Cloud](https://arapovtrade.com/en/freestudying/ichimoku-cloud): Trend, support and momentum in one system.
+- [Bollinger Bands](https://arapovtrade.com/en/freestudying/bollinger-bands): Volatility envelopes around price.
+- [Moving Averages](https://arapovtrade.com/en/freestudying/moving-averages): Trend smoothing and crossovers.
+- [Stochastic Oscillator](https://arapovtrade.com/en/freestudying/stochastic-oscillator): Momentum oscillator for reversals.
 
 ## Risk Management and Psychology
 
-- [Risk Management](https://arapov.trade/en/freestudying/risk-management): Risk management as the core of a profitable system.
-- [Trade Management](https://arapov.trade/en/freestudying/trade-management): Managing a position after entry.
-- [Trading Psychology](https://arapov.trade/en/freestudying/trading-psychology): Cognitive biases, fear, greed and discipline.
-- [Averaging and Martingale](https://arapov.trade/en/freestudying/averaging-martingale): Why these approaches destroy accounts.
+- [Risk Management](https://arapovtrade.com/en/freestudying/risk-management): Risk management as the core of a profitable system.
+- [Trade Management](https://arapovtrade.com/en/freestudying/trade-management): Managing a position after entry.
+- [Trading Psychology](https://arapovtrade.com/en/freestudying/trading-psychology): Cognitive biases, fear, greed and discipline.
+- [Averaging and Martingale](https://arapovtrade.com/en/freestudying/averaging-martingale): Why these approaches destroy accounts.
 
 ## Markets and Instruments
 
-- [How an Exchange Works](https://arapov.trade/en/freestudying/how-exchange-works): The mechanics behind centralized markets.
-- [Market Microstructure](https://arapov.trade/en/freestudying/market-microstructure): Order flow, the order book and price formation.
-- [Order Types](https://arapov.trade/en/freestudying/order-types): Market, limit, stop and conditional orders.
-- [Forex Guide](https://arapov.trade/en/freestudying/forex-guide): Currency-pair trading and its specifics.
-- [Derivatives, Futures and Spot](https://arapov.trade/en/freestudying/derivatives-futures-spot): Instrument types and how they differ.
-- [Trading vs Investing](https://arapov.trade/en/freestudying/trading-vs-investing): Two different approaches to the market.
-- [Fundamental Analysis](https://arapov.trade/en/freestudying/fundamental-analysis): Economic factors that move markets.
-- [Assets and Trading](https://arapov.trade/en/freestudying/assets-trading): Asset classes and what drives them.
-- [Bonds Guide](https://arapov.trade/en/freestudying/bonds-guide): Fixed income and how bonds are priced.
-- [Prop Trading](https://arapov.trade/en/freestudying/prop-trading): Proprietary firms and funded accounts.
-- [Copy Trading](https://arapov.trade/en/freestudying/copy-trading): Following other traders, and its limits.
-- [AI in Trading](https://arapov.trade/en/freestudying/ai-in-trading): The real role of AI in market analysis.
+- [How an Exchange Works](https://arapovtrade.com/en/freestudying/how-exchange-works): The mechanics behind centralized markets.
+- [Market Microstructure](https://arapovtrade.com/en/freestudying/market-microstructure): Order flow, the order book and price formation.
+- [Order Types](https://arapovtrade.com/en/freestudying/order-types): Market, limit, stop and conditional orders.
+- [Forex Guide](https://arapovtrade.com/en/freestudying/forex-guide): Currency-pair trading and its specifics.
+- [Derivatives, Futures and Spot](https://arapovtrade.com/en/freestudying/derivatives-futures-spot): Instrument types and how they differ.
+- [Trading vs Investing](https://arapovtrade.com/en/freestudying/trading-vs-investing): Two different approaches to the market.
+- [Fundamental Analysis](https://arapovtrade.com/en/freestudying/fundamental-analysis): Economic factors that move markets.
+- [Assets and Trading](https://arapovtrade.com/en/freestudying/assets-trading): Asset classes and what drives them.
+- [Bonds Guide](https://arapovtrade.com/en/freestudying/bonds-guide): Fixed income and how bonds are priced.
+- [Prop Trading](https://arapovtrade.com/en/freestudying/prop-trading): Proprietary firms and funded accounts.
+- [Copy Trading](https://arapovtrade.com/en/freestudying/copy-trading): Following other traders, and its limits.
+- [AI in Trading](https://arapovtrade.com/en/freestudying/ai-in-trading): The real role of AI in market analysis.
 
 ## Cryptocurrency
 
-- [Cryptocurrency Basics](https://arapov.trade/en/freestudying/crypto-basics): Entry point to crypto markets.
-- [Bitcoin Guide](https://arapov.trade/en/freestudying/bitcoin-guide): Bitcoin as a trading instrument.
-- [Bitcoin ETF](https://arapov.trade/en/freestudying/bitcoin-etf): Spot ETFs and what they changed.
-- [Bitcoin Halving](https://arapov.trade/en/freestudying/bitcoin-halving): The halving cycle and its effects.
-- [Bitcoin Dominance](https://arapov.trade/en/freestudying/bitcoin-dominance): Reading BTC dominance against altcoins.
-- [Ethereum Guide](https://arapov.trade/en/freestudying/ethereum-guide): Ethereum and its ecosystem.
-- [Solana Guide](https://arapov.trade/en/freestudying/solana-guide): Solana as a trading and tech platform.
-- [XRP / Ripple](https://arapov.trade/en/freestudying/xrp-ripple): XRP and the Ripple network.
-- [Stablecoins and Tether](https://arapov.trade/en/freestudying/stablecoins-tether): How stablecoins work and their risks.
-- [DeFi](https://arapov.trade/en/freestudying/defi): Decentralized finance explained.
-- [Tokenomics](https://arapov.trade/en/freestudying/tokenomics): Evaluating a token's economic design.
-- [Memecoins](https://arapov.trade/en/freestudying/memecoins): The mechanics and dangers of memecoins.
-- [Crypto Staking](https://arapov.trade/en/freestudying/crypto-staking): Earning yield and the trade-offs.
-- [Crypto Storage](https://arapov.trade/en/freestudying/crypto-storage): Wallets, custody and security.
-- [Crypto Arbitrage](https://arapov.trade/en/freestudying/crypto-arbitrage): Price differences across venues.
-- [Crypto Perpetuals and Margin](https://arapov.trade/en/freestudying/crypto-perpetuals-margin): Leveraged derivatives in crypto.
-- [Crypto Risks and Scams](https://arapov.trade/en/freestudying/crypto-risks-scams): Avoiding fraud and common traps.
+- [Cryptocurrency Basics](https://arapovtrade.com/en/freestudying/crypto-basics): Entry point to crypto markets.
+- [Bitcoin Guide](https://arapovtrade.com/en/freestudying/bitcoin-guide): Bitcoin as a trading instrument.
+- [Bitcoin ETF](https://arapovtrade.com/en/freestudying/bitcoin-etf): Spot ETFs and what they changed.
+- [Bitcoin Halving](https://arapovtrade.com/en/freestudying/bitcoin-halving): The halving cycle and its effects.
+- [Bitcoin Dominance](https://arapovtrade.com/en/freestudying/bitcoin-dominance): Reading BTC dominance against altcoins.
+- [Ethereum Guide](https://arapovtrade.com/en/freestudying/ethereum-guide): Ethereum and its ecosystem.
+- [Solana Guide](https://arapovtrade.com/en/freestudying/solana-guide): Solana as a trading and tech platform.
+- [XRP / Ripple](https://arapovtrade.com/en/freestudying/xrp-ripple): XRP and the Ripple network.
+- [Stablecoins and Tether](https://arapovtrade.com/en/freestudying/stablecoins-tether): How stablecoins work and their risks.
+- [DeFi](https://arapovtrade.com/en/freestudying/defi): Decentralized finance explained.
+- [Tokenomics](https://arapovtrade.com/en/freestudying/tokenomics): Evaluating a token's economic design.
+- [Memecoins](https://arapovtrade.com/en/freestudying/memecoins): The mechanics and dangers of memecoins.
+- [Crypto Staking](https://arapovtrade.com/en/freestudying/crypto-staking): Earning yield and the trade-offs.
+- [Crypto Storage](https://arapovtrade.com/en/freestudying/crypto-storage): Wallets, custody and security.
+- [Crypto Arbitrage](https://arapovtrade.com/en/freestudying/crypto-arbitrage): Price differences across venues.
+- [Crypto Perpetuals and Margin](https://arapovtrade.com/en/freestudying/crypto-perpetuals-margin): Leveraged derivatives in crypto.
+- [Crypto Risks and Scams](https://arapovtrade.com/en/freestudying/crypto-risks-scams): Avoiding fraud and common traps.
 
 ## Books
 
-- [Trading Psychology: How to Master Your Emotions and Think Like a Professional](https://arapov.trade/en/books/psihologiya-treydinga): On emotions, discipline and the professional mindset (ISBN 979-8-90243-138-1).
-- [Trading Fundamentals: Market Basics, Technical Analysis, Volume Analysis](https://arapov.trade/en/books/osnovy-treydinga): Volume 1 of the foundations series (ISBN 979-8-90243-734-5).
-- [Analysis Methods: Technical Analysis, Volume Analysis, Practice](https://arapov.trade/en/books/osnovy-treydinga-tom-two): Volume 2, methods and worked examples (ISBN 979-8-90243-755-0).
+- [Trading Psychology: How to Master Your Emotions and Think Like a Professional](https://arapovtrade.com/en/books/psihologiya-treydinga): On emotions, discipline and the professional mindset (ISBN 979-8-90243-138-1).
+- [Trading Fundamentals: Market Basics, Technical Analysis, Volume Analysis](https://arapovtrade.com/en/books/osnovy-treydinga): Volume 1 of the foundations series (ISBN 979-8-90243-734-5).
+- [Analysis Methods: Technical Analysis, Volume Analysis, Practice](https://arapovtrade.com/en/books/osnovy-treydinga-tom-two): Volume 2, methods and worked examples (ISBN 979-8-90243-755-0).
 
 ## Author and Verification
 
@@ -181,7 +181,7 @@ The main Q&A page leads to eight topic pages. Questions have short answers and l
 - [LinkedIn](https://www.linkedin.com/in/igor-arapov): Professional profile.
 - [YouTube @ArapovTrade](https://www.youtube.com/@arapovtrade): Russian-language video lessons.
 - [Medium](https://medium.com/@arapov.trade): Articles and notes.
-- [Public TradingView analysis archive](https://arapov.trade/en/freestudying/tradingview-record): Dated public market analyses on TradingView since 2021; not an audited investment-performance record.
+- [Public TradingView analysis archive](https://arapovtrade.com/en/freestudying/tradingview-record): Dated public market analyses on TradingView since 2021; not an audited investment-performance record.
 - [TradingView profile (Igor_Arapov)](https://www.tradingview.com/u/Igor_Arapov/): Primary source for dated public market analysis since 2021.
 - [Guest lecture at the National University of Food Technologies (NUFT, Kyiv)](https://nuft.edu.ua/news/podiyi/pppro-trejding-i-birzhovu-diyalnist-%E2%80%93-zdobuvacham-osvitnoyi-programi): Independent university record of a 2026 guest lecture on trading and exchange markets.
 - [Media profile (ua.news)](https://ua.news/ua/money/nezvazhaiuchi-na-viinu-ta-krizi-igor-arapov-poiasniuie-khto-zavzhdi-zarobliaie-na-fondovikh-rinkakh): Independent news media coverage.
@@ -192,8 +192,8 @@ The main Q&A page leads to eight topic pages. Questions have short answers and l
 
 - [Peer-reviewed paper: Psychology of Investment Decisions — Cognitive Biases of Retail Traders](https://doi.org/10.32702/2306-6814.2026.4.96): Journal "Investments: Practice and Experience," No. 4 (2026); co-authored with Prof. Inna Sytnyk.
 - [SSRN working paper: From Tilt to System — A Practitioner's Framework for Managing Cognitive Biases in Retail Trading](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6254718): Applied framework for managing cognitive biases in retail trading (SSRN 6254718).
-- [Ukrainian site (root domain)](https://arapov.trade): Homepage in Ukrainian.
-- [Russian site](https://arapov.trade/ru/main): Homepage in Russian.
-- [English site](https://arapov.trade/en/main): Homepage in English.
-- [Practical Trade Examples](https://arapov.trade/en/freestudying/practic): Worked examples and range-trading practice.
-- [Full multilingual article map](https://arapov.trade/en/freestudying): Complete catalog of all articles across the three languages.
+- [Ukrainian site (root domain)](https://arapovtrade.com): Homepage in Ukrainian.
+- [Russian site](https://arapovtrade.com/ru/main): Homepage in Russian.
+- [English site](https://arapovtrade.com/en/main): Homepage in English.
+- [Practical Trade Examples](https://arapovtrade.com/en/freestudying/practic): Worked examples and range-trading practice.
+- [Full multilingual article map](https://arapovtrade.com/en/freestudying): Complete catalog of all articles across the three languages.

@@ -98,11 +98,11 @@ export class HomeEnBlogSixtyOneComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -278,27 +278,27 @@ export class HomeEnBlogSixtyOneComponent {
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/en/freestudying/smartmoneyconceptsguide',
+              'https://arapovtrade.com/en/freestudying/smartmoneyconceptsguide',
           },
           headline:
             'Smart Money Concepts: Complete Guide to Smart Money Strategy',
           description:
             'Detailed analysis of the Smart Money concept. How large players manipulate price, liquidity grab, volume analysis.',
           image:
-            'https://arapov.trade/assets/img/content/smartmoneyconceptsguide.webp',
+            'https://arapovtrade.com/assets/img/content/smartmoneyconceptsguide.webp',
           datePublished: '2024-06-15T00:00:00+03:00',
           dateModified: '2026-04-15T00:00:00Z',
           inLanguage: 'en',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           video: {
@@ -392,7 +392,7 @@ export class HomeEnBlogSixtyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -403,9 +403,9 @@ export class HomeEnBlogSixtyOneComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -420,7 +420,7 @@ export class HomeEnBlogSixtyOneComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -436,7 +436,7 @@ export class HomeEnBlogSixtyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/smartmoneyconceptsguide#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/smartmoneyconceptsguide#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -492,7 +492,7 @@ export class HomeEnBlogSixtyOneComponent {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
       '@id':
-        'https://arapov.trade/en/freestudying/smartmoneyconceptsguide#howto',
+        'https://arapovtrade.com/en/freestudying/smartmoneyconceptsguide#howto',
       name: 'How to Trade Using Smart Money Concepts',
       description:
         'Step-by-step guide to applying SMC in financial market trading',
@@ -541,7 +541,7 @@ export class HomeEnBlogSixtyOneComponent {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
       '@id':
-        'https://arapov.trade/en/freestudying/smartmoneyconceptsguide#glossary',
+        'https://arapovtrade.com/en/freestudying/smartmoneyconceptsguide#glossary',
       name: 'Smart Money Concepts Glossary',
       hasDefinedTerm: [
         {

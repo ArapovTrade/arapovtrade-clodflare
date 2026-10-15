@@ -57,7 +57,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Почему трейдеры теряют деньги | Ловушки Смарт Мани | Arapov.trade',
+      'Почему трейдеры теряют деньги | Ловушки Смарт Мани | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -82,14 +82,14 @@ export class HomeRuTwentyNineComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
      
   ];
@@ -280,27 +280,27 @@ export class HomeRuTwentyNineComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/ru/freestudying/smartmoneytraps#article',
+          '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneytraps#article',
           headline: 'Почему трейдеры теряют деньги: ловушки Смарт Мани',
           description:
             'Анализ причин убытков розничных трейдеров: манипуляции крупных игроков, охота за стоп-лоссами, ложные пробои и методы защиты от ловушек',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/smartmoneytraps1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/smartmoneytraps1.webp',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
               width: 200,
               height: 60,
             },
@@ -309,7 +309,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
          dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/smartmoneytraps',
+            '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneytraps',
           },
           articleSection: 'Трейдинг',
           keywords: [
@@ -335,7 +335,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -346,9 +346,9 @@ export class HomeRuTwentyNineComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -360,7 +360,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapov.trade'],
+      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель ArapovTrade'],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
     };
@@ -375,7 +375,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneytraps#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneytraps#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -430,7 +430,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneytraps#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneytraps#howto',
       name: 'Как избежать ловушек Smart Money',
       description:
         'Пошаговая методика защиты от манипуляций крупных игроков на финансовых рынках',
@@ -480,7 +480,7 @@ export class HomeRuTwentyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneytraps#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneytraps#terms',
       name: 'Глоссарий терминов манипуляций рынка',
       description:
         'Ключевые термины, связанные с ловушками и манипуляциями Smart Money',

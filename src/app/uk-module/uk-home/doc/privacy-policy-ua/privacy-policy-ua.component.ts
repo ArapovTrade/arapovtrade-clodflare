@@ -13,12 +13,12 @@ constructor(private meta: Meta,
   ngOnInit(): void {
     this.lang.setNumber(1);
 
-    this.titleService.setTitle('Політика конфіденційності | Arapov.Trade');
+    this.titleService.setTitle('Політика конфіденційності | ArapovTrade');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        "Політика конфіденційності сайту Arapov.Trade — інформація про використання даних та файлів cookie",
+        "Політика конфіденційності сайту arapovtrade.com — інформація про використання даних та файлів cookie",
     });
   }
 

@@ -103,11 +103,11 @@ export class HomeUkBlogSixtyTwoComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -299,28 +299,28 @@ export class HomeUkBlogSixtyTwoComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/uk/freestudying/smartmoneystrategies#article',
+            'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#article',
           headline:
             'Стратегія Smart Money: як знаходити точки входу в трейдингу',
           description:
             'Повний посібник зі стратегій Smart Money: Order Blocks, Fair Value Gaps, Break of Structure та аналіз ліквідності для пошуку точних точок входу',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/smartmoneystrategies1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/smartmoneystrategies1.webp',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
               width: 200,
               height: 60,
             },
@@ -330,7 +330,7 @@ export class HomeUkBlogSixtyTwoComponent {
 
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/smartmoneystrategies',
+            '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies',
           },
           articleSection: 'Трейдинг',
           keywords: [
@@ -358,7 +358,7 @@ export class HomeUkBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -369,9 +369,9 @@ export class HomeUkBlogSixtyTwoComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -383,7 +383,7 @@ export class HomeUkBlogSixtyTwoComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -398,7 +398,7 @@ export class HomeUkBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneystrategies#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -453,7 +453,7 @@ export class HomeUkBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneystrategies#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#howto',
       name: 'Як знаходити точки входу за Smart Money Concepts',
       description:
         'Покрокова методика пошуку високоймовірних точок входу з використанням інституційних концепцій трейдингу',
@@ -469,35 +469,35 @@ export class HomeUkBlogSixtyTwoComponent {
           position: 1,
           name: 'Визначення ринкової структури',
           text: 'Проаналізуйте поточний тренд, визначте ключові максимуми та мінімуми. Виявіть зони накопичення та розподілу на графіку.',
-          url: 'https://arapov.trade/uk/freestudying/smartmoneystrategies#structure',
+          url: 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#structure',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Пошук зон ліквідності',
           text: 'Знайдіть області скупчення стоп-ордерів: за рівнями підтримки та опору, біля денних та тижневих екстремумів, на круглих психологічних рівнях.',
-          url: 'https://arapov.trade/uk/freestudying/smartmoneystrategies#liquidity',
+          url: 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#liquidity',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Ідентифікація Order Blocks та FVG',
           text: 'Визначте Order Blocks — останні свічки перед імпульсом. Знайдіть Fair Value Gaps — незаповнені розриви після різких рухів. Відмітьте ці зони на графіку.',
-          url: 'https://arapov.trade/uk/freestudying/smartmoneystrategies#orderblocks',
+          url: 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#orderblocks',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Очікування підтверджуючих сигналів',
           text: "Дочекайтеся повернення ціни до зони інтересу. Шукайте підтвердження: свічкові патерни, збільшення об'ємів, Break of Structure або Change of Character.",
-          url: 'https://arapov.trade/uk/freestudying/smartmoneystrategies#confirmation',
+          url: 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#confirmation',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Вхід та управління позицією',
           text: 'Відкрийте позицію за наявності підтвердження. Розмістіть стоп-лос за зоною ліквідності. Визначте тейк-профіт біля наступної значимої зони. Використовуйте співвідношення ризику до прибутку мінімум 1:2.',
-          url: 'https://arapov.trade/uk/freestudying/smartmoneystrategies#entry',
+          url: 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#entry',
         },
       ],
     };
@@ -512,7 +512,7 @@ export class HomeUkBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/smartmoneystrategies#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/smartmoneystrategies#terms',
       name: 'Глосарій термінів Smart Money Concepts',
       description:
         'Ключові терміни та визначення методології Smart Money у трейдингу',

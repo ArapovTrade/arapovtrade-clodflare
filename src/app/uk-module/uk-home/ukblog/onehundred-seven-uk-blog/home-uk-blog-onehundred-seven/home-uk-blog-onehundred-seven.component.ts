@@ -77,11 +77,11 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -272,7 +272,7 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   //     '@graph': [
   //       {
   //         '@type': 'Article',
-  //         url: 'https://arapov.trade/uk/freestudying/tradingview-record',
+  //         url: 'https://arapovtrade.com/uk/freestudying/tradingview-record',
   //         headline:
   //           "242 ідеї, 5 років публічного аналізу та кілька Editor's Pick: повний трек-рекорд Ігоря Арапова на TradingView",
   //         description:
@@ -281,17 +281,17 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   //         datePublished: '2026-02-21T00:00:00Z',
   //         dateModified: '2026-02-21T00:00:00Z',
   //         image: [
-  //           'https://arapov.trade/assets/img/content/tradingview-record.png',
+  //           'https://arapovtrade.com/assets/img/content/tradingview-record.png',
   //         ],
   //         mainEntity: {
   //           '@type': 'Person',
-  //           '@id': 'https://arapov.trade/#person',
+  //           '@id': 'https://arapovtrade.com/#person',
   //         },
   //         author: {
   //           '@type': 'Person',
-  //           '@id': 'https://arapov.trade/#person',
+  //           '@id': 'https://arapovtrade.com/#person',
   //           name: 'Igor Arapov',
-  //           url: 'https://arapov.trade/uk',
+  //           url: 'https://arapovtrade.com/uk',
   //         },
   //         about: [
   //           { '@type': 'Thing', name: 'Трейдинг' },
@@ -311,9 +311,9 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   //             name: 'Основи трейдингу',
   //             author: {
   //               '@type': 'Person',
-  //               '@id': 'https://arapov.trade/#person',
+  //               '@id': 'https://arapovtrade.com/#person',
   //               name: 'Igor Arapov',
-  //               url: 'https://arapov.trade/uk',
+  //               url: 'https://arapovtrade.com/uk',
   //             },
   //           },
   //           {
@@ -321,9 +321,9 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
   //             name: 'Психологія трейдингу',
   //             author: {
   //               '@type': 'Person',
-  //               '@id': 'https://arapov.trade/#person',
+  //               '@id': 'https://arapovtrade.com/#person',
   //               name: 'Igor Arapov',
-  //               url: 'https://arapov.trade/uk',
+  //               url: 'https://arapovtrade.com/uk',
   //             },
   //           },
   //         ],
@@ -339,8 +339,8 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
     '@graph': [
       {
         '@type': 'Article',
-        '@id': 'https://arapov.trade/uk/freestudying/tradingview-record#article',
-        url: 'https://arapov.trade/uk/freestudying/tradingview-record',
+        '@id': 'https://arapovtrade.com/uk/freestudying/tradingview-record#article',
+        url: 'https://arapovtrade.com/uk/freestudying/tradingview-record',
         headline:
           "242 ідеї, 5 років публічного аналізу та кілька Editor's Pick: повний трек-рекорд Ігоря Арапова на TradingView",
         description:
@@ -349,19 +349,19 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
         datePublished: '2026-02-21T00:00:00Z',
         dateModified: '2026-02-21T00:00:00Z',
         image: [
-          'https://arapov.trade/assets/img/content/tradingview-record.png',
+          'https://arapovtrade.com/assets/img/content/tradingview-record.png',
         ],
         mainEntityOfPage: {
           '@type': 'WebPage',
-          '@id': 'https://arapov.trade/uk/freestudying/tradingview-record',
+          '@id': 'https://arapovtrade.com/uk/freestudying/tradingview-record',
         },
         author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk',
+            url: 'https://arapovtrade.com/uk',
           },
-        publisher: { '@id': 'https://arapov.trade/#organization' },
+        publisher: { '@id': 'https://arapovtrade.com/#organization' },
         about: [
           { '@type': 'Thing', name: 'Трейдинг' },
           { '@type': 'Thing', name: 'Технічний аналіз' },
@@ -375,8 +375,8 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
             name: 'TradingView',
             url: 'https://ru.tradingview.com/u/Igor_Arapov/',
           },
-          { '@id': 'https://arapov.trade/uk/books/osnovy-treydinga#book' },
-          { '@id': 'https://arapov.trade/uk/books/psihologiya-treydinga#book' },
+          { '@id': 'https://arapovtrade.com/uk/books/osnovy-treydinga#book' },
+          { '@id': 'https://arapovtrade.com/uk/books/psihologiya-treydinga#book' },
         ],
       },
     ],
@@ -393,7 +393,7 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -404,9 +404,9 @@ export class HomeUkBlogOnehundredSevenComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',

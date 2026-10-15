@@ -99,11 +99,11 @@ export class HomeEnBlogSixtyTwoComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -276,27 +276,27 @@ export class HomeEnBlogSixtyTwoComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/en/freestudying/smartmoneystrategies#article',
+            'https://arapovtrade.com/en/freestudying/smartmoneystrategies#article',
           headline: 'Smart Money Strategy: How to Find Entry Points in Trading',
           description:
             'Complete guide to Smart Money strategies: Order Blocks, Fair Value Gaps, Break of Structure, and liquidity analysis for finding precise entry points',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/smartmoneystrategies1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/smartmoneystrategies1.webp',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
               width: 200,
               height: 60,
             },
@@ -305,7 +305,7 @@ export class HomeEnBlogSixtyTwoComponent {
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/smartmoneystrategies',
+            '@id': 'https://arapovtrade.com/en/freestudying/smartmoneystrategies',
           },
           articleSection: 'Trading',
           keywords: [
@@ -333,7 +333,7 @@ export class HomeEnBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -345,9 +345,9 @@ export class HomeEnBlogSixtyTwoComponent {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -362,7 +362,7 @@ export class HomeEnBlogSixtyTwoComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -378,7 +378,7 @@ export class HomeEnBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/smartmoneystrategies#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -433,7 +433,7 @@ export class HomeEnBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/smartmoneystrategies#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#howto',
       name: 'How to Find Entry Points Using Smart Money Concepts',
       description:
         'Step-by-step methodology for finding high-probability entry points using institutional trading concepts',
@@ -449,35 +449,35 @@ export class HomeEnBlogSixtyTwoComponent {
           position: 1,
           name: 'Determine Market Structure',
           text: 'Analyze the current trend, identify key highs and lows. Detect accumulation and distribution zones on the chart.',
-          url: 'https://arapov.trade/en/freestudying/smartmoneystrategies#structure',
+          url: 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#structure',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Find Liquidity Zones',
           text: 'Locate stop order clusters: behind support and resistance levels, near daily and weekly extremes, at round psychological levels.',
-          url: 'https://arapov.trade/en/freestudying/smartmoneystrategies#liquidity',
+          url: 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#liquidity',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Identify Order Blocks and FVG',
           text: 'Determine Order Blocks—last candles before impulse. Find Fair Value Gaps—unfilled gaps after sharp movements. Mark these zones on the chart.',
-          url: 'https://arapov.trade/en/freestudying/smartmoneystrategies#orderblocks',
+          url: 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#orderblocks',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Wait for Confirmation Signals',
           text: 'Wait for price return to the zone of interest. Look for confirmation: candlestick patterns, volume increase, Break of Structure or Change of Character.',
-          url: 'https://arapov.trade/en/freestudying/smartmoneystrategies#confirmation',
+          url: 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#confirmation',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Enter and Manage Position',
           text: 'Open position upon confirmation. Place stop loss beyond the liquidity zone. Set take profit at the next significant zone. Use minimum 1:2 risk-to-reward ratio.',
-          url: 'https://arapov.trade/en/freestudying/smartmoneystrategies#entry',
+          url: 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#entry',
         },
       ],
     };
@@ -492,7 +492,7 @@ export class HomeEnBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/smartmoneystrategies#terms',
+      '@id': 'https://arapovtrade.com/en/freestudying/smartmoneystrategies#terms',
       name: 'Smart Money Concepts Glossary',
       description:
         'Key terms and definitions of Smart Money methodology in trading',

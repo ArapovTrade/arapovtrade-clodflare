@@ -57,7 +57,7 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Про Arapov.Trade: бібліотека, книги та відео з трейдингу',
+      'Про ArapovTrade: бібліотека, книги та відео з трейдингу',
     );
     this.meta.updateTag({
       name: 'description',
@@ -77,11 +77,11 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -273,21 +273,21 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
       '@graph': [
         {
           '@type': 'AboutPage',
-          url: 'https://arapov.trade/uk/freestudying/about',
-          name: 'Про ARAPOV.TRADE',
-          headline: 'Про ARAPOV.TRADE — Освітня платформа з трейдингу',
+          url: 'https://arapovtrade.com/uk/freestudying/about',
+          name: 'Про ArapovTrade',
+          headline: 'Про ArapovTrade — Освітня платформа з трейдингу',
           description:
             "150 статей, 9 книг з ISBN, 80+ відеоуроків на 3 мовах. Безкоштовне навчання трейдингу: Smart Money, метод Вайкоффа, об'ємний аналіз.",
           inLanguage: 'uk',
           mainEntity: {
             '@type': 'EducationalOrganization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk',
+            url: 'https://arapovtrade.com/uk',
           },
         },
       ],
@@ -303,7 +303,7 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -314,9 +314,9 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -328,7 +328,7 @@ export class HomeUkBlogOnehundredSixComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };

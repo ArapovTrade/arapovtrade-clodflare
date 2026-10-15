@@ -63,7 +63,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Курс з трейдингу для початківців | Arapov.trade',
+      'Курс з трейдингу для початківців | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -79,11 +79,11 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     });
     this.meta.updateTag({
       property: 'og:image',
-      content: 'https://arapov.trade/assets/img/content/freeeducationnew.webp',
+      content: 'https://arapovtrade.com/assets/img/content/freeeducationnew.webp',
     });
     this.meta.updateTag({
       name: 'twitter:image',
-      content: `https://arapov.trade/assets/img/content/freeeducationnew.webp`,
+      content: `https://arapovtrade.com/assets/img/content/freeeducationnew.webp`,
     });
 
     this.gerRandom();
@@ -129,11 +129,11 @@ export class HomeUkFourtyFiveComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -319,7 +319,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/freeeducation#article',
+          '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#article',
           headline:
             'Безкоштовний курс з трейдингу для початківців — Ігор Арапов',
           description:
@@ -328,18 +328,18 @@ export class HomeUkFourtyFiveComponent implements OnInit {
           dateModified: '2026-06-25T00:00:00+02:00', // ← сведено к meta (было 2026-05-29)
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk',
+            url: 'https://arapovtrade.com/uk',
           },
-          publisher: { '@id': 'https://arapov.trade/#organization' },
+          publisher: { '@id': 'https://arapovtrade.com/#organization' },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/freeeducation',
+            '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/freeeducationnew.webp',
+            url: 'https://arapovtrade.com/assets/img/content/freeeducationnew.webp',
           },
           articleSection: 'Навчання трейдингу',
           keywords: [
@@ -363,7 +363,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -374,9 +374,9 @@ export class HomeUkFourtyFiveComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -391,7 +391,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -405,25 +405,25 @@ export class HomeUkFourtyFiveComponent implements OnInit {
       '@context': 'https://schema.org',
       name: 'BreadcrumbList',
       '@type': 'BreadcrumbList',
-      '@id': 'https://arapov.trade/uk/freestudying/freeeducation#breadcrumb',
+      '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#breadcrumb',
       itemListElement: [
         {
           '@type': 'ListItem',
           position: 1,
           name: 'Головна',
-          item: 'https://arapov.trade/uk',
+          item: 'https://arapovtrade.com/uk',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Безкоштовне навчання',
-          item: 'https://arapov.trade/uk/freestudying',
+          item: 'https://arapovtrade.com/uk/freestudying',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: 'Безкоштовний курс з трейдингу для початківців',
-          item: 'https://arapov.trade/uk/freestudying/freeeducation',
+          item: 'https://arapovtrade.com/uk/freestudying/freeeducation',
         },
       ],
     });
@@ -436,7 +436,7 @@ export class HomeUkFourtyFiveComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/freeeducation#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -516,7 +516,7 @@ private setCourseSchema(): void {
       {
         '@type': 'Course',
         '@id':
-          'https://arapov.trade/uk/freestudying/freeeducation#course',
+          'https://arapovtrade.com/uk/freestudying/freeeducation#course',
 
         name:
           'Безкоштовний курс з трейдингу для початківців',
@@ -525,16 +525,16 @@ private setCourseSchema(): void {
           'Безкоштовний курс трейдингу для початківців: 32 розділи у 7 блоках — від механіки біржі до торгової системи та практики на демо-рахунку. Метод Вайкоффа, технічний та обʼємний аналіз, ризик-менеджмент і психологія трейдингу.',
 
         url:
-          'https://arapov.trade/uk/freestudying/freeeducation',
+          'https://arapovtrade.com/uk/freestudying/freeeducation',
 
         inLanguage: 'uk-UA',
 
         provider: {
-          '@id': 'https://arapov.trade/#organization',
+          '@id': 'https://arapovtrade.com/#organization',
         },
 
         author: {
-          '@id': 'https://arapov.trade/#person',
+          '@id': 'https://arapovtrade.com/#person',
         },
 
         educationalLevel: 'Beginner',
@@ -581,12 +581,12 @@ private setCourseSchema(): void {
           courseMode: 'online',
 
           instructor: {
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
           },
         },
 
         isPartOf: {
-          '@id': 'https://arapov.trade/#website',
+          '@id': 'https://arapovtrade.com/#website',
         },
       },
     ],
@@ -601,7 +601,7 @@ private setCourseSchema(): void {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/freeeducation#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#howto',
       name: 'Покроковий план опанування трейдингу',
       description:
         'Від повного нуля до першої прибуткової угоди на реальному рахунку.',
@@ -662,7 +662,7 @@ private setCourseSchema(): void {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/freeeducation#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#terms',
       name: 'Словник трейдера',
       hasDefinedTerm: [
         {
@@ -749,11 +749,11 @@ private setCourseSchema(): void {
     this.addJsonLdSchema({
       '@context': 'https://schema.org',
       '@type': 'EducationalOccupationalProgram',
-      '@id': 'https://arapov.trade/uk/freestudying/freeeducation#program',
+      '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#program',
       name: 'Безкоштовне навчання трейдингу з нуля',
       description:
         'Безкоштовний курс трейдингу для початківців від практикуючого трейдера з 2013 року. Понад 51+ статей, 78+ відео: від основ до Smart Money та Вайкоффа.',
-      provider: { '@id': 'https://arapov.trade/#person' },
+      provider: { '@id': 'https://arapovtrade.com/#person' },
       timeToComplete: 'P3M',
       occupationalCategory: 'Трейдер',
       programType: 'Онлайн-курс',
@@ -764,11 +764,11 @@ private setCourseSchema(): void {
       },
       hasCourse: {
         '@type': 'Course',
-        '@id': 'https://arapov.trade/#free-course',
+        '@id': 'https://arapovtrade.com/#free-course',
         name: 'Безкоштовне навчання трейдингу з нуля',
         description: 'Понад 51+ статей та 78+ відеоуроків з трейдингу',
         sameAs: ['https://www.wikidata.org/wiki/Q140750185'],
-        provider: { '@id': 'https://arapov.trade/#person' },
+        provider: { '@id': 'https://arapovtrade.com/#person' },
       },
     });
   }
@@ -782,7 +782,7 @@ private setCourseSchema(): void {
       '@graph': [
         {
           '@type': 'VideoObject',
-          '@id': 'https://arapov.trade/uk/freestudying/freeeducation#video2',
+          '@id': 'https://arapovtrade.com/uk/freestudying/freeeducation#video2',
           name: 'Курс з трейдингу для початківців | Від теорії до першої угоди',
           description:
             'Безкоштовний курс з трейдингу для тих, хто тільки знайомиться з ринком. Жодної зайвої теорії — лише база, торгова система та практика на демосчунку. Розбираємо все з нуля: від торгового термінала до точки входу в угоду за методом Вайкоффа.',
@@ -794,15 +794,15 @@ private setCourseSchema(): void {
             'https://www.youtube.com/embed/tmiHem6NOZs?si=lMeQKyeWBPviIQPq',
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
 
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/uk',
+            url: 'https://arapovtrade.com/uk',
           },
-          publisher: { '@id': 'https://arapov.trade/#organization' },
+          publisher: { '@id': 'https://arapovtrade.com/#organization' },
           isPartOf: {
             '@type': 'CreativeWorkSeries',
-            name: 'Educational videos of arapov.trade',
+            name: 'Educational videos of ArapovTrade',
             sameAs: 'https://www.wikidata.org/wiki/Q141063653',
           },
         },

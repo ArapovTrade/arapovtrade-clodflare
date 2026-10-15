@@ -79,11 +79,11 @@ export class HomeUkBlogEightyOneComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -275,23 +275,23 @@ export class HomeUkBlogEightyOneComponent {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/trianglefigure#article',
+          '@id': 'https://arapovtrade.com/uk/freestudying/trianglefigure#article',
           headline: 'Патерн Трикутник у трейдингу: повний посібник з торгівлі',
           description:
             'Детальний посібник з патерну трикутник у технічному аналізі. Висхідний, низхідний та симетричний трикутники: ідентифікація, торгові стратегії та управління ризиками.',
-          image: 'https://arapov.trade/assets/img/content/triangle1.jpg',
+          image: 'https://arapovtrade.com/assets/img/content/triangle1.jpg',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/trianglefigure',
+            '@id': 'https://arapovtrade.com/uk/freestudying/trianglefigure',
           },
           articleSection: 'Технічний аналіз',
           keywords: [
@@ -318,7 +318,7 @@ export class HomeUkBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -329,9 +329,9 @@ export class HomeUkBlogEightyOneComponent {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -343,7 +343,7 @@ export class HomeUkBlogEightyOneComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -358,7 +358,7 @@ export class HomeUkBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/trianglefigure#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/trianglefigure#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -413,7 +413,7 @@ export class HomeUkBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/trianglefigure#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/trianglefigure#howto',
       name: 'Як торгувати патерн трикутник',
       description:
         'Покроковий посібник з торгівлі патерном трикутник у технічному аналізі',
@@ -461,7 +461,7 @@ export class HomeUkBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/trianglefigure#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/trianglefigure#terms',
       name: 'Глосарій термінів патерну трикутник',
       hasDefinedTerm: [
         {

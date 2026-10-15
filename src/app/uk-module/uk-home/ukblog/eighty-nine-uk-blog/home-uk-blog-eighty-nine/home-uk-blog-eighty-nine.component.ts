@@ -82,11 +82,11 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -277,32 +277,32 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/uk/freestudying/bitcoin-domination#article',
+            'https://arapovtrade.com/uk/freestudying/bitcoin-domination#article',
           headline:
             'Домінація біткоїна (BTC.D): що це та як використовувати в торгівлі',
           description:
             'Домінація біткоїна (BTC.D): що це таке, як розраховується, історія змін та вплив на альткоїни. Повний гід для трейдерів.',
           image:
-            'https://arapov.trade/assets/img/content/bitcoin_dominance_1.png',
+            'https://arapovtrade.com/assets/img/content/bitcoin_dominance_1.png',
           datePublished: '2026-03-25T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/bitcoin-domination',
+            '@id': 'https://arapovtrade.com/uk/freestudying/bitcoin-domination',
           },
           articleSection: 'Криптовалюти',
           keywords: [
@@ -326,7 +326,7 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -337,9 +337,9 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -370,7 +370,7 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/bitcoin-domination#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -425,7 +425,7 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/bitcoin-domination#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#howto',
       name: 'Як використовувати домінацію біткоїна в торгівлі',
       description:
         'Практичний посібник з аналізу BTC.D для прийняття торгових рішень',
@@ -436,35 +436,35 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
           position: 1,
           name: 'Відкрийте графік BTC.D',
           text: 'Зайдіть на TradingView та введіть тікер BTC.D. Оберіть денний або тижневий таймфрейм для аналізу середньострокових трендів.',
-          url: 'https://arapov.trade/uk/freestudying/bitcoin-domination#chart',
+          url: 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#chart',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Визначте ключові рівні',
           text: 'Позначте історичні рівні підтримки та опору: 40%, 45%, 50%, 55%, 60%. Ці зони часто слугують точками розвороту.',
-          url: 'https://arapov.trade/uk/freestudying/bitcoin-domination#levels',
+          url: 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#levels',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Додайте індикатори',
           text: 'Накладіть RSI та ковзні середні для підтвердження тренду. Дивергенції на RSI часто передують розвороту домінації.',
-          url: 'https://arapov.trade/uk/freestudying/bitcoin-domination#indicators',
+          url: 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#indicators',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Зіставте з ціною BTC',
           text: 'Порівняйте графік BTC.D з графіком BTC/USD. Зростання ціни BTC при падаючій домінації — сильний сигнал для альтсезону.',
-          url: 'https://arapov.trade/uk/freestudying/bitcoin-domination#correlation',
+          url: 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#correlation',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Прийміть торгове рішення',
           text: 'При падінні BTC.D нижче ключових рівнів розгляньте збільшення позицій в альткоїнах. При зростанні — скоротіть експозицію в альтах та збільште частку BTC.',
-          url: 'https://arapov.trade/uk/freestudying/bitcoin-domination#decision',
+          url: 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#decision',
         },
       ],
     };
@@ -479,7 +479,7 @@ export class HomeUkBlogEightyNineComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/bitcoin-domination#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/bitcoin-domination#terms',
       name: 'Терміни криптовалютного ринку',
       hasDefinedTerm: [
         {

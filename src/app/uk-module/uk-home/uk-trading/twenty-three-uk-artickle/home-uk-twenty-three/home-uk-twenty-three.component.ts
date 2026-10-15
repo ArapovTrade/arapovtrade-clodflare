@@ -80,11 +80,11 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -280,26 +280,26 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
           description:
             'Детальний огляд ключових світових фондових індексів. Американські, європейські та азіатські індекси, їх структура, особливості та вплив на глобальні ринки.',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/worldstockindicates',
+            '@id': 'https://arapovtrade.com/uk/freestudying/worldstockindicates',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/worldstockindicates.webp',
+            url: 'https://arapovtrade.com/assets/img/content/worldstockindicates.webp',
             width: 1200,
             height: 630,
           },
@@ -321,7 +321,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -332,9 +332,9 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -346,7 +346,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -415,7 +415,7 @@ this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/worldstockindicates#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/worldstockindicates#howto',
       name: 'Як аналізувати світові фондові індекси',
       description:
         'Покроковий посібник з аналізу та використання глобальних фондових індексів у торгівлі',

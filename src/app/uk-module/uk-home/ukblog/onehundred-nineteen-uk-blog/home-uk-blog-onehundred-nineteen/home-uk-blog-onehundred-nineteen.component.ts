@@ -79,11 +79,11 @@ export class HomeUkBlogOnehundredNineteenComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
     
   ];
@@ -278,26 +278,26 @@ export class HomeUkBlogOnehundredNineteenComponent {
       "headline": "Беззбиток у трейдингу: що це і коли переносити стоп",
       "description": "Що означає перевести угоду в беззбиток, коли перенесення стопа в точку входу захищає прибуток, а коли вибиває з хорошої позиції зарано.",
       "author": {
-        "@id": "https://arapov.trade/uk#person"
+        "@id": "https://arapovtrade.com/uk#person"
       },
       "publisher": {
         "@type": "Organization",
         "name": "ArapovTrade",
-        "url": "https://arapov.trade",
+        "url": "https://arapovtrade.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://arapov.trade/assets/img/favicon.ico"
+          "url": "https://arapovtrade.com/assets/img/favicon.ico"
         }
       },
       "datePublished": "2026-06-16T00:00:00Z",
       "dateModified": "2026-06-16T00:00:00Z",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://arapov.trade/uk/freestudying/breakeven"
+        "@id": "https://arapovtrade.com/uk/freestudying/breakeven"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://arapov.trade/assets/img/content/breakeven.jpeg",
+        "url": "https://arapovtrade.com/assets/img/content/breakeven.jpeg",
         "width": 1200,
         "height": 630
       },
@@ -318,7 +318,7 @@ export class HomeUkBlogOnehundredNineteenComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -329,9 +329,9 @@ export class HomeUkBlogOnehundredNineteenComponent {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -343,7 +343,7 @@ export class HomeUkBlogOnehundredNineteenComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -404,7 +404,7 @@ export class HomeUkBlogOnehundredNineteenComponent {
     const data = {
        "@context": "https://schema.org",
   "@type": "HowTo",
-  "@id": "https://arapov.trade/uk/freestudying/breakeven#howto",
+  "@id": "https://arapovtrade.com/uk/freestudying/breakeven#howto",
   "name": "Як розібратися та застосувати: Беззбиток",
   "description": "Покроковий розбір теми та її практичне застосування в торгівлі",
   "step": [

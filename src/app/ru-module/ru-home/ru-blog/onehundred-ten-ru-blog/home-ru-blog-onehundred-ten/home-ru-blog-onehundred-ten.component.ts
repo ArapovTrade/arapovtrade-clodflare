@@ -77,14 +77,14 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -276,8 +276,8 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
         {
           '@context': 'https://schema.org',
           '@type': 'Article',
-         url: 'https://arapov.trade/ru/freestudying/fullvideocourse',
-          name: 'Про ARAPOV.TRADE',
+         url: 'https://arapovtrade.com/ru/freestudying/fullvideocourse',
+          name: 'Про ArapovTrade',
           headline:
             'Бесплатный Курс Трейдинга: Метод Вайкоффа, Объёмный Анализ и Smart Money — Полный Разбор',
           description:
@@ -286,20 +286,20 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
           datePublished: '2026-02-22T00:00:00Z',
           dateModified: '2026-02-22T00:00:00Z',
           image: [
-            'https://arapov.trade/assets/img/content/oneandhalfcourse.png',
+            'https://arapovtrade.com/assets/img/content/oneandhalfcourse.png',
           ],
           mainEntityOfPage: {
             '@type': 'WebPage',
             '@id':
-              'https://arapov.trade/ru/freestudying/fullvideocourse',
+              'https://arapovtrade.com/ru/freestudying/fullvideocourse',
           },
           mainEntity: {
             '@type': 'EducationalOrganization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
         },
       ],
@@ -315,7 +315,7 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
        name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -326,9 +326,9 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -340,7 +340,7 @@ export class HomeRuBlogOnehundredTenComponent implements OnInit {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель arapov.trade'],
+      jobTitle: ['Независимый исследователь', 'трейдер', 'автор и основатель ArapovTrade'],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
     };

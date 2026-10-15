@@ -58,7 +58,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
     this.checkedGroup = this.artickleServ.selectedGroups;
 
     this.titleService.setTitle(
-      'Как выбрать брокера для трейдинга | Arapov.trade',
+      'Как выбрать брокера для трейдинга | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index' });
     this.meta.updateTag({
@@ -79,14 +79,14 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -281,29 +281,29 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
             'Как выбрать брокера и торговую платформу: регуляция, комиссии, исполнение ордеров и на что смотреть новичку, чтобы не попасть на кухню.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/platforms-broker',
+            '@id': 'https://arapovtrade.com/ru/freestudying/platforms-broker',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/platforms-broker.jpeg',
+            url: 'https://arapovtrade.com/assets/img/content/platforms-broker.jpeg',
             width: 1200,
             height: 630,
           },
@@ -325,7 +325,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -336,9 +336,9 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -353,7 +353,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -423,7 +423,7 @@ export class HomeRuBlogThirtySevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/platforms-broker#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/platforms-broker#howto',
       name: 'Как собрать связку для торговли: платформа, демосчёт, брокер',
       description:
         'Пошаговый разбор того, что нужно новичку для старта: терминал для анализа, демосчёт для тренировки и регулируемый брокер для вывода сделок на рынок',

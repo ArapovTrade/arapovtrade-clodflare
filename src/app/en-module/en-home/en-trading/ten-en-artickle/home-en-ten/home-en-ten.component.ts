@@ -54,7 +54,7 @@ export class HomeEnTenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Trading Positions: Long, Short, and Overnight Rollover | Arapov.trade',
+      'Trading Positions: Long, Short, and Overnight Rollover | ArapovTrade',
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -77,11 +77,11 @@ export class HomeEnTenComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -257,19 +257,19 @@ export class HomeEnTenComponent implements OnInit {
           headline: 'Trading Positions: Long, Short, and Overnight Rollover',
           description:
             'Complete guide to trading positions: long and short trades, value date, swaps, and position rollover. How to manage risks and choose your strategy.',
-          image: 'https://arapov.trade/assets/img/content/position1.png',
+          image: 'https://arapovtrade.com/assets/img/content/position1.png',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
           },
           mainEntityOfPage:
-            'https://arapov.trade/en/freestudying/currencyposition',
+            'https://arapovtrade.com/en/freestudying/currencyposition',
           wordCount: 1540,
           inLanguage: 'en',
         },
@@ -286,7 +286,7 @@ export class HomeEnTenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -297,9 +297,9 @@ export class HomeEnTenComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -314,7 +314,7 @@ export class HomeEnTenComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

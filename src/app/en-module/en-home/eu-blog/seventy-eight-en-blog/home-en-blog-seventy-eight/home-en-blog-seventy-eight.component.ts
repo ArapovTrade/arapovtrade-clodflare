@@ -53,7 +53,7 @@ export class HomeEnBlogSeventyEightComponent {
     this.grr = this.artickleServ.selectedGroups;
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
-    this.titleService.setTitle('What is FOMO in Trading? | Arapov.trade');
+    this.titleService.setTitle('What is FOMO in Trading? | ArapovTrade');
     this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
     this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -76,11 +76,11 @@ export class HomeEnBlogSeventyEightComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -256,17 +256,17 @@ export class HomeEnBlogSeventyEightComponent {
           headline: 'FOMO in Trading: How to Overcome Fear of Missing Out',
           description:
             'FOMO in trading: What is the fear of missing out, how does it affect trading, and how to overcome it?',
-          author: { '@id': 'https://arapov.trade/en#person' },
+          author: { '@id': 'https://arapovtrade.com/en#person' },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
-          image: 'https://arapov.trade/assets/img/content/fomo.webp',
+          image: 'https://arapovtrade.com/assets/img/content/fomo.webp',
           datePublished: '2025-09-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           wordCount: 1380,
@@ -285,7 +285,7 @@ export class HomeEnBlogSeventyEightComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -296,9 +296,9 @@ export class HomeEnBlogSeventyEightComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -313,7 +313,7 @@ export class HomeEnBlogSeventyEightComponent {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

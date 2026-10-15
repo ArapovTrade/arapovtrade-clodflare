@@ -102,14 +102,14 @@ export class HomeRuBlogSixtyTwoComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -301,28 +301,28 @@ export class HomeRuBlogSixtyTwoComponent {
         {
           '@type': 'Article',
           '@id':
-            'https://arapov.trade/ru/freestudying/smartmoneystrategies#article',
+            'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#article',
           headline:
             'Стратегия Smart Money: как находить точки входа в трейдинге',
           description:
             'Полное руководство по стратегиям Smart Money: Order Blocks, Fair Value Gaps, Break of Structure и анализ ликвидности для поиска точных точек входа',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/smartmoneystrategies1.webp',
+            url: 'https://arapovtrade.com/assets/img/content/smartmoneystrategies1.webp',
             width: 1200,
             height: 630,
           },
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
               width: 200,
               height: 60,
             },
@@ -331,7 +331,7 @@ export class HomeRuBlogSixtyTwoComponent {
          dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/smartmoneystrategies',
+            '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies',
           },
           articleSection: 'Трейдинг',
           keywords: [
@@ -359,7 +359,7 @@ export class HomeRuBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -370,9 +370,9 @@ export class HomeRuBlogSixtyTwoComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -387,7 +387,7 @@ export class HomeRuBlogSixtyTwoComponent {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -403,7 +403,7 @@ export class HomeRuBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneystrategies#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -458,7 +458,7 @@ export class HomeRuBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneystrategies#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#howto',
       name: 'Как находить точки входа по Smart Money Concepts',
       description:
         'Пошаговая методика поиска высоковероятностных точек входа с использованием институциональных концепций трейдинга',
@@ -474,35 +474,35 @@ export class HomeRuBlogSixtyTwoComponent {
           position: 1,
           name: 'Определение рыночной структуры',
           text: 'Проанализируйте текущий тренд, определите ключевые максимумы и минимумы. Выявите зоны накопления и распределения на графике.',
-          url: 'https://arapov.trade/ru/freestudying/smartmoneystrategies#structure',
+          url: 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#structure',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Поиск зон ликвидности',
           text: 'Найдите области скопления стоп-ордеров: за уровнями поддержки и сопротивления, у дневных и недельных экстремумов, на круглых психологических уровнях.',
-          url: 'https://arapov.trade/ru/freestudying/smartmoneystrategies#liquidity',
+          url: 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#liquidity',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Идентификация Order Blocks и FVG',
           text: 'Определите Order Blocks — последние свечи перед импульсом. Найдите Fair Value Gaps — незаполненные разрывы после резких движений. Отметьте эти зоны на графике.',
-          url: 'https://arapov.trade/ru/freestudying/smartmoneystrategies#orderblocks',
+          url: 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#orderblocks',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Ожидание подтверждающих сигналов',
           text: 'Дождитесь возврата цены в зону интереса. Ищите подтверждение: свечные паттерны, увеличение объёмов, Break of Structure или Change of Character.',
-          url: 'https://arapov.trade/ru/freestudying/smartmoneystrategies#confirmation',
+          url: 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#confirmation',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Вход и управление позицией',
           text: 'Откройте позицию при наличии подтверждения. Разместите стоп-лосс за зоной ликвидности. Определите тейк-профит у следующей значимой зоны. Используйте соотношение риска к прибыли минимум 1:2.',
-          url: 'https://arapov.trade/ru/freestudying/smartmoneystrategies#entry',
+          url: 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#entry',
         },
       ],
     };
@@ -517,7 +517,7 @@ export class HomeRuBlogSixtyTwoComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/smartmoneystrategies#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/smartmoneystrategies#terms',
       name: 'Глоссарий терминов Smart Money Concepts',
       description:
         'Ключевые термины и определения методологии Smart Money в трейдинге',

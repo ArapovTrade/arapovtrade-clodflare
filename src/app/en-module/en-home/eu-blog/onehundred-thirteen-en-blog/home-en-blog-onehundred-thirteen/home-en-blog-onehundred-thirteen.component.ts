@@ -82,11 +82,11 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -281,26 +281,26 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
           description:
             'What neural networks really can do on the market, what is beyond them, why AI does not predict the future and how to use it as a tool, not an oracle.',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
             name: 'ArapovTrade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-15T00:00:00Z',
           dateModified: '2026-06-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/ai-trading',
+            '@id': 'https://arapovtrade.com/en/freestudying/ai-trading',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/ai-trading.jpeg',
+            url: 'https://arapovtrade.com/assets/img/content/ai-trading.jpeg',
             width: 1200,
             height: 630,
           },
@@ -321,7 +321,7 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -333,9 +333,9 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -350,7 +350,7 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -412,7 +412,7 @@ export class HomeEnBlogOnehundredThirteenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/ai-trading#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/ai-trading#howto',
       name: 'How to Understand and Apply: AI in trading',
       description:
         'A step-by-step breakdown of the topic and its practical use in trading',

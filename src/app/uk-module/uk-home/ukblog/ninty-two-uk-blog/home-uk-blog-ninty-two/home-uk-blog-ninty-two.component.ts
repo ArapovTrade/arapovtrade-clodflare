@@ -82,11 +82,11 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
   ];
 
@@ -276,29 +276,29 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/binarnyeopciony#article',
+          '@id': 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#article',
           headline: 'Бінарні опціони: що це, як працюють та чи варто торгувати',
           description:
             'Бінарні опціони: детальний розбір інструменту для початківців. Принцип роботи, види опціонів, ризики та реальні можливості заробітку.',
-          image: 'https://arapov.trade/assets/img/content/binarnieoptions1.png',
+          image: 'https://arapovtrade.com/assets/img/content/binarnieoptions1.png',
           datePublished: '2026-03-25T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/uk#person',
+            '@id': 'https://arapovtrade.com/uk#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/binarnyeopciony',
+            '@id': 'https://arapovtrade.com/uk/freestudying/binarnyeopciony',
           },
           articleSection: 'Навчання трейдингу',
           keywords: [
@@ -322,7 +322,7 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -333,9 +333,9 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -350,7 +350,7 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
       jobTitle: [
         'Незалежний дослідник',
         'трейдер',
-        'автор і засновник arapov.trade',
+        'автор і засновник ArapovTrade',
       ],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
@@ -366,7 +366,7 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/binarnyeopciony#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -421,7 +421,7 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/binarnyeopciony#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#howto',
       name: 'Як почати торгувати бінарними опціонами',
       description:
         'Покрокова інструкція для початківців трейдерів бінарних опціонів',
@@ -437,35 +437,35 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
           position: 1,
           name: 'Вивчіть основи та ризики',
           text: 'Перш ніж вкладати гроші, розберіться в механіці бінарних опціонів, їхніх ризиках та особливостях. Зрозумійте, що це високоризикований інструмент з негативним математичним очікуванням.',
-          url: 'https://arapov.trade/uk/freestudying/binarnyeopciony#basics',
+          url: 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#basics',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Оберіть надійного брокера',
           text: 'Перевірте наявність ліцензії, репутацію брокера, відгуки реальних трейдерів. Уникайте компаній з агресивною рекламою та обіцянками гарантованого заробітку.',
-          url: 'https://arapov.trade/uk/freestudying/binarnyeopciony#broker',
+          url: 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#broker',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Потренуйтесь на демо-рахунку',
           text: 'Більшість брокерів пропонують демо-рахунок з віртуальними грошима. Використовуйте його для відпрацювання стратегії та розуміння інтерфейсу платформи.',
-          url: 'https://arapov.trade/uk/freestudying/binarnyeopciony#demo',
+          url: 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#demo',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Розробіть торгову стратегію',
           text: 'Визначте правила входу в угоду, вибір часу експірації, розмір ставки. Ніколи не торгуйте навмання — це перетворює трейдинг на азартну гру.',
-          url: 'https://arapov.trade/uk/freestudying/binarnyeopciony#strategy',
+          url: 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#strategy',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Почніть з мінімальних сум',
           text: 'При переході на реальний рахунок починайте з мінімальних ставок. Не ризикуйте більше 1-2% депозиту на одну угоду. Контролюйте емоції та суворо дотримуйтесь плану.',
-          url: 'https://arapov.trade/uk/freestudying/binarnyeopciony#start',
+          url: 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#start',
         },
       ],
     };
@@ -480,7 +480,7 @@ export class HomeUkBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/binarnyeopciony#terms',
+      '@id': 'https://arapovtrade.com/uk/freestudying/binarnyeopciony#terms',
       name: 'Терміни бінарних опціонів',
       hasDefinedTerm: [
         {

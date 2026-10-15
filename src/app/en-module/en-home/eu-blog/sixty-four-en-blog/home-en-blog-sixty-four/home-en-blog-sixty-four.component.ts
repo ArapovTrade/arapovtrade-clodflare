@@ -74,11 +74,11 @@ export class HomeEnBlogSixtyFourComponent {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -256,29 +256,29 @@ export class HomeEnBlogSixtyFourComponent {
             'Self-study guide for trading by Igor Arapov: step-by-step course from scratch, real strategies and tips for a confident start in trading.',
            author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/en',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
-            name: 'Arapov.Trade',
-            url: 'https://arapov.trade',
+            '@id': 'https://arapovtrade.com/#organization',
+            name: 'ArapovTrade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           datePublished: '2026-06-25T00:00:00Z',
           dateModified: '2026-06-25T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/practic',
+            '@id': 'https://arapovtrade.com/en/freestudying/practic',
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/prakticuk.jpg',
+            url: 'https://arapovtrade.com/assets/img/content/prakticuk.jpg',
             width: 1200,
             height: 630,
           },
@@ -299,7 +299,7 @@ export class HomeEnBlogSixtyFourComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/#person',
+      '@id': 'https://arapovtrade.com/#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -310,9 +310,9 @@ export class HomeEnBlogSixtyFourComponent {
         'I. Arapov',
         'І. В. Арапов',
       ],
-      url: 'https://arapov.trade/',
+      url: 'https://arapovtrade.com/',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -327,7 +327,7 @@ export class HomeEnBlogSixtyFourComponent {
       jobTitle: [
         'Independent researcher',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practising trader, author of trading books and scientific publications. Specialises in trading psychology and cognitive biases in financial markets.',
@@ -446,7 +446,7 @@ export class HomeEnBlogSixtyFourComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/practic#terms',
+      '@id': 'https://arapovtrade.com/en/freestudying/practic#terms',
       inLanguage: 'en',
       name: 'Trading strategy terms',
       hasDefinedTerm: [
@@ -456,7 +456,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'A pre-built set of clear rules for entry, exit and risk control that replaces improvisation and emotion with logic and statistics.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -464,7 +464,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'An attempt to push price beyond a support or resistance level with no continuation, often on raised volume.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -472,7 +472,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'A Price Action pattern showing seller dominance; an entry signal for a sell on a break of the false-breakout bar low.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -480,7 +480,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'A condition where for every dollar of risk you build in a potential of at least 3 dollars of profit.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -488,7 +488,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'The share of winning trades in a trading system; when working with levels it is usually around 60 to 65 percent.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -496,7 +496,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'The ratio of total profit to total loss; a minimally sufficient figure is 1.8 to 2 once commissions are accounted for.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -504,7 +504,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'The deepest fall of the account over a period; a stop-loss limits its depth but does not cancel it.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
         {
           '@type': 'DefinedTerm',
@@ -512,7 +512,7 @@ export class HomeEnBlogSixtyFourComponent {
           description:
             'Capital management: what percentage of the account to use in a trade and how to carry risk from trade to trade.',
           inDefinedTermSet:
-            'https://arapov.trade/en/freestudying/practic#terms',
+            'https://arapovtrade.com/en/freestudying/practic#terms',
         },
       ],
     };

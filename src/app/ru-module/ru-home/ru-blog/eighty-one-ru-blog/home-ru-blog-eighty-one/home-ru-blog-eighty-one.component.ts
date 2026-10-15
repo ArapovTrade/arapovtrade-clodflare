@@ -83,14 +83,14 @@ export class HomeRuBlogEightyOneComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги по трейдингу', link: 'https://arapov.trade/ru/books' },
+    { title: 'Книги по трейдингу', link: 'https://arapovtrade.com/ru/books' },
     {
       title: 'Профессиональные курсы',
-      link: 'https://arapov.trade/ru/studying',
+      link: 'https://arapovtrade.com/ru/studying',
     },
     {
       title: 'Базовый курс',
-      link: 'https://arapov.trade/ru/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/ru/freestudying/freeeducation',
     },
   ];
 
@@ -281,23 +281,23 @@ export class HomeRuBlogEightyOneComponent {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/ru/freestudying/trianglefigure#article',
+          '@id': 'https://arapovtrade.com/ru/freestudying/trianglefigure#article',
           headline:
             'Паттерн Треугольник в трейдинге: полное руководство по торговле',
           description:
             'Подробное руководство по паттерну треугольник в техническом анализе. Восходящий, нисходящий и симметричный треугольники: идентификация, торговые стратегии и управление рисками.',
-          image: 'https://arapov.trade/assets/img/content/triangle1.jpg',
+          image: 'https://arapovtrade.com/assets/img/content/triangle1.jpg',
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           author: {
-            '@id': 'https://arapov.trade/ru#person',
+            '@id': 'https://arapovtrade.com/ru#person',
           },
           publisher: {
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/ru/freestudying/trianglefigure',
+            '@id': 'https://arapovtrade.com/ru/freestudying/trianglefigure',
           },
           articleSection: 'Технический анализ',
           keywords: [
@@ -324,7 +324,7 @@ export class HomeRuBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/ru#person',
+      '@id': 'https://arapovtrade.com/ru#person',
       name: 'Игорь Арапов',
       alternateName: [
         'Igor Arapov',
@@ -335,9 +335,9 @@ export class HomeRuBlogEightyOneComponent {
         'Арапов Ігор',
         'Arapov Igor',
       ],
-      url: 'https://arapov.trade/ru',
+      url: 'https://arapovtrade.com/ru',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -352,7 +352,7 @@ export class HomeRuBlogEightyOneComponent {
       jobTitle: [
         'Независимый исследователь',
         'трейдер',
-        'автор и основатель arapov.trade',
+        'автор и основатель ArapovTrade',
       ],
       description:
         'Независимый исследователь, практикующий трейдер, автор книг по трейдингу и научных публикаций. Специализируется на психологии трейдинга и когнитивных искажениях на финансовых рынках.',
@@ -368,7 +368,7 @@ export class HomeRuBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/ru/freestudying/trianglefigure#faq',
+      '@id': 'https://arapovtrade.com/ru/freestudying/trianglefigure#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -423,7 +423,7 @@ export class HomeRuBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/ru/freestudying/trianglefigure#howto',
+      '@id': 'https://arapovtrade.com/ru/freestudying/trianglefigure#howto',
       name: 'Как торговать паттерн треугольник',
       description:
         'Пошаговое руководство по торговле паттерном треугольник в техническом анализе',
@@ -471,7 +471,7 @@ export class HomeRuBlogEightyOneComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/ru/freestudying/trianglefigure#terms',
+      '@id': 'https://arapovtrade.com/ru/freestudying/trianglefigure#terms',
       name: 'Глоссарий терминов паттерна треугольник',
       hasDefinedTerm: [
         {

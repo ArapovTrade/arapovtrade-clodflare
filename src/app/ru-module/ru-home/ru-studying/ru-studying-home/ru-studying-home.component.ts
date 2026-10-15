@@ -101,21 +101,21 @@ export class RuStudyingHomeComponent
     // Open Graph + Twitter Card — Russian studying page
 
 const ogImage =
-  'https://arapov.trade/assets/redesignArapovTrade/img/trading-mentor-support-ru.jpg';
+  'https://arapovtrade.com/assets/redesignArapovTrade/img/trading-mentor-support-ru.jpg';
 
 const ogTitle = 'Обучение трейдингу с наставником — Игорь Арапов';
 
 const ogDescription =
   'Обучение трейдингу онлайн с наставником: торговая система, технический и объёмный анализ, метод Вайкоффа, риск-менеджмент и практика.';
 
-const ogImageAlt = 'Arapov.Trade — Профессиональные курсы';
+const ogImageAlt = 'ArapovTrade — Профессиональные курсы';
 
-const pageUrl = 'https://arapov.trade/ru/studying';
+const pageUrl = 'https://arapovtrade.com/ru/studying';
 
 // Open Graph
 this.meta.updateTag({
   property: 'og:site_name',
-  content: 'Arapov.Trade',
+  content: 'ArapovTrade',
 });
 
 this.meta.updateTag({
@@ -342,26 +342,26 @@ this.meta.updateTag({
       '@graph': [
         {
           '@type': 'Course',
-          '@id': 'https://arapov.trade/ru/studying#course',
+          '@id': 'https://arapovtrade.com/ru/studying#course',
           name: 'Профессиональный курс трейдинга',
           description:
             'Индивидуальное обучение трейдингу с нуля под руководством опытного трейдера. Метод Вайкоффа, объёмный анализ, практика на реальных счетах.',
-          url: 'https://arapov.trade/ru/studying',
+          url: 'https://arapovtrade.com/ru/studying',
           inLanguage: 'ru',
           author: {
             '@type': 'Person',
-            '@id': 'https://arapov.trade/#person',
+            '@id': 'https://arapovtrade.com/#person',
             name: 'Igor Arapov',
-            url: 'https://arapov.trade/ru',
+            url: 'https://arapovtrade.com/ru',
           },
           provider: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           educationalLevel: 'Beginner to Advanced',
@@ -384,9 +384,9 @@ this.meta.updateTag({
             courseWorkload: 'P4W',
             instructor: {
               '@type': 'Person',
-              '@id': 'https://arapov.trade/#person',
+              '@id': 'https://arapovtrade.com/#person',
               name: 'Igor Arapov',
-              url: 'https://arapov.trade/ru',
+              url: 'https://arapovtrade.com/ru',
             },
           },
         },

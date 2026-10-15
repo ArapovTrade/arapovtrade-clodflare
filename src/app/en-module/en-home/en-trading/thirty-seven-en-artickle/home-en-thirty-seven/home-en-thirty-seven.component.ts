@@ -54,7 +54,7 @@ export class HomeEnThirtySevenComponent implements OnInit {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Stop Hunting: How Smart Money Triggers Your Stop-Losses | Arapov.trade',
+      'Stop Hunting: How Smart Money Triggers Your Stop-Losses | ArapovTrade',
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
@@ -78,11 +78,11 @@ export class HomeEnThirtySevenComponent implements OnInit {
   }
   hoveredIndex: number | null = null;
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
   onGroupChange(event: Event) {
@@ -258,24 +258,24 @@ export class HomeEnThirtySevenComponent implements OnInit {
             "Stop Hunting: How Smart Money Triggers Retail Traders' Stop-Losses",
           description:
             "Complete guide to Stop Hunting — a manipulation strategy used by institutional players to collect liquidity by triggering retail traders' stop-loss orders.",
-          image: 'https://arapov.trade/assets/img/content/stophunting1.webp',
+          image: 'https://arapovtrade.com/assets/img/content/stophunting1.webp',
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            name: 'Arapov.trade',
+            name: 'ArapovTrade',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
           },
           datePublished: '2026-03-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/stophunting',
+            '@id': 'https://arapovtrade.com/en/freestudying/stophunting',
           },
           articleSection: 'Trading',
           keywords: [
@@ -299,7 +299,7 @@ export class HomeEnThirtySevenComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -311,9 +311,9 @@ export class HomeEnThirtySevenComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -328,7 +328,7 @@ export class HomeEnThirtySevenComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',

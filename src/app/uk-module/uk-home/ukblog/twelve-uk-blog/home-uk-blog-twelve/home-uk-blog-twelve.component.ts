@@ -40,7 +40,7 @@ readonly panelOpenState = signal(false);
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Торгівля рівнями: повний посібник | Arapov.trade'
+      'Торгівля рівнями: повний посібник | ArapovTrade'
     );
 
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
@@ -48,7 +48,7 @@ readonly panelOpenState = signal(false);
     this.meta.updateTag({
       name: 'description',
       content:
-        'Детальний посібник для початківців з торгівлі рівнями: як визначати, використовувати та ефективно торгувати ключові рівні від Arapov.trade.',
+        'Детальний посібник для початківців з торгівлі рівнями: як визначати, використовувати та ефективно торгувати ключові рівні від ArapovTrade.',
     });
 
     this.meta.updateTag({ name: 'datePublished', content: '2025-04-14' });this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
@@ -66,9 +66,9 @@ readonly panelOpenState = signal(false);
   hoveredIndex: number | null = null;
   
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
-    { title: 'Базовий курс', link: 'https://arapov.trade/uk/freestudying/freeeducation' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
+    { title: 'Базовий курс', link: 'https://arapovtrade.com/uk/freestudying/freeeducation' },
      
   ];
   

@@ -83,11 +83,11 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Trading Books', link: 'https://arapov.trade/en/books' },
-    { title: 'Professional courses', link: 'https://arapov.trade/en/studying' },
+    { title: 'Trading Books', link: 'https://arapovtrade.com/en/books' },
+    { title: 'Professional courses', link: 'https://arapovtrade.com/en/studying' },
     {
       title: 'Basic course',
-      link: 'https://arapov.trade/en/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/en/freestudying/freeeducation',
     },
   ];
 
@@ -277,31 +277,31 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/en/freestudying/binarnyeopciony#article',
+          '@id': 'https://arapovtrade.com/en/freestudying/binarnyeopciony#article',
           headline:
             'Binary Options: What They Are, How They Work, and Should You Trade Them',
           description:
             'Binary options explained: comprehensive guide covering how they work, types of binary options, risks, and whether you should trade them.',
-          image: 'https://arapov.trade/assets/img/content/binarnieoptions1.png',
+          image: 'https://arapovtrade.com/assets/img/content/binarnieoptions1.png',
           datePublished: '2026-03-25T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
 
           author: {
-            '@id': 'https://arapov.trade/en#person',
+            '@id': 'https://arapovtrade.com/en#person',
           },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'Arapov Trade',
-            url: 'https://arapov.trade',
+            url: 'https://arapovtrade.com',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://arapov.trade/assets/img/favicon.ico',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
             },
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/en/freestudying/binarnyeopciony',
+            '@id': 'https://arapovtrade.com/en/freestudying/binarnyeopciony',
           },
           articleSection: 'Trading Education',
           keywords: [
@@ -325,7 +325,7 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/en#person',
+      '@id': 'https://arapovtrade.com/en#person',
       name: 'Igor Arapov',
       alternateName: [
         'Ігор Арапов',
@@ -337,9 +337,9 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
         'Arapov Igor',
       ],
 
-      url: 'https://arapov.trade/en',
+      url: 'https://arapovtrade.com/en',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -354,7 +354,7 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
       jobTitle: [
         'Independent researcher,',
         'trader',
-        'author and founder of arapov.trade',
+        'author and founder of ArapovTrade',
       ],
       description:
         'Independent researcher, practicing trader, author of books on trading and scientific publications. Specializes in trading psychology and cognitive biases in financial markets.',
@@ -370,7 +370,7 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/en/freestudying/binarnyeopciony#faq',
+      '@id': 'https://arapovtrade.com/en/freestudying/binarnyeopciony#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -425,7 +425,7 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/en/freestudying/binarnyeopciony#howto',
+      '@id': 'https://arapovtrade.com/en/freestudying/binarnyeopciony#howto',
       name: 'How to Start Trading Binary Options',
       description: 'Step-by-step guide for beginners in binary options trading',
       totalTime: 'PT30M',
@@ -440,35 +440,35 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
           position: 1,
           name: 'Learn the basics and risks',
           text: 'Before investing money, understand binary options mechanics, their risks and characteristics. Recognize this is a high-risk instrument with negative expected value.',
-          url: 'https://arapov.trade/en/freestudying/binarnyeopciony#basics',
+          url: 'https://arapovtrade.com/en/freestudying/binarnyeopciony#basics',
         },
         {
           '@type': 'HowToStep',
           position: 2,
           name: 'Choose a reliable broker',
           text: 'Check for licensing, broker reputation, and real trader reviews. Avoid companies with aggressive advertising and guaranteed profit promises.',
-          url: 'https://arapov.trade/en/freestudying/binarnyeopciony#broker',
+          url: 'https://arapovtrade.com/en/freestudying/binarnyeopciony#broker',
         },
         {
           '@type': 'HowToStep',
           position: 3,
           name: 'Practice on a demo account',
           text: 'Most brokers offer demo accounts with virtual money. Use it to develop your strategy and understand the platform interface.',
-          url: 'https://arapov.trade/en/freestudying/binarnyeopciony#demo',
+          url: 'https://arapovtrade.com/en/freestudying/binarnyeopciony#demo',
         },
         {
           '@type': 'HowToStep',
           position: 4,
           name: 'Develop a trading strategy',
           text: 'Define entry rules, expiration time selection, and stake size. Never trade randomly — this turns trading into gambling.',
-          url: 'https://arapov.trade/en/freestudying/binarnyeopciony#strategy',
+          url: 'https://arapovtrade.com/en/freestudying/binarnyeopciony#strategy',
         },
         {
           '@type': 'HowToStep',
           position: 5,
           name: 'Start with minimum amounts',
           text: 'When transitioning to real trading, start with minimum stakes. Risk no more than 1-2% of deposit per trade. Control emotions and strictly follow your plan.',
-          url: 'https://arapov.trade/en/freestudying/binarnyeopciony#start',
+          url: 'https://arapovtrade.com/en/freestudying/binarnyeopciony#start',
         },
       ],
     };
@@ -483,7 +483,7 @@ export class HomeEnBlogNintyTwoComponent implements OnInit {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/en/freestudying/binarnyeopciony#terms',
+      '@id': 'https://arapovtrade.com/en/freestudying/binarnyeopciony#terms',
       name: 'Binary Options Terms',
       hasDefinedTerm: [
         {

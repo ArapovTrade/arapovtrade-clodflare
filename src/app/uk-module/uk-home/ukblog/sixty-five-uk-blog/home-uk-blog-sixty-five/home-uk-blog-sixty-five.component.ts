@@ -102,11 +102,11 @@ export class HomeUkBlogSixtyFiveComponent {
   hoveredIndex: number | null = null;
 
   projects = [
-    { title: 'Книги з трейдингу', link: 'https://arapov.trade/uk/books' },
-    { title: 'Професійні курси', link: 'https://arapov.trade/uk/studying' },
+    { title: 'Книги з трейдингу', link: 'https://arapovtrade.com/uk/books' },
+    { title: 'Професійні курси', link: 'https://arapovtrade.com/uk/studying' },
     {
       title: 'Базовий курс',
-      link: 'https://arapov.trade/uk/freestudying/freeeducation',
+      link: 'https://arapovtrade.com/uk/freestudying/freeeducation',
     },
      
   ];
@@ -297,27 +297,27 @@ export class HomeUkBlogSixtyFiveComponent {
       '@graph': [
         {
           '@type': 'Article',
-          '@id': 'https://arapov.trade/uk/freestudying/stockorderbook#article',
+          '@id': 'https://arapovtrade.com/uk/freestudying/stockorderbook#article',
           headline:
             'Біржовий Стакан та Стрічка Принтів: Як Читати Order Book і Time & Sales',
           description:
             'Повний посібник з аналізу біржового стакана та стрічки принтів для визначення намірів великих гравців.',
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapov.trade/assets/img/content/stockorderbook1.png',
+            url: 'https://arapovtrade.com/assets/img/content/stockorderbook1.png',
             width: 1200,
             height: 630,
           },
-          author: { '@id': 'https://arapov.trade/uk#person' },
+          author: { '@id': 'https://arapovtrade.com/uk#person' },
           publisher: {
             '@type': 'Organization',
-            '@id': 'https://arapov.trade/#organization',
+            '@id': 'https://arapovtrade.com/#organization',
           },
           datePublished: '2025-04-15T00:00:00Z',
           dateModified: '2026-04-15T00:00:00Z',
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapov.trade/uk/freestudying/stockorderbook',
+            '@id': 'https://arapovtrade.com/uk/freestudying/stockorderbook',
           },
           articleSection: 'Навчання трейдингу',
           inLanguage: 'uk',
@@ -335,7 +335,7 @@ export class HomeUkBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      '@id': 'https://arapov.trade/uk#person',
+      '@id': 'https://arapovtrade.com/uk#person',
       name: 'Ігор Арапов',
       alternateName: [
         'Igor Arapov',
@@ -346,9 +346,9 @@ export class HomeUkBlogSixtyFiveComponent {
               'Арапов Ігор',
               'Arapov Igor',
       ],
-      url: 'https://arapov.trade/uk',
+      url: 'https://arapovtrade.com/uk',
       image:
-        'https://arapov.trade/assets/redesignArapovTrade/img/imageAuthor-light.png',
+        'https://arapovtrade.com/assets/redesignArapovTrade/img/imageAuthor-light.png',
       sameAs: [
         'https://www.wikidata.org/wiki/Q137454477',
         'https://scholar.google.com/citations?user=N440tWQAAAAJ',
@@ -360,7 +360,7 @@ export class HomeUkBlogSixtyFiveComponent {
         'https://www.youtube.com/@ArapovTrade',
         'https://t.me/ArapovTrade'
       ],
-       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник arapov.trade'],
+       jobTitle: ['Незалежний дослідник', 'трейдер', 'автор і засновник ArapovTrade'],
       description:
         'Незалежний дослідник, практикуючий трейдер, автор книг з трейдингу та наукових публікацій. Спеціалізується на психології трейдингу та когнітивних упередженнях на фінансових ринках.',
     };
@@ -375,7 +375,7 @@ export class HomeUkBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': 'https://arapov.trade/uk/freestudying/stockorderbook#faq',
+      '@id': 'https://arapovtrade.com/uk/freestudying/stockorderbook#faq',
       mainEntity: [
         {
           '@type': 'Question',
@@ -430,7 +430,7 @@ export class HomeUkBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'HowTo',
-      '@id': 'https://arapov.trade/uk/freestudying/stockorderbook#howto',
+      '@id': 'https://arapovtrade.com/uk/freestudying/stockorderbook#howto',
       name: 'Як аналізувати біржовий стакан та стрічку принтів',
       description:
         'Покрокова інструкція з читання Order Book і Time & Sales для пошуку точок входу',
@@ -479,7 +479,7 @@ export class HomeUkBlogSixtyFiveComponent {
     const data = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTermSet',
-      '@id': 'https://arapov.trade/uk/freestudying/stockorderbook#glossary',
+      '@id': 'https://arapovtrade.com/uk/freestudying/stockorderbook#glossary',
       name: 'Глосарій біржового стакана',
       inLanguage: 'uk',
       hasDefinedTerm: [
