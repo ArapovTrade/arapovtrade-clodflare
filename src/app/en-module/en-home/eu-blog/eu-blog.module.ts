@@ -9,7 +9,7 @@ import { SearchblockEnComponent } from '../../../searchblock/searchblock-en/sear
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 const routes: Routes = [
   {
-    path: '',
+    path: '', 
     component: CoverEnComponent,
     children: [
       { path: '', component: EnBlogHomepageComponent },
