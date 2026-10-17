@@ -26,7 +26,7 @@ const routes: Routes = [
           import('../eu-blog/onehundred-six-en-blog/onehundred-six-en-blog.module').then(
             (m) => m.OnehundredSixEnBlogModule,
           ),
-      },
+      }, 
       {
         path: 'tradingview-record', //107 1
         loadChildren: () =>

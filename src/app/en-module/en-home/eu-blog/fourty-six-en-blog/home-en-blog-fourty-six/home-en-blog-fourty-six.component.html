@@ -8,8 +8,10 @@
            <main lang="en">
 <header><h1>Moving averages: SMA, EMA and how to read them</h1></header>
 <article><section><p>A <strong><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="Moving average">moving average</dfn></strong>, or MA, smooths a series of prices into a line. It makes individual jumps less prominent so that you can compare the broader movement with the current price. The line uses data already received; it does not tell you where the next turning point will be.</p>
+<div class="flex"><img src="/assets/img/content/movingavarage.png" alt="Worked three-period example: after a new close of USD 108, SMA is approximately USD 104.67 and EMA is USD 105 using a weight of 0.5" class="pictureImg" loading="lazy"></div>
+
 <p>Two common versions are the simple moving average, SMA, and the exponential moving average, EMA. SMA gives equal weight to prices inside its current window. EMA gives the newest price more influence while retaining a diminishing effect from earlier values. Their different responses do not by themselves make a trading decision profitable.</p>
-<div class="flex"><img src="/assets/img/content/movingavarage.png" alt="Worked three-period example: after a new close of USD 108, SMA is approximately USD 104.67 and EMA is USD 105 using a weight of 0.5" class="pictureImg" loading="lazy"></div></section>
+</section>
 <section><h2 id="topic-01" style="margin:36px 0 16px">How moving averages are calculated</h2><p>For an SMA, add the prices from the selected number of bars, the periods on your chart, and divide by that number. If the source setting is close, use closing prices. Each new completed bar adds its close and removes the oldest one from the window. This keeps the number of prices in the average unchanged.</p>
 <!-- Added English explanatory diagram: ma-sma-ema-en.webp -->
 <img src="/assets/img/content/ma-sma-ema-en.webp" alt="SMA weights the current window equally; EMA gives the newest price more influence while retaining earlier history." class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">

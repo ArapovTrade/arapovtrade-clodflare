@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '', 
     component: CoverComponent,
     children: [
       { path: '', component: UkBlogHomepageComponent },
@@ -225,7 +225,7 @@ const routes: Routes = [
             (m) => m.TwentyThreeUkBlogModule,
           ),
       },
-      { 
+      {  
         path: 'wyckoff-method', //24 1
         loadChildren: () =>
           import('./twenty-four-uk-blog/twenty-four-uk-blog.module').then(
@@ -350,7 +350,7 @@ const routes: Routes = [
           import('./fourty-one-uk-blog/fourty-one-uk-blog.module').then(
             (m) => m.FourtyOneUkBlogModule,
           ),
-      },
+      }, 
       {
         path: 'trading-styles', //42 1
         loadChildren: () =>

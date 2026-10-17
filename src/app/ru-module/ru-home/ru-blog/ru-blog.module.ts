@@ -77,7 +77,7 @@ const routes: Routes = [
           import('./two-ru-blog/two-ru-blog.module').then(
             (m) => m.TwoRuBlogModule,
           ),
-      },
+      }, 
       {
         path: 'order-block', //3
         loadChildren: () =>
