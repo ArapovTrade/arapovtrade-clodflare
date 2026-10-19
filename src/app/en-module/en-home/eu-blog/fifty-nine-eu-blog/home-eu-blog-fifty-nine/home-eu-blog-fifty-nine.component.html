@@ -19,7 +19,7 @@
 <!-- Added English explanatory diagram: ai-trading-functions-en.webp -->
 
 <p>Machine learning fits a model using examples. A language model learns to generate text, so a confident explanation does not establish that its calculation or market claim is correct. NIST's guidance on generative AI identifies the risk of confidently presented false content, including invented reasoning and citations.</p>
-<p>If an answer includes a current price, check the data source and timestamp. The service may lack market access or receive delayed prices. A chart screenshot contains only the selected view; it cannot establish every trade, the full traded quantity or your actual execution prices. <a class="linkrefinto" href="https://arapovtrade.com/en/freestudying/chart-reading">Chart reading</a> explains how to check the underlying chart information.</p>
+<p>If an answer includes a current price, check the data source and timestamp. The service may lack market access or receive delayed prices. A chart screenshot contains only the selected view; it cannot establish every trade, the full traded quantity or your actual execution prices. <a href="https://arapovtrade.com/en/freestudying/chart-reading#topic-01">Chart reading</a> explains how to check the underlying chart information.</p>
 <img src="/assets/img/content/predictmarketprice1.webp" alt="Three checks for an AI trading forecast: verify the data source and timestamp, compare complete records with a screenshot, and test outcomes against a baseline." class="pictureImg" loading="lazy">
 </section>
 <section><h2 id="topic-02" style="margin:36px 0 16px">Can AI predict the price accurately?</h2>
@@ -33,7 +33,7 @@
 
 </section>
 <section><h2 id="topic-03" style="margin:36px 0 16px">Using AI to analyse your trades</h2>
-<p>A trading journal records completed trades and your actions. AI may help group those records by instrument, time, entry rule or documented departures from the plan. This describes what happened; it does not reveal the next market price.</p>
+<p>A <a href="https://arapovtrade.com/en/freestudying/trading-system#topic-07">trading journal</a> records completed trades and your actions. AI may help group those records by instrument, time, entry rule or documented departures from the plan. This describes what happened; it does not reveal the next market price.</p>
 <p>Prepare a table with clear fields: entry and exit times with the time zone, instrument, direction, trade size, execution prices, costs and result. Include a rule violation only when your records establish it. A losing trade alone does not tell a model that you felt afraid or broke a rule.</p>
 <!-- Added English explanatory diagram: ai-journal-fields-en.webp -->
 
@@ -46,11 +46,11 @@
 
 </section>
 <section><h2 id="topic-04" style="margin:36px 0 16px">Testing a strategy suggested by AI</h2>
-<p>Convert an AI suggestion into clear trading rules first: what data is available at the decision time, what triggers an entry, when the trade ends and how its size is limited. If the explanation changes after every question, there is no stable method to test yet. <a class="linkrefinto" href="https://arapovtrade.com/en/freestudying/trading-system">A trading system</a> explains how to turn conditions into a written plan and evaluate its results.</p>
+<p>Convert an AI suggestion into clear trading rules first: what data is available at the decision time, what triggers an entry, when the trade ends and how its size is limited. If the explanation changes after every question, there is no stable method to test yet. A <a href="https://arapovtrade.com/en/freestudying/trading-system#topic-01">trading system</a> explains how to turn conditions into a written plan and evaluate its results.</p>
 <p>Generated code can help automate a test, but it may calculate an indicator incorrectly, place a signal at the wrong time or assume an unavailable execution price. A successful program run and an attractive chart do not prove correctness. Check individual cases manually: what was known before entry, why an order appeared and how its result was calculated.</p>
 <!-- Added English explanatory diagram: ai-rules-code-checks-en.webp -->
 
-<p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="overfitting">Overfitting</dfn> occurs when a model fits the peculiarities of its training data too closely and performs poorly on new data. In trading, testing many settings and selecting the best historical result can create this problem. David Bailey and his co-authors studied this selection risk in historical strategy tests.</p>
+<p><dfn itemscope itemtype="https://schema.org/DefinedTerm"><meta itemprop="name" content="overfitting"><a href="https://arapovtrade.com/en/freestudying/trading-system#topic-05">Overfitting</a></dfn> occurs when a model fits the peculiarities of its training data too closely and performs poorly on new data. In trading, testing many settings and selecting the best historical result can create this problem. David Bailey and his co-authors studied this selection risk in historical strategy tests.</p>
 <p>Data leakage means a test uses information that was not available when the decision would have been made. For example, an entry during a candle cannot use that candle's final high before it is known. Leakage can also enter through preparation when data-processing settings are calculated from the entire history, including the later test period.</p>
 <!-- Added English explanatory diagram: ai-data-leakage-en.webp -->
 <img src="/assets/img/content/ai-data-leakage-en.webp" alt="An entry during a candle cannot use its unknown final high; preparation can also leak information from a later test period." class="pictureImg" loading="lazy" style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">
@@ -73,10 +73,10 @@
 
 </section>
 <section><h2 id="topic-06" style="margin:36px 0 16px">Connecting AI assistance to a trading method</h2>
-<p>My course builds decisions around observable chart conditions and rules chosen before the trade, rather than an assurance of predicting every price. <a class="linkrefinto" href="https://arapovtrade.com/en/freestudying/wyckoff-method">The Wyckoff method</a> explains the price-and-volume approach in more detail. AI can help organise observations, but a relationship it finds still needs checking against the actual data.</p>
-<p>In the <a class="linkrefinto" href="https://arapovtrade.com/en/freestudying/freeeducation#math">course section on expected value</a>, I compare hypothetical trade series with specified loss exits and profit targets. The practical task is to evaluate the series rather than one successful trade. This helps frame the evaluation of an idea; it is neither an AI programming lesson nor evidence of future profitability.</p>
+<p>My course builds decisions around observable chart conditions and rules chosen before the trade, rather than an assurance of predicting every price. The <a href="https://arapovtrade.com/en/freestudying/wyckoff-method">Wyckoff method</a> explains the price-and-volume approach in more detail. AI can help organise observations, but a relationship it finds still needs checking against the actual data.</p>
+<p>In the <a href="https://arapovtrade.com/en/freestudying/freeeducation#math">course section on expected value</a>, I compare hypothetical trade series with specified loss exits and profit targets. The practical task is to evaluate the series rather than one successful trade. This helps frame the evaluation of an idea; it is neither an AI programming lesson nor evidence of future profitability.</p>
 <p>The optional <a class="linkrefinto" href="https://youtu.be/5PLGouidw-A?t=830">Price forecasting limits</a> chapter discusses choosing a trading task instead of expecting an exact future price. It does not test a specific AI model or rule out forecasts expressed as probabilities. The written checks in this article can be followed without watching the video.</p>
-<p>As with <a class="linkrefinto" href="https://arapovtrade.com/en/freestudying/trading-indicators">trading indicators</a>, a model's output needs clear conditions of use. Write down the task, data source and timestamp, what counts as a correct answer and what you will do when it is wrong. If you cannot reproduce and check the result, it is not enough evidence for a trade.</p>
+<p>As with trading indicators, a model's output needs clear conditions of use. Write down the task, data source and timestamp, what counts as a correct answer and what you will do when it is wrong. If you cannot reproduce and check the result, it is not enough evidence for a trade.</p>
 <!-- Added English explanatory diagram: ai-output-conditions-en.webp -->
 
 </section>

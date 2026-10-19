@@ -11,7 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: '', 
+    path: '',  
     component: CoverComponent,
     children: [
       { path: '', component: UkBlogHomepageComponent },

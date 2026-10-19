@@ -202,7 +202,7 @@ const routes: Routes = [
           import('./twenty-three-en-blog/twenty-three-en-blog.module').then(
             (m) => m.TwentyThreeEnBlogModule,
           ),
-      },
+      }, 
       { 
         path: 'wyckoff-method', //24
         loadChildren: () =>

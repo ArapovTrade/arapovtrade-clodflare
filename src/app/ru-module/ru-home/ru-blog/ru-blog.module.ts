@@ -57,7 +57,7 @@ const routes: Routes = [
       //       (m) => m.OnehundredTenRuBlogModule,
       //     ),
       // }, 
-      {
+      { 
         path: 'practic', //64 1
         loadChildren: () =>
           import('../ru-blog/sixty-four-ru-blog/sixty-four-ru-blog.module').then(
