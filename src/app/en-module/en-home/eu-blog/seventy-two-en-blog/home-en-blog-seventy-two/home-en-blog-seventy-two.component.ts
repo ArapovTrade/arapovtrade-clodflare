@@ -12,7 +12,7 @@ import { artickle } from '../../../../../servises/articles.service';
 import { Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
-import { ArticlesService } from '../../../../../servises/articles.service';
+import { ArticlesService } from '../../../../../servises/articles.service'; 
 
 @Component({
   selector: 'app-home-en-blog-seventy-two',
@@ -41,10 +41,10 @@ export class HomeEnBlogSeventyTwoComponent {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -55,20 +55,17 @@ export class HomeEnBlogSeventyTwoComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
 
-    this.titleService.setTitle('Economic Calendar: How to Use in Trading');
+    this.titleService.setTitle('Price Action: Market Structure, Levels and Candlestick Reactions');
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Complete guide to using the economic calendar. Learn key events, news trading strategies, and common trader mistakes.',
+        'Learn how Price Action connects market structure, support and resistance, and candlestick reactions. Explore pullbacks, breakouts, confirmation and risk.',
     });
-    this.meta.updateTag({ name: 'author', content: 'Igor Arapov' });
-    this.meta.updateTag({ name: 'datePublished', content: '2025-02-15' });
-    this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
-    this.meta.updateTag({
-      property: 'og:image',
-      content: '/assets/img/content/economiccalendar.png',
-    });
+    
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-20' });
+    this.meta.updateTag({ name: 'dateModified', content: '2026-10-20' });
+    
 
     this.gerRandom();
   }
@@ -254,27 +251,35 @@ export class HomeEnBlogSeventyTwoComponent {
       '@graph': [
         {
           '@type': 'Article',
-          headline: 'Economic Calendar: How to Use in Trading',
+          headline: 'Price Action: Market Structure, Levels and Candlestick Reactions',
           description:
-            'Complete guide to using the economic calendar. Learn key events, news trading strategies, and common trader mistakes.',
+            'Learn how Price Action connects market structure, support and resistance, and candlestick reactions. Explore pullbacks, breakouts, confirmation and risk.',
           author: {
-            '@id': 'https://arapovtrade.com/en#person',
+            '@type': 'Person',
+            '@id': 'https://arapovtrade.com/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapovtrade.com/en',
           },
           publisher: {
             '@type': 'Organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'ArapovTrade',
             url: 'https://arapovtrade.com',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
+            },
           },
-          datePublished: '2025-04-15T00:00:00Z',
-          dateModified: '2026-04-15T00:00:00Z',
+          datePublished: '2026-10-20T00:00:00Z',
+          dateModified: '2026-10-20T00:00:00Z',
 
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapovtrade.com/assets/img/content/economiccalendar.png',
+            url: 'https://arapovtrade.com/assets/img/content/price-action-cover.webp',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapovtrade.com/en/freestudying/economiccalendar',
+            '@id': 'https://arapovtrade.com/en/freestudying/price-action',
           },
         },
       ],

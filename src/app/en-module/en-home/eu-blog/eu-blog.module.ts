@@ -851,13 +851,13 @@ const routes: Routes = [
             (m) => m.SeventyOneEnBlogModule,
           ),
       },
-      // {
-      //   path: 'economiccalendar', //72
-      //   loadChildren: () =>
-      //     import('../eu-blog/seventy-two-en-blog/seventy-two-en-blog.module').then(
-      //       (m) => m.SeventyTwoEnBlogModule,
-      //     ),
-      // },
+      {
+        path: 'price-action', //72
+        loadChildren: () =>
+          import('../eu-blog/seventy-two-en-blog/seventy-two-en-blog.module').then(
+            (m) => m.SeventyTwoEnBlogModule,
+          ),
+      },
       // {
       //   path: 'macroeconomicindicators', //73
       //   loadChildren: () =>

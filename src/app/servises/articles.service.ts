@@ -1692,7 +1692,30 @@ export class ArticlesService {
   groupsEng: ['Trading for Beginners'],
   id: 76,
 },
-
+  {
+  titleUkr: 'Price Action',
+  linkUkr: 'price-action',
+  descrEn:
+    'Learn how Price Action connects market structure, support and resistance, and candlestick reactions. Explore pullbacks, breakouts, confirmation and risk.',
+  titleRus: 'Price Action',
+  titleEn: 'Price Action',
+  descrUkr:
+    'Як Price Action поєднує структуру ринку, рівні підтримки й опору та свічкові реакції. Відкати, пробої, підтвердження сценарію та контроль ризику.',
+  descrRus:
+    'Как Price Action связывает структуру рынка, уровни поддержки и сопротивления и свечные реакции. Откаты, пробои, подтверждение сценария и контроль риска.',
+  realTitleRus:
+    'Price Action: структура рынка, уровни и свечные реакции',
+  realTitleUkr:
+    'Price Action: структура ринку, рівні та свічкові реакції',
+  realTitleEn:
+    'Price Action: Market Structure, Levels and Candlestick Reactions',
+  imgUkr:
+    '/assets/img/content/price-action-cover.webp',
+  groupsRus: ['Трейдинг для начинающих'],
+  groupsUkr: ['Трейдинг для початківців'],
+  groupsEng: ['Trading for Beginners'],
+  id: 77,
+},
 
 
 

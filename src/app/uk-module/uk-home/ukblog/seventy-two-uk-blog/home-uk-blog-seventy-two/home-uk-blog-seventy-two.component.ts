@@ -42,10 +42,10 @@ export class HomeUkBlogSeventyTwoComponent {
   ngOnInit(): void {
     this.removeSelectedSchemas();
     this.setArticleSchema();
-    this.setPersonSchema();
-    this.setFaqSchema();
-    this.setHowToSchema();
-    this.setGlossarySchema();
+    // this.setPersonSchema();
+    // this.setFaqSchema();
+    // this.setHowToSchema();
+    // this.setGlossarySchema();
 
     this.themeSubscription = this.themeService.getTheme().subscribe((data) => {
       this.isDark = data;
@@ -57,22 +57,19 @@ export class HomeUkBlogSeventyTwoComponent {
     this.updateArticleCounts();
     this.checkedGroup = this.artickleServ.selectedGroups;
     this.titleService.setTitle(
-      'Економічний календар: як використовувати в трейдингу'
+      'Price Action: структура ринку, рівні та свічкові реакції'
     );
     this.meta.updateTag({ name: 'robots', content: 'index, follow' });
     this.meta.updateTag({
       name: 'description',
       content:
-        'Повний посібник з використання економічного календаря. Вивчіть ключові події, стратегії торгівлі на новинах та типові помилки трейдерів.',
+        'Як Price Action поєднує структуру ринку, рівні підтримки й опору та свічкові реакції. Відкати, пробої, підтвердження сценарію та контроль ризику.',
     });
 
-    this.meta.updateTag({ name: 'datePublished', content: '2025-01-30' });
+    this.meta.updateTag({ name: 'datePublished', content: '2026-10-20' });
 
-  this.meta.updateTag({ name: 'dateModified', content: '2026-04-15' });
-    this.meta.updateTag({
-      property: 'og:image',
-      content: '/assets/img/content/economiccalendar.png',
-    });
+  this.meta.updateTag({ name: 'dateModified', content: '2026-10-20' });
+    
 
     this.gerRandom();
   }
@@ -280,27 +277,35 @@ export class HomeUkBlogSeventyTwoComponent {
       '@graph': [
         {
           '@type': 'Article',
-          headline: 'Економічний календар: як використовувати в трейдингу',
+          headline: 'Price Action: структура ринку, рівні та свічкові реакції',
           description:
-            'Повний посібник з використання економічного календаря. Вивчіть ключові події, стратегії торгівлі на новинах та типові помилки трейдерів.',
+            'Як Price Action поєднує структуру ринку, рівні підтримки й опору та свічкові реакції. Відкати, пробої, підтвердження сценарію та контроль ризику.',
           author: {
-            '@id': 'https://arapovtrade.com/uk#person',
+            '@type': 'Person',
+            '@id': 'https://arapovtrade.com/#person',
+            name: 'Igor Arapov',
+            url: 'https://arapovtrade.com/uk',
           },
           publisher: {
             '@type': 'Organization',
+            '@id': 'https://arapovtrade.com/#organization',
             name: 'ArapovTrade',
             url: 'https://arapovtrade.com',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://arapovtrade.com/assets/img/favicon.ico',
+            },
           },
-          datePublished: '2025-04-15T00:00:00Z',
-          dateModified: '2026-04-15T00:00:00Z',
+          datePublished: '2026-10-20T00:00:00Z',
+          dateModified: '2026-10-20T00:00:00Z',
 
           image: {
             '@type': 'ImageObject',
-            url: 'https://arapovtrade.com/assets/img/content/economiccalendar.png',
+            url: 'https://arapovtrade.com/assets/img/content/price-action-cover.webp',
           },
           mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': 'https://arapovtrade.com/uk/freestudying/economiccalendar',
+            '@id': 'https://arapovtrade.com/uk/freestudying/price-action',
           },
         },
       ],

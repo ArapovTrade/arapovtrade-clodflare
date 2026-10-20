@@ -874,13 +874,13 @@ const routes: Routes = [
             (m) => m.SeventyOneRuBlogModule,
           ),
       },
-      // {
-      //   path: 'economiccalendar', //72
-      //   loadChildren: () =>
-      //     import('../ru-blog/seventy-two-ru-blog/seventy-two-ru-blog.module').then(
-      //       (m) => m.SeventyTwoRuBlogModule,
-      //     ),
-      // },
+      {
+        path: 'price-action', //72
+        loadChildren: () =>
+          import('../ru-blog/seventy-two-ru-blog/seventy-two-ru-blog.module').then(
+            (m) => m.SeventyTwoRuBlogModule,
+          ),
+      },
       // {
       //   path: 'macroeconomicindicators', //73
       //   loadChildren: () =>
