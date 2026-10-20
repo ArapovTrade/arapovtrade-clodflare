@@ -781,7 +781,7 @@ const routes: Routes = [
       // },
 
       {
-        path: 'trading-faq', //61 
+        path: 'trading-faq', //61  
         loadChildren: () =>
           import('../eu-blog/sixty-one-en-blog/sixty-one-en-blog.module').then(
             (m) => m.SixtyOneEnBlogModule,

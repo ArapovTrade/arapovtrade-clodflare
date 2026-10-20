@@ -2538,4 +2538,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://arapovtrade.com/en/freestudying/library-knowledge-map"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://arapovtrade.com/uk/freestudying/library-knowledge-map"/>
   </url>
+
+  <!-- Price Action / RU, UK, EN -->
+  <url>
+    <loc>https://arapovtrade.com/uk/freestudying/price-action</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapovtrade.com/ru/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapovtrade.com/en/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+  </url>
+  <url>
+    <loc>https://arapovtrade.com/ru/freestudying/price-action</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapovtrade.com/ru/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapovtrade.com/en/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+  </url>
+  <url>
+    <loc>https://arapovtrade.com/en/freestudying/price-action</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://arapovtrade.com/ru/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://arapovtrade.com/en/freestudying/price-action"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://arapovtrade.com/uk/freestudying/price-action"/>
+  </url>
 </urlset>
