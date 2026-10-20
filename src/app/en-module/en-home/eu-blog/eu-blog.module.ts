@@ -57,7 +57,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'order-block', //3
+        path: 'order-block', //3 
         loadChildren: () =>
           import('./three-en-blog/three-en-blog.module').then(
             (m) => m.ThreeEnBlogModule,
@@ -426,7 +426,7 @@ const routes: Routes = [
           import('./fifty-five-eu-blog/fifty-five-eu-blog.module').then(
             (m) => m.FiftyFiveEuBlogModule,
           ),
-      },
+      }, 
       {
         path: 'breakout-strategy', //56
         loadChildren: () =>

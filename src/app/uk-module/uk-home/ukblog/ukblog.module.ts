@@ -443,7 +443,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'candlestick-patterns', //55 1
+        path: 'candlestick-patterns', //55 1 
         loadChildren: () =>
           import('./fifty-five-uk-blog/fifty-five-uk-blog.module').then(
             (m) => m.FiftyFiveUkBlogModule,
