@@ -16,7 +16,7 @@
 
 
 <section><h2 id="topic-01" style="margin:36px 0 16px">What stochastic measures and how it is calculated</h2>
-<p>The indicator's development is associated with George Lane and his colleagues in the 1950s. It compares a close with a recent price range. The usual display has two lines: %K is the main line, and %D averages its values to provide a smoother signal line.</p>
+<p>The indicator's development is associated with <a class="linkrefinto" href="https://cmtassociation.org/technically_speaking/technically-speaking-may-2011/" target="_blank" rel="noopener noreferrer">George Lane and his colleagues in the 1950s</a>. It compares a close with a recent price range. The usual display has two lines: %K is the main line, and %D averages its values to provide a smoother signal line.</p>
 <p>For the raw, unsmoothed reading, take the current close, the lowest low and the highest high within the selected window. The highest high minus the lowest low gives the range width. Raw %K = (close − lowest low) / (highest high − lowest low) × 100. Include the current bar in the selected window.</p>
 <!-- English educational illustration: stochastic-raw-formula-en.webp -->
 <img loading="lazy" src="/assets/img/content/stochastic-raw-formula-en.webp" alt="Raw %K compares the close&#x27;s distance above the lowest low with the selected range width, including the current bar." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">
@@ -33,8 +33,8 @@
 <div class="flex"><img src="/assets/img/content/stochastic3.png" alt="Stochastic oscillator on a price chart" class="pictureImg" loading="lazy" /></div>
 </section>
 <section><h2 id="topic-02" style="margin:36px 0 16px">Fast and slow stochastic: settings 14, 3, 3</h2>
-<p>In the common Fast Stochastic version, %K uses the raw calculation and %D is its three-period <a href="https://arapovtrade.com/en/freestudying/moving-averages#topic-01">simple moving average</a>, or SMA: the sum of those values divided by three. Slow Stochastic first smooths %K, then calculates %D from the smoothed main line. Full Stochastic lets you choose the original window and both smoothing lengths separately.</p>
-<p>TradingView's standard STOCH defaults to a 14-bar range, three-period smoothing of %K and a three-period %D. It averages the raw readings for the displayed main line, then averages that main line for the signal. The value 75 in our example is only the raw reading; those defaults require previous readings before you can calculate the displayed smoothed lines.</p>
+<p>In the common <a class="linkrefinto" href="https://ta-lib.org/functions/stochf.html" target="_blank" rel="noopener noreferrer">Fast Stochastic version</a>, %K uses the raw calculation and %D is its three-period <a href="https://arapovtrade.com/en/freestudying/moving-averages#topic-01">simple moving average</a>, or SMA: the sum of those values divided by three. Slow Stochastic first smooths %K, then calculates %D from the smoothed main line. <a class="linkrefinto" href="https://chartschool.stockcharts.com/table-of-contents/technical-indicators-and-overlays/technical-indicators/stochastic-oscillator-fast-slow-and-full" target="_blank" rel="noopener noreferrer">Full Stochastic lets you choose the original window and both smoothing lengths separately</a>.</p>
+<p><a class="linkrefinto" href="https://www.tradingview.com/support/solutions/43000502332-stochastic-stoch/" target="_blank" rel="noopener noreferrer">TradingView's standard STOCH defaults</a> to a 14-bar range, three-period smoothing of %K and a three-period %D. It averages the raw readings for the displayed main line, then averages that main line for the signal. The value 75 in our example is only the raw reading; those defaults require previous readings before you can calculate the displayed smoothed lines.</p>
 <!-- English educational illustration: stochastic-fast-slow-en.webp -->
 <img loading="lazy" src="/assets/img/content/stochastic-fast-slow-en.webp" alt="Fast Stochastic averages raw %K for %D, while Slow smooths the main line first; standard STOCH14/3/3 needs earlier readings." style="width:100%;max-width:800px;height:auto;max-height:none;display:block;object-fit:contain;margin:32px auto">
 
@@ -50,7 +50,7 @@
 
 </section>
 <section><h2 id="topic-03" style="margin:36px 0 16px">Overbought, oversold and line crossings</h2>
-<p>Readings above 80 are commonly called overbought and readings below 20 oversold. Here those labels refer to high and low calculated positions, not the asset's fair value, the number of buyers or the size of anyone's holdings.</p>
+<p><a class="linkrefinto" href="https://www.tradingview.com/support/solutions/43000502332-stochastic-stoch/" target="_blank" rel="noopener noreferrer">Readings above 80 are commonly called overbought and readings below 20 oversold</a>. Here those labels refer to high and low calculated positions, not the asset's fair value, the number of buyers or the size of anyone's holdings.</p>
 <p>During sustained growth, closes can repeatedly occur near the tops of successive ranges, keeping stochastic high. The opposite can happen during a decline. Selling solely because the reading exceeds 80, or buying solely below 20, may mean trading against a movement that is still continuing.</p>
 <p>Leaving a zone and crossing the other line are different events. %K falling below 80 changes its relationship with a chosen threshold. %K crossing below %D changes its relationship with a smoothed signal. Either can occur without the other happening on the same bar.</p>
 <!-- English educational illustration: stochastic-zone-crossing-en.webp -->
